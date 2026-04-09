@@ -1,0 +1,7 @@
+# Development tools for working on UFO-MAP.
+# Install with:  python3 -m pip install -r requirements-dev.txt
+#
+# Runtime (UFO-MAP/*.py) is stdlib-only and does NOT need anything from this
+# file. These are only needed if you plan to commit code.
+
+pre-commit>=3.5,<5

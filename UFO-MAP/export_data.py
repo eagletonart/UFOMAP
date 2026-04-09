@@ -9,8 +9,8 @@ import csv
 import os
 from datetime import datetime
 
-# Pull constants and helpers from the main script
-from ufo_map_1 import (
+# Pull constants from the canonical source.
+from constants import (
     NUFORC_CSV, NUFORC_FIELDS, ABDUCTION_KEYWORDS,
     MILITARY_BASES, COG_SITES, USO_SITES,
 )
