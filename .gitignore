@@ -1,0 +1,53 @@
+# ── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ── Secrets & environment ──────────────────────────────────────────────────
+# Never commit a real .env. The template lives at .env.example.
+.env
+.env.*
+!.env.example
+
+# Mapbox token file (legacy local-dev fallback). Use MAPBOX_TOKEN in .env instead.
+UFO-MAP/mapbox_token.txt
+mapbox_token.txt
+
+# Generic credential files
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# ── Generated / runtime artifacts ──────────────────────────────────────────
+# These are produced by fetch_data.py / build_map.py and should be regenerated
+# locally rather than checked in.
+UFO-MAP/ufo_data_export.json
+UFO-MAP/index.html
+UFO-MAP/reddit_cache.json
+
+# ── Editor & OS ────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

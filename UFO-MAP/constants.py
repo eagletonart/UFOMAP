@@ -1,11 +1,42 @@
 """
 constants.py — single source of truth for all UFO map data.
 
-Imported by both fetch_data.py and ufo_map_1.py.
-Edit data here; both scripts pick up changes automatically.
+Imported by fetch_data.py, export_data.py, and build_map.py.
+Edit data here; all scripts pick up changes automatically.
 """
 
 import os
+
+
+# ── .env loader (stdlib, no python-dotenv dependency) ─────────
+def _load_dotenv() -> None:
+    """Populate os.environ from a .env file at the repo root.
+
+    Looks for `.env` in the parent of this file (i.e. the repo root, since
+    constants.py lives in UFO-MAP/). Existing environment variables are NOT
+    overwritten — real shell exports always win over the file. Lines starting
+    with `#` and blank lines are ignored. Values may be optionally quoted.
+    """
+    dotenv_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env")
+    if not os.path.exists(dotenv_path):
+        return
+    try:
+        with open(dotenv_path, encoding="utf-8") as f:
+            for raw in f:
+                line = raw.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                key, _, value = line.partition("=")
+                key = key.strip()
+                value = value.strip().strip('"').strip("'")
+                if key:
+                    os.environ.setdefault(key, value)
+    except OSError:
+        pass
+
+
+_load_dotenv()
+
 
 # ── File paths ────────────────────────────────────────────────
 NUFORC_CSV   = os.path.join(os.path.dirname(__file__), "nuforc_test.csv")

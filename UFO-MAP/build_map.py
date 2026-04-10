@@ -10,6 +10,10 @@ import os
 import sys
 from datetime import datetime
 
+# Importing constants triggers the .env loader as a side effect, so
+# MAPBOX_TOKEN from a repo-root .env file is available below.
+import constants  # noqa: F401
+
 EXPORT_FILE = "ufo_data_export.json"
 OUTPUT_MAP  = "index.html"
 
@@ -107,15 +111,22 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     mufon_json      = json.dumps(mufon_reports)
     local_news_json = json.dumps(local_news)
 
-    # Read Mapbox token
-    _tok_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'mapbox_token.txt')
-    try:
-        with open(_tok_path) as _tf:
-            mapbox_token = _tf.read().strip()
+    # Read Mapbox token: prefer the MAPBOX_TOKEN env var (set via .env at the
+    # repo root, loaded automatically by constants.py), fall back to the
+    # legacy mapbox_token.txt file for backwards compatibility with existing
+    # local installs.
+    mapbox_token = os.environ.get('MAPBOX_TOKEN', '').strip()
+    if not mapbox_token:
+        _tok_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'mapbox_token.txt')
+        try:
+            with open(_tok_path) as _tf:
+                mapbox_token = _tf.read().strip()
+        except FileNotFoundError:
+            pass
+    if mapbox_token:
         print(f"   Mapbox token: {mapbox_token[:16]}…")
-    except FileNotFoundError:
-        mapbox_token = ''
-        print("   ⚠  mapbox_token.txt not found — globe will be disabled")
+    else:
+        print("   ⚠  No Mapbox token (set MAPBOX_TOKEN in .env) — globe will be disabled")
 
     built_at = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 
