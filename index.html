@@ -22,16 +22,30 @@ body { background:#040d14; color:#a0e8c8; font-family:'Rajdhani',sans-serif;
 /* ── header ─────────────────────────────────────────────── */
 #header {
   background:linear-gradient(180deg,#040d14 0%,rgba(4,13,20,.95) 100%);
-  border-bottom:1px solid #0f4; padding:10px 20px;
-  display:flex; align-items:center; justify-content:space-between;
+  border-bottom:1px solid #0f4;
+  display:flex; flex-direction:column;
   z-index:1000; flex-shrink:0;
 }
+#header-row1 {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:6px 20px; gap:10px;
+}
 #header h1 { font-size:1.4rem; letter-spacing:.25em; color:#0f4;
-              text-transform:uppercase; font-family:'Share Tech Mono',monospace; }
+              text-transform:uppercase; font-family:'Share Tech Mono',monospace;
+              white-space:nowrap; flex-shrink:0; }
 #header h1 span { color:#fff; }
-#stats { font-size:.78rem; color:#5a9; letter-spacing:.1em;
-          text-align:right; font-family:'Share Tech Mono',monospace; line-height:1.6; }
-#stats b { color:#0f4; }
+#header-btns {
+  display:flex; align-items:center; gap:8px; flex-shrink:0;
+}
+#stats-bar {
+  display:flex; align-items:center; justify-content:space-around;
+  padding:4px 20px 5px; border-top:1px solid #083;
+  font-family:'Share Tech Mono',monospace; gap:4px;
+}
+.stat-item {
+  font-size:.7rem; color:#5a9; letter-spacing:.07em; white-space:nowrap;
+}
+.stat-item b { color:#0f4; }
 
 /* ── controls ────────────────────────────────────────────── */
 #controls {
@@ -91,7 +105,7 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
 
 /* ── custom layer panel ──────────────────────────────────── */
 #layer-panel {
-  position:fixed; top:12px; right:12px; z-index:1000;
+  position:fixed; top:calc(var(--header-h, 80px) + 8px); right:12px; z-index:1000;
   width:210px; background:rgba(4,13,20,.97); border:1px solid #093;
   border-radius:3px; font-family:'Share Tech Mono',monospace;
   font-size:.72rem; display:flex; flex-direction:column;
@@ -151,15 +165,19 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
   width:8px; height:8px; border-radius:50%; flex-shrink:0;
 }
 .lp-name { letter-spacing:.07em; }
-/* show button (when panel is collapsed) */
-#lp-show {
-  position:fixed; top:12px; right:12px; z-index:1000; display:none;
-  background:rgba(4,13,20,.95); border:1px solid #093; color:#5a9;
-  font-family:'Share Tech Mono',monospace; font-size:.7rem;
-  letter-spacing:.12em; padding:6px 10px; cursor:pointer;
-  text-transform:uppercase; border-radius:3px;
+/* layers header button */
+#layers-btn {
+  background: rgba(0,255,68,.08);
+  border: 1px solid #0f4; color: #0f4;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: .78rem; letter-spacing: .15em;
+  padding: 5px 14px; cursor: pointer;
+  text-transform: uppercase; white-space: nowrap;
+  transition: background .2s, color .2s; flex-shrink:0;
+  border-radius:2px; min-height:36px;
 }
-#lp-show:hover { color:#a0e8c8; border-color:#0a3; }
+#layers-btn:hover  { background: rgba(0,255,68,.22); color:#fff; }
+#layers-btn.active { background: rgba(0,255,68,.3);  color:#fff; box-shadow:0 0 8px rgba(0,255,68,.4); }
 
 /* ── cluster bubbles — override Leaflet defaults ─────────── */
 .marker-cluster, .marker-cluster div,
@@ -238,24 +256,25 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
 
 /* ── mobile responsive ───────────────────────────────────── */
 @media (max-width:768px) {
-  #header {
-    padding:8px 12px; gap:8px; flex-wrap:wrap;
-  }
+  #header-row1 { padding:6px 12px; gap:6px; }
   #header h1 { font-size:1rem; letter-spacing:.1em; }
-  #stats {
-    font-size:.62rem; line-height:1.5; order:4;
-    flex-basis:100%; border-top:1px solid #093; padding-top:6px; margin-top:2px;
+  #header-btns { gap:5px; }
+  #about-btn, #layers-btn, #mode-toggle, #controls-toggle {
+    font-size:.68rem; padding:4px 9px; min-height:44px; letter-spacing:.08em;
   }
+  #stats-bar {
+    display:grid; grid-template-columns:repeat(3,1fr);
+    gap:3px 8px; padding:5px 12px 7px;
+  }
+  .stat-item { font-size:.65rem; text-align:center; }
   #controls { display:none; }
   #controls.open { display:flex; flex-direction:column; align-items:flex-start; gap:10px; padding:10px 14px; }
   #controls-toggle { display:inline-flex !important; }
-  #mode-toggle { font-size:.72rem; padding:6px 12px; }
   #result-count { display:none; }
   #legend { display:none; }
   #built-at { display:none; }
   /* Layer panel: fixed, scrollable on mobile */
-  #layer-panel { width:185px; font-size:.68rem; max-height:70vh; top:8px; right:8px; }
-  #lp-show { min-width:44px; min-height:44px; top:8px; right:8px; }
+  #layer-panel { width:185px; font-size:.68rem; max-height:70vh; top:calc(var(--header-h, 120px) + 8px); right:8px; }
   /* Popups: larger text + wider box for mobile reading */
   .leaflet-popup-content-wrapper { min-width:270px !important; max-width:88vw !important; }
   .leaflet-popup-content { margin:16px 18px !important; font-size:16px !important; }
@@ -348,20 +367,25 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
 <body>
 
 <div id="header">
-  <h1>WEAVING <span>SPIDERS</span></h1>
-  <button id="controls-toggle" aria-label="Toggle filters">☰&nbsp;FILTERS</button>
-  <button id="about-btn">ℹ About</button>
-  <button id="mode-toggle">🗺️&nbsp;2D MAP</button>
-  <div id="stats">
-    NUFORC <b>5,000</b> &nbsp;|&nbsp;
-    REDDIT <b>0</b> &nbsp;|&nbsp;
-    ABDUCTIONS <b>428</b> &nbsp;|&nbsp;
-    BASES <b>108</b> &nbsp;|&nbsp;
-    MISSING 411 <b>77</b> &nbsp;|&nbsp;
-    SCIENTISTS <b>10</b> &nbsp;|&nbsp;
-    NUCLEAR <b>8</b> &nbsp;|&nbsp;
-    WINDOWS <b>8</b> &nbsp;|&nbsp;
-    LOCAL NEWS <b>119</b>
+  <div id="header-row1">
+    <h1>WEAVING <span>SPIDERS</span></h1>
+    <div id="header-btns">
+      <button id="controls-toggle" aria-label="Toggle filters">☰&nbsp;FILTERS</button>
+      <button id="about-btn">ℹ ABOUT</button>
+      <button id="mode-toggle">🗺️&nbsp;2D MAP</button>
+      <button id="layers-btn" class="active">&#9776; LAYERS</button>
+    </div>
+  </div>
+  <div id="stats-bar">
+    <span class="stat-item">NUFORC <b>5,000</b></span>
+    <span class="stat-item">REDDIT <b>0</b></span>
+    <span class="stat-item">ABDUCTIONS <b>428</b></span>
+    <span class="stat-item">BASES <b>108</b></span>
+    <span class="stat-item">MISSING 411 <b>77</b></span>
+    <span class="stat-item">SCIENTISTS <b>10</b></span>
+    <span class="stat-item">NUCLEAR <b>8</b></span>
+    <span class="stat-item">WINDOWS <b>8</b></span>
+    <span class="stat-item">LOCAL NEWS <b>119</b></span>
   </div>
 </div>
 
@@ -410,7 +434,6 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
     <button id="lp-collapse-all" title="Collapse all groups">&#9660; Collapse all</button>
     <div id="lp-body"></div>
   </div>
-  <button id="lp-show" title="Show layers">&#9654; LAYERS</button>
 </div>
 
 <div id="legend"></div>
@@ -486,7 +509,7 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
 
     <h3>About</h3>
     <p>Built as an independent research visualization. All data is from public sources. This map is for educational and research purposes. Toggle layers to explore correlations between sighting density, infrastructure, and geography.</p>
-    <p style="color:#3a7;font-size:.78rem;margin-top:16px">Last updated: 2026-04-12 05:13 UTC</p>
+    <p style="color:#3a7;font-size:.78rem;margin-top:16px">Last updated: 2026-04-12 06:22 UTC</p>
 
     <div style="text-align:center; margin: 20px 0;">
       <img src="charlie.gif"
@@ -499,7 +522,7 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
   </div>
 </div>
 
-<div id="built-at">Built 2026-04-12 05:13 UTC</div>
+<div id="built-at">Built 2026-04-12 06:22 UTC</div>
 
 <script>
 // ── Data ────────────────────────────────────────────────────
@@ -587,18 +610,18 @@ function _touchWrap(innerHtml, visualSize) {
 function makeIcon(source, shape) {
   const isNuforc = source === 'NUFORC' || source === 'NUFORC Recent';
   if (isNuforc) {
-    // NUFORC — tiny dim green dot (8px), 50% opacity, no emoji: background reference layer
-    const dot = `<div style="width:8px;height:8px;border-radius:50%;
+    // NUFORC — dim green dot, 50% opacity, no emoji: background reference layer
+    const dot = `<div style="width:12px;height:12px;border-radius:50%;
                    background:#00ff44;opacity:0.5;flex-shrink:0;"></div>`;
     return L.divIcon({
       className: '',
-      html: _touchWrap(dot, 8),
+      html: _touchWrap(dot, 12),
       iconSize: [44,44], iconAnchor: [22,22],
     });
   } else {
     // Reddit / other — shape-based emoji on gold-glowing dark circle
     const emoji = SHAPE_EMOJI[(shape||'').toLowerCase()] || '🛸';
-    return emojiIcon(emoji, '#ffaa00', 18);
+    return emojiIcon(emoji, '#ffaa00', 27);
   }
 }
 
@@ -657,10 +680,11 @@ function makeCogIcon() {
 function clusterGroup(color) {
   return L.markerClusterGroup({
     chunkedLoading: true,
-    removeOutsideVisibleBounds: true,
-    maxClusterRadius: 38,          // tighter clusters → expand sooner
-    disableClusteringAtZoom: 10,   // individual markers at zoom 10+
-    zoomToBoundsOnClick: true,     // click cluster → zoom in to expand
+    removeOutsideVisibleBounds: false, // never cull markers — prevents clusters disappearing on zoom
+    maxClusterRadius: 38,              // tighter clusters → expand sooner
+    disableClusteringAtZoom: 16,       // individual markers at zoom 16+ (street level)
+    spiderfyOnMaxZoom: true,           // spiderfy when fully zoomed if still overlapping
+    zoomToBoundsOnClick: true,         // click cluster → zoom in to expand
     iconCreateFunction(cluster) {
       const n    = cluster.getChildCount();
       const size = n < 10 ? 34 : n < 50 ? 42 : n < 200 ? 50 : 58;
@@ -1489,17 +1513,25 @@ function updateLegend() {
 })();
 
 // ── Panel collapse / expand ──────────────────────────────────
-document.getElementById('lp-collapse').addEventListener('click', () => {
-  document.getElementById('layer-panel').style.display = 'none';
-  document.getElementById('lp-show').style.display     = 'block';
-});
-document.getElementById('lp-show').addEventListener('click', () => {
-  document.getElementById('layer-panel').style.display = '';
-  document.getElementById('lp-show').style.display     = 'none';
-});
+function toggleLayerPanel(forceShow) {
+  const panel   = document.getElementById('layer-panel');
+  const btn     = document.getElementById('layers-btn');
+  const visible = forceShow !== undefined ? forceShow : panel.style.display === 'none';
+  panel.style.display = visible ? '' : 'none';
+  btn.classList.toggle('active', visible);
+}
+document.getElementById('lp-collapse').addEventListener('click', () => toggleLayerPanel(false));
+document.getElementById('layers-btn').addEventListener('click', () => toggleLayerPanel());
 document.getElementById('lp-collapse-all').addEventListener('click', () => {
   document.querySelectorAll('.lp-group').forEach(g => g.classList.remove('open'));
 });
+// ── Compute header height for layer panel positioning ─────────
+function updateHeaderHeight() {
+  const h = document.getElementById('header').offsetHeight;
+  document.documentElement.style.setProperty('--header-h', h + 'px');
+}
+updateHeaderHeight();
+window.addEventListener('resize', updateHeaderHeight);
 
 // ── Filter events ───────────────────────────────────────────
 document.getElementById('filter-source').addEventListener('change', renderMarkers);
@@ -1760,11 +1792,24 @@ const MB_LAYERS = [
 ];
 
 function _toGeoJSON(items) {
+  // Track seen coordinates and jitter duplicates so stacked points spread visibly
+  const _seen = {};
   return {
     type: 'FeatureCollection',
-    features: (items || []).filter(d => d.lat && (d.lon ?? d.lng)).map(d => ({
+    features: (items || []).filter(d => d.lat && (d.lon ?? d.lng)).map(d => {
+      let lon = +(d.lon ?? d.lng), lat = +d.lat;
+      const key = lon.toFixed(4) + ',' + lat.toFixed(4);
+      const idx = _seen[key] || 0;
+      if (idx > 0) {
+        const angle  = (idx * 137.5) * (Math.PI / 180);
+        const radius = 0.008 * Math.sqrt(idx);
+        lat += radius * Math.cos(angle);
+        lon += radius * Math.sin(angle);
+      }
+      _seen[key] = idx + 1;
+      return {
       type: 'Feature',
-      geometry: { type:'Point', coordinates:[+(d.lon ?? d.lng), +d.lat] },
+      geometry: { type:'Point', coordinates:[lon, lat] },
       properties: {
         name:    d.name || d.location_label || d.location || '',
         date:    d.date    || '',
@@ -1774,7 +1819,8 @@ function _toGeoJSON(items) {
         status:  d.status  || '',
         location: d.location || '',
       },
-    })),
+    };
+    }),
   };
 }
 
@@ -1894,14 +1940,15 @@ function initMapboxGlobe() {
       type: 'geojson',
       data: _toGeoJSON(ALL_SIGHTINGS),
       cluster: true,
-      clusterMaxZoom: 14,
+      clusterMaxZoom: 10,   // above zoom 10 all points render as individual markers
       clusterRadius: 50,
     });
-    // Cluster bubble — maxzoom matches clusterMaxZoom so clusters show all the way to zoom 14
+    // Cluster bubble — no maxzoom cap so clusters render at all zoom levels
     mbMap.addLayer({
       id:'lyr-sightings-clusters', type:'circle', source:'src-sightings',
       filter:['has','point_count'],
-      maxzoom: 14,
+      minzoom: 0,
+      maxzoom: 24,
       layout:{ visibility:sVis },
       paint:{
         'circle-color':['step',['get','point_count'],
@@ -1914,11 +1961,12 @@ function initMapboxGlobe() {
         'circle-emissive-strength': 1,
       },
     });
-    // Cluster count label; maxzoom matches cluster bubble
+    // Cluster count label — no maxzoom cap
     mbMap.addLayer({
       id:'lyr-sightings-count', type:'symbol', source:'src-sightings',
       filter:['has','point_count'],
-      maxzoom: 14,
+      minzoom: 0,
+      maxzoom: 24,
       layout:{
         visibility: sVis,
         'text-field': '{point_count_abbreviated}',
@@ -1931,7 +1979,7 @@ function initMapboxGlobe() {
         'text-halo-width':  1.2,
       },
     });
-    // Individual points — always visible across all zoom levels
+    // Individual points — always visible at every zoom level
     mbMap.addLayer({
       id:'lyr-sightings-pts', type:'circle', source:'src-sightings',
       filter:['!',['has','point_count']],
@@ -1939,9 +1987,9 @@ function initMapboxGlobe() {
       maxzoom: 24,
       layout:{ visibility:sVis },
       paint:{
-        'circle-radius': ['interpolate',['linear'],['zoom'], 0,3, 5,6, 8,10, 12,14, 16,18],
+        'circle-radius': ['interpolate',['linear'],['zoom'], 0,2, 8,5, 12,9, 16,14, 20,18],
         'circle-color':  ['match',['get','source'],'NUFORC','#00ff44','#ffaa00'],
-        'circle-opacity': 1.0,
+        'circle-opacity': 1,
         'circle-stroke-width': ['match',['get','source'],'NUFORC',0,1.2],
         'circle-stroke-color': '#ffaa00',
         'circle-emissive-strength': 1,
@@ -1958,34 +2006,20 @@ function initMapboxGlobe() {
     mbMap.on('mouseenter','lyr-sightings-pts',  () => { mbMap.getCanvas().style.cursor='pointer'; });
     mbMap.on('mouseleave','lyr-sightings-pts',  () => { mbMap.getCanvas().style.cursor=''; });
 
-    // Click cluster bubble → zoom in to expand
-    mbMap.on('click', 'lyr-sightings-clusters', function(e) {
-      const features = mbMap.queryRenderedFeatures(e.point, { layers: ['lyr-sightings-clusters'] });
-      if (!features.length) return;
-      const clusterId = features[0].properties.cluster_id;
+    // Click cluster bubble → zoom in to expand (use e.features[0] directly — queryRenderedFeatures
+    // is unreliable when the symbol layer swallows the click and the circle isn't queryable)
+    function _expandCluster(e) {
+      if (!e.features || !e.features.length) return;
+      const clusterId = e.features[0].properties.cluster_id;
+      const coords    = e.features[0].geometry.coordinates.slice();
       mbMap.getSource('src-sightings').getClusterExpansionZoom(clusterId, function(err, zoom) {
         if (err) return;
-        mbMap.easeTo({
-          center: features[0].geometry.coordinates,
-          zoom: zoom + 1,
-          duration: 500,
-        });
+        mbMap.easeTo({ center: coords, zoom: zoom, duration: 500 });
       });
-    });
-    // Click count label — symbol layer sits on top of bubble and swallows the click
-    mbMap.on('click', 'lyr-sightings-count', function(e) {
-      const features = mbMap.queryRenderedFeatures(e.point, { layers: ['lyr-sightings-clusters'] });
-      if (!features.length) return;
-      const clusterId = features[0].properties.cluster_id;
-      mbMap.getSource('src-sightings').getClusterExpansionZoom(clusterId, function(err, zoom) {
-        if (err) return;
-        mbMap.easeTo({
-          center: features[0].geometry.coordinates,
-          zoom: zoom + 1,
-          duration: 500,
-        });
-      });
-    });
+    }
+    mbMap.on('click', 'lyr-sightings-clusters', _expandCluster);
+    // Symbol label layer sits on top and swallows clicks — wire the same handler
+    mbMap.on('click', 'lyr-sightings-count',    _expandCluster);
     mbMap.on('mouseenter', 'lyr-sightings-clusters', function() { mbMap.getCanvas().style.cursor = 'pointer'; });
     mbMap.on('mouseleave', 'lyr-sightings-clusters', function() { mbMap.getCanvas().style.cursor = ''; });
     mbMap.on('mouseenter', 'lyr-sightings-count',    function() { mbMap.getCanvas().style.cursor = 'pointer'; });
@@ -1993,20 +2027,32 @@ function initMapboxGlobe() {
     // Zoom diagnostics — fires when globe zoom ≥ 10
     mbMap.on('zoom', () => {
       const z = mbMap.getZoom();
-      if (z >= 10) console.log('[Globe] zoom:', z.toFixed(2),
+      if (z >= 15) console.log('[Globe] zoom:', z.toFixed(2),
         '| pts visibility:', mbMap.getLayoutProperty('lyr-sightings-pts','visibility'),
-        '| pts features:', mbMap.queryRenderedFeatures({layers:['lyr-sightings-pts']}).length);
+        '| pts features:', mbMap.queryRenderedFeatures({layers:['lyr-sightings-pts']}).length,
+        '| clusters:', mbMap.queryRenderedFeatures({layers:['lyr-sightings-clusters']}).length);
     });
 
     // ── Circle layers ──────────────────────────────────────────────────────────
     MB_LAYERS.forEach(cfg => {
       const fc  = _toGeoJSON(cfg.data());
       const vis = activeLayerNames.has(cfg.name) ? 'visible' : 'none';
+      // Extend zoom-based circle-radius so markers keep growing to street level (zoom 16–20)
+      const paint = Object.assign({}, cfg.paint);
+      const r = paint['circle-radius'];
+      if (Array.isArray(r) && r[0] === 'interpolate' && Array.isArray(r[2]) && r[2][0] === 'zoom') {
+        const lastVal = r[r.length - 1];
+        const lastZ   = r[r.length - 2];
+        if (lastZ <= 8) {
+          paint['circle-radius'] = r.concat([12, lastVal * 1.4, 16, lastVal * 1.8, 20, lastVal * 2.3]);
+        }
+      }
       mbMap.addSource('src-' + cfg.id, { type:'geojson', data:fc });
       mbMap.addLayer({
         id:'lyr-' + cfg.id, type:'circle', source:'src-' + cfg.id,
+        minzoom: 0, maxzoom: 24,
         layout:{ visibility:vis },
-        paint: cfg.paint,
+        paint: paint,
       });
       mbMap.on('click', 'lyr-' + cfg.id, e => {
         const props = e.features[0].properties;
