@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 build_map.py)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(python3 fetch_data.py)",
+      "Bash(curl -s --max-time 8 \"https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=ufos&limit=3&sort=desc\")",
+      "Bash(python3 -c ':*)",
+      "Bash(curl -L -o ~/Desktop/ufo-map/charlie.gif \"https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif\")",
+      "Bash(curl -L -o ~/Desktop/ufo-map/charlie.gif \"https://media.giphy.com/media/QXh9XnIJetPi0/giphy.gif\")",
+      "Bash(curl -L -o ~/Desktop/ufo-map/charlie.gif \"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjdxbTFjY2g0ZHZxMGVuaWx3anNjMWp3eThwd3k0em1hNzJvbGZrMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0IylOPCNkiqOgMyA/giphy.gif\")",
+      "Bash(curl -s --max-time 10 \"https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_month.geojson\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); feats=d['features']; print\\(f'USGS: {len\\(feats\\)} earthquakes'\\); print\\('Sample:', json.dumps\\(feats[0]['properties'], indent=2\\)[:400]\\)\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(wc -l /Users/lucaseagleton/Desktop/UFO-MAP/*.csv)",
+      "Bash(ls -lh /Users/lucaseagleton/Desktop/UFO-MAP/*.csv)"
+    ]
+  }
+}
