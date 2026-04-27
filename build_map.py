@@ -5,11 +5,14 @@ Run:  python3 build_map.py
 No network requests, no API calls — instant rebuild from local data.
 """
 
+import base64
 import json
 import os
 import sys
 from datetime import datetime
 from constants import MISSING_SCIENTISTS as _MISSING_SCIENTISTS_LIVE
+from constants import CHINESE_SCIENTISTS as _CHINESE_SCIENTISTS_LIVE
+from constants import WHISTLEBLOWERS as _WHISTLEBLOWERS_LIVE
 
 EXPORT_FILE = "ufo_data_export.json"
 OUTPUT_MAP  = "index.html"
@@ -37,6 +40,7 @@ def load_export(path=EXPORT_FILE):
 
 def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sites,
               missing_411=None, reddit_missing=None, missing_scientists=None,
+              chinese_scientists=None, whistleblowers=None,
               parallel_33_sites=None, nuclear_sites=None,
               cattle_mutilation_sites=None, window_areas=None, ley_lines=None,
               water_anomaly_sites=None, local_news=None,
@@ -46,6 +50,10 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
         missing_411 = []
     if reddit_missing is None:
         reddit_missing = []
+    if chinese_scientists is None:
+        chinese_scientists = []
+    if whistleblowers is None:
+        whistleblowers = []
     if missing_scientists is None:
         missing_scientists = []
     if nuforc_recent is None:
@@ -81,7 +89,7 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     print(f"     {len(sightings)} sightings  |  {abduction_count} abductions  "
           f"|  {len(military_bases)} bases  |  {len(cog_sites)} COG  "
           f"|  {len(uso_sites)} USO  |  {len(missing_411)} Missing 411  "
-          f"|  {len(missing_scientists)} Missing Scientists")
+          f"|  {len(missing_scientists)} Missing Scientists  |  {len(whistleblowers)} Whistleblowers")
 
     markers_json = json.dumps([{
         "lat":      s["lat"],
@@ -110,7 +118,44 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     uso_json        = json.dumps(uso_sites)
     missing_json        = json.dumps(missing_411)
     reddit_missing_json = json.dumps(reddit_missing)
-    scientists_json     = json.dumps(missing_scientists)
+    # Embed scientist photos as base64 data URIs so the HTML is self-contained
+    _scientists_with_photos = []
+    for _sci in missing_scientists:
+        _s = dict(_sci)
+        if _s.get('photo'):
+            _photo_path = os.path.join(os.path.dirname(__file__), _s['photo'])
+            try:
+                with open(_photo_path, 'rb') as _pf:
+                    _b64 = base64.b64encode(_pf.read()).decode('ascii')
+                _ext = os.path.splitext(_photo_path)[1].lstrip('.').lower()
+                _mime = 'image/jpeg' if _ext in ('jpg', 'jpeg') else f'image/{_ext}'
+                _s['photo'] = f'data:{_mime};base64,{_b64}'
+            except FileNotFoundError:
+                _s['photo'] = ''
+        _scientists_with_photos.append(_s)
+    scientists_json = json.dumps(_scientists_with_photos)
+    # Chinese scientists — no photos available, serialize directly
+    chinese_scientists_json = json.dumps(chinese_scientists)
+
+    def _embed_photos(records):
+        """Return a copy of records with photo paths replaced by base64 data URIs."""
+        out = []
+        for _rec in records:
+            _r = dict(_rec)
+            if _r.get('photo'):
+                _pp = os.path.join(os.path.dirname(__file__), _r['photo'])
+                try:
+                    with open(_pp, 'rb') as _pf:
+                        _b64 = base64.b64encode(_pf.read()).decode('ascii')
+                    _ext = os.path.splitext(_pp)[1].lstrip('.').lower()
+                    _mime = 'image/jpeg' if _ext in ('jpg', 'jpeg') else f'image/{_ext}'
+                    _r['photo'] = f'data:{_mime};base64,{_b64}'
+                except FileNotFoundError:
+                    _r['photo'] = ''
+            out.append(_r)
+        return out
+
+    whistleblowers_json = json.dumps(_embed_photos(whistleblowers))
     p33_json        = json.dumps(parallel_33_sites)
     nuclear_json    = json.dumps(nuclear_sites)
     cattle_json     = json.dumps(cattle_mutilation_sites)
@@ -199,6 +244,26 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     ]
     classic_json = json.dumps(classic_cases)
 
+    # Top 3 convergence zones: military bases where UFO sightings + abductions + base all overlap within 50 miles
+    convergence_zones = [
+        {"name": "CONVERGENCE ZONE #1 — Pacific Northwest Naval Cluster",
+         "lat": 47.5596, "lon": -122.6276,
+         "base": "Naval Base Kitsap (Bremerton)",
+         "sightings": 152, "abductions": 8, "score": 176,
+         "notes": "152 UFO sightings + 8 abduction reports within 50 miles of Naval Base Kitsap. Highest convergence score in the continental US. Adjacent to JBLM and Naval Station Everett — three major military installations in a 50-mile corridor. Bangor submarine base (nuclear Trident fleet) also in zone."},
+        {"name": "CONVERGENCE ZONE #2 — Los Angeles Military Ring",
+         "lat": 33.9169, "lon": -118.3884,
+         "base": "Los Angeles AFB",
+         "sightings": 142, "abductions": 10, "score": 172,
+         "notes": "142 UFO sightings + 10 abduction reports within 50 miles of Los Angeles AFB. Home of Space Systems Command (formerly AFSPC). Edwards AFB, Vandenberg SFB, China Lake NAWS all within extended range. Southern California aerospace-industrial complex — Lockheed Skunk Works, JPL, Boeing all nearby."},
+        {"name": "CONVERGENCE ZONE #3 — JBLM / Puget Sound Overlap",
+         "lat": 47.1377, "lon": -122.4758,
+         "base": "Joint Base Lewis-McChord",
+         "sightings": 136, "abductions": 10, "score": 166,
+         "notes": "136 UFO sightings + 10 abduction reports within 50 miles of Joint Base Lewis-McChord. Largest combined military base on the West Coast by population. Overlaps with Naval Base Kitsap zone — both zones share common sighting and abduction reports. McChord hosts C-17 airlift and Joint Terminal Attack Controllers."},
+    ]
+    convergence_json = json.dumps(convergence_zones)
+
     # Read Mapbox token
     _tok_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'mapbox_token.txt')
     try:
@@ -240,12 +305,12 @@ body {{ background:#040d14; color:#a0e8c8; font-family:'Rajdhani',sans-serif;
   z-index:1000; flex-shrink:0;
 }}
 #header-row1 {{
-  display:flex; align-items:center; justify-content:space-between;
+  display:flex; align-items:center;
   padding:6px 20px; gap:10px;
 }}
 #header h1 {{ font-size:1.4rem; letter-spacing:.25em; color:#0f4;
               text-transform:uppercase; font-family:'Share Tech Mono',monospace;
-              white-space:nowrap; flex-shrink:0; }}
+              white-space:nowrap; flex-shrink:0; margin-right:auto; }}
 #header h1 span {{ color:#fff; }}
 #header-btns {{
   display:flex; align-items:center; gap:8px; flex-shrink:0;
@@ -469,11 +534,13 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
 
 /* ── mobile responsive ───────────────────────────────────── */
 @media (max-width:768px) {{
-  #header-row1 {{ padding:6px 12px; gap:6px; }}
-  #header h1 {{ font-size:1rem; letter-spacing:.1em; }}
-  #header-btns {{ gap:5px; }}
-  #about-btn, #layers-btn, #mode-toggle, #controls-toggle {{
-    font-size:.68rem; padding:4px 9px; min-height:44px; letter-spacing:.08em;
+  /* Row 1: logo + ABOUT; Row 2: action buttons */
+  #header-row1 {{ padding:6px 12px; gap:6px; flex-wrap:wrap; }}
+  #header h1 {{ font-size:1rem; letter-spacing:.1em; flex:1; margin-right:0; }}
+  #about-btn {{ flex-shrink:0; order:2; }}
+  #header-btns {{ flex-basis:100%; order:3; justify-content:space-around; gap:4px; }}
+  #about-btn, #layers-btn, #mode-toggle, #controls-toggle, #conn-btn {{
+    font-size:.65rem; padding:5px 10px; min-height:44px; letter-spacing:.06em;
   }}
   #stats-bar {{
     display:grid; grid-template-columns:repeat(3,1fr);
@@ -575,6 +642,254 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
   letter-spacing:.12em; opacity:.7; pointer-events:none;
   text-shadow:0 0 8px #0f4;
 }}
+
+/* ── CONNECTIONS overlay ─────────────────────────────────── */
+#conn-btn {{
+  background:rgba(0,255,68,.06); border:1px solid #093; color:#5a9;
+  font-family:'Share Tech Mono',monospace; font-size:.72rem;
+  letter-spacing:.1em; padding:5px 12px; cursor:pointer;
+  text-transform:uppercase; white-space:nowrap; border-radius:2px;
+  transition:background .2s,color .2s;
+}}
+#conn-btn:hover {{ background:rgba(0,255,68,.16); color:#a0e8c8; }}
+
+/* ── Welcome / onboarding modal ──────────────────────────── */
+#welcome-modal {{
+  display:none; position:fixed; inset:0; z-index:9000;
+  background:rgba(0,0,0,0.92); align-items:center; justify-content:center;
+  font-family:'Share Tech Mono',monospace;
+  animation:wm-fade-in 0.4s ease;
+}}
+#welcome-modal.active {{ display:flex; }}
+@keyframes wm-fade-in {{ from {{ opacity:0; }} to {{ opacity:1; }} }}
+#wm-doc {{
+  position:relative; max-width:540px; width:90%; padding:40px 44px 36px;
+  background:#020d08; border:1px solid #0f4;
+  box-shadow:0 0 60px rgba(0,255,68,0.18), 0 0 0 1px #093 inset;
+}}
+#wm-doc::before {{
+  content:'TOP SECRET // COMPARTMENTED // NOFORN';
+  display:block; text-align:center; color:#ff2244; font-size:0.65rem;
+  letter-spacing:.25em; margin-bottom:28px; padding-bottom:14px;
+  border-bottom:1px solid #0f422a;
+}}
+#wm-doc::after {{
+  content:''; position:absolute; inset:6px; border:1px solid rgba(0,255,68,0.08);
+  pointer-events:none;
+}}
+#wm-stamp {{
+  position:absolute; top:18px; right:22px; font-size:0.6rem;
+  color:rgba(0,255,68,0.25); letter-spacing:.15em;
+}}
+#wm-title {{
+  font-size:1.05rem; color:#0f4; letter-spacing:.3em; text-align:center;
+  margin-bottom:6px; text-shadow:0 0 18px rgba(0,255,68,0.5);
+}}
+#wm-subtitle {{
+  font-size:0.65rem; color:#5a9; letter-spacing:.4em; text-align:center;
+  margin-bottom:28px;
+}}
+#wm-divider {{ border:none; border-top:1px solid #0f422a; margin:0 0 22px; }}
+#wm-body {{
+  font-size:0.78rem; color:#a0d4b0; line-height:1.8; margin-bottom:24px;
+  letter-spacing:.04em;
+}}
+#wm-body strong {{ color:#0f4; }}
+#wm-body .wm-warning {{ color:#ff8800; }}
+#wm-meta {{
+  font-size:0.6rem; color:rgba(0,255,68,0.3); letter-spacing:.1em;
+  margin-bottom:22px; line-height:1.6;
+}}
+#wm-enter {{
+  display:block; width:100%; padding:13px 0;
+  background:transparent; border:1px solid #0f4; color:#0f4;
+  font-family:'Share Tech Mono',monospace; font-size:0.82rem;
+  letter-spacing:.3em; cursor:pointer; text-transform:uppercase;
+  transition:background .2s, color .2s, box-shadow .2s;
+  text-align:center;
+}}
+#wm-enter:hover {{
+  background:rgba(0,255,68,0.1); color:#fff;
+  box-shadow:0 0 20px rgba(0,255,68,0.25);
+}}
+
+#conn-overlay {{
+  display:none; position:fixed; inset:0; z-index:4000;
+  background:#020c12; flex-direction:column; font-family:'Share Tech Mono',monospace;
+}}
+#conn-overlay.active {{ display:flex; }}
+#conn-overlay::before {{
+  content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,255,68,.025) 3px,rgba(0,255,68,.025) 4px);
+}}
+#conn-hdr {{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 20px; border-bottom:1px solid #0a3; flex-shrink:0;
+  position:relative; z-index:2; background:rgba(2,12,18,.9);
+}}
+#conn-hdr-left {{ display:flex; align-items:center; gap:14px; }}
+#conn-hdr-title {{ font-size:.75rem; letter-spacing:.28em; color:#0f4; }}
+#conn-hdr-stamp {{
+  font-size:.58rem; letter-spacing:.2em; color:#ff2244;
+  border:1px solid #ff244460; padding:1px 8px; opacity:.85;
+}}
+#conn-hdr-count {{ font-size:.58rem; letter-spacing:.1em; color:#485; }}
+#conn-close {{
+  background:none; border:1px solid #0a3; color:#5a9;
+  font-family:'Share Tech Mono',monospace; font-size:.68rem;
+  letter-spacing:.12em; padding:4px 14px; cursor:pointer; border-radius:2px;
+}}
+#conn-close:hover {{ background:rgba(0,255,68,.1); color:#0f4; border-color:#0f4; }}
+#conn-body {{ flex:1; overflow:hidden; position:relative; z-index:1; }}
+#conn-canvas {{
+  width:100%; height:100%; overflow:hidden; position:relative;
+  cursor:grab; touch-action:none; user-select:none;
+}}
+#conn-canvas.panning {{ cursor:grabbing; }}
+#conn-inner {{
+  position:absolute; left:0; top:0;
+  transform-origin:0 0;
+  width:2400px; height:2400px;
+}}
+#conn-svg {{
+  position:absolute; top:0; left:0; width:2400px; height:2400px;
+  pointer-events:none; overflow:visible;
+}}
+#conn-zoom {{
+  position:absolute; bottom:46px; right:14px; z-index:20;
+  display:flex; gap:7px; align-items:center;
+}}
+.cz-btn {{
+  background:rgba(0,255,68,.07); border:1px solid #0a3; color:#5a9;
+  font-family:'Share Tech Mono',monospace; font-size:.72rem;
+  letter-spacing:.12em; padding:7px 16px; cursor:pointer; border-radius:2px;
+  transition:background .15s, color .15s, box-shadow .15s;
+  white-space:nowrap;
+}}
+.cz-btn:hover {{ background:rgba(0,255,68,.2); color:#0f4; box-shadow:0 0 8px rgba(0,255,68,.2); }}
+#cz-back {{ display:none; border-color:#cc88ff66; color:#cc88ff; }}
+#cz-back:hover {{ background:rgba(204,136,255,.15); box-shadow:0 0 8px rgba(204,136,255,.25); }}
+.cz-sep {{ color:#093; font-size:.7rem; }}
+/* Cluster boxes */
+.cc-box {{
+  position:absolute; border:1.5px solid; padding:24px 26px;
+  background:rgba(0,255,68,.02); border-radius:4px;
+  transition:opacity .25s;
+}}
+.cc-box.cc-dimmed {{ opacity:0.12; pointer-events:none; }}
+.cc-label {{
+  font-size:16px; letter-spacing:.28em; margin-bottom:16px;
+  border-bottom:1px solid; padding-bottom:8px; opacity:.95;
+}}
+.cc-nodes {{ display:flex; flex-wrap:wrap; gap:40px; max-width:380px; }}
+/* Individual nodes */
+.cc-node {{
+  display:flex; flex-direction:column; align-items:center;
+  cursor:pointer; width:100px;
+}}
+.cc-node-ring {{
+  width:80px; height:80px; border-radius:50%;
+  border:2.5px solid; overflow:hidden; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+  background:#040d14; transition:box-shadow .18s, transform .18s;
+  font-size:32px;
+}}
+.cc-node:hover .cc-node-ring {{ transform:scale(1.08); }}
+.cc-node-ring img {{
+  width:100%; height:100%; object-fit:cover; object-position:top center;
+  border-radius:50%;
+}}
+.cc-node-name {{
+  font-size:13px; letter-spacing:.03em; text-align:center;
+  margin-top:8px; line-height:1.3; max-width:100px;
+  word-break:break-word; color:#c8ffc8;
+}}
+.cc-node.cn-active .cc-node-ring {{ box-shadow:0 0 24px #fff !important; border-color:#fff !important; transform:scale(1.1); }}
+.cc-node-inst .cc-node-ring {{ width:84px; height:84px; font-size:36px; }}
+/* China cluster — 3×3 grid with generous spacing */
+.cc-box[data-cid="china"] .cc-nodes {{ max-width:380px; gap:44px; }}
+/* Huntsville cluster — slightly larger to highlight the pattern */
+.cc-box[data-cid="al"] .cc-node-ring {{ width:88px; height:88px; font-size:34px; }}
+.cc-box[data-cid="al"] .cc-node {{ width:108px; }}
+.cc-box[data-cid="al"] .cc-nodes {{ max-width:420px; }}
+/* Detail panel: slide-out from right, hidden by default */
+#conn-detail {{
+  position:absolute; top:0; right:0; bottom:0;
+  width:300px; transform:translateX(100%);
+  transition:transform .25s ease; z-index:10;
+  border-left:1px solid #0a3; overflow-y:auto; padding:18px 16px;
+  background:rgba(2,10,18,.97);
+  box-shadow:-4px 0 30px rgba(0,0,0,.7);
+}}
+#conn-detail.open {{ transform:translateX(0); }}
+#cd-close {{
+  position:absolute; top:10px; right:12px;
+  background:none; border:1px solid #0a3; color:#5a9;
+  font-family:'Share Tech Mono',monospace; font-size:.65rem;
+  letter-spacing:.1em; padding:3px 10px; cursor:pointer; border-radius:2px;
+}}
+#cd-close:hover {{ background:rgba(0,255,68,.1); color:#0f4; }}
+/* Cluster boxes */
+.cc-box {{
+  position:absolute; border:1.5px solid; padding:20px 22px;
+  background:rgba(0,255,68,.025); border-radius:3px; min-width:120px;
+}}
+.cc-label {{
+  font-size:14px; letter-spacing:.24em; margin-bottom:14px;
+  border-bottom:1px solid; padding-bottom:6px; opacity:.95;
+}}
+.cc-nodes {{ display:flex; flex-wrap:wrap; gap:36px; max-width:360px; }}
+/* Individual nodes */
+.cc-node {{
+  display:flex; flex-direction:column; align-items:center;
+  cursor:pointer; width:92px;
+}}
+.cc-node-ring {{
+  width:80px; height:80px; border-radius:50%;
+  border:2.5px solid; overflow:hidden; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+  background:#040d14; transition:box-shadow .18s, transform .18s;
+  font-size:30px;
+}}
+.cc-node:hover .cc-node-ring {{ transform:scale(1.1); }}
+.cc-node-ring img {{
+  width:100%; height:100%; object-fit:cover; object-position:top center;
+  border-radius:50%;
+}}
+.cc-node-name {{
+  font-size:13px; letter-spacing:.03em; text-align:center;
+  margin-top:6px; line-height:1.25; max-width:92px;
+  word-break:break-word; color:#c8ffc8;
+}}
+.cc-node.cn-active .cc-node-ring {{ box-shadow:0 0 20px #fff !important; border-color:#fff !important; transform:scale(1.1); }}
+.cc-box[data-cid="china"] .cc-nodes {{ max-width:360px; gap:40px; }}
+.cc-box[data-cid="al"] .cc-node-ring {{ width:86px; height:86px; font-size:32px; }}
+.cc-box[data-cid="al"] .cc-node {{ width:100px; }}
+.cc-box[data-cid="al"] .cc-nodes {{ max-width:380px; }}
+/* Detail panel */
+.cd-empty {{ color:#485; font-size:.6rem; letter-spacing:.1em; text-align:center; margin-top:50px; line-height:2; }}
+.cd-photo {{
+  width:76px; height:76px; border-radius:50%;
+  object-fit:cover; object-position:top center;
+  border:2.5px solid; margin:0 auto 10px; display:flex;
+  align-items:center; justify-content:center; font-size:28px;
+  background:#040d14;
+}}
+.cd-photo img {{ width:100%; height:100%; object-fit:cover; object-position:top center; border-radius:50%; }}
+.cd-name {{ font-size:.78rem; letter-spacing:.1em; color:#0f4; text-align:center; margin-bottom:5px; }}
+.cd-status {{ font-size:.58rem; letter-spacing:.08em; font-weight:700; text-align:center; margin-bottom:12px; }}
+.cd-meta {{ font-size:.55rem; letter-spacing:.04em; color:#5a9; margin-bottom:3px; line-height:1.4; }}
+.cd-notes {{
+  font-size:.54rem; letter-spacing:.02em; color:#7a9; line-height:1.65;
+  margin-top:10px; border-top:1px solid #093; padding-top:10px;
+}}
+/* Legend strip */
+#conn-legend {{
+  position:absolute; bottom:10px; left:20px; display:flex; gap:20px;
+  font-size:.52rem; letter-spacing:.1em; color:#485; z-index:3;
+}}
+.cl-item {{ display:flex; align-items:center; gap:5px; }}
+.cl-swatch {{ width:24px; height:1.5px; }}
 </style>
 </head>
 <body>
@@ -582,10 +897,11 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
 <div id="header">
   <div id="header-row1">
     <h1>WEAVING <span>SPIDERS</span></h1>
+    <button id="about-btn">ℹ ABOUT</button>
     <div id="header-btns">
       <button id="controls-toggle" aria-label="Toggle filters">☰&nbsp;FILTERS</button>
-      <button id="about-btn">ℹ ABOUT</button>
       <button id="mode-toggle">🗺️&nbsp;2D MAP</button>
+      <button id="conn-btn">🕸&nbsp;CONNECTIONS</button>
       <button id="layers-btn" class="active">&#9776; LAYERS</button>
     </div>
   </div>
@@ -642,7 +958,7 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
   <div id="layer-panel">
     <div id="lp-header">
       <span id="lp-title">&#9632; Layers</span>
-      <button id="lp-collapse" title="Collapse panel">&#9664;</button>
+      <button id="lp-collapse" title="Close panel">&#10005;</button>
     </div>
     <button id="lp-collapse-all" title="Collapse all groups">&#9660; Collapse all</button>
     <div id="lp-body"></div>
@@ -735,6 +1051,70 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
   </div>
 </div>
 
+<!-- ── Welcome / onboarding modal ────────────────────────── -->
+<div id="welcome-modal">
+  <div id="wm-doc">
+    <span id="wm-stamp">DOC-REF: UFO-MAP-{built_at[:10]}</span>
+    <div id="wm-title">■ CLASSIFIED BRIEFING ■</div>
+    <div id="wm-subtitle">WEAVING SPIDERS COME NOT HERE</div>
+    <hr id="wm-divider">
+    <div id="wm-body">
+      You have accessed a <strong>restricted aggregated research database</strong>
+      compiling UAP sightings, missing persons, whistleblower testimony, classified
+      infrastructure, and anomalous phenomena across the continental United States
+      and beyond.<br><br>
+      <span class="wm-warning">⚠ WARNING:</span> Several individuals who investigated
+      these subjects are now <strong>dead or missing</strong>. Their data is
+      preserved in this archive.<br><br>
+      Use the <strong>LAYERS</strong> panel to build your web. Click any marker for
+      a full dossier. Enable <strong>CONNECTIONS</strong> to map the network.
+      Toggle <strong>GLOBE MODE</strong> for orbital perspective.
+    </div>
+    <div id="wm-meta">
+      DATABASE: {len(missing_scientists) + len(whistleblowers)} SUBJECTS INDEXED &nbsp;|&nbsp;
+      SIGHTINGS: ACTIVE &nbsp;|&nbsp; CLEARANCE: LEVEL ∞<br>
+      THIS SESSION IS NOT LOGGED. YOUR INTEREST HAS BEEN NOTED.
+    </div>
+    <button id="wm-enter">▶ &nbsp; ACKNOWLEDGE AND ENTER &nbsp; ◀</button>
+  </div>
+</div>
+
+<!-- ── Connections overlay ───────────────────────────────── -->
+<div id="conn-overlay">
+  <div id="conn-hdr">
+    <div id="conn-hdr-left">
+      <span id="conn-hdr-title">■ NETWORK ANALYSIS — MISSING SCIENTISTS</span>
+      <span id="conn-hdr-stamp">// CLASSIFIED //</span>
+      <span id="conn-hdr-count">{len(missing_scientists)} SUBJECTS INDEXED</span>
+    </div>
+    <button id="conn-close">✕ CLOSE</button>
+  </div>
+  <div id="conn-body">
+    <div id="conn-canvas">
+      <div id="conn-inner">
+        <svg id="conn-svg"></svg>
+      </div>
+      <div id="conn-legend">
+        <div class="cl-item"><svg width="24" height="8"><path d="M0,4 Q12,1 24,4" fill="none" stroke="#ff2244" stroke-width="1.5" stroke-dasharray="4 3"/></svg> DECEASED</div>
+        <div class="cl-item"><svg width="24" height="8"><path d="M0,4 Q12,1 24,4" fill="none" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="8 4"/></svg> KEY LINK</div>
+        <div class="cl-item"><svg width="24" height="8"><path d="M0,4 Q12,1 24,4" fill="none" stroke="#ff8800" stroke-width="1.5" stroke-dasharray="6 4"/></svg> NASA</div>
+        <div class="cl-item"><svg width="24" height="8"><path d="M0,4 Q12,1 24,4" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="10 5"/></svg> CONTRACTOR</div>
+        <div class="cl-item" style="color:#485;font-size:.5rem;letter-spacing:.05em;">PINCH/SCROLL TO ZOOM · DRAG TO PAN · CLICK CLUSTER TO FOCUS</div>
+      </div>
+      <div id="conn-zoom">
+        <button class="cz-btn" id="cz-back">◀ BACK</button>
+        <span class="cz-sep">|</span>
+        <button class="cz-btn" id="cz-fit">⊡ FIT &nbsp;<span style="opacity:.4;font-size:.6rem">F</span></button>
+        <button class="cz-btn" id="cz-in">＋ <span style="opacity:.4;font-size:.6rem">+</span></button>
+        <button class="cz-btn" id="cz-out">－ <span style="opacity:.4;font-size:.6rem">-</span></button>
+      </div>
+    </div>
+    <div id="conn-detail">
+      <button id="cd-close">✕ CLOSE</button>
+    </div>
+  </div>
+</div>
+
 <div id="built-at">Built {built_at}</div>
 
 <script>
@@ -747,6 +1127,8 @@ const USO_SITES        = {uso_json};
 const MISSING_411        = {missing_json};
 const REDDIT_MISSING     = {reddit_missing_json};
 const MISSING_SCIENTISTS = {scientists_json};
+const CHINESE_SCIENTISTS = {chinese_scientists_json};
+const WHISTLEBLOWERS     = {whistleblowers_json};
 const PARALLEL_33_SITES  = {p33_json};
 const NUCLEAR_SITES      = {nuclear_json};
 const CATTLE_SITES       = {cattle_json};
@@ -757,6 +1139,7 @@ const LOCAL_NEWS          = {local_news_json};
 const NUFORC_RECENT       = {nuforc_recent_json};
 const SEISMIC_ACTIVITY    = {seismic_json};
 const HUMANOID_ENCOUNTERS = {humanoid_json};
+const CONVERGENCE_ZONES   = {convergence_json};
 const ASRS_REPORTS        = {asrs_json};
 const ASA_REPORTS         = {asa_json};
 const POWER_SITES         = {power_json};
@@ -1148,6 +1531,32 @@ WINDOW_AREAS.forEach(site => {{
   windowLayer.addLayer(m);
 }});
 
+// ── Convergence Zones layer ──────────────────────────────────
+const convergenceLayer = L.layerGroup();
+CONVERGENCE_ZONES.forEach((zone, idx) => {{
+  const pulseHtml = `
+    <div style="position:relative;width:52px;height:52px;">
+      <div style="position:absolute;inset:0;border-radius:50%;border:3px solid #ff0088;
+                  box-shadow:0 0 18px #ff0088,0 0 36px rgba(255,0,136,0.4);
+                  animation:connPulse 1.4s ease-in-out infinite;"></div>
+      <div style="position:absolute;inset:6px;border-radius:50%;background:rgba(255,0,136,0.18);
+                  display:flex;align-items:center;justify-content:center;
+                  font-size:22px;">☢️</div>
+    </div>`;
+  const icon = L.divIcon({{className:'', html:pulseHtml, iconSize:[52,52], iconAnchor:[26,26]}});
+  const m = L.marker([zone.lat, zone.lon], {{icon}});
+  m.bindPopup(`
+    <div class="popup-source" style="color:#ff0088;">☢️ CONVERGENCE ZONE — TRIPLE OVERLAP</div>
+    <div class="popup-title"  style="color:#ff0088;">${{zone.name}}</div>
+    <div class="popup-meta"   style="color:#f8c;">📍 ${{zone.base}}</div>
+    <div class="popup-meta"   style="color:#f8c;margin-top:4px;">
+      🛸 ${{zone.sightings}} UFO Sightings &nbsp;|&nbsp; 👽 ${{zone.abductions}} Abductions &nbsp;|&nbsp; ⚡ Score: ${{zone.score}}
+    </div>
+    <div class="popup-summary" style="margin-top:6px;">${{zone.notes}}</div>
+  `, {{maxWidth:360}});
+  convergenceLayer.addLayer(m);
+}});
+
 // ── Ley Lines layer ──────────────────────────────────────────
 const leyLineLayer = L.layerGroup();
 
@@ -1227,14 +1636,37 @@ LEY_LINES.forEach(line => {{
 }});
 
 // ── Missing Scientists layer ────────────────────────────────
+function makeScientistIcon(s) {{
+  const st = (s.status || '').toLowerCase();
+  const isDead = st.includes('dead') || st.includes('murder');
+  const borderColor = isDead ? '#ff2244' : '#ffaa00';
+  const shadow = isDead ? 'rgba(255,34,68,0.5)' : 'rgba(255,170,0,0.5)';
+  if (s.photo) {{
+    const inner = `<div style="width:36px;height:36px;border-radius:50%;
+      border:2.5px solid ${{borderColor}};box-shadow:0 0 8px ${{shadow}};
+      overflow:hidden;flex-shrink:0;background:#040d14;">
+      <img src="${{s.photo}}" style="width:100%;height:100%;object-fit:cover;object-position:top center;"
+           onerror="this.parentElement.innerHTML='<div style=\\'display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-size:18px;\\'>☢️</div>'" />
+    </div>`;
+    return L.divIcon({{ className:'', html:_touchWrap(inner, 36), iconSize:[44,44], iconAnchor:[22,22] }});
+  }}
+  return emojiIcon('☢️', borderColor, 20);
+}}
+
 const scientistsLayer = clusterGroup('#ffffff');
 MISSING_SCIENTISTS.forEach(s => {{
   const statusColor = s.status.toLowerCase().startsWith('murder') ? '#ff2222'
     : s.status.toLowerCase().startsWith('dead') ? '#ff6600'
     : '#ffffff';
-  const m = L.marker([s.lat, s.lon], {{icon: emojiIcon('☢️','#ffffff',20)}});
+  const m = L.marker([s.lat, s.lon], {{icon: makeScientistIcon(s)}});
+  const _photoHtml = s.photo ? `<div style="display:flex;justify-content:center;margin-bottom:10px;">
+    <img src="${{s.photo}}" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top center;
+      border:2.5px solid ${{statusColor}};box-shadow:0 0 10px ${{statusColor}}88;background:#040d14;"
+      onerror="this.style.display='none'" />
+  </div>` : '';
   m.bindPopup(`
     <div class="popup-source" style="color:#fff;letter-spacing:.15em;">☢️ MISSING SCIENTIST</div>
+    ${{_photoHtml}}
     <div class="popup-title"  style="color:#fff;">${{s.name}}</div>
     <div class="popup-meta"   style="color:#aaa;">📅 ${{s.date}} &nbsp;·&nbsp; 📍 ${{s.location}}</div>
     <div class="popup-meta"   style="color:#8cf;margin-bottom:6px;">🏛 ${{s.affiliation}}</div>
@@ -1242,6 +1674,99 @@ MISSING_SCIENTISTS.forEach(s => {{
     <div class="popup-summary" style="color:#ccc;">${{s.notes}}</div>
   `, {{maxWidth:320}});
   scientistsLayer.addLayer(m);
+}});
+
+// ── Missing Scientist connection lines ───────────────────────
+function _sciCoord(name) {{
+  const s = MISSING_SCIENTISTS.find(x => x.name === name);
+  return s ? [s.lat, s.lon] : null;
+}}
+
+const _CONNECTION_DEFS = [
+  // JPL/Caltech cluster — mixed (dead + missing) → yellow
+  {{ names: ['Michael David Hicks', 'Frank Maiwald', 'Carl Grillmair', 'Monica Reza'],
+     color: '#ffcc00', label: 'JPL/Caltech cluster' }},
+  // Los Alamos/KCNSC cluster — all missing → yellow
+  {{ names: ['Anthony Chavez', 'Melissa Casias', 'Steven Garcia'],
+     color: '#ffcc00', label: 'Los Alamos/KCNSC cluster' }},
+  // Mondaloy connection — both missing → yellow
+  {{ names: ['Monica Reza', 'Neil McCasland'],
+     color: '#ffcc00', label: 'Mondaloy superalloy connection' }},
+  // Massachusetts cluster — both dead/murdered → red
+  {{ names: ['Jason Thomas', 'Nuno Loureiro'],
+     color: '#ff2244', label: 'Massachusetts cluster' }},
+];
+
+// Debug: log all scientist coords and connection segments to console
+console.log('[SciCoords] MISSING_SCIENTISTS coordinates:');
+MISSING_SCIENTISTS.forEach(s => console.log(`  ${{s.name}}: lat=${{s.lat}}, lon=${{s.lon}}`));
+
+const scientistConnectionsLayer = L.layerGroup();
+_CONNECTION_DEFS.forEach(def => {{
+  console.log(`[SciConn] Cluster: ${{def.label}}`);
+  const coords = def.names.map(n => {{ const c = _sciCoord(n); console.log(`  ${{n}}: ${{c ? JSON.stringify(c) : 'NOT FOUND'}}`); return c; }}).filter(Boolean);
+  if (coords.length < 2) return;
+  for (let i = 0; i < coords.length - 1; i++) {{
+    const a = coords[i], b = coords[i + 1];
+    // Skip zero-length lines (same lat/lon, e.g. Chavez + Casias at LANL)
+    if (a[0] === b[0] && a[1] === b[1]) {{ console.log(`  segment ${{i}}: ZERO-LENGTH skipped`); continue; }}
+    console.log(`  segment ${{i}}: [${{a}}] -> [${{b}}]`);
+    L.polyline([a, b], {{
+      color:     def.color,
+      weight:    1.8,
+      opacity:   0.65,
+      dashArray: '8 6',
+    }}).bindPopup(
+      `<div class="popup-source" style="color:${{def.color}};">🔗 ${{def.label}}</div>`,
+      {{maxWidth: 220}}
+    ).addTo(scientistConnectionsLayer);
+  }}
+}});
+
+// ── Chinese Scientists layer ─────────────────────────────────
+const chineseScientistsLayer = clusterGroup('#ff6600');
+CHINESE_SCIENTISTS.forEach(s => {{
+  const statusColor = s.status.toLowerCase().startsWith('dead') ? '#ff6600' : '#ffaa00';
+  const borderColor = statusColor;
+  const shadow = 'rgba(255,102,0,0.5)';
+  const inner = `<div style="width:36px;height:36px;border-radius:50%;display:flex;align-items:center;
+    justify-content:center;font-size:18px;border:2.5px solid ${{borderColor}};
+    box-shadow:0 0 8px ${{shadow}};background:#040d14;">☣️</div>`;
+  const icon = L.divIcon({{ className:'', html:_touchWrap(inner, 36), iconSize:[44,44], iconAnchor:[22,22] }});
+  const m = L.marker([s.lat, s.lon], {{icon}});
+  m.bindPopup(`
+    <div class="popup-source" style="color:#ff6600;letter-spacing:.15em;">☣️ CHINESE SCIENTIST</div>
+    <div class="popup-title"  style="color:#fff;">${{s.name}}</div>
+    <div class="popup-meta"   style="color:#aaa;">📅 ${{s.date}} &nbsp;·&nbsp; 📍 ${{s.location}}</div>
+    <div class="popup-meta"   style="color:#8cf;margin-bottom:6px;">🏛 ${{s.affiliation}}</div>
+    <div class="popup-meta"   style="color:${{statusColor}};font-weight:700;margin-bottom:8px;">⚠️ ${{s.status}}</div>
+    <div class="popup-summary" style="color:#ccc;">${{s.notes}}</div>
+  `, {{maxWidth:320}});
+  chineseScientistsLayer.addLayer(m);
+}});
+
+// ── Whistleblowers layer ─────────────────────────────────────
+const whistleblowersLayer = clusterGroup('#ffdd00');
+WHISTLEBLOWERS.forEach(s => {{
+  const isDead = (s.status || '').toLowerCase().includes('dead');
+  const borderColor = isDead ? '#ff2244' : '#ffdd00';
+  const shadow = isDead ? 'rgba(255,34,68,0.5)' : 'rgba(255,221,0,0.5)';
+  const emoji = s.emoji || (isDead ? '☠️' : '📢');
+  const inner = `<div style="width:36px;height:36px;border-radius:50%;display:flex;align-items:center;
+    justify-content:center;font-size:18px;border:2.5px solid ${{borderColor}};
+    box-shadow:0 0 8px ${{shadow}};background:#040d14;">${{emoji}}</div>`;
+  const icon = L.divIcon({{ className:'', html:_touchWrap(inner, 36), iconSize:[44,44], iconAnchor:[22,22] }});
+  const m = L.marker([s.lat, s.lon], {{icon}});
+  const statusColor = isDead ? '#ff2244' : '#ffdd00';
+  m.bindPopup(`
+    <div class="popup-source" style="color:#ffdd00;letter-spacing:.15em;">${{emoji}} UAP WHISTLEBLOWER</div>
+    <div class="popup-title"  style="color:#fff;">${{s.name}}</div>
+    <div class="popup-meta"   style="color:#aaa;">📅 ${{s.date}} &nbsp;·&nbsp; 📍 ${{s.location}}</div>
+    <div class="popup-meta"   style="color:#8cf;margin-bottom:6px;">🏛 ${{s.affiliation}}</div>
+    <div class="popup-meta"   style="color:${{statusColor}};font-weight:700;margin-bottom:8px;">⚠️ ${{s.status}}</div>
+    <div class="popup-summary" style="color:#ccc;">${{s.notes}}</div>
+  `, {{maxWidth:320}});
+  whistleblowersLayer.addLayer(m);
 }});
 
 // ── Water & Aquifer layer ────────────────────────────────────
@@ -1556,6 +2081,9 @@ const LAYER_REGISTRY = {{
   'Nuclear Sites':               nuclearLayer,
   'USO Sites':                   usoLayer,
   'Missing Scientists':          scientistsLayer,
+  'Scientist Connections':       scientistConnectionsLayer,
+  'Chinese Scientists':          chineseScientistsLayer,
+  'Whistleblowers':              whistleblowersLayer,
   'Missing 411':                 missing411Layer,
   'Reddit Missing Reports':      redditMissingLayer,
   'Power & Secrecy':             powerLayer,
@@ -1574,6 +2102,7 @@ const LAYER_REGISTRY = {{
   'Elongated Skulls':            skullsLayer,
   'Anomalous Spheres':           spheresLayer,
   'Alien Mummies':               mummiesLayer,
+  'Convergence Zones':           convergenceLayer,
 }};
 
 const LAYER_GROUPS = [
@@ -1598,6 +2127,9 @@ const LAYER_GROUPS = [
   ]}},
   {{ icon:'👤', name:'PEOPLE', open:false, items:[
     {{ name:'Missing Scientists',     color:'#ffffff', on:false }},
+    {{ name:'Scientist Connections',  color:'#ffcc00', on:false }},
+    {{ name:'Chinese Scientists',     color:'#ff6600', on:false }},
+    {{ name:'Whistleblowers',         color:'#ffdd00', on:false }},
     {{ name:'Missing 411',            color:'#ff2255', on:false }},
     {{ name:'Reddit Missing Reports', color:'#8b0000', on:false }},
   ]}},
@@ -1611,8 +2143,9 @@ const LAYER_GROUPS = [
     {{ name:'Window Areas',       color:'#aa44ff', on:false }},
   ]}},
   {{ icon:'🔺', name:'PATTERNS', open:false, items:[
-    {{ name:'Ley Lines',     color:'#ffaa00', on:false }},
-    {{ name:'33rd Parallel', color:'#ff2222', on:false }},
+    {{ name:'Ley Lines',        color:'#ffaa00', on:false }},
+    {{ name:'33rd Parallel',   color:'#ff2222', on:false }},
+    {{ name:'Convergence Zones', color:'#ff0088', on:false }},
   ]}},
   {{ icon:'🏺', name:'ANOMALOUS ARTIFACTS', open:false, items:[
     {{ name:'Humanoid Encounters', color:'#6600cc', on:false }},
@@ -1630,7 +2163,10 @@ const LEGEND_DEFS = {{
   'COG Sites':          {{ ico:'<span style="color:#ffe033;font-size:13px">★</span>',    lbl:'COG Site'           }},
   'Nuclear Sites':      {{ ico:'<span style="font-size:12px">⚛️</span>',                 lbl:'Nuclear Site'       }},
   'USO Sites':          {{ ico:'<span style="font-size:12px">🌊</span>',                 lbl:'USO Site'           }},
-  'Missing Scientists': {{ ico:'<span style="font-size:12px">☢️</span>',                 lbl:'Missing Scientist'  }},
+  'Missing Scientists':    {{ ico:'<span style="font-size:12px">☢️</span>',                                       lbl:'Missing Scientist'       }},
+  'Scientist Connections': {{ ico:'<span style="color:#ffcc00;font-size:10px">- - -</span>',                     lbl:'Scientist connection'    }},
+  'Chinese Scientists':    {{ ico:'<span style="font-size:12px">☣️</span>',                                       lbl:'Chinese Scientist'       }},
+  'Whistleblowers':        {{ ico:'<span style="font-size:12px">📢</span>',                                       lbl:'UAP Whistleblower'       }},
   'Missing 411':            {{ ico:'<span style="font-size:12px">🔴</span>',  lbl:'Missing 411'            }},
   'Reddit Missing Reports': {{ ico:'<span style="font-size:12px">🔍</span>',  lbl:'Reddit Missing Report'  }},
   'Power & Secrecy':        {{ ico:'<span style="font-size:12px">🦉</span>',  lbl:'Power / Secrecy Site'   }},
@@ -1646,6 +2182,7 @@ const LEGEND_DEFS = {{
   'Classic Cases':               {{ ico:'<span style="color:#ffd700;font-size:12px">🔍</span>',    lbl:'Classic UAP Case'         }},
   'Pilot Reports':        {{ ico:'<span style="font-size:12px">✈️</span>',                  lbl:'Notable Pilot UAP Report' }},
   'ASA Reports':                 {{ ico:'<span style="font-size:12px">🛩️</span>',                  lbl:'ASA Report'               }},
+  'Convergence Zones':           {{ ico:'<span style="font-size:12px">☢️</span>',                  lbl:'Convergence Zone (sightings+abductions+base)'  }},
   'Seismic Activity':            {{ ico:'<span style="font-size:12px">🌋</span>',                  lbl:'Earthquake (USGS)'        }},
   'Humanoid Encounters':         {{ ico:'<span style="font-size:12px">🫥</span>',                  lbl:'Humanoid Encounter'       }},
   'Elongated Skulls':            {{ ico:'<span style="font-size:12px">💀</span>',                  lbl:'Elongated Skull / Mummy'  }},
@@ -1744,6 +2281,8 @@ function updateHeaderHeight() {{
   document.documentElement.style.setProperty('--header-h', h + 'px');
 }}
 updateHeaderHeight();
+// On mobile, layers panel starts closed — user taps LAYERS to open
+if (window.innerWidth <= 768) {{ toggleLayerPanel(false); }}
 window.addEventListener('resize', updateHeaderHeight);
 
 // ── Filter events ───────────────────────────────────────────
@@ -1852,6 +2391,26 @@ const MB_LAYERS = [
        'circle-opacity':           0.95,
        'circle-stroke-width':      5,
        'circle-stroke-color':      'rgba(255,255,255,0.3)',
+       'circle-emissive-strength': 1,
+     }}}},
+  // Chinese scientists: orange pulse
+  {{ id:'chinese-scientists', data:() => CHINESE_SCIENTISTS,
+     name:'Chinese Scientists', paint:{{
+       'circle-radius':            ['interpolate',['linear'],['zoom'], 1,6, 3,10, 7,18],
+       'circle-color':             '#ff6600',
+       'circle-opacity':           0.95,
+       'circle-stroke-width':      5,
+       'circle-stroke-color':      'rgba(255,102,0,0.3)',
+       'circle-emissive-strength': 1,
+     }}}},
+  // Whistleblowers: gold pulse
+  {{ id:'whistleblowers', data:() => WHISTLEBLOWERS,
+     name:'Whistleblowers', paint:{{
+       'circle-radius':            ['interpolate',['linear'],['zoom'], 1,6, 3,10, 7,18],
+       'circle-color':             '#ffdd00',
+       'circle-opacity':           0.95,
+       'circle-stroke-width':      5,
+       'circle-stroke-color':      'rgba(255,221,0,0.3)',
        'circle-emissive-strength': 1,
      }}}},
   // Reddit Missing Reports: dark blood-red
@@ -2367,6 +2926,610 @@ document.getElementById('controls-toggle').addEventListener('click', () => {{
   bar.classList.toggle('open');
 }});
 
+// ── Connections diagram ────────────────────────────────────
+(function() {{
+
+const CANVAS_W = 2400, CANVAS_H = 2400;
+
+// ── Institution / power-broker nodes (not in main data arrays) ──
+const _INST_NODES = {{
+  'NASA': {{
+    name:'NASA', emoji:'🚀', status:'FEDERAL AGENCY',
+    affiliation:'National Aeronautics and Space Administration',
+    location:'Washington, DC / 20 field centers',
+    date:'Est. 1958',
+    notes:`NASA operates 20 field centers including JPL (Pasadena CA), Marshall Space Flight Center (Huntsville AL), and Johnson Space Center (Houston TX). Multiple scientists connected to anomalous deaths or disappearances worked directly for NASA or its interagency partners. NASA's advanced propulsion, astrophysics, and planetary science divisions are disproportionately represented in this database — suggesting the concentration of fatalities is not random.`
+  }},
+  'Lockheed Skunk Works': {{
+    name:'Lockheed Skunk Works', emoji:'🛸', status:'DEFENSE CONTRACTOR — CLASSIFIED PROGRAMS',
+    affiliation:'Lockheed Martin Advanced Development Programs',
+    location:'Palmdale, CA (Site 4 / Plant 42)',
+    date:'Est. 1943',
+    notes:`Lockheed Martin's classified Advanced Development Programs division responsible for the U-2, SR-71, F-117, and numerous black-budget programs. Multiple government whistleblowers — including David Grusch and Bob Lazar — have named Lockheed as a key contractor involved in UAP crash retrieval and reverse-engineering programs. Former Skunk Works director Ben Rich reportedly stated before his death: "We already have the means to travel among the stars, but these technologies are locked up in black projects."`
+  }},
+  'Raytheon Technologies': {{
+    name:'Raytheon Technologies', emoji:'🎯', status:'DEFENSE CONTRACTOR — DEW / PROPULSION',
+    affiliation:'RTX Corporation (formerly Raytheon)',
+    location:'Arlington, VA',
+    date:'Founded 1922',
+    notes:`Major US defense contractor specializing in missile systems, directed energy weapons, and advanced propulsion. Held multiple contracts with AFRL at Kirtland AFB during the same period Neil McCasland oversaw a $2.2B AFRL science portfolio. Raytheon's classified propulsion research overlaps with the Mondaloy superalloy applications documented in McCasland's and Reza's program. Raytheon is also a primary contractor for DARPA hypersonic and directed energy programs.`
+  }},
+  'Boeing Defense': {{
+    name:'Boeing Defense', emoji:'✈️', status:'DEFENSE CONTRACTOR — SPACE / PROPULSION',
+    affiliation:'Boeing Defense, Space & Security',
+    location:'Arlington, VA',
+    date:'Founded 1916',
+    notes:`Boeing's defense division holds major contracts for space launch vehicles, propulsion systems, and classified aerospace programs. Primary contractor for NASA's Space Launch System (SLS), built at Marshall Space Flight Center in Huntsville AL — the same facility where Joshua LeBlanc worked before his death. Boeing's Phantom Works division handles black-budget aerospace programs that have never been publicly acknowledged.`
+  }},
+  'Bilderberg Group': {{
+    name:'Bilderberg Group', emoji:'🦉', status:'POWER NETWORK — ANNUAL INVITATION-ONLY MEETING',
+    affiliation:'Private / Global Elite Forum',
+    location:'Annual meeting — various European venues',
+    date:'Est. 1954',
+    notes:`Annual invitation-only conference of approximately 130 political leaders, finance executives, intelligence directors, and defense contractor CEOs. Held under Chatham House Rule — no official record of what is discussed. Defense contractors including Lockheed, Raytheon, and Boeing executives have attended. Government whistleblowers including Lou Elizondo have noted that UAP disclosure decisions are made not through elected officials but through a private contractor and intelligence network that overlaps with organizations like Bilderberg.`
+  }},
+  'Rothschild & Co': {{
+    name:'Rothschild & Co', emoji:'🏦', status:'POWER NETWORK — GLOBAL INVESTMENT BANKING',
+    affiliation:'Rothschild & Co / Family Office',
+    location:'London / Paris / New York',
+    date:'Est. 1811',
+    notes:`Global investment banking and financial advisory firm with 200+ years of influence over European and American defense, energy, and technology sectors. The family has financed wars, governments, and infrastructure across multiple centuries. Documented connections to aerospace and defense financing include advisory roles in major defense mergers. The family's Waddesdon Manor estate hosted private meetings attended by Western intelligence directors during the Cold War. Multiple UAP researchers have documented Rothschild-connected individuals on the boards of key defense contractors.`
+  }},
+}};
+
+// ── Radial / spider-web layout — NASA HUB at center (1200,1200), all clusters
+//    at 780px radius using clock positions. Canvas 2400×2400.
+//    Clock → screen angle: 12=270°, 3=0°, 6=90°, 9=180°  (y increases downward)
+//    x,y = top-left of cluster box (estimated from box size vs radial centre)
+const _CONN_CLUSTERS = [
+  // ── NASA HUB — canvas centre ──────────────────────────────
+  {{ id:'nasa',       label:'NASA HUB',            color:'#ff8800', x:1120, y:1110,
+     members:['NASA'] }},
+  // ── 10 o'clock (angle 210°) — JPL ────────────────────────
+  {{ id:'jpl',        label:'JPL / CALTECH',        color:'#00cc44', x:334,  y:670,
+     members:['Frank Maiwald','Michael David Hicks','Carl Grillmair','Monica Reza','Dallis Hardwick'] }},
+  // ── 11 o'clock (angle 240°) — Los Alamos ─────────────────
+  {{ id:'lanl',       label:'LOS ALAMOS / KCNSC',  color:'#00cc44', x:650,  y:414,
+     members:['Anthony Chavez','Melissa Casias','Steven Garcia'] }},
+  // ── 2 o'clock (angle 330°) — Massachusetts ───────────────
+  {{ id:'ma',         label:'MASSACHUSETTS',        color:'#ff2244', x:1746, y:700,
+     members:['Jason Thomas','Nuno Loureiro'] }},
+  // ── 3 o'clock (angle 0°) — China ─────────────────────────
+  {{ id:'china',      label:'CHINA / NUDT',         color:'#ff2244', x:1790, y:980,
+     members:['Feng Yanghe','Zhang Xiaoxin','Chen Shuming','Fang Daining','Yan Hong',
+               'Zhang Daibing','Liu Donghao','Zhou Guangyuan','Li Minyong'] }},
+  // ── 4 o'clock (angle 30°) — AFRL ─────────────────────────
+  {{ id:'afrl',       label:'AFRL / KIRTLAND',     color:'#ffaa00', x:1776, y:1490,
+     members:['Neil McCasland'] }},
+  // ── 5 o'clock (angle 60°) — Power Networks ───────────────
+  {{ id:'power',      label:'POWER NETWORKS',       color:'#ffd700', x:1400, y:1736,
+     members:['Lockheed Skunk Works','Raytheon Technologies','Boeing Defense','Bilderberg Group','Rothschild & Co'] }},
+  // ── 6 o'clock (angle 90°) — Huntsville ───────────────────
+  {{ id:'al',         label:'HUNTSVILLE CLUSTER',   color:'#ff6600', x:1000, y:1990,
+     members:['Joshua LeBlanc','Ning Li','Amy Eskridge',"James 'Tony' Moffatt + Family"] }},
+  // ── 7 o'clock (angle 120°) — AATIP ───────────────────────
+  {{ id:'disclosure', label:'AATIP / PENTAGON',     color:'#00aaff', x:450,  y:1766,
+     members:['Lou Elizondo','Christopher Mellon','David Grusch'] }},
+  // ── 9 o'clock (angle 180°) — UAP Disclosure ──────────────
+  {{ id:'uap',        label:'UAP DISCLOSURE',       color:'#cc88ff', x:260,  y:1090,
+     members:['David Wilcock','Wynn Free','Matthew James Sullivan'] }},
+];
+
+// ── Cross-cluster named connection lines ──────────────────────
+const _CROSS_LINKS = [
+  // Mondaloy chain
+  {{ from:'Dallis Hardwick',   to:'Monica Reza',             label:'MONDALOY CO-INVENTORS',    color:'#ffcc00', dash:'10 5' }},
+  {{ from:'Monica Reza',       to:'Neil McCasland',           label:'MONDALOY SUPERALLOY',      color:'#ffcc00', dash:'10 5' }},
+  // NASA institutional oversight
+  {{ from:'NASA',              to:'Frank Maiwald',            label:'JPL OVERSIGHT',            color:'#ff8800', dash:'6 4' }},
+  {{ from:'NASA',              to:'Neil McCasland',           label:'AFRL PARTNERSHIP',         color:'#ff8800', dash:'6 4' }},
+  {{ from:'NASA',              to:'Joshua LeBlanc',           label:'MSFC / NTP PROGRAM',       color:'#ff8800', dash:'6 4' }},
+  // Intelligence / disclosure links
+  {{ from:'Matthew James Sullivan', to:'Lou Elizondo',        label:'INTEL WHISTLEBLOWERS',     color:'#cc88ff', dash:'8 4' }},
+  {{ from:'David Grusch',      to:'Matthew James Sullivan',   label:'CONGRESSIONAL TESTIMONY',  color:'#cc88ff', dash:'8 4' }},
+  // Huntsville corridor
+  {{ from:'Joshua LeBlanc',    to:'Amy Eskridge',             label:'HUNTSVILLE CORRIDOR',      color:'#ff6600', dash:'6 5' }},
+  {{ from:"James 'Tony' Moffatt + Family", to:'David Wilcock', label:'72-HR WINDOW',           color:'#cc88ff', dash:'8 4' }},
+  // Power broker contractor connections
+  {{ from:'Lockheed Skunk Works', to:'Neil McCasland',        label:'CLASSIFIED CONTRACTS',     color:'#ffd700', dash:'10 5' }},
+  {{ from:'Raytheon Technologies', to:'Neil McCasland',       label:'DEW / PROPULSION',         color:'#ffd700', dash:'10 5' }},
+  {{ from:'Boeing Defense',    to:'Joshua LeBlanc',           label:'SLS / MSFC CONTRACTS',     color:'#ffd700', dash:'10 5' }},
+  {{ from:'Bilderberg Group',  to:'Lou Elizondo',             label:'DISCLOSURE CONTROL',       color:'#ffd700', dash:'10 5' }},
+  // China / silent scientist war
+  {{ from:'Feng Yanghe',       to:'NASA',                     label:'PARALLEL PATTERN / SILENT SCIENTIST WAR', color:'#ff2244', dash:'16 6' }},
+];
+
+// ── Helpers ───────────────────────────────────────────────────
+function _findSubject(name) {{
+  return MISSING_SCIENTISTS.find(s => s.name === name)
+      || WHISTLEBLOWERS.find(s => s.name === name)
+      || CHINESE_SCIENTISTS.find(s => s.name === name)
+      || _INST_NODES[name]
+      || null;
+}}
+
+function _statusMeta(sci) {{
+  const st = (sci.status || '').toLowerCase();
+  if (st.includes('murder'))                                    return {{ color:'#ff0000' }};
+  if (st.includes('dead'))                                      return {{ color:'#ff2244' }};
+  if (st.includes('active') || (sci.emoji && sci.emoji==='📢')) return {{ color:'#00aaff' }};
+  if (st.includes('federal') || st.includes('contractor') || st.includes('network'))
+                                                                return {{ color:'#ff8800' }};
+  return {{ color:'#ffaa00' }};
+}}
+
+// ── Transform state ───────────────────────────────────────────
+let _tx = 0, _ty = 0, _scale = 1;
+let _connScale = 1;   // alias used by nodeCenter()
+let _focusedCluster = null;
+
+function _applyTransform(inner) {{
+  inner.style.transform = `translate(${{_tx}}px, ${{_ty}}px) scale(${{_scale}})`;
+  _connScale = _scale;
+}}
+
+// ── Fit entire diagram to canvas ──────────────────────────────
+function fitDiagram() {{
+  const canvas = document.getElementById('conn-canvas');
+  const inner  = document.getElementById('conn-inner');
+  if (!canvas || !inner) return;
+  const cw = canvas.clientWidth  - 10;
+  const ch = canvas.clientHeight - 50;
+  _scale = Math.min(cw / CANVAS_W, ch / CANVAS_H, 1);
+  _tx = Math.max(0, (canvas.clientWidth  - CANVAS_W * _scale) / 2);
+  _ty = Math.max(0, (canvas.clientHeight - CANVAS_H * _scale) / 2);
+  _applyTransform(inner);
+  _focusedCluster = null;
+  document.querySelectorAll('.cc-box').forEach(b => b.classList.remove('cc-dimmed'));
+  document.getElementById('cz-back').style.display = 'none';
+  buildConnDiagram();
+}}
+
+// Opens diagram at ~0.7 scale so faces are readable; falls back to fit if screen is too small
+function _openDiagram() {{
+  const canvas = document.getElementById('conn-canvas');
+  const inner  = document.getElementById('conn-inner');
+  if (!canvas || !inner) return;
+  const cw = canvas.clientWidth;
+  const ch = canvas.clientHeight - 50;
+  const fitScale = Math.min((cw - 10) / CANVAS_W, ch / CANVAS_H, 1);
+  _scale = Math.max(fitScale, 0.7); // 0.7 if it fits, otherwise use full-fit
+  _tx = Math.max(0, (cw - CANVAS_W * _scale) / 2);
+  _ty = Math.max(0, (ch - CANVAS_H * _scale) / 2);
+  _focusedCluster = null;
+  _applyTransform(inner);
+  document.querySelectorAll('.cc-box').forEach(b => b.classList.remove('cc-dimmed'));
+  document.getElementById('cz-back').style.display = 'none';
+  buildConnDiagram();
+}}
+
+// ── Zoom centred on point (cx,cy in canvas screen coords) ─────
+function _zoomAt(cx, cy, ratio) {{
+  const inner = document.getElementById('conn-inner');
+  if (!inner) return;
+  const newScale = Math.max(0.12, Math.min(4, _scale * ratio));
+  // Keep the logical point under the cursor fixed
+  const lx = (cx - _tx) / _scale;
+  const ly = (cy - _ty) / _scale;
+  _tx = cx - lx * newScale;
+  _ty = cy - ly * newScale;
+  _scale = newScale;
+  _applyTransform(inner);
+}}
+
+// ── Focus on a single cluster ─────────────────────────────────
+function _focusCluster(clusterId) {{
+  _focusedCluster = clusterId;
+  const cluster = _CONN_CLUSTERS.find(c => c.id === clusterId);
+  if (!cluster) return;
+
+  // Find names that connect TO this cluster via cross-links
+  const memberSet = new Set(cluster.members);
+  const relatedNames = new Set(cluster.members);
+  _CROSS_LINKS.forEach(lk => {{
+    if (cluster.members.includes(lk.from)) relatedNames.add(lk.to);
+    if (cluster.members.includes(lk.to))   relatedNames.add(lk.from);
+  }});
+
+  // Find cluster ids that contain any related name
+  const relatedIds = new Set([clusterId]);
+  _CONN_CLUSTERS.forEach(c => {{
+    if (c.members.some(m => relatedNames.has(m))) relatedIds.add(c.id);
+  }});
+
+  // Dim / undim boxes
+  document.querySelectorAll('.cc-box').forEach(box => {{
+    box.classList.toggle('cc-dimmed', !relatedIds.has(box.dataset.cid));
+  }});
+  document.getElementById('cz-back').style.display = 'inline-block';
+
+  // Zoom to the focused cluster box
+  const inner = document.getElementById('conn-inner');
+  const canvas = document.getElementById('conn-canvas');
+  const box = inner.querySelector(`[data-cid="${{clusterId}}"]`);
+  if (!box) return;
+
+  // Give the browser a frame to render then measure
+  requestAnimationFrame(() => {{
+    const pad = 120;
+    const bw  = box.offsetWidth  || 200;
+    const bh  = box.offsetHeight || 200;
+    const cw  = canvas.clientWidth;
+    const ch  = canvas.clientHeight - 50;
+    const ns  = Math.min(cw / (bw + pad*2), ch / (bh + pad*2), 4);
+    _scale = ns;
+    _tx = (cw - bw * ns) / 2 - cluster.x * ns;
+    _ty = (ch - bh * ns) / 2 - cluster.y * ns;
+    _applyTransform(inner);
+    buildConnDiagram();
+  }});
+}}
+
+// ── Build the diagram ─────────────────────────────────────────
+let _nodeEls = {{}};
+
+function buildConnDiagram() {{
+  const inner = document.getElementById('conn-inner');
+  const svg   = document.getElementById('conn-svg');
+  if (!inner || !svg) return;
+  inner.querySelectorAll('.cc-box').forEach(e => e.remove());
+  svg.innerHTML = '';
+  _nodeEls = {{}};
+
+  _CONN_CLUSTERS.forEach(cluster => {{
+    const box = document.createElement('div');
+    box.className = 'cc-box';
+    box.dataset.cid = cluster.id;
+    box.style.cssText = `left:${{cluster.x}}px;top:${{cluster.y}}px;border-color:${{cluster.color}}44;`;
+
+    // Re-apply dim state if in focus mode
+    if (_focusedCluster) {{
+      const relatedIds = _getRelatedIds(_focusedCluster);
+      if (!relatedIds.has(cluster.id)) box.classList.add('cc-dimmed');
+    }}
+
+    // Click on box background → focus cluster
+    box.addEventListener('click', e => {{
+      if (!e.target.closest('.cc-node')) _focusCluster(cluster.id);
+    }});
+
+    const lbl = document.createElement('div');
+    lbl.className = 'cc-label';
+    lbl.style.cssText = `color:${{cluster.color}};border-color:${{cluster.color}}44;`;
+    lbl.textContent = cluster.label;
+    box.appendChild(lbl);
+
+    const nodesDiv = document.createElement('div');
+    nodesDiv.className = 'cc-nodes';
+
+    cluster.members.forEach(name => {{
+      const sci = _findSubject(name);
+      if (!sci) return;
+      const {{ color }} = _statusMeta(sci);
+      const isInst = !!_INST_NODES[name];
+      const isChinese = !isInst && !!CHINESE_SCIENTISTS.find(s => s.name === name);
+      const fallbackEmoji = sci.emoji || (isInst ? '🏛' : '☢️');
+
+      const node = document.createElement('div');
+      node.className = 'cc-node' + (isInst ? ' cc-node-inst' : '');
+      node.dataset.name = name;
+
+      const ring = document.createElement('div');
+      ring.className = 'cc-node-ring';
+      ring.style.borderColor = color;
+      ring.style.boxShadow = `0 0 ${{isInst ? 16 : 8}}px ${{color}}${{isInst ? 'aa' : '55'}}`;
+
+      if (sci.photo) {{
+        const img = document.createElement('img');
+        img.src = sci.photo; img.alt = name;
+        img.onerror = () => {{ ring.textContent = fallbackEmoji; }};
+        ring.appendChild(img);
+      }} else {{
+        ring.textContent = fallbackEmoji;
+      }}
+
+      const nameLbl = document.createElement('div');
+      nameLbl.className = 'cc-node-name';
+      nameLbl.style.color = color;
+      // Show first + last name only to keep labels short
+      const parts = name.replace(/['"]/g,'').trim().split(' ');
+      nameLbl.textContent = parts.length > 2
+        ? parts[0] + ' ' + parts[parts.length-1]
+        : name;
+
+      node.appendChild(ring);
+      node.appendChild(nameLbl);
+      node.addEventListener('click', e => {{
+        e.stopPropagation();
+        showConnDetail(sci, color, node);
+      }});
+      nodesDiv.appendChild(node);
+      _nodeEls[name] = node;
+    }});
+
+    box.appendChild(nodesDiv);
+    inner.appendChild(box);
+  }});
+
+  // Draw SVG curves after layout
+  requestAnimationFrame(() => {{
+    function nodeCenter(name) {{
+      const el = _nodeEls[name];
+      if (!el) return null;
+      const er = el.getBoundingClientRect();
+      const ir = inner.getBoundingClientRect();
+      return {{
+        x: (er.left - ir.left + er.width  / 2) / _connScale,
+        y: (er.top  - ir.top  + er.height / 2) / _connScale,
+      }};
+    }}
+
+    function drawCurve(a, b, color, dash, opacity, label, curveFactor, strokeWidth) {{
+      const g = document.createElementNS('http://www.w3.org/2000/svg','g');
+      const dx = b.x-a.x, dy = b.y-a.y;
+      const len = Math.sqrt(dx*dx+dy*dy) || 1;
+      const cf = curveFactor !== undefined ? curveFactor : Math.min(220, len*0.45);
+      // Perpendicular control point offset
+      const cpx = (a.x+b.x)/2 + (-dy/len)*cf;
+      const cpy = (a.y+b.y)/2 + ( dx/len)*cf;
+      const d = `M${{a.x}},${{a.y}} Q${{cpx}},${{cpy}} ${{b.x}},${{b.y}}`;
+
+      const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+      path.setAttribute('d', d);
+      path.setAttribute('fill','none');
+      path.setAttribute('stroke', color);
+      path.setAttribute('stroke-width', strokeWidth || '1.8');
+      path.setAttribute('stroke-dasharray', dash||'6 4');
+      path.setAttribute('stroke-opacity', opacity||'0.6');
+      g.appendChild(path);
+
+      if (label) {{
+        const mx = (a.x+2*cpx+b.x)/4, my = (a.y+2*cpy+b.y)/4;
+        const tw = label.length * 5.0 + 12;
+        const rect = document.createElementNS('http://www.w3.org/2000/svg','rect');
+        rect.setAttribute('x', mx-tw/2); rect.setAttribute('y', my-12);
+        rect.setAttribute('width', tw);  rect.setAttribute('height', 13);
+        rect.setAttribute('rx','2');     rect.setAttribute('fill','#020c12');
+        rect.setAttribute('fill-opacity','0.9');
+        g.appendChild(rect);
+        const txt = document.createElementNS('http://www.w3.org/2000/svg','text');
+        txt.setAttribute('x', mx); txt.setAttribute('y', my-2);
+        txt.setAttribute('text-anchor','middle');
+        txt.setAttribute('fill', color); txt.setAttribute('opacity','0.95');
+        txt.setAttribute('font-size','10.5');
+        txt.setAttribute('font-family',"'Share Tech Mono',monospace");
+        txt.setAttribute('letter-spacing','0.8');
+        txt.textContent = label;
+        g.appendChild(txt);
+      }}
+      svg.appendChild(g);
+    }}
+
+    // ── NASA hub spokes (drawn first so they appear behind nodes) ──
+    const _nasaC = nodeCenter('NASA');
+    if (_nasaC) {{
+      _CONN_CLUSTERS.forEach(cl => {{
+        if (cl.id === 'nasa') return;
+        // Use first available member as cluster representative
+        const rep = cl.members.map(m => nodeCenter(m)).find(Boolean);
+        if (!rep) return;
+        const isChina = cl.id === 'china';
+        drawCurve(_nasaC, rep,
+          isChina ? '#ff2244' : '#ff8800',
+          isChina ? '12 6'   : '6 8',
+          isChina ? 0.28     : 0.13,
+          null, 0, isChina ? 1.5 : 1);
+      }});
+    }}
+
+    // Intra-cluster lines (light, thin)
+    _CONN_CLUSTERS.forEach(cluster => {{
+      const m = cluster.members.filter(n => _nodeEls[n]);
+      if (m.length < 2) return;
+      const lc = cluster.id==='ma' ? '#ff2244'
+               : cluster.id==='al' ? '#ff6600'
+               : cluster.color;
+      for (let i=0; i<m.length-1; i++) {{
+        for (let j=i+1; j<m.length; j++) {{
+          const a=nodeCenter(m[i]), b=nodeCenter(m[j]);
+          if (a&&b) drawCurve(a, b, lc, '4 6', 0.3, null, 20, 0.5);
+        }}
+      }}
+    }});
+
+    // Cross-cluster named links (prominent, outward-arcing)
+    _CROSS_LINKS.forEach(link => {{
+      const a=nodeCenter(link.from), b=nodeCenter(link.to);
+      if (a&&b) drawCurve(a, b, link.color, link.dash, 0.82, link.label);
+    }});
+  }});
+}}
+
+function _getRelatedIds(clusterId) {{
+  const cluster = _CONN_CLUSTERS.find(c => c.id === clusterId);
+  if (!cluster) return new Set();
+  const relatedNames = new Set(cluster.members);
+  _CROSS_LINKS.forEach(lk => {{
+    if (cluster.members.includes(lk.from)) relatedNames.add(lk.to);
+    if (cluster.members.includes(lk.to))   relatedNames.add(lk.from);
+  }});
+  const ids = new Set([clusterId]);
+  _CONN_CLUSTERS.forEach(c => {{
+    if (c.members.some(m => relatedNames.has(m))) ids.add(c.id);
+  }});
+  return ids;
+}}
+
+// ── Detail slide-out panel ────────────────────────────────────
+function showConnDetail(sci, color, nodeEl) {{
+  document.querySelectorAll('.cc-node').forEach(n => n.classList.remove('cn-active'));
+  if (nodeEl) nodeEl.classList.add('cn-active');
+  const panel = document.getElementById('conn-detail');
+  const fallbackEmoji = sci.emoji || '☢️';
+  const photoHtml = sci.photo
+    ? `<div class="cd-photo" style="border-color:${{color}};"><img src="${{sci.photo}}" onerror="this.parentElement.textContent='${{fallbackEmoji}}'"></div>`
+    : `<div class="cd-photo" style="border-color:${{color}};font-size:28px;">${{fallbackEmoji}}</div>`;
+  panel.innerHTML = `
+    <button id="cd-close">✕ CLOSE</button>
+    ${{photoHtml}}
+    <div class="cd-name">${{sci.name}}</div>
+    <div class="cd-status" style="color:${{color}};">${{sci.status}}</div>
+    <div class="cd-meta">📅 ${{sci.date}}</div>
+    <div class="cd-meta">📍 ${{sci.location}}</div>
+    <div class="cd-meta" style="margin-bottom:6px;">🏛 ${{sci.affiliation}}</div>
+    <div class="cd-notes">${{sci.notes}}</div>
+  `;
+  panel.classList.add('open');
+  document.getElementById('cd-close').addEventListener('click', () => {{
+    panel.classList.remove('open');
+    document.querySelectorAll('.cc-node').forEach(n => n.classList.remove('cn-active'));
+  }});
+}}
+
+// ── Pan & pinch-to-zoom (pointer events) ─────────────────────
+(function() {{
+  const canvas = document.getElementById('conn-canvas');
+  const ptrs   = new Map();
+  let _panRef  = null, _pinchRef = null;
+  let _redrawTimer = null;
+
+  function scheduleRedraw() {{
+    clearTimeout(_redrawTimer);
+    _redrawTimer = setTimeout(buildConnDiagram, 120);
+  }}
+
+  canvas.addEventListener('pointerdown', e => {{
+    // Don't capture pointer if clicking a control button
+    if (e.target.closest('button, .cz-btn')) return;
+    ptrs.set(e.pointerId, {{x:e.clientX, y:e.clientY}});
+    canvas.setPointerCapture(e.pointerId);
+    if (ptrs.size === 1) {{
+      _panRef = {{x:e.clientX - _tx, y:e.clientY - _ty}};
+      canvas.classList.add('panning');
+    }}
+    if (ptrs.size === 2) {{
+      const [p1,p2] = [...ptrs.values()];
+      _pinchRef = Math.hypot(p2.x-p1.x, p2.y-p1.y);
+      _panRef = null;
+    }}
+  }});
+
+  canvas.addEventListener('pointermove', e => {{
+    if (!ptrs.has(e.pointerId)) return;
+    ptrs.set(e.pointerId, {{x:e.clientX, y:e.clientY}});
+    const inner = document.getElementById('conn-inner');
+    if (!inner) return;
+
+    if (ptrs.size === 2) {{
+      const [p1,p2] = [...ptrs.values()];
+      const dist = Math.hypot(p2.x-p1.x, p2.y-p1.y);
+      if (_pinchRef) {{
+        const cx = (p1.x+p2.x)/2 - canvas.getBoundingClientRect().left;
+        const cy = (p1.y+p2.y)/2 - canvas.getBoundingClientRect().top;
+        _zoomAt(cx, cy, 1 + (dist - _pinchRef) * 0.003);
+      }}
+      _pinchRef = dist;
+      scheduleRedraw();
+    }} else if (ptrs.size === 1 && _panRef) {{
+      _tx = e.clientX - _panRef.x;
+      _ty = e.clientY - _panRef.y;
+      _applyTransform(inner);
+    }}
+  }});
+
+  function endPointer(e) {{
+    ptrs.delete(e.pointerId);
+    canvas.classList.remove('panning');
+    if (ptrs.size < 2) _pinchRef = null;
+    if (ptrs.size === 0) {{ _panRef = null; buildConnDiagram(); }}
+  }}
+  canvas.addEventListener('pointerup',     endPointer);
+  canvas.addEventListener('pointercancel', endPointer);
+
+  // Mouse wheel zoom
+  canvas.addEventListener('wheel', e => {{
+    e.preventDefault();
+    const cr  = canvas.getBoundingClientRect();
+    const ratio = 1 + (-e.deltaY * 0.003);
+    _zoomAt(e.clientX - cr.left, e.clientY - cr.top, ratio);
+    scheduleRedraw();
+  }}, {{passive:false}});
+}})();
+
+// ── Button & keyboard controls ────────────────────────────────
+document.getElementById('conn-btn').addEventListener('click', () => {{
+  document.getElementById('conn-overlay').classList.add('active');
+  fitDiagram();
+}});
+document.getElementById('conn-close').addEventListener('click', () => {{
+  document.getElementById('conn-overlay').classList.remove('active');
+}});
+document.getElementById('cz-fit').addEventListener('click', fitDiagram);
+document.getElementById('cz-back').addEventListener('click', () => {{
+  _focusedCluster = null;
+  fitDiagram();
+}});
+document.getElementById('cz-in').addEventListener('click', () => {{
+  const inner = document.getElementById('conn-inner');
+  const canvas = document.getElementById('conn-canvas');
+  const cr = canvas.getBoundingClientRect();
+  _zoomAt(cr.width/2, cr.height/2, 1.25);
+  buildConnDiagram();
+}});
+document.getElementById('cz-out').addEventListener('click', () => {{
+  const inner = document.getElementById('conn-inner');
+  const canvas = document.getElementById('conn-canvas');
+  const cr = canvas.getBoundingClientRect();
+  _zoomAt(cr.width/2, cr.height/2, 0.8);
+  buildConnDiagram();
+}});
+window.addEventListener('resize', () => {{
+  if (document.getElementById('conn-overlay').classList.contains('active') && !_focusedCluster) {{
+    fitDiagram();
+  }}
+}});
+document.addEventListener('keydown', e => {{
+  const ov = document.getElementById('conn-overlay');
+  if (!ov.classList.contains('active')) return;
+  if (e.key === 'Escape') {{ ov.classList.remove('active'); return; }}
+  if (e.key === 'f' || e.key === 'F') {{ fitDiagram(); return; }}
+  if (e.key === '+' || e.key === '=') {{
+    const canvas = document.getElementById('conn-canvas');
+    const cr = canvas.getBoundingClientRect();
+    _zoomAt(cr.width/2, cr.height/2, 1.2); buildConnDiagram(); return;
+  }}
+  if (e.key === '-' || e.key === '_') {{
+    const canvas = document.getElementById('conn-canvas');
+    const cr = canvas.getBoundingClientRect();
+    _zoomAt(cr.width/2, cr.height/2, 0.83); buildConnDiagram(); return;
+  }}
+  if (e.key === 'Backspace' && _focusedCluster) {{ _focusedCluster=null; fitDiagram(); }}
+}});
+
+}})(); // end connections IIFE
+
+// ── Welcome modal ────────────────────────────────────────────
+(function() {{
+  const modal = document.getElementById('welcome-modal');
+  const btn   = document.getElementById('wm-enter');
+  if (!modal || !btn) return;
+  // Show once per session
+  if (!sessionStorage.getItem('ufomap_welcomed')) {{
+    modal.classList.add('active');
+  }}
+  btn.addEventListener('click', () => {{
+    modal.classList.remove('active');
+    sessionStorage.setItem('ufomap_welcomed', '1');
+  }});
+  // Also dismiss on backdrop click (outside the doc)
+  modal.addEventListener('click', e => {{
+    if (e.target === modal) {{
+      modal.classList.remove('active');
+      sessionStorage.setItem('ufomap_welcomed', '1');
+    }}
+  }});
+}})();
+
 </script>
 </body>
 </html>"""
@@ -2404,6 +3567,8 @@ if __name__ == "__main__":
         missing_411              = data.get("missing_411", []),
         reddit_missing           = reddit_missing,
         missing_scientists       = _MISSING_SCIENTISTS_LIVE,
+        chinese_scientists       = _CHINESE_SCIENTISTS_LIVE,
+        whistleblowers           = _WHISTLEBLOWERS_LIVE,
         parallel_33_sites        = data.get("parallel_33_sites", []),
         nuclear_sites            = data.get("nuclear_sites", []),
         cattle_mutilation_sites  = data.get("cattle_mutilation_sites", []),
