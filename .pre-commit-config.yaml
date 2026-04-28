@@ -1,0 +1,38 @@
+# Pre-commit hooks for UFO-MAP.
+#
+# Setup:
+#   python3 -m pip install -r requirements-dev.txt
+#   pre-commit install
+#
+# Hooks then run automatically on every `git commit`. To run on every file
+# manually:  pre-commit run --all-files
+#
+# To bypass in an emergency (NOT recommended):  git commit --no-verify
+
+repos:
+  # ── Generic hygiene + safety nets ────────────────────────────────────────
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-json
+      - id: check-toml
+      - id: detect-private-key
+      - id: check-added-large-files
+        # Cap at 500 KB. The bulk NUFORC CSV is excluded because it's a
+        # legitimate input dataset (~14 MB). Generated artifacts like
+        # ufo_data_export.json (~2.5 MB) and index.html (~1.8 MB) are blocked
+        # by this hook AND by .gitignore.
+        args: ['--maxkb=500']
+        exclude: '^UFO-MAP/nuforc_test\.csv$'
+
+  # ── Secret scanning ──────────────────────────────────────────────────────
+  # Scans staged content for known secret patterns (API keys, tokens, private
+  # keys, etc.). Blocks the commit if anything matches.
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.21.2
+    hooks:
+      - id: gitleaks
