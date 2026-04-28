@@ -802,7 +802,9 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
 .cc-node-name {{
   font-size:13px; letter-spacing:.03em; text-align:center;
   margin-top:8px; line-height:1.3; max-width:100px;
-  word-break:break-word; color:#c8ffc8;
+  word-break:break-word; color:#c8ffc8 !important;
+  background:rgba(2,8,16,0.82); padding:2px 5px; border-radius:3px;
+  position:relative; z-index:2;
 }}
 .cc-node.cn-active .cc-node-ring {{ box-shadow:0 0 24px #fff !important; border-color:#fff !important; transform:scale(1.1); }}
 .cc-node-inst .cc-node-ring {{ width:84px; height:84px; font-size:36px; }}
@@ -3260,7 +3262,7 @@ function buildConnDiagram() {{
 
       const nameLbl = document.createElement('div');
       nameLbl.className = 'cc-node-name';
-      nameLbl.style.color = color;
+      // color set via CSS (#c8ffc8) — do not override with status color here
       // Show first + last name only to keep labels short
       const parts = name.replace(/['"]/g,'').trim().split(' ');
       nameLbl.textContent = parts.length > 2
@@ -3475,8 +3477,8 @@ function showConnDetail(sci, color, nodeEl) {{
   }}
 
   canvas.addEventListener('pointerdown', e => {{
-    // Don't capture pointer if clicking a control button
-    if (e.target.closest('button, .cz-btn')) return;
+    // Don't capture pointer for buttons or scientist nodes (let click propagate naturally)
+    if (e.target.closest('button, .cz-btn, .cc-node')) return;
     ptrs.set(e.pointerId, {{x:e.clientX, y:e.clientY}});
     canvas.setPointerCapture(e.pointerId);
     if (ptrs.size === 1) {{
@@ -3514,6 +3516,7 @@ function showConnDetail(sci, color, nodeEl) {{
   }});
 
   function endPointer(e) {{
+    if (!ptrs.has(e.pointerId)) return; // pointer was never tracked (e.g. node click) — don't rebuild
     ptrs.delete(e.pointerId);
     canvas.classList.remove('panning');
     if (ptrs.size < 2) _pinchRef = null;
