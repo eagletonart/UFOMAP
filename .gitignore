@@ -1,4 +1,53 @@
-mapbox_token.txt
-.env
-*.env
+# ── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
 
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ── Secrets & environment ──────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# Mapbox token file
+UFO-MAP/mapbox_token.txt
+mapbox_token.txt
+
+# Generic credential files
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# ── Legacy scripts — excluded to prevent accidental credential exposure ─────
+ufo_map_1.py
+
+# ── Generated / runtime artifacts ──────────────────────────────────────────
+UFO-MAP/ufo_data_export.json
+UFO-MAP/index.html
+UFO-MAP/reddit_cache.json
+
+# ── Editor & OS ────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
