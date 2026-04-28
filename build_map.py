@@ -659,13 +659,17 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
   background:rgba(0,0,0,0.92); align-items:center; justify-content:center;
   font-family:'Share Tech Mono',monospace;
   animation:wm-fade-in 0.4s ease;
+  padding:16px; box-sizing:border-box;
+  overflow-y:auto;
 }}
 #welcome-modal.active {{ display:flex; }}
 @keyframes wm-fade-in {{ from {{ opacity:0; }} to {{ opacity:1; }} }}
 #wm-doc {{
-  position:relative; max-width:540px; width:90%; padding:40px 44px 36px;
+  position:relative; max-width:540px; width:100%; padding:40px 44px 36px;
   background:#020d08; border:1px solid #0f4;
   box-shadow:0 0 60px rgba(0,255,68,0.18), 0 0 0 1px #093 inset;
+  max-height:90vh; overflow-y:auto; box-sizing:border-box;
+  flex-shrink:0;
 }}
 #wm-doc::before {{
   content:'TOP SECRET // COMPARTMENTED // NOFORN';
@@ -711,6 +715,13 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
 #wm-enter:hover {{
   background:rgba(0,255,68,0.1); color:#fff;
   box-shadow:0 0 20px rgba(0,255,68,0.25);
+}}
+@media (max-width:480px) {{
+  #wm-doc {{ padding:28px 20px 24px; }}
+  #wm-title {{ font-size:.9rem; letter-spacing:.2em; }}
+  #wm-subtitle {{ font-size:.6rem; letter-spacing:.25em; margin-bottom:18px; }}
+  #wm-body {{ font-size:.72rem; margin-bottom:18px; }}
+  #wm-enter {{ font-size:.72rem; letter-spacing:.2em; padding:12px 0; }}
 }}
 
 #conn-overlay {{
