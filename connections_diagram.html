@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weaving Spiders — Network Analysis</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #050e0a; color: #a0e8c8; font-family: 'Share Tech Mono', monospace; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+#conn-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #0f4;
+  background: #050e0a;
+  flex-shrink: 0;
+}
+#conn-header h1 { font-size: 0.85rem; letter-spacing: 0.2em; color: #0f4; }
+#conn-header .stamp { color: #f44; font-size: 0.7rem; border: 1px solid #f44; padding: 2px 8px; letter-spacing: 0.15em; }
+#close-btn { background: transparent; border: 1px solid #0f4; color: #0f4; padding: 6px 14px; cursor: pointer; font-family: 'Share Tech Mono', monospace; font-size: 0.75rem; letter-spacing: 0.1em; }
+#close-btn:hover { background: #0f4; color: #050e0a; }
+
+#canvas-wrap {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+}
+#canvas-wrap:active { cursor: grabbing; }
+
+#diagram-canvas {
+  position: absolute;
+  top: 0; left: 0;
+  transform-origin: 0 0;
+}
+
+/* Node styles */
+.node-group { cursor: pointer; }
+.node-group:hover .node-ring { filter: brightness(1.3); }
+
+.node-photo {
+  width: 70px; height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  transform: translate(-35px, -35px);
+}
+.node-ring {
+  width: 74px; height: 74px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-37px, -37px);
+  border: 3px solid #f44;
+  background: transparent;
+  pointer-events: none;
+}
+.node-ring.missing { border-color: #fa0; }
+.node-ring.alive { border-color: #0f4; }
+.node-ring.institution { border-color: #fa0; border-style: dashed; }
+
+.node-label {
+  position: absolute;
+  transform: translate(-50%, 44px);
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: 'Share Tech Mono', monospace;
+  color: #fff;
+  background: rgba(0,0,0,0.85);
+  padding: 2px 6px;
+  border-radius: 2px;
+  text-align: center;
+  pointer-events: none;
+  max-width: 120px;
+  white-space: normal;
+  text-align: center;
+}
+
+.node-emoji {
+  width: 70px; height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-35px, -35px);
+  background: #0a1f14;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px;
+}
+
+.cluster-label {
+  position: absolute;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: #0f4;
+  background: rgba(0,0,0,0.7);
+  padding: 2px 8px;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+/* SVG canvas */
+#conn-svg {
+  position: absolute;
+  top: 0; left: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+
+/* Dossier panel */
+#dossier {
+  position: fixed;
+  top: 0; right: -420px;
+  width: 400px;
+  height: 100vh;
+  background: #050e0a;
+  border-left: 1px solid #0a3;
+  z-index: 100;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+  padding: 0;
+}
+#dossier.open { right: 0; }
+
+.dossier-header {
+  background: #0a1a10;
+  border-bottom: 1px solid #0a3;
+  padding: 12px 16px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.dossier-stamp { color: #f44; font-size: 0.65rem; border: 1px solid #f44; padding: 2px 6px; letter-spacing: 0.1em; }
+#dossier-close { background: transparent; border: none; color: #5a9; cursor: pointer; font-size: 1.2rem; font-family: 'Share Tech Mono', monospace; }
+
+.dossier-body { padding: 20px 16px; }
+
+.dossier-photo-wrap {
+  display: flex; justify-content: center; margin-bottom: 16px;
+}
+.dossier-photo {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f44;
+}
+.dossier-photo.missing { border-color: #fa0; }
+.dossier-photo.alive { border-color: #0f4; }
+
+.dossier-name { font-size: 1rem; color: #0f4; text-align: center; margin-bottom: 4px; letter-spacing: 0.1em; }
+.dossier-status { font-size: 0.75rem; color: #f44; text-align: center; margin-bottom: 16px; }
+.dossier-status.missing { color: #fa0; }
+.dossier-status.alive { color: #0f4; }
+
+.dossier-field { display: flex; gap: 8px; margin-bottom: 8px; font-size: 0.75rem; }
+.dossier-field-icon { color: #0a3; }
+.dossier-field-val { color: #8cc; }
+
+.dossier-section { margin-top: 16px; padding-top: 16px; border-top: 1px solid #0a3; }
+.dossier-section-title { font-size: 0.7rem; color: #5a9; letter-spacing: 0.2em; margin-bottom: 10px; }
+.dossier-note { font-size: 0.78rem; color: #8cc; line-height: 1.6; }
+
+.dossier-connection {
+  margin-bottom: 8px; padding: 6px 10px;
+  background: #0a1a10;
+  border-left: 2px solid #fa0;
+  font-size: 0.72rem;
+}
+.dossier-connection .conn-type { color: #fa0; font-size: 0.65rem; letter-spacing: 0.1em; }
+.dossier-connection .conn-name { color: #a0e8c8; }
+
+/* Legend */
+#legend {
+  position: fixed;
+  bottom: 20px; left: 16px;
+  font-size: 0.65rem;
+  color: #5a9;
+  pointer-events: none;
+  z-index: 10;
+}
+.legend-item { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid; }
+
+/* Zoom controls */
+#zoom-controls {
+  position: fixed;
+  bottom: 20px; right: 20px;
+  display: flex; gap: 6px;
+  z-index: 10;
+}
+#zoom-controls button {
+  background: #0a1a10;
+  border: 1px solid #0a3;
+  color: #0f4;
+  width: 36px; height: 36px;
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+}
+#zoom-controls button:hover { background: #0f3; color: #050e0a; }
+</style>
+</head>
+<body>
+
+<div id="conn-header">
+  <h1>NETWORK ANALYSIS — MISSING SCIENTISTS</h1>
+  <span class="stamp">// CLASSIFIED //</span>
+  <button id="close-btn" onclick="window.history.back()">✕ CLOSE</button>
+</div>
+
+<div id="canvas-wrap">
+  <div id="diagram-canvas">
+    <svg id="conn-svg"></svg>
+  </div>
+</div>
+
+<div id="dossier">
+  <div class="dossier-header">
+    <span class="dossier-stamp">// FILE CLASSIFICATION: COMPARTMENTED //</span>
+    <button id="dossier-close" onclick="closeDossier()">✕</button>
+  </div>
+  <div class="dossier-body" id="dossier-body">
+    <p style="color:#5a9;font-size:0.8rem;text-align:center;margin-top:40px;">► SELECT A SUBJECT<br><br>TO VIEW DOSSIER</p>
+  </div>
+</div>
+
+<div id="legend">
+  <div class="legend-item"><div class="legend-dot" style="border-color:#f44"></div> Deceased</div>
+  <div class="legend-item"><div class="legend-dot" style="border-color:#fa0"></div> Missing</div>
+  <div class="legend-item"><div class="legend-dot" style="border-color:#0f4"></div> Active</div>
+</div>
+
+<div id="zoom-controls">
+  <button onclick="zoom(1.2)">+</button>
+  <button onclick="fitView()">FIT</button>
+  <button onclick="zoom(0.8)">−</button>
+</div>
+
+<script>
+const SCIENTISTS = [
+  {
+    id: 'maiwald', name: 'Frank Maiwald', photo: 'photos/frank_maiwald.jpg',
+    status: 'deceased', cluster: 'JPL / CALTECH',
+    date: 'July 2024', location: 'Pasadena, CA', institution: 'NASA JPL',
+    notes: 'NASA JPL researcher. Died July 2024. Cause undisclosed. Part of the JPL cluster of deaths.',
+    connections: [{type: 'JPL COLLEAGUE', name: 'Michael Hicks'}, {type: 'JPL COLLEAGUE', name: 'Carl Grillmair'}, {type: 'JPL OVERSIGHT', name: 'NASA HUB'}]
+  },
+  {
+    id: 'hicks', name: 'Michael Hicks', photo: 'photos/michael_hicks.jpg',
+    status: 'deceased', cluster: 'JPL / CALTECH',
+    date: 'July 2023', location: 'Pasadena, CA', institution: 'NASA JPL',
+    notes: 'NASA JPL researcher. Died July 2023. Part of the JPL cluster.',
+    connections: [{type: 'JPL COLLEAGUE', name: 'Frank Maiwald'}, {type: 'JPL COLLEAGUE', name: 'Carl Grillmair'}]
+  },
+  {
+    id: 'grillmair', name: 'Carl Grillmair', photo: 'photos/carl_grillmair.jpg',
+    status: 'deceased', cluster: 'JPL / CALTECH',
+    date: 'February 2026', location: 'Llano, CA', institution: 'Caltech / JPL',
+    notes: 'Caltech astrophysicist. Shot to death in his home February 2026. Part of same Caltech/NASA orbit as Maiwald and Hicks.',
+    connections: [{type: 'CALTECH/JPL ORBIT', name: 'Frank Maiwald'}, {type: 'CALTECH/JPL ORBIT', name: 'Michael Hicks'}]
+  },
+  {
+    id: 'reza', name: 'Monica Reza', photo: 'photos/monica_reza.jpg',
+    status: 'missing', cluster: 'JPL / CALTECH',
+    date: 'June 2025', location: 'Angeles National Forest, CA', institution: 'NASA JPL / Aerojet Rocketdyne',
+    notes: 'Materials scientist who developed the Mondaloy superalloy for reusable rocket engines. Missing since June 2025 near Mt. Waterman. Her work directly connects to McCasland at AFRL.',
+    connections: [{type: 'MONDALOY SUPERALLOY', name: 'Neil McCasland'}, {type: 'JPL COLLEAGUE', name: 'Frank Maiwald'}]
+  },
+  {
+    id: 'hardwick', name: 'Dallis Hardwick', photo: 'photos/dallis_hardwick.jpg',
+    status: 'missing', cluster: 'JPL / CALTECH',
+    date: '2025', location: 'California', institution: 'NASA JPL',
+    notes: 'JPL researcher. Part of the California cluster of missing scientists.',
+    connections: [{type: 'JPL COLLEAGUE', name: 'Monica Reza'}]
+  },
+  {
+    id: 'thomas', name: 'Jason Thomas', photo: 'photos/jason_thomas.jpg',
+    status: 'deceased', cluster: 'MASSACHUSETTS',
+    date: 'March 2026', location: 'Lake Quannapowitt, MA', institution: 'Novartis',
+    notes: 'Chemical biology researcher at Novartis. Found dead in Lake Quannapowitt, MA in March 2026.',
+    connections: [{type: 'MASSACHUSETTS CLUSTER', name: 'Nuno Loureiro'}]
+  },
+  {
+    id: 'loureiro', name: 'Nuno Loureiro', photo: 'photos/nuno_loureiro.jpg',
+    status: 'deceased', cluster: 'MASSACHUSETTS',
+    date: 'December 2025', location: 'Wakefield, MA', institution: 'MIT Plasma Science & Fusion Center',
+    notes: 'Director of MIT Plasma Science and Fusion Center. Killed in shooting December 2025. Leading fusion researcher.',
+    connections: [{type: 'MASSACHUSETTS CLUSTER', name: 'Jason Thomas'}]
+  },
+  {
+    id: 'mccasland', name: 'Neil McCasland', photo: 'photos/neil_mccasland.jpg',
+    status: 'missing', cluster: 'AFRL / KIRTLAND',
+    date: 'February 2026', location: 'Albuquerque, NM', institution: 'Air Force Research Laboratory',
+    notes: 'Retired AF Major General and astronautical engineer. Vanished from Albuquerque February 2026. Commanded AFRL at Wright-Patterson — alleged site of Hangar 18. Connected to Monica Reza via Mondaloy superalloy research.',
+    connections: [{type: 'MONDALOY SUPERALLOY', name: 'Monica Reza'}, {type: 'AFRL PARTNERSHIP', name: 'NASA HUB'}, {type: 'CLASSIFIED DEW/PROPULSION', name: 'Lockheed Works'}]
+  },
+  {
+    id: 'chavez', name: 'Anthony Chavez', photo: 'photos/anthony_chavez.jpg',
+    status: 'missing', cluster: 'LOS ALAMOS / KCNSC',
+    date: 'May 2025', location: 'Los Alamos, NM', institution: 'Los Alamos National Laboratory',
+    notes: 'Retired LANL foreman. Disappeared May 2025. Part of the New Mexico cluster tied to nuclear weapons research.',
+    connections: [{type: 'LOS ALAMOS ORBIT', name: 'Melissa Casias'}, {type: 'KCNSC LINK', name: 'Steven Garcia'}]
+  },
+  {
+    id: 'casias', name: 'Melissa Casias', photo: 'photos/melissa_casias.jpg',
+    status: 'missing', cluster: 'LOS ALAMOS / KCNSC',
+    date: 'June 2025', location: 'Talpa, NM', institution: 'Los Alamos National Laboratory',
+    notes: 'LANL employee. Last seen walking on a highway near Talpa, NM in June 2025.',
+    connections: [{type: 'LOS ALAMOS ORBIT', name: 'Anthony Chavez'}]
+  },
+  {
+    id: 'garcia', name: 'Steven Garcia', photo: 'photos/steven_garcia.jpg',
+    status: 'missing', cluster: 'LOS ALAMOS / KCNSC',
+    date: 'August 2025', location: 'Albuquerque, NM', institution: 'Kansas City National Security Campus',
+    notes: 'Government contractor at KCNSC — facility that makes 80% of non-nuclear components in US nuclear weapons. Left home August 28 2025 with only a handgun and water bottle. Source told Daily Mail he was "targeted by foreign spies."',
+    connections: [{type: 'KCNSC / NUCLEAR WEAPONS', name: 'Anthony Chavez'}]
+  },
+  {
+    id: 'leblanc', name: 'Joshua LeBlanc', photo: 'photos/joshua_leblanc.jpg',
+    status: 'deceased', cluster: 'HUNTSVILLE CLUSTER',
+    date: 'July 22, 2025', location: 'Huntsville, AL', institution: 'NASA Marshall Space Flight Center',
+    notes: 'NASA nuclear propulsion engineer, age 29. Tesla found burned beyond recognition near Huntsville. Family reported him missing at 4:32am that morning before crash. His Tesla sat at Huntsville airport for 4 unexplained hours before the fatal crash.',
+    connections: [{type: 'HUNTSVILLE NASA CORRIDOR', name: 'Amy Eskridge'}, {type: 'HUNTSVILLE NASA CORRIDOR', name: 'James Family'}]
+  },
+  {
+    id: 'eskridge', name: 'Amy Eskridge', photo: 'photos/amy_eskridge.jpg',
+    status: 'deceased', cluster: 'HUNTSVILLE CLUSTER',
+    date: 'June 2022', location: 'Huntsville, AL', institution: 'Aerospace Research, Huntsville',
+    notes: 'Huntsville aerospace researcher. Died June 2022, ruled suicide. Earliest case in the Huntsville cluster. All three Huntsville deaths are NASA-connected.',
+    connections: [{type: 'HUNTSVILLE CLUSTER', name: 'Joshua LeBlanc'}]
+  },
+  {
+    id: 'moffatt', name: 'James Family', photo: 'photos/james_moffatt.jpg',
+    status: 'deceased', cluster: 'HUNTSVILLE CLUSTER',
+    date: 'April 17, 2026', location: 'Union County, SC', institution: 'NASA Johnson Space Center',
+    notes: 'James "Tony" Moffatt (60), wife Leasa, sons Andrew and William died in plane crash April 17 2026 — 3 days before David Wilcock. Tony was NASA JSC payload specialist with 14 Space Shuttle ISS missions. Andrew was research engineer at UAH — same institution that employs Huntsville defense contractors.',
+    connections: [{type: 'HUNTSVILLE NASA CORRIDOR', name: 'Joshua LeBlanc'}, {type: 'TIMELINE: 3 DAYS BEFORE WILCOCK', name: 'David Wilcock'}]
+  },
+  {
+    id: 'wilcock', name: 'David Wilcock', photo: 'photos/david_wilcock.jpg',
+    status: 'deceased', cluster: 'UAP DISCLOSURE',
+    date: 'April 20, 2026', location: 'Nederland, CO', institution: 'UAP Researcher / Author',
+    notes: 'Prominent UAP researcher and History Channel personality. Died April 20 2026, ruled suicide. Had posted "grateful to be alive" days before amid the mysterious UAP researcher deaths. Died 3 days after the Moffatt family plane crash.',
+    connections: [{type: 'CO-AUTHOR / BIOGRAPHER', name: 'Wynn Free'}, {type: 'TIMELINE: 3 DAYS AFTER', name: 'James Family'}]
+  },
+  {
+    id: 'free', name: 'Wynn Free', photo: 'photos/wynn_free.jpg',
+    status: 'deceased', cluster: 'UAP DISCLOSURE',
+    date: 'April 14-18, 2026', location: 'Unknown', institution: 'Author / Biographer',
+    notes: 'Wilcock co-author and biographer. Reportedly died April 14-18, 2026 — days before Wilcock. Two men who wrote a book together, both dead within a week.',
+    connections: [{type: 'CO-AUTHOR', name: 'David Wilcock'}]
+  },
+  {
+    id: 'sullivan', name: 'Matthew Sullivan', photo: 'photos/matthew_sullivan.jpg',
+    status: 'deceased', cluster: 'UAP DISCLOSURE',
+    date: 'May 2024', location: 'Falls Church, VA', institution: 'US Air Force Intelligence',
+    notes: 'Air Force intelligence officer. Had personally witnessed UAPs in government possession and agreed to testify to Congress about crash retrieval programs. Died May 12 2024 of accidental drug overdose before he could testify. At his funeral, retired Major General David Abba spoke of "the burden of truly understanding what is going on."',
+    connections: [{type: 'INTEL WHISTLEBLOWERS', name: 'Lou Elizondo'}, {type: 'CONGRESSIONAL TESTIMONY', name: 'David Grusch'}]
+  },
+  {
+    id: 'elizondo', name: 'Lou Elizondo', photo: 'photos/lou_elizondo.jpg',
+    status: 'alive', cluster: 'AATIP / PENTAGON',
+    date: 'Active', location: 'Washington DC area', institution: 'Pentagon AATIP (2007-2017)',
+    notes: 'Ran the Pentagon\'s Advanced Aerospace Threat Identification Program for 10 years. Resigned in protest over secrecy surrounding UAP evidence. Has testified to Congress and continues to advocate for disclosure.',
+    connections: [{type: '72-HR WINDOW', name: 'Christopher Mellon'}, {type: 'INTEL WHISTLEBLOWERS', name: 'Matthew Sullivan'}]
+  },
+  {
+    id: 'mellon', name: 'Christopher Mellon', photo: 'photos/christopher_mellon.jpg',
+    status: 'alive', cluster: 'AATIP / PENTAGON',
+    date: 'Active', location: 'Washington DC', institution: 'Dept of Defense (former)',
+    notes: 'Former Deputy Assistant Secretary of Defense for Intelligence. Worked alongside Elizondo at AATIP. Key figure in bringing UAP evidence to Congress.',
+    connections: [{type: 'AATIP COLLEAGUES', name: 'Lou Elizondo'}]
+  },
+  {
+    id: 'grusch', name: 'David Grusch', photo: 'photos/david_grusch.jpg',
+    status: 'alive', cluster: 'AATIP / PENTAGON',
+    date: 'Testified July 2023', location: 'Washington DC', institution: 'NGA / NRO (former)',
+    notes: 'Intelligence officer who testified to Congress July 2023 that the US government possesses non-human biologics and has run crash retrieval programs for decades. Has received death threats. The most significant UAP whistleblower in history.',
+    connections: [{type: 'CONGRESSIONAL TESTIMONY', name: 'Matthew Sullivan'}, {type: 'DISCLOSURE CONTROL', name: 'Huntsville Cluster'}]
+  },
+];
+
+const INSTITUTIONS = [
+  { id: 'nasa', name: 'NASA HUB', emoji: '🚀', x: 800, y: 600 },
+  { id: 'lockheed', name: 'Lockheed Works', emoji: '🛸', x: 1200, y: 900 },
+  { id: 'raytheon', name: 'Raytheon', emoji: '🎯', x: 1380, y: 900 },
+  { id: 'boeing', name: 'Boeing Defense', emoji: '✈️', x: 1560, y: 900 },
+  { id: 'bilderberg', name: 'Bilderberg Group', emoji: '🦉', x: 1200, y: 1060 },
+  { id: 'rothschild', name: 'Rothschild Co', emoji: '🏦', x: 1380, y: 1060 },
+];
+
+// Cluster positions (center x, y)
+const CLUSTERS = {
+  'JPL / CALTECH':      { cx: 280, cy: 280 },
+  'MASSACHUSETTS':      { cx: 1200, cy: 200 },
+  'AFRL / KIRTLAND':   { cx: 1320, cy: 500 },
+  'LOS ALAMOS / KCNSC': { cx: 200, cy: 600 },
+  'HUNTSVILLE CLUSTER': { cx: 800, cy: 1000 },
+  'UAP DISCLOSURE':    { cx: 220, cy: 950 },
+  'AATIP / PENTAGON':  { cx: 580, cy: 1050 },
+};
+
+// Node positions within clusters
+const NODE_POSITIONS = {
+  'maiwald':    { x: 160, y: 220 },
+  'hicks':      { x: 280, y: 220 },
+  'grillmair':  { x: 400, y: 220 },
+  'reza':       { x: 200, y: 340 },
+  'hardwick':   { x: 340, y: 340 },
+  'thomas':     { x: 1150, y: 170 },
+  'loureiro':   { x: 1270, y: 170 },
+  'mccasland':  { x: 1320, y: 500 },
+  'chavez':     { x: 140, y: 560 },
+  'casias':     { x: 260, y: 560 },
+  'garcia':     { x: 380, y: 560 },
+  'leblanc':    { x: 680, y: 980 },
+  'eskridge':   { x: 820, y: 980 },
+  'moffatt':    { x: 960, y: 980 },
+  'wilcock':    { x: 160, y: 920 },
+  'free':       { x: 280, y: 920 },
+  'sullivan':   { x: 400, y: 920 },
+  'elizondo':   { x: 480, y: 1050 },
+  'mellon':     { x: 620, y: 1050 },
+  'grusch':     { x: 760, y: 1050 },
+};
+
+// Cross-cluster spoke connections (from->to cluster center)
+const SPOKES = [
+  { from: 'JPL / CALTECH', to: 'nasa', label: 'JPL OVERSIGHT', color: '#fa0' },
+  { from: 'MASSACHUSETTS', to: 'nasa', label: 'MIT FUSION', color: '#fa0' },
+  { from: 'AFRL / KIRTLAND', to: 'nasa', label: 'AFRL PARTNERSHIP', color: '#fa0' },
+  { from: 'LOS ALAMOS / KCNSC', to: 'nasa', label: 'NUCLEAR PROGRAM', color: '#fa0' },
+  { from: 'HUNTSVILLE CLUSTER', to: 'nasa', label: 'MSFC / NTP', color: '#fa0' },
+  { from: 'UAP DISCLOSURE', to: 'AATIP / PENTAGON', label: 'CONGRESSIONAL TESTIMONY', color: '#a0a' },
+  { from: 'AATIP / PENTAGON', to: 'HUNTSVILLE CLUSTER', label: 'DISCLOSURE CONTROL', color: '#fa0' },
+];
+
+// Special cross-person connections
+const CROSS_CONNECTIONS = [
+  { from: 'reza', to: 'mccasland', label: 'MONDALOY SUPERALLOY', color: '#ff6' },
+  { from: 'moffatt', to: 'wilcock', label: '72-HR WINDOW', color: '#f44' },
+  { from: 'sullivan', to: 'grusch', label: 'INTEL TESTIMONY', color: '#a0a' },
+];
+
+// China cluster (separate, far right)
+const CHINA_SCIENTISTS = [
+  { id: 'fengyang', name: 'Feng Yanghe', emoji: '☢️', x: 1550, y: 200 },
+  { id: 'zhangx', name: 'Zhang Xiaoxin', emoji: '☢️', x: 1680, y: 200 },
+  { id: 'chens', name: 'Chen Shuming', emoji: '☢️', x: 1810, y: 200 },
+  { id: 'fangd', name: 'Fang Daining', emoji: '☢️', x: 1550, y: 340 },
+  { id: 'yanh', name: 'Yan Hong', emoji: '☢️', x: 1680, y: 340 },
+  { id: 'zhangd', name: 'Zhang Daibing', emoji: '☢️', x: 1810, y: 340 },
+  { id: 'liud', name: 'Liu Donghao', emoji: '☢️', x: 1550, y: 480 },
+  { id: 'zhoug', name: 'Zhou Guangyuan', emoji: '☢️', x: 1680, y: 480 },
+  { id: 'lim', name: 'Li Minyong', emoji: '☢️', x: 1810, y: 480 },
+];
+
+const CANVAS_W = 2200;
+const CANVAS_H = 1300;
+const NASA_X = 800;
+const NASA_Y = 600;
+
+let scale = 0.55;
+let panX = 0;
+let panY = 0;
+let isDragging = false;
+let lastX = 0, lastY = 0;
+let lastDist = 0;
+
+const wrap = document.getElementById('canvas-wrap');
+const canvas = document.getElementById('diagram-canvas');
+const svg = document.getElementById('conn-svg');
+
+function applyTransform() {
+  canvas.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+  canvas.style.width = CANVAS_W + 'px';
+  canvas.style.height = CANVAS_H + 'px';
+}
+
+function zoom(factor) {
+  const ww = wrap.clientWidth / 2;
+  const wh = wrap.clientHeight / 2;
+  panX = ww - (ww - panX) * factor;
+  panY = wh - (wh - panY) * factor;
+  scale *= factor;
+  scale = Math.min(Math.max(scale, 0.15), 3);
+  applyTransform();
+}
+
+function fitView() {
+  const ww = wrap.clientWidth;
+  const wh = wrap.clientHeight;
+  scale = Math.min(ww / CANVAS_W, wh / CANVAS_H) * 0.9;
+  panX = (ww - CANVAS_W * scale) / 2;
+  panY = (wh - CANVAS_H * scale) / 2;
+  applyTransform();
+}
+
+// Pan events
+wrap.addEventListener('mousedown', e => {
+  if (e.target.closest('.node-group') || e.target.closest('#dossier')) return;
+  isDragging = true;
+  lastX = e.clientX; lastY = e.clientY;
+});
+window.addEventListener('mousemove', e => {
+  if (!isDragging) return;
+  panX += e.clientX - lastX;
+  panY += e.clientY - lastY;
+  lastX = e.clientX; lastY = e.clientY;
+  applyTransform();
+});
+window.addEventListener('mouseup', () => isDragging = false);
+
+wrap.addEventListener('wheel', e => {
+  e.preventDefault();
+  const factor = e.deltaY < 0 ? 1.08 : 0.93;
+  const rect = wrap.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+  panX = mx - (mx - panX) * factor;
+  panY = my - (my - panY) * factor;
+  scale *= factor;
+  scale = Math.min(Math.max(scale, 0.15), 3);
+  applyTransform();
+}, { passive: false });
+
+// Touch/pinch
+wrap.addEventListener('touchstart', e => {
+  if (e.touches.length === 2) {
+    lastDist = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
+  } else if (e.touches.length === 1) {
+    isDragging = true;
+    lastX = e.touches[0].clientX;
+    lastY = e.touches[0].clientY;
+  }
+}, { passive: true });
+
+wrap.addEventListener('touchmove', e => {
+  e.preventDefault();
+  if (e.touches.length === 2) {
+    const dist = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
+    const factor = 1 + (dist - lastDist) * 0.004;
+    lastDist = dist;
+    const mx = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+    const my = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+    const rect = wrap.getBoundingClientRect();
+    const cx = mx - rect.left;
+    const cy = my - rect.top;
+    panX = cx - (cx - panX) * factor;
+    panY = cy - (cy - panY) * factor;
+    scale *= factor;
+    scale = Math.min(Math.max(scale, 0.15), 3);
+    applyTransform();
+  } else if (e.touches.length === 1 && isDragging) {
+    panX += e.touches[0].clientX - lastX;
+    panY += e.touches[0].clientY - lastY;
+    lastX = e.touches[0].clientX;
+    lastY = e.touches[0].clientY;
+    applyTransform();
+  }
+}, { passive: false });
+
+wrap.addEventListener('touchend', () => isDragging = false);
+
+function drawSVGLines() {
+  svg.setAttribute('width', CANVAS_W);
+  svg.setAttribute('height', CANVAS_H);
+  svg.innerHTML = '';
+
+  // Draw spokes from clusters to NASA hub
+  for (const spoke of SPOKES) {
+    const fromCluster = CLUSTERS[spoke.from];
+    const toInst = spoke.to === 'nasa' ? { x: NASA_X, y: NASA_Y } : CLUSTERS[spoke.to];
+    if (!fromCluster || !toInst) continue;
+
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', fromCluster.cx);
+    line.setAttribute('y1', fromCluster.cy);
+    line.setAttribute('x2', toInst.x || toInst.cx);
+    line.setAttribute('y2', toInst.y || toInst.cy);
+    line.setAttribute('stroke', spoke.color);
+    line.setAttribute('stroke-width', '2');
+    line.setAttribute('stroke-dasharray', '8 5');
+    line.setAttribute('opacity', '0.7');
+    svg.appendChild(line);
+
+    // Label at midpoint
+    const mx = (fromCluster.cx + (toInst.x || toInst.cx)) / 2;
+    const my = (fromCluster.cy + (toInst.y || toInst.cy)) / 2;
+    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    text.setAttribute('x', mx);
+    text.setAttribute('y', my - 6);
+    text.setAttribute('text-anchor', 'middle');
+    text.setAttribute('fill', spoke.color);
+    text.setAttribute('font-size', '10');
+    text.setAttribute('font-family', 'Share Tech Mono, monospace');
+    text.setAttribute('opacity', '0.8');
+    text.textContent = spoke.label;
+    svg.appendChild(text);
+  }
+
+  // Cross connections between specific people
+  for (const cc of CROSS_CONNECTIONS) {
+    const fromPos = NODE_POSITIONS[cc.from];
+    const toPos = NODE_POSITIONS[cc.to];
+    if (!fromPos || !toPos) continue;
+
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    const mx = (fromPos.x + toPos.x) / 2;
+    const my = (fromPos.y + toPos.y) / 2 - 80;
+    path.setAttribute('d', `M${fromPos.x},${fromPos.y} Q${mx},${my} ${toPos.x},${toPos.y}`);
+    path.setAttribute('stroke', cc.color);
+    path.setAttribute('stroke-width', '2');
+    path.setAttribute('stroke-dasharray', '6 4');
+    path.setAttribute('fill', 'none');
+    path.setAttribute('opacity', '0.85');
+    svg.appendChild(path);
+
+    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    text.setAttribute('x', mx);
+    text.setAttribute('y', my - 6);
+    text.setAttribute('text-anchor', 'middle');
+    text.setAttribute('fill', cc.color);
+    text.setAttribute('font-size', '10');
+    text.setAttribute('font-family', 'Share Tech Mono, monospace');
+    text.textContent = cc.label;
+    svg.appendChild(text);
+  }
+
+  // China to NASA parallel line
+  const chinaX = 1680, chinaY = 340;
+  const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  path.setAttribute('d', `M${chinaX},${chinaY} Q${(chinaX+NASA_X)/2},${Math.min(chinaY,NASA_Y)-120} ${NASA_X},${NASA_Y}`);
+  path.setAttribute('stroke', '#f44');
+  path.setAttribute('stroke-width', '2');
+  path.setAttribute('stroke-dasharray', '10 6');
+  path.setAttribute('fill', 'none');
+  path.setAttribute('opacity', '0.6');
+  svg.appendChild(path);
+
+  const ct = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+  ct.setAttribute('x', (chinaX+NASA_X)/2);
+  ct.setAttribute('y', Math.min(chinaY,NASA_Y) - 130);
+  ct.setAttribute('text-anchor', 'middle');
+  ct.setAttribute('fill', '#f44');
+  ct.setAttribute('font-size', '11');
+  ct.setAttribute('font-family', 'Share Tech Mono, monospace');
+  ct.textContent = 'PARALLEL PATTERN / SILENT SCIENTIST WAR';
+  svg.appendChild(ct);
+}
+
+function createNode(scientist) {
+  const pos = NODE_POSITIONS[scientist.id];
+  if (!pos) return;
+
+  const group = document.createElement('div');
+  group.className = 'node-group';
+  group.style.cssText = `position:absolute;left:${pos.x}px;top:${pos.y}px;width:0;height:0;`;
+
+  const ring = document.createElement('div');
+  ring.className = `node-ring ${scientist.status}`;
+  group.appendChild(ring);
+
+  const img = document.createElement('img');
+  img.className = 'node-photo';
+  img.src = scientist.photo;
+  img.onerror = () => {
+    img.style.display = 'none';
+    const emoji = document.createElement('div');
+    emoji.className = 'node-emoji';
+    emoji.textContent = '👤';
+    group.insertBefore(emoji, ring.nextSibling);
+  };
+  group.appendChild(img);
+
+  const label = document.createElement('div');
+  label.className = 'node-label';
+  label.textContent = scientist.name;
+  group.appendChild(label);
+
+  group.addEventListener('click', e => {
+    e.stopPropagation();
+    openDossier(scientist);
+  });
+
+  canvas.appendChild(group);
+}
+
+function createInstitutionNode(inst) {
+  const group = document.createElement('div');
+  group.className = 'node-group';
+  group.style.cssText = `position:absolute;left:${inst.x}px;top:${inst.y}px;width:0;height:0;`;
+
+  const ring = document.createElement('div');
+  ring.className = 'node-ring institution';
+  group.appendChild(ring);
+
+  const emoji = document.createElement('div');
+  emoji.className = 'node-emoji';
+  emoji.textContent = inst.emoji;
+  group.appendChild(emoji);
+
+  const label = document.createElement('div');
+  label.className = 'node-label';
+  label.style.color = '#fa0';
+  label.textContent = inst.name;
+  group.appendChild(label);
+
+  canvas.appendChild(group);
+}
+
+function createChineseNode(sci) {
+  const group = document.createElement('div');
+  group.className = 'node-group';
+  group.style.cssText = `position:absolute;left:${sci.x}px;top:${sci.y}px;width:0;height:0;`;
+
+  const ring = document.createElement('div');
+  ring.className = 'node-ring deceased';
+  group.appendChild(ring);
+
+  const emoji = document.createElement('div');
+  emoji.className = 'node-emoji';
+  emoji.textContent = sci.emoji;
+  group.appendChild(emoji);
+
+  const label = document.createElement('div');
+  label.className = 'node-label';
+  label.textContent = sci.name;
+  group.appendChild(label);
+
+  canvas.appendChild(group);
+}
+
+function createClusterLabel(name, cx, cy) {
+  const label = document.createElement('div');
+  label.className = 'cluster-label';
+  label.textContent = name;
+  label.style.cssText = `left:${cx-60}px;top:${cy-90}px;`;
+  canvas.appendChild(label);
+}
+
+// NASA hub
+function createNASAHub() {
+  const group = document.createElement('div');
+  group.className = 'node-group';
+  group.style.cssText = `position:absolute;left:${NASA_X}px;top:${NASA_Y}px;width:0;height:0;`;
+
+  const ring = document.createElement('div');
+  ring.style.cssText = `width:90px;height:90px;border-radius:50%;position:absolute;transform:translate(-45px,-45px);border:3px solid #fa0;box-shadow:0 0 20px #fa044;background:#0a1a10;`;
+  group.appendChild(ring);
+
+  const emoji = document.createElement('div');
+  emoji.style.cssText = `width:84px;height:84px;border-radius:50%;position:absolute;transform:translate(-42px,-42px);display:flex;align-items:center;justify-content:center;font-size:36px;`;
+  emoji.textContent = '🚀';
+  group.appendChild(emoji);
+
+  const label = document.createElement('div');
+  label.className = 'node-label';
+  label.style.cssText = `transform:translate(-50%,52px);color:#fa0;font-size:13px;`;
+  label.textContent = 'NASA HUB';
+  group.appendChild(label);
+
+  canvas.appendChild(group);
+}
+
+function openDossier(sci) {
+  const body = document.getElementById('dossier-body');
+  const statusText = sci.status === 'deceased' ? 'DECEASED' : sci.status === 'missing' ? 'MISSING' : 'ACTIVE';
+
+  body.innerHTML = `
+    <div class="dossier-photo-wrap">
+      <img class="dossier-photo ${sci.status}" src="${sci.photo}" onerror="this.src='';this.style.display='none'">
+    </div>
+    <div class="dossier-name">${sci.name}</div>
+    <div class="dossier-status ${sci.status}">${statusText} — ${sci.cluster}</div>
+    <div class="dossier-field"><span class="dossier-field-icon">📅</span><span class="dossier-field-val">${sci.date}</span></div>
+    <div class="dossier-field"><span class="dossier-field-icon">📍</span><span class="dossier-field-val">${sci.location}</span></div>
+    <div class="dossier-field"><span class="dossier-field-icon">🏛</span><span class="dossier-field-val">${sci.institution}</span></div>
+    <div class="dossier-section">
+      <div class="dossier-section-title">BACKGROUND</div>
+      <div class="dossier-note">${sci.notes}</div>
+    </div>
+    ${sci.connections && sci.connections.length ? `
+    <div class="dossier-section">
+      <div class="dossier-section-title">KNOWN CONNECTIONS</div>
+      ${sci.connections.map(c => `
+        <div class="dossier-connection">
+          <div class="conn-type">► ${c.type}</div>
+          <div class="conn-name">${c.name}</div>
+        </div>
+      `).join('')}
+    </div>` : ''}
+  `;
+
+  document.getElementById('dossier').classList.add('open');
+}
+
+function closeDossier() {
+  document.getElementById('dossier').classList.remove('open');
+}
+
+// China cluster label
+function createChinaLabel() {
+  const label = document.createElement('div');
+  label.className = 'cluster-label';
+  label.textContent = 'CHINA / NUDT';
+  label.style.cssText = `left:${1620}px;top:${130}px;`;
+  canvas.appendChild(label);
+}
+
+// Build everything
+drawSVGLines();
+createNASAHub();
+
+for (const cluster of Object.keys(CLUSTERS)) {
+  createClusterLabel(cluster, CLUSTERS[cluster].cx, CLUSTERS[cluster].cy);
+}
+
+for (const sci of SCIENTISTS) {
+  createNode(sci);
+}
+
+for (const inst of INSTITUTIONS) {
+  createInstitutionNode(inst);
+}
+
+for (const chi of CHINA_SCIENTISTS) {
+  createChineseNode(chi);
+}
+
+createChinaLabel();
+
+// Add Power Networks label
+const pwLabel = document.createElement('div');
+pwLabel.className = 'cluster-label';
+pwLabel.textContent = 'POWER NETWORKS';
+pwLabel.style.cssText = `left:${1280}px;top:${820}px;`;
+canvas.appendChild(pwLabel);
+
+// Initial fit
+fitView();
+
+</script>
+</body>
+</html>
