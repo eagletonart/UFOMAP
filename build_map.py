@@ -780,11 +780,11 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
   display:inline-block; background:rgba(2,8,16,0.78);
   padding:3px 10px; border-radius:3px;
 }}
-.cc-nodes {{ display:flex; flex-wrap:wrap; gap:70px; max-width:500px; }}
+.cc-nodes {{ display:flex; flex-wrap:wrap; gap:140px; max-width:700px; }}
 /* Individual nodes */
 .cc-node {{
   display:flex; flex-direction:column; align-items:center;
-  cursor:pointer; width:100px;
+  cursor:pointer; width:110px;
 }}
 .cc-node-ring {{
   width:80px; height:80px; border-radius:50%;
@@ -800,19 +800,19 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
 }}
 .cc-node-name {{
   font-size:13px; letter-spacing:.03em; text-align:center;
-  margin-top:8px; line-height:1.3; max-width:100px;
+  margin-top:10px; line-height:1.3; max-width:110px;
   word-break:break-word; color:#c8ffc8 !important;
-  background:rgba(2,8,16,0.82); padding:2px 5px; border-radius:3px;
-  position:relative; z-index:2;
+  background:#020c18; padding:3px 6px; border-radius:3px;
+  position:relative; z-index:2; flex-shrink:0;
 }}
 .cc-node.cn-active .cc-node-ring {{ box-shadow:0 0 24px #fff !important; border-color:#fff !important; transform:scale(1.1); }}
 .cc-node-inst .cc-node-ring {{ width:84px; height:84px; font-size:36px; }}
 /* China cluster — 3×3 grid, 120px spacing */
-.cc-box[data-cid="china"] .cc-nodes {{ gap:120px; max-width:560px; }}
+.cc-box[data-cid="china"] .cc-nodes {{ gap:140px; max-width:700px; }}
 /* Huntsville cluster */
 .cc-box[data-cid="al"] .cc-node-ring {{ width:88px; height:88px; font-size:34px; }}
 .cc-box[data-cid="al"] .cc-node {{ width:108px; }}
-.cc-box[data-cid="al"] .cc-nodes {{ max-width:520px; gap:70px; }}
+.cc-box[data-cid="al"] .cc-nodes {{ max-width:700px; gap:140px; }}
 /* Detail panel: slide-out from right, hidden by default */
 #conn-detail {{
   position:absolute; top:0; right:0; bottom:0;
@@ -870,7 +870,7 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
   display:inline-block; background:rgba(2,8,16,0.78);
   padding:3px 8px; border-radius:3px;
 }}
-.cc-nodes {{ display:flex; flex-wrap:wrap; gap:60px; max-width:460px; }}
+.cc-nodes {{ display:flex; flex-wrap:wrap; gap:140px; max-width:700px; }}
 /* Individual nodes */
 .cc-node {{
   display:flex; flex-direction:column; align-items:center;
@@ -896,10 +896,10 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
   position:relative; z-index:2;
 }}
 .cc-node.cn-active .cc-node-ring {{ box-shadow:0 0 20px #fff !important; border-color:#fff !important; transform:scale(1.1); }}
-.cc-box[data-cid="china"] .cc-nodes {{ gap:100px; max-width:480px; }}
+.cc-box[data-cid="china"] .cc-nodes {{ gap:140px; max-width:700px; }}
 .cc-box[data-cid="al"] .cc-node-ring {{ width:86px; height:86px; font-size:32px; }}
 .cc-box[data-cid="al"] .cc-node {{ width:100px; }}
-.cc-box[data-cid="al"] .cc-nodes {{ max-width:460px; gap:60px; }}
+.cc-box[data-cid="al"] .cc-nodes {{ max-width:700px; gap:140px; }}
 /* Detail panel shared styles */
 .cd-photo {{
   width:150px; height:150px; border-radius:50%;
@@ -3309,7 +3309,7 @@ function buildConnDiagram() {{
       path.setAttribute('d', d);
       path.setAttribute('fill','none');
       path.setAttribute('stroke', color);
-      path.setAttribute('stroke-width', strokeWidth || '1.8');
+      path.setAttribute('stroke-width', strokeWidth || '3');
       path.setAttribute('stroke-dasharray', dash||'6 4');
       path.setAttribute('stroke-opacity', opacity||'0.6');
       g.appendChild(path);
@@ -3348,8 +3348,8 @@ function buildConnDiagram() {{
         drawCurve(_nasaC, rep,
           isChina ? '#ff2244' : '#ff8800',
           isChina ? '12 6'   : '6 8',
-          isChina ? 0.28     : 0.13,
-          null, 0, isChina ? 1.5 : 1);
+          isChina ? 1.0      : 1.0,
+          null, 0, isChina ? 3 : 3);
       }});
     }}
 
@@ -3363,7 +3363,7 @@ function buildConnDiagram() {{
       for (let i=0; i<m.length-1; i++) {{
         for (let j=i+1; j<m.length; j++) {{
           const a=nodeCenter(m[i]), b=nodeCenter(m[j]);
-          if (a&&b) drawCurve(a, b, lc, '4 6', 0.4, null, 20, 1.5);
+          if (a&&b) drawCurve(a, b, lc, '4 6', 1.0, null, 20, 3);
         }}
       }}
     }});
@@ -3371,7 +3371,7 @@ function buildConnDiagram() {{
     // Cross-cluster named links (prominent, outward-arcing)
     _CROSS_LINKS.forEach(link => {{
       const a=nodeCenter(link.from), b=nodeCenter(link.to);
-      if (a&&b) drawCurve(a, b, link.color, link.dash, 0.82, link.label);
+      if (a&&b) drawCurve(a, b, link.color, link.dash, 1.0, link.label, undefined, 3);
     }});
   }});
 }}
