@@ -509,11 +509,11 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
 }
 .cc-box.cc-dimmed { opacity:0.12; pointer-events:none; }
 .cc-label {
-  font-size:15px; letter-spacing:.2em; margin-bottom:14px; opacity:.9;
-  display:inline-block; background:rgba(2,8,16,0.78);
-  padding:3px 10px; border-radius:3px;
+  font-size:16px; font-weight:bold; letter-spacing:.18em; margin-bottom:14px;
+  display:inline-block; color:#00ff44;
+  background:rgba(0,0,0,0.7); padding:4px 10px; border-radius:3px;
 }
-.cc-nodes { display:flex; flex-wrap:wrap; gap:140px; max-width:700px; }
+.cc-nodes { display:flex; flex-wrap:wrap; gap:160px; max-width:800px; }
 /* Individual nodes */
 .cc-node {
   display:flex; flex-direction:column; align-items:center;
@@ -532,20 +532,20 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
   border-radius:50%;
 }
 .cc-node-name {
-  font-size:13px; letter-spacing:.03em; text-align:center;
-  margin-top:10px; line-height:1.3; max-width:110px;
-  word-break:break-word; color:#c8ffc8 !important;
-  background:#020c18; padding:3px 6px; border-radius:3px;
-  position:relative; z-index:2; flex-shrink:0;
+  font-size:14px; font-weight:bold; text-align:center;
+  margin-top:12px; line-height:1.3; max-width:120px;
+  word-break:break-word; color:#ffffff !important;
+  background-color:rgba(0,0,0,0.85); padding:4px 8px; border-radius:3px;
+  position:relative; z-index:2; flex-shrink:0; display:block;
 }
 .cc-node.cn-active .cc-node-ring { box-shadow:0 0 24px #fff !important; border-color:#fff !important; transform:scale(1.1); }
 .cc-node-inst .cc-node-ring { width:84px; height:84px; font-size:36px; }
-/* China cluster — 3×3 grid, 120px spacing */
-.cc-box[data-cid="china"] .cc-nodes { gap:140px; max-width:700px; }
+/* China cluster — 3×3 grid */
+.cc-box[data-cid="china"] .cc-nodes { gap:160px; max-width:800px; }
 /* Huntsville cluster */
-.cc-box[data-cid="al"] .cc-node-ring { width:88px; height:88px; font-size:34px; }
-.cc-box[data-cid="al"] .cc-node { width:108px; }
-.cc-box[data-cid="al"] .cc-nodes { max-width:700px; gap:140px; }
+.cc-box[data-cid="al"] .cc-node-ring { width:84px; height:84px; font-size:34px; }
+.cc-box[data-cid="al"] .cc-node { width:110px; }
+.cc-box[data-cid="al"] .cc-nodes { max-width:800px; gap:160px; }
 /* Detail panel: slide-out from right, hidden by default */
 #conn-detail {
   position:absolute; top:0; right:0; bottom:0;
@@ -599,15 +599,15 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
 /* Cluster groups — no box */
 .cc-box { position:absolute; transition:opacity .25s; }
 .cc-label {
-  font-size:15px; letter-spacing:.18em; margin-bottom:12px; opacity:.9;
-  display:inline-block; background:rgba(2,8,16,0.78);
-  padding:3px 8px; border-radius:3px;
+  font-size:16px; font-weight:bold; letter-spacing:.15em; margin-bottom:12px;
+  display:inline-block; color:#00ff44;
+  background:rgba(0,0,0,0.7); padding:4px 10px; border-radius:3px;
 }
-.cc-nodes { display:flex; flex-wrap:wrap; gap:140px; max-width:700px; }
+.cc-nodes { display:flex; flex-wrap:wrap; gap:160px; max-width:800px; }
 /* Individual nodes */
 .cc-node {
   display:flex; flex-direction:column; align-items:center;
-  cursor:pointer; width:92px;
+  cursor:pointer; width:110px;
 }
 .cc-node-ring {
   width:80px; height:80px; border-radius:50%;
@@ -622,17 +622,17 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
   border-radius:50%;
 }
 .cc-node-name {
-  font-size:13px; letter-spacing:.03em; text-align:center;
-  margin-top:6px; line-height:1.25; max-width:92px;
-  word-break:break-word; color:#c8ffc8 !important;
-  background:rgba(2,8,16,0.82); padding:2px 4px; border-radius:3px;
-  position:relative; z-index:2;
+  font-size:14px; font-weight:bold; text-align:center;
+  margin-top:12px; line-height:1.25; max-width:120px;
+  word-break:break-word; color:#ffffff !important;
+  background-color:rgba(0,0,0,0.85); padding:4px 8px; border-radius:3px;
+  position:relative; z-index:2; display:block; flex-shrink:0;
 }
 .cc-node.cn-active .cc-node-ring { box-shadow:0 0 20px #fff !important; border-color:#fff !important; transform:scale(1.1); }
-.cc-box[data-cid="china"] .cc-nodes { gap:140px; max-width:700px; }
-.cc-box[data-cid="al"] .cc-node-ring { width:86px; height:86px; font-size:32px; }
-.cc-box[data-cid="al"] .cc-node { width:100px; }
-.cc-box[data-cid="al"] .cc-nodes { max-width:700px; gap:140px; }
+.cc-box[data-cid="china"] .cc-nodes { gap:160px; max-width:800px; }
+.cc-box[data-cid="al"] .cc-node-ring { width:80px; height:80px; font-size:30px; }
+.cc-box[data-cid="al"] .cc-node { width:110px; }
+.cc-box[data-cid="al"] .cc-nodes { max-width:800px; gap:160px; }
 /* Detail panel shared styles */
 .cd-photo {
   width:150px; height:150px; border-radius:50%;
@@ -802,7 +802,7 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
 
     <h3>About</h3>
     <p>Built as an independent research visualization. All data is from public sources. This map is for educational and research purposes. Toggle layers to explore correlations between sighting density, infrastructure, and geography.</p>
-    <p style="color:#3a7;font-size:.78rem;margin-top:16px">Last updated: 2026-04-28 02:43 UTC</p>
+    <p style="color:#3a7;font-size:.78rem;margin-top:16px">Last updated: 2026-04-28 02:46 UTC</p>
 
     <div style="text-align:center; margin: 20px 0;">
       <img src="charlie.gif"
@@ -879,7 +879,7 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
   </div>
 </div>
 
-<div id="built-at">Built 2026-04-28 02:43 UTC</div>
+<div id="built-at">Built 2026-04-28 02:46 UTC</div>
 
 <script>
 // ── Data ────────────────────────────────────────────────────
@@ -3053,13 +3053,13 @@ function buildConnDiagram() {
         const rect = document.createElementNS('http://www.w3.org/2000/svg','rect');
         rect.setAttribute('x', mx-tw/2); rect.setAttribute('y', my-13);
         rect.setAttribute('width', tw);  rect.setAttribute('height', 15);
-        rect.setAttribute('rx','3');     rect.setAttribute('fill','#020c12');
-        rect.setAttribute('fill-opacity','0.92');
+        rect.setAttribute('rx','3');     rect.setAttribute('fill','rgba(0,0,0,0.8)');
+        rect.setAttribute('fill-opacity','1');
         g.appendChild(rect);
         const txt = document.createElementNS('http://www.w3.org/2000/svg','text');
         txt.setAttribute('x', mx); txt.setAttribute('y', my-2);
         txt.setAttribute('text-anchor','middle');
-        txt.setAttribute('fill', color); txt.setAttribute('opacity','0.95');
+        txt.setAttribute('fill', '#ffcc00'); txt.setAttribute('opacity','1');
         txt.setAttribute('font-size','11');
         txt.setAttribute('font-family',"'Share Tech Mono',monospace");
         txt.setAttribute('letter-spacing','0.6');
