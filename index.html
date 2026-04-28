@@ -802,7 +802,7 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
 
     <h3>About</h3>
     <p>Built as an independent research visualization. All data is from public sources. This map is for educational and research purposes. Toggle layers to explore correlations between sighting density, infrastructure, and geography.</p>
-    <p style="color:#3a7;font-size:.78rem;margin-top:16px">Last updated: 2026-04-28 02:46 UTC</p>
+    <p style="color:#3a7;font-size:.78rem;margin-top:16px">Last updated: 2026-04-28 02:50 UTC</p>
 
     <div style="text-align:center; margin: 20px 0;">
       <img src="charlie.gif"
@@ -879,7 +879,7 @@ select:focus, input[type=text]:focus { border-color:#0f4; }
   </div>
 </div>
 
-<div id="built-at">Built 2026-04-28 02:46 UTC</div>
+<div id="built-at">Built 2026-04-28 02:50 UTC</div>
 
 <script>
 // ── Data ────────────────────────────────────────────────────
@@ -3069,42 +3069,89 @@ function buildConnDiagram() {
       svg.appendChild(g);
     }
 
-    // ── NASA hub spokes (drawn first so they appear behind nodes) ──
+    // ── Diagram centre for outward arc calculations ───────────────
+    const DIAGRAM_CX = CANVAS_W / 2;
+    const DIAGRAM_CY = CANVAS_H / 2;
+
+    // Average position of all rendered nodes in a cluster
+    function clusterCenter(cl) {
+      const pts = cl.members.map(m => nodeCenter(m)).filter(Boolean);
+      if (!pts.length) return null;
+      return {
+        x: pts.reduce((s, p) => s + p.x, 0) / pts.length,
+        y: pts.reduce((s, p) => s + p.y, 0) / pts.length,
+      };
+    }
+
+    // ── 1. NASA hub spokes — one straight line per cluster ────────
     const _nasaC = nodeCenter('NASA');
     if (_nasaC) {
       _CONN_CLUSTERS.forEach(cl => {
         if (cl.id === 'nasa') return;
-        // Use first available member as cluster representative
-        const rep = cl.members.map(m => nodeCenter(m)).find(Boolean);
+        const rep = clusterCenter(cl);
         if (!rep) return;
         const isChina = cl.id === 'china';
         drawCurve(_nasaC, rep,
           isChina ? '#ff2244' : '#ff8800',
           isChina ? '12 6'   : '6 8',
-          isChina ? 1.0      : 1.0,
-          null, 0, isChina ? 3 : 3);
+          1.0, null, 0, 3);
       });
     }
 
-    // Intra-cluster lines (light, thin)
-    _CONN_CLUSTERS.forEach(cluster => {
-      const m = cluster.members.filter(n => _nodeEls[n]);
-      if (m.length < 2) return;
-      const lc = cluster.id==='ma' ? '#ff2244'
-               : cluster.id==='al' ? '#ff6600'
-               : cluster.color;
-      for (let i=0; i<m.length-1; i++) {
-        for (let j=i+1; j<m.length; j++) {
-          const a=nodeCenter(m[i]), b=nodeCenter(m[j]);
-          if (a&&b) drawCurve(a, b, lc, '4 6', 1.0, null, 20, 3);
-        }
+    // ── 2. Cross-cluster arcs — bow outward from diagram centre ───
+    function drawOutwardArc(a, b, color, dash, label) {
+      const g = document.createElementNS('http://www.w3.org/2000/svg','g');
+      const mx = (a.x + b.x) / 2;
+      const my = (a.y + b.y) / 2;
+      const dx = mx - DIAGRAM_CX;
+      const dy = my - DIAGRAM_CY;
+      const len = Math.sqrt(dx*dx + dy*dy) || 1;
+      const cpx = mx + (dx / len) * 350;
+      const cpy = my + (dy / len) * 350;
+      const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+      path.setAttribute('d', `M${a.x},${a.y} Q${cpx},${cpy} ${b.x},${b.y}`);
+      path.setAttribute('fill','none');
+      path.setAttribute('stroke', color);
+      path.setAttribute('stroke-width','3');
+      path.setAttribute('stroke-dasharray', dash || '8 5');
+      path.setAttribute('stroke-opacity','1');
+      g.appendChild(path);
+      if (label) {
+        const lmx = (a.x + 2*cpx + b.x) / 4;
+        const lmy = (a.y + 2*cpy + b.y) / 4;
+        const tw = label.length * 5.8 + 16;
+        const rect = document.createElementNS('http://www.w3.org/2000/svg','rect');
+        rect.setAttribute('x', lmx - tw/2); rect.setAttribute('y', lmy - 13);
+        rect.setAttribute('width', tw);      rect.setAttribute('height', 15);
+        rect.setAttribute('rx','3');          rect.setAttribute('fill','rgba(0,0,0,0.8)');
+        rect.setAttribute('fill-opacity','1');
+        g.appendChild(rect);
+        const txt = document.createElementNS('http://www.w3.org/2000/svg','text');
+        txt.setAttribute('x', lmx); txt.setAttribute('y', lmy - 2);
+        txt.setAttribute('text-anchor','middle');
+        txt.setAttribute('fill','#ffcc00'); txt.setAttribute('opacity','1');
+        txt.setAttribute('font-size','11');
+        txt.setAttribute('font-family',"'Share Tech Mono',monospace");
+        txt.setAttribute('letter-spacing','0.6');
+        txt.textContent = label;
+        g.appendChild(txt);
       }
-    });
+      svg.appendChild(g);
+    }
 
-    // Cross-cluster named links (prominent, outward-arcing)
-    _CROSS_LINKS.forEach(link => {
-      const a=nodeCenter(link.from), b=nodeCenter(link.to);
-      if (a&&b) drawCurve(a, b, link.color, link.dash, 1.0, link.label, undefined, 3);
+    // Map _CROSS_LINKS to cluster pairs — skip NASA spokes and same-cluster links
+    const _drawnPairs = new Set();
+    _CROSS_LINKS.forEach(lk => {
+      if (lk.from === 'NASA' || lk.to === 'NASA') return; // already a spoke
+      const fromCl = _CONN_CLUSTERS.find(c => c.members.includes(lk.from));
+      const toCl   = _CONN_CLUSTERS.find(c => c.members.includes(lk.to));
+      if (!fromCl || !toCl || fromCl === toCl) return; // skip missing or same cluster
+      const pairKey = [fromCl.id, toCl.id].sort().join('|') + '|' + (lk.label || '');
+      if (_drawnPairs.has(pairKey)) return;
+      _drawnPairs.add(pairKey);
+      const a = clusterCenter(fromCl);
+      const b = clusterCenter(toCl);
+      if (a && b) drawOutwardArc(a, b, lk.color, lk.dash, lk.label);
     });
   });
 }
