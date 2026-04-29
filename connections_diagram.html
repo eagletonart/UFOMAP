@@ -385,48 +385,37 @@ const INSTITUTIONS = [
   { id: 'rothschild', name: 'Rothschild Co',     emoji: '🏦', x: 1340, y: 1546 },
 ];
 
-// Cluster positions (center x, y) — radial layout around NASA hub (1000,1000) at r=550
 const CLUSTERS = {
-  'JPL / CALTECH':      { cx: 725,  cy: 524  },  // 11 o'clock
-  'MASSACHUSETTS':      { cx: 1275, cy: 524  },  // 1 o'clock
-  'AFRL / KIRTLAND':   { cx: 1550, cy: 1000 },  // 3 o'clock
-  'LOS ALAMOS / KCNSC': { cx: 524,  cy: 725  },  // 10 o'clock
-  'HUNTSVILLE CLUSTER': { cx: 1000, cy: 1550 },  // 6 o'clock
-  'UAP DISCLOSURE':    { cx: 524,  cy: 1275 },  // 8 o'clock
-  'AATIP / PENTAGON':  { cx: 725,  cy: 1476 },  // 7 o'clock
-  'CHINA / NUDT':      { cx: 1650, cy: 300  },  // upper right (outside main ring)
-  'POWER NETWORKS':    { cx: 1275, cy: 1476 },  // 5 o'clock
+  'JPL / CALTECH':       { cx: 400,  cy: 300  },
+  'MASSACHUSETTS':       { cx: 950,  cy: 150  },
+  'AFRL / KIRTLAND':    { cx: 1250, cy: 400  },
+  'LOS ALAMOS / KCNSC': { cx: 200,  cy: 600  },
+  'HUNTSVILLE CLUSTER': { cx: 850,  cy: 1050 },
+  'UAP DISCLOSURE':     { cx: 200,  cy: 950  },
+  'AATIP / PENTAGON':   { cx: 500,  cy: 1100 },
 };
 
-// Node positions — laid out around each cluster center
 const NODE_POSITIONS = {
-  // JPL/CALTECH (cx=725,cy=524): 5 nodes, 2 rows
-  'maiwald':    { x: 595,  y: 454  },
-  'hicks':      { x: 725,  y: 454  },
-  'grillmair':  { x: 855,  y: 454  },
-  'reza':       { x: 660,  y: 574  },
-  'hardwick':   { x: 790,  y: 574  },
-  // MASSACHUSETTS (cx=1275,cy=524): 2 nodes
-  'thomas':     { x: 1210, y: 524  },
-  'loureiro':   { x: 1340, y: 524  },
-  // AFRL/KIRTLAND (cx=1550,cy=1000): 1 node
-  'mccasland':  { x: 1550, y: 1000 },
-  // LOS ALAMOS/KCNSC (cx=524,cy=725): 3 nodes
-  'chavez':     { x: 424,  y: 725  },
-  'casias':     { x: 524,  y: 725  },
-  'garcia':     { x: 624,  y: 725  },
-  // HUNTSVILLE (cx=1000,cy=1550): 3 nodes
-  'leblanc':    { x: 870,  y: 1550 },
-  'eskridge':   { x: 1000, y: 1550 },
-  'moffatt':    { x: 1130, y: 1550 },
-  // UAP DISCLOSURE (cx=524,cy=1275): 3 nodes
-  'wilcock':    { x: 350,  y: 1275 },
-  'free':       { x: 524,  y: 1275 },
-  'sullivan':   { x: 698,  y: 1275 },
-  // AATIP/PENTAGON (cx=725,cy=1476): 3 nodes
-  'elizondo':   { x: 625,  y: 1476 },
-  'mellon':     { x: 725,  y: 1476 },
-  'grusch':     { x: 825,  y: 1476 },
+  'maiwald':   { x: 280, y: 220 },
+  'hicks':     { x: 400, y: 220 },
+  'grillmair': { x: 520, y: 220 },
+  'reza':      { x: 320, y: 360 },
+  'hardwick':  { x: 460, y: 360 },
+  'thomas':    { x: 900, y: 120 },
+  'loureiro':  { x: 1020, y: 120 },
+  'mccasland': { x: 1250, y: 400 },
+  'chavez':    { x: 100, y: 560 },
+  'casias':    { x: 220, y: 560 },
+  'garcia':    { x: 340, y: 560 },
+  'leblanc':   { x: 720, y: 1020 },
+  'eskridge':  { x: 860, y: 1020 },
+  'moffatt':   { x: 1000, y: 1020 },
+  'wilcock':   { x: 100, y: 900 },
+  'free':      { x: 220, y: 900 },
+  'sullivan':  { x: 340, y: 900 },
+  'elizondo':  { x: 380, y: 1100 },
+  'mellon':    { x: 500, y: 1100 },
+  'grusch':    { x: 620, y: 1100 },
 };
 
 // Cross-cluster spoke connections (from->to cluster center)
@@ -449,23 +438,22 @@ const CROSS_CONNECTIONS = [
   { from: 'sullivan', to: 'grusch', label: 'INTEL TESTIMONY', color: '#a0a' },
 ];
 
-// China cluster — 3×3 grid around CHINA/NUDT center (1650, 300)
 const CHINA_SCIENTISTS = [
-  { id: 'fengyang', name: 'Feng Yanghe',    emoji: '☢️', x: 1520, y: 230 },
-  { id: 'zhangx',   name: 'Zhang Xiaoxin',  emoji: '☢️', x: 1650, y: 230 },
-  { id: 'chens',    name: 'Chen Shuming',   emoji: '☢️', x: 1780, y: 230 },
-  { id: 'fangd',    name: 'Fang Daining',   emoji: '☢️', x: 1520, y: 300 },
-  { id: 'yanh',     name: 'Yan Hong',       emoji: '☢️', x: 1650, y: 300 },
-  { id: 'zhangd',   name: 'Zhang Daibing',  emoji: '☢️', x: 1780, y: 300 },
-  { id: 'liud',     name: 'Liu Donghao',    emoji: '☢️', x: 1520, y: 370 },
-  { id: 'zhoug',    name: 'Zhou Guangyuan', emoji: '☢️', x: 1650, y: 370 },
-  { id: 'lim',      name: 'Li Minyong',     emoji: '☢️', x: 1780, y: 370 },
+  { id: 'fengyang', name: 'Feng Yanghe',    emoji: '☢️', x: 1450, y: 150 },
+  { id: 'zhangx',   name: 'Zhang Xiaoxin',  emoji: '☢️', x: 1580, y: 150 },
+  { id: 'chens',    name: 'Chen Shuming',   emoji: '☢️', x: 1710, y: 150 },
+  { id: 'fangd',    name: 'Fang Daining',   emoji: '☢️', x: 1450, y: 300 },
+  { id: 'yanh',     name: 'Yan Hong',       emoji: '☢️', x: 1580, y: 300 },
+  { id: 'zhangd',   name: 'Zhang Daibing',  emoji: '☢️', x: 1710, y: 300 },
+  { id: 'liud',     name: 'Liu Donghao',    emoji: '☢️', x: 1450, y: 450 },
+  { id: 'zhoug',    name: 'Zhou Guangyuan', emoji: '☢️', x: 1580, y: 450 },
+  { id: 'lim',      name: 'Li Minyong',     emoji: '☢️', x: 1710, y: 450 },
 ];
 
-const CANVAS_W = 2200;
-const CANVAS_H = 2200;
-const NASA_X = 1000;
-const NASA_Y = 1000;
+const CANVAS_W = 1800;
+const CANVAS_H = 1400;
+const NASA_X = 750;
+const NASA_Y = 620;
 
 let scale = 0.55;
 let panX = 0;
