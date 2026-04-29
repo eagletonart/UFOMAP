@@ -520,7 +520,7 @@ window.addEventListener('mouseup', () => isDragging = false);
 
 wrap.addEventListener('wheel', e => {
   e.preventDefault();
-  const factor = e.deltaY < 0 ? 1.03 : 0.97;
+  const factor = e.deltaY < 0 ? 1.015 : 0.985;
   const rect = wrap.getBoundingClientRect();
   const mx = e.clientX - rect.left;
   const my = e.clientY - rect.top;
@@ -546,7 +546,7 @@ wrap.addEventListener('touchmove', e => {
   e.preventDefault();
   if (e.touches.length === 2) {
     const dist = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
-    const factor = 1 + (dist - lastDist) * 0.002;
+    const factor = 1 + (dist - lastDist) * 0.001;
     lastDist = dist;
     const mx = (e.touches[0].clientX + e.touches[1].clientX) / 2;
     const my = (e.touches[0].clientY + e.touches[1].clientY) / 2;
