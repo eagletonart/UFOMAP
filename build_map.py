@@ -13,6 +13,7 @@ from datetime import datetime
 from constants import MISSING_SCIENTISTS as _MISSING_SCIENTISTS_LIVE
 from constants import CHINESE_SCIENTISTS as _CHINESE_SCIENTISTS_LIVE
 from constants import WHISTLEBLOWERS as _WHISTLEBLOWERS_LIVE
+from constants import BERMUDA_SITES as _BERMUDA_SITES_LIVE
 
 EXPORT_FILE = "ufo_data_export.json"
 OUTPUT_MAP  = "index.html"
@@ -168,6 +169,7 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     humanoid_json        = json.dumps(humanoid_encounters)
     asrs_json            = json.dumps(asrs_reports)
     asa_json             = json.dumps(asa_reports)
+    bermuda_json         = json.dumps(_BERMUDA_SITES_LIVE)
 
     # Hardcoded curated datasets — not fetched, not in export
     elongated_skulls = [
@@ -1189,6 +1191,7 @@ const ELONGATED_SKULLS    = {skulls_json};
 const ANOMALOUS_SPHERES   = {spheres_json};
 const ALIEN_MUMMIES       = {mummies_json};
 const CLASSIC_CASES       = {classic_json};
+const BERMUDA_SITES       = {bermuda_json};
 const MAPBOX_TOKEN        = '{mapbox_token}';
 
 // ── Map init ────────────────────────────────────────────────
@@ -1453,6 +1456,23 @@ USO_SITES.forEach(site => {{
     <div class="popup-summary">${{site.description}}</div>
   `, {{maxWidth:320}});
   usoLayer.addLayer(m);
+}});
+
+// ── Bermuda Triangle / Missing Vessels ──────────────────────
+const bermudaLayer = clusterGroup('#00ccff');
+BERMUDA_SITES.forEach(site => {{
+  const emoji = site.type === 'zone' ? '🌀' : site.type === 'aircraft' ? '✈️' : site.type === 'submarine' ? '⚓' : '🚢';
+  const color = '#00ccff';
+  const m = L.marker([site.lat, site.lon], {{icon: emojiIcon(emoji, color, 22)}});
+  const dateStr = site.date ? `<div class="popup-meta" style="color:#7de;">${{site.date}}</div>` : '';
+  m.bindPopup(`
+    <div class="popup-source" style="color:#00ccff;">🌀 BERMUDA TRIANGLE / MISSING VESSEL</div>
+    <div class="popup-title"  style="color:#00ccff;">${{site.name}}</div>
+    ${{dateStr}}
+    <div class="popup-summary">${{site.description}}</div>
+    <div class="popup-meta" style="color:#5aa;margin-top:6px;font-size:0.7em;">⚠ Geographic overlap with USO hotspots near Puerto Rico &amp; Bahamas</div>
+  `, {{maxWidth:340}});
+  bermudaLayer.addLayer(m);
 }});
 
 // ── Abduction reports ───────────────────────────────────────
@@ -2122,6 +2142,7 @@ const LAYER_REGISTRY = {{
   'COG Sites':                   cogLayer,
   'Nuclear Sites':               nuclearLayer,
   'USO Sites':                   usoLayer,
+  'Bermuda / Missing Vessels':   bermudaLayer,
   'Missing Scientists':          scientistsLayer,
   'Scientist Connections':       scientistConnectionsLayer,
   'Chinese Scientists':          chineseScientistsLayer,
@@ -2182,9 +2203,10 @@ const LAYER_GROUPS = [
     {{ name:'Cattle Mutilations', color:'#cc6600', on:false }},
   ]}},
   {{ icon:'🌊', name:'ENVIRONMENT', open:false, items:[
-    {{ name:'Seismic Activity', color:'#ff6600', on:false }},
-    {{ name:'Water & Aquifers', color:'#00cfff', on:false }},
-    {{ name:'Window Areas',     color:'#aa44ff', on:false }},
+    {{ name:'Seismic Activity',           color:'#ff6600', on:false }},
+    {{ name:'Water & Aquifers',           color:'#00cfff', on:false }},
+    {{ name:'Window Areas',               color:'#aa44ff', on:false }},
+    {{ name:'Bermuda / Missing Vessels',  color:'#00ccff', on:false }},
   ]}},
   {{ icon:'🔺', name:'PATTERNS', open:false, items:[
     {{ name:'Ley Lines',        color:'#ffaa00', on:false }},
@@ -2217,6 +2239,7 @@ const LEGEND_DEFS = {{
   'Water & Aquifers':   {{ ico:'<span style="font-size:12px">💧🌊</span>',               lbl:'Water / Aquifer'    }},
   'Cattle Mutilations': {{ ico:'<span style="font-size:12px">🐄</span>',                 lbl:'Cattle Mutilation'  }},
   'Window Areas':       {{ ico:'<span style="font-size:12px">👁️</span>',                 lbl:'Window Area'        }},
+  'Bermuda / Missing Vessels': {{ ico:'<span style="font-size:12px">🌀⚓</span>',         lbl:'Missing Vessel / Zone' }},
   'Ley Lines':          {{ ico:'<span style="color:#ffaa00;font-size:10px">———</span>',  lbl:'Ley Line'           }},
   '33rd Parallel':               {{ ico:'<span style="color:#ff2222;font-size:10px">— —</span>',  lbl:'33rd Parallel'            }},
   'Heat Map (All Sightings)':    {{ ico:'<span style="font-size:12px">🔥</span>',                  lbl:'Heatmap — All Sightings'  }},
