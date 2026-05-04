@@ -5,7 +5,6 @@ Run:  python3 build_map.py
 No network requests, no API calls — instant rebuild from local data.
 """
 
-import base64
 import json
 import os
 import sys
@@ -119,44 +118,10 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     uso_json        = json.dumps(uso_sites)
     missing_json        = json.dumps(missing_411)
     reddit_missing_json = json.dumps(reddit_missing)
-    # Embed scientist photos as base64 data URIs so the HTML is self-contained
-    _scientists_with_photos = []
-    for _sci in missing_scientists:
-        _s = dict(_sci)
-        if _s.get('photo'):
-            _photo_path = os.path.join(os.path.dirname(__file__), _s['photo'])
-            try:
-                with open(_photo_path, 'rb') as _pf:
-                    _b64 = base64.b64encode(_pf.read()).decode('ascii')
-                _ext = os.path.splitext(_photo_path)[1].lstrip('.').lower()
-                _mime = 'image/jpeg' if _ext in ('jpg', 'jpeg') else f'image/{_ext}'
-                _s['photo'] = f'data:{_mime};base64,{_b64}'
-            except FileNotFoundError:
-                _s['photo'] = ''
-        _scientists_with_photos.append(_s)
-    scientists_json = json.dumps(_scientists_with_photos)
-    # Chinese scientists — no photos available, serialize directly
+    # Use relative photo paths — photos/ folder is deployed alongside index.html
+    scientists_json      = json.dumps(missing_scientists)
     chinese_scientists_json = json.dumps(chinese_scientists)
-
-    def _embed_photos(records):
-        """Return a copy of records with photo paths replaced by base64 data URIs."""
-        out = []
-        for _rec in records:
-            _r = dict(_rec)
-            if _r.get('photo'):
-                _pp = os.path.join(os.path.dirname(__file__), _r['photo'])
-                try:
-                    with open(_pp, 'rb') as _pf:
-                        _b64 = base64.b64encode(_pf.read()).decode('ascii')
-                    _ext = os.path.splitext(_pp)[1].lstrip('.').lower()
-                    _mime = 'image/jpeg' if _ext in ('jpg', 'jpeg') else f'image/{_ext}'
-                    _r['photo'] = f'data:{_mime};base64,{_b64}'
-                except FileNotFoundError:
-                    _r['photo'] = ''
-            out.append(_r)
-        return out
-
-    whistleblowers_json = json.dumps(_embed_photos(whistleblowers))
+    whistleblowers_json  = json.dumps(whistleblowers)
     p33_json        = json.dumps(parallel_33_sites)
     nuclear_json    = json.dumps(nuclear_sites)
     cattle_json     = json.dumps(cattle_mutilation_sites)
