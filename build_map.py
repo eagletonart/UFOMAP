@@ -2178,11 +2178,13 @@ const LAYER_GROUPS = [
   {{ icon:'🦉', name:'POWER', open:false, items:[
     {{ name:'Power & Secrecy', color:'#ffd700', on:false }},
   ]}},
-  {{ icon:'🌊', name:'ENVIRONMENT', open:false, items:[
-    {{ name:'Seismic Activity',   color:'#ff6600', on:false }},
-    {{ name:'Water & Aquifers',   color:'#00cfff', on:false }},
+  {{ icon:'🐄', name:'CATTLE MUTILATIONS', open:false, items:[
     {{ name:'Cattle Mutilations', color:'#cc6600', on:false }},
-    {{ name:'Window Areas',       color:'#aa44ff', on:false }},
+  ]}},
+  {{ icon:'🌊', name:'ENVIRONMENT', open:false, items:[
+    {{ name:'Seismic Activity', color:'#ff6600', on:false }},
+    {{ name:'Water & Aquifers', color:'#00cfff', on:false }},
+    {{ name:'Window Areas',     color:'#aa44ff', on:false }},
   ]}},
   {{ icon:'🔺', name:'PATTERNS', open:false, items:[
     {{ name:'Ley Lines',        color:'#ffaa00', on:false }},
