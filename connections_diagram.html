@@ -21,6 +21,21 @@ body { background: #050e0a; color: #a0e8c8; font-family: 'Share Tech Mono', mono
 #close-btn { background: transparent; border: 1px solid #0f4; color: #0f4; padding: 6px 14px; cursor: pointer; font-family: 'Share Tech Mono', monospace; font-size: 0.75rem; letter-spacing: 0.1em; }
 #close-btn:hover { background: #0f4; color: #050e0a; }
 
+#view-toggle { display: flex; gap: 6px; }
+.view-btn {
+  background: transparent;
+  border: 1px solid #0a3;
+  color: #5a9;
+  padding: 5px 14px;
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  transition: background 0.15s, color 0.15s;
+}
+.view-btn:hover { background: #0a2; color: #0f4; border-color: #0f4; }
+.view-btn.active { background: #0a2; color: #0f4; border-color: #0f4; }
+
 #canvas-wrap {
   flex: 1;
   overflow: hidden;
@@ -200,6 +215,11 @@ body { background: #050e0a; color: #a0e8c8; font-family: 'Share Tech Mono', mono
 
 <div id="conn-header">
   <h1>NETWORK ANALYSIS — MISSING SCIENTISTS</h1>
+  <div id="view-toggle">
+    <button class="view-btn active" id="btn-web" onclick="setView('web')">WEB</button>
+    <button class="view-btn" id="btn-timeline" onclick="setView('timeline')">TIMELINE</button>
+    <button class="view-btn" id="btn-clusters" onclick="setView('clusters')">CLUSTERS</button>
+  </div>
   <span class="stamp">// CLASSIFIED //</span>
   <button id="close-btn" onclick="window.history.back()">✕ CLOSE</button>
 </div>
@@ -390,9 +410,9 @@ const CLUSTERS = {
   'MASSACHUSETTS':       { cx: 950,  cy: 150  },
   'AFRL / KIRTLAND':    { cx: 1250, cy: 400  },
   'LOS ALAMOS / KCNSC': { cx: 200,  cy: 600  },
-  'HUNTSVILLE CLUSTER': { cx: 850,  cy: 1050 },
-  'UAP DISCLOSURE':     { cx: 200,  cy: 950  },
-  'AATIP / PENTAGON':   { cx: 500,  cy: 1100 },
+  'HUNTSVILLE CLUSTER': { cx: 860,  cy: 990  },
+  'UAP DISCLOSURE':     { cx: 680,  cy: 840  },
+  'AATIP / PENTAGON':   { cx: 500,  cy: 1050 },
 };
 
 const NODE_POSITIONS = {
@@ -407,15 +427,15 @@ const NODE_POSITIONS = {
   'chavez':    { x: 100, y: 560 },
   'casias':    { x: 220, y: 560 },
   'garcia':    { x: 340, y: 560 },
-  'leblanc':   { x: 720, y: 1020 },
-  'eskridge':  { x: 860, y: 1020 },
-  'moffatt':   { x: 1000, y: 1020 },
-  'wilcock':   { x: 100, y: 900 },
-  'free':      { x: 220, y: 900 },
-  'sullivan':  { x: 340, y: 900 },
-  'elizondo':  { x: 380, y: 1100 },
-  'mellon':    { x: 500, y: 1100 },
-  'grusch':    { x: 620, y: 1100 },
+  'moffatt':   { x: 900, y: 900  },
+  'leblanc':   { x: 780, y: 980  },
+  'eskridge':  { x: 980, y: 990  },
+  'wilcock':   { x: 750, y: 880  },
+  'free':      { x: 680, y: 840  },
+  'sullivan':  { x: 420, y: 880  },
+  'elizondo':  { x: 380, y: 1050 },
+  'mellon':    { x: 500, y: 1050 },
+  'grusch':    { x: 580, y: 1080 },
 };
 
 // Cross-cluster spoke connections (from->to cluster center)
@@ -772,6 +792,12 @@ function openDossier(sci) {
 
 function closeDossier() {
   document.getElementById('dossier').classList.remove('open');
+}
+
+function setView(mode) {
+  document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn-' + mode).classList.add('active');
+  // TODO: implement TIMELINE and CLUSTERS layout transitions
 }
 
 // Build everything
