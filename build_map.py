@@ -13,6 +13,7 @@ from constants import MISSING_SCIENTISTS as _MISSING_SCIENTISTS_LIVE
 from constants import CHINESE_SCIENTISTS as _CHINESE_SCIENTISTS_LIVE
 from constants import WHISTLEBLOWERS as _WHISTLEBLOWERS_LIVE
 from constants import BERMUDA_SITES as _BERMUDA_SITES_LIVE
+from constants import PURSUE_SITES as _PURSUE_SITES_LIVE
 
 EXPORT_FILE = "ufo_data_export.json"
 OUTPUT_MAP  = "index.html"
@@ -45,7 +46,8 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
               cattle_mutilation_sites=None, window_areas=None, ley_lines=None,
               water_anomaly_sites=None, local_news=None,
               nuforc_recent=None, seismic_activity=None, humanoid_encounters=None,
-              asrs_reports=None, asa_reports=None):
+              asrs_reports=None, asa_reports=None,
+              pursue_sites=None):
     if missing_411 is None:
         missing_411 = []
     if reddit_missing is None:
@@ -80,6 +82,8 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
         asrs_reports = []
     if asa_reports is None:
         asa_reports = []
+    if pursue_sites is None:
+        pursue_sites = []
     nuforc_count      = sum(1 for s in sightings if s["source"] == "NUFORC")
     reddit_count      = len(sightings) - nuforc_count
     abduction_count   = len(abduction_sightings)
@@ -135,6 +139,7 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     asrs_json            = json.dumps(asrs_reports)
     asa_json             = json.dumps(asa_reports)
     bermuda_json         = json.dumps(_BERMUDA_SITES_LIVE)
+    pursue_json          = json.dumps(pursue_sites)
 
     # Hardcoded curated datasets — not fetched, not in export
     elongated_skulls = [
@@ -208,6 +213,7 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
         {"name": "Japan Airlines 1628", "lat": 64.0, "lon": -147.0, "date": "Nov 1986", "notes": "JAL cargo flight over Alaska tracked massive walnut-shaped craft for 50 minutes. Confirmed on FAA radar. Captain Kenju Terauchi reported craft was size of two aircraft carriers. FAA case file declassified."},
         {"name": "Shag Harbour", "lat": 43.4731, "lon": -65.7436, "date": "Oct 1967", "notes": "Multiple witnesses saw craft crash into Nova Scotia harbor. Canadian Coast Guard and RCMP investigated. Underwater search found no debris. Officially listed as UFO in Canadian government documents."},
         {"name": "RB-47 Encounter", "lat": 37.0, "lon": -96.0, "date": "Jul 1957", "notes": "USAF RB-47 reconnaissance aircraft tracked by UFO across 1000 miles over southern US. Both visual and electronic tracking confirmed. Multiple crew members witnessed object. Documented in USAF Project Blue Book."},
+        {"name": "Apollo 17 — Triangular Formation", "lat": 20.1908, "lon": 30.7720, "date": "Dec 1972", "notes": "Three luminous objects photographed from the lunar surface in triangular formation during Apollo 17 (December 1972). Officially declassified under the PURSUE program (May 8, 2026) as part of 162 UAP files released at war.gov/ufo. The formation — three distinct dots arranged in a precise equilateral triangle — appears in multiple frames of lunar surface photography. No natural or instrumental explanation has been officially offered. Marker placed at Taurus–Littrow landing site (20.19°N, 30.77°E)."},
     ]
     classic_json = json.dumps(classic_cases)
 
@@ -1047,6 +1053,9 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
 
     <h3>About</h3>
     <p>Built as an independent research visualization. All data is from public sources. This map is for educational and research purposes. Toggle layers to explore correlations between sighting density, infrastructure, and geography.</p>
+    <p style="color:#00ffcc;border:1px solid #00ffcc44;background:rgba(0,255,204,.06);padding:10px 14px;border-radius:3px;margin-top:10px;">
+      <b>🔓 NOTE:</b> This site was built before official UAP disclosure began. On <b>May 8, 2026</b>, the Trump administration released 162 declassified UAP files at <a href="https://www.war.gov/ufo" target="_blank" style="color:#00ffcc;">war.gov/ufo</a> under the <b>PURSUE program</b>. Enable the <b>PURSUE Disclosure</b> layer to see declassification events on the map.
+    </p>
     <p style="color:#3a7;font-size:.78rem;margin-top:16px">Last updated: {built_at}</p>
 
     <div style="text-align:center; margin: 20px 0;">
@@ -1145,6 +1154,7 @@ const WINDOW_AREAS       = {windows_json};
 const LEY_LINES          = {leylines_json};
 const WATER_ANOMALY_SITES = {water_json};
 const LOCAL_NEWS          = {local_news_json};
+const PURSUE_SITES        = {pursue_json};
 const NUFORC_RECENT       = {nuforc_recent_json};
 const SEISMIC_ACTIVITY    = {seismic_json};
 const HUMANOID_ENCOUNTERS = {humanoid_json};
@@ -2037,6 +2047,34 @@ CLASSIC_CASES.forEach(c => {{
   classicLayer.addLayer(m);
 }});
 
+// ── PURSUE Disclosure layer ──────────────────────────────────
+const pursueLayer = L.layerGroup();
+PURSUE_SITES.forEach(p => {{
+  const icon = L.divIcon({{
+    className: '',
+    html: `<div style="position:relative;width:42px;height:42px;">
+      <div style="position:absolute;inset:0;border-radius:50%;
+        border:2px solid #00ffcc;background:rgba(0,255,204,.10);
+        box-shadow:0 0 12px #00ffcc88,0 0 24px #00ffcc33;
+        animation:pulse-ring 2.2s ease-out infinite;"></div>
+      <div style="position:absolute;inset:0;display:flex;align-items:center;
+        justify-content:center;font-size:20px;line-height:1">🔓</div>
+    </div>`,
+    iconSize: [42, 42], iconAnchor: [21, 21],
+  }});
+  const m = L.marker([p.lat, p.lon], {{icon}});
+  const linkHtml = p.url ? `<a href="${{p.url}}" target="_blank" class="popup-link">→ war.gov/ufo</a>` : '';
+  m.bindPopup(`
+    <div class="popup-source" style="color:#00ffcc;">🔓 PURSUE — OFFICIAL DISCLOSURE</div>
+    <div class="popup-title"  style="color:#00ffcc;">${{p.name}}</div>
+    <div class="popup-meta">📅 ${{p.date}} &nbsp;·&nbsp; 📍 ${{p.location}}</div>
+    <div class="popup-meta" style="color:#00ffcc;">${{p.type}}</div>
+    <div class="popup-summary">${{p.description}}</div>
+    ${{linkHtml}}
+  `, {{maxWidth:340}});
+  pursueLayer.addLayer(m);
+}});
+
 // ── NUFORC Recent layer ──────────────────────────────────────
 const nuforcRecentLayer = clusterGroup('#00aaff');
 NUFORC_RECENT.forEach(s => {{
@@ -2122,6 +2160,7 @@ const LAYER_REGISTRY = {{
   '33rd Parallel':               parallel33Layer,
   'Local News':                  localNewsLayer,
   'Classic Cases':               classicLayer,
+  'PURSUE Disclosure':           pursueLayer,
   'NUFORC Recent':               nuforcRecentLayer,
   'Pilot Reports':        asrsLayer,
   'ASA Reports':                 asaLayer,
@@ -2142,6 +2181,7 @@ const LAYER_GROUPS = [
     {{ name:'NUFORC Recent',              color:'#00aaff', on:false }},
     {{ name:'Local News',                 color:'#00ffcc', on:false }},
     {{ name:'Classic Cases',              color:'#ffd700', on:false }},
+    {{ name:'PURSUE Disclosure',          color:'#00ffcc', on:false }},
   ]}},
   {{ icon:'✈️', name:'PILOT REPORTS', open:false, items:[
     {{ name:'Pilot Reports', color:'#00aaff', on:false }},
@@ -2212,6 +2252,7 @@ const LEGEND_DEFS = {{
   'NUFORC Recent':               {{ ico:'<span style="font-size:12px">🆕</span>',                  lbl:'NUFORC Recent Report'     }},
   'Local News':                  {{ ico:'<span style="font-size:12px">📡</span>',                  lbl:'Local News Sighting'      }},
   'Classic Cases':               {{ ico:'<span style="color:#ffd700;font-size:12px">🔍</span>',    lbl:'Classic UAP Case'         }},
+  'PURSUE Disclosure':           {{ ico:'<span style="font-size:12px">🔓</span>',                   lbl:'PURSUE Declassified File'  }},
   'Pilot Reports':        {{ ico:'<span style="font-size:12px">✈️</span>',                  lbl:'Notable Pilot UAP Report' }},
   'ASA Reports':                 {{ ico:'<span style="font-size:12px">🛩️</span>',                  lbl:'ASA Report'               }},
   'Convergence Zones':           {{ ico:'<span style="font-size:12px">☢️</span>',                  lbl:'Convergence Zone (sightings+abductions+base)'  }},
@@ -3659,5 +3700,6 @@ if __name__ == "__main__":
         humanoid_encounters      = data.get("humanoid_encounters", []),
         asrs_reports             = data.get("asrs_reports", []),
         asa_reports              = data.get("asa_reports", []),
+        pursue_sites             = _PURSUE_SITES_LIVE,
     )
     print(f"\n✅  Done — open {OUTPUT_MAP} in your browser.")

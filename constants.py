@@ -611,3 +611,18 @@ WATER_ANOMALY_SITES = [
      "location": "Eastern Washington/Northern Idaho", "type": "aquifer",
      "description": "CRITICAL HOTSPOT: This aquifer sits at the center of the identified Pacific Northwest UAP triangle. A massive gravel aquifer holding up to 10 trillion gallons, formed by Missoula Flood catastrophic outwash 13,000 years ago. The surface aquifer recharge zone directly overlaps with one of the densest UFO sighting clusters in the Pacific Northwest. Fairchild Air Force Base (heavy bomber and aerial refueling hub) sits directly above the western edge. Hanford Nuclear Site is 130 miles south. The 1947 Maury Island UFO incident — the first modern UFO case — occurred 30 miles west, and Kenneth Arnold's first flying saucer sighting was made 60 miles south over Mt. Rainier just days later."},
 ]
+
+# ── PURSUE Disclosure Sites ───────────────────────────────────
+# Trump administration's UAP declassification program, launched May 8 2026
+# Source: war.gov/ufo
+PURSUE_SITES = [
+    {
+        "name": "Pentagon — PURSUE Disclosure Release",
+        "lat": 38.8719, "lon": -77.0563,
+        "location": "Arlington, VA",
+        "date": "May 8, 2026",
+        "type": "Declassification Event",
+        "description": "On May 8, 2026, the Trump administration released 162 declassified UAP files at war.gov/ufo under the PURSUE program (Preliminary Unidentified Aerial Reconnaissance Survey of Unknown Entities). The files include declassified military encounter reports, radar data, and sensor readings previously held at the DoD and intelligence community level. This marks the first large-scale government-initiated UAP disclosure in US history — driven by executive order rather than congressional pressure. The Pentagon serves as the administrative origin point for the released documents.",
+        "url": "https://www.war.gov/ufo",
+    },
+]
