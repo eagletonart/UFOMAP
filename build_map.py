@@ -2179,6 +2179,7 @@ PURSUE_DECLASSIFIED.forEach(p => {{
     ${{p.witnesses ? `<div class="popup-meta" style="color:#aacce8;font-size:0.70rem;">👁 ${{p.witnesses}}</div>` : ''}}
     <div class="popup-meta" style="color:#7ab;font-size:0.68rem;">📄 ${{p.source_doc}}</div>
     ${{p.craft ? `<div style="border-left:2px solid #ffe06655;padding:4px 8px;margin:4px 0;font-size:0.70rem;color:#d4c06a;"><b style="color:#ffe066;">CRAFT:</b> ${{p.craft}}</div>` : ''}}
+    ${{p.physical_evidence ? `<div style="border-left:2px solid #44ff9955;padding:4px 8px;margin:4px 0;font-size:0.70rem;color:#88cc99;"><b style="color:#44dd88;">EVIDENCE:</b> ${{p.physical_evidence}}</div>` : ''}}
     <div class="popup-summary">${{p.description}}</div>
     ${{aaroHtml}}
     ${{p.significance ? `<div style="margin:5px 0;font-size:0.70rem;font-weight:bold;color:${{sigColor}};">◈ SIGNIFICANCE: ${{p.significance}}</div>` : ''}}
