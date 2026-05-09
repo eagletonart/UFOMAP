@@ -6,6 +6,7 @@ No network requests, no API calls — instant rebuild from local data.
 """
 
 import json
+import math
 import os
 import sys
 from datetime import datetime
@@ -18,6 +19,66 @@ from constants import PURSUE_DECLASSIFIED_SITES as _PURSUE_DECLASSIFIED_LIVE
 
 EXPORT_FILE = "ufo_data_export.json"
 OUTPUT_MAP  = "index.html"
+
+# ---------------------------------------------------------------------------
+# Correlation helpers
+# ---------------------------------------------------------------------------
+
+def _haversine_mi(lat1, lon1, lat2, lon2):
+    R = 3958.8
+    dlat = math.radians(lat2 - lat1)
+    dlon = math.radians(lon2 - lon1)
+    a = (math.sin(dlat / 2) ** 2
+         + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2)
+    return R * 2 * math.asin(math.sqrt(min(a, 1.0)))
+
+
+def _enrich_pursue_correlations(pursue_decl, military_bases, sightings, abductions, radius_mi=50):
+    """Add a 'correlation' field to each PURSUE Declassified site based on nearby data."""
+    result = []
+    for site in pursue_decl:
+        slat, slon = site["lat"], site["lon"]
+        orbital = ("orbit" in site.get("location", "").lower()
+                   or "lunar" in site.get("location", "").lower())
+
+        nearby_bases = [b["name"] for b in military_bases
+                        if b.get("lat") and _haversine_mi(slat, slon, b["lat"], b["lon"]) <= radius_mi]
+        nearby_sightings = sum(
+            1 for s in sightings
+            if s.get("lat") and s.get("lon")
+            and _haversine_mi(slat, slon, float(s["lat"]), float(s["lon"])) <= radius_mi
+        )
+        nearby_abductions = sum(
+            1 for a in abductions
+            if a.get("lat") and a.get("lon")
+            and _haversine_mi(slat, slon, float(a["lat"]), float(a["lon"])) <= radius_mi
+        )
+
+        parts = []
+        if nearby_bases:
+            base_names = ", ".join(nearby_bases[:2]) + ("…" if len(nearby_bases) > 2 else "")
+            parts.append(f"{len(nearby_bases)} military installation{'s' if len(nearby_bases) > 1 else ''} ({base_names})")
+        if nearby_sightings:
+            parts.append(f"{nearby_sightings:,} NUFORC sighting{'s' if nearby_sightings > 1 else ''}")
+        if nearby_abductions:
+            parts.append(f"{nearby_abductions} abduction report{'s' if nearby_abductions > 1 else ''}")
+
+        enriched = dict(site)
+        if parts and not orbital:
+            total = len(nearby_bases) + nearby_sightings + nearby_abductions
+            enriched["correlation"] = (
+                f"CORROBORATED BY {total:,} INDEPENDENT REPORTS within 50 mi — "
+                + "; ".join(parts)
+            )
+        elif parts and orbital:
+            enriched["correlation"] = (
+                f"PLOTTED AT KSC LAUNCH SITE (event occurred in orbit) — "
+                f"{len(nearby_bases)} military installation{'s' if len(nearby_bases) > 1 else ''} near plot point"
+            )
+        else:
+            enriched["correlation"] = ""
+        result.append(enriched)
+    return result
 
 # ---------------------------------------------------------------------------
 # Load data
@@ -2096,15 +2157,34 @@ PURSUE_DECLASSIFIED.forEach(p => {{
     iconSize: [40, 40], iconAnchor: [20, 20],
   }});
   const m = L.marker([p.lat, p.lon], {{icon}});
+  const sigColor = p.significance
+    ? (p.significance.startsWith('CRITICAL') ? '#ff4444'
+      : p.significance.startsWith('HIGH')     ? '#ff9900'
+      : p.significance.startsWith('MODERATE') ? '#ffcc00'
+      : '#888888')
+    : '#888888';
+  const aaroHtml = p.aaro_quote
+    ? `<div style="border-left:3px solid #ff7744;padding:5px 8px;margin:5px 0;background:rgba(255,119,68,.08);font-size:0.70rem;font-style:italic;color:#ff9977;">"${{p.aaro_quote}}"<br><span style="color:#ff7744;font-style:normal;font-size:0.64rem;letter-spacing:0.04em;">— AARO ASSESSMENT</span></div>`
+    : '';
+  const corrHtml = p.correlation
+    ? `<div style="margin:5px 0;padding:4px 8px;border:1px solid #00ff9933;background:rgba(0,255,153,.05);font-size:0.67rem;color:#00cc88;">🔗 ${{p.correlation}}</div>`
+    : '';
+  const pdfLabel = (p.pdf_url && p.pdf_url !== 'https://www.war.gov/ufo') ? 'View source PDF' : 'war.gov/ufo';
   m.bindPopup(`
     <div class="popup-source" style="color:#ffe066;">⭐ PURSUE — DECLASSIFIED FILE</div>
-    <div class="popup-title"  style="color:#ffe066;">${{p.name}}</div>
+    <div style="font-size:0.62rem;color:#666;font-family:monospace;letter-spacing:0.04em;margin-bottom:3px;">${{p.classification || 'UNCLASSIFIED // CLEARED FOR RELEASE'}}</div>
+    <div class="popup-title" style="color:#ffe066;">${{p.name}}</div>
     <div class="popup-meta">📅 ${{p.date}} &nbsp;·&nbsp; 📍 ${{p.location}}</div>
     <div class="popup-meta" style="color:#ffe066;">🏛 ${{p.agency}}</div>
-    <div class="popup-meta" style="color:#8cc;font-size:0.72rem;">📄 ${{p.source_doc}}</div>
+    ${{p.witnesses ? `<div class="popup-meta" style="color:#aacce8;font-size:0.70rem;">👁 ${{p.witnesses}}</div>` : ''}}
+    <div class="popup-meta" style="color:#7ab;font-size:0.68rem;">📄 ${{p.source_doc}}</div>
+    ${{p.craft ? `<div style="border-left:2px solid #ffe06655;padding:4px 8px;margin:4px 0;font-size:0.70rem;color:#d4c06a;"><b style="color:#ffe066;">CRAFT:</b> ${{p.craft}}</div>` : ''}}
     <div class="popup-summary">${{p.description}}</div>
-    <a href="https://www.war.gov/ufo" target="_blank" class="popup-link">→ war.gov/ufo</a>
-  `, {{maxWidth:340}});
+    ${{aaroHtml}}
+    ${{p.significance ? `<div style="margin:5px 0;font-size:0.70rem;font-weight:bold;color:${{sigColor}};">◈ SIGNIFICANCE: ${{p.significance}}</div>` : ''}}
+    ${{corrHtml}}
+    <a href="${{p.pdf_url || 'https://www.war.gov/ufo'}}" target="_blank" class="popup-link">→ ${{pdfLabel}}</a>
+  `, {{maxWidth:390}});
   pursueDeclaLayer.addLayer(m);
 }});
 
@@ -3713,6 +3793,13 @@ if __name__ == "__main__":
         if reddit_missing:
             print(f"   ↳ Separated {len(reddit_missing)} r/Missing411 posts from sightings layer")
 
+    enriched_pursue_decl = _enrich_pursue_correlations(
+        _PURSUE_DECLASSIFIED_LIVE,
+        military_bases = data.get("military_bases", []),
+        sightings      = raw_sightings,
+        abductions     = data.get("abduction_reports", []),
+    )
+
     build_map(
         sightings           = raw_sightings,
         abduction_sightings = data.get("abduction_reports", []),
@@ -3737,6 +3824,6 @@ if __name__ == "__main__":
         asrs_reports             = data.get("asrs_reports", []),
         asa_reports              = data.get("asa_reports", []),
         pursue_sites             = _PURSUE_SITES_LIVE,
-        pursue_declassified      = _PURSUE_DECLASSIFIED_LIVE,
+        pursue_declassified      = enriched_pursue_decl,
     )
     print(f"\n✅  Done — open {OUTPUT_MAP} in your browser.")
