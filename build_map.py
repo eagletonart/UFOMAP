@@ -110,7 +110,8 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
               nuforc_recent=None, seismic_activity=None, humanoid_encounters=None,
               asrs_reports=None, asa_reports=None,
               pursue_sites=None,
-              pursue_declassified=None):
+              pursue_declassified=None,
+              pursue_release_01=None):
     if missing_411 is None:
         missing_411 = []
     if reddit_missing is None:
@@ -206,6 +207,7 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     bermuda_json         = json.dumps(_BERMUDA_SITES_LIVE)
     pursue_json          = json.dumps(pursue_sites)
     pursue_decl_json     = json.dumps(pursue_declassified)
+    pursue_r01_json      = json.dumps(pursue_release_01 or [])
 
     # Hardcoded curated datasets — not fetched, not in export
     elongated_skulls = [
@@ -1224,6 +1226,7 @@ const WATER_ANOMALY_SITES = {water_json};
 const LOCAL_NEWS          = {local_news_json};
 const PURSUE_SITES        = {pursue_json};
 const PURSUE_DECLASSIFIED = {pursue_decl_json};
+const PURSUE_RELEASE_01   = {pursue_r01_json};
 const NUFORC_RECENT       = {nuforc_recent_json};
 const SEISMIC_ACTIVITY    = {seismic_json};
 const HUMANOID_ENCOUNTERS = {humanoid_json};
@@ -2191,6 +2194,41 @@ PURSUE_DECLASSIFIED.forEach(p => {{
   pursueDeclaLayer.addLayer(m);
 }});
 
+// ── PURSUE Release 01 layer (machine-extracted, all 128 geocoded files) ──────
+const pursueR01Layer = L.layerGroup();
+PURSUE_RELEASE_01.forEach(p => {{
+  if (!p.lat || !p.lon) return;
+  const icon = L.divIcon({{
+    className: '',
+    html: `<div style="position:relative;width:36px;height:36px;">
+      <div style="position:absolute;inset:0;border-radius:50%;
+        border:2px solid #ff9500;background:rgba(255,149,0,.13);
+        box-shadow:0 0 10px #ff950099,0 0 20px #ff950033;"></div>
+      <div style="position:absolute;inset:0;display:flex;align-items:center;
+        justify-content:center;font-size:16px;line-height:1">📂</div>
+    </div>`,
+    iconSize: [36, 36], iconAnchor: [18, 18],
+  }});
+  const m = L.marker([p.lat, p.lon], {{icon}});
+  const thumbHtml = p.thumbnail
+    ? `<img src="${{p.thumbnail}}" style="width:100%;border-radius:4px;margin:6px 0;border:1px solid #ff950055;" loading="lazy" onerror="this.style.display='none'">`
+    : '';
+  const pdfHtml = p.pdfUrl
+    ? `<a href="${{p.pdfUrl}}" target="_blank" class="popup-link">→ View PDF</a>`
+    : `<a href="https://www.war.gov/UFO/" target="_blank" class="popup-link">→ war.gov/UFO</a>`;
+  const copyShort = (p.copy||'').length > 450 ? p.copy.slice(0,450) + '…' : (p.copy||'');
+  m.bindPopup(`
+    <div class="popup-source" style="color:#ff9500;">📂 PURSUE — RELEASE 01</div>
+    <div style="font-size:0.60rem;color:#888;font-family:monospace;letter-spacing:0.04em;">${{(p.agency||'').replace(/[\[\]]/g,'')}}</div>
+    <div class="popup-title" style="color:#ff9500;">${{p.title}}</div>
+    <div class="popup-meta">📍 ${{p.location}}</div>
+    ${{thumbHtml}}
+    <div class="popup-summary" style="font-size:0.78rem;color:#c8d8e8;line-height:1.45;">${{copyShort}}</div>
+    ${{pdfHtml}}
+  `, {{maxWidth:370}});
+  pursueR01Layer.addLayer(m);
+}});
+
 // ── NUFORC Recent layer ──────────────────────────────────────
 const nuforcRecentLayer = clusterGroup('#00aaff');
 NUFORC_RECENT.forEach(s => {{
@@ -2278,6 +2316,7 @@ const LAYER_REGISTRY = {{
   'Classic Cases':               classicLayer,
   'PURSUE Disclosure':           pursueLayer,
   'PURSUE Declassified':         pursueDeclaLayer,
+  'PURSUE Release 01':           pursueR01Layer,
   'NUFORC Recent':               nuforcRecentLayer,
   'Pilot Reports':        asrsLayer,
   'ASA Reports':                 asaLayer,
@@ -2300,6 +2339,7 @@ const LAYER_GROUPS = [
     {{ name:'Classic Cases',              color:'#ffd700', on:false }},
     {{ name:'PURSUE Disclosure',          color:'#00ffcc', on:false }},
     {{ name:'PURSUE Declassified',        color:'#ffe066', on:false }},
+    {{ name:'PURSUE Release 01',          color:'#ff9500', on:false }},
   ]}},
   {{ icon:'✈️', name:'PILOT REPORTS', open:false, items:[
     {{ name:'Pilot Reports', color:'#00aaff', on:false }},
@@ -2372,6 +2412,7 @@ const LEGEND_DEFS = {{
   'Classic Cases':               {{ ico:'<span style="color:#ffd700;font-size:12px">🔍</span>',    lbl:'Classic UAP Case'         }},
   'PURSUE Disclosure':           {{ ico:'<span style="font-size:12px">🔓</span>',                   lbl:'PURSUE Declassified File'  }},
   'PURSUE Declassified':         {{ ico:'<span style="font-size:12px">⭐</span>',                   lbl:'PURSUE Declassified Sighting' }},
+  'PURSUE Release 01':           {{ ico:'<span style="font-size:12px">📂</span>',                   lbl:'PURSUE Release 01 File' }},
   'Pilot Reports':        {{ ico:'<span style="font-size:12px">✈️</span>',                  lbl:'Notable Pilot UAP Report' }},
   'ASA Reports':                 {{ ico:'<span style="font-size:12px">🛩️</span>',                  lbl:'ASA Report'               }},
   'Convergence Zones':           {{ ico:'<span style="font-size:12px">☢️</span>',                  lbl:'Convergence Zone (sightings+abductions+base)'  }},
@@ -2753,6 +2794,26 @@ const MB_LAYERS = [
          '#ffaa00'],
        'circle-emissive-strength': 1,
      }}}},
+  // PURSUE Release 01: orange — declassified gov UAP files
+  {{ id:'pursue-r01',
+     data:() => PURSUE_RELEASE_01.filter(p => p.lat && p.lon).map(p => ({{...p, name:p.title, summary:(p.copy||'').slice(0,220)}})),
+     name:'PURSUE Release 01', paint:{{
+       'circle-radius':            ['interpolate',['linear'],['zoom'], 1,4, 3,7, 7,13],
+       'circle-color':             '#ff9500',
+       'circle-opacity':           0.93,
+       'circle-stroke-width':      2,
+       'circle-stroke-color':      '#ffcc77',
+       'circle-emissive-strength': 1,
+     }},
+     popupFn(props) {{
+       return `<div style="font-family:'Rajdhani',sans-serif;max-width:290px">
+         <div style="font-size:0.60rem;color:#ff9500;font-weight:700;letter-spacing:0.05em;">📂 PURSUE — RELEASE 01</div>
+         <div style="font-weight:700;color:#ff9500;font-size:1rem">${{props.name}}</div>
+         <div style="color:#5a9;font-size:.78rem">📍 ${{props.location}}</div>
+         <div style="color:#8cc;font-size:.82rem;margin-top:4px;line-height:1.4;">${{(props.summary||'').slice(0,220)}}</div>
+       </div>`;
+     }},
+  }},
 ];
 
 function _toGeoJSON(items) {{
@@ -3796,6 +3857,16 @@ if __name__ == "__main__":
         if reddit_missing:
             print(f"   ↳ Separated {len(reddit_missing)} r/Missing411 posts from sightings layer")
 
+    # Load PURSUE Release 01 data (machine-extracted from war.gov/UFO)
+    _r01_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pursue_locations.json')
+    if os.path.exists(_r01_path):
+        with open(_r01_path, encoding='utf-8') as _f:
+            _pursue_r01_data = json.load(_f)
+        print(f"   PURSUE Release 01: {len(_pursue_r01_data)} geocoded records")
+    else:
+        _pursue_r01_data = []
+        print("   ⚠  pursue_locations.json not found — PURSUE Release 01 layer will be empty")
+
     enriched_pursue_decl = _enrich_pursue_correlations(
         _PURSUE_DECLASSIFIED_LIVE,
         military_bases = data.get("military_bases", []),
@@ -3828,5 +3899,6 @@ if __name__ == "__main__":
         asa_reports              = data.get("asa_reports", []),
         pursue_sites             = _PURSUE_SITES_LIVE,
         pursue_declassified      = enriched_pursue_decl,
+        pursue_release_01        = _pursue_r01_data,
     )
     print(f"\n✅  Done — open {OUTPUT_MAP} in your browser.")
