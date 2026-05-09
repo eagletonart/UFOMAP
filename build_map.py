@@ -1059,7 +1059,7 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
     <h3>About</h3>
     <p>Built as an independent research visualization. All data is from public sources. This map is for educational and research purposes. Toggle layers to explore correlations between sighting density, infrastructure, and geography.</p>
     <p style="color:#00ffcc;border:1px solid #00ffcc44;background:rgba(0,255,204,.06);padding:10px 14px;border-radius:3px;margin-top:10px;">
-      <b>🔓 NOTE:</b> This site was built before official UAP disclosure began. On <b>May 8, 2026</b>, the Trump administration released 162 declassified UAP files at <a href="https://www.war.gov/ufo" target="_blank" style="color:#00ffcc;">war.gov/ufo</a> under the <b>PURSUE program</b>. Enable the <b>PURSUE Disclosure</b> layer to see declassification events on the map.
+      <b>🔓 NOTE:</b> This site was built before official UAP disclosure began. On <b>May 8, 2026</b>, the Trump administration released <b>161 declassified UAP files</b> at <a href="https://www.war.gov/ufo" target="_blank" style="color:#00ffcc;">war.gov/ufo</a> under the <b>PURSUE program</b>. Enable the <b>PURSUE Disclosure</b> layer to see the declassification event, or enable <b>PURSUE Declassified</b> to explore 20 sourced UAP cases from the released files — including FBI investigations, NASA mission anomalies, and military radar intercepts.
     </p>
     <p style="color:#3a7;font-size:.78rem;margin-top:16px">Last updated: {built_at}</p>
 
