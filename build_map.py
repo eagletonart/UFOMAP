@@ -14,6 +14,7 @@ from constants import CHINESE_SCIENTISTS as _CHINESE_SCIENTISTS_LIVE
 from constants import WHISTLEBLOWERS as _WHISTLEBLOWERS_LIVE
 from constants import BERMUDA_SITES as _BERMUDA_SITES_LIVE
 from constants import PURSUE_SITES as _PURSUE_SITES_LIVE
+from constants import PURSUE_DECLASSIFIED_SITES as _PURSUE_DECLASSIFIED_LIVE
 
 EXPORT_FILE = "ufo_data_export.json"
 OUTPUT_MAP  = "index.html"
@@ -47,7 +48,8 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
               water_anomaly_sites=None, local_news=None,
               nuforc_recent=None, seismic_activity=None, humanoid_encounters=None,
               asrs_reports=None, asa_reports=None,
-              pursue_sites=None):
+              pursue_sites=None,
+              pursue_declassified=None):
     if missing_411 is None:
         missing_411 = []
     if reddit_missing is None:
@@ -84,6 +86,8 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
         asa_reports = []
     if pursue_sites is None:
         pursue_sites = []
+    if pursue_declassified is None:
+        pursue_declassified = []
     nuforc_count      = sum(1 for s in sightings if s["source"] == "NUFORC")
     reddit_count      = len(sightings) - nuforc_count
     abduction_count   = len(abduction_sightings)
@@ -140,6 +144,7 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     asa_json             = json.dumps(asa_reports)
     bermuda_json         = json.dumps(_BERMUDA_SITES_LIVE)
     pursue_json          = json.dumps(pursue_sites)
+    pursue_decl_json     = json.dumps(pursue_declassified)
 
     # Hardcoded curated datasets — not fetched, not in export
     elongated_skulls = [
@@ -1054,7 +1059,7 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
     <h3>About</h3>
     <p>Built as an independent research visualization. All data is from public sources. This map is for educational and research purposes. Toggle layers to explore correlations between sighting density, infrastructure, and geography.</p>
     <p style="color:#00ffcc;border:1px solid #00ffcc44;background:rgba(0,255,204,.06);padding:10px 14px;border-radius:3px;margin-top:10px;">
-      <b>🔓 NOTE:</b> This site was built before official UAP disclosure began. On <b>May 8, 2026</b>, the Trump administration released 162 declassified UAP files at <a href="https://www.war.gov/ufo" target="_blank" style="color:#00ffcc;">war.gov/ufo</a> under the <b>PURSUE program</b>. Enable the <b>PURSUE Disclosure</b> layer to see declassification events on the map.
+      <b>🔓 NOTE:</b> This site was built before official UAP disclosure began. On <b>May 8, 2026</b>, the Trump administration released <b>161 declassified UAP files</b> at <a href="https://www.war.gov/ufo" target="_blank" style="color:#00ffcc;">war.gov/ufo</a> under the <b>PURSUE program</b>. Enable the <b>PURSUE Disclosure</b> layer to see the declassification event, or enable <b>PURSUE Declassified</b> to explore 20 sourced UAP cases from the released files — including FBI investigations, NASA mission anomalies, and military radar intercepts.
     </p>
     <p style="color:#3a7;font-size:.78rem;margin-top:16px">Last updated: {built_at}</p>
 
@@ -1155,6 +1160,7 @@ const LEY_LINES          = {leylines_json};
 const WATER_ANOMALY_SITES = {water_json};
 const LOCAL_NEWS          = {local_news_json};
 const PURSUE_SITES        = {pursue_json};
+const PURSUE_DECLASSIFIED = {pursue_decl_json};
 const NUFORC_RECENT       = {nuforc_recent_json};
 const SEISMIC_ACTIVITY    = {seismic_json};
 const HUMANOID_ENCOUNTERS = {humanoid_json};
@@ -2075,6 +2081,33 @@ PURSUE_SITES.forEach(p => {{
   pursueLayer.addLayer(m);
 }});
 
+// ── PURSUE Declassified Sightings layer ─────────────────────
+const pursueDeclaLayer = L.layerGroup();
+PURSUE_DECLASSIFIED.forEach(p => {{
+  const icon = L.divIcon({{
+    className: '',
+    html: `<div style="position:relative;width:40px;height:40px;">
+      <div style="position:absolute;inset:0;border-radius:50%;
+        border:2px solid #ffe066;background:rgba(255,224,102,.12);
+        box-shadow:0 0 10px #ffe06688,0 0 20px #ffe06633;"></div>
+      <div style="position:absolute;inset:0;display:flex;align-items:center;
+        justify-content:center;font-size:18px;line-height:1">⭐</div>
+    </div>`,
+    iconSize: [40, 40], iconAnchor: [20, 20],
+  }});
+  const m = L.marker([p.lat, p.lon], {{icon}});
+  m.bindPopup(`
+    <div class="popup-source" style="color:#ffe066;">⭐ PURSUE — DECLASSIFIED FILE</div>
+    <div class="popup-title"  style="color:#ffe066;">${{p.name}}</div>
+    <div class="popup-meta">📅 ${{p.date}} &nbsp;·&nbsp; 📍 ${{p.location}}</div>
+    <div class="popup-meta" style="color:#ffe066;">🏛 ${{p.agency}}</div>
+    <div class="popup-meta" style="color:#8cc;font-size:0.72rem;">📄 ${{p.source_doc}}</div>
+    <div class="popup-summary">${{p.description}}</div>
+    <a href="https://www.war.gov/ufo" target="_blank" class="popup-link">→ war.gov/ufo</a>
+  `, {{maxWidth:340}});
+  pursueDeclaLayer.addLayer(m);
+}});
+
 // ── NUFORC Recent layer ──────────────────────────────────────
 const nuforcRecentLayer = clusterGroup('#00aaff');
 NUFORC_RECENT.forEach(s => {{
@@ -2161,6 +2194,7 @@ const LAYER_REGISTRY = {{
   'Local News':                  localNewsLayer,
   'Classic Cases':               classicLayer,
   'PURSUE Disclosure':           pursueLayer,
+  'PURSUE Declassified':         pursueDeclaLayer,
   'NUFORC Recent':               nuforcRecentLayer,
   'Pilot Reports':        asrsLayer,
   'ASA Reports':                 asaLayer,
@@ -2182,6 +2216,7 @@ const LAYER_GROUPS = [
     {{ name:'Local News',                 color:'#00ffcc', on:false }},
     {{ name:'Classic Cases',              color:'#ffd700', on:false }},
     {{ name:'PURSUE Disclosure',          color:'#00ffcc', on:false }},
+    {{ name:'PURSUE Declassified',        color:'#ffe066', on:false }},
   ]}},
   {{ icon:'✈️', name:'PILOT REPORTS', open:false, items:[
     {{ name:'Pilot Reports', color:'#00aaff', on:false }},
@@ -2253,6 +2288,7 @@ const LEGEND_DEFS = {{
   'Local News':                  {{ ico:'<span style="font-size:12px">📡</span>',                  lbl:'Local News Sighting'      }},
   'Classic Cases':               {{ ico:'<span style="color:#ffd700;font-size:12px">🔍</span>',    lbl:'Classic UAP Case'         }},
   'PURSUE Disclosure':           {{ ico:'<span style="font-size:12px">🔓</span>',                   lbl:'PURSUE Declassified File'  }},
+  'PURSUE Declassified':         {{ ico:'<span style="font-size:12px">⭐</span>',                   lbl:'PURSUE Declassified Sighting' }},
   'Pilot Reports':        {{ ico:'<span style="font-size:12px">✈️</span>',                  lbl:'Notable Pilot UAP Report' }},
   'ASA Reports':                 {{ ico:'<span style="font-size:12px">🛩️</span>',                  lbl:'ASA Report'               }},
   'Convergence Zones':           {{ ico:'<span style="font-size:12px">☢️</span>',                  lbl:'Convergence Zone (sightings+abductions+base)'  }},
@@ -3701,5 +3737,6 @@ if __name__ == "__main__":
         asrs_reports             = data.get("asrs_reports", []),
         asa_reports              = data.get("asa_reports", []),
         pursue_sites             = _PURSUE_SITES_LIVE,
+        pursue_declassified      = _PURSUE_DECLASSIFIED_LIVE,
     )
     print(f"\n✅  Done — open {OUTPUT_MAP} in your browser.")
