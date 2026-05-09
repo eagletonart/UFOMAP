@@ -533,12 +533,18 @@ def _claude_extract_location(title, body_excerpt):
 
 
 def fetch_arctic_shift_reddit(max_per_sub=200):
-    """Fetch Reddit sightings from Arctic Shift; use Claude to extract locations.
-    Caches results in reddit_cache.json to avoid re-processing on repeat runs."""
+    """Fetch Reddit sightings from Arctic Shift.
+
+    Location extraction strategy:
+      - With ANTHROPIC_API_KEY: Claude Haiku extracts city/state/country with
+        medium-to-high confidence (international coverage, better accuracy).
+      - Without API key: regex state-abbreviation fallback keeps sightings
+        flowing even when the key is absent or the .env file is missing.
+    """
     print("Fetching Reddit sightings via Arctic Shift API…")
-    if not ANTHROPIC_API_KEY:
-        print("  ⚠ ANTHROPIC_API_KEY not set — skipping (Claude required for location extraction)")
-        return []
+    use_claude = bool(ANTHROPIC_API_KEY)
+    if not use_claude:
+        print("  ⚠ ANTHROPIC_API_KEY not set — using regex state fallback for location extraction")
 
     cache     = _load_reddit_cache()
     processed = cache.setdefault("processed", {})
@@ -611,7 +617,7 @@ def fetch_arctic_shift_reddit(max_per_sub=200):
     # ── 3. Build results from cache ───────────────────────────────────────
     sightings = [s for _, s in cached_hits]
 
-    # ── 4. Process new posts with Claude ──────────────────────────────────
+    # ── 4. Process new posts: Claude when available, regex fallback otherwise ─
     for i, (pid, p) in enumerate(new_posts):
         if i > 0 and i % 25 == 0:
             print(f"    … {i}/{len(new_posts)} processed so far ({len(sightings)} located)")
@@ -622,16 +628,24 @@ def fetch_arctic_shift_reddit(max_per_sub=200):
         subreddit   = p.get("subreddit", "")
         created_utc = p.get("created_utc", 0)
 
-        loc = _claude_extract_location(title, body_excerpt)
-        time.sleep(0.08)   # stay well under rate limit
-
-        if not loc or loc.get("confidence") not in ("high", "medium"):
-            processed[pid] = None
-            continue
-
-        state   = (loc.get("state")   or "").upper().strip()
-        city    = (loc.get("city")    or "").strip()
-        country = (loc.get("country") or "US").upper().strip()
+        if use_claude:
+            loc = _claude_extract_location(title, body_excerpt)
+            time.sleep(0.08)   # stay well under rate limit
+            if not loc or loc.get("confidence") not in ("high", "medium"):
+                processed[pid] = None
+                continue
+            state   = (loc.get("state")   or "").upper().strip()
+            city    = (loc.get("city")    or "").strip()
+            country = (loc.get("country") or "US").upper().strip()
+        else:
+            # Regex fallback: US state abbreviation only, no Claude call
+            m = _STATE_RE.search(title + " " + body_excerpt[:300])
+            if not m:
+                processed[pid] = None
+                continue
+            state   = m.group(1)
+            city    = ""
+            country = "US"
 
         # Resolve coordinates
         if state and state in STATE_COORDS:
