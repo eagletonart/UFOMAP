@@ -2332,10 +2332,14 @@ const LAYER_GROUPS = [
   {{ icon:'🛸', name:'SIGHTINGS', open:true, items:[
     {{ name:'UFO Sightings',              color:'#00ff44', on:true  }},
     {{ name:'Heat Map (All Sightings)',   color:'#ff6600', on:false }},
-    {{ name:'Abduction Reports',          color:'#ff44aa', on:false }},
-    {{ name:'Heat Map (Abductions Only)', color:'#ff44aa', on:false }},
     {{ name:'NUFORC Recent',              color:'#00aaff', on:false }},
     {{ name:'Local News',                 color:'#00ffcc', on:false }},
+  ]}},
+  {{ icon:'👽', name:'ABDUCTIONS', open:false, items:[
+    {{ name:'Abduction Reports',          color:'#ff44aa', on:false }},
+    {{ name:'Heat Map (Abductions Only)', color:'#ff44aa', on:false }},
+  ]}},
+  {{ icon:'📂', name:'DECLASSIFIED', open:false, items:[
     {{ name:'Classic Cases',              color:'#ffd700', on:false }},
     {{ name:'PURSUE Disclosure',          color:'#00ffcc', on:false }},
     {{ name:'PURSUE Declassified',        color:'#ffe066', on:false }},
