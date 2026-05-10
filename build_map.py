@@ -111,7 +111,8 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
               asrs_reports=None, asa_reports=None,
               pursue_sites=None,
               pursue_declassified=None,
-              pursue_release_01=None):
+              pursue_release_01=None,
+              pursue_intel=None):
     if missing_411 is None:
         missing_411 = []
     if reddit_missing is None:
@@ -208,6 +209,7 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     pursue_json          = json.dumps(pursue_sites)
     pursue_decl_json     = json.dumps(pursue_declassified)
     pursue_r01_json      = json.dumps(pursue_release_01 or [])
+    pursue_intel_json    = json.dumps(pursue_intel or {})
 
     # Hardcoded curated datasets — not fetched, not in export
     elongated_skulls = [
@@ -1227,6 +1229,7 @@ const LOCAL_NEWS          = {local_news_json};
 const PURSUE_SITES        = {pursue_json};
 const PURSUE_DECLASSIFIED = {pursue_decl_json};
 const PURSUE_RELEASE_01   = {pursue_r01_json};
+const PURSUE_INTEL        = {pursue_intel_json};
 const NUFORC_RECENT       = {nuforc_recent_json};
 const SEISMIC_ACTIVITY    = {seismic_json};
 const HUMANOID_ENCOUNTERS = {humanoid_json};
@@ -2194,38 +2197,139 @@ PURSUE_DECLASSIFIED.forEach(p => {{
   pursueDeclaLayer.addLayer(m);
 }});
 
-// ── PURSUE Release 01 layer (machine-extracted, all 128 geocoded files) ──────
+// ── PURSUE Release 01 layer (AI-enriched, all 128 geocoded files) ──────────
+// Build fast lookup: filename → intelligence analysis
+const _intelByFile = {{}};
+Object.entries(PURSUE_INTEL).forEach(([fname, intel]) => {{ _intelByFile[fname] = intel; }});
+
 const pursueR01Layer = L.layerGroup();
 PURSUE_RELEASE_01.forEach(p => {{
   if (!p.lat || !p.lon) return;
+
+  // Derive filename from pdfUrl to look up AI analysis
+  const _fname  = (p.pdfUrl || '').split('/').pop() || '';
+  const _intel  = _intelByFile[_fname] || null;
+  const _qual   = _intel ? _intel.text_quality : '';
+  const _hasRich = _intel && (_qual === 'rich' || _qual === 'sparse');
+
+  // Icon: glow brighter if we have rich AI data
+  const _glowColor = _hasRich ? '#ff9500' : '#cc6600';
+  const _bgAlpha   = _hasRich ? '.20' : '.08';
   const icon = L.divIcon({{
     className: '',
     html: `<div style="position:relative;width:36px;height:36px;">
       <div style="position:absolute;inset:0;border-radius:50%;
-        border:2px solid #ff9500;background:rgba(255,149,0,.13);
-        box-shadow:0 0 10px #ff950099,0 0 20px #ff950033;"></div>
+        border:2px solid ${{_glowColor}};background:rgba(255,149,0,${{_bgAlpha}});
+        box-shadow:0 0 10px ${{_glowColor}}99,0 0 20px ${{_glowColor}}33;"></div>
       <div style="position:absolute;inset:0;display:flex;align-items:center;
         justify-content:center;font-size:16px;line-height:1">📂</div>
     </div>`,
     iconSize: [36, 36], iconAnchor: [18, 18],
   }});
+
   const m = L.marker([p.lat, p.lon], {{icon}});
+
+  // ── Build rich popup ───────────────────────────────────────────
   const thumbHtml = p.thumbnail
-    ? `<img src="${{p.thumbnail}}" style="width:100%;border-radius:4px;margin:6px 0;border:1px solid #ff950055;" loading="lazy" onerror="this.style.display='none'">`
+    ? `<img src="${{p.thumbnail}}" style="width:100%;border-radius:4px;margin:6px 0 4px;border:1px solid #ff950044;" loading="lazy" onerror="this.style.display='none'">`
     : '';
-  const pdfHtml = p.pdfUrl
-    ? `<a href="${{p.pdfUrl}}" target="_blank" class="popup-link">→ View PDF</a>`
-    : `<a href="https://www.war.gov/UFO/" target="_blank" class="popup-link">→ war.gov/UFO</a>`;
-  const copyShort = (p.copy||'').length > 450 ? p.copy.slice(0,450) + '…' : (p.copy||'');
+  const pdfLink = p.pdfUrl
+    ? `<a href="${{p.pdfUrl}}" target="_blank" class="popup-link" style="color:#ff9500;">→ View PDF</a>`
+    : `<a href="https://www.war.gov/UFO/" target="_blank" class="popup-link" style="color:#ff9500;">→ war.gov/UFO</a>`;
+
+  // Summary: prefer AI summary, fall back to original copy
+  const _summary = _intel && _intel.summary
+    ? _intel.summary
+    : (p.copy || '').slice(0, 400) + ((p.copy||'').length > 400 ? '…' : '');
+
+  // Text quality badge
+  const _qualBadge = _intel ? ({{
+    rich:   `<span style="background:#1a3a1a;color:#44ff88;border:1px solid #44ff8866;border-radius:3px;padding:1px 5px;font-size:0.58rem;font-family:monospace;">AI: RICH TEXT</span>`,
+    sparse: `<span style="background:#2a2a1a;color:#ffcc44;border:1px solid #ffcc4466;border-radius:3px;padding:1px 5px;font-size:0.58rem;font-family:monospace;">AI: PARTIAL</span>`,
+    empty:  `<span style="background:#1a1a1a;color:#666;border:1px solid #44444466;border-radius:3px;padding:1px 5px;font-size:0.58rem;font-family:monospace;">AI: SCANNED</span>`,
+  }}[_qual] || '') : '';
+
+  // Classification badge
+  const _classBadge = _intel && _intel.classification
+    ? `<span style="background:#3a0000;color:#ff4444;border:1px solid #ff444466;border-radius:3px;padding:1px 5px;font-size:0.58rem;font-family:monospace;margin-left:4px;">${{_intel.classification}}</span>`
+    : '';
+
+  // Time period
+  const _period = _intel && _intel.time_period
+    ? `<div style="font-size:0.68rem;color:#aaa;margin:2px 0;">📅 ${{_intel.time_period}}</div>`
+    : '';
+
+  // Key findings (top 3)
+  const _findings = (_intel && _intel.key_findings && _intel.key_findings.length)
+    ? `<div style="margin-top:7px;">
+        <div style="font-size:0.62rem;color:#ff9500;font-family:monospace;letter-spacing:0.05em;margin-bottom:3px;">▸ KEY FINDINGS</div>
+        <ul style="margin:0;padding-left:14px;font-size:0.72rem;color:#c8d8e8;line-height:1.4;">
+          ${{_intel.key_findings.slice(0,3).map(f => `<li>${{f.slice(0,120)}}${{f.length>120?'…':''}}</li>`).join('')}}
+        </ul>
+      </div>`
+    : '';
+
+  // Incidents (top 2)
+  const _incidents = (_intel && _intel.incidents && _intel.incidents.length)
+    ? `<div style="margin-top:7px;">
+        <div style="font-size:0.62rem;color:#ff9500;font-family:monospace;letter-spacing:0.05em;margin-bottom:3px;">▸ INCIDENTS (${{_intel.incidents.length}})</div>
+        ${{_intel.incidents.slice(0,2).map(inc => `
+          <div style="background:#0d1f0d;border-left:2px solid #ff950066;padding:3px 6px;margin-bottom:3px;border-radius:0 3px 3px 0;">
+            ${{inc.date ? `<span style="font-size:0.60rem;color:#ff9500;font-family:monospace;">${{inc.date}}</span> · ` : ''}}
+            ${{inc.location ? `<span style="font-size:0.60rem;color:#aaa;">${{inc.location}}</span><br>` : ''}}
+            <span style="font-size:0.70rem;color:#c8d8e8;">${{(inc.description||'').slice(0,150)}}${{(inc.description||'').length>150?'…':''}}</span>
+          </div>`).join('')}}
+      </div>`
+    : '';
+
+  // Persons mentioned (top 4)
+  const _persons = (_intel && _intel.persons && _intel.persons.length)
+    ? `<div style="margin-top:7px;">
+        <div style="font-size:0.62rem;color:#ff9500;font-family:monospace;letter-spacing:0.05em;margin-bottom:3px;">▸ PERSONS (${{_intel.persons.length}})</div>
+        <div style="font-size:0.68rem;color:#aaa;line-height:1.6;">
+          ${{_intel.persons.slice(0,4).map(per =>
+            `<span style="color:#e0e8f0;font-weight:600;">${{per.name}}</span>${{per.role ? ` <span style="color:#777;">· ${{per.role}}</span>` : ''}}`
+          ).join('<br>')}}
+        </div>
+      </div>`
+    : '';
+
+  // Related documents (from connection graph)
+  const _related = (_intel && _intel.related_docs && _intel.related_docs.length)
+    ? `<div style="margin-top:7px;">
+        <div style="font-size:0.62rem;color:#ff9500;font-family:monospace;letter-spacing:0.05em;margin-bottom:3px;">▸ LINKED DOCS (${{_intel.related_docs.length}})</div>
+        <div style="font-size:0.65rem;color:#888;line-height:1.6;">
+          ${{_intel.related_docs.slice(0,4).map(rf => `<span style="color:#cc7700;">${{rf.replace('.pdf','').slice(0,40)}}</span>`).join('<br>')}}
+        </div>
+      </div>`
+    : '';
+
+  // Tags
+  const _tags = (_intel && _intel.tags && _intel.tags.length)
+    ? `<div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:3px;">
+        ${{_intel.tags.slice(0,6).map(t =>
+          `<span style="background:#1a1a2e;color:#8899bb;border:1px solid #334;border-radius:3px;padding:1px 5px;font-size:0.58rem;">${{t}}</span>`
+        ).join('')}}
+      </div>`
+    : '';
+
   m.bindPopup(`
-    <div class="popup-source" style="color:#ff9500;">📂 PURSUE — RELEASE 01</div>
-    <div style="font-size:0.60rem;color:#888;font-family:monospace;letter-spacing:0.04em;">${{(p.agency||'').replace(/[\[\]]/g,'')}}</div>
-    <div class="popup-title" style="color:#ff9500;">${{p.title}}</div>
-    <div class="popup-meta">📍 ${{p.location}}</div>
-    ${{thumbHtml}}
-    <div class="popup-summary" style="font-size:0.78rem;color:#c8d8e8;line-height:1.45;">${{copyShort}}</div>
-    ${{pdfHtml}}
-  `, {{maxWidth:370}});
+    <div style="max-height:500px;overflow-y:auto;padding-right:2px;">
+      <div class="popup-source" style="color:#ff9500;">📂 PURSUE — RELEASE 01 &nbsp;${{_qualBadge}}${{_classBadge}}</div>
+      <div style="font-size:0.60rem;color:#888;font-family:monospace;letter-spacing:0.04em;margin:1px 0 3px;">${{(p.agency||'').replace(/[\[\]]/g,'')}}</div>
+      <div class="popup-title" style="color:#ff9500;font-size:0.85rem;line-height:1.3;">${{p.title}}</div>
+      <div class="popup-meta" style="margin:2px 0;">📍 ${{p.location}}</div>
+      ${{_period}}
+      ${{thumbHtml}}
+      <div style="font-size:0.75rem;color:#c8d8e8;line-height:1.45;margin-top:4px;">${{_summary}}</div>
+      ${{_findings}}
+      ${{_incidents}}
+      ${{_persons}}
+      ${{_related}}
+      ${{_tags}}
+      <div style="margin-top:8px;border-top:1px solid #ff950033;padding-top:6px;">${{pdfLink}}</div>
+    </div>
+  `, {{maxWidth:390, maxHeight:560}});
   pursueR01Layer.addLayer(m);
 }});
 
@@ -3871,6 +3975,36 @@ if __name__ == "__main__":
         _pursue_r01_data = []
         print("   ⚠  pursue_locations.json not found — PURSUE Release 01 layer will be empty")
 
+    # Load PURSUE AI intelligence (extracted by analyze_pursue_pdfs.py)
+    _intel_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pursue_intelligence.json')
+    _pursue_intel = {}
+    if os.path.exists(_intel_path):
+        with open(_intel_path, encoding='utf-8') as _f:
+            _intel_full = json.load(_f)
+        # Build compact per-file index for the popup renderer
+        _doc_conns = _intel_full.get('connections', {}).get('document_connections', {})
+        for _doc in _intel_full.get('documents', []):
+            _fname = _doc['pdf_file']
+            _a = _doc.get('analysis', {})
+            _pursue_intel[_fname] = {
+                'summary':        _a.get('summary', ''),
+                'time_period':    _a.get('time_period', ''),
+                'classification': _a.get('classification_level', ''),
+                'text_quality':   _a.get('text_quality', ''),
+                'key_findings':   _a.get('key_findings', [])[:4],
+                'incidents':      [{'date': i.get('date',''), 'location': i.get('location',''),
+                                    'description': i.get('description','')}
+                                   for i in _a.get('incidents', [])[:3]],
+                'persons':        [{'name': pp['name'], 'role': pp.get('role','')}
+                                   for pp in _a.get('persons_mentioned', [])[:6]],
+                'locations':      [ll['name'] for ll in _a.get('locations', [])[:6]],
+                'tags':           _a.get('tags', [])[:8],
+                'related_docs':   _doc_conns.get(_fname, [])[:5],
+            }
+        print(f"   PURSUE Intelligence: {len(_pursue_intel)} AI-analyzed documents loaded")
+    else:
+        print("   ℹ  pursue_intelligence.json not found — run analyze_pursue_pdfs.py for AI-enriched popups")
+
     enriched_pursue_decl = _enrich_pursue_correlations(
         _PURSUE_DECLASSIFIED_LIVE,
         military_bases = data.get("military_bases", []),
@@ -3904,5 +4038,6 @@ if __name__ == "__main__":
         pursue_sites             = _PURSUE_SITES_LIVE,
         pursue_declassified      = enriched_pursue_decl,
         pursue_release_01        = _pursue_r01_data,
+        pursue_intel             = _pursue_intel,
     )
     print(f"\n✅  Done — open {OUTPUT_MAP} in your browser.")

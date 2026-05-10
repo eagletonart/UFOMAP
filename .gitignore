@@ -43,6 +43,10 @@ UFO-MAP/ufo_data_export.json
 UFO-MAP/index.html
 UFO-MAP/reddit_cache.json
 
+# ── PURSUE pipeline — large generated files (not for version control) ────────
+pursue_files/
+pursue_analysis/
+
 # ── Editor & OS ────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
