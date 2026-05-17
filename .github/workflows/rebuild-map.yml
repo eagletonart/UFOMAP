@@ -21,16 +21,15 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install pdfplumber (needed by analyze_pursue_pdfs at import time)
+      - name: Install pdfplumber (imported by analyze_pursue_pdfs at module level)
         run: pip install pdfplumber
 
-      - name: Generate ufo_data_export.json (offline — uses committed NUFORC CSV)
-        run: python3 export_data.py
-        env:
-          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
-
-      - name: Build index.html
-        run: python3 build_map.py
+      - name: Fetch all data + build index.html
+        # fetch_data.py pulls NUFORC CSV, Reddit r/ufos, Google News RSS,
+        # then auto-subprocesses build_map.py at the end — one step does it all.
+        # Failures in individual sources are caught internally and never raise,
+        # so a flaky Reddit API won't break the whole build.
+        run: python3 fetch_data.py
         env:
           MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
 
