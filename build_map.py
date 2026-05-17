@@ -16,6 +16,7 @@ from constants import WHISTLEBLOWERS as _WHISTLEBLOWERS_LIVE
 from constants import BERMUDA_SITES as _BERMUDA_SITES_LIVE
 from constants import PURSUE_SITES as _PURSUE_SITES_LIVE
 from constants import PURSUE_DECLASSIFIED_SITES as _PURSUE_DECLASSIFIED_LIVE
+from constants import DERP_SITES as _DERP_SITES_LIVE
 
 EXPORT_FILE = "ufo_data_export.json"
 OUTPUT_MAP  = "index.html"
@@ -112,7 +113,8 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
               pursue_sites=None,
               pursue_declassified=None,
               pursue_release_01=None,
-              pursue_intel=None):
+              pursue_intel=None,
+              derp_sites=None):
     if missing_411 is None:
         missing_411 = []
     if reddit_missing is None:
@@ -210,6 +212,7 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     pursue_decl_json     = json.dumps(pursue_declassified)
     pursue_r01_json      = json.dumps(pursue_release_01 or [])
     pursue_intel_json    = json.dumps(pursue_intel or {})
+    derp_json            = json.dumps(derp_sites or [])
 
     # Hardcoded curated datasets — not fetched, not in export
     elongated_skulls = [
@@ -1230,6 +1233,7 @@ const PURSUE_SITES        = {pursue_json};
 const PURSUE_DECLASSIFIED = {pursue_decl_json};
 const PURSUE_RELEASE_01   = {pursue_r01_json};
 const PURSUE_INTEL        = {pursue_intel_json};
+const DERP_SITES          = {derp_json};
 const NUFORC_RECENT       = {nuforc_recent_json};
 const SEISMIC_ACTIVITY    = {seismic_json};
 const HUMANOID_ENCOUNTERS = {humanoid_json};
@@ -2333,6 +2337,56 @@ PURSUE_RELEASE_01.forEach(p => {{
   pursueR01Layer.addLayer(m);
 }});
 
+// ── DERP Sites layer (Defense Environmental Restoration Program) ──────────
+const derpLayer = L.layerGroup();
+DERP_SITES.forEach(d => {{
+  const icon = L.divIcon({{
+    className: '',
+    html: `<div style="position:relative;width:38px;height:38px;">
+      <div style="position:absolute;inset:0;border-radius:50%;
+        border:2px solid #39ff14;background:rgba(57,255,20,.10);
+        box-shadow:0 0 12px #39ff1499,0 0 24px #39ff1433;"></div>
+      <div style="position:absolute;inset:0;display:flex;align-items:center;
+        justify-content:center;font-size:17px;line-height:1">🧹</div>
+    </div>`,
+    iconSize: [38, 38], iconAnchor: [19, 19],
+  }});
+  const m = L.marker([d.lat, d.lon], {{icon}});
+  const notesHtml = d.notes
+    ? `<div style="font-size:0.74rem;color:#c8d8e8;line-height:1.45;margin-top:5px;">${{d.notes}}</div>`
+    : '';
+  const materialHtml = d.material
+    ? `<div style="margin-top:6px;background:#0a1a0a;border-left:2px solid #39ff1466;padding:3px 7px;border-radius:0 3px 3px 0;">
+        <span style="font-size:0.60rem;color:#39ff14;font-family:monospace;">MATERIAL LISTED</span><br>
+        <span style="font-size:0.78rem;color:#eeffee;font-weight:600;">${{d.material}}</span>
+      </div>`
+    : '';
+  const traceHtml = d.contact_trace
+    ? `<div style="font-size:0.68rem;color:#aaa;margin-top:4px;">📞 ${{d.contact_phone || ''}} → <span style="color:#ffcc44;">${{d.contact_trace}}</span></div>`
+    : '';
+  const contractorHtml = d.contractor
+    ? `<div style="font-size:0.65rem;color:#777;margin-top:2px;">Contractor: ${{d.contractor}}</div>`
+    : '';
+  const sourceHtml = d.source
+    ? `<div style="font-size:0.62rem;color:#555;margin-top:3px;font-style:italic;">${{d.source}}</div>`
+    : '';
+  m.bindPopup(`
+    <div style="max-height:480px;overflow-y:auto;">
+      <div class="popup-source" style="color:#39ff14;">🧹 DERP — UAP CLEANUP SITE</div>
+      <div style="font-size:0.60rem;color:#888;font-family:monospace;margin:1px 0 3px;">${{d.program || 'DERP-FUDS'}}</div>
+      <div class="popup-title" style="color:#39ff14;font-size:0.85rem;line-height:1.3;">${{d.name}}</div>
+      <div class="popup-meta">📍 ${{d.location}}</div>
+      <div style="font-size:0.65rem;color:#888;margin:2px 0;">📅 ${{d.date || 'Unknown'}} &nbsp;·&nbsp; Form: ${{d.epa_form || 'EPA DERP'}}</div>
+      ${{materialHtml}}
+      ${{traceHtml}}
+      ${{contractorHtml}}
+      ${{notesHtml}}
+      ${{sourceHtml}}
+    </div>
+  `, {{maxWidth:380}});
+  derpLayer.addLayer(m);
+}});
+
 // ── NUFORC Recent layer ──────────────────────────────────────
 const nuforcRecentLayer = clusterGroup('#00aaff');
 NUFORC_RECENT.forEach(s => {{
@@ -2421,6 +2475,7 @@ const LAYER_REGISTRY = {{
   'PURSUE Disclosure':           pursueLayer,
   'PURSUE Declassified':         pursueDeclaLayer,
   'PURSUE Release 01':           pursueR01Layer,
+  'DERP Cleanup Sites':          derpLayer,
   'NUFORC Recent':               nuforcRecentLayer,
   'Pilot Reports':        asrsLayer,
   'ASA Reports':                 asaLayer,
@@ -2448,6 +2503,7 @@ const LAYER_GROUPS = [
     {{ name:'PURSUE Disclosure',          color:'#00ffcc', on:false }},
     {{ name:'PURSUE Declassified',        color:'#ffe066', on:false }},
     {{ name:'PURSUE Release 01',          color:'#ff9500', on:false }},
+    {{ name:'DERP Cleanup Sites',         color:'#39ff14', on:false }},
   ]}},
   {{ icon:'✈️', name:'PILOT REPORTS', open:false, items:[
     {{ name:'Pilot Reports', color:'#00aaff', on:false }},
@@ -2521,6 +2577,7 @@ const LEGEND_DEFS = {{
   'PURSUE Disclosure':           {{ ico:'<span style="font-size:12px">🔓</span>',                   lbl:'PURSUE Declassified File'  }},
   'PURSUE Declassified':         {{ ico:'<span style="font-size:12px">⭐</span>',                   lbl:'PURSUE Declassified Sighting' }},
   'PURSUE Release 01':           {{ ico:'<span style="font-size:12px">📂</span>',                   lbl:'PURSUE Release 01 File' }},
+  'DERP Cleanup Sites':          {{ ico:'<span style="font-size:12px">🧹</span>',                   lbl:'DERP UAP Cleanup Site' }},
   'Pilot Reports':        {{ ico:'<span style="font-size:12px">✈️</span>',                  lbl:'Notable Pilot UAP Report' }},
   'ASA Reports':                 {{ ico:'<span style="font-size:12px">🛩️</span>',                  lbl:'ASA Report'               }},
   'Convergence Zones':           {{ ico:'<span style="font-size:12px">☢️</span>',                  lbl:'Convergence Zone (sightings+abductions+base)'  }},
@@ -4039,5 +4096,6 @@ if __name__ == "__main__":
         pursue_declassified      = enriched_pursue_decl,
         pursue_release_01        = _pursue_r01_data,
         pursue_intel             = _pursue_intel,
+        derp_sites               = _DERP_SITES_LIVE,
     )
     print(f"\n✅  Done — open {OUTPUT_MAP} in your browser.")
