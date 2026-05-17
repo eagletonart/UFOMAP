@@ -42,7 +42,7 @@ HEADERS = {
     'Accept-Language': 'en-US,en;q=0.9',
 }
 
-# ── Patterns that suggest a link is a disclosure document or news item ────────
+# ── Patterns that flag a link as disclosure-relevant ─────────────────────────
 DOCUMENT_PATTERNS = [
     r'\.pdf($|\?|#)',
     r'\.docx?($|\?)',
@@ -63,6 +63,27 @@ DOCUMENT_PATTERNS = [
     r'whistleblow',
     r'anomal',
 ]
+
+# ── Patterns that disqualify a link as nav/pagination noise ───────────────────
+NOISE_PATTERNS = [
+    r'tel:\d',                        # phone links
+    r'mailto:',                       # email links
+    r'/page/\d+/?$',                  # pagination  (/page/2/)
+    r'[?&]page(num|_rs)?=\d',        # pagination  (?page=2)
+    r'[?&]pageSize=',                 # pagination params
+    r'#[a-z]',                        # anchor-only links
+    r'/(login|logout|signup|register|cart|checkout|donate)/?$',
+    r'/wp-content/themes/',           # WordPress assets
+    r'\.(jpg|jpeg|png|gif|svg|ico|css|js|woff)($|\?)',  # non-document assets
+]
+
+# ── Single-word nav labels that on their own aren't signals ───────────────────
+NAV_ONLY_LABELS = {
+    'hearings', 'news', 'press', 'calendar', 'contact', 'home', 'about',
+    'search', 'login', 'subscribe', 'videos', 'events', 'members', 'staff',
+    'reports', 'letters', 'legislation', 'committees', 'witnesses', '2',
+    'next', 'previous', 'back', 'more', 'all',
+}
 
 
 # ── Link extractor ────────────────────────────────────────────────────────────
@@ -144,8 +165,22 @@ def stable_hash(content):
 
 
 def is_relevant(url, text=''):
-    """Return True if a link looks like a disclosure document or news item."""
+    """
+    Return True if a link looks like a disclosure document or news item.
+    Filters out nav chrome, pagination, assets, and one-word menu labels.
+    """
+    # Hard disqualifiers first
     combined = (url + ' ' + text).lower()
+    if any(re.search(p, combined) for p in NOISE_PATTERNS):
+        return False
+
+    # Skip single-word nav labels that aren't paired with a substantive URL
+    label = text.strip().lower()
+    url_depth = len([p for p in url.rstrip('/').split('/') if p])
+    if label in NAV_ONLY_LABELS and url_depth <= 3:
+        return False
+
+    # Must match at least one positive signal
     return any(re.search(p, combined) for p in DOCUMENT_PATTERNS)
 
 

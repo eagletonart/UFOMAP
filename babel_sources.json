@@ -3,96 +3,144 @@
     "name": "PURSUE — war.gov/ufo (sitemap)",
     "url": "https://www.war.gov/sitemap.xml",
     "priority": "critical",
+    "lat": 38.8719, "lon": -77.0563,
+    "institution": "Pentagon / DoD",
+    "location": "Arlington, VA",
     "notes": "war.gov sitemap — catches new UAP doc pages without hitting the 403-blocked main page"
   },
   {
     "name": "AARO — RSS Feed",
     "url": "https://www.aaro.mil/DesktopModules/DnnForge%20-%20NewsArticles/RSS.aspx?TabID=576&ModuleID=1599&MaxCount=25&Portal=0",
     "priority": "critical",
+    "lat": 38.8730, "lon": -77.0540,
+    "institution": "AARO / DoD",
+    "location": "Pentagon, Arlington VA",
     "notes": "AARO official RSS — new reports and announcements"
   },
   {
-    "name": "AARO — Reports page (alternate)",
+    "name": "AARO — Reports page",
     "url": "https://aaro.mil/Reports/",
     "priority": "critical",
-    "notes": "AARO reports — alternate URL without www prefix sometimes bypasses CDN blocks"
+    "lat": 38.8712, "lon": -77.0580,
+    "institution": "AARO / DoD",
+    "location": "Pentagon, Arlington VA",
+    "notes": "AARO reports — alternate URL sometimes bypasses CDN blocks"
   },
   {
     "name": "NSA — Declassified UFO Documents",
     "url": "https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/ufo/",
     "priority": "high",
+    "lat": 39.1070, "lon": -76.7710,
+    "institution": "National Security Agency",
+    "location": "Fort Meade, MD",
     "notes": "NSA FOIA-released UFO signal intelligence documents"
   },
   {
     "name": "CIA FOIA — Reading Room UAP",
     "url": "https://www.cia.gov/readingroom/search/site/UAP",
     "priority": "high",
-    "notes": "CIA reading room UAP search — more reliable than collection page"
+    "lat": 38.9518, "lon": -77.1459,
+    "institution": "Central Intelligence Agency",
+    "location": "Langley, VA",
+    "notes": "CIA reading room UAP search — 700+ documents"
   },
   {
     "name": "DIA FOIA Reading Room",
     "url": "https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/",
     "priority": "high",
-    "notes": "Defense Intelligence Agency FOIA releases — source of key UAP program docs"
+    "lat": 38.8630, "lon": -77.0572,
+    "institution": "Defense Intelligence Agency",
+    "location": "Pentagon, Arlington VA",
+    "notes": "DIA FOIA releases — source of key UAP program docs (DIRD reports)"
   },
   {
     "name": "Senate Armed Services Committee — Hearings",
     "url": "https://www.armed-services.senate.gov/hearings",
     "priority": "high",
-    "notes": "UAP hearings frequently appear here — Gillibrand subcommittee, NDAA hearings"
+    "lat": 38.8925, "lon": -77.0065,
+    "institution": "U.S. Senate",
+    "location": "Capitol Hill, Washington DC",
+    "notes": "UAP hearings appear here — Gillibrand subcommittee, NDAA hearings"
   },
   {
     "name": "House Intelligence Committee — News",
     "url": "https://intelligence.house.gov/news/",
     "priority": "high",
-    "notes": "House Intel — frequent UAP hearing source, Burchett/Luna subcommittee"
+    "lat": 38.8870, "lon": -77.0080,
+    "institution": "U.S. House of Representatives",
+    "location": "Capitol Hill, Washington DC",
+    "notes": "House Intel — Burchett/Luna UAP subcommittee, frequent hearing source"
   },
   {
     "name": "Congress.gov — UAP Legislation",
     "url": "https://www.congress.gov/search?q=%7B%22source%22%3A%22legislation%22%2C%22search%22%3A%22UAP%22%7D&pageSize=25",
     "priority": "medium",
+    "lat": 38.8890, "lon": -77.0090,
+    "institution": "Library of Congress",
+    "location": "Capitol Hill, Washington DC",
     "notes": "Active UAP-related bills — UAPDA, NDAA amendments"
   },
   {
     "name": "The Black Vault — UAP/UFO Archive",
     "url": "https://www.theblackvault.com/documentarchive/category/uap-ufo/",
     "priority": "medium",
-    "notes": "John Greenewald's archive — largest private FOIA collection in existence"
+    "lat": 34.2746, "lon": -119.2290,
+    "institution": "The Black Vault (John Greenewald Jr.)",
+    "location": "Ventura County, CA",
+    "notes": "Largest private FOIA UAP collection in existence"
   },
   {
-    "name": "MuckRock — UAP FOIA Requests (completed)",
+    "name": "MuckRock — UAP FOIA Requests",
     "url": "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed",
     "priority": "medium",
+    "lat": 42.3876, "lon": -71.1000,
+    "institution": "MuckRock",
+    "location": "Somerville, MA",
     "notes": "Completed UAP FOIA requests — raw agency responses"
   },
   {
-    "name": "MuckRock — UFO FOIA Requests (completed)",
+    "name": "MuckRock — UFO FOIA Requests",
     "url": "https://www.muckrock.com/foi/list/?q=UFO&status=done&order_by=-date_filed",
     "priority": "medium",
-    "notes": "Completed UFO FOIA requests"
+    "lat": 42.3850, "lon": -71.0980,
+    "institution": "MuckRock",
+    "location": "Somerville, MA",
+    "notes": "Completed UFO FOIA requests — raw agency responses"
   },
   {
-    "name": "NARA — Declassified Records (UAP search)",
+    "name": "NARA — Declassified Records (UAP)",
     "url": "https://catalog.archives.gov/search-within/39?q=UAP+unidentified+aerial",
     "priority": "medium",
+    "lat": 38.8935, "lon": -77.0224,
+    "institution": "National Archives (NARA)",
+    "location": "Washington DC",
     "notes": "National Archives UAP/UFO declassified records"
   },
   {
     "name": "Internet Archive — UAP Government Docs",
     "url": "https://archive.org/search?query=UAP+declassified+government&mediatype=texts&sort=-publicdate",
     "priority": "low",
-    "notes": "Internet Archive mirror of government UAP documents — backup source"
+    "lat": 37.7799, "lon": -122.4728,
+    "institution": "Internet Archive",
+    "location": "San Francisco, CA",
+    "notes": "Mirrors government UAP documents — backup source immune to gov takedowns"
   },
   {
     "name": "DocumentCloud — UAP/UFO",
     "url": "https://www.documentcloud.org/app?q=UAP%20UFO%20declassified&order=created_at",
     "priority": "low",
+    "lat": 40.7128, "lon": -74.0060,
+    "institution": "DocumentCloud / MuckRock",
+    "location": "New York, NY",
     "notes": "Journalist-uploaded government UAP documents"
   },
   {
     "name": "USACE FUDS — New Mexico DERP Properties",
     "url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/1/query?where=STATE%3D%27nm%27&outFields=FEATURENAME%2CFUDSUNIQUEPROPERTYNUMBER%2CLATITUDE%2CLONGITUDE&f=json&resultRecordCount=100",
     "priority": "low",
-    "notes": "USACE FUDS ArcGIS API — New Mexico DERP cleanup properties (Roswell/Kirtland area)"
+    "lat": 38.9072, "lon": -77.0369,
+    "institution": "US Army Corps of Engineers",
+    "location": "Washington DC",
+    "notes": "USACE FUDS ArcGIS API — NM DERP cleanup properties, change = new sites added"
   }
 ]
