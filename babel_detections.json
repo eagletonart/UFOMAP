@@ -1,0 +1,353 @@
+[
+  {
+    "url": "https://www.armed-services.senate.gov/hearings",
+    "text": "Hearings",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/press-releases",
+    "text": "Press",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/calendar",
+    "text": "Calendar",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/witnesses",
+    "text": "Witness Directory",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-posture-of-the-department-of-the-air-force-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "Closed/Open: To receive testimony on the posture of the Department of the Air Force in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-department-of-defense-personnel-policies-and-programs-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "To receive testimony on Department of Defense personnel policies and programs in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-science-and-technology-priorities-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "To receive testimony on the science and technology priorities in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-posture-of-the-department-of-the-navy-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "Closed/Open: To receive testimony on the posture of the Department of the Navy in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-posture-of-united-states-central-command-and-united-states-africa-command-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "Open/Closed: To receive testimony on the posture of United States Central Command and United States Africa Command in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-department-of-energy-and-national-nuclear-security-administration-atomic-energy-defense-activities-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-nuclear-security-program",
+    "text": "Open/Closed: To receive testimony on the Department of Energy and National Nuclear Security Administration atomic energy defense activities in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Nuclear Security Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-air-force-modernization-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "To receive testimony on Air Force modernization in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-united-states-special-operations-command",
+    "text": "Open/Closed: To receive testimony on the United States Special Operations Command",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-posture-of-the-department-of-the-army-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "Closed/Open: To receive testimony on the posture of the Department of the Army in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-department-of-defense-budget-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "Open/Closed: To receive testimony on the Department of Defense budget request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-posture-of-united-states-special-operations-command-and-united-states-cyber-command-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "Open/Closed: To receive testimony on the posture of United States Special Operations Command and United States Cyber Command in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-department-of-defense-missile-defense-activities-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "To receive testimony on the Department of Defense missile defense activities in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-maritime-unmanned-surface-vessels",
+    "text": "To receive testimony on maritime unmanned surface vessels",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-posture-of-united-states-indo-pacific-command-and-united-states-forces-korea-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "Open/Closed: To receive testimony on the posture of United States Indo-Pacific Command and United States Forces Korea in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-department-of-energys-atomic-energy-defense-activities-and-department-of-defense-nuclear-weapons-programs-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "To receive testimony on the Department of Energy\u2019s atomic energy defense activities and Department of Defense nuclear weapons programs in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-posture-of-united-states-space-command-and-united-states-strategic-command-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "Open/Closed: To receive testimony on the posture of United States Space Command and United States Strategic Command in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-enterprise-security-and-information-technology-operations-of_department-of-defense-networks-and-systems",
+    "text": "Open/Closed: To receive testimony on enterprise security and information technology operations of Department of Defense networks and systems",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-low-cost-munitions",
+    "text": "To receive testimony on Low-Cost Munitions",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-posture-of-united-states-northern-command-and-united-states-southern-command-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "Open/Closed: To receive testimony on the posture of United States Northern Command and United States Southern Command in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-posture-of-united-states-european-command-and-united-states-transportation-command-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "Open/Closed: To receive testimony on the posture of United States European Command and United States Transportation Command in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/?pagenum_rs=2",
+    "text": "Next",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/tel:2022243871",
+    "text": "(202) 224-3871",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/event-category/hearings/",
+    "text": "Hearings",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/news/",
+    "text": "News",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/category/press-releases/",
+    "text": "Press Releases",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/news/videos/",
+    "text": "Videos",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/reports-letters/",
+    "text": "Reports & Letters",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/news/page/2/",
+    "text": "2",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/news/page/3/",
+    "text": "3",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/news/page/4/",
+    "text": "4",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/news/page/5/",
+    "text": "5",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/news/page/10/",
+    "text": "10",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/news/page/20/",
+    "text": "20",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/news/page/30/",
+    "text": "30",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/news/page/50/",
+    "text": "Last \u00bb",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-05-17T19:58:19Z",
+    "analyzed": false
+  }
+]
