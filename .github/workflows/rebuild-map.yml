@@ -1,0 +1,44 @@
+name: Rebuild Map
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:   # lets you trigger a manual rebuild from GitHub UI
+
+permissions:
+  contents: write      # needed to push index.html back to the repo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pdfplumber (needed by analyze_pursue_pdfs at import time)
+        run: pip install pdfplumber
+
+      - name: Generate ufo_data_export.json (offline — uses committed NUFORC CSV)
+        run: python3 export_data.py
+        env:
+          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+
+      - name: Build index.html
+        run: python3 build_map.py
+        env:
+          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+
+      - name: Commit and push updated index.html
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          # Only commit if index.html actually changed
+          git diff --cached --quiet && echo "index.html unchanged, skipping commit" || \
+            git commit -m "chore: auto-rebuild index.html [skip ci]" && git push
