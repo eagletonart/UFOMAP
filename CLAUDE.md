@@ -2,6 +2,96 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+---
+
+## 🛸 PROJECT: "Weaving Spiders" — UAP Intelligence Map
+
+**What this is:** An intelligence-enriched UAP/UFO map built by Lucas Eagleton. The project aggregates declassified government records, NUFORC sightings, FUDS cleanup sites, and AI-analyzed PDF documents into a single interactive map. The name "Weaving Spiders" references the Bohemian Grove motto — a nod to the shadowy networks this map is designed to expose.
+
+**GitHub:** `https://github.com/eagletonart/UFOMAP`
+**Owner:** Lucas / `eagletonart@gmail.com`
+**Active PR to merge:** PR #13 — DERP-FUDS layer (31 sites), branch `feat/derp-layer-sleeping-dog`
+
+---
+
+## 🗺️ CURRENT MAP LAYERS (as of May 2026)
+
+### SIGHTINGS group
+- **UFO Sightings** — 5,088 NUFORC records, clustered markers
+- **Abduction Reports** — 428 NUFORC records filtered by `ABDUCTION_KEYWORDS`
+- **Recent Reports** — 206 recent NUFORC web reports
+- **Reddit UFO Posts** — live r/ufos + r/UFOs via Arctic Shift API, state-jittered
+- **Local News** — Google News RSS, state-jittered
+- **Military Encounters** (ASRS/ASA aviation safety reports)
+- **Humanoid Encounters**
+
+### DECLASSIFIED group
+- **PURSUE Release 01** — 128 geocoded records from the May 8 2026 Trump/war.gov UAP declassification (161 total, 128 with coords). **AI-enriched popups** via `pursue_intelligence.json` (91 docs analyzed by Claude Haiku, 485 KB). Popups show: AI summary, quality badge (RICH/PARTIAL/SCANNED), classification, key findings, incidents, persons, related docs, tags.
+- **PURSUE Declassified Sites** — 18 curated high-significance sites from the PURSUE records (Pentagon, Malmstrom Echo Flight, Kirtland/Rubik's Cube, etc.)
+- **🧹 DERP Cleanup Sites** — **31 FUDS properties** (neon green `#39ff14`) sourced from the USACE ArcGIS REST API. Identified by Corbell's *Sleeping Dog* documentary as the federal UAP landing-site cleanup mechanism under CERCLA. Installations: Walker/Roswell (13 sites), Malmstrom/Echo Flight (7), Minot (2), Ellsworth Nike batteries (4), F.E. Warren (3), Kirtland (2), Los Alamos (2), Nellis/NTS (3), Wright-Patterson, Whiteman 509th BW, Sandia Base.
+
+### ABDUCTIONS group
+- **Abduction Clusters** — heatmap layer
+- **Missing 411** — 77 sites (David Paulides database)
+- **Missing Scientists** — 18 sites
+
+### Other layers
+- Military Bases (108), COG Sites (17), USO Sites (9), Parallel 33°, Nuclear Sites, Cattle Mutilation Sites, Window Areas, Ley Lines, Water Anomalies, Seismic Activity (1,949), Whistleblowers (12)
+
+---
+
+## 🔑 KEY FILES
+
+| File | Purpose |
+|---|---|
+| `constants.py` | **Single source of truth for all static data.** Edit data here — all pipelines pick it up. Key lists: `MILITARY_BASES`, `DERP_SITES` (31 entries), `PURSUE_DECLASSIFIED_SITES`, `PURSUE_SITES`. Also runs `.env` loader at import time. |
+| `build_map.py` | Pure renderer — reads `ufo_data_export.json` + `pursue_intelligence.json`, outputs `index.html`. Loads DERP_SITES from constants. **Run this after any data change.** |
+| `analyze_pursue_pdfs.py` | Claude Haiku + pdfplumber pipeline for the 91 PURSUE PDFs. Resume-safe. Outputs `pursue_intelligence.json`. Cost: ~$0.04 for full run. |
+| `pursue_intelligence.json` | 485 KB — 91 docs analyzed, connection graph, 252 locations, 163 persons, 112 incidents. Loaded by `build_map.py` for popup enrichment. |
+| `fetch_data.py` | Full network pipeline (NUFORC, Reddit, MUFON, Google News). Writes `ufo_data_export.json`. |
+| `nuforc_test.csv` | ~14 MB bulk NUFORC database, tracked in git (whitelisted from large-file hook). |
+
+---
+
+## 🚨 IMPORTANT TECHNICAL NOTES
+
+- **F-string escaping:** `build_map.py` uses a Python f-string for the entire HTML template. Every literal `{` and `}` in JS/CSS must be `{{` / `}}`. Never introduce bare braces unless it's an f-string interpolation.
+- **DERP popup:** The DERP layer popup in `build_map.py` reads fields: `name`, `location`, `program`, `material`, `contact_phone`, `contact_trace`, `contractor`, `source`, `notes`, `eligibility`, `epa_form`.
+- **PURSUE popup:** Looks up `pursue_intelligence.json` by PDF filename via `_intelByFile`. Falls back gracefully if no intel exists.
+- **Layer groups:** `LAYER_GROUPS` JS array in `build_map.py` controls the layer panel UI. DERP is in the DECLASSIFIED group with `on:false` (off by default).
+- **FUDS API:** USACE ArcGIS REST at `https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/1/query` — public, no auth, max 1000 records per request. 3,850 total sites across US stored in `/tmp/fuds_sites.json` (not committed).
+- **Coords note:** Walker AFB Atlas F Silo 9 (K06NM0487) corrected to USACE API coords (33.3550, -105.0361) in PR #13.
+
+---
+
+## 📋 PENDING WORK / NEXT IDEAS
+
+### Immediate
+- **Merge PR #13** — DERP-FUDS layer, 31 sites. Branch: `feat/derp-layer-sleeping-dog`. All tests pass.
+
+### Near-term
+- **More FUDS sites:** `/tmp/fuds_sites.json` has 3,850 total entries. Unadded high-value clusters: Dugway Proving Ground (UT), Kwajalein Atoll (Marshall Islands), Hanford Site (WA), Nevada Test Site Area 51 vicinity deeper pass, Sandia Base ACWI P-41 (K06NM0471).
+- **PURSUE PDF re-run:** 70 of the 91 docs returned `text_quality: empty` (scanned). When/if OCR support (pdfplumber + pytesseract) is added to `analyze_pursue_pdfs.py`, a re-run would dramatically enrich the intelligence output.
+- **Live FUDS layer:** Replace the static `DERP_SITES` list with a live fetch from the USACE ArcGIS API at map load time — would surface all 3,850 sites with filtering by state/eligibility.
+- **Timeline slider:** Add a time-range filter to show sightings/incidents by decade.
+- **Corbell documentary deep-link:** Add a popup section linking DERP sites directly to the *Sleeping Dog* source documentary.
+
+### Data sources to add
+- **MUFON bulk database** — if access can be obtained
+- **FAA ASRS expanded** — more aviation safety encounter reports
+- **CIA CREST** — more declassified documents from the CIA reading room
+- **Project Blue Book digitized cases** — fold into PURSUE layer or separate layer
+
+---
+
+## 🔐 SECURITY NOTES
+
+- **`.env`** (repo root, git-ignored) contains `ANTHROPIC_API_KEY` and `MAPBOX_TOKEN`. Never commit.
+- **Historical key leak:** Commit `021fc3b` in git history contains a hardcoded API key. Lucas needs to rotate it at https://console.anthropic.com/settings/keys.
+- **Mapbox token** is intentionally public (client-side). Restrict to allowed URLs in Mapbox dashboard.
+
+---
+
 ## Project
 
 Pure-Python (stdlib-only, no `requirements.txt`) pipeline that aggregates UFO/UAP sighting data from several public sources and renders it as a single standalone `index.html` file containing a Leaflet 2D map and a Mapbox GL 3D globe. All Python sources live in `UFO-MAP/`.
