@@ -47,6 +47,9 @@ UFO-MAP/reddit_cache.json
 pursue_files/
 pursue_analysis/
 
+# ── Babel — temp files (commit logs, not the data files themselves) ───────────
+babel_new.txt
+
 # ── Editor & OS ────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
