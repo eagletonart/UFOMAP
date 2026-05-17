@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name  "babel-analyzer[bot]"
           git config user.email "babel-analyzer[bot]@users.noreply.github.com"
-          git add babel_intelligence.json babel_detections.json
+          git add --ignore-missing babel_intelligence.json babel_detections.json
           if git diff --cached --quiet; then
             echo "Nothing to commit — no new documents analyzed"
           else

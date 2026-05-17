@@ -262,6 +262,10 @@ def run(limit=None, dry_run=False):
         and d['url'] not in analyzed_urls
     ]
 
+    # Always ensure the intelligence file exists (even if empty) so git add never fails
+    if not os.path.exists(INTELLIGENCE_FILE):
+        save_json(INTELLIGENCE_FILE, [])
+
     if not candidates:
         print("🗼  Babel Analyzer — nothing new to analyze")
         return
