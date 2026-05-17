@@ -114,7 +114,9 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
               pursue_declassified=None,
               pursue_release_01=None,
               pursue_intel=None,
-              derp_sites=None):
+              derp_sites=None,
+              babel_sources=None,
+              babel_detections=None):
     if missing_411 is None:
         missing_411 = []
     if reddit_missing is None:
@@ -213,6 +215,31 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     pursue_r01_json      = json.dumps(pursue_release_01 or [])
     pursue_intel_json    = json.dumps(pursue_intel or {})
     derp_json            = json.dumps(derp_sites or [])
+
+    # Babel — merge detections into source objects for map display
+    _babel_srcs  = babel_sources or []
+    _babel_dets  = babel_detections or []
+    _det_by_src  = {}
+    for _d in _babel_dets:
+        _sn = _d.get('source_name', '')
+        _det_by_src.setdefault(_sn, []).append(_d)
+    _babel_stations = []
+    for _s in _babel_srcs:
+        if _s.get('lat') and _s.get('lon'):
+            _det_list = _det_by_src.get(_s['name'], [])
+            _babel_stations.append({
+                'name':        _s['name'],
+                'institution': _s.get('institution', ''),
+                'location':    _s.get('location', ''),
+                'url':         _s['url'],
+                'priority':    _s.get('priority', 'medium'),
+                'lat':         _s['lat'],
+                'lon':         _s['lon'],
+                'notes':       _s.get('notes', ''),
+                'detection_count': len(_det_list),
+                'latest': sorted(_det_list, key=lambda x: x.get('detected_at',''), reverse=True)[:5],
+            })
+    babel_json = json.dumps(_babel_stations)
 
     # Hardcoded curated datasets — not fetched, not in export
     elongated_skulls = [
@@ -1234,6 +1261,7 @@ const PURSUE_DECLASSIFIED = {pursue_decl_json};
 const PURSUE_RELEASE_01   = {pursue_r01_json};
 const PURSUE_INTEL        = {pursue_intel_json};
 const DERP_SITES          = {derp_json};
+const BABEL_STATIONS      = {babel_json};
 const NUFORC_RECENT       = {nuforc_recent_json};
 const SEISMIC_ACTIVITY    = {seismic_json};
 const HUMANOID_ENCOUNTERS = {humanoid_json};
@@ -2387,6 +2415,67 @@ DERP_SITES.forEach(d => {{
   derpLayer.addLayer(m);
 }});
 
+// ── Babel Monitoring Stations layer ─────────────────────────────────────────
+const babelLayer = L.layerGroup();
+BABEL_STATIONS.forEach(s => {{
+  const prioColor = {{critical:'#ff4444', high:'#ff9500', medium:'#ffe066', low:'#aaaaaa'}}[s.priority] || '#aaaaaa';
+  const icon = L.divIcon({{
+    className: '',
+    html: `<div style="position:relative;width:36px;height:36px;">
+      <div style="position:absolute;inset:0;border-radius:50%;
+        border:2px solid ${{prioColor}};background:rgba(0,200,255,.08);
+        box-shadow:0 0 10px ${{prioColor}}88,0 0 20px ${{prioColor}}33;
+        animation: pulse 2.4s ease-in-out infinite;"></div>
+      <div style="position:absolute;inset:0;display:flex;align-items:center;
+        justify-content:center;font-size:16px;line-height:1">🗼</div>
+    </div>`,
+    iconSize: [36, 36], iconAnchor: [18, 18],
+  }});
+  const m = L.marker([s.lat, s.lon], {{icon}});
+
+  const prioLabel = (s.priority||'medium').toUpperCase();
+  const prioStyle = `color:${{prioColor}};font-weight:700;`;
+
+  const latestHtml = s.latest && s.latest.length
+    ? `<div style="margin-top:7px;border-top:1px solid #00c8ff22;padding-top:5px;">
+        <div style="font-size:0.58rem;color:#00c8ff;font-family:monospace;margin-bottom:3px;">LATEST DETECTIONS</div>
+        ${{s.latest.map(d =>
+          `<div style="font-size:0.67rem;color:#b0d4e8;margin:2px 0;line-height:1.3;">
+            <span style="color:#666;">${{(d.detected_at||'').slice(0,10)}}</span>
+            <a href="${{d.url}}" target="_blank" style="color:#00c8ff;text-decoration:none;"
+               title="${{d.url}}"> ${{(d.text||d.url.split('/').pop()||'document').slice(0,55)}}</a>
+          </div>`
+        ).join('')}}
+      </div>`
+    : `<div style="font-size:0.68rem;color:#555;margin-top:6px;">No detections yet — next scan in &lt;6 hrs</div>`;
+
+  m.bindPopup(`
+    <div style="max-height:500px;overflow-y:auto;">
+      <div class="popup-source" style="color:#00c8ff;">🗼 BABEL — ACTIVE MONITOR</div>
+      <div style="font-size:0.58rem;color:#666;font-family:monospace;margin:1px 0 3px;">
+        PRIORITY: <span style="${{prioStyle}}">${{prioLabel}}</span>
+      </div>
+      <div class="popup-title" style="color:#00c8ff;font-size:0.88rem;line-height:1.3;">${{s.institution}}</div>
+      <div class="popup-meta">📍 ${{s.location}}</div>
+      <div style="font-size:0.72rem;color:#aaa;margin-top:3px;">${{s.name}}</div>
+      <div style="margin-top:5px;font-size:0.68rem;color:#888;">${{s.notes}}</div>
+      <div style="margin-top:6px;padding:4px 7px;background:#001a22;border-radius:3px;
+                  border-left:2px solid #00c8ff66;">
+        <span style="font-size:0.60rem;color:#00c8ff;font-family:monospace;">DETECTIONS</span>
+        <span style="font-size:0.88rem;color:#fff;font-weight:700;margin-left:6px;">${{s.detection_count}}</span>
+      </div>
+      ${{latestHtml}}
+      <div style="margin-top:6px;">
+        <a href="${{s.url}}" target="_blank"
+           style="font-size:0.65rem;color:#00c8ff;text-decoration:none;">
+          🔗 Monitor source →
+        </a>
+      </div>
+    </div>
+  `, {{maxWidth:390}});
+  babelLayer.addLayer(m);
+}});
+
 // ── NUFORC Recent layer ──────────────────────────────────────
 const nuforcRecentLayer = clusterGroup('#00aaff');
 NUFORC_RECENT.forEach(s => {{
@@ -2476,6 +2565,7 @@ const LAYER_REGISTRY = {{
   'PURSUE Declassified':         pursueDeclaLayer,
   'PURSUE Release 01':           pursueR01Layer,
   'DERP Cleanup Sites':          derpLayer,
+  'Babel Monitor':               babelLayer,
   'NUFORC Recent':               nuforcRecentLayer,
   'Pilot Reports':        asrsLayer,
   'ASA Reports':                 asaLayer,
@@ -2504,6 +2594,7 @@ const LAYER_GROUPS = [
     {{ name:'PURSUE Declassified',        color:'#ffe066', on:false }},
     {{ name:'PURSUE Release 01',          color:'#ff9500', on:false }},
     {{ name:'DERP Cleanup Sites',         color:'#39ff14', on:false }},
+    {{ name:'Babel Monitor',              color:'#00c8ff', on:true  }},
   ]}},
   {{ icon:'✈️', name:'PILOT REPORTS', open:false, items:[
     {{ name:'Pilot Reports', color:'#00aaff', on:false }},
@@ -4062,6 +4153,13 @@ if __name__ == "__main__":
     else:
         print("   ℹ  pursue_intelligence.json not found — run analyze_pursue_pdfs.py for AI-enriched popups")
 
+    # Load Babel monitoring data
+    _babel_src_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'babel_sources.json')
+    _babel_det_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'babel_detections.json')
+    _babel_sources_live    = json.load(open(_babel_src_path)) if os.path.exists(_babel_src_path) else []
+    _babel_detections_live = json.load(open(_babel_det_path)) if os.path.exists(_babel_det_path) else []
+    print(f"   Babel: {len(_babel_sources_live)} monitored sources | {len(_babel_detections_live)} detections on record")
+
     enriched_pursue_decl = _enrich_pursue_correlations(
         _PURSUE_DECLASSIFIED_LIVE,
         military_bases = data.get("military_bases", []),
@@ -4097,5 +4195,7 @@ if __name__ == "__main__":
         pursue_release_01        = _pursue_r01_data,
         pursue_intel             = _pursue_intel,
         derp_sites               = _DERP_SITES_LIVE,
+        babel_sources            = _babel_sources_live,
+        babel_detections         = _babel_detections_live,
     )
     print(f"\n✅  Done — open {OUTPUT_MAP} in your browser.")
