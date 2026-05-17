@@ -2352,6 +2352,9 @@ DERP_SITES.forEach(d => {{
     iconSize: [38, 38], iconAnchor: [19, 19],
   }});
   const m = L.marker([d.lat, d.lon], {{icon}});
+  const notesHtml = d.notes
+    ? `<div style="font-size:0.74rem;color:#c8d8e8;line-height:1.45;margin-top:5px;">${{d.notes}}</div>`
+    : '';
   const materialHtml = d.material
     ? `<div style="margin-top:6px;background:#0a1a0a;border-left:2px solid #39ff1466;padding:3px 7px;border-radius:0 3px 3px 0;">
         <span style="font-size:0.60rem;color:#39ff14;font-family:monospace;">MATERIAL LISTED</span><br>
@@ -2361,8 +2364,11 @@ DERP_SITES.forEach(d => {{
   const traceHtml = d.contact_trace
     ? `<div style="font-size:0.68rem;color:#aaa;margin-top:4px;">📞 ${{d.contact_phone || ''}} → <span style="color:#ffcc44;">${{d.contact_trace}}</span></div>`
     : '';
-  const notesHtml = d.notes
-    ? `<div style="font-size:0.74rem;color:#c8d8e8;line-height:1.45;margin-top:5px;">${{d.notes}}</div>`
+  const contractorHtml = d.contractor
+    ? `<div style="font-size:0.65rem;color:#777;margin-top:2px;">Contractor: ${{d.contractor}}</div>`
+    : '';
+  const sourceHtml = d.source
+    ? `<div style="font-size:0.62rem;color:#555;margin-top:3px;font-style:italic;">${{d.source}}</div>`
     : '';
   m.bindPopup(`
     <div style="max-height:480px;overflow-y:auto;">
@@ -2370,12 +2376,12 @@ DERP_SITES.forEach(d => {{
       <div style="font-size:0.60rem;color:#888;font-family:monospace;margin:1px 0 3px;">${{d.program || 'DERP-FUDS'}}</div>
       <div class="popup-title" style="color:#39ff14;font-size:0.85rem;line-height:1.3;">${{d.name}}</div>
       <div class="popup-meta">📍 ${{d.location}}</div>
-      <div style="font-size:0.65rem;color:#888;margin:2px 0;">📅 ${{d.date || ''}} &nbsp;·&nbsp; Form: ${{d.epa_form || 'EPA DERP'}}</div>
+      <div style="font-size:0.65rem;color:#888;margin:2px 0;">📅 ${{d.date || 'Unknown'}} &nbsp;·&nbsp; Form: ${{d.epa_form || 'EPA DERP'}}</div>
       ${{materialHtml}}
       ${{traceHtml}}
-      <div style="font-size:0.65rem;color:#777;margin-top:2px;">Contractor: ${{d.contractor || ''}}</div>
+      ${{contractorHtml}}
       ${{notesHtml}}
-      <div style="font-size:0.62rem;color:#555;margin-top:3px;font-style:italic;">${{d.source || ''}}</div>
+      ${{sourceHtml}}
     </div>
   `, {{maxWidth:380}});
   derpLayer.addLayer(m);
