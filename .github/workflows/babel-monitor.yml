@@ -29,22 +29,16 @@ jobs:
           git config user.name  "babel-monitor[bot]"
           git config user.email "babel-monitor[bot]@users.noreply.github.com"
           git add babel_snapshots.json babel_detections.json
-
           if git diff --cached --quiet; then
             echo "Nothing to commit — no changes detected"
           else
-            # Build commit message — include new findings if any
+            TIMESTAMP=$(date -u +%Y-%m-%dT%H:%MZ)
             if [ -f babel_new.txt ]; then
-              MSG="babel: new disclosures detected $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]
-
-New findings:
-$(cat babel_new.txt)"
+              COUNT=$(wc -l < babel_new.txt | tr -d ' ')
+              git commit -m "babel: ${COUNT} new detection(s) at ${TIMESTAMP} [skip ci]"
             else
-              MSG="babel: snapshot update $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+              git commit -m "babel: snapshot update ${TIMESTAMP} [skip ci]"
             fi
-            git commit -m "$MSG"
             git push
           fi
-
-          # Clean up temp file
           rm -f babel_new.txt
