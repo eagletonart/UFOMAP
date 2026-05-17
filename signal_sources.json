@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Liberation Times",
+    "type": "rss",
+    "url": "https://www.liberationtimes.com/home?format=rss",
+    "priority": "critical",
+    "author": "Christopher Sharp",
+    "lat": 51.5074, "lon": -0.1278,
+    "location": "London, UK",
+    "notes": "UK's leading UAP disclosure outlet — breaks stories before US press"
+  },
+  {
+    "name": "The Debrief",
+    "type": "rss",
+    "url": "https://thedebrief.org/feed/",
+    "priority": "high",
+    "author": "Tim McMillan / Micah Hanks",
+    "lat": 35.2271, "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "notes": "Serious investigative science & UAP journalism"
+  },
+  {
+    "name": "The Black Vault",
+    "type": "rss",
+    "url": "https://www.theblackvault.com/documentarchive/category/uap-ufo/feed/",
+    "priority": "high",
+    "author": "John Greenewald Jr.",
+    "lat": 34.2746, "lon": -119.2290,
+    "location": "Ventura County, CA",
+    "notes": "Largest private FOIA UAP archive — new releases announced here first"
+  },
+  {
+    "name": "UAP Scientific Research (Basterfield)",
+    "type": "rss",
+    "url": "https://ufos-scientificresearch.blogspot.com/feeds/posts/default",
+    "priority": "medium",
+    "author": "Keith Basterfield",
+    "lat": -34.9285, "lon": 138.6007,
+    "location": "Adelaide, Australia",
+    "notes": "Academic UAP research blog — 1,300+ entries, government program tracking"
+  },
+  {
+    "name": "Open Minds TV",
+    "type": "rss",
+    "url": "https://www.openminds.tv/feed",
+    "priority": "medium",
+    "author": "Alejandro Rojas",
+    "lat": 33.4484, "lon": -112.0740,
+    "location": "Phoenix, AZ",
+    "notes": "Long-running UAP news outlet"
+  },
+  {
+    "name": "WEAPONIZED Podcast (Corbell & Knapp)",
+    "type": "youtube",
+    "channel_id": "UChDCgWtRhXO82TqsYDEuhug",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UChDCgWtRhXO82TqsYDEuhug",
+    "priority": "critical",
+    "author": "Jeremy Corbell & George Knapp",
+    "lat": 34.0522, "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "notes": "Breaks major UAP stories — Grusch, Navy encounters, classified programs"
+  },
+  {
+    "name": "C-SPAN",
+    "type": "youtube",
+    "channel_id": "UC5yU2PtjeqXuTASGylDncFw",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC5yU2PtjeqXuTASGylDncFw",
+    "priority": "high",
+    "author": "C-SPAN",
+    "lat": 38.8925, "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "notes": "UAP congressional hearings streamed live — Burchett, Gillibrand, Luna"
+  },
+  {
+    "name": "Jeremy Corbell (@JeremyCorbell)",
+    "type": "twitter",
+    "handle": "JeremyCorbell",
+    "priority": "critical",
+    "lat": 34.0522, "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "notes": "First to release Navy UAP footage — posts classified-adjacent material"
+  },
+  {
+    "name": "Lue Elizondo (@LueElizondo)",
+    "type": "twitter",
+    "handle": "LueElizondo",
+    "priority": "critical",
+    "lat": 38.8719, "lon": -77.0563,
+    "location": "Arlington, VA",
+    "notes": "Former AATIP director — firsthand knowledge of classified programs"
+  },
+  {
+    "name": "Ross Coulthart (@RossCoulthart)",
+    "type": "twitter",
+    "handle": "RossCoulthart",
+    "priority": "critical",
+    "lat": 40.7128, "lon": -74.0060,
+    "location": "New York, NY",
+    "notes": "NewsNation investigative journalist — broke NHI retrieval program claims"
+  },
+  {
+    "name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "type": "twitter",
+    "handle": "RepTimBurchett",
+    "priority": "high",
+    "lat": 38.8925, "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "notes": "Most vocal UAP congressman — leads House UAP caucus"
+  },
+  {
+    "name": "Christopher Sharp (@ChrisUKnapp)",
+    "type": "twitter",
+    "handle": "ChrisUKnapp",
+    "priority": "high",
+    "lat": 51.5074, "lon": -0.1278,
+    "location": "London, UK",
+    "notes": "Liberation Times editor — UK-US intelligence community sources"
+  },
+  {
+    "name": "George Knapp (@GeorgeKnapp)",
+    "type": "twitter",
+    "handle": "GeorgeKnapp",
+    "priority": "high",
+    "lat": 36.1699, "lon": -115.1398,
+    "location": "Las Vegas, NV",
+    "notes": "Veteran UAP journalist — broke Bob Lazar story, Area 51 coverage"
+  },
+  {
+    "name": "Rep. Anna Paulina Luna (@RepAnnaLuna)",
+    "type": "twitter",
+    "handle": "RepAnnaLuna",
+    "priority": "medium",
+    "lat": 38.8925, "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "notes": "House UAP subcommittee — pushing hard for disclosure"
+  },
+  {
+    "name": "AARO (@AskDODAARO)",
+    "type": "twitter",
+    "handle": "AskDODAARO",
+    "priority": "high",
+    "lat": 38.8719, "lon": -77.0563,
+    "location": "Pentagon, Arlington VA",
+    "notes": "Official DoD UAP office — announcements and report drops"
+  }
+]
