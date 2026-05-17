@@ -116,7 +116,8 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
               pursue_intel=None,
               derp_sites=None,
               babel_sources=None,
-              babel_detections=None):
+              babel_detections=None,
+              babel_intelligence=None):
     if missing_411 is None:
         missing_411 = []
     if reddit_missing is None:
@@ -240,6 +241,20 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
                 'latest': sorted(_det_list, key=lambda x: x.get('detected_at',''), reverse=True)[:5],
             })
     babel_json = json.dumps(_babel_stations)
+
+    # Babel intelligence — group analyzed docs by source_name for popup enrichment
+    _babel_intel_by_src = {}
+    for _r in (babel_intelligence or []):
+        _sn = _r.get('source_name', '')
+        _babel_intel_by_src.setdefault(_sn, []).append(_r)
+    # Keep only 5 most-recently analyzed per source
+    for _k in _babel_intel_by_src:
+        _babel_intel_by_src[_k] = sorted(
+            _babel_intel_by_src[_k],
+            key=lambda x: x.get('analyzed_at', ''),
+            reverse=True
+        )[:5]
+    babel_intel_json = json.dumps(_babel_intel_by_src)
 
     # Hardcoded curated datasets — not fetched, not in export
     elongated_skulls = [
@@ -1262,6 +1277,7 @@ const PURSUE_RELEASE_01   = {pursue_r01_json};
 const PURSUE_INTEL        = {pursue_intel_json};
 const DERP_SITES          = {derp_json};
 const BABEL_STATIONS      = {babel_json};
+const BABEL_INTELLIGENCE  = {babel_intel_json};
 const NUFORC_RECENT       = {nuforc_recent_json};
 const SEISMIC_ACTIVITY    = {seismic_json};
 const HUMANOID_ENCOUNTERS = {humanoid_json};
@@ -2436,6 +2452,63 @@ BABEL_STATIONS.forEach(s => {{
   const prioLabel = (s.priority||'medium').toUpperCase();
   const prioStyle = `color:${{prioColor}};font-weight:700;`;
 
+  // Analyzed intelligence docs for this source
+  const intelDocs = (BABEL_INTELLIGENCE[s.name] || []);
+
+  const qualityBadge = q => {{
+    if (q === 'rich')   return `<span style="color:#39ff14;font-weight:700;">RICH</span>`;
+    if (q === 'sparse') return `<span style="color:#ffe066;font-weight:700;">PARTIAL</span>`;
+    return `<span style="color:#888;">SCANNED</span>`;
+  }};
+
+  const classColor = c => {{
+    if (!c || c === 'UNCLASSIFIED') return '#39ff14';
+    if (c.includes('TOP SECRET')) return '#ff4444';
+    if (c.includes('SECRET')) return '#ff9500';
+    return '#ffe066';
+  }};
+
+  const intelHtml = intelDocs.length
+    ? `<div style="margin-top:8px;border-top:1px solid #00c8ff33;padding-top:6px;">
+        <div style="font-size:0.58rem;color:#00c8ff;font-family:monospace;margin-bottom:4px;letter-spacing:.06em;">
+          AI-ANALYZED DOCUMENTS (${{intelDocs.length}})
+        </div>
+        ${{intelDocs.map(doc => {{
+          const a = doc.analysis || {{}};
+          const title = (doc.link_text || doc.url.split('/').pop() || 'Document').slice(0,60);
+          const cl = a.classification_level;
+          const clHtml = (cl && cl !== 'UNCLASSIFIED')
+            ? `<span style="color:${{classColor(cl)}};font-size:0.57rem;font-family:monospace;"> [${{cl}}]</span>` : '';
+          const findingsHtml = (a.key_findings||[]).slice(0,2).map(f =>
+            `<div style="font-size:0.64rem;color:#aac8d8;margin:1px 0 1px 8px;line-height:1.3;">• ${{f.slice(0,90)}}${{f.length>90?'…':''}}</div>`
+          ).join('');
+          const tagsHtml = (a.tags||[]).slice(0,5).map(t =>
+            `<span style="display:inline-block;background:#001a22;border:1px solid #00c8ff33;
+              border-radius:2px;padding:0 4px;font-size:0.56rem;color:#00c8ff88;margin:1px 2px 0 0;">${{t}}</span>`
+          ).join('');
+          const persons = (a.persons_mentioned||[]).slice(0,2).map(p=>p.name).join(', ');
+          return `<div style="margin-bottom:8px;padding:5px 6px;background:#00111a;border-radius:3px;
+                              border-left:2px solid #00c8ff44;">
+            <div style="font-size:0.68rem;margin-bottom:2px;">
+              <a href="${{doc.url}}" target="_blank"
+                 style="color:#00c8ff;text-decoration:none;font-weight:600;"
+                 title="${{doc.url}}">${{title}}</a>${{clHtml}}
+              <span style="float:right;font-size:0.57rem;color:#555;font-family:monospace;">
+                ${{(doc.analyzed_at||'').slice(0,10)}}
+              </span>
+            </div>
+            <div style="font-size:0.64rem;color:#b0d4e8;margin:3px 0;line-height:1.35;">
+              ${{(a.summary||'').slice(0,150)}}${{(a.summary||'').length>150?'…':''}}
+            </div>
+            ${{findingsHtml}}
+            ${{persons ? `<div style="font-size:0.60rem;color:#888;margin-top:2px;">👤 ${{persons}}</div>` : ''}}
+            ${{a.time_period ? `<div style="font-size:0.60rem;color:#666;margin-top:1px;">📅 ${{a.time_period}}</div>` : ''}}
+            <div style="margin-top:3px;">${{qualityBadge(a.text_quality)}} ${{tagsHtml}}</div>
+          </div>`;
+        }}).join('')}}
+      </div>`
+    : '';
+
   const latestHtml = s.latest && s.latest.length
     ? `<div style="margin-top:7px;border-top:1px solid #00c8ff22;padding-top:5px;">
         <div style="font-size:0.58rem;color:#00c8ff;font-family:monospace;margin-bottom:3px;">LATEST DETECTIONS</div>
@@ -2450,7 +2523,7 @@ BABEL_STATIONS.forEach(s => {{
     : `<div style="font-size:0.68rem;color:#555;margin-top:6px;">No detections yet — next scan in &lt;6 hrs</div>`;
 
   m.bindPopup(`
-    <div style="max-height:500px;overflow-y:auto;">
+    <div style="max-height:520px;overflow-y:auto;">
       <div class="popup-source" style="color:#00c8ff;">🗼 BABEL — ACTIVE MONITOR</div>
       <div style="font-size:0.58rem;color:#666;font-family:monospace;margin:1px 0 3px;">
         PRIORITY: <span style="${{prioStyle}}">${{prioLabel}}</span>
@@ -2459,11 +2532,17 @@ BABEL_STATIONS.forEach(s => {{
       <div class="popup-meta">📍 ${{s.location}}</div>
       <div style="font-size:0.72rem;color:#aaa;margin-top:3px;">${{s.name}}</div>
       <div style="margin-top:5px;font-size:0.68rem;color:#888;">${{s.notes}}</div>
-      <div style="margin-top:6px;padding:4px 7px;background:#001a22;border-radius:3px;
-                  border-left:2px solid #00c8ff66;">
-        <span style="font-size:0.60rem;color:#00c8ff;font-family:monospace;">DETECTIONS</span>
-        <span style="font-size:0.88rem;color:#fff;font-weight:700;margin-left:6px;">${{s.detection_count}}</span>
+      <div style="margin-top:6px;display:flex;gap:8px;">
+        <div style="flex:1;padding:4px 7px;background:#001a22;border-radius:3px;border-left:2px solid #00c8ff66;">
+          <span style="font-size:0.58rem;color:#00c8ff;font-family:monospace;">DETECTIONS</span>
+          <span style="font-size:0.88rem;color:#fff;font-weight:700;margin-left:6px;">${{s.detection_count}}</span>
+        </div>
+        ${{intelDocs.length ? `<div style="flex:1;padding:4px 7px;background:#001a22;border-radius:3px;border-left:2px solid #39ff1466;">
+          <span style="font-size:0.58rem;color:#39ff14;font-family:monospace;">ANALYZED</span>
+          <span style="font-size:0.88rem;color:#fff;font-weight:700;margin-left:6px;">${{intelDocs.length}}</span>
+        </div>` : ''}}
       </div>
+      ${{intelHtml}}
       ${{latestHtml}}
       <div style="margin-top:6px;">
         <a href="${{s.url}}" target="_blank"
@@ -2472,7 +2551,7 @@ BABEL_STATIONS.forEach(s => {{
         </a>
       </div>
     </div>
-  `, {{maxWidth:390}});
+  `, {{maxWidth:420}});
   babelLayer.addLayer(m);
 }});
 
@@ -4154,11 +4233,14 @@ if __name__ == "__main__":
         print("   ℹ  pursue_intelligence.json not found — run analyze_pursue_pdfs.py for AI-enriched popups")
 
     # Load Babel monitoring data
-    _babel_src_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'babel_sources.json')
-    _babel_det_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'babel_detections.json')
-    _babel_sources_live    = json.load(open(_babel_src_path)) if os.path.exists(_babel_src_path) else []
-    _babel_detections_live = json.load(open(_babel_det_path)) if os.path.exists(_babel_det_path) else []
-    print(f"   Babel: {len(_babel_sources_live)} monitored sources | {len(_babel_detections_live)} detections on record")
+    _babel_src_path   = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'babel_sources.json')
+    _babel_det_path   = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'babel_detections.json')
+    _babel_intel_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'babel_intelligence.json')
+    _babel_sources_live    = json.load(open(_babel_src_path))   if os.path.exists(_babel_src_path)   else []
+    _babel_detections_live = json.load(open(_babel_det_path))   if os.path.exists(_babel_det_path)   else []
+    _babel_intel_live      = json.load(open(_babel_intel_path)) if os.path.exists(_babel_intel_path) else []
+    _analyzed_count = len([r for r in _babel_intel_live if r.get('analysis')])
+    print(f"   Babel: {len(_babel_sources_live)} monitored sources | {len(_babel_detections_live)} detections | {_analyzed_count} AI-analyzed docs")
 
     enriched_pursue_decl = _enrich_pursue_correlations(
         _PURSUE_DECLASSIFIED_LIVE,
@@ -4197,5 +4279,6 @@ if __name__ == "__main__":
         derp_sites               = _DERP_SITES_LIVE,
         babel_sources            = _babel_sources_live,
         babel_detections         = _babel_detections_live,
+        babel_intelligence       = _babel_intel_live,
     )
     print(f"\n✅  Done — open {OUTPUT_MAP} in your browser.")
