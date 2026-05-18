@@ -1,42 +1,42 @@
 {
   "https://www.armed-services.senate.gov/hearings": {
-    "last_checked": "2026-05-18T09:41:39Z",
-    "hash": "769d96acdabb901a",
-    "last_changed": "2026-05-18T09:41:39Z"
+    "last_checked": "2026-05-18T14:58:23Z",
+    "hash": "253f188532d11dde",
+    "last_changed": "2026-05-18T14:58:23Z"
   },
   "https://intelligence.house.gov/news/": {
-    "last_checked": "2026-05-18T09:41:39Z",
-    "hash": "8450940482ef8420",
-    "last_changed": "2026-05-18T09:41:39Z"
+    "last_checked": "2026-05-18T14:58:23Z",
+    "hash": "38a9676b3b84d4d7",
+    "last_changed": "2026-05-18T14:58:23Z"
   },
   "https://catalog.archives.gov/search-within/39?q=UAP+unidentified+aerial": {
-    "last_checked": "2026-05-18T09:41:39Z",
+    "last_checked": "2026-05-18T14:58:23Z",
     "hash": "5b18a0d06a5d350e",
     "last_changed": "2026-05-17T19:58:19Z"
   },
   "https://archive.org/search?query=UAP+declassified+government&mediatype=texts&sort=-publicdate": {
-    "last_checked": "2026-05-18T09:41:39Z",
+    "last_checked": "2026-05-18T14:58:23Z",
     "hash": "5c6d9e99b5e010b9",
     "last_changed": "2026-05-17T19:58:19Z"
   },
   "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/1/query?where=STATE%3D%27nm%27&outFields=FEATURENAME%2CFUDSUNIQUEPROPERTYNUMBER%2CLATITUDE%2CLONGITUDE&f=json&resultRecordCount=100": {
-    "last_checked": "2026-05-18T09:41:39Z",
+    "last_checked": "2026-05-18T14:58:23Z",
     "hash": "e3b27b314cecf83e",
     "last_changed": "2026-05-17T19:58:19Z"
   },
   "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed": {
-    "last_checked": "2026-05-18T09:41:39Z",
-    "hash": "e76c9274b967f3ab",
-    "last_changed": "2026-05-18T09:41:39Z"
+    "last_checked": "2026-05-18T14:58:23Z",
+    "hash": "48d6f3f87036b436",
+    "last_changed": "2026-05-18T14:58:23Z"
   },
   "https://www.muckrock.com/foi/list/?q=UFO&status=done&order_by=-date_filed": {
-    "last_checked": "2026-05-18T09:41:39Z",
-    "hash": "1be16d7f45f2c2e7",
-    "last_changed": "2026-05-18T09:41:39Z"
+    "last_checked": "2026-05-18T14:58:23Z",
+    "hash": "a9a7cc6668e8e29e",
+    "last_changed": "2026-05-18T14:58:23Z"
   },
   "https://www.documentcloud.org/app?q=UAP%20UFO%20declassified&order=created_at": {
-    "last_checked": "2026-05-18T09:41:39Z",
-    "hash": "2b4eb6a6551e3ed1",
-    "last_changed": "2026-05-18T09:41:39Z"
+    "last_checked": "2026-05-18T14:58:23Z",
+    "hash": "5094a14f6820897f",
+    "last_changed": "2026-05-18T14:58:23Z"
   }
 }
