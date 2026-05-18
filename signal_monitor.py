@@ -257,6 +257,8 @@ def monitor():
                 'source_type':  stype,
                 'author':       source.get('author', ''),
                 'priority':     priority,
+                'lang':         source.get('lang', 'en'),
+                'flag':         source.get('flag', '🌐'),
                 'lat':          source.get('lat', 38.9072),
                 'lon':          source.get('lon', -77.0369),
                 'location':     source.get('location', 'USA'),
