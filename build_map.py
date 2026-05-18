@@ -2587,10 +2587,17 @@ SIGNAL_DETECTIONS.forEach(s => {{
   const dateStr = (s.published_at || s.detected_at || '').slice(0,10);
   const sourceTypeLabel = {{rss:'RSS FEED', youtube:'YOUTUBE', twitter:'X / TWITTER'}}[s.source_type] || 'SIGNAL';
 
+  const langBadge = (s.lang && s.lang !== 'en')
+    ? `<span style="display:inline-block;background:#1a1a00;border:1px solid #ff660055;
+        border-radius:2px;padding:0 4px;font-size:0.58rem;color:#ffcc44;
+        font-family:monospace;margin-left:5px;">${{s.lang.toUpperCase()}}</span>` : '';
+
   m.bindPopup(`
     <div style="max-width:380px;">
       <div class="popup-source" style="color:#ff6600;">⚡ SIGNAL — ${{sourceTypeLabel}}</div>
-      <div style="font-size:0.72rem;color:#ff9966;font-weight:600;margin:2px 0 4px;">${{s.source_name}}</div>
+      <div style="font-size:0.72rem;color:#ff9966;font-weight:600;margin:2px 0 4px;">
+        ${{s.flag || '🌐'}} ${{s.source_name}}${{langBadge}}
+      </div>
       ${{s.author ? `<div style="font-size:0.62rem;color:#888;margin-bottom:4px;">by ${{s.author}}</div>` : ''}}
       <div class="popup-title" style="font-size:0.88rem;line-height:1.35;margin-bottom:5px;">
         <a href="${{s.url}}" target="_blank" style="color:#ffcc88;text-decoration:none;">${{s.title}}</a>
