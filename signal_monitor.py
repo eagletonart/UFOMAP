@@ -42,12 +42,19 @@ FETCH_TIMEOUT = 15
 
 # ── Nitter instances — tried in order, first success wins ─────────────────────
 NITTER_INSTANCES = [
+    # Try all known public instances — monitor picks first one that returns items
+    'nitter.net',
     'nitter.poast.org',
     'nitter.privacydev.net',
+    'nitter.privacyredirect.com',
+    'nitter.catsarch.com',
+    'nitter.kareem.one',
     'nitter.tiekoetter.com',
+    'nitter.space',
+    'nitter.1d4.us',
     'nitter.it',
     'nitter.nl',
-    'nitter.net',
+    'nitter.fdn.fr',
 ]
 
 YOUTUBE_RSS_BASE = 'https://www.youtube.com/feeds/videos.xml?channel_id='

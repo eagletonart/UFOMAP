@@ -50,6 +50,26 @@
     "notes": "Long-running UAP news outlet"
   },
   {
+    "name": "Nick Pope",
+    "type": "rss",
+    "url": "https://nickpope.net/feed/",
+    "priority": "high",
+    "author": "Nick Pope",
+    "lat": 51.5074, "lon": -0.1278,
+    "location": "London, UK",
+    "notes": "Former UK MoD UFO desk officer — insider knowledge of UK government UAP programs"
+  },
+  {
+    "name": "GEIPAN — French Space Agency UAP Office",
+    "type": "rss",
+    "url": "https://www.cnes-geipan.fr/fr/rss.xml",
+    "priority": "medium",
+    "author": "CNES / GEIPAN",
+    "lat": 48.8566, "lon": 2.3522,
+    "location": "Paris, France",
+    "notes": "Official French government UAP investigation unit under CNES — most transparent gov UAP office in the world. Posts in French."
+  },
+  {
     "name": "WEAPONIZED Podcast (Corbell & Knapp)",
     "type": "youtube",
     "channel_id": "UChDCgWtRhXO82TqsYDEuhug",
@@ -99,6 +119,24 @@
     "notes": "NewsNation investigative journalist — broke NHI retrieval program claims"
   },
   {
+    "name": "David Grusch (@DavidCharlesGrusch)",
+    "type": "twitter",
+    "handle": "DavidCharlesGrusch",
+    "priority": "critical",
+    "lat": 38.8719, "lon": -77.0563,
+    "location": "Arlington, VA",
+    "notes": "Former NGA/NRO officer — testified under oath about retrieval programs in Congress 2023"
+  },
+  {
+    "name": "Michael Shellenberger (@ShellenbergerMD)",
+    "type": "twitter",
+    "handle": "ShellenbergerMD",
+    "priority": "high",
+    "lat": 37.7749, "lon": -122.4194,
+    "location": "San Francisco, CA",
+    "notes": "Broke Grusch story with Coulthart — ongoing UAP congressional source reporting"
+  },
+  {
     "name": "Rep. Tim Burchett (@RepTimBurchett)",
     "type": "twitter",
     "handle": "RepTimBurchett",
@@ -106,6 +144,69 @@
     "lat": 38.8925, "lon": -77.0065,
     "location": "Capitol Hill, Washington DC",
     "notes": "Most vocal UAP congressman — leads House UAP caucus"
+  },
+  {
+    "name": "Rep. Eric Burlison (@EricBurlison)",
+    "type": "twitter",
+    "handle": "EricBurlison",
+    "priority": "high",
+    "lat": 38.8925, "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "notes": "Missouri congressman — UAP caucus, aggressive on disclosure, met Grusch privately"
+  },
+  {
+    "name": "Rep. Anna Paulina Luna (@RepAnnaLuna)",
+    "type": "twitter",
+    "handle": "RepAnnaLuna",
+    "priority": "high",
+    "lat": 38.8925, "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "notes": "Florida congresswoman — UAP subcommittee, introduced UAP disclosure legislation"
+  },
+  {
+    "name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "type": "twitter",
+    "handle": "RepMoskowitz",
+    "priority": "high",
+    "lat": 38.8925, "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "notes": "Florida congressman — UAP caucus, frequently challenges DoD on transparency"
+  },
+  {
+    "name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "type": "twitter",
+    "handle": "SenGillibrand",
+    "priority": "high",
+    "lat": 38.8925, "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "notes": "Authored UAPDA amendment — created AARO, most consequential UAP senator"
+  },
+  {
+    "name": "Sen. Marco Rubio (@SenMarcoRubio)",
+    "type": "twitter",
+    "handle": "SenMarcoRubio",
+    "priority": "high",
+    "lat": 38.8925, "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "notes": "Senate Intel chair — received classified UAP briefings, pushed hard for UAPDA"
+  },
+  {
+    "name": "David Fravor (@DavidFravor)",
+    "type": "twitter",
+    "handle": "DavidFravor",
+    "priority": "high",
+    "lat": 32.7157, "lon": -117.1611,
+    "location": "San Diego, CA",
+    "notes": "Cmdr. David Fravor — Navy pilot in the 2004 Nimitz Tic Tac encounter, vocal on disclosure"
+  },
+  {
+    "name": "Nick Pope (@nickpopemod)",
+    "type": "twitter",
+    "handle": "nickpopemod",
+    "priority": "high",
+    "lat": 51.5074, "lon": -0.1278,
+    "location": "London, UK",
+    "notes": "Former UK MoD UAP desk — UK government insider, international perspective"
   },
   {
     "name": "Christopher Sharp (@ChrisUKnapp)",
@@ -124,15 +225,6 @@
     "lat": 36.1699, "lon": -115.1398,
     "location": "Las Vegas, NV",
     "notes": "Veteran UAP journalist — broke Bob Lazar story, Area 51 coverage"
-  },
-  {
-    "name": "Rep. Anna Paulina Luna (@RepAnnaLuna)",
-    "type": "twitter",
-    "handle": "RepAnnaLuna",
-    "priority": "medium",
-    "lat": 38.8925, "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "notes": "House UAP subcommittee — pushing hard for disclosure"
   },
   {
     "name": "AARO (@AskDODAARO)",
