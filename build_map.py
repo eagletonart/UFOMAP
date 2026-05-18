@@ -752,6 +752,96 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
 }}
 #conn-btn:hover {{ background:rgba(0,255,68,.16); color:#a0e8c8; }}
 
+/* ── Signal button ───────────────────────────────────────── */
+#signal-btn {{
+  background:rgba(255,102,0,.08); border:1px solid #663300; color:#ff9966;
+  font-family:'Share Tech Mono',monospace; font-size:.72rem;
+  letter-spacing:.1em; padding:5px 12px; cursor:pointer;
+  text-transform:uppercase; white-space:nowrap; border-radius:2px;
+  transition:background .2s,color .2s;
+}}
+#signal-btn:hover, #signal-btn.active {{
+  background:rgba(255,102,0,.2); color:#ffcc88; border-color:#ff6600;
+  box-shadow:0 0 8px rgba(255,102,0,.3);
+}}
+
+/* ── Signal intel feed panel ─────────────────────────────── */
+#signal-panel {{
+  display:none; position:fixed; top:0; right:0; bottom:0;
+  width:440px; max-width:100vw; z-index:5000;
+  background:#03080a; border-left:1px solid #ff660033;
+  flex-direction:column; font-family:'Share Tech Mono',monospace;
+  box-shadow:-4px 0 24px rgba(0,0,0,.6);
+}}
+#signal-panel.open {{ display:flex; }}
+#signal-panel-hdr {{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 16px; border-bottom:1px solid #ff660033; flex-shrink:0;
+  background:rgba(3,8,10,.95);
+}}
+#signal-panel-title {{
+  font-size:.75rem; letter-spacing:.22em; color:#ff6600;
+}}
+#signal-panel-close {{
+  background:none; border:1px solid #663300; color:#ff9966;
+  font-family:'Share Tech Mono',monospace; font-size:.68rem;
+  padding:3px 12px; cursor:pointer; border-radius:2px;
+  letter-spacing:.1em;
+}}
+#signal-panel-close:hover {{ background:rgba(255,102,0,.15); color:#ffcc88; border-color:#ff6600; }}
+#signal-filters {{
+  display:flex; gap:6px; padding:8px 12px; border-bottom:1px solid #ff660022;
+  flex-shrink:0; flex-wrap:wrap; background:rgba(3,8,10,.9);
+}}
+.sf-btn {{
+  background:none; border:1px solid #442200; color:#996644;
+  font-family:'Share Tech Mono',monospace; font-size:.60rem;
+  padding:2px 9px; cursor:pointer; border-radius:2px; letter-spacing:.08em;
+  transition:all .15s;
+}}
+.sf-btn:hover, .sf-btn.active {{
+  background:rgba(255,102,0,.15); color:#ffcc88; border-color:#ff6600;
+}}
+#signal-feed {{
+  flex:1; overflow-y:auto; padding:8px 0;
+}}
+#signal-feed::-webkit-scrollbar {{ width:4px; }}
+#signal-feed::-webkit-scrollbar-track {{ background:#03080a; }}
+#signal-feed::-webkit-scrollbar-thumb {{ background:#ff660055; border-radius:2px; }}
+.sig-item {{
+  padding:9px 14px; border-bottom:1px solid #ff660011;
+  cursor:pointer; transition:background .15s;
+}}
+.sig-item:hover {{ background:rgba(255,102,0,.06); }}
+.sig-item-source {{
+  font-size:.58rem; letter-spacing:.12em; color:#ff6600; margin-bottom:3px;
+  display:flex; align-items:center; justify-content:space-between;
+}}
+.sig-item-title {{
+  font-size:.78rem; color:#ffcc88; line-height:1.35; margin-bottom:3px;
+  font-family:'Rajdhani',sans-serif; font-weight:600;
+}}
+.sig-item-title a {{
+  color:inherit; text-decoration:none;
+}}
+.sig-item-title a:hover {{ color:#fff; text-decoration:underline; }}
+.sig-item-desc {{
+  font-size:.64rem; color:#888; line-height:1.4; margin-bottom:4px;
+  font-family:'Rajdhani',sans-serif;
+}}
+.sig-item-meta {{
+  font-size:.58rem; color:#555; display:flex; gap:10px;
+}}
+.sig-lang-badge {{
+  display:inline-block; background:#1a0d00; border:1px solid #ff660044;
+  border-radius:2px; padding:0 4px; font-size:.56rem; color:#ffcc44;
+  margin-left:5px; vertical-align:middle;
+}}
+#signal-empty {{
+  padding:40px 20px; text-align:center; color:#444; font-size:.7rem;
+  letter-spacing:.1em;
+}}
+
 /* ── Welcome / onboarding modal ──────────────────────────── */
 #welcome-modal {{
   display:none; position:fixed; inset:0; z-index:9000;
@@ -1042,6 +1132,7 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
     <div id="header-btns">
       <button id="controls-toggle" aria-label="Toggle filters">☰&nbsp;FILTERS</button>
       <button id="mode-toggle">🗺️&nbsp;2D MAP</button>
+      <button id="signal-btn">⚡&nbsp;SIGNAL <span id="signal-count" style="font-size:.65rem;opacity:.7;"></span></button>
       <button id="conn-btn">🕸&nbsp;CONNECTIONS</button>
       <button id="layers-btn" class="active">&#9776; LAYERS</button>
     </div>
@@ -1260,6 +1351,25 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
 </div>
 
 <div id="built-at">Built {built_at}</div>
+
+<!-- ── Signal Intel Feed Panel ─────────────────────────────── -->
+<div id="signal-panel">
+  <div id="signal-panel-hdr">
+    <span id="signal-panel-title">⚡ INTEL FEED</span>
+    <button id="signal-panel-close">✕ CLOSE</button>
+  </div>
+  <div id="signal-filters">
+    <button class="sf-btn active" data-filter="all">ALL</button>
+    <button class="sf-btn" data-filter="rss">📰 RSS</button>
+    <button class="sf-btn" data-filter="youtube">▶️ VIDEO</button>
+    <button class="sf-btn" data-filter="twitter">⚡ X</button>
+    <button class="sf-btn" data-filter="critical">🔴 CRITICAL</button>
+    <button class="sf-btn" data-filter="high">🟠 HIGH</button>
+  </div>
+  <div id="signal-feed">
+    <div id="signal-empty">LOADING INTEL FEED…</div>
+  </div>
+</div>
 
 <script>
 // ── Data ────────────────────────────────────────────────────
@@ -2565,52 +2675,85 @@ BABEL_STATIONS.forEach(s => {{
   babelLayer.addLayer(m);
 }});
 
-// ── Signal layer — bleeding edge UAP feeds ───────────────────────────────────
-const signalLayer = clusterGroup('#ff6600');
-SIGNAL_DETECTIONS.forEach(s => {{
-  const typeIcon = {{rss:'📰', youtube:'▶️', twitter:'⚡'}}[s.source_type] || '📡';
-  const prioColor = {{critical:'#ff4444', high:'#ff9500', medium:'#ffe066', low:'#aaaaaa'}}[s.priority] || '#ff6600';
-  const icon = L.divIcon({{
-    className: '',
-    html: `<div style="position:relative;width:30px;height:30px;">
-      <div style="position:absolute;inset:0;border-radius:50%;
-        background:rgba(255,102,0,.15);border:2px solid ${{prioColor}};
-        box-shadow:0 0 8px ${{prioColor}}88;
-        animation:pulse 1.8s ease-in-out infinite;"></div>
-      <div style="position:absolute;inset:0;display:flex;align-items:center;
-        justify-content:center;font-size:13px;line-height:1;">${{typeIcon}}</div>
-    </div>`,
-    iconSize: [30, 30], iconAnchor: [15, 15],
+// ── Signal Intel Feed Panel ───────────────────────────────────────────────────
+(function() {{
+  const ALL    = SIGNAL_DETECTIONS.slice().sort((a,b) =>
+    (b.published_at||b.detected_at||'').localeCompare(a.published_at||a.detected_at||''));
+  const panel  = document.getElementById('signal-panel');
+  const feed   = document.getElementById('signal-feed');
+  const btn    = document.getElementById('signal-btn');
+  const count  = document.getElementById('signal-count');
+
+  // Update header count badge
+  if (ALL.length) count.textContent = ALL.length;
+
+  let activeFilter = 'all';
+
+  function renderFeed(filter) {{
+    activeFilter = filter;
+    const items = filter === 'all' ? ALL
+      : ['critical','high','medium','low'].includes(filter)
+        ? ALL.filter(s => s.priority === filter)
+        : ALL.filter(s => s.source_type === filter);
+
+    if (!items.length) {{
+      feed.innerHTML = '<div id="signal-empty">NO SIGNALS MATCH THIS FILTER</div>';
+      return;
+    }}
+
+    feed.innerHTML = items.map(s => {{
+      const typeLabel = {{rss:'RSS',youtube:'VIDEO',twitter:'X'}}[s.source_type] || 'FEED';
+      const prioColor = {{critical:'#ff4444',high:'#ff9500',medium:'#ffe066',low:'#888'}}[s.priority]||'#ff6600';
+      const langBadge = (s.lang && !s.lang.startsWith('en'))
+        ? `<span class="sig-lang-badge">${{s.lang.toUpperCase()}}</span>` : '';
+      const dateStr = (s.published_at||s.detected_at||'').slice(0,10);
+      return `<div class="sig-item" data-url="${{s.url}}">
+        <div class="sig-item-source">
+          <span>${{s.flag||'🌐'}} ${{s.source_name}}${{langBadge}}</span>
+          <span style="color:${{prioColor}};font-size:.55rem;">[${{typeLabel}}]</span>
+        </div>
+        <div class="sig-item-title">
+          <a href="${{s.url}}" target="_blank" rel="noopener">${{s.title}}</a>
+        </div>
+        ${{s.description ? `<div class="sig-item-desc">${{s.description.slice(0,160)}}${{s.description.length>160?'…':''}}</div>` : ''}}
+        <div class="sig-item-meta">
+          <span>📅 ${{dateStr}}</span>
+          <span>📍 ${{s.location}}</span>
+          ${{s.author ? `<span>✍ ${{s.author}}</span>` : ''}}
+        </div>
+      </div>`;
+    }}).join('');
+  }}
+
+  // Filter buttons
+  document.querySelectorAll('.sf-btn').forEach(b => {{
+    b.addEventListener('click', () => {{
+      document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      renderFeed(b.dataset.filter);
+    }});
   }});
 
-  const m = L.marker([s.lat, s.lon], {{icon}});
-  const dateStr = (s.published_at || s.detected_at || '').slice(0,10);
-  const sourceTypeLabel = {{rss:'RSS FEED', youtube:'YOUTUBE', twitter:'X / TWITTER'}}[s.source_type] || 'SIGNAL';
+  // Open/close
+  function openPanel() {{
+    panel.classList.add('open');
+    btn.classList.add('active');
+    renderFeed(activeFilter);
+  }}
+  function closePanel() {{
+    panel.classList.remove('open');
+    btn.classList.remove('active');
+  }}
 
-  const langBadge = (s.lang && s.lang !== 'en')
-    ? `<span style="display:inline-block;background:#1a1a00;border:1px solid #ff660055;
-        border-radius:2px;padding:0 4px;font-size:0.58rem;color:#ffcc44;
-        font-family:monospace;margin-left:5px;">${{s.lang.toUpperCase()}}</span>` : '';
+  btn.addEventListener('click', () => panel.classList.contains('open') ? closePanel() : openPanel());
+  document.getElementById('signal-panel-close').addEventListener('click', closePanel);
 
-  m.bindPopup(`
-    <div style="max-width:380px;">
-      <div class="popup-source" style="color:#ff6600;">⚡ SIGNAL — ${{sourceTypeLabel}}</div>
-      <div style="font-size:0.72rem;color:#ff9966;font-weight:600;margin:2px 0 4px;">
-        ${{s.flag || '🌐'}} ${{s.source_name}}${{langBadge}}
-      </div>
-      ${{s.author ? `<div style="font-size:0.62rem;color:#888;margin-bottom:4px;">by ${{s.author}}</div>` : ''}}
-      <div class="popup-title" style="font-size:0.88rem;line-height:1.35;margin-bottom:5px;">
-        <a href="${{s.url}}" target="_blank" style="color:#ffcc88;text-decoration:none;">${{s.title}}</a>
-      </div>
-      ${{s.description ? `<div style="font-size:0.69rem;color:#b0b0b0;line-height:1.4;margin-bottom:5px;">${{s.description}}</div>` : ''}}
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
-        <span style="font-size:0.60rem;color:#666;font-family:monospace;">📅 ${{dateStr}}</span>
-        <span style="font-size:0.60rem;color:#888;">📍 ${{s.location}}</span>
-      </div>
-    </div>
-  `, {{maxWidth:390}});
-  signalLayer.addLayer(m);
-}});
+  // Close on Escape
+  document.addEventListener('keydown', e => {{ if (e.key==='Escape') closePanel(); }});
+
+  // Initial render (hidden)
+  renderFeed('all');
+}})();
 
 // ── NUFORC Recent layer ──────────────────────────────────────
 const nuforcRecentLayer = clusterGroup('#00aaff');
@@ -2702,7 +2845,6 @@ const LAYER_REGISTRY = {{
   'PURSUE Release 01':           pursueR01Layer,
   'DERP Cleanup Sites':          derpLayer,
   'Babel Monitor':               babelLayer,
-  'Signal':                      signalLayer,
   'NUFORC Recent':               nuforcRecentLayer,
   'Pilot Reports':        asrsLayer,
   'ASA Reports':                 asaLayer,
@@ -2732,7 +2874,6 @@ const LAYER_GROUPS = [
     {{ name:'PURSUE Release 01',          color:'#ff9500', on:false }},
     {{ name:'DERP Cleanup Sites',         color:'#39ff14', on:false }},
     {{ name:'Babel Monitor',              color:'#00c8ff', on:true  }},
-    {{ name:'Signal',                     color:'#ff6600', on:true  }},
   ]}},
   {{ icon:'✈️', name:'PILOT REPORTS', open:false, items:[
     {{ name:'Pilot Reports', color:'#00aaff', on:false }},
@@ -4152,7 +4293,7 @@ function showConnDetail(sci, color, nodeEl) {{
 
 // ── Button & keyboard controls ────────────────────────────────
 document.getElementById('conn-btn').addEventListener('click', () => {{
-  window.open('connections_diagram.html', '_blank');
+  document.getElementById('conn-overlay').classList.add('active');
 }});
 document.getElementById('conn-close').addEventListener('click', () => {{
   document.getElementById('conn-overlay').classList.remove('active');
