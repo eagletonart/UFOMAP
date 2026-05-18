@@ -349,5 +349,167 @@
     "priority": "high",
     "detected_at": "2026-05-17T19:58:19Z",
     "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/news/",
+    "text": "Investigations",
+    "source_name": "MuckRock \u2014 UAP FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/accounts/login/?next=/foi/list/?q=UAP&status=done&order_by=-date_filed",
+    "text": "Log\u00a0In",
+    "source_name": "MuckRock \u2014 UAP FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/foi/united-states-of-america-10/documentation-on-unidentified-aerial-phenomena-uaps-144598/",
+    "text": "Documentation on Unidentified Aerial Phenomena (UAPs)",
+    "source_name": "MuckRock \u2014 UAP FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/foi/united-states-of-america-10/cbp-uap-127402/",
+    "text": "CBP UAP",
+    "source_name": "MuckRock \u2014 UAP FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/foi/dougherty-county-4880/foia-request-for-surveillance-camera-data-dougherty-county-manager-141159/",
+    "text": "FOIA Request for Surveillance Camera Data (Dougherty County Manager)",
+    "source_name": "MuckRock \u2014 UAP FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/foi/newark-4674/business-insider-delaware-foia-request-august-16-2022-132699/",
+    "text": "Business Insider Delaware FOIA request - August 16, 2022",
+    "source_name": "MuckRock \u2014 UAP FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/foi/pine-bluff-9887/uapb-temeka-samuels-110970/",
+    "text": "UAPB - Temeka Samuels",
+    "source_name": "MuckRock \u2014 UAP FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/foi/pine-bluff-9887/uapb-football-game-contracts-102710/",
+    "text": "UAPB Football Game Contracts",
+    "source_name": "MuckRock \u2014 UAP FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/news/editorial-policy/",
+    "text": "Editorial Policy",
+    "source_name": "MuckRock \u2014 UAP FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/news/feeds/",
+    "text": "Latest Reporting",
+    "source_name": "MuckRock \u2014 UAP FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UAP&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/accounts/login/?next=/foi/list/?q=UFO&status=done&order_by=-date_filed",
+    "text": "Log\u00a0In",
+    "source_name": "MuckRock \u2014 UFO FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UFO&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/foi/united-states-of-america-10/ufouo-dhs-iwcc-israel-hamas-conflict-update-10-october-2023-department-of-homeland-security-170020/",
+    "text": "(U//FOUO) DHS - IWCC Israel Hamas Conflict Update (10 October 2023) (Department of Homeland Security)",
+    "source_name": "MuckRock \u2014 UFO FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UFO&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/foi/new-york-16/ufos-and-unusual-phenomena-in-nys-parks-new-york-state-office-of-parks-recreation-and-historic-preservation-142939/",
+    "text": "UFOs and Unusual Phenomena in NYS Parks (New York State Office of Parks, Recreation and Historic Preservation)",
+    "source_name": "MuckRock \u2014 UFO FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UFO&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/foi/new-york-city-17/ufos-and-unusual-phenomena-in-nys-parks-new-york-state-parks-police-142938/",
+    "text": "UFOs and Unusual Phenomena in NYS Parks (New York State Parks Police)",
+    "source_name": "MuckRock \u2014 UFO FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UFO&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/foi/united-states-of-america-10/ncis-ufo-sightings-24064/",
+    "text": "NCIS UFO Sightings",
+    "source_name": "MuckRock \u2014 UFO FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UFO&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.muckrock.com/foi/united-states-of-america-10/nasa-ufo-alien-foia-requests-19668/",
+    "text": "NASA UFO, Alien FOIA Requests",
+    "source_name": "MuckRock \u2014 UFO FOIA Requests",
+    "source_url": "https://www.muckrock.com/foi/list/?q=UFO&status=done&order_by=-date_filed",
+    "priority": "medium",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.documentcloud.org/documents/",
+    "text": "Documents",
+    "source_name": "DocumentCloud \u2014 UAP/UFO",
+    "source_url": "https://www.documentcloud.org/app?q=UAP%20UFO%20declassified&order=created_at",
+    "priority": "low",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.documentcloud.org/documents/?q=",
+    "text": "Public Documents",
+    "source_name": "DocumentCloud \u2014 UAP/UFO",
+    "source_url": "https://www.documentcloud.org/app?q=UAP%20UFO%20declassified&order=created_at",
+    "priority": "low",
+    "detected_at": "2026-05-18T02:29:36Z",
+    "analyzed": false
   }
 ]
