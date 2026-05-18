@@ -117,7 +117,8 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
               derp_sites=None,
               babel_sources=None,
               babel_detections=None,
-              babel_intelligence=None):
+              babel_intelligence=None,
+              signal_detections=None):
     if missing_411 is None:
         missing_411 = []
     if reddit_missing is None:
@@ -255,6 +256,14 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
             reverse=True
         )[:5]
     babel_intel_json = json.dumps(_babel_intel_by_src)
+
+    # Signal detections — most recent 200 for map display
+    _signal_dets = sorted(
+        (signal_detections or []),
+        key=lambda x: x.get('published_at', ''),
+        reverse=True
+    )[:200]
+    signal_json = json.dumps(_signal_dets)
 
     # Hardcoded curated datasets — not fetched, not in export
     elongated_skulls = [
@@ -1278,6 +1287,7 @@ const PURSUE_INTEL        = {pursue_intel_json};
 const DERP_SITES          = {derp_json};
 const BABEL_STATIONS      = {babel_json};
 const BABEL_INTELLIGENCE  = {babel_intel_json};
+const SIGNAL_DETECTIONS   = {signal_json};
 const NUFORC_RECENT       = {nuforc_recent_json};
 const SEISMIC_ACTIVITY    = {seismic_json};
 const HUMANOID_ENCOUNTERS = {humanoid_json};
@@ -2555,6 +2565,46 @@ BABEL_STATIONS.forEach(s => {{
   babelLayer.addLayer(m);
 }});
 
+// ── Signal layer — bleeding edge UAP feeds ───────────────────────────────────
+const signalLayer = clusterGroup('#ff6600');
+SIGNAL_DETECTIONS.forEach(s => {{
+  const typeIcon = {{rss:'📰', youtube:'▶️', twitter:'⚡'}}[s.source_type] || '📡';
+  const prioColor = {{critical:'#ff4444', high:'#ff9500', medium:'#ffe066', low:'#aaaaaa'}}[s.priority] || '#ff6600';
+  const icon = L.divIcon({{
+    className: '',
+    html: `<div style="position:relative;width:30px;height:30px;">
+      <div style="position:absolute;inset:0;border-radius:50%;
+        background:rgba(255,102,0,.15);border:2px solid ${{prioColor}};
+        box-shadow:0 0 8px ${{prioColor}}88;
+        animation:pulse 1.8s ease-in-out infinite;"></div>
+      <div style="position:absolute;inset:0;display:flex;align-items:center;
+        justify-content:center;font-size:13px;line-height:1;">${{typeIcon}}</div>
+    </div>`,
+    iconSize: [30, 30], iconAnchor: [15, 15],
+  }});
+
+  const m = L.marker([s.lat, s.lon], {{icon}});
+  const dateStr = (s.published_at || s.detected_at || '').slice(0,10);
+  const sourceTypeLabel = {{rss:'RSS FEED', youtube:'YOUTUBE', twitter:'X / TWITTER'}}[s.source_type] || 'SIGNAL';
+
+  m.bindPopup(`
+    <div style="max-width:380px;">
+      <div class="popup-source" style="color:#ff6600;">⚡ SIGNAL — ${{sourceTypeLabel}}</div>
+      <div style="font-size:0.72rem;color:#ff9966;font-weight:600;margin:2px 0 4px;">${{s.source_name}}</div>
+      ${{s.author ? `<div style="font-size:0.62rem;color:#888;margin-bottom:4px;">by ${{s.author}}</div>` : ''}}
+      <div class="popup-title" style="font-size:0.88rem;line-height:1.35;margin-bottom:5px;">
+        <a href="${{s.url}}" target="_blank" style="color:#ffcc88;text-decoration:none;">${{s.title}}</a>
+      </div>
+      ${{s.description ? `<div style="font-size:0.69rem;color:#b0b0b0;line-height:1.4;margin-bottom:5px;">${{s.description}}</div>` : ''}}
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
+        <span style="font-size:0.60rem;color:#666;font-family:monospace;">📅 ${{dateStr}}</span>
+        <span style="font-size:0.60rem;color:#888;">📍 ${{s.location}}</span>
+      </div>
+    </div>
+  `, {{maxWidth:390}});
+  signalLayer.addLayer(m);
+}});
+
 // ── NUFORC Recent layer ──────────────────────────────────────
 const nuforcRecentLayer = clusterGroup('#00aaff');
 NUFORC_RECENT.forEach(s => {{
@@ -2645,6 +2695,7 @@ const LAYER_REGISTRY = {{
   'PURSUE Release 01':           pursueR01Layer,
   'DERP Cleanup Sites':          derpLayer,
   'Babel Monitor':               babelLayer,
+  'Signal':                      signalLayer,
   'NUFORC Recent':               nuforcRecentLayer,
   'Pilot Reports':        asrsLayer,
   'ASA Reports':                 asaLayer,
@@ -2674,6 +2725,7 @@ const LAYER_GROUPS = [
     {{ name:'PURSUE Release 01',          color:'#ff9500', on:false }},
     {{ name:'DERP Cleanup Sites',         color:'#39ff14', on:false }},
     {{ name:'Babel Monitor',              color:'#00c8ff', on:true  }},
+    {{ name:'Signal',                     color:'#ff6600', on:true  }},
   ]}},
   {{ icon:'✈️', name:'PILOT REPORTS', open:false, items:[
     {{ name:'Pilot Reports', color:'#00aaff', on:false }},
@@ -4242,6 +4294,10 @@ if __name__ == "__main__":
     _analyzed_count = len([r for r in _babel_intel_live if r.get('analysis')])
     print(f"   Babel: {len(_babel_sources_live)} monitored sources | {len(_babel_detections_live)} detections | {_analyzed_count} AI-analyzed docs")
 
+    _signal_det_path  = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'signal_detections.json')
+    _signal_dets_live = json.load(open(_signal_det_path)) if os.path.exists(_signal_det_path) else []
+    print(f"   Signal: {len(_signal_dets_live)} signals on record")
+
     enriched_pursue_decl = _enrich_pursue_correlations(
         _PURSUE_DECLASSIFIED_LIVE,
         military_bases = data.get("military_bases", []),
@@ -4280,5 +4336,6 @@ if __name__ == "__main__":
         babel_sources            = _babel_sources_live,
         babel_detections         = _babel_detections_live,
         babel_intelligence       = _babel_intel_live,
+        signal_detections        = _signal_dets_live,
     )
     print(f"\n✅  Done — open {OUTPUT_MAP} in your browser.")
