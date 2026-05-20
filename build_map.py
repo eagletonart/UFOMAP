@@ -4014,17 +4014,18 @@ _nodeList.forEach(n => {{
 }});
 
 const _sim = d3.forceSimulation(_nodeList)
+  .alphaDecay(0.022)
   .force('link', d3.forceLink(_linkList).id(d => d.id)
-    .distance(d => d.type === 'cluster' ? 70 : 170)
-    .strength(d => d.type === 'cluster' ? 0.25 : 0.1))
-  .force('charge', d3.forceManyBody().strength(-280))
-  .force('collide', d3.forceCollide(d => d.isInst ? 48 : 36).strength(0.8))
+    .distance(d => d.type === 'cluster' ? 55 : 140)
+    .strength(d => d.type === 'cluster' ? 0.45 : 0.04))
+  .force('charge', d3.forceManyBody().strength(-340).distanceMin(20).distanceMax(400))
+  .force('collide', d3.forceCollide(d => d.isInst ? 52 : 38).strength(0.9))
   .force('cluster', alpha => {{
     _nodeList.forEach(n => {{
       const c = _cluCenters[n.cluster];
       if (!c) return;
-      n.vx += (c.x - n.x) * alpha * 0.06;
-      n.vy += (c.y - n.y) * alpha * 0.06;
+      n.vx += (c.x - n.x) * alpha * 0.22;
+      n.vy += (c.y - n.y) * alpha * 0.22;
     }});
   }})
   .on('tick', _tick);
@@ -4111,16 +4112,23 @@ document.querySelectorAll('.cf-btn').forEach(b =>
 
 // ── Open handler (called by conn-btn) ────────────────────────
 window._openConnDiagram = function() {{
-  // Resize sim to current canvas dimensions
   const cw = _canvas.clientWidth, ch = _canvas.clientHeight;
-  _cluCenters['nasa'] = {{ x:cw/2, y:ch/2 }};
+  // Recalculate cluster centers for actual canvas size
+  _cluCenters['nasa'] = {{ x: cw/2, y: ch/2 }};
   _nonNasaClus.forEach((cl, i) => {{
     const ang = (i / _nonNasaClus.length) * 2 * Math.PI - Math.PI / 2;
-    const r   = Math.min(cw, ch) * 0.33;
+    const r   = Math.min(cw, ch) * 0.38;
     _cluCenters[cl.id] = {{ x: cw/2 + r * Math.cos(ang), y: ch/2 + r * Math.sin(ang) }};
   }});
-  _sim.alpha(0.6).restart();
-  setTimeout(() => _fitToScreen(600), 1600);
+  // Re-seed every node near its cluster center so layout is consistent
+  _nodeList.forEach(n => {{
+    const c = _cluCenters[n.cluster] || {{ x: cw/2, y: ch/2 }};
+    n.x = c.x + (Math.random() - 0.5) * 50;
+    n.y = c.y + (Math.random() - 0.5) * 50;
+    n.vx = 0; n.vy = 0;
+  }});
+  _sim.alpha(1).restart();
+  setTimeout(() => _fitToScreen(700), 2800);
 }};
 
 // ── Button controls ───────────────────────────────────────────
