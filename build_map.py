@@ -4135,19 +4135,20 @@ window._openConnDiagram = function() {{
     .attr('cx', cl => (_cluCenters[cl.id] || {{}}).x || 0)
     .attr('cy', cl => (_cluCenters[cl.id] || {{}}).y || 0)
     .attr('r',  cl => _haloR(cl))
-    .attr('fill',         cl => cl.color + '0d')
-    .attr('stroke',       cl => cl.color + '55')
-    .attr('stroke-width', 1.5)
-    .attr('stroke-dasharray', '6 4');
+    .attr('fill',         cl => cl.color + '1a')
+    .attr('stroke',       cl => cl.color + 'cc')
+    .attr('stroke-width', 2)
+    .attr('stroke-dasharray', '8 5');
 
   _haloG.selectAll('text.ch-lbl').data(_CONN_CLUSTERS).join('text')
     .attr('class', 'ch-lbl')
     .attr('x', cl => (_cluCenters[cl.id] || {{}}).x || 0)
-    .attr('y', cl => ((_cluCenters[cl.id] || {{}}).y || 0) - _haloR(cl) - 9)
+    .attr('y', cl => (_cluCenters[cl.id] || {{}}).y || 0)
+    .attr('dy', cl => _haloR(cl) + 18)
     .attr('text-anchor', 'middle')
     .attr('fill',          cl => cl.color)
-    .attr('opacity',       0.8)
-    .attr('font-size',     '10')
+    .attr('opacity',       0.9)
+    .attr('font-size',     '11')
     .attr('font-family',   "'Share Tech Mono',monospace")
     .attr('letter-spacing','2')
     .text(cl => cl.label);
