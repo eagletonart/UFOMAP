@@ -4294,7 +4294,7 @@ function showConnDetail(sci, color, nodeEl) {{
 // ── Button & keyboard controls ────────────────────────────────
 document.getElementById('conn-btn').addEventListener('click', () => {{
   document.getElementById('conn-overlay').classList.add('active');
-  _openDiagram();
+  requestAnimationFrame(_openDiagram);
 }});
 document.getElementById('conn-close').addEventListener('click', () => {{
   document.getElementById('conn-overlay').classList.remove('active');
