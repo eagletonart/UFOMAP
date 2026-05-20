@@ -3870,17 +3870,17 @@ _CONN_CLUSTERS.forEach(cluster => {{
   }});
 }});
 
-// Intra-cluster links
+// Intra-cluster: hub-spoke only (first member connects to all others)
+// This avoids n² lines while still showing cluster structure
 _CONN_CLUSTERS.forEach(cluster => {{
   const m = cluster.members;
-  for (let i = 0; i < m.length; i++) {{
-    for (let j = i + 1; j < m.length; j++) {{
-      _linkList.push({{
-        source: m[i], target: m[j],
-        color: cluster.color, dash: '4 3',
-        label: null, type: 'cluster', w: 1.5, opacity: 0.45,
-      }});
-    }}
+  if (m.length < 2) return;
+  for (let i = 1; i < m.length; i++) {{
+    _linkList.push({{
+      source: m[0], target: m[i],
+      color: cluster.color, dash: '3 4',
+      label: null, type: 'cluster', w: 1, opacity: 0.18,
+    }});
   }}
 }});
 
@@ -4004,40 +4004,48 @@ _svgEl.addEventListener('click', () => {{
 
 // ── Simulation ────────────────────────────────────────────────
 // Compute cluster target positions (radial ring around center)
-// ── Pure geometric layout — no force simulation ───────────────
+// ── Pure geometric layout — virtual coordinate space ─────────
+// We lay out in a large virtual canvas (VW×VH) so clusters have
+// breathing room, then _fitToScreen() zooms the whole thing to fit.
 const _cluCenters = {{}};
 const _nonNasaClus = _CONN_CLUSTERS.filter(c => c.id !== 'nasa');
+const _VW = 2400, _VH = 2000;   // virtual canvas — layout space
 
-// Halo radius = orbit radius + padding, scaled to member count
+// Orbit radius for n members so adjacent nodes are ~65px apart
+function _orbitR(n) {{
+  if (n <= 1) return 0;
+  return Math.min(Math.max(80, (n * 65) / (2 * Math.PI)), 180);
+}}
+
+// Halo radius = orbit radius + 65px padding
 function _haloR(cl) {{
-  const m = _nodeList.filter(n => n.cluster === cl.id);
-  if (m.length <= 1) return 58;
-  return Math.min(Math.max(74, (m.length * 54) / (2 * Math.PI)), 148) + 54;
+  const n = _nodeList.filter(nd => nd.cluster === cl.id).length;
+  return _orbitR(n) + 65;
 }}
 
 // Compute exact x,y for every node — deterministic, no physics
-function _computeLayout(cw, ch) {{
-  // NASA hub at canvas center; all other clusters on an evenly-spaced ring
-  _cluCenters['nasa'] = {{ x: cw / 2, y: ch / 2 }};
+function _computeLayout() {{
+  const cx = _VW / 2, cy = _VH / 2;
+  const ringR = Math.min(_VW, _VH) * 0.40;   // ring large enough clusters never overlap
+
+  _cluCenters['nasa'] = {{ x: cx, y: cy }};
   _nonNasaClus.forEach((cl, i) => {{
     const ang = (i / _nonNasaClus.length) * 2 * Math.PI - Math.PI / 2;
-    const r   = Math.min(cw, ch) * 0.38;
-    _cluCenters[cl.id] = {{ x: cw / 2 + r * Math.cos(ang), y: ch / 2 + r * Math.sin(ang) }};
+    _cluCenters[cl.id] = {{ x: cx + ringR * Math.cos(ang), y: cy + ringR * Math.sin(ang) }};
   }});
-  // Within each cluster: nodes sit on a circle around the cluster center
+
   _CONN_CLUSTERS.forEach(cl => {{
     const members = _nodeList.filter(n => n.cluster === cl.id);
     const c = _cluCenters[cl.id];
     if (!members.length || !c) return;
     if (members.length === 1) {{ members[0].x = c.x; members[0].y = c.y; return; }}
-    // Orbit radius keeps adjacent nodes ~54 px apart along the circumference
-    const orbitR = Math.min(Math.max(74, (members.length * 54) / (2 * Math.PI)), 148);
-    // Institutional nodes first (they anchor the cluster visually)
+    const r = _orbitR(members.length);
+    // Institutional nodes at 12-o'clock, rest clockwise
     const sorted = [...members].sort((a, b) => (b.isInst ? 1 : 0) - (a.isInst ? 1 : 0));
     sorted.forEach((n, i) => {{
       const ang = (i / members.length) * 2 * Math.PI - Math.PI / 2;
-      n.x = c.x + orbitR * Math.cos(ang);
-      n.y = c.y + orbitR * Math.sin(ang);
+      n.x = c.x + r * Math.cos(ang);
+      n.y = c.y + r * Math.sin(ang);
     }});
   }});
 }}
@@ -4126,38 +4134,37 @@ document.querySelectorAll('.cf-btn').forEach(b =>
 window._openConnDiagram = function() {{
   const cw = _canvas.clientWidth, ch = _canvas.clientHeight;
 
-  // 1. Compute exact node positions (deterministic, no physics)
-  _computeLayout(cw, ch);
+  // 1. Compute exact node positions in virtual coordinate space
+  _computeLayout();
 
   // 2. Draw / update cluster halos
-  _haloG.selectAll('circle.ch-ring').data(_CONN_CLUSTERS).join('circle')
-    .attr('class', 'ch-ring')
+  _haloG.selectAll('circle').data(_CONN_CLUSTERS).join('circle')
     .attr('cx', cl => (_cluCenters[cl.id] || {{}}).x || 0)
     .attr('cy', cl => (_cluCenters[cl.id] || {{}}).y || 0)
     .attr('r',  cl => _haloR(cl))
-    .attr('fill',         cl => cl.color + '1a')
-    .attr('stroke',       cl => cl.color + 'cc')
+    .attr('fill',         cl => cl.color + '22')
+    .attr('stroke',       cl => cl.color)
     .attr('stroke-width', 2)
-    .attr('stroke-dasharray', '8 5');
+    .attr('stroke-opacity', 0.7)
+    .attr('stroke-dasharray', '10 6');
 
-  _haloG.selectAll('text.ch-lbl').data(_CONN_CLUSTERS).join('text')
-    .attr('class', 'ch-lbl')
+  _haloG.selectAll('text').data(_CONN_CLUSTERS).join('text')
     .attr('x', cl => (_cluCenters[cl.id] || {{}}).x || 0)
-    .attr('y', cl => (_cluCenters[cl.id] || {{}}).y || 0)
-    .attr('dy', cl => _haloR(cl) + 18)
-    .attr('text-anchor', 'middle')
+    .attr('y', cl => ((_cluCenters[cl.id] || {{}}).y || 0) + _haloR(cl) + 20)
+    .attr('text-anchor',   'middle')
     .attr('fill',          cl => cl.color)
-    .attr('opacity',       0.9)
-    .attr('font-size',     '11')
+    .attr('opacity',       0.95)
+    .attr('font-size',     '13')
+    .attr('font-weight',   'bold')
     .attr('font-family',   "'Share Tech Mono',monospace")
-    .attr('letter-spacing','2')
+    .attr('letter-spacing','3')
     .text(cl => cl.label);
 
   // 3. Render links and nodes at computed positions
   _tick();
 
-  // 4. Fit everything to screen with a smooth zoom
-  _fitToScreen(400);
+  // 4. Zoom to fit the virtual layout onto the actual canvas
+  _fitToScreen(500);
 }};
 
 // ── Button controls ───────────────────────────────────────────
