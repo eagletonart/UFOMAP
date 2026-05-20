@@ -3870,17 +3870,17 @@ _CONN_CLUSTERS.forEach(cluster => {{
   }});
 }});
 
-// Intra-cluster links
+// Intra-cluster: hub-spoke only (first member connects to all others)
+// This avoids n² lines while still showing cluster structure
 _CONN_CLUSTERS.forEach(cluster => {{
   const m = cluster.members;
-  for (let i = 0; i < m.length; i++) {{
-    for (let j = i + 1; j < m.length; j++) {{
-      _linkList.push({{
-        source: m[i], target: m[j],
-        color: cluster.color, dash: '4 3',
-        label: null, type: 'cluster', w: 1.5, opacity: 0.45,
-      }});
-    }}
+  if (m.length < 2) return;
+  for (let i = 1; i < m.length; i++) {{
+    _linkList.push({{
+      source: m[0], target: m[i],
+      color: cluster.color, dash: '3 4',
+      label: null, type: 'cluster', w: 1, opacity: 0.18,
+    }});
   }}
 }});
 
@@ -3896,7 +3896,13 @@ _CROSS_LINKS.forEach(l => {{
   }});
 }});
 
-// ── D3 force simulation ───────────────────────────────────────
+// Resolve string IDs → node objects (no d3.forceLink to do this for us)
+_linkList.forEach(l => {{
+  if (typeof l.source === 'string') l.source = _nodeMap.get(l.source) || {{ id:l.source, x:0, y:0 }};
+  if (typeof l.target === 'string') l.target = _nodeMap.get(l.target) || {{ id:l.target, x:0, y:0 }};
+}});
+
+// ── D3 layout ─────────────────────────────────────────────────
 const _svgEl  = document.getElementById('conn-svg');
 const _canvas = document.getElementById('conn-canvas');
 if (!_svgEl || !_canvas || typeof d3 === 'undefined') {{
@@ -3918,6 +3924,9 @@ _nodeList.forEach(n => {{
   _defs.append('clipPath').attr('id', 'cp_' + n.id.replace(/\W/g,'_'))
     .append('circle').attr('r', r);
 }});
+
+// ── Cluster halo layer (behind everything) ────────────────────
+const _haloG = _g.append('g').attr('class', 'cg-halos');
 
 // ── Link layer ────────────────────────────────────────────────
 const _linkG  = _g.append('g').attr('class', 'cg-links');
@@ -3944,9 +3953,9 @@ const _nodeG  = _g.append('g').attr('class', 'cg-nodes');
 const _nodeSel = _nodeG.selectAll('g').data(_nodeList).join('g')
   .attr('class', 'cg-node').attr('cursor', 'pointer')
   .call(d3.drag()
-    .on('start', (ev, d) => {{ if (!ev.active) _sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; }})
-    .on('drag',  (ev, d) => {{ d.fx = ev.x; d.fy = ev.y; }})
-    .on('end',   (ev, d) => {{ if (!ev.active) _sim.alphaTarget(0); d.fx = null; d.fy = null; }}));
+    .on('start', () => {{ }})
+    .on('drag',  (ev, d) => {{ d.x = ev.x; d.y = ev.y; _tick(); }})
+    .on('end',   () => {{ }}));
 
 // Glow ring
 _nodeSel.append('circle')
@@ -3995,39 +4004,51 @@ _svgEl.addEventListener('click', () => {{
 
 // ── Simulation ────────────────────────────────────────────────
 // Compute cluster target positions (radial ring around center)
-const _W = _canvas.clientWidth  || 900;
-const _H = _canvas.clientHeight || 700;
+// ── Pure geometric layout — virtual coordinate space ─────────
+// We lay out in a large virtual canvas (VW×VH) so clusters have
+// breathing room, then _fitToScreen() zooms the whole thing to fit.
 const _cluCenters = {{}};
 const _nonNasaClus = _CONN_CLUSTERS.filter(c => c.id !== 'nasa');
-_nonNasaClus.forEach((cl, i) => {{
-  const ang = (i / _nonNasaClus.length) * 2 * Math.PI - Math.PI / 2;
-  const r   = Math.min(_W, _H) * 0.33;
-  _cluCenters[cl.id] = {{ x: _W/2 + r * Math.cos(ang), y: _H/2 + r * Math.sin(ang) }};
-}});
-_cluCenters['nasa'] = {{ x: _W/2, y: _H/2 }};
+const _VW = 2400, _VH = 2000;   // virtual canvas — layout space
 
-// Seed positions near cluster centers
-_nodeList.forEach(n => {{
-  const c = _cluCenters[n.cluster] || {{ x: _W/2, y: _H/2 }};
-  n.x = c.x + (Math.random()-0.5)*60;
-  n.y = c.y + (Math.random()-0.5)*60;
-}});
+// Orbit radius for n members so adjacent nodes are ~65px apart
+function _orbitR(n) {{
+  if (n <= 1) return 0;
+  return Math.min(Math.max(80, (n * 65) / (2 * Math.PI)), 180);
+}}
 
-const _sim = d3.forceSimulation(_nodeList)
-  .force('link', d3.forceLink(_linkList).id(d => d.id)
-    .distance(d => d.type === 'cluster' ? 70 : 170)
-    .strength(d => d.type === 'cluster' ? 0.25 : 0.1))
-  .force('charge', d3.forceManyBody().strength(-280))
-  .force('collide', d3.forceCollide(d => d.isInst ? 48 : 36).strength(0.8))
-  .force('cluster', alpha => {{
-    _nodeList.forEach(n => {{
-      const c = _cluCenters[n.cluster];
-      if (!c) return;
-      n.vx += (c.x - n.x) * alpha * 0.06;
-      n.vy += (c.y - n.y) * alpha * 0.06;
+// Halo radius = orbit radius + 65px padding
+function _haloR(cl) {{
+  const n = _nodeList.filter(nd => nd.cluster === cl.id).length;
+  return _orbitR(n) + 65;
+}}
+
+// Compute exact x,y for every node — deterministic, no physics
+function _computeLayout() {{
+  const cx = _VW / 2, cy = _VH / 2;
+  const ringR = Math.min(_VW, _VH) * 0.40;   // ring large enough clusters never overlap
+
+  _cluCenters['nasa'] = {{ x: cx, y: cy }};
+  _nonNasaClus.forEach((cl, i) => {{
+    const ang = (i / _nonNasaClus.length) * 2 * Math.PI - Math.PI / 2;
+    _cluCenters[cl.id] = {{ x: cx + ringR * Math.cos(ang), y: cy + ringR * Math.sin(ang) }};
+  }});
+
+  _CONN_CLUSTERS.forEach(cl => {{
+    const members = _nodeList.filter(n => n.cluster === cl.id);
+    const c = _cluCenters[cl.id];
+    if (!members.length || !c) return;
+    if (members.length === 1) {{ members[0].x = c.x; members[0].y = c.y; return; }}
+    const r = _orbitR(members.length);
+    // Institutional nodes at 12-o'clock, rest clockwise
+    const sorted = [...members].sort((a, b) => (b.isInst ? 1 : 0) - (a.isInst ? 1 : 0));
+    sorted.forEach((n, i) => {{
+      const ang = (i / members.length) * 2 * Math.PI - Math.PI / 2;
+      n.x = c.x + r * Math.cos(ang);
+      n.y = c.y + r * Math.sin(ang);
     }});
-  }})
-  .on('tick', _tick);
+  }});
+}}
 
 function _tick() {{
   // Curved paths for all links
@@ -4094,9 +4115,11 @@ function _applyFilter(f) {{
     b.classList.toggle('active', b.dataset.filter === f));
   const fn = _filterFns[f] || (() => true);
   _linkSel.transition().duration(300)
-    .attr('opacity', d => (f === 'all' || fn(d)) ? 1 : 0.04);
+    .attr('opacity', d => (f === 'all' || fn(d) || d.type === 'cluster') ? 1 : 0.04);
   _nodeSel.transition().duration(300).attr('opacity', d => {{
     if (f === 'all') return 1;
+    // Highlight if node belongs to the matching cluster OR has a matching cross-link
+    if (d.cluster === f) return 1;
     const linked = _linkList.some(l => {{
       const sid = typeof l.source === 'string' ? l.source : l.source.id;
       const tid = typeof l.target === 'string' ? l.target : l.target.id;
@@ -4111,16 +4134,38 @@ document.querySelectorAll('.cf-btn').forEach(b =>
 
 // ── Open handler (called by conn-btn) ────────────────────────
 window._openConnDiagram = function() {{
-  // Resize sim to current canvas dimensions
   const cw = _canvas.clientWidth, ch = _canvas.clientHeight;
-  _cluCenters['nasa'] = {{ x:cw/2, y:ch/2 }};
-  _nonNasaClus.forEach((cl, i) => {{
-    const ang = (i / _nonNasaClus.length) * 2 * Math.PI - Math.PI / 2;
-    const r   = Math.min(cw, ch) * 0.33;
-    _cluCenters[cl.id] = {{ x: cw/2 + r * Math.cos(ang), y: ch/2 + r * Math.sin(ang) }};
+
+  // 1. Compute exact node positions in virtual coordinate space
+  _computeLayout();
+
+  // 2. Draw cluster halos — clear and redraw to avoid join issues
+  _haloG.selectAll('*').remove();
+  _CONN_CLUSTERS.forEach(cl => {{
+    const c = _cluCenters[cl.id];
+    if (!c) return;
+    const r = _haloR(cl);
+    _haloG.append('circle')
+      .attr('cx', c.x).attr('cy', c.y).attr('r', r)
+      .attr('fill', cl.color).attr('fill-opacity', 0.10)
+      .attr('stroke', cl.color).attr('stroke-opacity', 0.75)
+      .attr('stroke-width', 2.5)
+      .attr('stroke-dasharray', '10 6');
+    _haloG.append('text')
+      .attr('x', c.x).attr('y', c.y + r + 22)
+      .attr('text-anchor', 'middle')
+      .attr('fill', cl.color).attr('opacity', 0.95)
+      .attr('font-size', '13').attr('font-weight', 'bold')
+      .attr('font-family', "'Share Tech Mono',monospace")
+      .attr('letter-spacing', '3')
+      .text(cl.label);
   }});
-  _sim.alpha(0.6).restart();
-  setTimeout(() => _fitToScreen(600), 1600);
+
+  // 3. Render links and nodes at computed positions
+  _tick();
+
+  // 4. Zoom to fit the virtual layout onto the actual canvas
+  _fitToScreen(500);
 }};
 
 // ── Button controls ───────────────────────────────────────────
