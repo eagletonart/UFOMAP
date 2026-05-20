@@ -387,6 +387,7 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
 <link  rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet"/>
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -943,18 +944,23 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
 #conn-body {{ flex:1; overflow:hidden; position:relative; z-index:1; }}
 #conn-canvas {{
   width:100%; height:100%; overflow:hidden; position:relative;
-  cursor:grab; touch-action:none; user-select:none;
+  cursor:grab; user-select:none;
 }}
 #conn-canvas.panning {{ cursor:grabbing; }}
-#conn-inner {{
-  position:absolute; left:0; top:0;
-  transform-origin:0 0;
-  width:2400px; height:2400px;
+#conn-svg {{ width:100%; height:100%; display:block; }}
+/* D3 filter buttons */
+#conn-filters {{
+  position:absolute; top:8px; left:50%; transform:translateX(-50%);
+  display:flex; gap:6px; z-index:20; flex-wrap:wrap; justify-content:center;
 }}
-#conn-svg {{
-  position:absolute; top:0; left:0; width:2400px; height:2400px;
-  pointer-events:none; overflow:visible;
+.cf-btn {{
+  background:rgba(0,255,68,.07); border:1px solid #0a3; color:#5a9;
+  font-family:'Share Tech Mono',monospace; font-size:.62rem;
+  letter-spacing:.12em; padding:5px 12px; cursor:pointer; border-radius:2px;
+  transition:all .15s; white-space:nowrap;
 }}
+.cf-btn:hover {{ background:rgba(0,255,68,.18); color:#0f4; }}
+.cf-btn.active {{ background:rgba(0,255,68,.22); color:#0f4; border-color:#0f4; box-shadow:0 0 8px rgba(0,255,68,.3); }}
 #conn-zoom {{
   position:absolute; bottom:46px; right:14px; z-index:20;
   display:flex; gap:7px; align-items:center;
@@ -1326,22 +1332,19 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
   </div>
   <div id="conn-body">
     <div id="conn-canvas">
-      <div id="conn-inner">
-        <svg id="conn-svg"></svg>
-      </div>
-      <div id="conn-legend">
-        <div class="cl-item"><svg width="24" height="8"><path d="M0,4 Q12,1 24,4" fill="none" stroke="#ff2244" stroke-width="1.5" stroke-dasharray="4 3"/></svg> DECEASED</div>
-        <div class="cl-item"><svg width="24" height="8"><path d="M0,4 Q12,1 24,4" fill="none" stroke="#ffcc00" stroke-width="1.5" stroke-dasharray="8 4"/></svg> KEY LINK</div>
-        <div class="cl-item"><svg width="24" height="8"><path d="M0,4 Q12,1 24,4" fill="none" stroke="#ff8800" stroke-width="1.5" stroke-dasharray="6 4"/></svg> NASA</div>
-        <div class="cl-item"><svg width="24" height="8"><path d="M0,4 Q12,1 24,4" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="10 5"/></svg> CONTRACTOR</div>
-        <div class="cl-item" style="color:#485;font-size:.5rem;letter-spacing:.05em;">PINCH/SCROLL TO ZOOM · DRAG TO PAN · CLICK CLUSTER TO FOCUS</div>
+      <svg id="conn-svg"></svg>
+      <div id="conn-filters">
+        <button class="cf-btn active" data-filter="all">ALL</button>
+        <button class="cf-btn" data-filter="deceased">💀 DECEASED</button>
+        <button class="cf-btn" data-filter="disclosure">📢 DISCLOSURE</button>
+        <button class="cf-btn" data-filter="nasa">🚀 NASA</button>
+        <button class="cf-btn" data-filter="contractor">🏭 CONTRACTORS</button>
+        <button class="cf-btn" data-filter="china">🇨🇳 CHINA</button>
       </div>
       <div id="conn-zoom">
-        <button class="cz-btn" id="cz-back">◀ BACK</button>
-        <span class="cz-sep">|</span>
         <button class="cz-btn" id="cz-fit">⊡ FIT &nbsp;<span style="opacity:.4;font-size:.6rem">F</span></button>
-        <button class="cz-btn" id="cz-in">＋ <span style="opacity:.4;font-size:.6rem">+</span></button>
-        <button class="cz-btn" id="cz-out">－ <span style="opacity:.4;font-size:.6rem">-</span></button>
+        <button class="cz-btn" id="cz-in">＋</button>
+        <button class="cz-btn" id="cz-out">－</button>
       </div>
     </div>
     <div id="conn-detail">
@@ -3714,12 +3717,10 @@ document.getElementById('controls-toggle').addEventListener('click', () => {{
   bar.classList.toggle('open');
 }});
 
-// ── Connections diagram ────────────────────────────────────
+// ── Connections diagram — D3 force simulation ────────────────
 (function() {{
 
-const CANVAS_W = 2400, CANVAS_H = 2400;
-
-// ── Institution / power-broker nodes (not in main data arrays) ──
+// ── Institution / power-broker nodes ─────────────────────────
 const _INST_NODES = {{
   'NASA': {{
     name:'NASA', emoji:'🚀', status:'FEDERAL AGENCY',
@@ -3846,312 +3847,301 @@ function _statusMeta(sci) {{
   return {{ color:'#ffaa00' }};
 }}
 
-// ── Transform state ───────────────────────────────────────────
-let _tx = 0, _ty = 0, _scale = 1;
-let _connScale = 1;   // alias used by nodeCenter()
-let _focusedCluster = null;
+// ── Build node + link arrays for D3 ──────────────────────────
+const _nodeMap = new Map();
+const _nodeList = [];
+const _linkList = [];
 
-function _applyTransform(inner) {{
-  inner.style.transform = `translate(${{_tx}}px, ${{_ty}}px) scale(${{_scale}})`;
-  _connScale = _scale;
-}}
-
-// ── Fit entire diagram to canvas ──────────────────────────────
-function fitDiagram() {{
-  const canvas = document.getElementById('conn-canvas');
-  const inner  = document.getElementById('conn-inner');
-  if (!canvas || !inner) return;
-  const cw = canvas.clientWidth  - 10;
-  const ch = canvas.clientHeight - 50;
-  _scale = Math.min(cw / CANVAS_W, ch / CANVAS_H, 1);
-  _tx = Math.max(0, (canvas.clientWidth  - CANVAS_W * _scale) / 2);
-  _ty = Math.max(0, (canvas.clientHeight - CANVAS_H * _scale) / 2);
-  _applyTransform(inner);
-  _focusedCluster = null;
-  document.querySelectorAll('.cc-box').forEach(b => b.classList.remove('cc-dimmed'));
-  document.getElementById('cz-back').style.display = 'none';
-  buildConnDiagram();
-}}
-
-// Opens diagram at ~0.7 scale so faces are readable; falls back to fit if screen is too small
-function _openDiagram() {{
-  const canvas = document.getElementById('conn-canvas');
-  const inner  = document.getElementById('conn-inner');
-  if (!canvas || !inner) return;
-  const cw = canvas.clientWidth;
-  const ch = canvas.clientHeight - 50;
-  const fitScale = Math.min((cw - 10) / CANVAS_W, ch / CANVAS_H, 1);
-  _scale = Math.max(fitScale, 0.7); // 0.7 if it fits, otherwise use full-fit
-  _tx = Math.max(0, (cw - CANVAS_W * _scale) / 2);
-  _ty = Math.max(0, (ch - CANVAS_H * _scale) / 2);
-  _focusedCluster = null;
-  _applyTransform(inner);
-  document.querySelectorAll('.cc-box').forEach(b => b.classList.remove('cc-dimmed'));
-  document.getElementById('cz-back').style.display = 'none';
-  buildConnDiagram();
-}}
-
-// ── Zoom centred on point (cx,cy in canvas screen coords) ─────
-function _zoomAt(cx, cy, ratio) {{
-  const inner = document.getElementById('conn-inner');
-  if (!inner) return;
-  const newScale = Math.max(0.12, Math.min(4, _scale * ratio));
-  // Keep the logical point under the cursor fixed
-  const lx = (cx - _tx) / _scale;
-  const ly = (cy - _ty) / _scale;
-  _tx = cx - lx * newScale;
-  _ty = cy - ly * newScale;
-  _scale = newScale;
-  _applyTransform(inner);
-}}
-
-// ── Focus on a single cluster ─────────────────────────────────
-function _focusCluster(clusterId) {{
-  _focusedCluster = clusterId;
-  const cluster = _CONN_CLUSTERS.find(c => c.id === clusterId);
-  if (!cluster) return;
-
-  // Find names that connect TO this cluster via cross-links
-  const memberSet = new Set(cluster.members);
-  const relatedNames = new Set(cluster.members);
-  _CROSS_LINKS.forEach(lk => {{
-    if (cluster.members.includes(lk.from)) relatedNames.add(lk.to);
-    if (cluster.members.includes(lk.to))   relatedNames.add(lk.from);
+_CONN_CLUSTERS.forEach(cluster => {{
+  cluster.members.forEach(name => {{
+    if (_nodeMap.has(name)) return;
+    const sci = _findSubject(name);
+    const {{ color }} = _statusMeta(sci || {{}});
+    const isInst = !!_INST_NODES[name];
+    const isChinese = !isInst && !!CHINESE_SCIENTISTS.find(s => s.name === name);
+    const n = {{
+      id: name, sci, cluster: cluster.id, clusterColor: cluster.color,
+      statusColor: color, isInst, isChinese,
+      photo: sci ? sci.photo : null,
+      emoji: sci ? (sci.emoji || (isInst ? '🏛' : '☢️')) : '☢️',
+    }};
+    _nodeMap.set(name, n);
+    _nodeList.push(n);
   }});
+}});
 
-  // Find cluster ids that contain any related name
-  const relatedIds = new Set([clusterId]);
-  _CONN_CLUSTERS.forEach(c => {{
-    if (c.members.some(m => relatedNames.has(m))) relatedIds.add(c.id);
-  }});
-
-  // Dim / undim boxes
-  document.querySelectorAll('.cc-box').forEach(box => {{
-    box.classList.toggle('cc-dimmed', !relatedIds.has(box.dataset.cid));
-  }});
-  document.getElementById('cz-back').style.display = 'inline-block';
-
-  // Zoom to the focused cluster box
-  const inner = document.getElementById('conn-inner');
-  const canvas = document.getElementById('conn-canvas');
-  const box = inner.querySelector(`[data-cid="${{clusterId}}"]`);
-  if (!box) return;
-
-  // Give the browser a frame to render then measure
-  requestAnimationFrame(() => {{
-    const pad = 120;
-    const bw  = box.offsetWidth  || 200;
-    const bh  = box.offsetHeight || 200;
-    const cw  = canvas.clientWidth;
-    const ch  = canvas.clientHeight - 50;
-    const ns  = Math.min(cw / (bw + pad*2), ch / (bh + pad*2), 4);
-    _scale = ns;
-    _tx = (cw - bw * ns) / 2 - cluster.x * ns;
-    _ty = (ch - bh * ns) / 2 - cluster.y * ns;
-    _applyTransform(inner);
-    buildConnDiagram();
-  }});
-}}
-
-// ── Build the diagram ─────────────────────────────────────────
-let _nodeEls = {{}};
-
-function buildConnDiagram() {{
-  const inner = document.getElementById('conn-inner');
-  const svg   = document.getElementById('conn-svg');
-  if (!inner || !svg) return;
-  inner.querySelectorAll('.cc-box').forEach(e => e.remove());
-  svg.innerHTML = '';
-  _nodeEls = {{}};
-
-  _CONN_CLUSTERS.forEach(cluster => {{
-    const box = document.createElement('div');
-    box.className = 'cc-box';
-    box.dataset.cid = cluster.id;
-    box.style.cssText = `left:${{cluster.x}}px;top:${{cluster.y}}px;`;
-
-    // Re-apply dim state if in focus mode
-    if (_focusedCluster) {{
-      const relatedIds = _getRelatedIds(_focusedCluster);
-      if (!relatedIds.has(cluster.id)) box.classList.add('cc-dimmed');
-    }}
-
-    // Click on box background → focus cluster
-    box.addEventListener('click', e => {{
-      if (!e.target.closest('.cc-node')) _focusCluster(cluster.id);
-    }});
-
-    const lbl = document.createElement('div');
-    lbl.className = 'cc-label';
-    lbl.style.cssText = `color:${{cluster.color}};`;
-    lbl.textContent = cluster.label;
-    box.appendChild(lbl);
-
-    const nodesDiv = document.createElement('div');
-    nodesDiv.className = 'cc-nodes';
-
-    cluster.members.forEach(name => {{
-      const sci = _findSubject(name);
-      if (!sci) return;
-      const {{ color }} = _statusMeta(sci);
-      const isInst = !!_INST_NODES[name];
-      const isChinese = !isInst && !!CHINESE_SCIENTISTS.find(s => s.name === name);
-      const fallbackEmoji = sci.emoji || (isInst ? '🏛' : '☢️');
-
-      const node = document.createElement('div');
-      node.className = 'cc-node' + (isInst ? ' cc-node-inst' : '');
-      node.dataset.name = name;
-
-      const ring = document.createElement('div');
-      ring.className = 'cc-node-ring';
-      ring.style.borderColor = color;
-      ring.style.boxShadow = `0 0 ${{isInst ? 16 : 8}}px ${{color}}${{isInst ? 'aa' : '55'}}`;
-
-      if (sci.photo) {{
-        const img = document.createElement('img');
-        img.src = sci.photo; img.alt = name;
-        img.onerror = () => {{ ring.textContent = fallbackEmoji; }};
-        ring.appendChild(img);
-      }} else {{
-        ring.textContent = fallbackEmoji;
-      }}
-
-      const nameLbl = document.createElement('div');
-      nameLbl.className = 'cc-node-name';
-      // color set via CSS (#c8ffc8) — do not override with status color here
-      // Show first + last name only to keep labels short
-      const parts = name.replace(/['"]/g,'').trim().split(' ');
-      nameLbl.textContent = parts.length > 2
-        ? parts[0] + ' ' + parts[parts.length-1]
-        : name;
-
-      node.appendChild(ring);
-      node.appendChild(nameLbl);
-      node.addEventListener('click', e => {{
-        e.stopPropagation();
-        showConnDetail(sci, color, node);
-      }});
-      nodesDiv.appendChild(node);
-      _nodeEls[name] = node;
-    }});
-
-    box.appendChild(nodesDiv);
-    inner.appendChild(box);
-  }});
-
-  // Draw SVG curves after layout
-  requestAnimationFrame(() => {{
-    function nodeCenter(name) {{
-      const el = _nodeEls[name];
-      if (!el) return null;
-      const er = el.getBoundingClientRect();
-      const ir = inner.getBoundingClientRect();
-      return {{
-        x: (er.left - ir.left + er.width  / 2) / _connScale,
-        y: (er.top  - ir.top  + er.height / 2) / _connScale,
-      }};
-    }}
-
-    function drawCurve(a, b, color, dash, opacity, label, curveFactor, strokeWidth) {{
-      const g = document.createElementNS('http://www.w3.org/2000/svg','g');
-      const dx = b.x-a.x, dy = b.y-a.y;
-      const len = Math.sqrt(dx*dx+dy*dy) || 1;
-      const cf = curveFactor !== undefined ? curveFactor : Math.min(220, len*0.45);
-      // Perpendicular control point offset
-      const cpx = (a.x+b.x)/2 + (-dy/len)*cf;
-      const cpy = (a.y+b.y)/2 + ( dx/len)*cf;
-      const d = `M${{a.x}},${{a.y}} Q${{cpx}},${{cpy}} ${{b.x}},${{b.y}}`;
-
-      const path = document.createElementNS('http://www.w3.org/2000/svg','path');
-      path.setAttribute('d', d);
-      path.setAttribute('fill','none');
-      path.setAttribute('stroke', color);
-      path.setAttribute('stroke-width', strokeWidth || '3');
-      path.setAttribute('stroke-dasharray', dash||'6 4');
-      path.setAttribute('stroke-opacity', opacity||'0.6');
-      g.appendChild(path);
-
-      if (label) {{
-        const mx = (a.x+2*cpx+b.x)/4, my = (a.y+2*cpy+b.y)/4;
-        const tw = label.length * 5.8 + 16;
-        const rect = document.createElementNS('http://www.w3.org/2000/svg','rect');
-        rect.setAttribute('x', mx-tw/2); rect.setAttribute('y', my-13);
-        rect.setAttribute('width', tw);  rect.setAttribute('height', 15);
-        rect.setAttribute('rx','3');     rect.setAttribute('fill','rgba(0,0,0,0.8)');
-        rect.setAttribute('fill-opacity','1');
-        g.appendChild(rect);
-        const txt = document.createElementNS('http://www.w3.org/2000/svg','text');
-        txt.setAttribute('x', mx); txt.setAttribute('y', my-2);
-        txt.setAttribute('text-anchor','middle');
-        txt.setAttribute('fill', '#ffcc00'); txt.setAttribute('opacity','1');
-        txt.setAttribute('font-size','11');
-        txt.setAttribute('font-family',"'Share Tech Mono',monospace");
-        txt.setAttribute('letter-spacing','0.6');
-        txt.textContent = label;
-        g.appendChild(txt);
-      }}
-      svg.appendChild(g);
-    }}
-
-    // ── NASA hub spokes (drawn first so they appear behind nodes) ──
-    const _nasaC = nodeCenter('NASA');
-    if (_nasaC) {{
-      _CONN_CLUSTERS.forEach(cl => {{
-        if (cl.id === 'nasa') return;
-        // Use first available member as cluster representative
-        const rep = cl.members.map(m => nodeCenter(m)).find(Boolean);
-        if (!rep) return;
-        const isChina = cl.id === 'china';
-        drawCurve(_nasaC, rep,
-          isChina ? '#ff2244' : '#ff8800',
-          isChina ? '12 6'   : '6 8',
-          isChina ? 1.0      : 1.0,
-          null, 0, isChina ? 3 : 3);
+// Intra-cluster links
+_CONN_CLUSTERS.forEach(cluster => {{
+  const m = cluster.members;
+  for (let i = 0; i < m.length; i++) {{
+    for (let j = i + 1; j < m.length; j++) {{
+      _linkList.push({{
+        source: m[i], target: m[j],
+        color: cluster.color, dash: '4 3',
+        label: null, type: 'cluster', w: 1.5, opacity: 0.45,
       }});
     }}
+  }}
+}});
 
-    // Intra-cluster lines (light, thin)
-    _CONN_CLUSTERS.forEach(cluster => {{
-      const m = cluster.members.filter(n => _nodeEls[n]);
-      if (m.length < 2) return;
-      const lc = cluster.id==='ma' ? '#ff2244'
-               : cluster.id==='al' ? '#ff6600'
-               : cluster.color;
-      for (let i=0; i<m.length-1; i++) {{
-        for (let j=i+1; j<m.length; j++) {{
-          const a=nodeCenter(m[i]), b=nodeCenter(m[j]);
-          if (a&&b) drawCurve(a, b, lc, '4 6', 1.0, null, 20, 3);
-        }}
-      }}
-    }});
+// Cross-cluster links
+_CROSS_LINKS.forEach(l => {{
+  const type = l.color === '#ff2244' ? 'china'
+             : l.color === '#ffd700' || l.color === '#ffcc00' ? 'contractor'
+             : l.color === '#ff8800' ? 'nasa'
+             : l.color === '#cc88ff' ? 'disclosure' : 'other';
+  _linkList.push({{
+    source: l.from, target: l.to, color: l.color,
+    dash: l.dash, label: l.label, type, w: 2.5, opacity: 0.75,
+  }});
+}});
 
-    // Cross-cluster named links (prominent, outward-arcing)
-    _CROSS_LINKS.forEach(link => {{
-      const a=nodeCenter(link.from), b=nodeCenter(link.to);
-      if (a&&b) drawCurve(a, b, link.color, link.dash, 1.0, link.label, undefined, 3);
+// ── D3 force simulation ───────────────────────────────────────
+const _svgEl  = document.getElementById('conn-svg');
+const _canvas = document.getElementById('conn-canvas');
+if (!_svgEl || !_canvas || typeof d3 === 'undefined') {{
+  console.warn('D3 or conn-svg not found');
+}} else {{
+
+const _svg  = d3.select(_svgEl);
+const _g    = _svg.append('g').attr('class', 'cg');
+
+// Zoom / pan
+const _zoom = d3.zoom().scaleExtent([0.05, 5])
+  .on('zoom', e => _g.attr('transform', e.transform));
+_svg.call(_zoom).on('dblclick.zoom', null);
+
+// Defs: circular clip paths for photos
+const _defs = _svg.append('defs');
+_nodeList.forEach(n => {{
+  const r = n.isInst ? 26 : 20;
+  _defs.append('clipPath').attr('id', 'cp_' + n.id.replace(/\W/g,'_'))
+    .append('circle').attr('r', r);
+}});
+
+// ── Link layer ────────────────────────────────────────────────
+const _linkG  = _g.append('g').attr('class', 'cg-links');
+const _linkSel = _linkG.selectAll('g').data(_linkList).join('g').attr('class', 'cg-link');
+
+_linkSel.append('path')
+  .attr('fill', 'none')
+  .attr('stroke', d => d.color)
+  .attr('stroke-width', d => d.w)
+  .attr('stroke-dasharray', d => d.dash || '6 4')
+  .attr('stroke-opacity', d => d.opacity);
+
+// Link labels
+const _lblSel = _linkSel.filter(d => !!d.label).append('g').attr('class', 'cg-lbl');
+_lblSel.append('rect').attr('rx', 3).attr('fill', 'rgba(0,0,0,0.88)').attr('height', 13).attr('y', -11);
+_lblSel.append('text')
+  .attr('text-anchor', 'middle').attr('dominant-baseline', 'central').attr('y', -5)
+  .attr('fill', '#ffcc00').attr('font-size', '9')
+  .attr('font-family', "'Share Tech Mono',monospace").attr('letter-spacing', '0.4')
+  .text(d => d.label);
+
+// ── Node layer ────────────────────────────────────────────────
+const _nodeG  = _g.append('g').attr('class', 'cg-nodes');
+const _nodeSel = _nodeG.selectAll('g').data(_nodeList).join('g')
+  .attr('class', 'cg-node').attr('cursor', 'pointer')
+  .call(d3.drag()
+    .on('start', (ev, d) => {{ if (!ev.active) _sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; }})
+    .on('drag',  (ev, d) => {{ d.fx = ev.x; d.fy = ev.y; }})
+    .on('end',   (ev, d) => {{ if (!ev.active) _sim.alphaTarget(0); d.fx = null; d.fy = null; }}));
+
+// Glow ring
+_nodeSel.append('circle')
+  .attr('r', d => d.isInst ? 28 : 22)
+  .attr('fill', 'rgba(2,12,18,0.9)')
+  .attr('stroke', d => d.statusColor)
+  .attr('stroke-width', 2)
+  .style('filter', d => `drop-shadow(0 0 ${{d.isInst ? 10 : 5}}px ${{d.statusColor}}88)`);
+
+// Photo or emoji
+_nodeSel.each(function(d) {{
+  const sel = d3.select(this);
+  const r = d.isInst ? 26 : 20;
+  if (d.photo) {{
+    sel.append('image').attr('href', d.photo)
+      .attr('x', -r).attr('y', -r).attr('width', r*2).attr('height', r*2)
+      .attr('clip-path', 'url(#cp_' + d.id.replace(/\W/g,'_') + ')')
+      .attr('preserveAspectRatio', 'xMidYMin slice');
+  }} else {{
+    sel.append('text').attr('text-anchor', 'middle').attr('dominant-baseline', 'central')
+      .attr('font-size', d.isInst ? '22' : '16').text(d.emoji);
+  }}
+}});
+
+// Name label
+_nodeSel.append('text').attr('class', 'cg-name')
+  .attr('text-anchor', 'middle').attr('y', d => (d.isInst ? 28 : 22) + 13)
+  .attr('fill', '#c8ffc8').attr('font-size', '9')
+  .attr('font-family', "'Share Tech Mono',monospace")
+  .text(d => {{
+    const p = d.id.replace(/['"]/g,'').split(' ');
+    return p.length > 2 ? p[0] + ' ' + p[p.length-1] : d.id;
+  }});
+
+// Click → detail panel
+_nodeSel.on('click', (ev, d) => {{
+  ev.stopPropagation();
+  if (d.sci) showConnDetail(d.sci, d.statusColor, ev.currentTarget);
+}});
+
+// Close detail on canvas click
+_svgEl.addEventListener('click', () => {{
+  const panel = document.getElementById('conn-detail');
+  if (panel) panel.classList.remove('open');
+}});
+
+// ── Simulation ────────────────────────────────────────────────
+// Compute cluster target positions (radial ring around center)
+const _W = _canvas.clientWidth  || 900;
+const _H = _canvas.clientHeight || 700;
+const _cluCenters = {{}};
+const _nonNasaClus = _CONN_CLUSTERS.filter(c => c.id !== 'nasa');
+_nonNasaClus.forEach((cl, i) => {{
+  const ang = (i / _nonNasaClus.length) * 2 * Math.PI - Math.PI / 2;
+  const r   = Math.min(_W, _H) * 0.33;
+  _cluCenters[cl.id] = {{ x: _W/2 + r * Math.cos(ang), y: _H/2 + r * Math.sin(ang) }};
+}});
+_cluCenters['nasa'] = {{ x: _W/2, y: _H/2 }};
+
+// Seed positions near cluster centers
+_nodeList.forEach(n => {{
+  const c = _cluCenters[n.cluster] || {{ x: _W/2, y: _H/2 }};
+  n.x = c.x + (Math.random()-0.5)*60;
+  n.y = c.y + (Math.random()-0.5)*60;
+}});
+
+const _sim = d3.forceSimulation(_nodeList)
+  .force('link', d3.forceLink(_linkList).id(d => d.id)
+    .distance(d => d.type === 'cluster' ? 70 : 170)
+    .strength(d => d.type === 'cluster' ? 0.25 : 0.1))
+  .force('charge', d3.forceManyBody().strength(-280))
+  .force('collide', d3.forceCollide(d => d.isInst ? 48 : 36).strength(0.8))
+  .force('cluster', alpha => {{
+    _nodeList.forEach(n => {{
+      const c = _cluCenters[n.cluster];
+      if (!c) return;
+      n.vx += (c.x - n.x) * alpha * 0.06;
+      n.vy += (c.y - n.y) * alpha * 0.06;
     }});
+  }})
+  .on('tick', _tick);
+
+function _tick() {{
+  // Curved paths for all links
+  _linkSel.select('path').attr('d', d => {{
+    const sx=d.source.x, sy=d.source.y, tx=d.target.x, ty=d.target.y;
+    const dx=tx-sx, dy=ty-sy, len=Math.sqrt(dx*dx+dy*dy)||1;
+    const cf=Math.min(60, len*0.3);
+    const cpx=(sx+tx)/2+(-dy/len)*cf, cpy=(sy+ty)/2+(dx/len)*cf;
+    return `M${{sx}},${{sy}} Q${{cpx}},${{cpy}} ${{tx}},${{ty}}`;
+  }});
+
+  // Position link labels at midpoint
+  _linkSel.filter(d=>!!d.label).select('g.cg-lbl').attr('transform', d => {{
+    const mx=(d.source.x+d.target.x)/2, my=(d.source.y+d.target.y)/2;
+    return `translate(${{mx}},${{my}})`;
+  }});
+
+  // Fit label rect to text
+  _linkSel.filter(d=>!!d.label).each(function(d) {{
+    const txt = d3.select(this).select('text').node();
+    if (txt) {{
+      const tw = txt.getComputedTextLength() + 10;
+      d3.select(this).select('rect').attr('x', -tw/2).attr('width', tw);
+    }}
+  }});
+
+  _nodeSel.attr('transform', d => `translate(${{d.x}},${{d.y}})`);
+}}
+
+// ── Fit to screen ─────────────────────────────────────────────
+function _fitToScreen(dur) {{
+  const box = _g.node().getBBox();
+  if (!box || !box.width) return;
+  const cw = _canvas.clientWidth, ch = _canvas.clientHeight;
+  const sc = 0.88 * Math.min(cw / box.width, ch / box.height);
+  const tx = (cw - box.width * sc) / 2 - box.x * sc;
+  const ty = (ch - box.height * sc) / 2 - box.y * sc;
+  _svg.transition().duration(dur || 0).call(
+    _zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(sc));
+}}
+
+// ── Filter system ─────────────────────────────────────────────
+let _activeFilter = 'all';
+
+function _isDeceased(d) {{
+  const getNode = id => _nodeList.find(n => n.id === (typeof id === 'string' ? id : id.id));
+  const s = getNode(d.source), t = getNode(d.target);
+  return (s && /(dead|murder|missing)/i.test(s.sci?.status||'')) ||
+         (t && /(dead|murder|missing)/i.test(t.sci?.status||''));
+}}
+
+const _filterFns = {{
+  all:         () => true,
+  deceased:    d => _isDeceased(d),
+  disclosure:  d => d.type === 'disclosure',
+  nasa:        d => d.type === 'nasa',
+  contractor:  d => d.type === 'contractor',
+  china:       d => d.type === 'china',
+}};
+
+function _applyFilter(f) {{
+  _activeFilter = f;
+  document.querySelectorAll('.cf-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.filter === f));
+  const fn = _filterFns[f] || (() => true);
+  _linkSel.transition().duration(300)
+    .attr('opacity', d => (f === 'all' || fn(d)) ? 1 : 0.04);
+  _nodeSel.transition().duration(300).attr('opacity', d => {{
+    if (f === 'all') return 1;
+    const linked = _linkList.some(l => {{
+      const sid = typeof l.source === 'string' ? l.source : l.source.id;
+      const tid = typeof l.target === 'string' ? l.target : l.target.id;
+      return (sid===d.id || tid===d.id) && fn(l);
+    }});
+    return linked ? 1 : 0.12;
   }});
 }}
 
-function _getRelatedIds(clusterId) {{
-  const cluster = _CONN_CLUSTERS.find(c => c.id === clusterId);
-  if (!cluster) return new Set();
-  const relatedNames = new Set(cluster.members);
-  _CROSS_LINKS.forEach(lk => {{
-    if (cluster.members.includes(lk.from)) relatedNames.add(lk.to);
-    if (cluster.members.includes(lk.to))   relatedNames.add(lk.from);
+document.querySelectorAll('.cf-btn').forEach(b =>
+  b.addEventListener('click', () => _applyFilter(b.dataset.filter)));
+
+// ── Open handler (called by conn-btn) ────────────────────────
+window._openConnDiagram = function() {{
+  // Resize sim to current canvas dimensions
+  const cw = _canvas.clientWidth, ch = _canvas.clientHeight;
+  _cluCenters['nasa'] = {{ x:cw/2, y:ch/2 }};
+  _nonNasaClus.forEach((cl, i) => {{
+    const ang = (i / _nonNasaClus.length) * 2 * Math.PI - Math.PI / 2;
+    const r   = Math.min(cw, ch) * 0.33;
+    _cluCenters[cl.id] = {{ x: cw/2 + r * Math.cos(ang), y: ch/2 + r * Math.sin(ang) }};
   }});
-  const ids = new Set([clusterId]);
-  _CONN_CLUSTERS.forEach(c => {{
-    if (c.members.some(m => relatedNames.has(m))) ids.add(c.id);
-  }});
-  return ids;
-}}
+  _sim.alpha(0.6).restart();
+  setTimeout(() => _fitToScreen(600), 1600);
+}};
+
+// ── Button controls ───────────────────────────────────────────
+document.getElementById('cz-fit').addEventListener('click', () => _fitToScreen(400));
+document.getElementById('cz-in').addEventListener('click', () => {{
+  _svg.transition().duration(250).call(_zoom.scaleBy, 1.4);
+}});
+document.getElementById('cz-out').addEventListener('click', () => {{
+  _svg.transition().duration(250).call(_zoom.scaleBy, 0.71);
+}});
+
+}} // end D3 branch
 
 // ── Detail slide-out dossier panel ───────────────────────────
 function showConnDetail(sci, color, nodeEl) {{
-  document.querySelectorAll('.cc-node').forEach(n => n.classList.remove('cn-active'));
-  if (nodeEl) nodeEl.classList.add('cn-active');
+  if (nodeEl) {{
+    document.querySelectorAll('.cg-node circle').forEach(c => {{
+      c.setAttribute('stroke-width', '2');
+    }});
+    d3.select(nodeEl).select('circle').attr('stroke-width', '4');
+  }}
   const panel = document.getElementById('conn-detail');
   const fallbackEmoji = sci.emoji || '☢️';
 
@@ -4220,125 +4210,19 @@ function showConnDetail(sci, color, nodeEl) {{
   }});
 }}
 
-// ── Pan & pinch-to-zoom (pointer events) ─────────────────────
-(function() {{
-  const canvas = document.getElementById('conn-canvas');
-  const ptrs   = new Map();
-  let _panRef  = null, _pinchRef = null;
-  let _redrawTimer = null;
-
-  function scheduleRedraw() {{
-    clearTimeout(_redrawTimer);
-    _redrawTimer = setTimeout(buildConnDiagram, 120);
-  }}
-
-  canvas.addEventListener('pointerdown', e => {{
-    // Don't capture pointer for buttons or scientist nodes (let click propagate naturally)
-    if (e.target.closest('button, .cz-btn, .cc-node')) return;
-    ptrs.set(e.pointerId, {{x:e.clientX, y:e.clientY}});
-    canvas.setPointerCapture(e.pointerId);
-    if (ptrs.size === 1) {{
-      _panRef = {{x:e.clientX - _tx, y:e.clientY - _ty}};
-      canvas.classList.add('panning');
-    }}
-    if (ptrs.size === 2) {{
-      const [p1,p2] = [...ptrs.values()];
-      _pinchRef = Math.hypot(p2.x-p1.x, p2.y-p1.y);
-      _panRef = null;
-    }}
-  }});
-
-  canvas.addEventListener('pointermove', e => {{
-    if (!ptrs.has(e.pointerId)) return;
-    ptrs.set(e.pointerId, {{x:e.clientX, y:e.clientY}});
-    const inner = document.getElementById('conn-inner');
-    if (!inner) return;
-
-    if (ptrs.size === 2) {{
-      const [p1,p2] = [...ptrs.values()];
-      const dist = Math.hypot(p2.x-p1.x, p2.y-p1.y);
-      if (_pinchRef) {{
-        const cx = (p1.x+p2.x)/2 - canvas.getBoundingClientRect().left;
-        const cy = (p1.y+p2.y)/2 - canvas.getBoundingClientRect().top;
-        _zoomAt(cx, cy, 1 + (dist - _pinchRef) * 0.003);
-      }}
-      _pinchRef = dist;
-      scheduleRedraw();
-    }} else if (ptrs.size === 1 && _panRef) {{
-      _tx = e.clientX - _panRef.x;
-      _ty = e.clientY - _panRef.y;
-      _applyTransform(inner);
-    }}
-  }});
-
-  function endPointer(e) {{
-    if (!ptrs.has(e.pointerId)) return; // pointer was never tracked (e.g. node click) — don't rebuild
-    ptrs.delete(e.pointerId);
-    canvas.classList.remove('panning');
-    if (ptrs.size < 2) _pinchRef = null;
-    if (ptrs.size === 0) {{ _panRef = null; buildConnDiagram(); }}
-  }}
-  canvas.addEventListener('pointerup',     endPointer);
-  canvas.addEventListener('pointercancel', endPointer);
-
-  // Mouse wheel zoom
-  canvas.addEventListener('wheel', e => {{
-    e.preventDefault();
-    const cr  = canvas.getBoundingClientRect();
-    const ratio = 1 + (-e.deltaY * 0.003);
-    _zoomAt(e.clientX - cr.left, e.clientY - cr.top, ratio);
-    scheduleRedraw();
-  }}, {{passive:false}});
-}})();
-
-// ── Button & keyboard controls ────────────────────────────────
+// ── Open / close / keyboard ───────────────────────────────────
 document.getElementById('conn-btn').addEventListener('click', () => {{
   document.getElementById('conn-overlay').classList.add('active');
-  _openDiagram();
+  setTimeout(() => {{ if (window._openConnDiagram) _openConnDiagram(); }}, 40);
 }});
 document.getElementById('conn-close').addEventListener('click', () => {{
   document.getElementById('conn-overlay').classList.remove('active');
 }});
-document.getElementById('cz-fit').addEventListener('click', fitDiagram);
-document.getElementById('cz-back').addEventListener('click', () => {{
-  _focusedCluster = null;
-  fitDiagram();
-}});
-document.getElementById('cz-in').addEventListener('click', () => {{
-  const inner = document.getElementById('conn-inner');
-  const canvas = document.getElementById('conn-canvas');
-  const cr = canvas.getBoundingClientRect();
-  _zoomAt(cr.width/2, cr.height/2, 1.25);
-  buildConnDiagram();
-}});
-document.getElementById('cz-out').addEventListener('click', () => {{
-  const inner = document.getElementById('conn-inner');
-  const canvas = document.getElementById('conn-canvas');
-  const cr = canvas.getBoundingClientRect();
-  _zoomAt(cr.width/2, cr.height/2, 0.8);
-  buildConnDiagram();
-}});
-window.addEventListener('resize', () => {{
-  if (document.getElementById('conn-overlay').classList.contains('active') && !_focusedCluster) {{
-    fitDiagram();
-  }}
-}});
 document.addEventListener('keydown', e => {{
   const ov = document.getElementById('conn-overlay');
-  if (!ov.classList.contains('active')) return;
-  if (e.key === 'Escape') {{ ov.classList.remove('active'); return; }}
-  if (e.key === 'f' || e.key === 'F') {{ fitDiagram(); return; }}
-  if (e.key === '+' || e.key === '=') {{
-    const canvas = document.getElementById('conn-canvas');
-    const cr = canvas.getBoundingClientRect();
-    _zoomAt(cr.width/2, cr.height/2, 1.2); buildConnDiagram(); return;
-  }}
-  if (e.key === '-' || e.key === '_') {{
-    const canvas = document.getElementById('conn-canvas');
-    const cr = canvas.getBoundingClientRect();
-    _zoomAt(cr.width/2, cr.height/2, 0.83); buildConnDiagram(); return;
-  }}
-  if (e.key === 'Backspace' && _focusedCluster) {{ _focusedCluster=null; fitDiagram(); }}
+  if (!ov || !ov.classList.contains('active')) return;
+  if (e.key === 'Escape') ov.classList.remove('active');
+  if ((e.key === 'f' || e.key === 'F') && window._openConnDiagram) _openConnDiagram();
 }});
 
 }})(); // end connections IIFE
