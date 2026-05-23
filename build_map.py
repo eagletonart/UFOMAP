@@ -118,7 +118,8 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
               babel_sources=None,
               babel_detections=None,
               babel_intelligence=None,
-              signal_detections=None):
+              signal_detections=None,
+              pursue_videos=None):
     if missing_411 is None:
         missing_411 = []
     if reddit_missing is None:
@@ -216,6 +217,7 @@ def build_map(sightings, abduction_sightings, military_bases, cog_sites, uso_sit
     pursue_decl_json     = json.dumps(pursue_declassified)
     pursue_r01_json      = json.dumps(pursue_release_01 or [])
     pursue_intel_json    = json.dumps(pursue_intel or {})
+    pursue_videos_json   = json.dumps(pursue_videos or {})
     derp_json            = json.dumps(derp_sites or [])
 
     # Babel — merge detections into source objects for map display
@@ -743,6 +745,121 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
   text-shadow:0 0 8px #0f4;
 }}
 
+/* ── VIDEO INTELLIGENCE panel ────────────────────────────── */
+#video-btn {{
+  background:rgba(255,45,120,.07); border:1px solid #c0145a; color:#ff6fa0;
+  font-family:'Share Tech Mono',monospace; font-size:.72rem;
+  letter-spacing:.1em; padding:5px 12px; cursor:pointer;
+  text-transform:uppercase; white-space:nowrap; border-radius:2px;
+  transition:background .2s,color .2s;
+}}
+#video-btn:hover {{ background:rgba(255,45,120,.18); color:#ffb0cc; }}
+#video-btn.active {{ background:rgba(255,45,120,.22); color:#ffcce0; border-color:#ff2d78; }}
+
+#video-panel {{
+  position:fixed; top:0; right:0; width:min(560px,96vw); height:100vh;
+  background:#080a10; border-left:1px solid #ff2d78;
+  z-index:4000; display:none; flex-direction:column; overflow:hidden;
+  font-family:'Share Tech Mono',monospace;
+}}
+#video-panel.open {{ display:flex; }}
+
+#vp-header {{
+  padding:14px 18px 10px; border-bottom:1px solid #2a0c1a;
+  flex-shrink:0; background:#0d0614;
+}}
+#vp-header h2 {{
+  margin:0 0 4px; color:#ff2d78; font-size:.82rem; letter-spacing:.2em; text-transform:uppercase;
+}}
+#vp-stats {{
+  font-size:.68rem; color:#888; letter-spacing:.05em;
+}}
+#vp-close {{
+  position:absolute; top:12px; right:14px;
+  background:none; border:none; color:#ff2d78; font-size:1.2rem; cursor:pointer;
+  line-height:1; padding:2px 6px;
+}}
+#vp-close:hover {{ color:#fff; }}
+
+#vp-toolbar {{
+  padding:8px 14px; border-bottom:1px solid #1a0810; flex-shrink:0;
+  display:flex; gap:8px; align-items:center; flex-wrap:wrap;
+}}
+.vp-filter {{
+  background:rgba(255,45,120,.06); border:1px solid #4a1228; color:#aa5577;
+  font-family:'Share Tech Mono',monospace; font-size:.62rem; letter-spacing:.08em;
+  padding:3px 9px; cursor:pointer; border-radius:2px; text-transform:uppercase;
+  transition:all .15s;
+}}
+.vp-filter:hover, .vp-filter.active {{
+  background:rgba(255,45,120,.2); border-color:#ff2d78; color:#ffb0cc;
+}}
+
+#vp-grid {{
+  flex:1; overflow-y:auto; padding:10px 12px;
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:10px;
+}}
+#vp-grid::-webkit-scrollbar {{ width:4px; }}
+#vp-grid::-webkit-scrollbar-thumb {{ background:#ff2d78; }}
+
+.vp-card {{
+  background:#0f0818; border:1px solid #2a0c1a; border-radius:3px;
+  padding:10px 12px; cursor:pointer; transition:border-color .2s,background .2s;
+  display:flex; flex-direction:column; gap:5px;
+}}
+.vp-card:hover {{ border-color:#ff2d78; background:#1a0820; }}
+.vp-card-id {{
+  font-size:.58rem; color:#ff2d78; letter-spacing:.12em; opacity:.9;
+}}
+.vp-card-region {{
+  font-size:.72rem; color:#e0c0cc; font-weight:bold;
+}}
+.vp-card-size {{
+  font-size:.6rem; color:#665566; letter-spacing:.05em;
+}}
+.vp-card-play {{
+  margin-top:4px; background:rgba(255,45,120,.12); border:1px solid #ff2d78;
+  color:#ff2d78; font-family:'Share Tech Mono',monospace; font-size:.62rem;
+  letter-spacing:.1em; padding:4px 0; cursor:pointer; border-radius:2px;
+  text-transform:uppercase; transition:all .15s; text-align:center;
+}}
+.vp-card-play:hover {{ background:rgba(255,45,120,.3); color:#fff; }}
+
+/* Video lightbox */
+#vp-modal {{
+  position:fixed; inset:0; background:rgba(0,0,0,.92); z-index:5000;
+  display:none; align-items:center; justify-content:center; flex-direction:column;
+  gap:14px; padding:20px;
+}}
+#vp-modal.open {{ display:flex; }}
+#vp-modal-inner {{
+  width:min(900px,95vw); background:#080a10; border:1px solid #ff2d78;
+  border-radius:4px; overflow:hidden;
+}}
+#vp-modal-header {{
+  padding:10px 16px; background:#0d0614; border-bottom:1px solid #2a0c1a;
+  display:flex; justify-content:space-between; align-items:center;
+}}
+#vp-modal-title {{ color:#ff2d78; font-size:.74rem; letter-spacing:.15em; text-transform:uppercase; }}
+#vp-modal-close {{
+  background:none; border:none; color:#ff2d78; font-size:1.1rem; cursor:pointer; padding:2px 6px;
+}}
+#vp-modal-close:hover {{ color:#fff; }}
+#vp-video-el {{
+  width:100%; max-height:65vh; background:#000; display:block;
+}}
+#vp-modal-meta {{
+  padding:10px 16px; font-size:.65rem; color:#888; line-height:1.6;
+}}
+#vp-modal-download {{
+  display:inline-block; margin-top:6px; padding:5px 14px;
+  border:1px solid #ff2d78; color:#ff2d78; text-decoration:none;
+  font-size:.62rem; letter-spacing:.1em; cursor:pointer; border-radius:2px;
+  background:rgba(255,45,120,.06); text-transform:uppercase;
+  transition:all .15s;
+}}
+#vp-modal-download:hover {{ background:rgba(255,45,120,.2); color:#fff; }}
+
 /* ── CONNECTIONS overlay ─────────────────────────────────── */
 #conn-btn {{
   background:rgba(0,255,68,.06); border:1px solid #093; color:#5a9;
@@ -1139,6 +1256,7 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
       <button id="controls-toggle" aria-label="Toggle filters">☰&nbsp;FILTERS</button>
       <button id="mode-toggle">🗺️&nbsp;2D MAP</button>
       <button id="signal-btn">⚡&nbsp;SIGNAL <span id="signal-count" style="font-size:.65rem;opacity:.7;"></span></button>
+      <button id="video-btn">🎬&nbsp;VIDEOS <span id="video-count" style="font-size:.6rem;opacity:.7;"></span></button>
       <button id="conn-btn">🕸&nbsp;CONNECTIONS</button>
       <button id="layers-btn" class="active">&#9776; LAYERS</button>
     </div>
@@ -1321,6 +1439,41 @@ select:focus, input[type=text]:focus {{ border-color:#0f4; }}
 </div>
 
 <!-- ── Connections overlay ───────────────────────────────── -->
+<!-- ── UAP VIDEO INTELLIGENCE PANEL ───────────────────────── -->
+<div id="video-panel">
+  <div id="vp-header">
+    <h2>🎬 UAP VIDEO INTELLIGENCE — RELEASE 02</h2>
+    <div id="vp-stats">Loading video catalog…</div>
+    <button id="vp-close">✕</button>
+  </div>
+  <div id="vp-toolbar">
+    <button class="vp-filter active" data-region="all">ALL</button>
+    <button class="vp-filter" data-region="gulf">🌊 GULF</button>
+    <button class="vp-filter" data-region="middle east">🌍 MID EAST</button>
+    <button class="vp-filter" data-region="syria">📍 SYRIA</button>
+    <button class="vp-filter" data-region="pacific">🌊 PACIFIC</button>
+    <button class="vp-filter" data-region="small">&lt;10 MB</button>
+  </div>
+  <div id="vp-grid"></div>
+</div>
+
+<!-- Video lightbox modal -->
+<div id="vp-modal">
+  <div id="vp-modal-inner">
+    <div id="vp-modal-header">
+      <span id="vp-modal-title">DOD VIDEO</span>
+      <button id="vp-modal-close">✕</button>
+    </div>
+    <video id="vp-video-el" controls preload="metadata"></video>
+    <div id="vp-modal-meta">
+      <span id="vp-modal-info"></span><br>
+      <a id="vp-modal-download" href="https://www.war.gov/UAP/" target="_blank" rel="noopener">
+        ⬇ Download Full Release from war.gov
+      </a>
+    </div>
+  </div>
+</div>
+
 <div id="conn-overlay">
   <div id="conn-hdr">
     <div id="conn-hdr-left">
@@ -1397,6 +1550,7 @@ const PURSUE_SITES        = {pursue_json};
 const PURSUE_DECLASSIFIED = {pursue_decl_json};
 const PURSUE_RELEASE_01   = {pursue_r01_json};
 const PURSUE_INTEL        = {pursue_intel_json};
+const PURSUE_VIDEOS       = {pursue_videos_json};
 const DERP_SITES          = {derp_json};
 const BABEL_STATIONS      = {babel_json};
 const BABEL_INTELLIGENCE  = {babel_intel_json};
@@ -2818,6 +2972,9 @@ HUMANOID_ENCOUNTERS.forEach(s => {{
 
 // ── Custom layer panel ───────────────────────────────────────
 // Replaces Leaflet's built-in control. Each group is collapsible;
+// Pre-declare video layer so LAYER_REGISTRY can reference it before the IIFE runs
+const _videoMarkersLayer = L.layerGroup();
+
 // checkboxes call map.addLayer / removeLayer directly.
 const LAYER_REGISTRY = {{
   'UFO Sightings':               markerLayer,
@@ -2846,6 +3003,7 @@ const LAYER_REGISTRY = {{
   'PURSUE Disclosure':           pursueLayer,
   'PURSUE Declassified':         pursueDeclaLayer,
   'PURSUE Release 01':           pursueR01Layer,
+  'UAP Video Intelligence':      _videoMarkersLayer,
   'DERP Cleanup Sites':          derpLayer,
   'Babel Monitor':               babelLayer,
   'NUFORC Recent':               nuforcRecentLayer,
@@ -2875,6 +3033,7 @@ const LAYER_GROUPS = [
     {{ name:'PURSUE Disclosure',          color:'#00ffcc', on:false }},
     {{ name:'PURSUE Declassified',        color:'#ffe066', on:false }},
     {{ name:'PURSUE Release 01',          color:'#ff9500', on:false }},
+    {{ name:'UAP Video Intelligence',     color:'#ff2d78', on:false }},
     {{ name:'DERP Cleanup Sites',         color:'#39ff14', on:false }},
     {{ name:'Babel Monitor',              color:'#00c8ff', on:true  }},
   ]}},
@@ -4255,6 +4414,158 @@ function showConnDetail(sci, color, nodeEl) {{
   }});
 }}
 
+// ══════════════════════════════════════════════════════════════
+// UAP VIDEO INTELLIGENCE — gallery + map layer
+// ══════════════════════════════════════════════════════════════
+
+(function() {{
+  const vids = PURSUE_VIDEOS.videos || [];
+  if (!vids.length) return;
+
+  // ── Update header badge ──────────────────────────────────────
+  const countEl = document.getElementById('video-count');
+  if (countEl) countEl.textContent = vids.length;
+  const statsEl = document.getElementById('vp-stats');
+  if (statsEl) {{
+    const gb = (vids.reduce((s,v)=>s+(v.size_mb||0),0)/1024).toFixed(2);
+    statsEl.textContent = `${{vids.length}} videos · ${{gb}} GB · DOD UNCLASSIFIED // RELEASE 02`;
+  }}
+
+  // ── Region helpers ───────────────────────────────────────────
+  function matchesRegion(v, region) {{
+    if (region === 'all') return true;
+    if (region === 'small') return (v.size_mb||0) < 10;
+    const r = (v.region||'').toLowerCase();
+    if (region === 'gulf') return r.includes('gulf') || r.includes('hormuz') || r.includes('arabian sea');
+    if (region === 'pacific') return r.includes('pacific') || r.includes('japan') || r.includes('china sea') || r.includes('indopacom');
+    return r.includes(region);
+  }}
+
+  // ── Build grid cards ─────────────────────────────────────────
+  let currentRegion = 'all';
+  const grid = document.getElementById('vp-grid');
+
+  function renderGrid(region) {{
+    currentRegion = region;
+    grid.innerHTML = '';
+    const filtered = vids.filter(v => matchesRegion(v, region));
+    filtered.forEach(v => {{
+      const card = document.createElement('div');
+      card.className = 'vp-card';
+      card.innerHTML = `
+        <div class="vp-card-id">DOD-${{v.dod_id}}</div>
+        <div class="vp-card-region">${{v.region || 'Unknown Region'}}</div>
+        <div class="vp-card-size">${{v.size_mb}} MB · MP4</div>
+        <button class="vp-card-play" data-id="${{v.dod_id}}" data-fname="${{v.filename}}">▶ PLAY</button>
+      `;
+      grid.appendChild(card);
+    }});
+    if (!filtered.length) {{
+      grid.innerHTML = '<div style="color:#554;padding:20px;font-size:.7rem;grid-column:1/-1;">No videos match this filter.</div>';
+    }}
+  }}
+  renderGrid('all');
+
+  // ── Filter buttons ───────────────────────────────────────────
+  document.querySelectorAll('.vp-filter').forEach(btn => {{
+    btn.addEventListener('click', function() {{
+      document.querySelectorAll('.vp-filter').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      renderGrid(this.dataset.region);
+    }});
+  }});
+
+  // ── Video modal ──────────────────────────────────────────────
+  const modal   = document.getElementById('vp-modal');
+  const videoEl = document.getElementById('vp-video-el');
+  const titleEl = document.getElementById('vp-modal-title');
+  const infoEl  = document.getElementById('vp-modal-info');
+
+  function openVideo(dod_id, filename, sizeMb) {{
+    const localSrc = `pursue_videos/${{filename}}`;
+    titleEl.textContent = `DOD-${{dod_id}} · ${{sizeMb}} MB`;
+    infoEl.textContent  = `File: ${{filename}} | Rel: May 2026 | Classification: UNCLASSIFIED`;
+    videoEl.src = localSrc;
+    videoEl.load();
+    modal.classList.add('open');
+  }}
+
+  document.getElementById('vp-modal-close').addEventListener('click', () => {{
+    modal.classList.remove('open');
+    videoEl.pause();
+    videoEl.src = '';
+  }});
+  modal.addEventListener('click', e => {{
+    if (e.target === modal) {{
+      modal.classList.remove('open');
+      videoEl.pause();
+      videoEl.src = '';
+    }}
+  }});
+
+  // Delegate play button clicks on grid
+  grid.addEventListener('click', e => {{
+    const btn = e.target.closest('.vp-card-play');
+    if (!btn) return;
+    const v = vids.find(x => x.dod_id === btn.dataset.id);
+    if (v) openVideo(v.dod_id, v.filename, v.size_mb);
+  }});
+
+  // ── Panel open/close ─────────────────────────────────────────
+  const panel  = document.getElementById('video-panel');
+  const vpBtn  = document.getElementById('video-btn');
+  document.getElementById('vp-close').addEventListener('click', () => {{
+    panel.classList.remove('open');
+    vpBtn.classList.remove('active');
+  }});
+  vpBtn.addEventListener('click', () => {{
+    const isOpen = panel.classList.toggle('open');
+    vpBtn.classList.toggle('active', isOpen);
+  }});
+
+  // ── Map layer: video location markers ───────────────────────
+  // Uses the pre-declared _videoMarkersLayer so LAYER_REGISTRY can reference it
+  const videoIcon = L.divIcon({{
+    className: '',
+    html: '<div style="background:#ff2d78;width:10px;height:10px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 6px #ff2d78;"></div>',
+    iconSize:[10,10], iconAnchor:[5,5],
+  }});
+
+  // Group videos by location (deduplicate markers)
+  const locMap = {{}};
+  vids.forEach(v => {{
+    if (!v.location) return;
+    const key = `${{v.location.lat}},${{v.location.lon}}`;
+    if (!locMap[key]) locMap[key] = {{ ...v.location, videos:[] }};
+    locMap[key].videos.push(v);
+  }});
+
+  Object.values(locMap).forEach(loc => {{
+    const count = loc.videos.length;
+    const rows  = loc.videos.map(v =>
+      `<div style="display:flex;justify-content:space-between;gap:12px;padding:3px 0;border-bottom:1px solid #2a0c1a;">
+         <span style="color:#ffb0cc;font-size:.65rem;">DOD-${{v.dod_id}}</span>
+         <span style="color:#666;font-size:.6rem;">${{v.size_mb}} MB</span>
+         <button onclick="document.getElementById('video-btn').click();setTimeout(()=>document.querySelector('.vp-card-play[data-id=\\'${{v.dod_id}}\\']')?.click(),200)"
+           style="background:#ff2d78;border:none;color:#fff;font-size:.55rem;padding:1px 6px;cursor:pointer;border-radius:1px;letter-spacing:.05em;">▶</button>
+       </div>`
+    ).join('');
+    const popup = `
+      <div style="font-family:'Share Tech Mono',monospace;min-width:200px;">
+        <div style="color:#ff2d78;font-size:.72rem;letter-spacing:.15em;margin-bottom:6px;">🎬 UAP VIDEO · ${{loc.label}}</div>
+        <div style="color:#888;font-size:.6rem;margin-bottom:8px;">${{count}} VIDEO${{count>1?'S':''}} — RELEASE 02</div>
+        ${{rows}}
+        <div style="margin-top:8px;font-size:.58rem;color:#554;">
+          Source: war.gov PURSUE R02 · DOD UNCLASSIFIED
+        </div>
+      </div>`;
+    L.marker([loc.lat, loc.lon], {{icon: videoIcon}})
+     .bindPopup(popup, {{maxWidth:280}})
+     .addTo(_videoMarkersLayer);
+  }});
+
+}})();
+
 // ── Open / close / keyboard ───────────────────────────────────
 document.getElementById('conn-btn').addEventListener('click', () => {{
   document.getElementById('conn-overlay').classList.add('active');
@@ -4362,6 +4673,18 @@ if __name__ == "__main__":
     else:
         print("   ℹ  pursue_intelligence.json not found — run analyze_pursue_pdfs.py for AI-enriched popups")
 
+    # Load PURSUE video catalog
+    _videos_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pursue_videos.json')
+    _pursue_videos = {}
+    if os.path.exists(_videos_path):
+        with open(_videos_path, encoding='utf-8') as _f:
+            _pursue_videos = json.load(_f)
+        _n_vids = len(_pursue_videos.get('videos', []))
+        _total_gb = sum(v.get('size_mb', 0) for v in _pursue_videos.get('videos', [])) / 1024
+        print(f"   PURSUE Videos: {_n_vids} videos loaded ({_total_gb:.2f} GB)")
+    else:
+        print("   ℹ  pursue_videos.json not found — run download_pursue_videos.py")
+
     # Load Babel monitoring data
     _babel_src_path   = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'babel_sources.json')
     _babel_det_path   = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'babel_detections.json')
@@ -4410,6 +4733,7 @@ if __name__ == "__main__":
         pursue_declassified      = enriched_pursue_decl,
         pursue_release_01        = _pursue_r01_data,
         pursue_intel             = _pursue_intel,
+        pursue_videos            = _pursue_videos,
         derp_sites               = _DERP_SITES_LIVE,
         babel_sources            = _babel_sources_live,
         babel_detections         = _babel_detections_live,
