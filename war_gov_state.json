@@ -1,0 +1,38 @@
+{
+  "cloudfront_zips": {
+    "release_02_videos": {
+      "url": "https://d34w7g4gy10iej.cloudfront.net/uap052226.zip",
+      "etag": "\"c95137da17030f8367383f4111d1c940-673\"",
+      "size": "5644377817"
+    }
+  },
+  "doc_bases": {
+    "https://www.war.gov/medialink/ufo/release_1/": {
+      "status": "inaccessible"
+    },
+    "https://www.war.gov/medialink/ufo/release_2/": {
+      "status": "inaccessible"
+    },
+    "https://www.war.gov/medialink/ufo/release_3/": {
+      "status": "inaccessible"
+    }
+  },
+  "uap_pages": {
+    "1": {
+      "blocked": true
+    },
+    "2": {
+      "blocked": true
+    },
+    "3": {
+      "blocked": true
+    },
+    "4": {
+      "blocked": true
+    },
+    "5": {
+      "blocked": true
+    }
+  },
+  "last_checked": "2026-05-23T08:12:00.133186+00:00"
+}
