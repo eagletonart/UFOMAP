@@ -7642,5 +7642,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-05-23T14:30:00Z",
     "detected_at": "2026-05-23T15:04:54Z"
+  },
+  {
+    "url": "https://thedebrief.org/the-great-pyramid-has-endured-for-millennia-scientists-have-finally-decoded-the-ancient-engineering-technology-that-made-it-possible/",
+    "title": "The Great Pyramid Has Endured for Millennia—Scientists Have Finally Decoded the Ancient Engineering Technology That Made It Possible",
+    "description": "New research offers compelling evidence that \"ancient Egyptian architects possessed profound geotechnical understanding\" which has protected the Great Pyramid for thousands of years.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-05-23T15:38:08Z",
+    "detected_at": "2026-05-23T17:05:26Z"
+  },
+  {
+    "url": "https://nitter.net/JeremyCorbell/status/2058228384715432065#m",
+    "title": "FACT",
+    "description": "FACT Video",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-05-23T16:47:41Z",
+    "detected_at": "2026-05-23T17:05:26Z"
   }
 ]
