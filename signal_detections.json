@@ -7754,5 +7754,37 @@
     "location": "Los Angeles, CA",
     "published_at": "2026-05-22T14:06:53Z",
     "detected_at": "2026-05-24T04:03:04Z"
+  },
+  {
+    "url": "https://nitter.net/JeremyCorbell/status/2058361454676562147#m",
+    "title": "RT @MvonRen: @MickWest @liteshaper2 @adastra1950 Hi @mickwest: This discussion is about the “orb” that appears to be obscured by clouds, ma…",
+    "description": "RT @MvonRen : @MickWest @liteshaper2 @adastra1950 Hi @mickwest : This discussion is about the “orb” that appears to be obscured by clouds, ma…",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-05-24T01:36:27Z",
+    "detected_at": "2026-05-24T11:19:29Z"
+  },
+  {
+    "url": "https://nitter.net/JeremyCorbell/status/2057704845016969664#m",
+    "title": "RT @MvonRen: @MickWest PSEUDO-SKEPTICISM 101: Initially, @MickWest thought the USS Jackson “Tic Tac” video was “an interesting puzzle.” T…",
+    "description": "RT @MvonRen : @MickWest PSEUDO-SKEPTICISM 101: Initially, @MickWest thought the USS Jackson “Tic Tac” video was “an interesting puzzle.” T…",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-05-22T06:07:20Z",
+    "detected_at": "2026-05-24T11:19:29Z"
   }
 ]
