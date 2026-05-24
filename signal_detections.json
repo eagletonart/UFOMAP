@@ -7818,5 +7818,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-05-24T14:16:11Z",
     "detected_at": "2026-05-24T15:09:12Z"
+  },
+  {
+    "url": "https://thedebrief.org/this-startup-is-reviving-human-brains-to-explore-new-treatments-for-neurodegenerative-disease/",
+    "title": "This Startup is Reviving Human Brains to Explore New Treatments for Neurodegenerative Disease",
+    "description": "Bexorg, a Connecticut medical startup, is using disembodied human brains in research targeting neurodegenerative diseases.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-05-24T15:24:46Z",
+    "detected_at": "2026-05-24T17:07:58Z"
+  },
+  {
+    "url": "https://thedebrief.org/the-fastest-known-star-near-the-milky-ways-black-hole-has-been-spotted-now-it-could-help-test-einsteins-theory-of-gravity/",
+    "title": "The Fastest-Known Star Near the Milky Way’s Black Hole Has Been Spotted—Now It Could Help Test Einstein’s Theory of Gravity",
+    "description": "Astronomers have discovered one of the most extreme stellar orbits ever observed, and now it could help provide a crucial test for Einstein's theory of gravity.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-05-24T15:12:19Z",
+    "detected_at": "2026-05-24T17:07:58Z"
   }
 ]
