@@ -7850,5 +7850,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-05-24T15:12:19Z",
     "detected_at": "2026-05-24T17:07:58Z"
+  },
+  {
+    "url": "https://thedebrief.org/a-hidden-pattern-in-famous-abstract-art-reveals-a-secret-mathematical-golden-rule-linked-to-human-perception/",
+    "title": "A Hidden Pattern in Famous Abstract Art Reveals a Secret Mathematical “Golden Rule” Linked to Human Perception",
+    "description": "A new study reveals that famous abstract art may follow hidden mathematical patterns linked to human perception.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-05-24T18:05:21Z",
+    "detected_at": "2026-05-24T19:23:05Z"
   }
 ]
