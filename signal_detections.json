@@ -10106,5 +10106,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-05-30T19:23:32Z",
     "detected_at": "2026-05-30T19:23:55Z"
+  },
+  {
+    "url": "https://nitter.net/TimothyAlberino/status/2060828268518121475#m",
+    "title": "RT by @LueElizondo: Join me and Lue Elizondo in Las Vegas on June 2nd! There is still time to get tickets: https://www.wiseguyscomedy.com/nevada/las-vegas/town-square/e/luis-elizondo-persona-non-grata",
+    "description": "Join me and Lue Elizondo in Las Vegas on June 2nd! There is still time to get tickets: wiseguyscomedy.com/nevada/la… @LueElizondo",
+    "source_name": "Lue Elizondo (@LueElizondo)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8719,
+    "lon": -77.0563,
+    "location": "Arlington, VA",
+    "published_at": "2026-05-30T20:58:42Z",
+    "detected_at": "2026-05-30T23:02:44Z"
   }
 ]
