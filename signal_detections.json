@@ -10154,5 +10154,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-05-31T14:55:00Z",
     "detected_at": "2026-05-31T15:19:28Z"
+  },
+  {
+    "url": "https://thedebrief.org/one-of-the-largest-schrodingers-cat-states-ever-observed-pushes-quantum-weirdness-beyond-its-tiny-limits/",
+    "title": "One of the Largest Schrödinger’s Cat States Ever Observed Pushes Quantum Weirdness Beyond Its Tiny Limits",
+    "description": "Breaking the tiny bounds of Quantum mechanics researchers have created a massive Schrödinger cat particle under ultracold conditions.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-05-31T16:14:33Z",
+    "detected_at": "2026-05-31T17:12:22Z"
+  },
+  {
+    "url": "https://thedebrief.org/pavlovs-mosquito-pests-can-be-conditioned-to-see-deet-as-a-meal-ticket-instead-of-a-deterrent/",
+    "title": "Pavlov’s Mosquito: Pests Can Be Conditioned to See DEET as a Meal Ticket Instead of a Deterrent",
+    "description": "Mosquitoes may have surprisingly overcome one of humanity’s best defenses against them, associating the smell of DEET with a nearby meal.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-05-31T16:13:42Z",
+    "detected_at": "2026-05-31T17:12:22Z"
   }
 ]
