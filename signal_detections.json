@@ -10298,5 +10298,53 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-05-31T22:31:34Z",
     "detected_at": "2026-05-31T23:04:30Z"
+  },
+  {
+    "url": "https://nitter.net/JeremyCorbell/status/2061291212112564424#m",
+    "title": "You’ve done been called @DreamlandMotel ☎️ https://youtu.be/z0wHi-7sAbw",
+    "description": "You’ve done been called @DreamlandMotel ☎️ piped.video/z0wHi-7sAbw",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-06-01T03:38:16Z",
+    "detected_at": "2026-06-01T04:43:57Z"
+  },
+  {
+    "url": "https://nitter.net/rosscoulthart/status/2061243793660362831#m",
+    "title": "Republican Congresswoman Lauren Boebert (CO) acknowledges the best UAP stuff is still being hidden from the public. Among her extraordinary claims, she says she has been told something in a classified",
+    "description": "Republican Congresswoman Lauren Boebert (CO) acknowledges the best UAP stuff is still being hidden from the public. Among her extraordinary claims, she says she has been told something in a classified setting which confirms the existence of alien hyb",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-06-01T00:29:51Z",
+    "detected_at": "2026-06-01T04:43:57Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2061261836289187870#m",
+    "title": "Standing at Dealey Plaza, where history took a dramatic turn, offers a profound perspective. This is where the course of the U.S. and the world irrevocably changed. #History #JFK",
+    "description": "Standing at Dealey Plaza, where history took a dramatic turn, offers a profound perspective. This is where the course of the U.S. and the world irrevocably changed. #History #JFK Video",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-01T01:41:32Z",
+    "detected_at": "2026-06-01T04:43:57Z"
   }
 ]
