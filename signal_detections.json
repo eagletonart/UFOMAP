@@ -10666,5 +10666,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-06-02T12:45:07Z",
     "detected_at": "2026-06-02T16:41:44Z"
+  },
+  {
+    "url": "https://nitter.net/LueElizondo/status/2061890358984712265#m",
+    "title": "Tonight Las Vegas with @TimothyAlberino at Wiseguys comedy club - looking forward to seeing you all there! https://www.wiseguyscomedy.com/nevada/las-vegas/town-square/e/luis-elizondo-persona-non-grata",
+    "description": "Tonight Las Vegas with @TimothyAlberino at Wiseguys comedy club - looking forward to seeing you all there! wiseguyscomedy.com/nevada/la… Video",
+    "source_name": "Lue Elizondo (@LueElizondo)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8719,
+    "lon": -77.0563,
+    "location": "Arlington, VA",
+    "published_at": "2026-06-02T19:19:04Z",
+    "detected_at": "2026-06-02T20:55:10Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2061900774666367420#m",
+    "title": "Turns out driving up prices, starting endless wars, lying to working families, setting up a taxpayer-funded slush fund for criminals, and profiting off the backs of the American people isn't so popula",
+    "description": "Turns out driving up prices, starting endless wars, lying to working families, setting up a taxpayer-funded slush fund for criminals, and profiting off the backs of the American people isn't so popular.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-02T20:00:27Z",
+    "detected_at": "2026-06-02T20:55:10Z"
   }
 ]
