@@ -10762,5 +10762,53 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-02T17:03:15Z",
     "detected_at": "2026-06-02T23:50:10Z"
+  },
+  {
+    "url": "https://nitter.net/LueElizondo/status/2061990432200851623#m",
+    "title": "Las Vegas we’ll see you shortly! @TimothyAlberino",
+    "description": "Las Vegas we’ll see you shortly! @TimothyAlberino Video",
+    "source_name": "Lue Elizondo (@LueElizondo)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8719,
+    "lon": -77.0563,
+    "location": "Arlington, VA",
+    "published_at": "2026-06-03T01:56:43Z",
+    "detected_at": "2026-06-03T04:42:53Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2061999915991990398#m",
+    "title": "EXCLUSIVE: Poll shows strong support for HSA expansion as Republicans push healthcare agenda | Washington Reporter https://washingtonreporter.news/exclusive-poll-shows-strong-support-for-hsa-expansion",
+    "description": "EXCLUSIVE: Poll shows strong support for HSA expansion as Republicans push healthcare agenda | Washington Reporter washingtonreporter.news/excl…",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-03T02:34:24Z",
+    "detected_at": "2026-06-03T04:42:53Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2061988704244101410#m",
+    "title": "Josh Turek is a proven leader. We need his integrity, tenacity, and commitment to putting working families first in the Senate. Excited to cheer on @turek4iowa this November!",
+    "description": "Josh Turek is a proven leader. We need his integrity, tenacity, and commitment to putting working families first in the Senate. Excited to cheer on @turek4iowa this November! Josh Turek (@turek4iowa) My name is Josh Turek. I am a 2-time gold medalist",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-03T01:49:51Z",
+    "detected_at": "2026-06-03T04:42:53Z"
   }
 ]
