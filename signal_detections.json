@@ -11546,5 +11546,53 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-04T21:21:34Z",
     "detected_at": "2026-06-04T21:44:31Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=qkl9vHP1bHc",
+    "title": "Ronald Reagan D-Day Speech",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-04T22:00:01Z",
+    "detected_at": "2026-06-04T23:12:22Z"
+  },
+  {
+    "url": "https://nitter.net/JeremyCorbell/status/2062664410339192834#m",
+    "title": "Perhaps our most important WEAPONIZED episode yet. Whistleblowers have been targeted by our government for coming forward and testifying what they know about UAPs to congress. They have attempted to d",
+    "description": "Perhaps our most important WEAPONIZED episode yet. Whistleblowers have been targeted by our government for coming forward and testifying what they know about UAPs to congress. They have attempted to destroy their lives, and those of their loved ones.",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-06-04T22:34:52Z",
+    "detected_at": "2026-06-04T23:12:22Z"
+  },
+  {
+    "url": "https://nitter.net/RepMoskowitz/status/2062669477120966954#m",
+    "title": "Planes don't fly themselves. Buses don't drive themselves. Networks don't run themselves. Behind each are the great men and women in our unions. It was an honor to meet with @ALPAPilots, @ATUComm, and",
+    "description": "Planes don't fly themselves. Buses don't drive themselves. Networks don't run themselves. Behind each are the great men and women in our unions. It was an honor to meet with @ALPAPilots , @ATUComm , and @CWAUnion this week and reaffirm the truth: uni",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-04T22:55:00Z",
+    "detected_at": "2026-06-04T23:12:22Z"
   }
 ]
