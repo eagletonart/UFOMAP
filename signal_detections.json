@@ -11626,5 +11626,53 @@
     "location": "Los Angeles, CA",
     "published_at": "2026-06-05T09:20:55Z",
     "detected_at": "2026-06-05T09:59:57Z"
+  },
+  {
+    "url": "https://thedebrief.org/we-need-a-way-to-detect-conscious-ai-before-its-too-late-heres-what-has-scientists-sounding-the-alarm/",
+    "title": "We Need a Way to Detect Conscious AI Before It’s Too Late—Here’s What Has Scientists Sounding the Alarm",
+    "description": "Could Conscious AI be closer than we think? Researchers propose a new method to detect machine awareness before the question becomes urgent.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-06-05T12:35:39Z",
+    "detected_at": "2026-06-05T12:46:42Z"
+  },
+  {
+    "url": "https://thedebrief.org/first-look-enigmatic-aurora-suborbital-spaceplane-spotted-carrying-a-special-john-hopkins-payload-in-previously-unseen-video/",
+    "title": "First Look: Enigmatic ‘Aurora’ Suborbital Spaceplane Spotted Carrying a Special John Hopkins Payload in Previously Unseen Video",
+    "description": "Dawn Aerospace has released raw footage of its Aurora Spaceplane ferrying a Johns Hopkins Advanced Propulsion Lab payload to suborbital space.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-06-05T12:27:17Z",
+    "detected_at": "2026-06-05T12:46:42Z"
+  },
+  {
+    "url": "https://thedebrief.org/4500-year-old-discovery-on-a-remote-island-could-change-everything-we-know-about-ancient-nautical-technology-in-the-high-arctic/",
+    "title": "4,500-Year-Old Discovery on a Remote Island Could Change Everything We Know About Ancient Nautical Technology in the High Arctic",
+    "description": "A discovery by archaeologists on a remote island in the High Arctic could upend past thinking on ancient seafaring technology.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-06-05T12:14:16Z",
+    "detected_at": "2026-06-05T12:46:42Z"
   }
 ]
