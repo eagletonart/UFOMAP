@@ -11594,5 +11594,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-04T22:55:00Z",
     "detected_at": "2026-06-04T23:12:22Z"
+  },
+  {
+    "url": "https://nitter.net/LueElizondo/status/2062697564944908528#m",
+    "title": "Looking forward to seeing everyone at The Regent tonight in LA!",
+    "description": "Looking forward to seeing everyone at The Regent tonight in LA! Video",
+    "source_name": "Lue Elizondo (@LueElizondo)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8719,
+    "lon": -77.0563,
+    "location": "Arlington, VA",
+    "published_at": "2026-06-05T00:46:37Z",
+    "detected_at": "2026-06-05T04:11:05Z"
   }
 ]
