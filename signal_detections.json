@@ -12298,5 +12298,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-06T20:17:19Z",
     "detected_at": "2026-06-06T21:08:41Z"
+  },
+  {
+    "url": "https://nitter.net/JeremyCorbell/status/2063389460470071556#m",
+    "title": "I’ve been described as many things. Chill is now one of them. I will tune in Jesse, of @AlchemyAmerican 🥋🫡",
+    "description": "I’ve been described as many things. Chill is now one of them. I will tune in Jesse, of @AlchemyAmerican 🥋🫡 Jesse Michels (@AlchemyAmerican) Extremely laid back, chill and definitely not intense conversation with the eminent Jeremy Corbell ( @JeremyCo",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-06-06T22:35:57Z",
+    "detected_at": "2026-06-06T23:08:05Z"
+  },
+  {
+    "url": "https://nitter.net/LueElizondo/status/2063396086992302400#m",
+    "title": "Not sure how to start this post so I am going to simply tell you what just happened. Life has always been a profound teacher to me, offering precious moments when I least expect them. As many of you k",
+    "description": "Not sure how to start this post so I am going to simply tell you what just happened. Life has always been a profound teacher to me, offering precious moments when I least expect them. As many of you know, I am currently on the road for my Persona Non",
+    "source_name": "Lue Elizondo (@LueElizondo)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8719,
+    "lon": -77.0563,
+    "location": "Arlington, VA",
+    "published_at": "2026-06-06T23:02:17Z",
+    "detected_at": "2026-06-06T23:08:05Z"
   }
 ]
