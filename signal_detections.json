@@ -12234,5 +12234,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-06T15:08:31Z",
     "detected_at": "2026-06-06T17:19:00Z"
+  },
+  {
+    "url": "https://nitter.net/LueElizondo/status/2063334003688558649#m",
+    "title": "Looking forward to seeing you tomorrow night Portland alongside NASA’s very own Mike Gold. Tickets available at the Aladdin Theaters website here: https://www.etix.com/ticket/p/34426318/lue-elizondo-p",
+    "description": "Looking forward to seeing you tomorrow night Portland alongside NASA’s very own Mike Gold. Tickets available at the Aladdin Theaters website here: etix.com/ticket/p/34426318/l… Video",
+    "source_name": "Lue Elizondo (@LueElizondo)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8719,
+    "lon": -77.0563,
+    "location": "Arlington, VA",
+    "published_at": "2026-06-06T18:55:36Z",
+    "detected_at": "2026-06-06T19:38:31Z"
   }
 ]
