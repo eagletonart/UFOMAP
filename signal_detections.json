@@ -12538,5 +12538,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-07T18:53:20Z",
     "detected_at": "2026-06-07T19:38:58Z"
+  },
+  {
+    "url": "https://nitter.net/LueElizondo/status/2063739991461708253#m",
+    "title": "Brief health and tour update.",
+    "description": "Brief health and tour update. Video",
+    "source_name": "Lue Elizondo (@LueElizondo)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8719,
+    "lon": -77.0563,
+    "location": "Arlington, VA",
+    "published_at": "2026-06-07T21:48:51Z",
+    "detected_at": "2026-06-07T23:10:12Z"
+  },
+  {
+    "url": "https://nitter.net/ArchivesUfo/status/2063634031237861700#m",
+    "title": "RT by @EricBurlison: We has all these files organized by year/place http://brazilianufoarchives.com",
+    "description": "We has all these files organized by year/place brazilianufoarchives.com",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-07T14:47:48Z",
+    "detected_at": "2026-06-07T23:10:12Z"
   }
 ]
