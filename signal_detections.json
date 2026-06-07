@@ -12506,5 +12506,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-07T14:55:01Z",
     "detected_at": "2026-06-07T17:22:55Z"
+  },
+  {
+    "url": "https://nitter.net/JeremyCorbell/status/2063690886127771966#m",
+    "title": "Pinned: Everything has led to this point. What you hear and see in this conversation was never supposed to be said. Not even whispered. This is a full-on beginning - the opening of the can of worms. T",
+    "description": "Everything has led to this point. What you hear and see in this conversation was never supposed to be said. Not even whispered. This is a full-on beginning - the opening of the can of worms. To Jesse Michels @AlchemyAmerican - thank you for helping m",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-06-07T18:33:43Z",
+    "detected_at": "2026-06-07T19:38:58Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2063695823041356039#m",
+    "title": "Proof Trump isn't working for you:",
+    "description": "Proof Trump isn't working for you:",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-07T18:53:20Z",
+    "detected_at": "2026-06-07T19:38:58Z"
   }
 ]
