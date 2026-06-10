@@ -13418,5 +13418,53 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-10T13:59:26Z",
     "detected_at": "2026-06-10T18:33:28Z"
+  },
+  {
+    "url": "https://nitter.net/JeremyCorbell/status/2064812314298405334#m",
+    "title": "THIS is a journalistic report. Facts, and respect to the reader. Love this.",
+    "description": "THIS is a journalistic report. Facts, and respect to the reader. Love this. Matthew (@SunOfAbramelin) Out now. open.substack.com/pub/sunofa… — https://nitter.net/SunOfAbramelin/status/2064793046798024936#m",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-06-10T20:49:52Z",
+    "detected_at": "2026-06-10T22:07:08Z"
+  },
+  {
+    "url": "https://nitter.net/JeremyCorbell/status/2064790833782788427#m",
+    "title": "Pinned: x.com/i/article/206478684991…",
+    "description": "x.com/i/article/206478684991…",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-06-10T19:24:31Z",
+    "detected_at": "2026-06-10T22:07:08Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2064808129225777235#m",
+    "title": "Working Americans are paying more at the gas pump and the grocery store because of Trump's inflation. Inflation climbs, wages can't keep up, and the American people lose.",
+    "description": "Working Americans are paying more at the gas pump and the grocery store because of Trump's inflation. Inflation climbs, wages can't keep up, and the American people lose. Heather Long (@byHeatherLong) Inflation is so high that it's erasing all wage g",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-10T20:33:14Z",
+    "detected_at": "2026-06-10T22:07:08Z"
   }
 ]
