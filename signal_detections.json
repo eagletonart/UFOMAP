@@ -13978,5 +13978,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-08T21:03:02Z",
     "detected_at": "2026-06-11T23:28:07Z"
+  },
+  {
+    "url": "https://nitter.net/JeremyCorbell/status/2065310561337045022#m",
+    "title": "Art imitates life. But does life, imitate art? 👽 SLEEPING DOG | http://geni.us/SleepingDog",
+    "description": "Art imitates life. But does life, imitate art? 👽 SLEEPING DOG | geni.us/SleepingDog Video",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-06-12T05:49:44Z",
+    "detected_at": "2026-06-12T10:20:56Z"
   }
 ]
