@@ -14570,5 +14570,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-13T03:25:14Z",
     "detected_at": "2026-06-13T04:12:40Z"
+  },
+  {
+    "url": "https://nitter.net/JeremyCorbell/status/2065665941980197298#m",
+    "title": "Pay attention 🛸 SLEEPING DOG | http://geni.us/SleepingDog",
+    "description": "Pay attention 🛸 SLEEPING DOG | geni.us/SleepingDog Video",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-06-13T05:21:53Z",
+    "detected_at": "2026-06-13T09:22:50Z"
+  },
+  {
+    "url": "https://nitter.net/BXpl0it/status/2065654694215586055#m",
+    "title": "RT by @JeremyCorbell: @ufouapam knocks it out of the park again with this interview with @JeremyCorbell, really good interview and really shows just how hard Jeremy and @g_knapp are working to get us ",
+    "description": "@ufouapam knocks it out of the park again with this interview with @JeremyCorbell , really good interview and really shows just how hard Jeremy and @g_knapp are working to get us the truth. piped.video/KvCsIx_7t_4?is=BbiH…",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-06-13T04:37:11Z",
+    "detected_at": "2026-06-13T09:22:50Z"
   }
 ]
