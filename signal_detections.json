@@ -14874,5 +14874,21 @@
     "location": "New York, NY",
     "published_at": "2026-06-13T19:48:21Z",
     "detected_at": "2026-06-13T21:20:42Z"
+  },
+  {
+    "url": "https://nitter.net/Daily_MailUS/status/2065801143175786840#m",
+    "title": "RT by @JeremyCorbell: UFO leakers expose disturbing government tactics used to keep America's alien cover-up a secret https://trib.al/MhZ3gQ4",
+    "description": "UFO leakers expose disturbing government tactics used to keep America's alien cover-up a secret trib.al/MhZ3gQ4",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-06-13T14:19:07Z",
+    "detected_at": "2026-06-13T23:10:09Z"
   }
 ]
