@@ -14922,5 +14922,21 @@
     "location": "New York, NY",
     "published_at": "2026-06-14T02:09:57Z",
     "detected_at": "2026-06-14T09:42:16Z"
+  },
+  {
+    "url": "https://www.liberationtimes.com/home/disclosure-day-what-happens-the-day-after",
+    "title": "Disclosure Day: What Happens the Day After?",
+    "description": "Steven Spielberg's new film Disclosure Day ends at the moment when the real story would begin. The world has just learned that it is not alone.",
+    "source_name": "Liberation Times",
+    "source_type": "rss",
+    "author": "Christopher Sharp",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇬🇧",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "location": "London, UK",
+    "published_at": "2026-06-14T17:03:54Z",
+    "detected_at": "2026-06-14T17:23:28Z"
   }
 ]
