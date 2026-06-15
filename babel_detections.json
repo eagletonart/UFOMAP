@@ -592,5 +592,23 @@
     "priority": "high",
     "detected_at": "2026-05-28T20:06:34Z",
     "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-an-update-on-the-f-35-aircraft-program",
+    "text": "Open/Closed: To receive an update on the F-35 aircraft program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-06-15T16:59:34Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-army-force-modernization-in-review-of-the-defense-authorization-request-for-fiscal-year-2027-and-the-future-years-defense-program",
+    "text": "To receive testimony on Army force modernization in review of the Defense Authorization Request for Fiscal Year 2027 and the Future Years Defense Program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-06-15T16:59:34Z",
+    "analyzed": false
   }
 ]
