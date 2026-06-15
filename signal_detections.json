@@ -15098,5 +15098,53 @@
     "location": "Charlotte, NC",
     "published_at": "2026-06-15T11:57:02Z",
     "detected_at": "2026-06-15T12:25:29Z"
+  },
+  {
+    "url": "https://thedebrief.org/a-venus-flytrap-mystery-that-has-perplexed-scientists-since-darwin-has-finally-been-solved/",
+    "title": "A Venus Flytrap Mystery That Has Perplexed Scientists Since Darwin Has Finally Been Solved",
+    "description": "New research is finally shedding light on one of the Venus flytrap's most curious and enduring mysteries.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-06-15T16:01:29Z",
+    "detected_at": "2026-06-15T18:42:36Z"
+  },
+  {
+    "url": "https://nitter.net/BigWeekendShow/status/2066551308979708232#m",
+    "title": "RT by @RepTimBurchett: “WE ARE A WORLD SUPERPOWER, AND WE’RE ACTING LIKE IT” @RepTimBurchett praises the Trump admin’s leadership on display during the historic U.S.-Iran peace deal.",
+    "description": "“WE ARE A WORLD SUPERPOWER, AND WE’RE ACTING LIKE IT” @RepTimBurchett praises the Trump admin’s leadership on display during the historic U.S.-Iran peace deal. Video",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-15T16:00:01Z",
+    "detected_at": "2026-06-15T18:42:36Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2066559962130620660#m",
+    "title": "Free Markets produce more prosperity than any other system. Mississippi Richer Than the UK: Europe’s No. 2 Economy Trails America’s Poorest State * The Gateway Pundit * by Antonio Graceffo https://www",
+    "description": "Free Markets produce more prosperity than any other system. Mississippi Richer Than the UK: Europe’s No. 2 Economy Trails America’s Poorest State * The Gateway Pundit * by Antonio Graceffo thegatewaypundit.com/2026/06…",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-15T16:34:24Z",
+    "detected_at": "2026-06-15T18:42:36Z"
   }
 ]
