@@ -15146,5 +15146,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-15T16:34:24Z",
     "detected_at": "2026-06-15T18:42:36Z"
+  },
+  {
+    "url": "https://nitter.net/RepTimBurchett/status/2066621249413960097#m",
+    "title": "Over the weekend, I was honored to attend a flag retirement ceremony in Corryton to celebrate America 250.",
+    "description": "Over the weekend, I was honored to attend a flag retirement ceremony in Corryton to celebrate America 250.",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-15T20:37:56Z",
+    "detected_at": "2026-06-15T22:22:20Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2066599746320343253#m",
+    "title": "Republicans want to CUT your Social Security. The best way to fight back? A Democratic Senate majority. Join us.",
+    "description": "Republicans want to CUT your Social Security. The best way to fight back? A Democratic Senate majority. Join us.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-15T19:12:29Z",
+    "detected_at": "2026-06-15T22:22:20Z"
   }
 ]
