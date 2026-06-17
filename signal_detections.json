@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/a-rare-metallic-signature-from-deep-beneath-antarctic-ice-has-revealed-an-80000-year-old-interstellar-discovery/",
-    "title": "A Rare Metallic Signature from Deep Beneath Antarctic Ice Has Revealed an 80,000-Year-Old Interstellar Discovery",
-    "description": "New evidence of a rare radioactive isotope linked to stellar explosions has been discovered in 80,000-year-old Antarctic ice.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-12T18:06:16Z",
-    "detected_at": "2026-05-17T22:11:44Z"
-  },
-  {
     "url": "https://thedebrief.org/energy-from-the-vacuum-something-brewing-in-our-oceans-and-the-pentagons-ufo-files/",
     "title": "Energy from the Vacuum, Something “Brewing” in Our Oceans, and the Pentagon’s UFO Files",
     "description": "This week in stories from The Debrief: An \"invasion\" in the ocean off the northeastern U.S. coast, the Pentagon's new UFO files, and more.",
@@ -15362,5 +15348,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-17T01:19:55Z",
     "detected_at": "2026-06-17T04:40:43Z"
+  },
+  {
+    "url": "https://nitter.net/FreedomCFund/status/2067067583799378029#m",
+    "title": "RT by @EricBurlison: Congratulations to FCF-endorsed candidate Barry Moore on his primary runoff victory in Alabama!",
+    "description": "Congratulations to FCF-endorsed candidate Barry Moore on his primary runoff victory in Alabama!",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-17T02:11:30Z",
+    "detected_at": "2026-06-17T11:04:43Z"
   }
 ]
