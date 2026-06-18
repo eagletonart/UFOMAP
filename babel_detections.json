@@ -610,5 +610,14 @@
     "priority": "high",
     "detected_at": "2026-06-15T16:59:34Z",
     "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-consider-the-nominations-of-honorable-jules-w-hurst-iii-to-be-under-secretary-of-defense-comptroller-mr-richard-m-omalley-to-be-deputy-under-secretary-of-defense-for-acquisition-and-sustainment-dr-l-roger-mason-jr-to-be-director-of-the-national-reconnaissance-office-and-dr-erich-d-hernandez-baquero-to-be-assistant-secretary-of-the-air-force-for-space-acquisition-and-integration",
+    "text": "To consider the nominations of: Honorable Jules W. Hurst III to be Under Secretary of Defense (Comptroller); Mr. Richard M. O\u2019Malley to be Deputy Under Secretary of Defense for Acquisition and Sustainment; Dr. L. Roger Mason, Jr. to be Director of the National Reconnaissance Office; and Dr. Erich D. Hernandez-Baquero to be Assistant Secretary of the Air Force for Space Acquisition and Integration",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-06-18T02:42:54Z",
+    "analyzed": false
   }
 ]
