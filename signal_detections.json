@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://nitter.net/LueElizondo/status/2042772062700241204#m",
-    "title": "Today’s update https://youtube.com/shorts/LPeyWw1pjmg?si=Mzi_u9s1c8P_QElK",
-    "description": "Today’s update piped.video/shorts/LPeyWw1pj…",
-    "source_name": "Lue Elizondo (@LueElizondo)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lat": 38.8719,
-    "lon": -77.0563,
-    "location": "Arlington, VA",
-    "published_at": "2026-04-11T01:09:47Z",
-    "detected_at": "2026-05-17T22:11:44Z"
-  },
-  {
     "url": "https://nitter.net/disclosureorg/status/2055795046058758173#m",
     "title": "RT by @rosscoulthart: The House of Representative is expanding their UFO investigation into defense contractors and other entities that may be operating UFO programs or holding UFO files outside of co",
     "description": "The House of Representative is expanding their UFO investigation into defense contractors and other entities that may be operating UFO programs or holding UFO files outside of congressional oversight. thehill.com/homenews/house/5… The Hill (@thehill)",
@@ -15616,5 +15602,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-19T15:40:52Z",
     "detected_at": "2026-06-19T18:02:21Z"
+  },
+  {
+    "url": "https://nitter.net/AAGDhillon/status/2067709644185759938#m",
+    "title": "RT by @EricBurlison: Swing and a miss! Major League Baseball encouraged players to wear “Black Lives Matter” on their uniforms but reportedly threatened Christians who write Bible verses on their hats",
+    "description": "Swing and a miss! Major League Baseball encouraged players to wear “Black Lives Matter” on their uniforms but reportedly threatened Christians who write Bible verses on their hats. @USEEOC will investigate whether this amounts to religious discrimina",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-18T20:42:50Z",
+    "detected_at": "2026-06-19T21:12:42Z"
   }
 ]
