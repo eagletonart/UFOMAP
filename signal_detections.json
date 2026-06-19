@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://nitter.net/LueElizondo/status/2044380528338715109#m",
-    "title": "Excellent analysis. https://youtube.com/watch?v=hk_cuDp3pY4&si=laPiMtf_p3QOdvD5",
-    "description": "Excellent analysis. piped.video/watch?v=hk_cuDp3…",
-    "source_name": "Lue Elizondo (@LueElizondo)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lat": 38.8719,
-    "lon": -77.0563,
-    "location": "Arlington, VA",
-    "published_at": "2026-04-15T11:41:15Z",
-    "detected_at": "2026-05-17T22:11:44Z"
-  },
-  {
     "url": "https://nitter.net/LueElizondo/status/2042772062700241204#m",
     "title": "Today’s update https://youtube.com/shorts/LPeyWw1pjmg?si=Mzi_u9s1c8P_QElK",
     "description": "Today’s update piped.video/shorts/LPeyWw1pj…",
@@ -15614,5 +15600,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-19T14:25:06Z",
     "detected_at": "2026-06-19T15:29:41Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2067996043313098996#m",
+    "title": "We have the House, the Senate, and the White House. Reconciliation only needs a simple majority. Joe America is not going to accept that the procedure is hard. We have been given the ball. It is time ",
+    "description": "We have the House, the Senate, and the White House. Reconciliation only needs a simple majority. Joe America is not going to accept that the procedure is hard. We have been given the ball. It is time to call and then run the play.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-19T15:40:52Z",
+    "detected_at": "2026-06-19T18:02:21Z"
   }
 ]
