@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://nitter.net/DrBeaVillarroel/status/2055898436067586553#m",
-    "title": "RT by @rosscoulthart: That is your wishful thinking, dear Michael! As I wrote to Avi.: \"Dear Avi, I very much enjoyed reading your text. I appreciate the respectful critique and the ideas you bring to",
-    "description": "That is your wishful thinking, dear Michael! As I wrote to Avi.: \"Dear Avi, I very much enjoyed reading your text. I appreciate the respectful critique and the ideas you bring to the discussion. I would just like to point out that neither the deficit",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-05-17T06:29:18Z",
-    "detected_at": "2026-05-17T22:11:44Z"
-  },
-  {
     "url": "https://nitter.net/NewsNation/status/2055328605002174681#m",
     "title": "RT by @rosscoulthart: The FBI is offering a $200,000 reward for the apprehension of Monica Witt, a former special agent for the U.S. Air Force Office of Special Investigations and government contracto",
     "description": "The FBI is offering a $200,000 reward for the apprehension of Monica Witt, a former special agent for the U.S. Air Force Office of Special Investigations and government contractor. They allege Witt defected to Iran and provided its government with in",
@@ -15622,5 +15608,21 @@
     "location": "Los Angeles, CA",
     "published_at": "2026-06-20T00:07:32Z",
     "detected_at": "2026-06-20T04:06:31Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2068292872613367955#m",
+    "title": "Dr. Fauci participated in intelligence discussions on viral research while NIAID director which conflicts with his 2024 House testimony, where he said he had ‘not to my knowledge’ communicated with in",
+    "description": "Dr. Fauci participated in intelligence discussions on viral research while NIAID director which conflicts with his 2024 House testimony, where he said he had ‘not to my knowledge’ communicated with intel agencies about COVID. washingtontimes.com/news",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-20T11:20:22Z",
+    "detected_at": "2026-06-20T11:59:59Z"
   }
 ]
