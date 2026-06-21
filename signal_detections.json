@@ -1,33 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepTimBurchett/status/2048228764711108913#m",
-    "title": "Reminder: The Secret Service is currently unfunded because of the Democrats’ DHS funding shutdown.",
-    "description": "Reminder: The Secret Service is currently unfunded because of the Democrats’ DHS funding shutdown.",
-    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-04-26T02:32:46Z",
-    "detected_at": "2026-05-17T22:11:44Z"
-  },
-  {
-    "url": "https://nitter.net/RepTimBurchett/status/2047124496654406044#m",
-    "title": "Getting ready to join @seanhannity on @FoxNews to discuss missing scientists. Y’all should tune in…",
-    "description": "Getting ready to join @seanhannity on @FoxNews to discuss missing scientists. Y’all should tune in…",
-    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-04-23T01:24:48Z",
-    "detected_at": "2026-05-17T22:11:44Z"
-  },
-  {
     "url": "https://nitter.net/RepLuna/status/2047096670123356316#m",
     "title": "RT by @RepTimBurchett: Today @RepTimBurchett and I were honored to have the opportunity to meet with St. Martha Catholic School’s wonderful 8th grade class during their visit to our nation’s Capitol, ",
     "description": "Today @RepTimBurchett and I were honored to have the opportunity to meet with St. Martha Catholic School’s wonderful 8th grade class during their visit to our nation’s Capitol, they traveled all the way from Florida!",
@@ -15666,5 +15638,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-05-06T13:28:22Z",
     "detected_at": "2026-06-21T21:19:11Z"
+  },
+  {
+    "url": "https://nitter.net/RepTimBurchett/status/2050287551370428794#m",
+    "title": "Veterans put their lives on the line for us at home and abroad. Our duty is to protect them when they return. https://www.military.com/bipartisan-bill-targets-fraud-schemes-exploiting-veterans",
+    "description": "Veterans put their lives on the line for us at home and abroad. Our duty is to protect them when they return. military.com/bipartisan-bill… Link Bipartisan Bill Targets Fraud Schemes Exploiting Veterans Lawmakers&apos; efforts could lead to enhanced ",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-05-01T18:53:39Z",
+    "detected_at": "2026-06-21T23:19:40Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2068806811298226365#m",
+    "title": "The story of Ruth and Naomi is a shining example of how we should care for each other. Here’s how the Bible shows us to step up for our communities:",
+    "description": "The story of Ruth and Naomi is a shining example of how we should care for each other. Here’s how the Bible shows us to step up for our communities: Video",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-21T21:22:35Z",
+    "detected_at": "2026-06-21T23:19:40Z"
   }
 ]
