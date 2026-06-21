@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepTimBurchett/status/2054303137716961568#m",
-    "title": "Last week, I toured Living Earth’s Solway facility to learn more about their composting operations and meet with the team serving communities across East Tennessee.",
-    "description": "Last week, I toured Living Earth’s Solway facility to learn more about their composting operations and meet with the team serving communities across East Tennessee.",
-    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-12T20:50:09Z",
-    "detected_at": "2026-05-17T22:11:44Z"
-  },
-  {
     "url": "https://nitter.net/RepTimBurchett/status/2052017631465504916#m",
     "title": "As a former small business owner, I’ve signed the front of a paycheck and dealt with the permits, paperwork, and red tape. I know firsthand that big government rarely makes running a business easier. ",
     "description": "As a former small business owner, I’ve signed the front of a paycheck and dealt with the permits, paperwork, and red tape. I know firsthand that big government rarely makes running a business easier. To the small business owners driving our communiti",
@@ -15660,5 +15646,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-21T14:00:10Z",
     "detected_at": "2026-06-21T15:56:51Z"
+  },
+  {
+    "url": "https://nitter.net/DHSgov/status/2054317888165511551#m",
+    "title": "RT by @RepTimBurchett: Tennessee, deportations at their best.",
+    "description": "Tennessee, deportations at their best. Video",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-05-12T21:48:46Z",
+    "detected_at": "2026-06-21T17:46:00Z"
   }
 ]
