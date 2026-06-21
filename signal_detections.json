@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://nitter.net/rosscoulthart/status/2054718735345491999#m",
-    "title": "It's absolutely incredible in this day and age that the @CIA is actively undermining Congressional and @POTUS executive order attempts to ensure transparency on the release of information pertaining t",
-    "description": "It's absolutely incredible in this day and age that the @CIA is actively undermining Congressional and @POTUS executive order attempts to ensure transparency on the release of information pertaining to both the JFK and MLK mysteries. What could the C",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-05-14T00:21:35Z",
-    "detected_at": "2026-05-17T22:11:44Z"
-  },
-  {
     "url": "https://nitter.net/robjonesreports/status/2054607822927597882#m",
     "title": "RT by @rosscoulthart: we're back in the top 50 on youtube podcasts!",
     "description": "we're back in the top 50 on youtube podcasts!",
@@ -15652,5 +15638,21 @@
     "location": "New York, NY",
     "published_at": "2026-06-21T00:40:40Z",
     "detected_at": "2026-06-21T04:47:26Z"
+  },
+  {
+    "url": "https://nitter.net/RepMoskowitz/status/2068666803891388804#m",
+    "title": "My dad meant the world to me. He was my best friend, my mentor, and the person whose advice I still wish I could ask for every day. Not a day goes by where I don’t think about him, but I do my best to",
+    "description": "My dad meant the world to me. He was my best friend, my mentor, and the person whose advice I still wish I could ask for every day. Not a day goes by where I don’t think about him, but I do my best to make sure my kids grow up knowing the man he was.",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-21T12:06:14Z",
+    "detected_at": "2026-06-21T12:14:32Z"
   }
 ]
