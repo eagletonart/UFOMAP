@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepTimBurchett/status/2050287551370428794#m",
-    "title": "Veterans put their lives on the line for us at home and abroad. Our duty is to protect them when they return. https://www.military.com/bipartisan-bill-targets-fraud-schemes-exploiting-veterans",
-    "description": "Veterans put their lives on the line for us at home and abroad. Our duty is to protect them when they return. military.com/bipartisan-bill…",
-    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-01T18:53:39Z",
-    "detected_at": "2026-05-17T22:11:44Z"
-  },
-  {
     "url": "https://nitter.net/RepTimBurchett/status/2048228764711108913#m",
     "title": "Reminder: The Secret Service is currently unfunded because of the Democrats’ DHS funding shutdown.",
     "description": "Reminder: The Secret Service is currently unfunded because of the Democrats’ DHS funding shutdown.",
@@ -15664,5 +15650,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-05-12T20:50:09Z",
     "detected_at": "2026-06-21T19:49:38Z"
+  },
+  {
+    "url": "https://nitter.net/RepTimBurchett/status/2052017631465504916#m",
+    "title": "As a former small business owner, I’ve signed the front of a paycheck and dealt with the permits, paperwork, and red tape. I know firsthand that big government rarely makes running a business easier. ",
+    "description": "As a former small business owner, I’ve signed the front of a paycheck and dealt with the permits, paperwork, and red tape. I know firsthand that big government rarely makes running a business easier. To the small business owners driving our communiti",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-05-06T13:28:22Z",
+    "detected_at": "2026-06-21T21:19:11Z"
   }
 ]
