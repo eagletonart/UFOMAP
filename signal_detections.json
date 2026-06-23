@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2054726235595362387#m",
-    "title": "Thank you @RandPaul for digging into this. https://nypost.com/2026/05/12/us-news/rand-paul-says-cia-whistleblower-will-allege-ongoing-deep-state-coverup-of-covid-origins-at-public-hearing/",
-    "description": "Thank you @RandPaul for digging into this. nypost.com/2026/05/12/us-new…",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-14T00:51:24Z",
-    "detected_at": "2026-05-18T01:23:09Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2054584207037329530#m",
     "title": "This was the low hanging fruit. Apollo 17 photos. Pilot accounts. Predator drone footage. More is still classified, and I've seen some of it. If the administration doesn't release it, I will, under Sp",
     "description": "This was the low hanging fruit. Apollo 17 photos. Pilot accounts. Predator drone footage. More is still classified, and I've seen some of it. If the administration doesn't release it, I will, under Speech or Debate.",
@@ -15836,5 +15822,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-23T21:08:58Z",
     "detected_at": "2026-06-23T21:45:11Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=MdL47Bi-G2A",
+    "title": "History of the White House",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-23T22:00:15Z",
+    "detected_at": "2026-06-23T23:11:05Z"
   }
 ]
