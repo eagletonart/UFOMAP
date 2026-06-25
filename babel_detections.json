@@ -628,5 +628,14 @@
     "priority": "high",
     "detected_at": "2026-06-23T19:50:08Z",
     "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-tricare-pharmacy-program",
+    "text": "To receive testimony on the TRICARE Pharmacy program",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-06-25T02:28:25Z",
+    "analyzed": false
   }
 ]
