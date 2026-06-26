@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/rethinking-consciousness-could-everything-from-animals-to-ai-be-aware/",
-    "title": "Rethinking Consciousness: Could Everything From Animals to AI Be Aware?",
-    "description": "A new paper argues that scientists may need a radically new approach to studying consciousness, including in animals and AI.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-18T12:38:54Z",
-    "detected_at": "2026-05-18T15:42:35Z"
-  },
-  {
     "url": "https://thedebrief.org/dna-from-a-decades-old-museum-specimen-reveals-the-hidden-lineage-of-a-tiny-underwater-predator/",
     "title": "DNA From a Decades-Old Museum Specimen Reveals the Hidden Lineage of a Tiny Underwater Predator",
     "description": "While most fruit flies are commonly known for their attraction to fermenting fruit, one species has evolved to hunt in the fast-moving streams of Africa, taking on the role of a predator.",
@@ -15998,5 +15982,21 @@
     "location": "Brazil",
     "published_at": "2026-02-10T15:23:23Z",
     "detected_at": "2026-06-25T23:21:56Z"
+  },
+  {
+    "url": "https://ufo.com.br/nota-oficial-revista-ufo/",
+    "title": "Nota oficial da Revista UFO",
+    "description": "A Revista UFO informa que concluiu um processo de transição societária, passando a integrar a estrutura da UFO Intermediações, grupo empresarial presidido por Urandir Fernandes de Oliveira. A operação foi realizada de forma planejada, responsável e c",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-02-02T16:10:39Z",
+    "detected_at": "2026-06-26T04:06:33Z"
   }
 ]
