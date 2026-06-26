@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/dna-from-a-decades-old-museum-specimen-reveals-the-hidden-lineage-of-a-tiny-underwater-predator/",
-    "title": "DNA From a Decades-Old Museum Specimen Reveals the Hidden Lineage of a Tiny Underwater Predator",
-    "description": "While most fruit flies are commonly known for their attraction to fermenting fruit, one species has evolved to hunt in the fast-moving streams of Africa, taking on the role of a predator.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-18T12:35:47Z",
-    "detected_at": "2026-05-18T15:42:35Z"
-  },
-  {
     "url": "https://inexplicata.blogspot.com/2026/05/harold-wilkins-night-of-terror-in-costa.html",
     "title": "Harold Wilkins: A Night of Terror in Costa Rica",
     "description": "&nbsp; &nbsp; Although subsequent decades were spent tarnishing the good name of British journalist Harold T. Wilkins, his contribution to our understanding of the strange and unusual is worthy of recognition. &nbsp; Fifteen years after his death, Wi",
@@ -15998,5 +15982,21 @@
     "location": "Brazil",
     "published_at": "2026-02-02T16:10:39Z",
     "detected_at": "2026-06-26T04:06:33Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2070370652633092253#m",
+    "title": "“Truth is so hard to tell, it sometimes needs fiction to make it plausible.”",
+    "description": "“Truth is so hard to tell, it sometimes needs fiction to make it plausible.”",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-26T04:56:43Z",
+    "detected_at": "2026-06-26T09:35:14Z"
   }
 ]
