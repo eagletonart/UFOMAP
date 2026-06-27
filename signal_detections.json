@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepMoskowitz/status/2056518356124008574#m",
-    "title": "My prayers are with the victims and their families. Violence is never the answer. I am happy to hear none of the children were harmed.",
-    "description": "My prayers are with the victims and their families. Violence is never the answer. I am happy to hear none of the children were harmed. Jake Tapper 🦅 (@jaketapper) Victims at Islamic Center of San Diego are 3 adult males, one a security guard who work",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-18T23:32:39Z",
-    "detected_at": "2026-05-19T03:59:07Z"
-  },
-  {
-    "url": "https://thedebrief.org/an-impossible-crystal-8000-year-old-lost-technology-and-a-radical-approach-to-solving-consciousness-mysteries/",
-    "title": "An “Impossible” Crystal, 8000-Year-Old Lost Technology, and a Radical Approach to Solving Consciousness Mysteries",
-    "description": "This week, an \"impossible\" crystal formed during a historic nuclear blast, 8000-year-old technology \"lost to history,\" and radical approches to solving consciousness questions are in the news.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-19T14:13:26Z",
-    "detected_at": "2026-05-19T15:34:49Z"
-  },
-  {
     "url": "https://thedebrief.org/convicted-harvard-scientist-rebuilds-career-in-china-through-controversial-brain-computer-interface-lab/",
     "title": "Convicted Harvard Scientist Rebuilds Career in China Through Controversial Brain-Computer Interface Lab",
     "description": "A former Harvard professor convicted of concealing ties to a Chinese talent program now leads a state-backed brain-computer interface lab in China.",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-27T13:51:01Z",
     "detected_at": "2026-06-27T13:51:57Z"
+  },
+  {
+    "url": "https://thedebrief.org/something-is-swarming-in-swirls-of-green-in-the-black-sea-and-these-nasa-images-captured-the-phenomenon-from-orbit/",
+    "title": "Something is Swarming in Swirls of Green in the Black Sea—and These NASA Images Captured the Phenomenon from Orbit",
+    "description": "NASA orbital imagery of the Black Sea has revealed eerie-looking swirls of turquoise-green swarming in its waters.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-06-27T14:15:09Z",
+    "detected_at": "2026-06-27T15:19:02Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2070871271311626424#m",
+    "title": "A witness tried to call SNAP fraud just administrative errors. I pushed back. The USDA Inspector General has documented organized rings stealing hundreds of millions, some with ties to suspected terro",
+    "description": "A witness tried to call SNAP fraud just administrative errors. I pushed back. The USDA Inspector General has documented organized rings stealing hundreds of millions, some with ties to suspected terrorists. That is theft.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-27T14:06:00Z",
+    "detected_at": "2026-06-27T15:19:02Z"
   }
 ]
