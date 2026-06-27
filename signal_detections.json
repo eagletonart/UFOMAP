@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/convicted-harvard-scientist-rebuilds-career-in-china-through-controversial-brain-computer-interface-lab/",
-    "title": "Convicted Harvard Scientist Rebuilds Career in China Through Controversial Brain-Computer Interface Lab",
-    "description": "A former Harvard professor convicted of concealing ties to a Chinese talent program now leads a state-backed brain-computer interface lab in China.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-19T12:47:51Z",
-    "detected_at": "2026-05-19T15:34:49Z"
-  },
-  {
     "url": "https://thedebrief.org/james-webb-space-telescope-spots-an-early-galaxy-with-an-odd-feature-thats-defying-expectations/",
     "title": "James Webb Space Telescope Spots an Early Galaxy with an Odd Feature That’s Defying Expectations",
     "description": "James Webb Space Telescope data has led to the surprising discovery that an early, distant galaxy is not rotating as expected.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-27T14:06:00Z",
     "detected_at": "2026-06-27T15:19:02Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2070902226394997035#m",
+    "title": "Your tax dollars meant for a neighbor in need are getting skimmed by an organized crime syndicate out of Romania. I exposed it at our DOGE hearing. The American people deserve stewards of their money,",
+    "description": "Your tax dollars meant for a neighbor in need are getting skimmed by an organized crime syndicate out of Romania. I exposed it at our DOGE hearing. The American people deserve stewards of their money, not excuses.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-27T16:09:00Z",
+    "detected_at": "2026-06-27T17:15:39Z"
   }
 ]
