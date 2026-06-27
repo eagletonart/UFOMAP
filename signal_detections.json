@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/james-webb-space-telescope-spots-an-early-galaxy-with-an-odd-feature-thats-defying-expectations/",
-    "title": "James Webb Space Telescope Spots an Early Galaxy with an Odd Feature That’s Defying Expectations",
-    "description": "James Webb Space Telescope data has led to the surprising discovery that an early, distant galaxy is not rotating as expected.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-19T12:36:14Z",
-    "detected_at": "2026-05-19T15:34:49Z"
-  },
-  {
     "url": "https://thedebrief.org/cdc-officials-warn-er-visits-are-rising-due-to-bites-from-this-parasite-linked-to-dangerous-illness-heres-what-you-need-to-know/",
     "title": "CDC Officials Warn ER Visits Are Rising Due to Bites from This Parasite Linked to Dangerous Illness—Here’s What You Need to Know",
     "description": "Emergency rooms are seeing an uptick in visits related to bites from a common parasite, according to the Centers for Disease Control and Prevention (CDC).",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-27T16:09:00Z",
     "detected_at": "2026-06-27T17:15:39Z"
+  },
+  {
+    "url": "https://nitter.net/jamescfox/status/2070910337205891449#m",
+    "title": "RT by @EricBurlison: Quick announcement:",
+    "description": "Quick announcement: Video",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-27T16:41:14Z",
+    "detected_at": "2026-06-27T19:26:51Z"
   }
 ]
