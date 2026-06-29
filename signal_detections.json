@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2056895933523128666#m",
-    "title": "It's official: @ossoff is the Democratic nominee for Senate in Georgia! Jon is a true fighter for working people, and we need his leadership in the Senate. Let's get to work!",
-    "description": "It's official: @ossoff is the Democratic nominee for Senate in Georgia! Jon is a true fighter for working people, and we need his leadership in the Senate. Let's get to work! Democrats (@TheDemocrats) Let’s win big in November and reelect Jon Ossoff,",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-20T00:33:00Z",
-    "detected_at": "2026-05-20T03:59:51Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2056961323338969152#m",
     "title": "Be good. Don’t be bad. If you’re bad, don’t get caught. If you get caught… don’t call me ☎️🛸",
     "description": "Be good. Don’t be bad. If you’re bad, don’t get caught. If you get caught… don’t call me ☎️🛸",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-29T17:29:47Z",
     "detected_at": "2026-06-29T18:10:49Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2071677647663300732#m",
+    "title": "Trump and congressional Republicans let healthcare premiums explode and now millions of Americans can't afford coverage. We warned them. They CHOSE to let sick Americans struggle instead of extending ",
+    "description": "Trump and congressional Republicans let healthcare premiums explode and now millions of Americans can't afford coverage. We warned them. They CHOSE to let sick Americans struggle instead of extending the enhanced ACA tax credits.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-29T19:30:15Z",
+    "detected_at": "2026-06-29T21:38:09Z"
   }
 ]
