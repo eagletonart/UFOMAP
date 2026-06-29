@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2056822611779178965#m",
-    "title": "What the hell? Trump wants to repeal limits on cancer-causing, toxic chemicals in our drinking water. \"Make America Healthy Again\" was just another lie.",
-    "description": "What the hell? Trump wants to repeal limits on cancer-causing, toxic chemicals in our drinking water. \"Make America Healthy Again\" was just another lie.",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-19T19:41:39Z",
-    "detected_at": "2026-05-19T21:23:52Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2056814793428779157#m",
     "title": "It’s unforgivable. Trump made thousands of stock trades to benefit himself, while working Americans are paying the cost of his reckless policies. I'm fighting to ban high-ranking government officials ",
     "description": "It’s unforgivable. Trump made thousands of stock trades to benefit himself, while working Americans are paying the cost of his reckless policies. I'm fighting to ban high-ranking government officials from trading stocks, including the president and m",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-28T17:53:01Z",
     "detected_at": "2026-06-28T19:27:24Z"
+  },
+  {
+    "url": "https://nitter.net/RepMoskowitz/status/2071389132719267866#m",
+    "title": "Congrats to my friend @billmaher on receiving the Mark Twain Prize for American Humor. Thirty years of telling everyone in Washington exactly what he thinks, and somehow he’s still invited back. Nobod",
+    "description": "Congrats to my friend @billmaher on receiving the Mark Twain Prize for American Humor. Thirty years of telling everyone in Washington exactly what he thinks, and somehow he’s still invited back. Nobody earns this one quite like you. Congratulations.",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-29T00:23:48Z",
+    "detected_at": "2026-06-29T04:21:24Z"
   }
 ]
