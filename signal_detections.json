@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2057136794953453630#m",
-    "title": "Current emotional state 🫡",
-    "description": "Current emotional state 🫡",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-20T16:30:06Z",
-    "detected_at": "2026-05-20T18:22:13Z"
-  },
-  {
-    "url": "https://nitter.net/RepMoskowitz/status/2057164491767357635#m",
-    "title": "Today, as we commemorate Cuban Independence Day, we also recognize the painful reality that true freedom and sovereignty remain out of reach for millions living under the authoritarian Castro regime. ",
-    "description": "Today, as we commemorate Cuban Independence Day, we also recognize the painful reality that true freedom and sovereignty remain out of reach for millions living under the authoritarian Castro regime. Across the island, Cubans continue to face impriso",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-20T18:20:09Z",
-    "detected_at": "2026-05-20T18:22:13Z"
-  },
-  {
     "url": "https://nitter.net/JakeSherman/status/2057133247822176522#m",
     "title": "RT by @RepMoskowitz: GOTTHEIMER and MOSKOWITZ say if Galindo wins in Texas, they will vote to expel her \"every single day.\" Galindo is the Dem candidate Republicans are boosting in Texas who says she ",
     "description": "GOTTHEIMER and MOSKOWITZ say if Galindo wins in Texas, they will vote to expel her \"every single day.\" Galindo is the Dem candidate Republicans are boosting in Texas who says she would turn ICE facilities into internment camp for American Zionists. R",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-06-30T16:02:22Z",
     "detected_at": "2026-06-30T16:24:05Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/05/ufo-over-la-goma-durango-oct-18-1970.html",
+    "title": "UFO Over La Goma, Durango (Oct. 18, 1970)",
+    "description": "Normal 0 false false false EN-US X-NONE X-NONE /* Style Definitions */ table.MsoNormalTable {mso-style-name:\"Table Normal\"; mso-tstyle-rowband-size:0; mso-tstyle-colband-size:0; mso-style-noshow:yes; mso-style-priority:99; mso-style-parent:\"\"; mso-pa",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-05-20T06:23:03Z",
+    "detected_at": "2026-06-30T20:04:05Z"
+  },
+  {
+    "url": "https://nitter.net/RepMoskowitz/status/2072029800089211073#m",
+    "title": "As the situation in Venezuela continues to worsen, I continue to call on @SecRubio and @SecWar to deploy the USNS Comfort or Mercy to save lives. These Navy hospital ships can make a real difference. ",
+    "description": "As the situation in Venezuela continues to worsen, I continue to call on @SecRubio and @SecWar to deploy the USNS Comfort or Mercy to save lives. These Navy hospital ships can make a real difference. In emergency management, every hour counts. We can",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-06-30T18:49:35Z",
+    "detected_at": "2026-06-30T20:04:05Z"
   }
 ]
