@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2057670297180840138#m",
-    "title": "☎️👀🛸",
-    "description": "☎️👀🛸",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-22T03:50:03Z",
-    "detected_at": "2026-05-22T04:03:54Z"
-  },
-  {
-    "url": "https://nitter.net/rosscoulthart/status/2057629787829731727#m",
-    "title": "This is extremely important: as @C__Herridge reports here, the @CIA was spying on a team working for @ODNIgov chief @DNIGabbard. This is illegal under US law. The ODNI team was investigating CIA compl",
-    "description": "This is extremely important: as @C__Herridge reports here, the @CIA was spying on a team working for @ODNIgov chief @DNIGabbard . This is illegal under US law. The ODNI team was investigating CIA compliance with a Presidential @POTUS mandate demandin",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-05-22T01:09:04Z",
-    "detected_at": "2026-05-22T04:03:54Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2057706883448734029#m",
     "title": "Pinned: Check out SLEEPING DOG 🕵️‍♂️ http://geni.us/SleepingDog",
     "description": "Check out SLEEPING DOG 🕵️‍♂️ geni.us/SleepingDog",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-02T14:50:39Z",
     "detected_at": "2026-07-02T17:53:20Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=cdwuo9ox7N4",
+    "title": "Take a Walk on Boston's Freedom Trail",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-02T17:57:25Z",
+    "detected_at": "2026-07-02T19:37:15Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2072739909010325866#m",
+    "title": "Trump wants to make it harder for you to vote.",
+    "description": "Trump wants to make it harder for you to vote. Video",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-02T17:51:18Z",
+    "detected_at": "2026-07-02T19:37:15Z"
   }
 ]
