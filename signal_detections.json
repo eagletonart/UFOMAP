@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2057706883448734029#m",
-    "title": "Pinned: Check out SLEEPING DOG 🕵️‍♂️ http://geni.us/SleepingDog",
-    "description": "Check out SLEEPING DOG 🕵️‍♂️ geni.us/SleepingDog",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-22T06:15:26Z",
-    "detected_at": "2026-05-22T09:36:22Z"
-  },
-  {
-    "url": "https://nitter.net/MvonRen/status/2057572168108830768#m",
-    "title": "RT by @JeremyCorbell: PSEUDO-SKEPTICISM 101: Initially, @MickWest thought the USS Jackson “Tic Tac” video was “an interesting puzzle.” Then, once he put it into his 3D sim and realized there’s no pros",
-    "description": "PSEUDO-SKEPTICISM 101: Initially, @MickWest thought the USS Jackson “Tic Tac” video was “an interesting puzzle.” Then, once he put it into his 3D sim and realized there’s no prosaic explanation supported by empirical evidence, it suddenly became “not",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-21T21:20:07Z",
-    "detected_at": "2026-05-22T09:36:22Z"
-  },
-  {
     "url": "https://thedebrief.org/james-webb-space-telescope-discovery-parts-the-clouds-on-bizarre-exoplanet-weather/",
     "title": "James Webb Space Telescope Discovery Parts the Clouds on Bizarre Exoplanet Weather",
     "description": "James Webb Space Telescope data has allowed researchers to separate the cloud cover of a gas giant, providing a new level of detail.",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-02T17:51:18Z",
     "detected_at": "2026-07-02T19:37:15Z"
+  },
+  {
+    "url": "https://nitter.net/AmericanALCHMY/status/2072769294635540491#m",
+    "title": "RT by @EricBurlison: 🚨BREAKING🚨: Congressman Eric Burlison (@RepEricBurlison) was told President Trump (@realDonaldTrump) was briefed on the existence of alien hybrids living amongst humans. The Congr",
+    "description": "🚨BREAKING🚨: Congressman Eric Burlison ( @RepEricBurlison ) was told President Trump ( @realDonaldTrump ) was briefed on the existence of alien hybrids living amongst humans. The Congressman also says senior U.S. intelligence officials report regular ",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-02T19:48:04Z",
+    "detected_at": "2026-07-03T03:40:04Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2072882890577207684#m",
+    "title": "Great to be on @AmericanALCHMY with @AlchemyAmerican https://youtu.be/A2-y_HasHEw?is=R-QWYjU180UjQDbg via @YouTube",
+    "description": "Great to be on @AmericanALCHMY with @AlchemyAmerican piped.video/A2-y_HasHEw?is=R-QW… via @YouTube Link Congressman Reveals The Alien Brief That Changed The President’s Life Our American Alchemist this week is Rep. Eric Burlison. Follow Eric... youtu",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-03T03:19:28Z",
+    "detected_at": "2026-07-03T03:40:04Z"
   }
 ]
