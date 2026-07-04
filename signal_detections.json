@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2057932169650041091#m",
-    "title": "R to @EricBurlison: Also, this is the event that I was personally briefed on by the senior intelligence official who experienced this shortly after it happened. I have asked if I can attend the next e",
-    "description": "Also, this is the event that I was personally briefed on by the senior intelligence official who experienced this shortly after it happened. I have asked if I can attend the next exercise just in case this phenomenon shows up again.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-22T21:10:38Z",
-    "detected_at": "2026-05-22T21:16:04Z"
-  },
-  {
-    "url": "https://nitter.net/EricBurlison/status/2057919337764143428#m",
-    "title": "IMHO this is the most important record released today. https://www.war.gov/medialink/ufo/052226/release_02/documents/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf",
-    "description": "IMHO this is the most important record released today. war.gov/medialink/ufo/052226…",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-22T20:19:39Z",
-    "detected_at": "2026-05-22T21:16:04Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2057930218292076657#m",
     "title": "Image",
     "description": "Aaron Rupar (@atrupar) Trump: \"We had the greatest, most successful economy in history, and by the way we're blowing it away in this term. The Dow Jones hit 50,000\" Video — https://nitter.net/atrupar/status/2057915282543264132#m",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-04T13:14:03Z",
     "detected_at": "2026-07-04T13:42:21Z"
+  },
+  {
+    "url": "https://thedebrief.org/nasa-celebrates-america-250-this-independence-day-with-a-patriotic-view-of-the-cosmos/",
+    "title": "Look: NASA Celebrates “America 250” This Independence Day With a Patriotic View of the Cosmos",
+    "description": "With the arrival of America’s 250th birthday this Independence Day weekend, NASA is marking the occasion with a patriotic-themed perspective on the cosmos.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-04T14:18:52Z",
+    "detected_at": "2026-07-04T15:09:03Z"
+  },
+  {
+    "url": "https://nitter.net/SpeakerTimJones/status/2073410211356840267#m",
+    "title": "RT by @EricBurlison: AMEN! =>",
+    "description": "AMEN! =&gt; Eric Burlison (@EricBurlison) 250 years ago, ordinary Americans stood against the most powerful empire on earth and won one thing: freedom. They didn't defeat one tyranny to build another. Our job is to keep the government limited and the",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-04T14:14:51Z",
+    "detected_at": "2026-07-04T15:09:03Z"
   }
 ]
