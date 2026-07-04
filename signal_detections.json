@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2057930218292076657#m",
-    "title": "Image",
-    "description": "Aaron Rupar (@atrupar) Trump: \"We had the greatest, most successful economy in history, and by the way we're blowing it away in this term. The Dow Jones hit 50,000\" Video — https://nitter.net/atrupar/status/2057915282543264132#m",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-22T21:02:53Z",
-    "detected_at": "2026-05-22T21:16:04Z"
-  },
-  {
     "url": "https://nitter.net/LueElizondo/status/2057949278585135501#m",
     "title": "Today the Director of National Intelligence @TulsiGabbard announced her resignation. She has been a true champion of transparency and disclosure as it relates to UAP and I am sad to see her go. She ha",
     "description": "Today the Director of National Intelligence @TulsiGabbard announced her resignation. She has been a true champion of transparency and disclosure as it relates to UAP and I am sad to see her go. She has served her nation honorably, time and again, eac",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-04T14:14:51Z",
     "detected_at": "2026-07-04T15:09:03Z"
+  },
+  {
+    "url": "https://nitter.net/RepTimBurchett/status/2073430564699312420#m",
+    "title": "Every day I wake up, I’m proud to be living in the greatest country in the dadgum world… but today feels a little different. I’m thinking of the brave men like my Daddy who fought to protect the ideal",
+    "description": "Every day I wake up, I’m proud to be living in the greatest country in the dadgum world… but today feels a little different. I’m thinking of the brave men like my Daddy who fought to protect the ideals that our founders envisioned for the United Stat",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-04T15:35:43Z",
+    "detected_at": "2026-07-04T17:10:40Z"
   }
 ]
