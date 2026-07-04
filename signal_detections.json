@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/TulsiGabbard/status/2057876821421527476#m",
-    "title": "RT by @rosscoulthart: I am deeply grateful for the trust President Trump placed in me and for the opportunity to lead @ODNIgov for the last year and a half. Unfortunately, I must submit my resignation",
-    "description": "I am deeply grateful for the trust President Trump placed in me and for the opportunity to lead @ODNIgov for the last year and a half. Unfortunately, I must submit my resignation, effective June 30, 2026. My husband, Abraham, has recently been diagno",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-05-22T17:30:42Z",
-    "detected_at": "2026-05-22T19:53:59Z"
-  },
-  {
-    "url": "https://nitter.net/RepublicanStudy/status/2057894350567170277#m",
-    "title": "RT by @RepTimBurchett: 🔥 @RepTimBurchett is leading the DOGE Subcommittee and going after EVERY fraudster stealing from the American people. Democrats will claim Republicans are “cutting programs\" whe",
-    "description": "🔥 @RepTimBurchett is leading the DOGE Subcommittee and going after EVERY fraudster stealing from the American people. Democrats will claim Republicans are “cutting programs\" when really we’re cutting the gravy train of waste, fraud, and abuse that ba",
-    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-22T18:40:21Z",
-    "detected_at": "2026-05-22T19:53:59Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2057896314491261376#m",
     "title": "Trump's high gas prices are emptying wallets and ruining plans for families this Memorial Day weekend.",
     "description": "Trump's high gas prices are emptying wallets and ruining plans for families this Memorial Day weekend. Patrick De Haan (@GasBuddyGuy) Americans will be spending $2 billion more on gasoline over the four day Memorial Day weekend compared to a year ago",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-03T14:42:01Z",
     "detected_at": "2026-07-03T17:36:58Z"
+  },
+  {
+    "url": "https://ufo.com.br/pentagono-divulga-novo-lote-de-arquivos-sobre-ovnis/",
+    "title": "Pentágono divulga novo lote de arquivos sobre OVNIs",
+    "description": "O Pentágono liberou 72 novos documentos sobre fenômenos aéreos não identificados (UAPs), parte da campanha de transparência determinada pelo presidente Donald Trump. Apesar das descrições curiosas — como um “disco giratório com feixes de luz”, um “or",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-07-03T23:28:46Z",
+    "detected_at": "2026-07-04T06:50:00Z"
+  },
+  {
+    "url": "https://ufo.com.br/astronomo-de-harvard-liderara-conselho-da-casa-branca-sobre-ovnis/",
+    "title": "Astrônomo de Harvard liderará conselho da Casa Branca sobre OVNIs",
+    "description": "Avi Loeb, cosmólogo e ex-chefe do departamento de astronomia de Harvard, foi escolhido pela Casa Branca para liderar um novo conselho consultivo científico dedicado a investigar os riscos à segurança nacional representados por fenômenos aéreos não id",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-07-03T23:10:25Z",
+    "detected_at": "2026-07-04T06:50:00Z"
   }
 ]
