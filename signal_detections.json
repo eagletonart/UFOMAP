@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2057896314491261376#m",
-    "title": "Trump's high gas prices are emptying wallets and ruining plans for families this Memorial Day weekend.",
-    "description": "Trump's high gas prices are emptying wallets and ruining plans for families this Memorial Day weekend. Patrick De Haan (@GasBuddyGuy) Americans will be spending $2 billion more on gasoline over the four day Memorial Day weekend compared to a year ago",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-22T18:48:09Z",
-    "detected_at": "2026-05-22T19:53:59Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2057877173617283360#m",
     "title": "A valuable message from the legendary Stephen Colbert last night: choose to do it with joy. Thank you to Stephen and the entire Late Show team for bringing endless joy, humor, and wit to our screens.",
     "description": "A valuable message from the legendary Stephen Colbert last night: choose to do it with joy. Thank you to Stephen and the entire Late Show team for bringing endless joy, humor, and wit to our screens.",
@@ -15998,5 +15982,21 @@
     "location": "Brazil",
     "published_at": "2026-07-03T23:10:25Z",
     "detected_at": "2026-07-04T06:50:00Z"
+  },
+  {
+    "url": "https://nitter.net/RepublicanStudy/status/2057894350567170277#m",
+    "title": "RT by @RepTimBurchett: 🔥 @RepTimBurchett is leading the DOGE Subcommittee and going after EVERY fraudster stealing from the American people. Democrats will claim Republicans are “cutting programs\" whe",
+    "description": "🔥 @RepTimBurchett is leading the DOGE Subcommittee and going after EVERY fraudster stealing from the American people. Democrats will claim Republicans are “cutting programs\" when really we’re cutting the gravy train of waste, fraud, and abuse that ba",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-05-22T18:40:21Z",
+    "detected_at": "2026-07-04T10:14:55Z"
   }
 ]
