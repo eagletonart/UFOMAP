@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/rosscoulthart/status/2057974661955334203#m",
-    "title": "This is fascinating. Dare I say it looks like the ghostbusters marshmallow man.",
-    "description": "This is fascinating. Dare I say it looks like the ghostbusters marshmallow man. Tom Thompson🛸 (ＣＯＲＴＥＸ ＺＥＲＯ) (@Cortex_Zero) Here’s a side-by-side comparison between a 2015 UFO sighting recorded in Sequoia National Park and one of the videos released t",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-05-22T23:59:29Z",
-    "detected_at": "2026-05-23T03:40:33Z"
-  },
-  {
-    "url": "https://nitter.net/JeremyCorbell/status/2058057451518267480#m",
-    "title": "I want to remind y’all of the post by @JohnPodesta on 13 FEB 2015, when he was Counselor to President @BarackObama at the @WhiteHouse. “1. Finally, my biggest failure of 2014: Once again not securing ",
-    "description": "I want to remind y’all of the post by @JohnPodesta on 13 FEB 2015, when he was Counselor to President @BarackObama at the @WhiteHouse . “1. Finally, my biggest failure of 2014: Once again not securing the #disclosure of the UFO files. #thetruthisstil",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-23T05:28:27Z",
-    "detected_at": "2026-05-23T06:36:55Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2058179006214676664#m",
     "title": "Ironically, the day @realannapaulina and I were visiting the CIA to discuss the JFK files, @DCIARatcliffe was making a very strong statement in Cuba. https://www.cbsnews.com/news/cia-director-ratcliff",
     "description": "Ironically, the day @realannapaulina and I were visiting the CIA to discuss the JFK files, @DCIARatcliffe was making a very strong statement in Cuba. cbsnews.com/news/cia-directo…",
@@ -15998,5 +15966,37 @@
     "location": "Los Angeles, CA",
     "published_at": "2026-07-04T13:02:05Z",
     "detected_at": "2026-07-04T23:00:48Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2073763583050080481#m",
+    "title": "My healthcare plan is simple. Health savings accounts for everyone. Your employer funds your account, and you buy the insurance you actually want. You finally get treated like a customer. That is what",
+    "description": "My healthcare plan is simple. Health savings accounts for everyone. Your employer funds your account, and you buy the insurance you actually want. You finally get treated like a customer. That is what leadership keeps stalling.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-05T13:39:01Z",
+    "detected_at": "2026-07-05T13:49:11Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2073745382345961735#m",
+    "title": "Not yet.",
+    "description": "Not yet. The Hill (@thehill) Trump says ‘nothing illegal’ about massive crypto profits thehill.com/homenews/adminis… Link Trump says ‘nothing illegal’ about massive crypto profits President Trump denied on Thursday there was anything illegal in the m",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-05T12:26:42Z",
+    "detected_at": "2026-07-05T13:49:11Z"
   }
 ]
