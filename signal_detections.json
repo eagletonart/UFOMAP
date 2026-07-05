@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/there-are-shortcomings-in-recognizing-the-existence-of-life-astrobiologists-warn-of-gaps-in-the-search-for-extraterrestrial-life/",
-    "title": "“There are Shortcomings in Recognizing the Existence of Life”: Astrobiologists Warn of Gaps in the Search for Extraterrestrial Life",
-    "description": "Signs of extraterrestrial life may have been ignored by researchers for decades, say a team of astrobiologists.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-23T14:31:16Z",
-    "detected_at": "2026-05-23T15:04:54Z"
-  },
-  {
     "url": "https://thedebrief.org/could-a-i-soon-join-humans-in-sensing-the-world-around-us-this-professor-says-it-might-be-possible/",
     "title": "Could A.I. Soon Join Humans in ‘Sensing’ the World Around Us? This Professor Says It Might Be Possible",
     "description": "A new book suggests that artificial intelligence is moving beyond simply processing information and is starting to perceive the world through senses similar to those of humans.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-05T14:55:00Z",
     "detected_at": "2026-07-05T15:16:10Z"
+  },
+  {
+    "url": "https://thedebrief.org/hidden-for-more-than-1000-years-a-lost-maya-city-has-been-uncovered-deep-in-the-mexican-jungle/",
+    "title": "Hidden for More Than 1,000 Years, a Lost Maya City Has Been Uncovered Deep in the Mexican Jungle",
+    "description": "An international team of archaeologists reports the discovery of a previously unknown Maya city hidden beneath a millennium of jungle growth.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-05T16:03:03Z",
+    "detected_at": "2026-07-05T17:16:04Z"
   }
 ]
