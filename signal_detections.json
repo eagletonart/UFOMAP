@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/superhero-strength-from-futuristic-clothing-scientists-invent-wearable-robot-fabric-muscle-clothing-that-increases-the-wearers-strength-by-40/",
-    "title": "Superhero Strength from Futuristic Clothing? Scientists Invent ‘Wearable Robot’ Fabric Muscle Clothing That Increases the Wearer’s Strength by 40%",
-    "description": "Korea Institute of Machinery and Materials engineers reveal a fabric 'muscle' that makes the wearer stronger and increases range of motion.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-26T12:19:53Z",
-    "detected_at": "2026-05-26T15:50:37Z"
-  },
-  {
     "url": "https://thedebrief.org/legend-trippers-are-losing-themselves-in-mysterious-online-backrooms-resembling-empty-corridors-these-researchers-want-to-know-why/",
     "title": "Legend Trippers Are Losing Themselves in Mysterious Online “Backrooms” Resembling Empty Corridors—These Researchers Want to Know Why",
     "description": "Researchers reveal the phenomenon of \"intense emotional experiences in spaces that are not physically real\" sought by online legend trippers.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-05-25T17:26:02Z",
     "detected_at": "2026-07-08T03:16:52Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/05/manuel-carballal-ufo-phenomenon-is.html",
+    "title": "Manuel Carballal: The UFO Phenomenon Is Manipulated by the Intelligence Agencies",
+    "description": "&nbsp; The UFO Phenomenon Is Manipulated by the Intelligence Agencies By Manuel Carballal Fernando, an operative agent for CESID, locked the office door the moment I walked in. With complete nonchalance, he unholstered his pistol—a short-barrel 9mm—a",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-05-25T13:02:01Z",
+    "detected_at": "2026-07-08T06:31:45Z"
   }
 ]
