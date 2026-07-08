@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2059385432987820271#m",
-    "title": "Smart pressure from @RepEricBurlison. If UAP records, sensor data, materials analysis, crash-retrieval history, or reverse-engineering program evidence was parked inside contractor/FFRDC networks, Con",
-    "description": "Smart pressure from @RepEricBurlison . If UAP records, sensor data, materials analysis, crash-retrieval history, or reverse-engineering program evidence was parked inside contractor/FFRDC networks, Congress is pulling on the right thread. Private vau",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-26T21:25:23Z",
-    "detected_at": "2026-05-26T21:48:47Z"
-  },
-  {
-    "url": "https://nitter.net/JeremyCorbell/status/2059355446184718551#m",
-    "title": "Battlelines being drawn. Nobody’s right, if everybody’s wrong. Pay attention 🛸 http://geni.us/SleepingDog",
-    "description": "Battlelines being drawn. Nobody’s right, if everybody’s wrong. Pay attention 🛸 geni.us/SleepingDog",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-26T19:26:14Z",
-    "detected_at": "2026-05-26T21:48:47Z"
-  },
-  {
     "url": "https://nitter.net/rosscoulthart/status/2059386397421891965#m",
     "title": "Rep @EricBurlison has turned up the heat on MITRE corporation, regarding its suspected long-time role in the legacy UAP program: Burlison Presses MITRE for Answers on UAP Records, FFRDC Accountability",
     "description": "Rep @EricBurlison has turned up the heat on MITRE corporation, regarding its suspected long-time role in the legacy UAP program: Burlison Presses MITRE for Answers on UAP Records, FFRDC Accountability, and Compliance with Federal Declassification Man",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-06T15:41:59Z",
     "detected_at": "2026-07-08T17:41:16Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2074924916827115945#m",
+    "title": "Members of Congress should be focused on your family's financial security, not boosting their own stock portfolios.",
+    "description": "Members of Congress should be focused on your family's financial security, not boosting their own stock portfolios. Video",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-08T18:33:45Z",
+    "detected_at": "2026-07-08T19:39:02Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2074911498191704083#m",
+    "title": "While Trump was busy trading stocks and handing out tax breaks to billionaires, millions of Americans lost access to food assistance because of his cuts.",
+    "description": "While Trump was busy trading stocks and handing out tax breaks to billionaires, millions of Americans lost access to food assistance because of his cuts.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-08T17:40:25Z",
+    "detected_at": "2026-07-08T19:39:02Z"
   }
 ]
