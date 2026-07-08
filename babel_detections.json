@@ -637,5 +637,14 @@
     "priority": "high",
     "detected_at": "2026-06-25T02:28:25Z",
     "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-consider-the-nomination-of_lieutenant-general-douglas-a-schiess-ussf-to-be-general-and--chief-of-space-operations----the-nominee-will-be-present",
+    "text": "To consider the nomination of: Lieutenant General Douglas A. Schiess, USSF to be general and Chief of Space Operations",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-07-08T01:48:44Z",
+    "analyzed": false
   }
 ]
