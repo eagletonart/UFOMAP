@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2059493545187364930#m",
-    "title": "I don’t know. But this kinda seems important. Pay attention 🛸 SLEEPING DOG | http://geni.us/SleepingDog",
-    "description": "I don’t know. But this kinda seems important. Pay attention 🛸 SLEEPING DOG | geni.us/SleepingDog Video",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-27T04:34:59Z",
-    "detected_at": "2026-05-27T10:02:23Z"
-  },
-  {
     "url": "https://thedebrief.org/james-webb-space-telescope-survey-of-9000-star-clusters-reveals-surprising-tradeoff-in-planet-formation/",
     "title": "James Webb Space Telescope Survey of 9,000 Star Clusters Reveals Surprising Tradeoff in Planet Formation",
     "description": "James Webb Space Telescope research is revealing exciting information on star and planet formation from observations of four nearby galaxies.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-09T19:48:45Z",
     "detected_at": "2026-07-09T19:59:26Z"
+  },
+  {
+    "url": "https://nitter.net/matthew_pines/status/2075273709884162389#m",
+    "title": "RT by @rosscoulthart: \"I think there's a very real possibility we're going to arrive at a conclusion in our lifetime that perhaps there's life everywhere out there,\" Isaacman explained. \"It isn't as i",
+    "description": "\"I think there's a very real possibility we're going to arrive at a conclusion in our lifetime that perhaps there's life everywhere out there,\" Isaacman explained. \"It isn't as infrequent as we might think it to possibly be.\"",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-07-09T17:39:43Z",
+    "detected_at": "2026-07-09T21:38:15Z"
   }
 ]
