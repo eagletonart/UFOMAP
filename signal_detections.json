@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2059520861959495687#m",
-    "title": "FACT 🛸🐺⏰🥋🎱🇺🇸",
-    "description": "FACT 🛸🐺⏰🥋🎱🇺🇸 UAP James (@UAPJames) Jeremy Corbell says White House and Pentagon comms departments contacted him to ask how they should tell Americans the truth about UFOs “You have to say why you’ve kept this hidden. Who you’ve hurt to keep it hidden",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-27T06:23:32Z",
-    "detected_at": "2026-05-27T10:02:23Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2059493545187364930#m",
     "title": "I don’t know. But this kinda seems important. Pay attention 🛸 SLEEPING DOG | http://geni.us/SleepingDog",
     "description": "I don’t know. But this kinda seems important. Pay attention 🛸 SLEEPING DOG | geni.us/SleepingDog Video",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-09T17:09:50Z",
     "detected_at": "2026-07-09T17:59:39Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2075306178955903050#m",
+    "title": "Trump is spending MILLIONS of taxpayer dollars on his ballroom but refuses to sign a bipartisan affordable housing bill that would help working Americans. Millions for DC decorating, nothing for you.",
+    "description": "Trump is spending MILLIONS of taxpayer dollars on his ballroom but refuses to sign a bipartisan affordable housing bill that would help working Americans. Millions for DC decorating, nothing for you.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-09T19:48:45Z",
+    "detected_at": "2026-07-09T19:59:26Z"
   }
 ]
