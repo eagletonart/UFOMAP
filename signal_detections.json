@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/james-webb-space-telescope-survey-of-9000-star-clusters-reveals-surprising-tradeoff-in-planet-formation/",
-    "title": "James Webb Space Telescope Survey of 9,000 Star Clusters Reveals Surprising Tradeoff in Planet Formation",
-    "description": "James Webb Space Telescope research is revealing exciting information on star and planet formation from observations of four nearby galaxies.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-27T12:05:20Z",
-    "detected_at": "2026-05-27T15:55:54Z"
-  },
-  {
-    "url": "https://thedebrief.org/scientists-thought-this-species-was-extinct-for-decades-a-chance-photograph-in-remote-australia-just-proved-otherwise/",
-    "title": "Scientists Thought This Species Was Extinct for Decades—A Chance Photograph in Remote Australia Just Proved Otherwise",
-    "description": "A discovery in remote northern Australia has revealed the survival of a species thought to have been driven to extinction more than half a century ago.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-27T12:00:33Z",
-    "detected_at": "2026-05-27T15:55:54Z"
-  },
-  {
     "url": "https://thedebrief.org/psilocybin-helped-reduce-depression-symptoms-within-just-days-recent-clinical-trial-reveals/",
     "title": "Psilocybin Helped Reduce Depression Symptoms Within Just Days, Recent Clinical Trial Reveals",
     "description": "A recent clinical trial in Sweden found that a single oral dose of psilocybin reduced depressive symptoms within 48 hours in participants suffering from moderate to severe depression.",
@@ -15998,5 +15966,37 @@
     "location": "New York, NY",
     "published_at": "2026-07-09T17:39:43Z",
     "detected_at": "2026-07-09T21:38:15Z"
+  },
+  {
+    "url": "https://nitter.net/LueElizondo/status/2075361286737612968#m",
+    "title": "As I said… https://www.foxnews.com/us/nasa-chief-confirms-agency-unexplained-ufo-imagery-dont-know-what-it-is",
+    "description": "As I said… foxnews.com/us/nasa-chief-co… Link NASA chief confirms agency has unexplained UFO imagery; &apos;we don&apos;t know what it is&apos; Jared Isaacman says NASA has captured imagery of unknown objects it cannot explain, as Trump pushes broade",
+    "source_name": "Lue Elizondo (@LueElizondo)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8719,
+    "lon": -77.0563,
+    "location": "Arlington, VA",
+    "published_at": "2026-07-09T23:27:43Z",
+    "detected_at": "2026-07-10T03:43:08Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2075407445078249653#m",
+    "title": "Grateful for everyone who came out tonight! Your support keeps us fighting for Ozarks values in Washington. Thank you! 🇺🇸",
+    "description": "Grateful for everyone who came out tonight! Your support keeps us fighting for Ozarks values in Washington. Thank you! 🇺🇸",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-10T02:31:08Z",
+    "detected_at": "2026-07-10T03:43:08Z"
   }
 ]
