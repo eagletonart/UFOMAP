@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/jamestalarico/status/2059442627393597577#m",
-    "title": "RT by @SenGillibrand: Ken Paxton is the most corrupt politician in America. He embodies the broken system we’re running against. It’s time to come together: The People vs. Ken Paxton",
-    "description": "Ken Paxton is the most corrupt politician in America. He embodies the broken system we’re running against. It’s time to come together: The People vs. Ken Paxton Video",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-27T01:12:39Z",
-    "detected_at": "2026-05-27T22:00:21Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2059715629632892968#m",
     "title": "Americans are cutting back on food and basic essentials. Trump is planning his birthday party.",
     "description": "Americans are cutting back on food and basic essentials. Trump is planning his birthday party.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-10T20:06:54Z",
     "detected_at": "2026-07-10T21:09:18Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2075691762484494739#m",
+    "title": "Trump spent BILLIONS of taxpayer dollars to kill projects that would’ve helped to lower energy costs. He promised to cut electricity bills in half. Instead, working families are paying record-high cos",
+    "description": "Trump spent BILLIONS of taxpayer dollars to kill projects that would’ve helped to lower energy costs. He promised to cut electricity bills in half. Instead, working families are paying record-high costs.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-10T21:20:55Z",
+    "detected_at": "2026-07-10T23:01:25Z"
   }
 ]
