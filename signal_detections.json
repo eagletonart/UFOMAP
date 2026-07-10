@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/TeamTalaricoHQ/status/2059474990538379428#m",
-    "title": "RT by @SenGillibrand: .@JamesTalarico: Ken Paxton is morally unfit for office. He’ll lie to you with a straight face. He’s failed the character test. He’s the most corrupt Attorney General of our life",
-    "description": ". @JamesTalarico : Ken Paxton is morally unfit for office. He’ll lie to you with a straight face. He’s failed the character test. He’s the most corrupt Attorney General of our lifetime, and he puts the interests of himself over the laws of Texas. Tho",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-27T03:21:15Z",
-    "detected_at": "2026-05-27T22:00:21Z"
-  },
-  {
     "url": "https://nitter.net/jamestalarico/status/2059442627393597577#m",
     "title": "RT by @SenGillibrand: Ken Paxton is the most corrupt politician in America. He embodies the broken system we’re running against. It’s time to come together: The People vs. Ken Paxton",
     "description": "Ken Paxton is the most corrupt politician in America. He embodies the broken system we’re running against. It’s time to come together: The People vs. Ken Paxton Video",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-10T18:31:35Z",
     "detected_at": "2026-07-10T19:38:32Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2075673134234017925#m",
+    "title": "Trump is desperate to make it harder for you to vote.",
+    "description": "Trump is desperate to make it harder for you to vote.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-10T20:06:54Z",
+    "detected_at": "2026-07-10T21:09:18Z"
   }
 ]
