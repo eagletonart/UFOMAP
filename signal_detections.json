@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/uap_news/status/2059746325319590302#m",
-    "title": "RT by @rosscoulthart: 🚨 BREAKING: MITRE confirms it’s reviewing archives after Rep. Eric Burlison demanded records on UAPs, crash retrievals, reverse-engineering programs, and “technologies of unknown",
-    "description": "🚨 BREAKING: MITRE confirms it’s reviewing archives after Rep. Eric Burlison demanded records on UAPs, crash retrievals, reverse-engineering programs, and “technologies of unknown origin” dating back to 1930. The 10-page request cites whistleblower cl",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-05-27T21:19:26Z",
-    "detected_at": "2026-05-28T04:01:38Z"
-  },
-  {
     "url": "https://www.youtube.com/shorts/Fm1Eg4bMfAw",
     "title": "Has the Presidency Grown Too Powerful?",
     "description": "",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-10T21:11:14Z",
     "detected_at": "2026-07-11T02:56:45Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/05/leopoldo-zambrano-dismembered-man-who.html",
+    "title": "Leopoldo Zambrano: The Dismembered Man Who Fell From The Sky",
+    "description": "&nbsp; The Dismembered Man Who Fell From The Sky By Leopoldo Zambrano Enríquez 1978. State of Tabasco, Mexico. A group of seven workers from the company \"Petróleos Mexicanos\" were heading down the Gulf Circuit highway—packed tightly into a \"Gremlin\" ",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-05-27T15:50:14Z",
+    "detected_at": "2026-07-11T06:17:22Z"
   }
 ]
