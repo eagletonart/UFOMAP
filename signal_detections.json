@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/Jarrad_Winter/status/2059859728080281917#m",
-    "title": "RT by @JeremyCorbell: ✅️ Fact Check: True 🤬 @JeremyCorbell & @g_knapp are subjected to constant public smear campaigns, endless harassment from intel agencies, and infinite death threats. 🤔 None of th",
-    "description": "✅️ Fact Check: True 🤬 @JeremyCorbell &amp; @g_knapp are subjected to constant public smear campaigns, endless harassment from intel agencies, and infinite death threats. 🤔 None of that would be happening if they were spewing nonsense and peddling 🐴💩.",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-28T04:50:04Z",
-    "detected_at": "2026-05-28T10:11:49Z"
-  },
-  {
     "url": "https://nitter.net/opngate/status/2059833857189319041#m",
     "title": "RT by @JeremyCorbell: He’s right - we’ve known about these videos for a long time. They have them. Let’s fight for them. @RepEricBurlison @realDonaldTrump it’s time the American people saw the truth",
     "description": "He’s right - we’ve known about these videos for a long time. They have them. Let’s fight for them. @RepEricBurlison @realDonaldTrump it’s time the American people saw the truth Video",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-07-11T15:37:32Z",
     "detected_at": "2026-07-11T17:01:51Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2076033134483657140#m",
+    "title": "Trump thinks affordability is \"phony.\" The American people say they're in crisis.",
+    "description": "Trump thinks affordability is \"phony.\" The American people say they're in crisis.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-11T19:57:24Z",
+    "detected_at": "2026-07-11T20:54:52Z"
   }
 ]
