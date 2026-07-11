@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2059897958750097662#m",
-    "title": "Fact.",
-    "description": "Fact. UAP James (@UAPJames) Jeremy Corbell tells NBC News of satellite footage showing UFOs coming in from space and going in/out of the ocean Video — https://nitter.net/UAPJames/status/2059826976622305400#m",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-28T07:21:59Z",
-    "detected_at": "2026-05-28T10:11:49Z"
-  },
-  {
     "url": "https://nitter.net/Jarrad_Winter/status/2059859728080281917#m",
     "title": "RT by @JeremyCorbell: ✅️ Fact Check: True 🤬 @JeremyCorbell & @g_knapp are subjected to constant public smear campaigns, endless harassment from intel agencies, and infinite death threats. 🤔 None of th",
     "description": "✅️ Fact Check: True 🤬 @JeremyCorbell &amp; @g_knapp are subjected to constant public smear campaigns, endless harassment from intel agencies, and infinite death threats. 🤔 None of that would be happening if they were spewing nonsense and peddling 🐴💩.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-11T13:51:00Z",
     "detected_at": "2026-07-11T14:58:18Z"
+  },
+  {
+    "url": "https://thedebrief.org/these-unusual-step-like-structures-on-hillsides-baffled-darwin-150-years-ago-now-scientists-finally-know-their-origins/",
+    "title": "These Unusual Step-Like Structures on Hillsides Baffled Darwin 150 Years Ago—Now Scientists Finally Know Their Origins",
+    "description": "An unusual phenomenon that has been recognized around the world for more than a century has finally been resolved: what are the origins of the distinctive, stair-like ridges that form on steep hillsides?",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-11T15:37:32Z",
+    "detected_at": "2026-07-11T17:01:51Z"
   }
 ]
