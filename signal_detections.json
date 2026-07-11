@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://www.youtube.com/shorts/Fm1Eg4bMfAw",
-    "title": "Has the Presidency Grown Too Powerful?",
-    "description": "",
-    "source_name": "C-SPAN",
-    "source_type": "youtube",
-    "author": "C-SPAN",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-27T22:00:21Z",
-    "detected_at": "2026-05-28T10:11:49Z"
-  },
-  {
     "url": "https://nitter.net/PostDisclosure/status/2059626554016026987#m",
     "title": "RT by @JeremyCorbell: We've never been closer",
     "description": "We've never been closer UAP James (@UAPJames) Jeremy Corbell says White House and Pentagon comms departments contacted him to ask how they should tell Americans the truth about UFOs “You have to say why you’ve kept this hidden. Who you’ve hurt to kee",
@@ -15998,5 +15982,21 @@
     "location": "Latin America",
     "published_at": "2026-05-27T15:50:14Z",
     "detected_at": "2026-07-11T06:17:22Z"
+  },
+  {
+    "url": "https://thedebrief.org/this-color-changing-material-could-give-robots-a-new-way-to-detect-touch/",
+    "title": "This Color-Changing Material Could Give Robots a New Way to Detect Touch",
+    "description": "Engineers at Queen Mary University of London have created a tactile sensor, described in a study published in Science Advances, that allows robots to detect touch using a simple camera.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-11T12:56:18Z",
+    "detected_at": "2026-07-11T13:35:55Z"
   }
 ]
