@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/TheEXECUTlONER_/status/2059720314280395207#m",
-    "title": "RT by @EricBurlison: This lady is driving down a stretch of road on St. Louis St. in Springfield, Missouri. She is driving exactly 30 Mph and as she does so the rumble strips create the melody of “Ame",
-    "description": "This lady is driving down a stretch of road on St. Louis St. in Springfield, Missouri. She is driving exactly 30 Mph and as she does so the rumble strips create the melody of “America The Beautiful”. This just opened up recently. The song was chosen ",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-27T19:36:05Z",
-    "detected_at": "2026-05-28T10:11:49Z"
-  },
-  {
     "url": "https://thedebrief.org/new-report-highlights-official-concerns-over-anti-tech-extremism-in-u-s-as-ai-related-fears-rise/",
     "title": "New Report Highlights Official Concerns Over “Anti-Tech Extremism” in U.S. as AI-Related Fears Rise",
     "description": "This week, a new report argues that U.S. federal officials are warning about possible concerns over forms of anti-tech extremism in America.",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-07-12T14:08:02Z",
     "detected_at": "2026-07-12T15:00:28Z"
+  },
+  {
+    "url": "https://nitter.net/rosscoulthart/status/2076395683721228480#m",
+    "title": "Omar Yaghi, an immigrant to the United States who shared last year’s Nobel Prize in Chemistry, has left the University of California, Berkeley, for China, where he will lead an institute using AI to a",
+    "description": "Omar Yaghi, an immigrant to the United States who shared last year’s Nobel Prize in Chemistry, has left the University of California, Berkeley, for China, where he will lead an institute using AI to accelerate the discovery of new materials. nytimes.",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-07-12T19:58:03Z",
+    "detected_at": "2026-07-12T20:55:11Z"
   }
 ]
