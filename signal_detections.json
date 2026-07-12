@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/new-report-highlights-official-concerns-over-anti-tech-extremism-in-u-s-as-ai-related-fears-rise/",
-    "title": "New Report Highlights Official Concerns Over “Anti-Tech Extremism” in U.S. as AI-Related Fears Rise",
-    "description": "This week, a new report argues that U.S. federal officials are warning about possible concerns over forms of anti-tech extremism in America.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-28T15:45:28Z",
-    "detected_at": "2026-05-28T16:09:36Z"
-  },
-  {
     "url": "https://thedebrief.org/in-the-high-himalayas-a-mysterious-animal-that-has-intrigued-scientists-for-160-years-has-revealed-an-astonishing-secret/",
     "title": "In the High Himalayas, a Mysterious Animal That Has Intrigued Scientists for 160 Years Has Revealed an Astonishing Secret",
     "description": "A major biological surprise has emerged from the heart of the mysterious Himalayas, according to scientists who made the unexpected discovery.",
@@ -15998,5 +15982,21 @@
     "location": "New York, NY",
     "published_at": "2026-07-12T19:58:03Z",
     "detected_at": "2026-07-12T20:55:11Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/07/mexico-investigation-into-strange_01524931589.html",
+    "title": "Mexico: An Investigation Into Strange Winged Beings",
+    "description": "&nbsp; &nbsp;An Investigation into Strange Winged Beings By Ing. Marco Antonio Reynoso Ballesteros President, FUNDACIÓN COSMOS A.C.(*) Monterrey, Mexico During the last two weeks of July 1994, a strange winged creature—half-human, half-bird—was spott",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-07-12T14:01:23Z",
+    "detected_at": "2026-07-12T22:54:33Z"
   }
 ]
