@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2059893178677985408#m",
-    "title": "I appreciate the guts @GadiNBC showed tonight - telling a national audience that his fascination with UAP started with a personal sighting as a kid. Driving through New Mexico with his father. Somethi",
-    "description": "I appreciate the guts @GadiNBC showed tonight - telling a national audience that his fascination with UAP started with a personal sighting as a kid. Driving through New Mexico with his father. Something shot off at impossible speed. Gone. He’s in ext",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-28T07:02:59Z",
-    "detected_at": "2026-05-28T10:11:49Z"
-  },
-  {
-    "url": "https://nitter.net/JeremyCorbell/status/2059886157627044331#m",
-    "title": "Super cool to see this with such clarity! Pay attention 🛸 SLEEPING DOG | http://geni.us/SleepingDog",
-    "description": "Super cool to see this with such clarity! Pay attention 🛸 SLEEPING DOG | geni.us/SleepingDog Marik vR (@MvonRen) The progressive, natural occlusion of this spherical object by the clouds is incredible. (We know this is not a solar lens flare because ",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-28T06:35:05Z",
-    "detected_at": "2026-05-28T10:11:49Z"
-  },
-  {
     "url": "https://nitter.net/TheEXECUTlONER_/status/2059720314280395207#m",
     "title": "RT by @EricBurlison: This lady is driving down a stretch of road on St. Louis St. in Springfield, Missouri. She is driving exactly 30 Mph and as she does so the rumble strips create the melody of “Ame",
     "description": "This lady is driving down a stretch of road on St. Louis St. in Springfield, Missouri. She is driving exactly 30 Mph and as she does so the rumble strips create the melody of “America The Beautiful”. This just opened up recently. The song was chosen ",
@@ -15998,5 +15966,37 @@
     "location": "Latin America",
     "published_at": "2026-07-12T05:52:00Z",
     "detected_at": "2026-07-12T13:36:00Z"
+  },
+  {
+    "url": "https://thedebrief.org/mysterious-stone-sphere-unearthed-at-ancient-site-in-azerbaijan-baffles-archaeologists-raises-new-questions-about-neolithic-technology/",
+    "title": "Mysterious Stone Sphere Unearthed at Ancient Site in Azerbaijan Baffles Archaeologists, Raises New Questions About Neolithic Technology",
+    "description": "A stone sphere unearthed at an archaeological site in Azerbaijan is reportedly unlike anything previously documented in the South Caucasus.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-12T14:47:32Z",
+    "detected_at": "2026-07-12T15:00:28Z"
+  },
+  {
+    "url": "https://thedebrief.org/mit-engineers-unleash-new-aerial-aquatic-robot-that-can-swim-underwater-and-fly-like-a-bird/",
+    "title": "MIT Engineers Unleash New ‘Aerial-Aquatic’ Robot That Can Swim Underwater and Fly Like a Bird",
+    "description": "Engineers have developed a new aerial-aquatic robot that can swim underwater, then rise to the surface and take flight.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-12T14:08:02Z",
+    "detected_at": "2026-07-12T15:00:28Z"
   }
 ]
