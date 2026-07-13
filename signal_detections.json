@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/experts-warn-this-invisible-surveillance-system-is-already-built-into-wifi/",
-    "title": "Experts Warn This ‘Invisible’ Surveillance System is Already Built Into WiFi",
-    "description": "Many people believe that revoking certain microphone privileges on their phones or smart devices is enough to avoid digital surveillance; however, a new study from Germany shows that this is not the case.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-28T11:40:11Z",
-    "detected_at": "2026-05-28T16:09:36Z"
-  },
-  {
-    "url": "https://www.youtube.com/shorts/dr-awOtt6Yc",
-    "title": "Step Inside the Muhammad Ali Center",
-    "description": "",
-    "source_name": "C-SPAN",
-    "source_type": "youtube",
-    "author": "C-SPAN",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-28T15:44:48Z",
-    "detected_at": "2026-05-28T16:09:36Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2060026815574409404#m",
     "title": "Here is the policy ask. Revive the National Declassification Center. Empower a strong civilian authority that can override the agencies and force release after 25 years, with only a narrow national-se",
     "description": "Here is the policy ask. Revive the National Declassification Center. Empower a strong civilian authority that can override the agencies and force release after 25 years, with only a narrow national-security carve-out. JFK, UAP, Epstein. Same problem ",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-07-13T12:21:41Z",
     "detected_at": "2026-07-13T14:43:22Z"
+  },
+  {
+    "url": "https://thedebrief.org/did-this-ancient-human-survive-being-stabbed-in-the-face-100000-years-ago/",
+    "title": "Did this Ancient Human Survive Being Stabbed in the Face 100,000 Years Ago?",
+    "description": "In Israel’s Qafzeh cave, archaeologists have discovered ancient human remains revealing illness, violence, death, and survival in the past.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-13T15:24:17Z",
+    "detected_at": "2026-07-13T17:57:29Z"
+  },
+  {
+    "url": "https://ufo.com.br/etf-criado-para-apostar-nos-impactos-de-uma-possivel-revelacao-sobre-uaps-ja-reune-milhoes-de-dolares-nos-estados-unidos/",
+    "title": "Wall Street cria ETF voltado à divulgação de UAPs",
+    "description": "Um fundo de investimento criado para apostar nos impactos econômicos de uma possível revelação sobre UAPs já reúne cerca de US$ 3 milhões em investimentos nos Estados Unidos. Enquanto parte da sociedade ainda debate a existência de inteligências não ",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-07-13T14:22:06Z",
+    "detected_at": "2026-07-13T17:57:29Z"
   }
 ]
