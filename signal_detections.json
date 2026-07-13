@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/rosscoulthart/status/2060111142488592823#m",
-    "title": "Someone in the White House seems to have a thing about crop circles now.",
-    "description": "Someone in the White House seems to have a thing about crop circles now. The White House (@WhiteHouse) Loading… tonight. 👀 Video — https://nitter.net/WhiteHouse/status/2060107136148091190#m",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-05-28T21:29:06Z",
-    "detected_at": "2026-05-28T23:21:23Z"
-  },
-  {
     "url": "https://nitter.net/RepMoskowitz/status/2060099184930271457#m",
     "title": "I was honored to speak at the Boca Raton Chamber today and thank the small business owners of South Florida. At a time when so many are being asked to do more with less, Congress should be focused on ",
     "description": "I was honored to speak at the Boca Raton Chamber today and thank the small business owners of South Florida. At a time when so many are being asked to do more with less, Congress should be focused on making life easier for small businesses, not harde",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-13T19:35:20Z",
     "detected_at": "2026-07-13T21:00:05Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2076776059077361803#m",
+    "title": "Todd Blanche cut this corrupt, illegal deal because he's Trump's lawyer first. He has no business being confirmed Attorney General of the United States. https://apnews.com/article/trump-irs-justice-de",
+    "description": "Todd Blanche cut this corrupt, illegal deal because he's Trump's lawyer first. He has no business being confirmed Attorney General of the United States. apnews.com/article/trump-irs… Link Judge says Trump IRS lawsuit was filed for &apos;improper purp",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-13T21:09:31Z",
+    "detected_at": "2026-07-13T22:58:09Z"
   }
 ]
