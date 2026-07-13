@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2060119183174885821#m",
-    "title": "We must PROVOKE this change. Pay attention 🛸🐺⏰ SLEEPING DOG | http://geni.us/SleepingDog",
-    "description": "We must PROVOKE this change. Pay attention 🛸🐺⏰ SLEEPING DOG | geni.us/SleepingDog Video",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-05-28T22:01:03Z",
-    "detected_at": "2026-05-28T23:21:23Z"
-  },
-  {
-    "url": "https://nitter.net/rosscoulthart/status/2060112542207496687#m",
-    "title": "Ok, so The official White House X-feed is using mysterious, high-production social-media tactics to get people talking and paying attention. It doesn’t explicitly say what’s coming, but given the timi",
-    "description": "Ok, so The official White House X-feed is using mysterious, high-production social-media tactics to get people talking and paying attention. It doesn’t explicitly say what’s coming, but given the timing and recent UAP declassifications, the strongest",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-05-28T21:34:39Z",
-    "detected_at": "2026-05-28T23:21:23Z"
-  },
-  {
     "url": "https://nitter.net/rosscoulthart/status/2060111142488592823#m",
     "title": "Someone in the White House seems to have a thing about crop circles now.",
     "description": "Someone in the White House seems to have a thing about crop circles now. The White House (@WhiteHouse) Loading… tonight. 👀 Video — https://nitter.net/WhiteHouse/status/2060107136148091190#m",
@@ -15998,5 +15966,37 @@
     "location": "Las Vegas, NV",
     "published_at": "2017-01-09T02:05:20Z",
     "detected_at": "2026-07-13T19:40:21Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2076768776553468342#m",
+    "title": "Trump wants a forever occupation across the world to clean up the mess he created. Trump is forcing the American people to foot the bill for his chaos.",
+    "description": "Trump wants a forever occupation across the world to clean up the mess he created. Trump is forcing the American people to foot the bill for his chaos.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-13T20:40:35Z",
+    "detected_at": "2026-07-13T21:00:05Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2076752355706409369#m",
+    "title": "We have identified one.",
+    "description": "We have identified one. Secretary of War Pete Hegseth (@SecWar) To leak sensitive national defense information is to betray our warriors and put them in danger. That’s why the @DEPTOFWAR and @THEJUSTICEDEPT have created a joint task force to IDENTIFY",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-13T19:35:20Z",
+    "detected_at": "2026-07-13T21:00:05Z"
   }
 ]
