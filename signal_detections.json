@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/strange-19-day-solar-signal-breaks-nasas-previous-record-nearly-fourfold/",
-    "title": "Strange 19-Day Solar Signal Breaks NASA’s Previous Record Nearly Fourfold",
-    "description": "NASA researchers have captured the longest solar radio emission ever observed, exceeding the previous record by almost fourfold.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-28T12:05:09Z",
-    "detected_at": "2026-05-28T16:09:36Z"
-  },
-  {
-    "url": "https://thedebrief.org/hidden-in-a-croatian-cave-archaeologists-have-made-a-perplexing-discovery-they-say-remains-open-to-interpretation/",
-    "title": "Hidden in a Croatian Cave, Archaeologists Have Made a Perplexing Discovery They Say “Remains Open to Interpretation”",
-    "description": "Archaeologists in Croatia have made an unusual discovery at an ancient ritual site along the country’s southern coast.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-05-28T11:45:18Z",
-    "detected_at": "2026-05-28T16:09:36Z"
-  },
-  {
     "url": "https://thedebrief.org/experts-warn-this-invisible-surveillance-system-is-already-built-into-wifi/",
     "title": "Experts Warn This ‘Invisible’ Surveillance System is Already Built Into WiFi",
     "description": "Many people believe that revoking certain microphone privileges on their phones or smart devices is enough to avoid digital surveillance; however, a new study from Germany shows that this is not the case.",
@@ -15998,5 +15966,37 @@
     "location": "New York, NY",
     "published_at": "2026-07-13T05:35:55Z",
     "detected_at": "2026-07-13T07:24:34Z"
+  },
+  {
+    "url": "https://thedebrief.org/modern-neuroscience-is-starting-to-look-surprisingly-similar-to-freuds-theory-of-the-mind/",
+    "title": "Modern Neuroscience Is Starting to Look Surprisingly Similar to Freud’s Theory of the Mind",
+    "description": "A new study finds surprising parallels between Freud’s theories of the mind and modern neuroscience, suggesting the brain may work as a prediction machine.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-13T13:30:18Z",
+    "detected_at": "2026-07-13T14:43:22Z"
+  },
+  {
+    "url": "https://thedebrief.org/ai-identifies-the-most-effective-ways-to-measure-waters-hidden-structure/",
+    "title": "AI Identifies the Most Effective Ways to Measure Water’s Hidden Structure",
+    "description": "Researchers at the University of Osaka developed a neural network to test 16 different 'structural descriptors,' which are mathematical tools for measuring how ordered or disordered water molecules are at the microscopic scale.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-13T12:21:41Z",
+    "detected_at": "2026-07-13T14:43:22Z"
   }
 ]
