@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2061214029448618188#m",
-    "title": "Millions of Americans are losing their health insurance for one clear reason: Trump's attacks on healthcare. Trump and Senate Republicans turned their backs on working families and created a healthcar",
-    "description": "Millions of Americans are losing their health insurance for one clear reason: Trump's attacks on healthcare. Trump and Senate Republicans turned their backs on working families and created a healthcare affordability crisis.",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-31T22:31:34Z",
-    "detected_at": "2026-05-31T23:04:30Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2061291212112564424#m",
     "title": "You’ve done been called @DreamlandMotel ☎️ https://youtu.be/z0wHi-7sAbw",
     "description": "You’ve done been called @DreamlandMotel ☎️ piped.video/z0wHi-7sAbw",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-15T17:33:23Z",
     "detected_at": "2026-07-15T19:17:28Z"
+  },
+  {
+    "url": "https://nitter.net/RepMoskowitz/status/2077474446898844114#m",
+    "title": "My time as Florida's Director of Emergency Management taught me one key thing: Preparation is key! During every hurricane I managed, we had an important relationship with the utility crews who worked ",
+    "description": "My time as Florida's Director of Emergency Management taught me one key thing: Preparation is key! During every hurricane I managed, we had an important relationship with the utility crews who worked night and day to bring our state back online. They",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-15T19:24:40Z",
+    "detected_at": "2026-07-15T21:03:45Z"
   }
 ]
