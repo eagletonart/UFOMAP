@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2061291212112564424#m",
-    "title": "You’ve done been called @DreamlandMotel ☎️ https://youtu.be/z0wHi-7sAbw",
-    "description": "You’ve done been called @DreamlandMotel ☎️ piped.video/z0wHi-7sAbw",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-01T03:38:16Z",
-    "detected_at": "2026-06-01T04:43:57Z"
-  },
-  {
     "url": "https://nitter.net/rosscoulthart/status/2061243793660362831#m",
     "title": "Republican Congresswoman Lauren Boebert (CO) acknowledges the best UAP stuff is still being hidden from the public. Among her extraordinary claims, she says she has been told something in a classified",
     "description": "Republican Congresswoman Lauren Boebert (CO) acknowledges the best UAP stuff is still being hidden from the public. Among her extraordinary claims, she says she has been told something in a classified setting which confirms the existence of alien hyb",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-15T19:24:40Z",
     "detected_at": "2026-07-15T21:03:45Z"
+  },
+  {
+    "url": "https://nitter.net/RepMoskowitz/status/2077521421635371337#m",
+    "title": "An ICE agent shot a father in Houston who wasn't even their target and killed him. Now they're trying to deport the witnesses. Days later, agents killed a man in Maine. Neither agent had a body camera",
+    "description": "An ICE agent shot a father in Houston who wasn't even their target and killed him. Now they're trying to deport the witnesses. Days later, agents killed a man in Maine. Neither agent had a body camera. This was supposed to be fixed! Time and time aga",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-15T22:31:20Z",
+    "detected_at": "2026-07-15T23:00:18Z"
   }
 ]
