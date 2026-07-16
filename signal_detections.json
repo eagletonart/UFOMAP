@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/nasa-officials-confirm-rare-event-captured-in-satellite-images-that-caused-loud-booms-heard-throughout-new-england/",
-    "title": "NASA Officials Confirm Rare Event Captured in Satellite Images That Caused Loud Booms Heard Throughout New England",
-    "description": "Residents of New England were startled over the weekend as a loud quaking boom shook the northeast, while many observers spotted a bright fireball streaking through the skies over the U.S. and Canada.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-02T13:35:41Z",
-    "detected_at": "2026-06-02T16:41:44Z"
-  },
-  {
     "url": "https://thedebrief.org/exoplanet-magnetism-revealed-in-new-study-researchers-call-a-key-step-in-decoding-the-survival-of-planets/",
     "title": "Exoplanet Magnetism Revealed in New Study Researchers Call a “Key Step” in Decoding the Survival of Planets",
     "description": "The best evidence for exoplanet magnetic fields ever discovered has emerged from new research that measures wind speeds on ultra-hot Jupiters.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-16T19:28:57Z",
     "detected_at": "2026-07-16T21:05:08Z"
+  },
+  {
+    "url": "https://nitter.net/TeamOssoff/status/2077216711229550851#m",
+    "title": "RT by @SenGillibrand: Ossoff: There's talk that he might try to declare me and Raphael Warnock illegitimate senators. Obviously, the President has no power to do that, but he does have the power to tr",
+    "description": "Ossoff: There's talk that he might try to declare me and Raphael Warnock illegitimate senators. Obviously, the President has no power to do that, but he does have the power to try to intimidate people. He's demonstrated his will to abuse power. I exp",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-15T02:20:31Z",
+    "detected_at": "2026-07-16T23:00:40Z"
   }
 ]
