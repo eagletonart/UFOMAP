@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2062211180551160183#m",
-    "title": "ew.com/former-intel-officer-…",
-    "description": "ew.com/former-intel-officer-…",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-03T16:33:54Z",
-    "detected_at": "2026-06-03T16:58:13Z"
-  },
-  {
-    "url": "https://nitter.net/EricBurlison/status/2062194348649844862#m",
-    "title": "Real oversight isn't a press release. It's hearings, documents, and answers. Right now grand standers are blocking the hearings I actually need to hold the Pentagon and the agencies accountable. That ",
-    "description": "Real oversight isn't a press release. It's hearings, documents, and answers. Right now grand standers are blocking the hearings I actually need to hold the Pentagon and the agencies accountable. That has to stop.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-03T15:27:01Z",
-    "detected_at": "2026-06-03T16:58:13Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2062175724962718186#m",
     "title": "John Cornyn was a few votes from being Senate Majority Leader. Now he's out of Congress. People in DC underestimate how much America hates DC. That bell should be ringing in every Senate office. Pass ",
     "description": "John Cornyn was a few votes from being Senate Majority Leader. Now he's out of Congress. People in DC underestimate how much America hates DC. That bell should be ringing in every Senate office. Pass the SAVE America Act.",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-17T16:31:29Z",
     "detected_at": "2026-07-17T17:15:52Z"
+  },
+  {
+    "url": "https://nitter.net/RoyCooperNC/status/2078087612078707097#m",
+    "title": "RT by @SenGillibrand: Insurance companies have gotten away with far too much for far too long. I have a plan to take them on so you actually get what you paid for.",
+    "description": "Insurance companies have gotten away with far too much for far too long. I have a plan to take them on so you actually get what you paid for. Video",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-17T12:01:10Z",
+    "detected_at": "2026-07-17T19:16:03Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2078172977871376569#m",
+    "title": "While everyday families struggle with rising costs, Donald Trump is busy finding new ways to enrich himself from the Oval Office. His media company is planning to charge Wall Street for millisecond-fa",
+    "description": "While everyday families struggle with rising costs, Donald Trump is busy finding new ways to enrich himself from the Oval Office. His media company is planning to charge Wall Street for millisecond-fast access to his posts so they can profit off mark",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-17T17:40:23Z",
+    "detected_at": "2026-07-17T19:16:03Z"
   }
 ]
