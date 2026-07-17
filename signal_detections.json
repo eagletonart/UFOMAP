@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SherrodBrown/status/2061781163564298569#m",
-    "title": "RT by @SenGillibrand: I’m Sherrod Brown, and I approve this message.",
-    "description": "I’m Sherrod Brown, and I approve this message. Video",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-02T12:05:10Z",
-    "detected_at": "2026-06-02T23:50:10Z"
-  },
-  {
-    "url": "https://nitter.net/treys_law/status/2061856178506801169#m",
-    "title": "RT by @SenGillibrand: Thank you, @SenGillibrand, for championing TREY’S Law in U.S. Congress alongside our many bipartisan cosponsors in both chambers! With a unanimous consent vote secured in the Sen",
-    "description": "Thank you, @SenGillibrand , for championing TREY’S Law in U.S. Congress alongside our many bipartisan cosponsors in both chambers! With a unanimous consent vote secured in the Senate, momentum now shifts to the House of Representatives, where compani",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-02T17:03:15Z",
-    "detected_at": "2026-06-02T23:50:10Z"
-  },
-  {
     "url": "https://nitter.net/LueElizondo/status/2061990432200851623#m",
     "title": "Las Vegas we’ll see you shortly! @TimothyAlberino",
     "description": "Las Vegas we’ll see you shortly! @TimothyAlberino Video",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-16T23:12:12Z",
     "detected_at": "2026-07-17T02:56:09Z"
+  },
+  {
+    "url": "https://nitter.net/LueElizondo/status/2061890358984712265#m",
+    "title": "Tonight Las Vegas with @TimothyAlberino at Wiseguys comedy club - looking forward to seeing you all there! https://www.wiseguyscomedy.com/nevada/las-vegas/town-square/e/luis-elizondo-persona-non-grata",
+    "description": "Tonight Las Vegas with @TimothyAlberino at Wiseguys comedy club - looking forward to seeing you all there! wiseguyscomedy.com/nevada/la… Video",
+    "source_name": "Lue Elizondo (@LueElizondo)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8719,
+    "lon": -77.0563,
+    "location": "Arlington, VA",
+    "published_at": "2026-06-02T19:19:04Z",
+    "detected_at": "2026-07-17T06:20:29Z"
+  },
+  {
+    "url": "https://nitter.net/SpeakerTimJones/status/2077755567209136326#m",
+    "title": "RT by @EricBurlison: Take it from one of Trump’s top economists, and a born & bred Missourian, Dr. @aaron_hedlund - MO’s Amendment 5 is GREAT for all Missourians! #MOGov #MOLeg",
+    "description": "Take it from one of Trump’s top economists, and a born &amp; bred Missourian, Dr. @aaron_hedlund - MO’s Amendment 5 is GREAT for all Missourians! #MOGov #MOLeg",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-16T14:01:44Z",
+    "detected_at": "2026-07-17T06:20:29Z"
   }
 ]
