@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/rosscoulthart/status/2062439911844897279#m",
-    "title": "Important this article stays in the public domain. @GoodTroubleShow @ChrisUKSharp @LiberationTimes",
-    "description": "Important this article stays in the public domain. @GoodTroubleShow @ChrisUKSharp @LiberationTimes Richard Geldreich 🇺🇸 (@richgel999) The CIA OGA (the Office of Global Access) article was deleted, but the \"Good Trouble Show\" posted a backup. web.arch",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-06-04T07:42:47Z",
-    "detected_at": "2026-06-04T10:02:44Z"
-  },
-  {
     "url": "https://thedebrief.org/in-antarctica-scientists-just-discovered-a-massive-hidden-structure-deep-below-the-frozen-surface/",
     "title": "In Antarctica, Scientists Just Discovered a Massive Hidden Structure Deep Below the Frozen Surface",
     "description": "A massive, semi-continent-sized subsurface structure has been discovered by scientists beneath Antarctica’s frozen surface.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-18T13:19:34Z",
     "detected_at": "2026-07-18T14:57:35Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2078512374084927548#m",
+    "title": "I'm a hobby economist and a big fan of the fair tax. Stop taxing what people produce and let families keep more of their paycheck. Amendment 5 moves Missouri in exactly the right direction. Vote yes i",
+    "description": "I'm a hobby economist and a big fan of the fair tax. Stop taxing what people produce and let families keep more of their paycheck. Amendment 5 moves Missouri in exactly the right direction. Vote yes in August.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-18T16:09:01Z",
+    "detected_at": "2026-07-18T17:01:52Z"
   }
 ]
