@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2062291824249798870#m",
-    "title": "Tonight i will be making an announcement on X. I will give you 24 hours notice of a point in TIME-SPACE in the Los Angeles area for TOMORROW - where YOU can (and should) come, to share a moment with m",
-    "description": "Tonight i will be making an announcement on X. I will give you 24 hours notice of a point in TIME-SPACE in the Los Angeles area for TOMORROW - where YOU can (and should) come, to share a moment with me and George Knapp - in person and important. You ",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-03T21:54:21Z",
-    "detected_at": "2026-06-03T23:48:11Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2062304064050708929#m",
     "title": "Trump triggered an energy crisis. Working Americans are paying the price.",
     "description": "Trump triggered an energy crisis. Working Americans are paying the price.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-18T11:00:19Z",
     "detected_at": "2026-07-18T11:07:27Z"
+  },
+  {
+    "url": "https://thedebrief.org/astronomers-uncovered-a-hidden-bubble-inside-the-orion-nebula/",
+    "title": "Astronomers Uncovered a Hidden Bubble Inside the Orion Nebula",
+    "description": "A key component of the Orion Nebula had evaded detection by astronomers until now, according to newly published research.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-18T13:18:22Z",
+    "detected_at": "2026-07-18T13:24:13Z"
   }
 ]
