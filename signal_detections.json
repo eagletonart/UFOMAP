@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2062262202086629839#m",
-    "title": "Scientific research should be nonpartisan and trustworthy, not corrupted by Trump and his billionaire buddies.",
-    "description": "Scientific research should be nonpartisan and trustworthy, not corrupted by Trump and his billionaire buddies.",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-03T19:56:38Z",
-    "detected_at": "2026-06-03T21:20:17Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2062291824249798870#m",
     "title": "Tonight i will be making an announcement on X. I will give you 24 hours notice of a point in TIME-SPACE in the Los Angeles area for TOMORROW - where YOU can (and should) come, to share a moment with m",
     "description": "Tonight i will be making an announcement on X. I will give you 24 hours notice of a point in TIME-SPACE in the Los Angeles area for TOMORROW - where YOU can (and should) come, to share a moment with me and George Knapp - in person and important. You ",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-17T22:02:05Z",
     "detected_at": "2026-07-18T02:48:43Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/Jg939Lk-qKI",
+    "title": "Barack Obama at the 2016 White House Correspondents' Dinner",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-18T11:00:19Z",
+    "detected_at": "2026-07-18T11:07:27Z"
   }
 ]
