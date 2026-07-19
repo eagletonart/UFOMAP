@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/in-antarctica-scientists-just-discovered-a-massive-hidden-structure-deep-below-the-frozen-surface/",
-    "title": "In Antarctica, Scientists Just Discovered a Massive Hidden Structure Deep Below the Frozen Surface",
-    "description": "A massive, semi-continent-sized subsurface structure has been discovered by scientists beneath Antarctica’s frozen surface.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-04T15:00:15Z",
-    "detected_at": "2026-06-04T15:24:43Z"
-  },
-  {
     "url": "https://thedebrief.org/a-black-hole-mystery-that-has-puzzled-scientists-for-half-a-century-has-finally-been-solved/",
     "title": "A Black Hole Mystery That Has Puzzled Scientists for Half a Century Has Finally Been Solved",
     "description": "A black hole mystery has been solved after half a century, after researchers discovered evidence of a long-missing cosmic wind.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-18T16:09:01Z",
     "detected_at": "2026-07-18T17:01:52Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-may-have-finally-solved-earths-greatest-extinction-mystery/",
+    "title": "Scientists May Have Finally Solved Earth’s Greatest Extinction Mystery",
+    "description": "A recent study in the Proceedings of the National Academy of Sciences suggests that differences in physiology, metabolism, and oxygen use helped determine which marine animals survived the Great Dying catastrophe.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-19T13:24:43Z",
+    "detected_at": "2026-07-19T13:25:49Z"
   }
 ]
