@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/a-black-hole-mystery-that-has-puzzled-scientists-for-half-a-century-has-finally-been-solved/",
-    "title": "A Black Hole Mystery That Has Puzzled Scientists for Half a Century Has Finally Been Solved",
-    "description": "A black hole mystery has been solved after half a century, after researchers discovered evidence of a long-missing cosmic wind.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-04T14:30:18Z",
-    "detected_at": "2026-06-04T15:24:43Z"
-  },
-  {
-    "url": "https://thedebrief.org/a-spacecraft-mysteriously-went-silent-now-nasa-officials-are-speaking-up-after-months-of-speculation/",
-    "title": "A Spacecraft Mysteriously Went Silent—Now NASA Officials Are Speaking Up After Months of Speculation",
-    "description": "This week, NASA has officially confirmed the end of its MAVEN Mars mission after the spacecraft mysteriously fell silent late last year.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-04T14:00:37Z",
-    "detected_at": "2026-06-04T15:24:43Z"
-  },
-  {
     "url": "https://thedebrief.org/look-what-nasa-captured-in-satellite-images-as-this-bizarre-phenomenon-erupted-from-the-heart-of-a-super-typhoon/",
     "title": "Look What NASA Captured in Satellite Images as This Bizarre Phenomenon Erupted from the Heart of a Super Typhoon",
     "description": "A violent typhoon that tore across the North Pacific Ocean in April offered a rare look at an unusual spectacle of the natural world, captured in nighttime imagery by a U.S. satellite.",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-07-19T13:24:43Z",
     "detected_at": "2026-07-19T13:25:49Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2078856136715796565#m",
+    "title": "Texas. Tennessee. Florida. No income tax and the fastest growing states in the country. It's not just the sunshine, Midwest no-tax states are growing too. Missouri can be next. I fully support Amendme",
+    "description": "Texas. Tennessee. Florida. No income tax and the fastest growing states in the country. It's not just the sunshine, Midwest no-tax states are growing too. Missouri can be next. I fully support Amendment 5.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-19T14:55:00Z",
+    "detected_at": "2026-07-19T14:59:56Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2078837009989210418#m",
+    "title": "Why would you keep a tax that punishes productivity? The income tax punishes work. A consumption tax lets you keep what you earn and decide when to spend it. Amendment 5 phases out Missouri's income t",
+    "description": "Why would you keep a tax that punishes productivity? The income tax punishes work. A consumption tax lets you keep what you earn and decide when to spend it. Amendment 5 phases out Missouri's income tax. Yes.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-19T13:39:00Z",
+    "detected_at": "2026-07-19T14:59:56Z"
   }
 ]
