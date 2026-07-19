@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/discovery-hidden-inside-520-million-year-old-rocks-solves-a-longstanding-evolutionary-enigma/",
-    "title": "Discovery Hidden Inside 520-Million-Year-Old Rocks Solves a Longstanding ‘Evolutionary Enigma’",
-    "description": "A discovery hidden inside 520-million-year-old rocks has solved an evolutionary enigma and could even rewrite the entire tree of life.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-04T12:00:39Z",
-    "detected_at": "2026-06-04T15:24:43Z"
-  },
-  {
     "url": "https://www.youtube.com/shorts/1e7NNcB0uJU",
     "title": "Nick Offerman Discusses \"Death By Lightning\"",
     "description": "",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-19T15:42:00Z",
     "detected_at": "2026-07-19T17:01:40Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/07/portugal-some-20th-century-cases_01703726366.html",
+    "title": "Portugal: Some 20th Century Cases",
+    "description": "&nbsp; Normal 0 false false false EN-US X-NONE X-NONE /* Style Definitions */ table.MsoNormalTable {mso-style-name:\"Table Normal\"; mso-tstyle-rowband-size:0; mso-tstyle-colband-size:0; mso-style-noshow:yes; mso-style-priority:99; mso-style-parent:\"\";",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-07-19T11:46:14Z",
+    "detected_at": "2026-07-19T19:11:34Z"
   }
 ]
