@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://www.youtube.com/shorts/1e7NNcB0uJU",
-    "title": "Nick Offerman Discusses \"Death By Lightning\"",
-    "description": "",
-    "source_name": "C-SPAN",
-    "source_type": "youtube",
-    "author": "C-SPAN",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-04T15:04:13Z",
-    "detected_at": "2026-06-04T15:24:43Z"
-  },
-  {
     "url": "https://nitter.net/LueElizondo/status/2062552943107453201#m",
     "title": "Looking forward to seeing you tonight! And thanks for what you do!!",
     "description": "Looking forward to seeing you tonight! And thanks for what you do!! Jeremy Kenyon Lockyer Corbell (@JeremyCorbell) TOMORROW NIGHT in DOWNTOWN LOS ANGELES DOORS : 7 PM START : 8 PM LOCATION : The Regent Theatre at 448 S Main St. Early is on time 🐇⏰ yo",
@@ -15998,5 +15982,21 @@
     "location": "Latin America",
     "published_at": "2026-07-19T11:46:14Z",
     "detected_at": "2026-07-19T19:11:34Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2078940413789143173#m",
+    "title": "Trump says he doesn’t care about inflation. Says he doesn’t care about rising prices. I spent all Friday hearing from New Yorkers across the state struggling with soaring grocery bills and gas prices,",
+    "description": "Trump says he doesn’t care about inflation. Says he doesn’t care about rising prices. I spent all Friday hearing from New Yorkers across the state struggling with soaring grocery bills and gas prices, directly impacted by his costly tariffs and reckl",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-19T20:29:54Z",
+    "detected_at": "2026-07-19T20:55:20Z"
   }
 ]
