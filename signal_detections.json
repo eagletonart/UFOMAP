@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/room-temperature-quantum-computing-a-superlattice-breakthrough-could-be-poised-to-help-supercharge-information-science/",
-    "title": "Room-Temperature Quantum Computing? A Superlattice Breakthrough Could Be Poised to Help Supercharge Information Science",
-    "description": "A novel phase of matter has been achieved by researchers, finally realizing a theoretical quantum prediction using nanoscale building blocks.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-05T15:34:39Z",
-    "detected_at": "2026-06-05T16:31:33Z"
-  },
-  {
-    "url": "https://inexplicata.blogspot.com/2026/06/fabio-zerpa-balvidares-case-1973.html",
-    "title": "Fabio Zerpa: The Balvidares Case (1973)",
-    "description": "&nbsp; &nbsp;The Balvidares Case Location:&nbsp; &nbsp; Rural area, Leandro N. Alem District (Buenos Aires Province, bordering the General Pinto District) Date:&nbsp; &nbsp; October 29, 1973 Time:&nbsp; &nbsp; Between 5:00 PM and 6:55 PM Investigatio",
-    "source_name": "Inexplicata — Hispanic Ufology",
-    "source_type": "rss",
-    "author": "Scott Corrales",
-    "priority": "medium",
-    "lang": "en/es",
-    "flag": "🌎",
-    "lat": 4.5709,
-    "lon": -74.2973,
-    "location": "Latin America",
-    "published_at": "2026-06-05T09:12:37Z",
-    "detected_at": "2026-06-05T16:31:33Z"
-  },
-  {
     "url": "https://nitter.net/LueElizondo/status/2062903898629882224#m",
     "title": "Thank you all that came out to The Regent last night in LA and also to my guests Jeremy Corbell, George Knapp, and Elwood Reid. Had a great time! On to San Francisco today and I will be at the Marines",
     "description": "Thank you all that came out to The Regent last night in LA and also to my guests Jeremy Corbell, George Knapp, and Elwood Reid. Had a great time! On to San Francisco today and I will be at the Marines Memorial Theater tonight. @JeremyCorbell @g_knapp",
@@ -15998,5 +15966,37 @@
     "location": "New York, NY",
     "published_at": "2026-07-20T20:56:55Z",
     "detected_at": "2026-07-20T21:14:32Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2079327983446131140#m",
+    "title": "The families of the service members we lost this weekend deserve straight answers from Donald Trump. While our families here at home struggle with skyrocketing costs for groceries and gas, this reckle",
+    "description": "The families of the service members we lost this weekend deserve straight answers from Donald Trump. While our families here at home struggle with skyrocketing costs for groceries and gas, this reckless war is draining our resources and taking Americ",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-20T22:09:57Z",
+    "detected_at": "2026-07-20T23:03:37Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2079319606066323692#m",
+    "title": "Last week, I told Jay Clayton that the subpoena of journalists was not thoughtful, deliberate, or normal oversight. He had no response. As more details emerge, we know why.",
+    "description": "Last week, I told Jay Clayton that the subpoena of journalists was not thoughtful, deliberate, or normal oversight. He had no response. As more details emerge, we know why. Michael M. Grynbaum (@grynbaum) NEW: The Trump administration's effort to unm",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-20T21:36:40Z",
+    "detected_at": "2026-07-20T23:03:37Z"
   }
 ]
