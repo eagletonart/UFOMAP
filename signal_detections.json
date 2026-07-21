@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/LueElizondo/status/2062903898629882224#m",
-    "title": "Thank you all that came out to The Regent last night in LA and also to my guests Jeremy Corbell, George Knapp, and Elwood Reid. Had a great time! On to San Francisco today and I will be at the Marines",
-    "description": "Thank you all that came out to The Regent last night in LA and also to my guests Jeremy Corbell, George Knapp, and Elwood Reid. Had a great time! On to San Francisco today and I will be at the Marines Memorial Theater tonight. @JeremyCorbell @g_knapp",
-    "source_name": "Lue Elizondo (@LueElizondo)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8719,
-    "lon": -77.0563,
-    "location": "Arlington, VA",
-    "published_at": "2026-06-05T14:26:30Z",
-    "detected_at": "2026-06-05T16:31:33Z"
-  },
-  {
-    "url": "https://nitter.net/LueElizondo/status/2062902513985327410#m",
-    "title": "Tulsi, thoughts and prayers for you and yours. He is one hell of a fighter, he is going to come out the other end even stronger! Prayers abound!",
-    "description": "Tulsi, thoughts and prayers for you and yours. He is one hell of a fighter, he is going to come out the other end even stronger! Prayers abound! Tulsi Gabbard 🌺 (@TulsiGabbard) My husband Abraham was diagnosed with a very rare sacral chordoma. The su",
-    "source_name": "Lue Elizondo (@LueElizondo)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8719,
-    "lon": -77.0563,
-    "location": "Arlington, VA",
-    "published_at": "2026-06-05T14:21:00Z",
-    "detected_at": "2026-06-05T16:31:33Z"
-  },
-  {
     "url": "https://nitter.net/RepTimBurchett/status/2062906557122097396#m",
     "title": "As the Chairman of DOGE, I am fighting to end waste, fraud, and abuse in Washington. Click the link below to see how we are fighting to keep more money in your dadgum pocket: http://burchett.house.gov",
     "description": "As the Chairman of DOGE, I am fighting to end waste, fraud, and abuse in Washington. Click the link below to see how we are fighting to keep more money in your dadgum pocket: burchett.house.gov/media/pre… Video",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-20T21:36:40Z",
     "detected_at": "2026-07-20T23:03:37Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/06/fabio-zerpa-balvidares-case-1973.html",
+    "title": "Fabio Zerpa: The Balvidares Case (1973)",
+    "description": "&nbsp; &nbsp;The Balvidares Case Location:&nbsp; &nbsp; Rural area, Leandro N. Alem District (Buenos Aires Province, bordering the General Pinto District) Date:&nbsp; &nbsp; October 29, 1973 Time:&nbsp; &nbsp; Between 5:00 PM and 6:55 PM Investigatio",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-06-05T09:12:37Z",
+    "detected_at": "2026-07-21T03:13:43Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2079369900343111746#m",
+    "title": "Gas is back above $4/gallon. The American people are paying for Trump's war every time they fill up their car.",
+    "description": "Gas is back above $4/gallon. The American people are paying for Trump's war every time they fill up their car.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-21T00:56:31Z",
+    "detected_at": "2026-07-21T03:13:43Z"
   }
 ]
