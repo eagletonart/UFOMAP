@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2062907798397108420#m",
-    "title": "FISA was used to spy on Donald Trump and American citizens. Now they want a clean extension with zero reforms? Not happening. The intelligence community will never ask Congress to limit their own powe",
-    "description": "FISA was used to spy on Donald Trump and American citizens. Now they want a clean extension with zero reforms? Not happening. The intelligence community will never ask Congress to limit their own power. That's our job. June 12 deadline. No reforms, n",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-05T14:42:00Z",
-    "detected_at": "2026-06-05T16:31:33Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2062888677454332236#m",
     "title": "The United States now pays $3 billion PER DAY in interest on the national debt. That's more than we spend on national defense. One quarter of every dollar you send to Washington goes straight to inter",
     "description": "The United States now pays $3 billion PER DAY in interest on the national debt. That's more than we spend on national defense. One quarter of every dollar you send to Washington goes straight to interest payments. Not roads. Not defense. Not schools.",
@@ -15998,5 +15982,21 @@
     "location": "Arlington, VA",
     "published_at": "2026-06-05T14:21:00Z",
     "detected_at": "2026-07-21T06:32:35Z"
+  },
+  {
+    "url": "https://nitter.net/BasedMikeLee/status/2079396166609875429#m",
+    "title": "RT by @EricBurlison: Live footage of U.S. senators trying to explain why we don’t need to pass the SAVE America Act.",
+    "description": "Live footage of U.S. senators trying to explain why we don’t need to pass the SAVE America Act. Video",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-21T02:40:54Z",
+    "detected_at": "2026-07-21T10:27:36Z"
   }
 ]
