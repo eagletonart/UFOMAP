@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/uNHIddenhealth/status/2063998427264876633#m",
-    "title": "RT by @rosscoulthart: uNHIdden launches Preparedness Plan - a public health approach to disclosure Today uNHIdden publishes Preparing for Disclosure ‒ the first public health preparedness framework fo",
-    "description": "uNHIdden launches Preparedness Plan - a public health approach to disclosure Today uNHIdden publishes Preparing for Disclosure ‒ the first public health preparedness framework for paradigm-shifting discoveries. Governments prepare for pandemics, natu",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-06-08T14:55:46Z",
-    "detected_at": "2026-06-08T20:24:00Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2064071978307236241#m",
     "title": "ICE has lied to the American people, killed American citizens, undermined law enforcement, and terrorized communities. I have called for common-sense reforms to enforce the law and keep our communitie",
     "description": "ICE has lied to the American people, killed American citizens, undermined law enforcement, and terrorized communities. I have called for common-sense reforms to enforce the law and keep our communities safe -- Republicans have refused to even negotia",
@@ -15998,5 +15982,21 @@
     "location": "Latin America",
     "published_at": "2026-07-23T12:32:16Z",
     "detected_at": "2026-07-23T21:08:21Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2080402347226812698#m",
+    "title": "Billions for war, but nothing to lower your healthcare costs or your grocery bill. Trump and congressional Republicans put America last.",
+    "description": "Billions for war, but nothing to lower your healthcare costs or your grocery bill. Trump and congressional Republicans put America last.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-23T21:19:06Z",
+    "detected_at": "2026-07-23T22:59:59Z"
   }
 ]
