@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2064340403738788236#m",
-    "title": "The corrupt protects the corrupt.",
-    "description": "The corrupt protects the corrupt.",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-09T13:34:40Z",
-    "detected_at": "2026-06-09T15:13:49Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2064388550980956482#m",
     "title": "Watch FULL testimony, and you will understand the score 🛸 FULL : https://youtu.be/rk0y6oeI2k0",
     "description": "Watch FULL testimony, and you will understand the score 🛸 FULL : piped.video/rk0y6oeI2k0 Video",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-24T16:38:47Z",
     "detected_at": "2026-07-24T17:40:33Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2080723061691547947#m",
+    "title": "When a public safety officer is killed or permanently injured in the line of duty, their family needs immediate, unwavering support — not administrative delays. I’m fighting for changes to the Public ",
+    "description": "When a public safety officer is killed or permanently injured in the line of duty, their family needs immediate, unwavering support — not administrative delays. I’m fighting for changes to the Public Safety Officers’ Benefits Program to make sure cla",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-24T18:33:30Z",
+    "detected_at": "2026-07-24T19:34:45Z"
   }
 ]
