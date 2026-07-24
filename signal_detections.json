@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2064388550980956482#m",
-    "title": "Watch FULL testimony, and you will understand the score 🛸 FULL : https://youtu.be/rk0y6oeI2k0",
-    "description": "Watch FULL testimony, and you will understand the score 🛸 FULL : piped.video/rk0y6oeI2k0 Video",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-09T16:45:59Z",
-    "detected_at": "2026-06-09T18:11:02Z"
-  },
-  {
     "url": "https://thedebrief.org/we-must-strengthen-our-processes-nasa-issues-update-on-antenna-mishap-involving-deep-space-station-14/",
     "title": "“We Must Strengthen Our Processes”: NASA Issues Update on ‘Antenna Mishap’ Involving Deep Space Station 14",
     "description": "NASA officials have completed an investigation into an incident that caused damage to the 70-meter Deep Space Station 14 antenna last September.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-24T18:33:30Z",
     "detected_at": "2026-07-24T19:34:45Z"
+  },
+  {
+    "url": "https://nitter.net/RepMoskowitz/status/2080733842676064492#m",
+    "title": "I want to give a special shoutout to our Boca Raton Little League Senior Division All-Stars! This team of state champions is representing Florida at the Southeast Regional Tournament this week, and we",
+    "description": "I want to give a special shoutout to our Boca Raton Little League Senior Division All-Stars! This team of state champions is representing Florida at the Southeast Regional Tournament this week, and we know they’ll make us proud! Can’t wait for you to",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-24T19:16:20Z",
+    "detected_at": "2026-07-24T21:07:46Z"
   }
 ]
