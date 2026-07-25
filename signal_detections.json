@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepMoskowitz/status/2064437290764538158#m",
-    "title": "The days of keeping the American people in the dark are over. It’s time the truth about UAPs comes to light. Today I stood with my colleagues to demand just that. In this age of disclosure, it’s time ",
-    "description": "The days of keeping the American people in the dark are over. It’s time the truth about UAPs comes to light. Today I stood with my colleagues to demand just that. In this age of disclosure, it’s time to stop hiding the truth from the American people.",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-09T19:59:40Z",
-    "detected_at": "2026-06-09T21:49:59Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2064434050102608369#m",
     "title": "Endless lies.",
     "description": "Endless lies.",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-07-25T12:00:34Z",
     "detected_at": "2026-07-25T13:43:20Z"
+  },
+  {
+    "url": "https://thedebrief.org/barnards-star-contains-inhospitable-exoplanets-but-they-could-still-tell-us-something-important-in-the-search-for-et/",
+    "title": "Barnard’s Star Contains Inhospitable Exoplanets—But They Could Still Tell Us Something Important in the Search for ET",
+    "description": "The small exoplanets of our Sun’s second-nearest neighbor, Barnard’s Star, are inhospitable wastelands, British astronomers say.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-25T14:10:02Z",
+    "detected_at": "2026-07-25T15:06:40Z"
   }
 ]
