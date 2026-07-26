@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2064770410239988082#m",
-    "title": "JUST IN: Trump loves inflation? He's happy that working people are losing money? He’s happy that families are struggling?",
-    "description": "JUST IN: Trump loves inflation? He's happy that working people are losing money? He’s happy that families are struggling? Aaron Rupar (@atrupar) Q: Are you concerned about the latest inflation numbers that came out this morning? TRUMP: No, I love it.",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-10T18:03:22Z",
-    "detected_at": "2026-06-10T18:33:28Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2064764699644719534#m",
     "title": "Trump is installing an unqualified yes-man to gut our intelligence agencies in the middle of a war that he started. He's putting his political vendettas over our national security.",
     "description": "Trump is installing an unqualified yes-man to gut our intelligence agencies in the middle of a war that he started. He's putting his political vendettas over our national security. Video",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-26T13:39:00Z",
     "detected_at": "2026-07-26T15:08:37Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2081404680458899737#m",
+    "title": "Deciding which businesses are allowed in your community is the model Bernie Sanders and AOC run on. If you're a conservative caught up in the anti-data-center panic, ask what your real concern is. Fre",
+    "description": "Deciding which businesses are allowed in your community is the model Bernie Sanders and AOC run on. If you're a conservative caught up in the anti-data-center panic, ask what your real concern is. Free markets, not central planning.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-26T15:42:01Z",
+    "detected_at": "2026-07-26T17:06:38Z"
   }
 ]
