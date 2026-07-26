@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2064764699644719534#m",
-    "title": "Trump is installing an unqualified yes-man to gut our intelligence agencies in the middle of a war that he started. He's putting his political vendettas over our national security.",
-    "description": "Trump is installing an unqualified yes-man to gut our intelligence agencies in the middle of a war that he started. He's putting his political vendettas over our national security. Video",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-10T17:40:40Z",
-    "detected_at": "2026-06-10T18:33:28Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2064739589017792938#m",
     "title": "🚨 Mike Johnson just revealed Republicans are waiting until after the midterms to move forward with plans to cut Medicaid, Medicare, and Social Security. The only thing that can stand in the way of Tru",
     "description": "🚨 Mike Johnson just revealed Republicans are waiting until after the midterms to move forward with plans to cut Medicaid, Medicare, and Social Security. The only thing that can stand in the way of Trump's destruction is a Democratic majority in the H",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-26T15:42:01Z",
     "detected_at": "2026-07-26T17:06:38Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2081500716342939713#m",
+    "title": "The American people have had enough of Trump's corruption. We're ready to elect strong leaders, flip the Senate blue, and hold Trump accountable this November.",
+    "description": "The American people have had enough of Trump's corruption. We're ready to elect strong leaders, flip the Senate blue, and hold Trump accountable this November.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-26T22:03:37Z",
+    "detected_at": "2026-07-26T23:01:31Z"
   }
 ]
