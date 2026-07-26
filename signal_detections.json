@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/working-against-the-clock-a-bizarre-human-behavioral-tendency-has-emerged-in-new-research/",
-    "title": "Working Against the Clock: A Bizarre Human Behavioral Tendency Has Emerged in New Research",
-    "description": "An unexpected human behavioral tendency to prefer turning counterclockwise rather than clockwise has been uncovered by a team of researchers.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-10T11:53:34Z",
-    "detected_at": "2026-06-10T15:48:29Z"
-  },
-  {
-    "url": "https://nitter.net/RepMoskowitz/status/2064774962809106446#m",
-    "title": "In a perfect world, the Jewish American Security Act wouldn’t be necessary. But we don’t live in that world. Jewish kids are being threatened. Synagogues are being bombed. And across the country, Jewi",
-    "description": "In a perfect world, the Jewish American Security Act wouldn’t be necessary. But we don’t live in that world. Jewish kids are being threatened. Synagogues are being bombed. And across the country, Jewish Americans are hiding their Star of David so the",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-10T18:21:27Z",
-    "detected_at": "2026-06-10T18:33:28Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2064770410239988082#m",
     "title": "JUST IN: Trump loves inflation? He's happy that working people are losing money? He’s happy that families are struggling?",
     "description": "JUST IN: Trump loves inflation? He's happy that working people are losing money? He’s happy that families are struggling? Aaron Rupar (@atrupar) Q: Are you concerned about the latest inflation numbers that came out this morning? TRUMP: No, I love it.",
@@ -15998,5 +15966,37 @@
     "location": "New York, NY",
     "published_at": "2026-07-26T11:04:39Z",
     "detected_at": "2026-07-26T13:37:39Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2081392852446118360#m",
+    "title": "For too long, the Army Corps of Engineers treated the families around Table Rock Lake like an afterthought. My language in the WRDA bill flips that. The Corps now has to start from yes, not no.",
+    "description": "For too long, the Army Corps of Engineers treated the families around Table Rock Lake like an afterthought. My language in the WRDA bill flips that. The Corps now has to start from yes, not no.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-26T14:55:01Z",
+    "detected_at": "2026-07-26T15:08:37Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2081373724347859383#m",
+    "title": "A downed tree. A property line. A retaining wall that needs repair. For families around Table Rock Lake, getting the Corps to approve the simple things was almost impossible. My WRDA language changes ",
+    "description": "A downed tree. A property line. A retaining wall that needs repair. For families around Table Rock Lake, getting the Corps to approve the simple things was almost impossible. My WRDA language changes their posture to saying yes, with few exceptions.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-26T13:39:00Z",
+    "detected_at": "2026-07-26T15:08:37Z"
   }
 ]
