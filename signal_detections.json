@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/new-analysis-confirms-the-universe-is-still-expanding-refuting-controversial-2025-claims-and-prompting-immediate-response/",
-    "title": "New Analysis Confirms the Universe is Still Expanding, Refuting Controversial 2025 Claims and Prompting Immediate Response",
-    "description": "A new paper suggests a 2025 study claiming the universe is not expanding, which refuted a previous Nobel Prize-winning discovery, is wrong.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-11T13:55:21Z",
-    "detected_at": "2026-06-11T16:10:20Z"
-  },
-  {
     "url": "https://thedebrief.org/scientists-have-just-uncovered-a-thriving-ecosystem-hiding-in-fog/",
     "title": "Scientists Have Just Uncovered a Thriving Ecosystem Hiding in Fog",
     "description": "Fog is a living ecosystem for bacteria, rather than just a sterile cloud of mist, according to Arizona State University researchers.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-27T14:55:59Z",
     "detected_at": "2026-07-27T17:45:31Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2081802917183365273#m",
+    "title": "Trump promised to cut energy bills in HALF. Now, the price of gas and electricity is through the roof because of his recklessness. Another day, another broken promise.",
+    "description": "Trump promised to cut energy bills in HALF. Now, the price of gas and electricity is through the roof because of his recklessness. Another day, another broken promise.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-27T18:04:28Z",
+    "detected_at": "2026-07-27T19:40:14Z"
   }
 ]
