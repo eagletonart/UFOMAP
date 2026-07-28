@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2064712439837438071#m",
-    "title": "Left-wing billionaires can't beat conservatives head-on, so they fund fake \"conservative\" groups to attack us from the right. Wolf in sheep's clothing. If a group popped up this year and you've never ",
-    "description": "Left-wing billionaires can't beat conservatives head-on, so they fund fake \"conservative\" groups to attack us from the right. Wolf in sheep's clothing. If a group popped up this year and you've never heard of it, ask who's paying.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-10T14:13:00Z",
-    "detected_at": "2026-06-11T23:28:07Z"
-  },
-  {
-    "url": "https://nitter.net/EricBurlison/status/2064701366174376078#m",
-    "title": "They're running AI deepfake attack ads that look like real security footage. Most voters can't tell what's fake. Before you believe a video this election, check the source.",
-    "description": "They're running AI deepfake attack ads that look like real security footage. Most voters can't tell what's fake. Before you believe a video this election, check the source.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-10T13:29:00Z",
-    "detected_at": "2026-06-11T23:28:07Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2064692939217899613#m",
     "title": "https://t.co/Cj70DB7v7z",
     "description": "https://nitter.net/t.co/Cj70DB7v7z Video",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-28T14:49:00Z",
     "detected_at": "2026-07-28T17:37:56Z"
+  },
+  {
+    "url": "https://nitter.net/RoyCooperNC/status/2081416942062068140#m",
+    "title": "RT by @SenGillibrand: 100 days out. It's go time.",
+    "description": "100 days out. It's go time. Video",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-26T16:30:44Z",
+    "detected_at": "2026-07-28T19:38:02Z"
+  },
+  {
+    "url": "https://nitter.net/MaryPeltola/status/2081494769298239767#m",
+    "title": "RT by @SenGillibrand: 100 days out, a good omen for new beginnings.",
+    "description": "100 days out, a good omen for new beginnings. Video",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-26T21:39:59Z",
+    "detected_at": "2026-07-28T19:38:02Z"
   }
 ]
