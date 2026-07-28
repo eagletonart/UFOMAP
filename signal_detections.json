@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2064692939217899613#m",
-    "title": "https://t.co/Cj70DB7v7z",
-    "description": "https://nitter.net/t.co/Cj70DB7v7z Video",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-10T12:55:31Z",
-    "detected_at": "2026-06-11T23:28:07Z"
-  },
-  {
-    "url": "https://nitter.net/SenGillibrand/status/2065175540999299483#m",
-    "title": "I voted no on Defense Reauthorization, here’s why.",
-    "description": "I voted no on Defense Reauthorization, here’s why. Video",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-11T20:53:12Z",
-    "detected_at": "2026-06-11T23:28:07Z"
-  },
-  {
     "url": "https://nitter.net/TeamTalaricoHQ/status/2064382019191058619#m",
     "title": "RT by @SenGillibrand: New Texas Senate poll: 🔵 James Talarico 47% 🔴 Ken Paxton 44% ReconMR/Siena University - 6/1-6/4",
     "description": "New Texas Senate poll: 🔵 James Talarico 47% 🔴 Ken Paxton 44% ReconMR/Siena University - 6/1-6/4",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-26T21:39:59Z",
     "detected_at": "2026-07-28T19:38:02Z"
+  },
+  {
+    "url": "https://nitter.net/RepTimBurchett/status/2082211976512499839#m",
+    "title": "Tennessee’s state parks are some of the best in the country. Thank you to the folks at Indian Mountain State Park for sharing the work they’re doing to preserve this beautiful place.",
+    "description": "Tennessee’s state parks are some of the best in the country. Thank you to the folks at Indian Mountain State Park for sharing the work they’re doing to preserve this beautiful place.",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-28T21:09:55Z",
+    "detected_at": "2026-07-28T21:11:36Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2082188042777817527#m",
+    "title": "Trump’s tariffs and war in Iran are an extra tax on working families. Families are paying more to: ⛽ Fill up their car 🛒 Buy groceries 🎒 Shop for back-to-school items",
+    "description": "Trump’s tariffs and war in Iran are an extra tax on working families. Families are paying more to: ⛽ Fill up their car 🛒 Buy groceries 🎒 Shop for back-to-school items",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-28T19:34:49Z",
+    "detected_at": "2026-07-28T21:11:36Z"
   }
 ]
