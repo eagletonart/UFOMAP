@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://www.youtube.com/shorts/tslwdYxMtAY",
-    "title": "The First Law Ever Passed By Congress",
-    "description": "",
-    "source_name": "C-SPAN",
-    "source_type": "youtube",
-    "author": "C-SPAN",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-11T15:05:27Z",
-    "detected_at": "2026-06-11T16:10:20Z"
-  },
-  {
-    "url": "https://nitter.net/rosscoulthart/status/2065029682404503626#m",
-    "title": "Love this stunned ⁦@ChrisCuomo⁩ take on David Grusch’s candid statement that the US Govt absolutely knows we are not alone. It’s a very fair question, why hasn’t someone from the Govt come out and den",
-    "description": "Love this stunned ⁦ @ChrisCuomo ⁩ take on David Grusch’s candid statement that the US Govt absolutely knows we are not alone. It’s a very fair question, why hasn’t someone from the Govt come out and denied Grusch’s claims if it’s not true? Video",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-06-11T11:13:37Z",
-    "detected_at": "2026-06-11T16:10:20Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2065065543174848752#m",
     "title": "🧡💙🧡💙",
     "description": "🧡💙🧡💙",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-27T21:30:35Z",
     "detected_at": "2026-07-27T23:06:22Z"
+  },
+  {
+    "url": "https://nitter.net/RickBrattin/status/2081749383809323376#m",
+    "title": "RT by @EricBurlison: Congressman Jim Jordan has been a stalwart for conservatism and I’m honored to have his endorsement and full support for Missouri’s 5th Congressional District! @Jim_Jordan",
+    "description": "Congressman Jim Jordan has been a stalwart for conservatism and I’m honored to have his endorsement and full support for Missouri’s 5th Congressional District! @Jim_Jordan Video",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-27T14:31:44Z",
+    "detected_at": "2026-07-28T06:30:12Z"
+  },
+  {
+    "url": "https://nitter.net/DNIPulte/status/2081877893118857626#m",
+    "title": "RT by @EricBurlison: News forthcoming in the morning",
+    "description": "News forthcoming in the morning",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-27T23:02:23Z",
+    "detected_at": "2026-07-28T06:30:12Z"
   }
 ]
