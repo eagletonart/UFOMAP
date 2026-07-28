@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/TeamTalaricoHQ/status/2064382019191058619#m",
-    "title": "RT by @SenGillibrand: New Texas Senate poll: 🔵 James Talarico 47% 🔴 Ken Paxton 44% ReconMR/Siena University - 6/1-6/4",
-    "description": "New Texas Senate poll: 🔵 James Talarico 47% 🔴 Ken Paxton 44% ReconMR/Siena University - 6/1-6/4",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-09T16:20:02Z",
-    "detected_at": "2026-06-11T23:28:07Z"
-  },
-  {
-    "url": "https://nitter.net/SherrodBrown/status/2064090852775899563#m",
-    "title": "RT by @SenGillibrand: The rich are getting richer, the middle class is shrinking, and workers are getting screwed. The system is rigged and it has to change, that’s why I’m in the fight.",
-    "description": "The rich are getting richer, the middle class is shrinking, and workers are getting screwed. The system is rigged and it has to change, that’s why I’m in the fight. Video",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-08T21:03:02Z",
-    "detected_at": "2026-06-11T23:28:07Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2065310561337045022#m",
     "title": "Art imitates life. But does life, imitate art? 👽 SLEEPING DOG | http://geni.us/SleepingDog",
     "description": "Art imitates life. But does life, imitate art? 👽 SLEEPING DOG | geni.us/SleepingDog Video",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-28T19:34:49Z",
     "detected_at": "2026-07-28T21:11:36Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=nKiG1HkYj3Q",
+    "title": "Step Onto a World War One Battlefield in France",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-28T22:00:21Z",
+    "detected_at": "2026-07-28T23:03:13Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2082212281354703054#m",
+    "title": "The Senate passed lifesaving legislation for our seniors, which would support nutrition assistance and meal deliveries, bolster transportation services, and strengthen caregiver support. I'm proud to ",
+    "description": "The Senate passed lifesaving legislation for our seniors, which would support nutrition assistance and meal deliveries, bolster transportation services, and strengthen caregiver support. I'm proud to fight for our seniors in the Senate, and I'm commi",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-28T21:11:08Z",
+    "detected_at": "2026-07-28T23:03:13Z"
   }
 ]
