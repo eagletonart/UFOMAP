@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2065310561337045022#m",
-    "title": "Art imitates life. But does life, imitate art? 👽 SLEEPING DOG | http://geni.us/SleepingDog",
-    "description": "Art imitates life. But does life, imitate art? 👽 SLEEPING DOG | geni.us/SleepingDog Video",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-12T05:49:44Z",
-    "detected_at": "2026-06-12T10:20:56Z"
-  },
-  {
-    "url": "https://thedebrief.org/this-james-webb-space-telescope-discovery-could-finally-solve-the-mystery-behind-little-red-dots/",
-    "title": "This James Webb Space Telescope Discovery Could Finally Solve the Mystery Behind “Little Red Dots”",
-    "description": "New James Webb Space Telescope imagery may hold the long-sought answers to the astronomical mystery of \"little red dots.\"",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-12T14:58:06Z",
-    "detected_at": "2026-06-12T15:25:21Z"
-  },
-  {
     "url": "https://thedebrief.org/new-spherex-space-telescope-images-confirm-a-major-problem-that-many-astronomers-were-afraid-of/",
     "title": "New SPHEREx Space Telescope Images Confirm a Major Problem That Many Astronomers Were Afraid Of",
     "description": "Nearly 3 out of every 4 images obtained by NASA’s SPHEREx space telescope now confirm something many astronomers had been afraid of.",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-28T21:11:08Z",
     "detected_at": "2026-07-28T23:03:13Z"
+  },
+  {
+    "url": "https://nitter.net/rosscoulthart/status/2082308735805030574#m",
+    "title": "Great question from @LiberationTimes’ @ChrisUKSharp to @DepDNILukas. Why would any whistleblower trust a process where the people in charge slur them as grifters? Why should @CIA officers be given acc",
+    "description": "Great question from @LiberationTimes ’ @ChrisUKSharp to @DepDNILukas . Why would any whistleblower trust a process where the people in charge slur them as grifters? Why should @CIA officers be given access and control over a #UAP disclosure process t",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-07-29T03:34:24Z",
+    "detected_at": "2026-07-29T06:35:14Z"
+  },
+  {
+    "url": "https://nitter.net/rosscoulthart/status/2082307532660568467#m",
+    "title": "Our latest REALITY CHECK goes deep with @UAPGERB: back to where it all began ten years ago. A Presidential candidate called Hillary Clinton was taking on a guy called Donald Trump. A lot of people ass",
+    "description": "Our latest REALITY CHECK goes deep with @UAPGERB : back to where it all began ten years ago. A Presidential candidate called Hillary Clinton was taking on a guy called Donald Trump. A lot of people assumed Clinton‘s victory was a forgone conclusion i",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-07-29T03:29:37Z",
+    "detected_at": "2026-07-29T06:35:14Z"
   }
 ]
