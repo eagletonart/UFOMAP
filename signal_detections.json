@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2065576073891582230#m",
-    "title": "Andy and I go deep on @ufouapam. Check out the full convo here… https://youtu.be/KvCsIx_7t_4",
-    "description": "Andy and I go deep on @ufouapam . Check out the full convo here… piped.video/KvCsIx_7t_4 Video",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-12T23:24:47Z",
-    "detected_at": "2026-06-13T04:12:40Z"
-  },
-  {
-    "url": "https://nitter.net/UAPDr/status/2065595312383697129#m",
-    "title": "RT by @rosscoulthart: JUST-RELEASED EVIDENCE UNDERCUTS THE GOVERNMENT’S ROSWELL STORY 1947 Army Air Forces files state there was no research project matching the “flying saucer” reports. But behind cl",
-    "description": "JUST-RELEASED EVIDENCE UNDERCUTS THE GOVERNMENT’S ROSWELL STORY 1947 Army Air Forces files state there was no research project matching the “flying saucer” reports. But behind closed doors, Air Materiel Command said the phenomenon appeared real, meta",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-06-13T00:41:14Z",
-    "detected_at": "2026-06-13T04:12:40Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2065636588290294041#m",
     "title": "Great work @DNIGabbard https://t.co/i6LFgEoo10",
     "description": "Great work @DNIGabbard https://nitter.net/t.co/i6LFgEoo10 Video",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-30T19:36:17Z",
     "detected_at": "2026-07-30T19:38:22Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2082930815634489724#m",
+    "title": "The answer is simple: Because Trump launched this war with no justification, no strategy, and no end in sight. It has raised costs. Wasted taxpayer dollars. Failed in its objectives. And is justifiabl",
+    "description": "The answer is simple: Because Trump launched this war with no justification, no strategy, and no end in sight. It has raised costs. Wasted taxpayer dollars. Failed in its objectives. And is justifiably unpopular with the American people. Senate Repub",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-30T20:46:20Z",
+    "detected_at": "2026-07-30T21:14:57Z"
+  },
+  {
+    "url": "https://nitter.net/dscc/status/2082868557172343039#m",
+    "title": "RT by @SenGillibrand: 61 years ago, Medicaid and Medicare were signed into law, making health care more accessible for millions of Americans. But now, Republican Senators are making health care unaffo",
+    "description": "61 years ago, Medicaid and Medicare were signed into law, making health care more accessible for millions of Americans. But now, Republican Senators are making health care unaffordable and less accessible.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-30T16:38:56Z",
+    "detected_at": "2026-07-30T21:14:57Z"
   }
 ]
