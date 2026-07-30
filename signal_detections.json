@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2065636588290294041#m",
-    "title": "Great work @DNIGabbard https://t.co/i6LFgEoo10",
-    "description": "Great work @DNIGabbard https://nitter.net/t.co/i6LFgEoo10 Video",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-13T03:25:14Z",
-    "detected_at": "2026-06-13T04:12:40Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2065665941980197298#m",
     "title": "Pay attention 🛸 SLEEPING DOG | http://geni.us/SleepingDog",
     "description": "Pay attention 🛸 SLEEPING DOG | geni.us/SleepingDog Video",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-30T16:38:56Z",
     "detected_at": "2026-07-30T21:14:57Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/7X8ffh8nujU",
+    "title": "Could You Defend Someone Else's Free Speech?",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-30T22:00:16Z",
+    "detected_at": "2026-07-30T23:11:26Z"
   }
 ]
