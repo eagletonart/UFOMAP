@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2065833912446927221#m",
-    "title": "Pay attention. And check out the full convo with my friend Jesse of @AlchemyAmerican here… https://youtu.be/-XdvIrexF08 https://t.co/WSLPCK4ibZ",
-    "description": "Pay attention. And check out the full convo with my friend Jesse of @AlchemyAmerican here… piped.video/-XdvIrexF08 https://nitter.net/t.co/WSLPCK4ibZ Video",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-13T16:29:20Z",
-    "detected_at": "2026-06-13T17:27:02Z"
-  },
-  {
-    "url": "https://nitter.net/JeremyCorbell/status/2065832181491282069#m",
-    "title": "My friend @ChrisRamsay52 is a puzzle man. Maybe he can figure it out. WATCH FULL : https://youtu.be/MVjBLIsXFHQ",
-    "description": "My friend @ChrisRamsay52 is a puzzle man. Maybe he can figure it out. WATCH FULL : piped.video/MVjBLIsXFHQ Video",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-13T16:22:28Z",
-    "detected_at": "2026-06-13T17:27:02Z"
-  },
-  {
     "url": "https://thedebrief.org/this-unusual-artifact-resembling-a-tv-remote-could-reveal-the-oldest-evidence-of-numerical-calculation-in-mesoamerica/",
     "title": "This Unusual Artifact Resembling a TV Remote Could Reveal the Oldest Evidence of Numerical Calculation in Mesoamerica",
     "description": "Archaeologists have discovered an unusual artifact they say could represent the earliest known use of written numbers ever discovered in Mesoamerica.",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-07-31T16:54:50Z",
     "detected_at": "2026-07-31T17:42:42Z"
+  },
+  {
+    "url": "https://thedebrief.org/the-images-reveal-a-remarkably-unusual-object-astronomers-just-discovered-an-odd-three-lobed-asteroid-and-its-not-traveling-alone/",
+    "title": "“The Images Reveal a Remarkably Unusual Object”: Astronomers Just Discovered an Odd Three-Lobed Asteroid—And It’s Not Traveling Alone",
+    "description": "Astronomers have made a surprising discovery about one of the brightest space rocks in the main asteroid belt.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-07-31T18:06:46Z",
+    "detected_at": "2026-07-31T19:39:50Z"
+  },
+  {
+    "url": "https://nitter.net/RepTimBurchett/status/2083270614865895573#m",
+    "title": "A trip to Grainger County isn’t complete without stopping by Red Barn Produce. Thanks to the folks there for taking the time to visit with me.",
+    "description": "A trip to Grainger County isn’t complete without stopping by Red Barn Produce. Thanks to the folks there for taking the time to visit with me.",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-07-31T19:16:34Z",
+    "detected_at": "2026-07-31T19:39:50Z"
   }
 ]
