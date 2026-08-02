@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/a-hidden-subterranean-fungal-network-is-revealing-the-secrets-of-earths-circulatory-system/",
-    "title": "A Hidden Subterranean Fungal Network is Revealing the Secrets of Earth’s ‘Circulatory System’",
-    "description": "Ancient mycorrhizal fungal networks, consisting of a billion astronomical units' worth of roots, have finally been mapped by scientists.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-15T12:12:19Z",
-    "detected_at": "2026-06-15T12:25:29Z"
-  },
-  {
-    "url": "https://thedebrief.org/black-holes-arent-real-astronomers-propose-elusive-formation-mechanism-for-gravastar-alternative-that-is-easier-to-accept/",
-    "title": "Black Holes Aren’t Real? Astronomers Propose Elusive Formation Mechanism for “Gravastar” Alternative That is “Easier to Accept”",
-    "description": "After 25 years of debate, scientists have proposed a mathematical model for an alternative to black holes called a gravastar.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-15T12:06:32Z",
-    "detected_at": "2026-06-15T12:25:29Z"
-  },
-  {
     "url": "https://thedebrief.org/the-amaterasu-particle-may-not-be-a-proton-at-all-new-research-suggests/",
     "title": "The Amaterasu Particle May Not Be a Proton at All, New Research Suggests",
     "description": "A recent study suggests that the Amaterasu particle, along with other extremely energetic cosmic rays, may actually be atomic nuclei heavier than iron.",
@@ -15998,5 +15966,37 @@
     "location": "Latin America",
     "published_at": "2026-08-02T05:53:58Z",
     "detected_at": "2026-08-02T13:36:37Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2083929570063835467#m",
+    "title": "Two hard YES votes on Aug 4: Amendment 4 to stop the left from buying our constitution, and Amendment 5 to start phasing out the income tax. Conservative, common-sense, and on the ballot right now. Ma",
+    "description": "Two hard YES votes on Aug 4: Amendment 4 to stop the left from buying our constitution, and Amendment 5 to start phasing out the income tax. Conservative, common-sense, and on the ballot right now. Make a plan to vote.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-02T14:55:01Z",
+    "detected_at": "2026-08-02T15:05:45Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2083910440845750393#m",
+    "title": "Yes, Amendment 5 adjusts some older tax limits. It replaces them with stronger ones aimed at one job, killing the income tax without blowing a hole in the budget. Revenue-triggered phase-out, revenue-",
+    "description": "Yes, Amendment 5 adjusts some older tax limits. It replaces them with stronger ones aimed at one job, killing the income tax without blowing a hole in the budget. Revenue-triggered phase-out, revenue-neutral restructuring, a 5-year window. Not fewer ",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-02T13:39:00Z",
+    "detected_at": "2026-08-02T15:05:45Z"
   }
 ]
