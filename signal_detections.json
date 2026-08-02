@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2066327014462652728#m",
-    "title": "As families struggle to fill up their car and buy groceries, Trump said he \"loves\" inflation.",
-    "description": "As families struggle to fill up their car and buy groceries, Trump said he \"loves\" inflation.",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-15T01:08:45Z",
-    "detected_at": "2026-06-15T04:53:42Z"
-  },
-  {
     "url": "https://thedebrief.org/a-hidden-subterranean-fungal-network-is-revealing-the-secrets-of-earths-circulatory-system/",
     "title": "A Hidden Subterranean Fungal Network is Revealing the Secrets of Earth’s ‘Circulatory System’",
     "description": "Ancient mycorrhizal fungal networks, consisting of a billion astronomical units' worth of roots, have finally been mapped by scientists.",
@@ -15998,5 +15982,21 @@
     "location": "New York, NY",
     "published_at": "2026-08-01T22:56:22Z",
     "detected_at": "2026-08-02T03:21:51Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/08/weird-war-strange-stories-of-military.html",
+    "title": "Weird War: Strange Stories of the Military",
+    "description": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Weird War: Strange Stories of the Military By Scott Corrales © 2012 Comic book aficionados who grew up in the 1970s may remember – if only dimly – a particular comic book that stood out from the",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-08-02T05:53:58Z",
+    "detected_at": "2026-08-02T13:36:37Z"
   }
 ]
