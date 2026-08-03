@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/this-philosopher-thinks-physics-may-be-asking-the-wrong-question-about-space-time/",
-    "title": "This Philosopher Thinks Physics May Be Asking the Wrong Question About Space-Time",
-    "description": "Einstein's equations have withstood every experimental test for more than a century; however, according to one philosopher, they have not withstood careful scrutiny of the language used to describe them.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-15T11:57:02Z",
-    "detected_at": "2026-06-15T12:25:29Z"
-  },
-  {
     "url": "https://thedebrief.org/a-venus-flytrap-mystery-that-has-perplexed-scientists-since-darwin-has-finally-been-solved/",
     "title": "A Venus Flytrap Mystery That Has Perplexed Scientists Since Darwin Has Finally Been Solved",
     "description": "New research is finally shedding light on one of the Venus flytrap's most curious and enduring mysteries.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-02T15:42:00Z",
     "detected_at": "2026-08-02T17:04:18Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2084045417067536885#m",
+    "title": "Amid a rise in scams using AI, Trump is destroying the programs that help protect older Americans from fraud. I'm fighting back.",
+    "description": "Amid a rise in scams using AI, Trump is destroying the programs that help protect older Americans from fraud. I'm fighting back. Video",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-02T22:35:21Z",
+    "detected_at": "2026-08-03T03:23:34Z"
   }
 ]
