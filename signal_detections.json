@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/scientists-uncover-new-evidence-of-mysterious-time-reversal-symmetry-breaking-in-this-exotic-kagome-metal/",
-    "title": "Scientists Uncover New Evidence of Mysterious ‘Time-Reversal Symmetry Breaking’ in This ‘Exotic’ Kagome Metal",
-    "description": "Physicists report the discovery of new evidence for a mysterious quantum state in an unusual class of materials.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-16T15:24:17Z",
-    "detected_at": "2026-06-16T17:03:20Z"
-  },
-  {
-    "url": "https://thedebrief.org/weve-never-seen-anything-like-this-discovery-of-a-hidden-biological-clock-reveals-the-master-key-to-growth-and-development/",
-    "title": "“We’ve Never Seen Anything Like This”: Discovery of a Hidden Biological Clock Reveals the “Master Key” to Growth and Development",
-    "description": "A hidden biological clock has been discovered by genetic researchers, revealing how proteins act as a timing mechanism during development.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-16T13:54:15Z",
-    "detected_at": "2026-06-16T17:03:20Z"
-  },
-  {
     "url": "https://thedebrief.org/experts-warn-of-potential-covert-misuse-of-fusion-reactors-antineutrino-detectors-could-offer-a-safeguard-new-research-reveals/",
     "title": "Experts Warn of Potential Covert Misuse of Fusion Reactors—Antineutrino Detectors Could Offer a Safeguard, New Research Reveals",
     "description": "New research reveals how fusion reactors could be monitored for any potential illicit production of plutonium for nuclear weapons.",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-03T15:33:00Z",
     "detected_at": "2026-08-03T17:54:35Z"
+  },
+  {
+    "url": "https://nitter.net/LueElizondo/status/2066693666404479007#m",
+    "title": "As usual, there is a story here. Stay tuned. 🙄 Bonus points if you can guess the years of the Jeeps.",
+    "description": "As usual, there is a story here. Stay tuned. 🙄 Bonus points if you can guess the years of the Jeeps.",
+    "source_name": "Lue Elizondo (@LueElizondo)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8719,
+    "lon": -77.0563,
+    "location": "Arlington, VA",
+    "published_at": "2026-06-16T01:25:42Z",
+    "detected_at": "2026-08-03T19:42:55Z"
+  },
+  {
+    "url": "https://nitter.net/RepMoskowitz/status/2084359124599324695#m",
+    "title": "I was proud to secure over $1 million to help tackle chronic flooding across Deerfield Beach. Upgrading drainage pipes, inlets, manholes, and the existing pond will help keep roads and sidewalks open,",
+    "description": "I was proud to secure over $1 million to help tackle chronic flooding across Deerfield Beach. Upgrading drainage pipes, inlets, manholes, and the existing pond will help keep roads and sidewalks open, protect homes and property, and make it easier fo",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-03T19:21:55Z",
+    "detected_at": "2026-08-03T19:42:55Z"
   }
 ]
