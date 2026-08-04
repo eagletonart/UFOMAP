@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://www.liberationtimes.com/home/white-house-approved-trip-allegedly-took-congressman-to-maryland-base-to-examine-suspected-ufo-facility",
-    "title": "White House-Approved Trip Allegedly Took Congressman to Maryland Base to Examine Suspected UFO Facility",
-    "description": "Liberation Times understands Representative Eric Burlison, a key congressional Unidentified Anomalous Phenomena advocate, visited Naval Air Station Patuxent River (Pax River) in Maryland last month on a White House-approved trip.",
-    "source_name": "Liberation Times",
-    "source_type": "rss",
-    "author": "Christopher Sharp",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇬🇧",
-    "lat": 51.5074,
-    "lon": -0.1278,
-    "location": "London, UK",
-    "published_at": "2026-03-06T13:27:26Z",
-    "detected_at": "2026-06-16T20:57:16Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2066961061040078883#m",
     "title": "R to @JeremyCorbell: Watch full to catch up… UAP Whistleblowers Face Threats, Surveillance, and Unemployment https://youtu.be/rk0y6oeI2k0",
     "description": "Watch full to catch up… UAP Whistleblowers Face Threats, Surveillance, and Unemployment piped.video/rk0y6oeI2k0",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-04T16:01:47Z",
     "detected_at": "2026-08-04T17:51:45Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2084714097896030592#m",
+    "title": "This is Trump's legacy. Endless war. Higher prices. More hungry Americans.",
+    "description": "This is Trump's legacy. Endless war. Higher prices. More hungry Americans.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-04T18:52:27Z",
+    "detected_at": "2026-08-04T19:41:34Z"
   }
 ]
