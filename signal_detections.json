@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/quest-for-fire-new-technique-pushes-first-intentional-use-of-fire-to-over-one-million-years-ago/",
-    "title": "Quest for Fire: New Technique Pushes First Intentional Use of Fire to Over One Million Years Ago",
-    "description": "Scientists studying the site of the oldest-known intentional use of fire have found evidence pushing that date past one million years ago.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-16T12:07:00Z",
-    "detected_at": "2026-06-16T17:03:20Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2066899162164036048#m",
     "title": "The panic that corporations are buying up all our homes is way overblown. Investor owned rental homes are less than 2% of the housing market. The real problem we should be stopping is foreign buyers s",
     "description": "The panic that corporations are buying up all our homes is way overblown. Investor owned rental homes are less than 2% of the housing market. The real problem we should be stopping is foreign buyers snapping up American homes.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-03T23:01:58Z",
     "detected_at": "2026-08-03T23:05:28Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2084451421433242044#m",
+    "title": "Honored to have President @realDonaldTrump's Complete and Total Endorsement. Southwest Missouri has always stood with him, and I've stood with his America First agenda to cut spending, secure the bord",
+    "description": "Honored to have President @realDonaldTrump 's Complete and Total Endorsement. Southwest Missouri has always stood with him, and I've stood with his America First agenda to cut spending, secure the border, and defend the Second Amendment. Let's finish",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-04T01:28:40Z",
+    "detected_at": "2026-08-04T02:52:44Z"
   }
 ]
