@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2066961061040078883#m",
-    "title": "R to @JeremyCorbell: Watch full to catch up… UAP Whistleblowers Face Threats, Surveillance, and Unemployment https://youtu.be/rk0y6oeI2k0",
-    "description": "Watch full to catch up… UAP Whistleblowers Face Threats, Surveillance, and Unemployment piped.video/rk0y6oeI2k0",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-16T19:08:13Z",
-    "detected_at": "2026-06-16T20:57:16Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2066960855489798185#m",
     "title": "Exactly. @TheDylanBorland is correct. And in case you haven’t been paying attention by watching the interview at the @CITDConference - who “leaked” that information to me - was multiple top-tier ODNI ",
     "description": "Exactly. @TheDylanBorland is correct. And in case you haven’t been paying attention by watching the interview at the @CITDConference - who “leaked” that information to me - was multiple top-tier ODNI investigator’s - tasked with perusing the UAP inve",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-04T18:52:27Z",
     "detected_at": "2026-08-04T19:41:34Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/E3klEzsr_cs",
+    "title": "Why Did George Washington Fight For Independence While Owning Slaves?",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-04T22:00:04Z",
+    "detected_at": "2026-08-04T23:05:50Z"
   }
 ]
