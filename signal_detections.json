@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/AlchemyAmerican/status/2067015863975178618#m",
-    "title": "RT by @rosscoulthart: 🚨BREAKING🚨: Gifted and Talented Education (GATE) in the United States has been systematically used to identify children with anomalous cognitive and “psychic” abilities and funne",
-    "description": "🚨BREAKING🚨: Gifted and Talented Education (GATE) in the United States has been systematically used to identify children with anomalous cognitive and “psychic” abilities and funnel them into covert psychic development programs. Jordan Jozak ( @mercifu",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-06-16T22:45:59Z",
-    "detected_at": "2026-06-17T04:40:43Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2067054599287021605#m",
     "title": "The chaotic and bruising Republican primary exposed Mike Collins’ record: stripping Georgians of their health care to give tax breaks to billionaires, capitulating to Trump while Georgia families pay ",
     "description": "The chaotic and bruising Republican primary exposed Mike Collins’ record: stripping Georgians of their health care to give tax breaks to billionaires, capitulating to Trump while Georgia families pay the price, and facing a bipartisan Congressional e",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-05T14:07:02Z",
     "detected_at": "2026-08-05T14:18:48Z"
+  },
+  {
+    "url": "https://thedebrief.org/archaeologists-uncover-12000-year-old-evidence-that-could-rewrite-the-origins-of-ceramic-technology-in-southwest-asia/",
+    "title": "Archaeologists Uncover 11,500-Year-Old Evidence That Could Rewrite the Origins of Ceramic Technology in Southwest Asia",
+    "description": "A discovery by archaeologists at the Pre-Pottery Neolithic site of Çemka Höyük in southeastern Turkey is extending the accepted timelines on the origins of ancient ceramic technology.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-05T17:50:25Z",
+    "detected_at": "2026-08-05T19:40:37Z"
   }
 ]
