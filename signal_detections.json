@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2067054599287021605#m",
-    "title": "The chaotic and bruising Republican primary exposed Mike Collins’ record: stripping Georgians of their health care to give tax breaks to billionaires, capitulating to Trump while Georgia families pay ",
-    "description": "The chaotic and bruising Republican primary exposed Mike Collins’ record: stripping Georgians of their health care to give tax breaks to billionaires, capitulating to Trump while Georgia families pay the price, and facing a bipartisan Congressional e",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-17T01:19:55Z",
-    "detected_at": "2026-06-17T04:40:43Z"
-  },
-  {
-    "url": "https://nitter.net/FreedomCFund/status/2067067583799378029#m",
-    "title": "RT by @EricBurlison: Congratulations to FCF-endorsed candidate Barry Moore on his primary runoff victory in Alabama!",
-    "description": "Congratulations to FCF-endorsed candidate Barry Moore on his primary runoff victory in Alabama!",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-17T02:11:30Z",
-    "detected_at": "2026-06-17T11:04:43Z"
-  },
-  {
     "url": "https://thedebrief.org/this-breakthrough-propulsion-technology-could-one-day-carry-humans-to-the-stars-but-theres-a-problem/",
     "title": "This Breakthrough Propulsion Technology Could One Day Carry Humans to the Stars—But There’s a Problem",
     "description": "A futuristic propulsion system may have a few hurdles to cross before it can attain the near-light-speeds many experts had hoped for.",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-08-05T17:50:25Z",
     "detected_at": "2026-08-05T19:40:37Z"
+  },
+  {
+    "url": "https://nitter.net/RepTimBurchett/status/2085097166234624009#m",
+    "title": "It was a pleasure visiting PS Engineering and seeing the innovation taking place right here in East Tennessee. Thank you to the team for the tour and for sharing more about the important work you do.",
+    "description": "It was a pleasure visiting PS Engineering and seeing the innovation taking place right here in East Tennessee. Thank you to the team for the tour and for sharing more about the important work you do.",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-05T20:14:38Z",
+    "detected_at": "2026-08-05T21:15:31Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2085106863419359472#m",
+    "title": "Unpopular war. Sky-high prices. Historic corruption. Trump is a total disaster and the American people are feeling the consequences.",
+    "description": "Unpopular war. Sky-high prices. Historic corruption. Trump is a total disaster and the American people are feeling the consequences.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-05T20:53:10Z",
+    "detected_at": "2026-08-05T21:15:31Z"
   }
 ]
