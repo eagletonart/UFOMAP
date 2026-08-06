@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/could-alien-consciousness-be-unlike-anything-we-can-imagine-these-experts-say-non-human-intelligence-may-be-stranger-than-we-ever-imagined/",
-    "title": "Could Alien Consciousness Be Unlike Anything We Can Imagine? Non-Human Intelligence May Be Stranger Than We Think, These Experts Say",
-    "description": "Consciousness may arise in systems far different than the biology on Earth we are used to, according to new research.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-17T11:55:08Z",
-    "detected_at": "2026-06-17T15:45:23Z"
-  },
-  {
-    "url": "https://thedebrief.org/ancient-microbes-preserved-in-rapidly-thawing-arctic-middens-are-waking-up-could-they-pose-a-threat-to-us-today/",
-    "title": "Ancient Microbes Preserved in Rapidly Thawing Arctic Middens Are Waking Up—Could They Pose a Threat to Us Today?",
-    "description": "An analysis of ancient microbes frozen in rapidly thawing ancient middens spanning Greenland estimates the potential for modern-day spread.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-17T11:39:11Z",
-    "detected_at": "2026-06-17T15:45:23Z"
-  },
-  {
     "url": "https://www.youtube.com/shorts/GJAliV_3fTc",
     "title": "Step Inside the Obama Presidential Center Museum",
     "description": "",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-05T21:42:52Z",
     "detected_at": "2026-08-05T23:03:39Z"
+  },
+  {
+    "url": "https://nitter.net/SilencerShop/status/2085151426464862582#m",
+    "title": "RT by @EricBurlison: In Silencer Shop Foundation v. ATF, the court threw out the NFA's registration and approval scheme for suppressors, SBRs, and SBSs. Form 1. Form 4. ATF wait period. NFA Registry. ",
+    "description": "In Silencer Shop Foundation v. ATF, the court threw out the NFA's registration and approval scheme for suppressors, SBRs, and SBSs. Form 1. Form 4. ATF wait period. NFA Registry. All gone. And because we won, you win too. The ruling covers all Silenc",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-05T23:50:14Z",
+    "detected_at": "2026-08-06T10:42:48Z"
+  },
+  {
+    "url": "https://nitter.net/atrupar/status/2085129243462140099#m",
+    "title": "RT by @EricBurlison: Trump: \"We will pass the Great Healthcare Plan. It's called the Great Healthcare Plan.\"",
+    "description": "Trump: \"We will pass the Great Healthcare Plan. It's called the Great Healthcare Plan.\" Video",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-05T22:22:06Z",
+    "detected_at": "2026-08-06T10:42:48Z"
   }
 ]
