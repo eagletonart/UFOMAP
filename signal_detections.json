@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/a-bizarre-bullseye-in-space-could-hold-a-major-clue-to-unraveling-one-of-the-universes-greatest-mysteries/",
-    "title": "A Bizarre ‘Bullseye’ in Space Could Hold a Major Clue to Unraveling One of the Universe’s Greatest Mysteries",
-    "description": "New research reveals how an unusual celestial object resembling a cosmic “bullseye” could offer clues to one of the most perplexing phenomena in our universe.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-19T14:41:55Z",
-    "detected_at": "2026-06-19T15:29:41Z"
-  },
-  {
     "url": "https://thedebrief.org/could-humans-regrow-limbs-scientists-are-closer-than-ever-to-unlocking-a-hidden-power-of-regeneration/",
     "title": "Could Humans Regrow Limbs? Scientists Are Closer Than Ever to Unlocking a Hidden Power of Regeneration",
     "description": "Scientists have regrown skeletal and connective tissues in mammals, marking a “critical step” toward enabling tissue regeneration in humans.",
@@ -15998,5 +15982,21 @@
     "location": "New York, NY",
     "published_at": "2026-08-02T17:00:28Z",
     "detected_at": "2026-08-09T07:01:53Z"
+  },
+  {
+    "url": "https://nitter.net/RepMoskowitz/status/2086435380702621722#m",
+    "title": "Four years ago, the CHIPS and Science Act was signed into law. It was a powerful first step towards bringing semiconductor manufacturing home, but it was never meant to be the last. I'm proud to keep ",
+    "description": "Four years ago, the CHIPS and Science Act was signed into law. It was a powerful first step towards bringing semiconductor manufacturing home, but it was never meant to be the last. I'm proud to keep building on that promise by making sure it happens",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-09T12:52:13Z",
+    "detected_at": "2026-08-09T12:58:33Z"
   }
 ]
