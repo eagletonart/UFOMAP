@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2067675303225282831#m",
-    "title": "Americans are dropping their marketplace coverage because Trump and Republicans let premiums skyrocket. They spent billions on Trump's war with Iran but wouldn’t lift a finger to help working American",
-    "description": "Americans are dropping their marketplace coverage because Trump and Republicans let premiums skyrocket. They spent billions on Trump's war with Iran but wouldn’t lift a finger to help working Americans at home.",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-18T18:26:22Z",
-    "detected_at": "2026-06-18T22:16:24Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2067733550972252530#m",
     "title": "Whitley Strieber says he's watched Non-Human Intelligence extract a human soul - 'like an oyster from its shell.' And it's happened to him too. @G_Knapp and I get into it with @WhitleyStrieber - and w",
     "description": "Whitley Strieber says he's watched Non-Human Intelligence extract a human soul - 'like an oyster from its shell.' And it's happened to him too. @G_Knapp and I get into it with @WhitleyStrieber - and what he has witnessed. New WEAPONIZED launches 5PM ",
@@ -15998,5 +15982,21 @@
     "location": "Los Angeles, CA",
     "published_at": "2026-08-08T21:00:42Z",
     "detected_at": "2026-08-08T22:33:08Z"
+  },
+  {
+    "url": "https://nitter.net/gunrights/status/2086120050130342138#m",
+    "title": "RT by @EricBurlison: It is a common occurrence at our local @palmettoarmory store for someone to buy a braced pistol-caliber carbine and try to put a vertical foregrip on it. Then the cashier has to p",
+    "description": "It is a common occurrence at our local @palmettoarmory store for someone to buy a braced pistol-caliber carbine and try to put a vertical foregrip on it. Then the cashier has to politely explain that doing so is a potentially a felony because, 100 ye",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-08T15:59:12Z",
+    "detected_at": "2026-08-09T02:01:07Z"
   }
 ]
