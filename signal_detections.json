@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/could-humans-regrow-limbs-scientists-are-closer-than-ever-to-unlocking-a-hidden-power-of-regeneration/",
-    "title": "Could Humans Regrow Limbs? Scientists Are Closer Than Ever to Unlocking a Hidden Power of Regeneration",
-    "description": "Scientists have regrown skeletal and connective tissues in mammals, marking a “critical step” toward enabling tissue regeneration in humans.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-19T13:48:28Z",
-    "detected_at": "2026-06-19T15:29:41Z"
-  },
-  {
     "url": "https://thedebrief.org/inside-a-martian-meteorite-these-grains-of-an-unexpected-gemstone-hold-clues-to-a-hidden-past/",
     "title": "Inside a Martian Meteorite, These Grains of an Unexpected Gemstone Hold Clues to a Hidden Past",
     "description": "A Martian meteorite fragment containing unexpected grains of the mineral garnet could hold clues to the Red Planet’s geological history.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-09T12:52:13Z",
     "detected_at": "2026-08-09T12:58:33Z"
+  },
+  {
+    "url": "https://thedebrief.org/these-curious-ancient-greek-artifacts-have-extraterrestrial-origins-why-they-vanished-3000-years-ago-remains-a-mystery/",
+    "title": "These Curious Ancient Greek Artifacts Have Extraterrestrial Origins—Why They Vanished 3000 Years Ago Remains a Mystery",
+    "description": "New evidence suggests high-status individuals in ancient Greek society wore jewelry with origins that were literally out-of-this-world.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-09T14:30:48Z",
+    "detected_at": "2026-08-09T14:38:13Z"
   }
 ]
