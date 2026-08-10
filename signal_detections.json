@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2067996043313098996#m",
-    "title": "We have the House, the Senate, and the White House. Reconciliation only needs a simple majority. Joe America is not going to accept that the procedure is hard. We have been given the ball. It is time ",
-    "description": "We have the House, the Senate, and the White House. Reconciliation only needs a simple majority. Joe America is not going to accept that the procedure is hard. We have been given the ball. It is time to call and then run the play.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-19T15:40:52Z",
-    "detected_at": "2026-06-19T18:02:21Z"
-  },
-  {
-    "url": "https://nitter.net/AAGDhillon/status/2067709644185759938#m",
-    "title": "RT by @EricBurlison: Swing and a miss! Major League Baseball encouraged players to wear “Black Lives Matter” on their uniforms but reportedly threatened Christians who write Bible verses on their hats",
-    "description": "Swing and a miss! Major League Baseball encouraged players to wear “Black Lives Matter” on their uniforms but reportedly threatened Christians who write Bible verses on their hats. @USEEOC will investigate whether this amounts to religious discrimina",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-18T20:42:50Z",
-    "detected_at": "2026-06-19T21:12:42Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2068164804628603271#m",
     "title": "Never have i ever, except for this ONE time… been abducted 🛸 for an impromptu introduction at the IMPROV by a comic who they call… THE DARK QUEEN!!! 🤷🏻‍♂️😂 That was awesome @ChristinaP 👽😱",
     "description": "Never have i ever, except for this ONE time… been abducted 🛸 for an impromptu introduction at the IMPROV by a comic who they call… THE DARK QUEEN!!! 🤷🏻‍♂️😂 That was awesome @ChristinaP 👽😱 Video",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-10T14:33:55Z",
     "detected_at": "2026-08-10T15:02:12Z"
+  },
+  {
+    "url": "https://thedebrief.org/look-nasas-james-webb-space-telescope-captures-striking-new-images-that-bring-the-lion-nebula-roaring-to-life/",
+    "title": "Look: NASA’s James Webb Space Telescope Captures Striking New Images That Bring the ‘Lion Nebula’ Roaring to Life",
+    "description": "Stunning new imagery of the distant celestial object NGC 2392, better known as the “Lion Nebula,” has been obtained by NASA’s James Webb Space Telescope.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-10T15:44:23Z",
+    "detected_at": "2026-08-10T16:56:46Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2086835060955635901#m",
+    "title": "🚨 Trump is raising prices for up to 25 MILLION Americans on Medicare:",
+    "description": "🚨 Trump is raising prices for up to 25 MILLION Americans on Medicare: Video",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-10T15:20:24Z",
+    "detected_at": "2026-08-10T16:56:46Z"
   }
 ]
