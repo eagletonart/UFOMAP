@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2067981233288519950#m",
-    "title": "Reconciliation 2.0 did nothing on affordability. I blame the Senate. They handed Democrats the leverage. Reconciliation 3.0 has to be big, and it has to deliver.",
-    "description": "Reconciliation 2.0 did nothing on affordability. I blame the Senate. They handed Democrats the leverage. Reconciliation 3.0 has to be big, and it has to deliver.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-19T14:42:01Z",
-    "detected_at": "2026-06-19T15:29:41Z"
-  },
-  {
-    "url": "https://nitter.net/EricBurlison/status/2067962108289876412#m",
-    "title": "The panic over data centers draining our water is hype. Most use less water than a car wash, and many now cool with closed loop geothermal that uses none. If water is really your worry, you would be p",
-    "description": "The panic over data centers draining our water is hype. Most use less water than a car wash, and many now cool with closed loop geothermal that uses none. If water is really your worry, you would be protesting car washes first.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-19T13:26:02Z",
-    "detected_at": "2026-06-19T15:29:41Z"
-  },
-  {
     "url": "https://nitter.net/RepMoskowitz/status/2067957086474965397#m",
     "title": "On this day in 1865, the last enslaved Americans in Texas learned they were free, over two years after the Emancipation Proclamation. Juneteenth is not just a day to mark on a calendar, it's a day to ",
     "description": "On this day in 1865, the last enslaved Americans in Texas learned they were free, over two years after the Emancipation Proclamation. Juneteenth is not just a day to mark on a calendar, it's a day to reflect on the generations whose sacrifice shaped ",
@@ -15998,5 +15966,37 @@
     "location": "New York, NY",
     "published_at": "2026-08-09T11:55:00Z",
     "detected_at": "2026-08-10T05:36:41Z"
+  },
+  {
+    "url": "https://thedebrief.org/look-what-nasas-perseverance-rover-just-spotted-vanishing-behind-the-martian-moon-phobos/",
+    "title": "Look What NASA’s Perseverance Rover Just Spotted Vanishing Behind the Martian Moon Phobos",
+    "description": "An extraordinary event recently occurred in the twilight skies above Mars, and it was all captured on camera by NASA’s Perseverance rover.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-10T13:14:30Z",
+    "detected_at": "2026-08-10T13:16:55Z"
+  },
+  {
+    "url": "https://ufo.com.br/alemanha-investiga-milhares-de-relatos-de-ovnis/",
+    "title": "Alemanha investiga milhares de relatos de OVNIs",
+    "description": "Segundo Köhler, chegam diariamente entre três e seis comunicações de pessoas intrigadas com luzes e esferas enigmáticas. Para ele, a maioria dos casos tem origem em fenômenos naturais ou objetos comuns &#8211; aviões, satélites, balões meteorológicos",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-08-10T12:46:46Z",
+    "detected_at": "2026-08-10T13:16:55Z"
   }
 ]
