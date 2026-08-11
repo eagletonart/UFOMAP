@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2068381812657738031#m",
-    "title": "Stories like Tim Casey's remind us of our promise to 9/11 survivors. I'll never stop fighting to make sure 9/11 survivors and first responders get the timely, high-quality care they need.",
-    "description": "Stories like Tim Casey's remind us of our promise to 9/11 survivors. I'll never stop fighting to make sure 9/11 survivors and first responders get the timely, high-quality care they need. Video",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-20T17:13:47Z",
-    "detected_at": "2026-06-20T17:38:33Z"
-  },
-  {
-    "url": "https://inexplicata.blogspot.com/2026/06/dominican-republic-unknown-object.html",
-    "title": "Dominican Republic: Unknown Object Identified as Research Balloon",
-    "description": "&nbsp;Source: Dario Hoy / El Pais (Dominican Republic) Date: 12.04.2025 Dominican Republic: Unknown Object Identified as Research Balloon The strange object visible from various parts of the Dominican Republic over the past few hours proved to be a s",
-    "source_name": "Inexplicata — Hispanic Ufology",
-    "source_type": "rss",
-    "author": "Scott Corrales",
-    "priority": "medium",
-    "lang": "en/es",
-    "flag": "🌎",
-    "lat": 4.5709,
-    "lon": -74.2973,
-    "location": "Latin America",
-    "published_at": "2026-06-20T13:56:45Z",
-    "detected_at": "2026-06-20T21:21:27Z"
-  },
-  {
     "url": "https://nitter.net/disclosureorg/status/2068335196961657013#m",
     "title": "RT by @rosscoulthart: UAP transparency has overwhelming support. 89% of Republicans and 88% of Democrats want the U.S. government to provide the public with more information about UFOs. https://disclo",
     "description": "UAP transparency has overwhelming support. 89% of Republicans and 88% of Democrats want the U.S. government to provide the public with more information about UFOs. disclosure.org/research/publ… Disclosure Foundation (@disclosurefound) 🧵 New national ",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-10T22:45:12Z",
     "detected_at": "2026-08-11T02:00:36Z"
+  },
+  {
+    "url": "https://nitter.net/NewsNation/status/2086911644656111840#m",
+    "title": "RT by @rosscoulthart: Revisit some of @RossCoulthart's biggest and most compelling interviews when you subscribe to \"Reality Check with Ross Coulthart\" on YouTube. Today, we look back at Coulthart and",
+    "description": "Revisit some of @RossCoulthart 's biggest and most compelling interviews when you subscribe to \"Reality Check with Ross Coulthart\" on YouTube. Today, we look back at Coulthart and theoretical physicist @MaxDerakhshani 's conversation surrounding Apol",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-08-10T20:24:43Z",
+    "detected_at": "2026-08-11T05:13:00Z"
+  },
+  {
+    "url": "https://nitter.net/robjonesreports/status/2086806632663482658#m",
+    "title": "RT by @rosscoulthart: If you are interested in @uNHIddenhealth 's mission, then check out our excellent interview with John Priestland and Dr. Martin Abbas on Reality Check from just a few months ago:",
+    "description": "If you are interested in @uNHIddenhealth 's mission, then check out our excellent interview with John Priestland and Dr. Martin Abbas on Reality Check from just a few months ago: piped.video/z0_ZLCh1jBI?si=mHZK… Ross Coulthart (@rosscoulthart) This i",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-08-10T13:27:26Z",
+    "detected_at": "2026-08-11T05:13:00Z"
   }
 ]
