@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2068806811298226365#m",
-    "title": "The story of Ruth and Naomi is a shining example of how we should care for each other. Here’s how the Bible shows us to step up for our communities:",
-    "description": "The story of Ruth and Naomi is a shining example of how we should care for each other. Here’s how the Bible shows us to step up for our communities: Video",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-21T21:22:35Z",
-    "detected_at": "2026-06-21T23:19:40Z"
-  },
-  {
-    "url": "https://nitter.net/RepTimBurchett/status/2048228764711108913#m",
-    "title": "Reminder: The Secret Service is currently unfunded because of the Democrats’ DHS funding shutdown.",
-    "description": "Reminder: The Secret Service is currently unfunded because of the Democrats’ DHS funding shutdown.",
-    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-04-26T02:32:46Z",
-    "detected_at": "2026-06-22T04:54:48Z"
-  },
-  {
     "url": "https://nitter.net/RepTimBurchett/status/2047124496654406044#m",
     "title": "Getting ready to join @seanhannity on @FoxNews to discuss missing scientists. Y’all should tune in…",
     "description": "Getting ready to join @seanhannity on @FoxNews to discuss missing scientists. Y’all should tune in…",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-10T21:08:01Z",
     "detected_at": "2026-08-11T13:14:12Z"
+  },
+  {
+    "url": "https://thedebrief.org/mysterious-ancient-inscriptions-decoded-a-phobos-photobomb-a-new-time-crystal-and-new-evidence-of-neolithic-technology/",
+    "title": "Mysterious Ancient Inscriptions Decoded, a Phobos Photobomb, a New Time Crystal, and New Evidence of Neolithic Technology",
+    "description": "This week, we look at archaeologists decoding mysterious stone inscriptions, a rare cosmic alignment over Mars, and more stories in the news.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-11T14:47:58Z",
+    "detected_at": "2026-08-11T15:01:27Z"
+  },
+  {
+    "url": "https://thedebrief.org/james-webb-space-telescope-data-reveals-a-previously-undiscovered-gravitational-arc-that-was-hidden-in-plain-sight/",
+    "title": "James Webb Space Telescope Data Reveals a Previously Undiscovered ‘Gravitational Arc’ That Was Hidden in Plain Sight",
+    "description": "A previously undiscovered candidate for a cosmic gravitational phenomenon has been uncovered, in a surprise discovery made from JWST observations.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-11T14:22:58Z",
+    "detected_at": "2026-08-11T15:01:27Z"
   }
 ]
