@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/deep-in-the-jungles-of-borneo-scientists-just-discovered-a-hyperparasite-that-preys-on-zombie-fungi/",
-    "title": "Deep in the Jungles of Borneo, Scientists Just Discovered a “Hyperparasite” Organism That Preys on Zombie Fungi",
-    "description": "Scientists working in the jungles of Borneo report an unsettling discovery: a parasitic organism that they say has a hunger for zombie fungi.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-22T14:28:46Z",
-    "detected_at": "2026-06-22T18:14:02Z"
-  },
-  {
-    "url": "https://thedebrief.org/scientists-warn-extraterrestrial-encounters-could-endanger-earth-a-quarantine-facility-on-the-moon-may-be-our-last-line-of-defense/",
-    "title": "Scientists Warn Extraterrestrial Encounters Could Endanger Earth—a Quarantine Facility on the Moon May Be Our Last Line of Defense",
-    "description": "Researchers say a biocontainment facility on the Moon could be humanity's last line of defense against potential future alien contamination.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-22T13:28:19Z",
-    "detected_at": "2026-06-22T18:14:02Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2069080639278886995#m",
     "title": "Excellent points @GarryPNolan. The UAP Scientific Advisory Board is fortunate to have you.",
     "description": "Excellent points @GarryPNolan . The UAP Scientific Advisory Board is fortunate to have you. Garry P. Nolan (@GarryPNolan) Why do we need a UAP Scientific Advisory Board? As has been widely reported, the US government has asked Professor Avi Loeb, of ",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-08T15:54:00Z",
     "detected_at": "2026-08-11T17:00:14Z"
+  },
+  {
+    "url": "https://nitter.net/RepTimBurchett/status/2087305581203742728#m",
+    "title": "I had the chance to stop by the Loudon County Courthouse last week to catch up with some old friends. I’m grateful for their service to the people of Loudon County.",
+    "description": "I had the chance to stop by the Loudon County Courthouse last week to catch up with some old friends. I’m grateful for their service to the people of Loudon County.",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-11T22:30:05Z",
+    "detected_at": "2026-08-11T22:48:18Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2087289479438430216#m",
+    "title": "Trump has money for battleships, ballrooms, and bombs, but NOTHING to lower your grocery bill or healthcare costs.",
+    "description": "Trump has money for battleships, ballrooms, and bombs, but NOTHING to lower your grocery bill or healthcare costs. Video",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-11T21:26:06Z",
+    "detected_at": "2026-08-11T22:48:18Z"
   }
 ]
