@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/i/status/456664707261149184#m",
-    "title": "RT by @GeorgeKnapp: #LateNightListen - An interesting podcast from 2009 with @GeorgeKnapp - http://tun.in/tcmNJV",
-    "description": "#LateNightListen - An interesting podcast from 2009 with @GeorgeKnapp - tun.in/tcmNJV",
-    "source_name": "George Knapp (@GeorgeKnapp)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 36.1699,
-    "lon": -115.1398,
-    "location": "Las Vegas, NV",
-    "published_at": "2014-04-17T05:25:25Z",
-    "detected_at": "2026-06-24T17:59:51Z"
-  },
-  {
-    "url": "https://nitter.net/i/status/129695886459666433#m",
-    "title": "RT by @GeorgeKnapp: RT @eatinglasvegas: FEED Farmers Market downtown gets celebrity shoppers like a blurry George Knapp http://t.co/KDtI3EBL",
-    "description": "RT @eatinglasvegas : FEED Farmers Market downtown gets celebrity shoppers like a blurry George Knapp http://t.co/KDtI3EBL",
-    "source_name": "George Knapp (@GeorgeKnapp)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 36.1699,
-    "lon": -115.1398,
-    "location": "Las Vegas, NV",
-    "published_at": "2011-10-27T23:08:03Z",
-    "detected_at": "2026-06-24T17:59:51Z"
-  },
-  {
     "url": "https://nitter.net/i/status/77694000689197058#m",
     "title": "RT by @GeorgeKnapp: FUKushima was Sabotaged?...... http://jimstonefreelance.com/fukushima.html",
     "description": "FUKushima was Sabotaged?...... jimstonefreelance.com/fukush…",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-14T17:42:54Z",
     "detected_at": "2026-08-14T18:58:52Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=1j2wYdiFHB0",
+    "title": "Life of a Soviet Soldier During World War 2",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-14T22:00:22Z",
+    "detected_at": "2026-08-14T22:27:09Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2088374866030338197#m",
+    "title": "Trump took away healthcare from Americans to give tax breaks to billionaires.",
+    "description": "Trump took away healthcare from Americans to give tax breaks to billionaires.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-14T21:19:02Z",
+    "detected_at": "2026-08-14T22:27:09Z"
   }
 ]
