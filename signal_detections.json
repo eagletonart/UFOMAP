@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/i/status/817802316216725507#m",
-    "title": "RT by @GeorgeKnapp: Bombshell: Obama/DHS Preparing to Overturn Trump Election - http://www.infowars.com/bombshell-obamadhs-preparing-to-overturn-trump-election/ #WakeUpAmerica",
-    "description": "Bombshell: Obama/DHS Preparing to Overturn Trump Election - infowars.com/bombshell-obama… #WakeUpAmerica",
-    "source_name": "George Knapp (@GeorgeKnapp)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 36.1699,
-    "lon": -115.1398,
-    "location": "Las Vegas, NV",
-    "published_at": "2017-01-07T18:37:20Z",
-    "detected_at": "2026-06-24T17:59:51Z"
-  },
-  {
-    "url": "https://nitter.net/i/status/398066389220487169#m",
-    "title": "RT by @GeorgeKnapp: *MEMORY MUSCLES* & The Secret Memory Muscles Technique! ( Get Younger at: http://www.MemoryMuscles.com )",
-    "description": "*MEMORY MUSCLES* &amp; The Secret Memory Muscles Technique! ( Get Younger at: MemoryMuscles.com )",
-    "source_name": "George Knapp (@GeorgeKnapp)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 36.1699,
-    "lon": -115.1398,
-    "location": "Las Vegas, NV",
-    "published_at": "2013-11-06T12:36:37Z",
-    "detected_at": "2026-06-24T17:59:51Z"
-  },
-  {
     "url": "https://nitter.net/i/status/456664707261149184#m",
     "title": "RT by @GeorgeKnapp: #LateNightListen - An interesting podcast from 2009 with @GeorgeKnapp - http://tun.in/tcmNJV",
     "description": "#LateNightListen - An interesting podcast from 2009 with @GeorgeKnapp - tun.in/tcmNJV",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-14T14:14:28Z",
     "detected_at": "2026-08-14T14:54:43Z"
+  },
+  {
+    "url": "https://nitter.net/RepTimBurchett/status/2088322214084989174#m",
+    "title": "I had the chance to join Senator Hagerty and other officials for a tour of CMC Steel in Knoxville this week. I appreciate Senator Hagerty inviting us, and I am grateful to the team at CMC for taking t",
+    "description": "I had the chance to join Senator Hagerty and other officials for a tour of CMC Steel in Knoxville this week. I appreciate Senator Hagerty inviting us, and I am grateful to the team at CMC for taking the time to show us around.",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-14T17:49:49Z",
+    "detected_at": "2026-08-14T18:58:52Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2088320472752529828#m",
+    "title": "Americans were told gas would be cut in half; Trump delivered record-breaking gasoline prices.",
+    "description": "Americans were told gas would be cut in half; Trump delivered record-breaking gasoline prices.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-14T17:42:54Z",
+    "detected_at": "2026-08-14T18:58:52Z"
   }
 ]
