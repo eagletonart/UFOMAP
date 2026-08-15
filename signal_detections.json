@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepMoskowitz/status/2069901680276111860#m",
-    "title": "For over 100 years, the @FLCities has been the united voice for Florida's municipalities, championing local voices making local choices. It was a privilege to meet with them today to discuss how we in",
-    "description": "For over 100 years, the @FLCities has been the united voice for Florida's municipalities, championing local voices making local choices. It was a privilege to meet with them today to discuss how we in Congress can make sure local voices are heard at ",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-24T21:53:12Z",
-    "detected_at": "2026-06-24T23:08:13Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2069889730993369464#m",
     "title": "Reproductive care saves lives.",
     "description": "Reproductive care saves lives.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-15T00:57:17Z",
     "detected_at": "2026-08-15T16:28:56Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2088691564478394434#m",
+    "title": "Sky-high corruption. Sky-high prices. The American people have had enough of Trump's fraud.",
+    "description": "Sky-high corruption. Sky-high prices. The American people have had enough of Trump's fraud.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-15T18:17:29Z",
+    "detected_at": "2026-08-15T18:34:44Z"
   }
 ]
