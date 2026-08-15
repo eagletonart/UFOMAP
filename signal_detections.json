@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/i/status/77694000689197058#m",
-    "title": "RT by @GeorgeKnapp: FUKushima was Sabotaged?...... http://jimstonefreelance.com/fukushima.html",
-    "description": "FUKushima was Sabotaged?...... jimstonefreelance.com/fukush…",
-    "source_name": "George Knapp (@GeorgeKnapp)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 36.1699,
-    "lon": -115.1398,
-    "location": "Las Vegas, NV",
-    "published_at": "2011-06-06T11:11:07Z",
-    "detected_at": "2026-06-24T17:59:51Z"
-  },
-  {
     "url": "https://thedebrief.org/a-new-material-upgrades-sunlight-into-uv-light-and-a-solid-state-breakthrough-makes-it-possible/",
     "title": "A New Material ‘Upgrades’ Sunlight Into UV Light—and a Solid-State Breakthrough Makes It Possible",
     "description": "In a major advance in UV energy research, scientists have developed a solid material that converts visible light into high-energy UV light.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-14T21:19:02Z",
     "detected_at": "2026-08-14T22:27:09Z"
+  },
+  {
+    "url": "https://nitter.net/RepEricBurlison/status/2088311067873026469#m",
+    "title": "RT by @rosscoulthart: U.S. personnel created the perfect conditions at a secret location to lure in UAPs for top intelligence officials. It sounds like something out of a movie, but the entire operati",
+    "description": "U.S. personnel created the perfect conditions at a secret location to lure in UAPs for top intelligence officials. It sounds like something out of a movie, but the entire operation was documented and presented as fact. Video",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-08-14T17:05:32Z",
+    "detected_at": "2026-08-15T01:25:41Z"
   }
 ]
