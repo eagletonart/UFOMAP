@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2069895559042003114#m",
-    "title": "Fact.",
-    "description": "Fact. Eric Burlison (@EricBurlison) We told MIT Lincoln Labs we know the exact video file you are holding, by name, and we want it. They admitted it exists and agreed to turn it over. That is what happens when you stop asking politely and start namin",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-24T21:28:52Z",
-    "detected_at": "2026-06-24T23:08:13Z"
-  },
-  {
     "url": "https://nitter.net/RepMoskowitz/status/2069901680276111860#m",
     "title": "For over 100 years, the @FLCities has been the united voice for Florida's municipalities, championing local voices making local choices. It was a privilege to meet with them today to discuss how we in",
     "description": "For over 100 years, the @FLCities has been the united voice for Florida's municipalities, championing local voices making local choices. It was a privilege to meet with them today to discuss how we in Congress can make sure local voices are heard at ",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-15T13:00:24Z",
     "detected_at": "2026-08-15T14:26:21Z"
+  },
+  {
+    "url": "https://nitter.net/LO_Cardinals/status/2088429790504112526#m",
+    "title": "RT by @EricBurlison: It’s time ⏰",
+    "description": "It’s time ⏰ St. Louis Cardinals (@Cardinals) 👀 Video — https://nitter.net/Cardinals/status/2088429718169174191#m",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-15T00:57:17Z",
+    "detected_at": "2026-08-15T16:28:56Z"
   }
 ]
