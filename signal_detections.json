@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/two-century-old-light-phenomenon-could-power-the-next-generation-of-communications-and-data-storage-tech/",
-    "title": "Two-Century-Old Light Phenomenon Could Power the Next Generation of Communications and Data Storage Tech",
-    "description": "Poisson spots, a light phenomenon first discovered two centuries ago, have been to produce optical skyrmions, with implications for tech.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-25T13:07:52Z",
-    "detected_at": "2026-06-25T14:40:28Z"
-  },
-  {
-    "url": "https://thedebrief.org/discovery-of-fungi-living-within-desert-moss-is-challenging-past-thinking-on-how-organisms-thrive-in-arid-environments/",
-    "title": "Discovery of Fungi Living Within Desert Moss is Challenging Past Thinking on How Organisms Thrive in Arid Environments",
-    "description": "Moss has long been regarded as unusual among land plants for its resilience and apparent independence from fungal partnerships, which are common in other species; however, new research from UC Riverside indicates that this view may not apply in deser",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-25T13:03:31Z",
-    "detected_at": "2026-06-25T14:40:28Z"
-  },
-  {
     "url": "https://thedebrief.org/sunscreen-misinformation-attracts-high-engagement-on-tiktok-study-finds/",
     "title": "Sunscreen Misinformation Attracts High Engagement on TikTok, Study Finds",
     "description": "TikTok videos promoting sunscreen misinformation receive significantly more engagement than pro-sunscreen content, according to new research.",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2024-12-25T13:01:00Z",
     "detected_at": "2026-08-16T18:34:00Z"
+  },
+  {
+    "url": "https://nitter.net/SenMarcoRubio/status/1871903731920605321#m",
+    "title": "Merry Christmas!",
+    "description": "Merry Christmas!",
+    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2024-12-25T13:00:02Z",
+    "detected_at": "2026-08-16T20:27:03Z"
+  },
+  {
+    "url": "https://nitter.net/SenMarcoRubio/status/1866453206701850733#m",
+    "title": "My bill to designate the Pensacola and Perdido Bays as an \"Estuary of National of Significance,\" first introduced in 2021, just passed the House and is set to become law. My full statement below:",
+    "description": "My bill to designate the Pensacola and Perdido Bays as an \"Estuary of National of Significance,\" first introduced in 2021, just passed the House and is set to become law. My full statement below:",
+    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2024-12-10T12:01:36Z",
+    "detected_at": "2026-08-16T20:27:03Z"
   }
 ]
