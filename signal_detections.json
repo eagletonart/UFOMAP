@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenMarcoRubio/status/1871903731920605321#m",
-    "title": "Merry Christmas!",
-    "description": "Merry Christmas!",
-    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2024-12-25T13:00:02Z",
-    "detected_at": "2026-06-25T10:46:49Z"
-  },
-  {
-    "url": "https://nitter.net/SenMarcoRubio/status/1866453206701850733#m",
-    "title": "My bill to designate the Pensacola and Perdido Bays as an \"Estuary of National of Significance,\" first introduced in 2021, just passed the House and is set to become law. My full statement below:",
-    "description": "My bill to designate the Pensacola and Perdido Bays as an \"Estuary of National of Significance,\" first introduced in 2021, just passed the House and is set to become law. My full statement below:",
-    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2024-12-10T12:01:36Z",
-    "detected_at": "2026-06-25T10:46:49Z"
-  },
-  {
     "url": "https://thedebrief.org/two-century-old-light-phenomenon-could-power-the-next-generation-of-communications-and-data-storage-tech/",
     "title": "Two-Century-Old Light Phenomenon Could Power the Next Generation of Communications and Data Storage Tech",
     "description": "Poisson spots, a light phenomenon first discovered two centuries ago, have been to produce optical skyrmions, with implications for tech.",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2025-01-01T13:59:00Z",
     "detected_at": "2026-08-16T16:29:53Z"
+  },
+  {
+    "url": "https://nitter.net/SenMarcoRubio/status/1872047167340183626#m",
+    "title": "Happy Hanukkah!",
+    "description": "Happy Hanukkah! Video",
+    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2024-12-25T22:30:00Z",
+    "detected_at": "2026-08-16T18:34:00Z"
+  },
+  {
+    "url": "https://nitter.net/SenMarcoRubio/status/1871903974581805069#m",
+    "title": "Feliz Navidad!",
+    "description": "Feliz Navidad!",
+    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2024-12-25T13:01:00Z",
+    "detected_at": "2026-08-16T18:34:00Z"
   }
 ]
