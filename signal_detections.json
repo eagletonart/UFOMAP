@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/GSPPodOfficial/status/2069772056837681484#m",
-    "title": "RT by @JeremyCorbell: youtu.be/fEc5qzMS40A?si=HcRr…",
-    "description": "piped.video/fEc5qzMS40A?si=HcRr… Link Declassified UFO Footage with Investigative Journalist Jeremy Corbell Investigative journalist @JeremyCorbell analyzes recently declassif... youtube.com",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-24T13:18:07Z",
-    "detected_at": "2026-06-25T03:59:18Z"
-  },
-  {
     "url": "https://nitter.net/SenMarcoRubio/status/1874455537615618192#m",
     "title": "Feliz año nuevo!",
     "description": "Feliz año nuevo!",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-15T20:08:49Z",
     "detected_at": "2026-08-15T20:26:23Z"
+  },
+  {
+    "url": "https://thedebrief.org/something-sparked-a-technological-revolution-in-china-146000-years-ago-archaeologists-have-now-linked-it-to-a-mysterious-extinct-human-species/",
+    "title": "Something Sparked a Technological Revolution in China 146,000 Years Ago—Archaeologists Have Now Linked It to a Mysterious Extinct Human Species",
+    "description": "During the harsh conditions in ice age China 146,000 years ago, a remarkable survival strategy was being developed by early humans.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-16T12:25:26Z",
+    "detected_at": "2026-08-16T12:46:07Z"
   }
 ]
