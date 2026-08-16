@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenMarcoRubio/status/1874455537615618192#m",
-    "title": "Feliz año nuevo!",
-    "description": "Feliz año nuevo!",
-    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2025-01-01T14:00:00Z",
-    "detected_at": "2026-06-25T07:52:17Z"
-  },
-  {
-    "url": "https://nitter.net/SenMarcoRubio/status/1874455285198397461#m",
-    "title": "Happy New Year!",
-    "description": "Happy New Year!",
-    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2025-01-01T13:59:00Z",
-    "detected_at": "2026-06-25T07:52:17Z"
-  },
-  {
     "url": "https://nitter.net/SenMarcoRubio/status/1872047167340183626#m",
     "title": "Happy Hanukkah!",
     "description": "Happy Hanukkah! Video",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-08-16T12:25:26Z",
     "detected_at": "2026-08-16T12:46:07Z"
+  },
+  {
+    "url": "https://thedebrief.org/a-mile-long-ancient-roman-engineering-marvel-has-suddenly-surfaced-from-beneath-this-famous-waterway/",
+    "title": "A Mile-Long Ancient Roman Engineering Marvel Has Suddenly Surfaced from Beneath This Famous Waterway",
+    "description": "A mile-long ancient structure built by the Romans has surfaced from the shallow summer waters of Europe’s second-longest river.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-16T14:22:50Z",
+    "detected_at": "2026-08-16T14:26:22Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-spot-dolphins-using-shells-as-tools-to-catch-fish-further-challenging-a-longtime-marker-of-culture/",
+    "title": "Scientists Spot Dolphins Using Shells as Tools to Catch Fish, Further Challenging a Longtime Marker of Culture",
+    "description": "Scientists observing dolphins in Australia just made a remarkable discovery: these lively aquatic mammals use tools to help them capture fish.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-16T13:29:29Z",
+    "detected_at": "2026-08-16T14:26:22Z"
   }
 ]
