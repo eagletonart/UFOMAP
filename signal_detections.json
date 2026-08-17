@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/sunscreen-misinformation-attracts-high-engagement-on-tiktok-study-finds/",
-    "title": "Sunscreen Misinformation Attracts High Engagement on TikTok, Study Finds",
-    "description": "TikTok videos promoting sunscreen misinformation receive significantly more engagement than pro-sunscreen content, according to new research.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-25T12:55:52Z",
-    "detected_at": "2026-06-25T14:40:28Z"
-  },
-  {
     "url": "https://thedebrief.org/nasas-perseverance-rover-finds-complex-carbon-at-ancient-martian-site-rich-in-potential-biosignatures/",
     "title": "NASA’s Perseverance Rover Finds Complex Carbon at Ancient Martian Site Rich in Potential Biosignatures",
     "description": "Evidence for possible life on Mars in the ancient past continues to build, thanks to a recent discovery by NASA’s Perseverance rover.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2024-12-10T12:01:36Z",
     "detected_at": "2026-08-16T20:27:03Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2089148245750493392#m",
+    "title": "Elections should be decided by voters, not megadonors. I'm fighting to establish a national \"Democracy Dollars\" voucher program that would empower everyday American voters to participate in the campai",
+    "description": "Elections should be decided by voters, not megadonors. I'm fighting to establish a national \"Democracy Dollars\" voucher program that would empower everyday American voters to participate in the campaign finance system. Here's why we need it: Video",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-17T00:32:10Z",
+    "detected_at": "2026-08-17T01:35:03Z"
   }
 ]
