@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepTimBurchett/status/2070147189775491325#m",
-    "title": "Gavel just dropped. DOGE hearing on slashing fraud in food stamps is underway. Let’s roll.",
-    "description": "Gavel just dropped. DOGE hearing on slashing fraud in food stamps is underway. Let’s roll.",
-    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-25T14:08:46Z",
-    "detected_at": "2026-06-25T14:40:28Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2070146749755199643#m",
     "title": "The Senate does not need to nuke the filibuster. They just need to make Democrats actually filibuster. Get every Senator on the record on whether you should prove you are a citizen to register to vote",
     "description": "The Senate does not need to nuke the filibuster. They just need to make Democrats actually filibuster. Get every Senator on the record on whether you should prove you are a citizen to register to vote. Let voters see who is hiding.",
@@ -15998,5 +15982,21 @@
     "location": "New York, NY",
     "published_at": "2026-08-17T11:48:44Z",
     "detected_at": "2026-08-17T12:50:59Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/06/argentina-shocking-teleportation.html",
+    "title": "Argentina: A Shocking Teleportation Incident from 1981",
+    "description": "&nbsp; &nbsp;Source: El Litoral (Corrientes, Argentina) Date: 20-june-2026 An article by Francisco Villagrán An incredible abduction case from 1981 A highway department driver taken by a UFO This shocking case of teleportation occurred in 1981, when ",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-06-25T04:18:52Z",
+    "detected_at": "2026-08-17T14:31:39Z"
   }
 ]
