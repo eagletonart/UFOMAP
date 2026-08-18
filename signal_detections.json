@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/nickpopemod/status/2033937043181736310#m",
-    "title": "Happy St. Patrick's Day! Elizabeth took this photo of me last year in the Pig N Whistle on 7th and 36th. After a couple of pints of Guinness we both had fish & chips: generous portions, piping hot, an",
-    "description": "Happy St. Patrick's Day! Elizabeth took this photo of me last year in the Pig N Whistle on 7th and 36th. After a couple of pints of Guinness we both had fish &amp; chips: generous portions, piping hot, and flavorful. Cheers!",
-    "source_name": "Nick Pope (@nickpopemod)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇬🇧",
-    "lat": 51.5074,
-    "lon": -0.1278,
-    "location": "London, UK",
-    "published_at": "2026-03-17T16:02:34Z",
-    "detected_at": "2026-06-25T21:47:17Z"
-  },
-  {
-    "url": "https://nitter.net/nickpopemod/status/2031537050940485983#m",
-    "title": "Elizabeth and I watched \"Ford v Ferrari\" last night. Superb movie. Highly recommended! https://www.imdb.com/title/tt1950186/",
-    "description": "Elizabeth and I watched \"Ford v Ferrari\" last night. Superb movie. Highly recommended! imdb.com/title/tt1950186/",
-    "source_name": "Nick Pope (@nickpopemod)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇬🇧",
-    "lat": 51.5074,
-    "lon": -0.1278,
-    "location": "London, UK",
-    "published_at": "2026-03-11T01:05:51Z",
-    "detected_at": "2026-06-25T21:47:17Z"
-  },
-  {
     "url": "https://nitter.net/nickpopemod/status/2028157646449385506#m",
     "title": "This is why we live in Tucson!",
     "description": "This is why we live in Tucson! Elizabeth Weiss (@eweissunburied) It's finally warm -- today's high 93F, tomorrow 92F, and then we drop down to a chilly 86F! — https://nitter.net/eweissunburied/status/2028147743194271799#m",
@@ -15998,5 +15966,37 @@
     "location": "London, UK",
     "published_at": "2026-03-29T03:55:32Z",
     "detected_at": "2026-08-18T18:42:19Z"
+  },
+  {
+    "url": "https://nitter.net/GunOwners/status/2089741139972689941#m",
+    "title": "RT by @EricBurlison: 🚨BREAKING🚨 Judge Reed O'Connor strikes down Biden's \"Ghost Gun\" ban after SCOTUS upheld it on statutory grounds in Vanderstok v. Garland. \"[T]he Final Rule is unconstitutional und",
+    "description": "🚨BREAKING🚨 Judge Reed O'Connor strikes down Biden's \"Ghost Gun\" ban after SCOTUS upheld it on statutory grounds in Vanderstok v. Garland. \"[T]he Final Rule is unconstitutional under the 2nd Amendment &amp; void for vagueness under the Due Process Cla",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-18T15:48:07Z",
+    "detected_at": "2026-08-18T20:28:05Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2089789312023896066#m",
+    "title": "Trump launched this unpopular war with no strategy and no mission. Six months in, and there’s no end in sight. Costs are up at home. Our service members' lives are at risk. Trump failed us.",
+    "description": "Trump launched this unpopular war with no strategy and no mission. Six months in, and there’s no end in sight. Costs are up at home. Our service members' lives are at risk. Trump failed us.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-18T18:59:33Z",
+    "detected_at": "2026-08-18T20:28:05Z"
   }
 ]
