@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/chrisramsay52/status/2070538311882493964#m",
-    "title": "RT by @JeremyCorbell: Bob Lazar and Travis Walton meet at The Flying Saucer Diner. Full video is now up!",
-    "description": "Bob Lazar and Travis Walton meet at The Flying Saucer Diner. Full video is now up! Video",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-26T16:02:56Z",
-    "detected_at": "2026-06-26T19:56:03Z"
-  },
-  {
     "url": "https://nitter.net/JeremyCorbell/status/2070561258768892274#m",
     "title": "Lockheed?",
     "description": "Lockheed? Video",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-19T17:46:26Z",
     "detected_at": "2026-08-19T18:39:40Z"
+  },
+  {
+    "url": "https://ufo.com.br/eric-davis-afirma-que-existem-pelo-menos-quatro-tipos-de-seres-alienigenas-conhecidos-pelos-eua/",
+    "title": "Eric Davis afirma que existem pelo menos quatro tipos de seres alienígenas conhecidos pelos EUA",
+    "description": "O astrofísico Eric W. Davis, que trabalhou como consultor científico em programas do governo dos Estados Unidos dedicados à investigação de Fenômenos Anômalos Não Identificados (UAPs) afirmou que existem pelo menos quatro tipos diferentes de seres nã",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-08-19T20:47:27Z",
+    "detected_at": "2026-08-19T22:27:58Z"
   }
 ]
