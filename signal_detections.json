@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2070498817464574317#m",
-    "title": "We are told the SAVE Act does not have 50 votes in the Senate. That is a lie. The votes are there if leadership would bring it to the floor. Proving you are a citizen before you register to vote is co",
-    "description": "We are told the SAVE Act does not have 50 votes in the Senate. That is a lie. The votes are there if leadership would bring it to the floor. Proving you are a citizen before you register to vote is common sense, and most Americans agree.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-26T13:26:00Z",
-    "detected_at": "2026-06-26T16:20:19Z"
-  },
-  {
-    "url": "https://nitter.net/RepMoskowitz/status/2070519116868305081#m",
-    "title": "Eleven years ago today, Obergefell made marriage equality the law of the land. It was a victory worth celebrating, but we can’t be complacent. At a time when these freedoms are under attack, we must p",
-    "description": "Eleven years ago today, Obergefell made marriage equality the law of the land. It was a victory worth celebrating, but we can’t be complacent. At a time when these freedoms are under attack, we must protect the right to love and say in one clear voic",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-26T14:46:40Z",
-    "detected_at": "2026-06-26T16:20:19Z"
-  },
-  {
     "url": "https://nitter.net/RepMoskowitz/status/2070512578359328855#m",
     "title": "Our fourth annual Sneaker Day on the Hill was a success! This year was our first at the Library of Congress, with special soccer cleats from the World Cup on display. From the culture that built them ",
     "description": "Our fourth annual Sneaker Day on the Hill was a success! This year was our first at the Library of Congress, with special soccer cleats from the World Cup on display. From the culture that built them to the people who wear them with pride, sneakers t",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-19T13:32:18Z",
     "detected_at": "2026-08-19T14:37:19Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Ez7VSgp82lU",
+    "title": "Ross Perot's Challenge for the Presidency",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-19T16:00:16Z",
+    "detected_at": "2026-08-19T16:35:16Z"
+  },
+  {
+    "url": "https://nitter.net/EricBurlison/status/2090098219225165963#m",
+    "title": "People ask how we pay for giving every American a health savings account. Here's how. Stop paying the banks to sit on money. Over $1 trillion in ten years, moved out of a risk-free bank subsidy and in",
+    "description": "People ask how we pay for giving every American a health savings account. Here's how. Stop paying the banks to sit on money. Over $1 trillion in ten years, moved out of a risk-free bank subsidy and into accounts that belong to you.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-19T15:27:02Z",
+    "detected_at": "2026-08-19T16:35:16Z"
   }
 ]
