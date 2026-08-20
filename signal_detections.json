@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2070561258768892274#m",
-    "title": "Lockheed?",
-    "description": "Lockheed? Video",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-06-26T17:34:07Z",
-    "detected_at": "2026-06-26T19:56:03Z"
-  },
-  {
     "url": "https://nitter.net/ChrisUKSharp/status/2070166995320930417#m",
     "title": "RT by @rosscoulthart: Days before he vanished, according to the police report, McCasland flew by himself to Washington DC to officially resign from Riverside Research. I think Riverside Research may b",
     "description": "Days before he vanished, according to the police report, McCasland flew by himself to Washington DC to officially resign from Riverside Research. I think Riverside Research may be very important... Daily Mail (@DailyMail) Shocking memo reveals missin",
@@ -15998,5 +15982,21 @@
     "location": "Brazil",
     "published_at": "2026-08-19T20:47:27Z",
     "detected_at": "2026-08-19T22:27:58Z"
+  },
+  {
+    "url": "https://nitter.net/chrisramsay52/status/2070538311882493964#m",
+    "title": "RT by @JeremyCorbell: Bob Lazar and Travis Walton meet at The Flying Saucer Diner. Full video is now up!",
+    "description": "Bob Lazar and Travis Walton meet at The Flying Saucer Diner. Full video is now up! Video",
+    "source_name": "Jeremy Corbell (@JeremyCorbell)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-06-26T16:02:56Z",
+    "detected_at": "2026-08-20T03:00:10Z"
   }
 ]
