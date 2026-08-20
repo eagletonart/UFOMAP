@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepMoskowitz/status/2070684080463548514#m",
-    "title": "I’m calling on @SecRubio and @SecWar to deploy a Navy hospital ship to Venezuela. The earthquakes have killed over 920 people and injured thousands. The USNS Comfort and Mercy can save lives. Send the",
-    "description": "I’m calling on @SecRubio and @SecWar to deploy a Navy hospital ship to Venezuela. The earthquakes have killed over 920 people and injured thousands. The USNS Comfort and Mercy can save lives. Send them now.",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-27T01:42:10Z",
-    "detected_at": "2026-06-27T03:52:21Z"
-  },
-  {
-    "url": "https://nitter.net/EricBurlison/status/2070867501278187904#m",
-    "title": "Only 29 states have turned over their SNAP data to Congress. Every state should. We are 39 trillion dollars in debt, about 356,000 dollars per taxpayer. I will not put on blinders while criminals over",
-    "description": "Only 29 states have turned over their SNAP data to Congress. Every state should. We are 39 trillion dollars in debt, about 356,000 dollars per taxpayer. I will not put on blinders while criminals overseas drain a program meant for families in need.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-27T13:51:01Z",
-    "detected_at": "2026-06-27T13:51:57Z"
-  },
-  {
     "url": "https://thedebrief.org/something-is-swarming-in-swirls-of-green-in-the-black-sea-and-these-nasa-images-captured-the-phenomenon-from-orbit/",
     "title": "Something is Swarming in Swirls of Green in the Black Sea—and These NASA Images Captured the Phenomenon from Orbit",
     "description": "NASA orbital imagery of the Black Sea has revealed eerie-looking swirls of turquoise-green swarming in its waters.",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-08-20T18:35:52Z",
     "detected_at": "2026-08-20T18:45:02Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2090508520974152090#m",
+    "title": "Trump is fighting tooth and nail for his ballroom, but still hasn't done a thing to lower your healthcare costs or fix the healthcare crisis he created. He'd rather plan parties for billionaires than ",
+    "description": "Trump is fighting tooth and nail for his ballroom, but still hasn't done a thing to lower your healthcare costs or fix the healthcare crisis he created. He'd rather plan parties for billionaires than help working Americans.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-20T18:37:25Z",
+    "detected_at": "2026-08-20T20:32:24Z"
+  },
+  {
+    "url": "https://nitter.net/SenGillibrand/status/2090450113311248506#m",
+    "title": "Trump isn't fighting to lower costs for working families. He's trading stocks and selling early access to his Truth Social posts instead. The American people can see through his corruption.",
+    "description": "Trump isn't fighting to lower costs for working families. He's trading stocks and selling early access to his Truth Social posts instead. The American people can see through his corruption.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-20T14:45:20Z",
+    "detected_at": "2026-08-20T20:32:24Z"
   }
 ]
