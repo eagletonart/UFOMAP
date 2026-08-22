@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepMoskowitz/status/2071389132719267866#m",
-    "title": "Congrats to my friend @billmaher on receiving the Mark Twain Prize for American Humor. Thirty years of telling everyone in Washington exactly what he thinks, and somehow he’s still invited back. Nobod",
-    "description": "Congrats to my friend @billmaher on receiving the Mark Twain Prize for American Humor. Thirty years of telling everyone in Washington exactly what he thinks, and somehow he’s still invited back. Nobody earns this one quite like you. Congratulations.",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-29T00:23:48Z",
-    "detected_at": "2026-06-29T04:21:24Z"
-  },
-  {
     "url": "https://thedebrief.org/it-has-a-hidden-order-that-becomes-visible-physicists-just-discovered-a-bizarre-new-quantum-state/",
     "title": "“It Has a Hidden Order That Becomes Visible”: Physicists Just Discovered a Bizarre New Quantum State",
     "description": "An unusual new type of quantum state has been revealed by theoretical physicists by pushing particles to their limits.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-08-22T14:00:14Z",
     "detected_at": "2026-08-22T14:25:08Z"
+  },
+  {
+    "url": "https://thedebrief.org/mit-team-reverse-engineers-a-curious-2000-year-old-roman-technology-to-create-modern-material-that-heals-its-own-cracks/",
+    "title": "MIT Team Reverse-Engineers a Curious 2000-Year-Old Roman Technology to Create Modern Material That Heals Its Own Cracks",
+    "description": "MIT researchers are reverse-engineering an ancient Roman technology to create an environmentally friendly modern building material that can heal itself.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-22T15:32:03Z",
+    "detected_at": "2026-08-22T16:28:43Z"
   }
 ]
