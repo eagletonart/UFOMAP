@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/LueElizondo/status/2071306245189878030#m",
-    "title": "Thank you, I appreciate you.",
-    "description": "Thank you, I appreciate you. UAP ★ Luigi ★👁️⃤ 🇺🇸 κρυπτός W.👽MJ12 SOM1-01🫈 (@UAPLuigi) How does Ross know Lue hasn’t been forthcoming? He has had multiple SCIF meetings including with the FBI. He went to the ICIG, Congress, FBI, Senate, media, public ",
-    "source_name": "Lue Elizondo (@LueElizondo)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8719,
-    "lon": -77.0563,
-    "location": "Arlington, VA",
-    "published_at": "2026-06-28T18:54:26Z",
-    "detected_at": "2026-06-28T19:27:24Z"
-  },
-  {
-    "url": "https://nitter.net/SenGillibrand/status/2071290787434779072#m",
-    "title": "Trump is REFUSING to sign a bipartisan housing bill that would lower costs, build more housing, and stop private equity from buying up homes. Trump First, America Last.",
-    "description": "Trump is REFUSING to sign a bipartisan housing bill that would lower costs, build more housing, and stop private equity from buying up homes. Trump First, America Last. Video",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-28T17:53:01Z",
-    "detected_at": "2026-06-28T19:27:24Z"
-  },
-  {
     "url": "https://nitter.net/RepMoskowitz/status/2071389132719267866#m",
     "title": "Congrats to my friend @billmaher on receiving the Mark Twain Prize for American Humor. Thirty years of telling everyone in Washington exactly what he thinks, and somehow he’s still invited back. Nobod",
     "description": "Congrats to my friend @billmaher on receiving the Mark Twain Prize for American Humor. Thirty years of telling everyone in Washington exactly what he thinks, and somehow he’s still invited back. Nobody earns this one quite like you. Congratulations.",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-08-22T12:10:12Z",
     "detected_at": "2026-08-22T12:46:03Z"
+  },
+  {
+    "url": "https://thedebrief.org/lost-for-1800-years-a-mysterious-altar-linked-to-an-ancient-roman-cult-resurfaces-as-drought-drains-europes-rivers/",
+    "title": "Lost for 1800 Years, a Mysterious Altar Linked to an Ancient Roman Cult Resurfaces as Drought Drains Europe’s Rivers",
+    "description": "An unexpected discovery by archaeologists has revealed an ancient cult object in the suddenly shallow waters of one of Europe’s longest rivers.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-22T13:27:11Z",
+    "detected_at": "2026-08-22T14:25:08Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=HUr238UEtPY",
+    "title": "See What Life Was Like in America During WWII",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-22T14:00:14Z",
+    "detected_at": "2026-08-22T14:25:08Z"
   }
 ]
