@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/the-first-ancient-protein-analysis-of-homo-naledi-has-revealed-a-new-burial-mystery/",
-    "title": "The First Ancient Protein Analysis of Homo Naledi Has Revealed a New Burial Mystery",
-    "description": "A recent study, published in Cell, marks the first ancient protein analysis of Homo naledi and raises the possibility that the Dinaledi Chamber may contain predominantly, or possibly exclusively, female individuals.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-29T12:18:34Z",
-    "detected_at": "2026-06-29T15:54:20Z"
-  },
-  {
     "url": "https://thedebrief.org/new-research-suggests-human-laughter-may-hold-a-15-million-year-old-secret/",
     "title": "New Research Suggests Human Laughter May Hold a 15-Million-Year Old Secret",
     "description": "Human laughter may share a 15-million-year-old evolutionary rhythm with our primate ancestors, offering clues about the origins of speech.",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-08-23T13:00:30Z",
     "detected_at": "2026-08-23T14:26:51Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-grew-human-brain-organoids-for-years-and-discovered-they-keep-track-of-time/",
+    "title": "Scientists Grew Human Brain Organoids for Years and Discovered They Keep Track of Time",
+    "description": "Cell-culture brain models called organoids can be used to study far more advanced neurodevelopmental disorders than researchers imagined.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-23T15:59:43Z",
+    "detected_at": "2026-08-23T16:30:10Z"
   }
 ]
