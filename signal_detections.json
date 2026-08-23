@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/it-has-a-hidden-order-that-becomes-visible-physicists-just-discovered-a-bizarre-new-quantum-state/",
-    "title": "“It Has a Hidden Order That Becomes Visible”: Physicists Just Discovered a Bizarre New Quantum State",
-    "description": "An unusual new type of quantum state has been revealed by theoretical physicists by pushing particles to their limits.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-29T13:45:47Z",
-    "detected_at": "2026-06-29T15:54:20Z"
-  },
-  {
-    "url": "https://thedebrief.org/scientists-create-bio-inspired-robots-to-hack-the-hovering-powers-of-this-exceptional-species-to-build-better-uavs/",
-    "title": "Scientists Create Bio-Inspired Robots to Hack the Hovering Powers of This Exceptional Species to Build Better UAVs",
-    "description": "An innovative new approach to building safer, more efficient small unmanned aerial vehicles is taking a cue from nature.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-29T13:09:46Z",
-    "detected_at": "2026-06-29T15:54:20Z"
-  },
-  {
     "url": "https://thedebrief.org/the-first-ancient-protein-analysis-of-homo-naledi-has-revealed-a-new-burial-mystery/",
     "title": "The First Ancient Protein Analysis of Homo Naledi Has Revealed a New Burial Mystery",
     "description": "A recent study, published in Cell, marks the first ancient protein analysis of Homo naledi and raises the possibility that the Dinaledi Chamber may contain predominantly, or possibly exclusively, female individuals.",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-08-22T15:32:03Z",
     "detected_at": "2026-08-22T16:28:43Z"
+  },
+  {
+    "url": "https://thedebrief.org/british-security-coordination-and-the-limits-of-allied-persuasion-how-foreign-partners-can-shape-strategy-through-clandestine-action/",
+    "title": "British Security Coordination and the Limits of Allied Persuasion: How Foreign Partners Can Shape Strategy Through Clandestine Action",
+    "description": "American lawyer Irina Tsukerman examines Britain’s WWII-era British Security Coordination campaign, and a potential lesson NATO must learn to adapt to today’s political environment.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-23T13:14:31Z",
+    "detected_at": "2026-08-23T14:26:51Z"
+  },
+  {
+    "url": "https://thedebrief.org/the-republic-of-veiled-tongues-an-afghan-woman-reports-from-inside-afghanistan/",
+    "title": "The Republic of Veiled Tongues: An Afghan Woman Reports from Inside Afghanistan",
+    "description": "Samreen Makhfi, a woman living in Afghanistan, reflects on life in her country, its historical aspirations, and present conditions.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-23T13:00:30Z",
+    "detected_at": "2026-08-23T14:26:51Z"
   }
 ]
