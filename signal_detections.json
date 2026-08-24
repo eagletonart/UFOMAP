@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepMoskowitz/status/2071628904784154999#m",
-    "title": "Congratulations to Lilyanna Zameska of Pompano Beach, winner of our 2026 Congressional Art Competition! It was a privilege to meet her last week and see her piece on display in the halls of Congress f",
-    "description": "Congratulations to Lilyanna Zameska of Pompano Beach, winner of our 2026 Congressional Art Competition! It was a privilege to meet her last week and see her piece on display in the halls of Congress for the whole country to see. More proof the best a",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-29T16:16:34Z",
-    "detected_at": "2026-06-29T18:10:49Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2071647330705592502#m",
     "title": "If you risk your life for this country, your child should get the care they need. It is completely and totally unacceptable that military families are being denied essential care for their autistic ch",
     "description": "If you risk your life for this country, your child should get the care they need. It is completely and totally unacceptable that military families are being denied essential care for their autistic children. Period. I'm demanding that the military's ",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-08-24T12:00:57Z",
     "detected_at": "2026-08-24T12:57:06Z"
+  },
+  {
+    "url": "https://ufo.com.br/objeto-brilhante-intriga-moradores-de-tres-lagoas/",
+    "title": "Objeto brilhante intriga moradores de Três Lagoas",
+    "description": "A aparição não passou despercebida: outros moradores também observaram o fenômeno e compartilharam vídeos nas redes sociais, aumentando as especulações sobre o que teria surgido no céu da cidade. Até o momento, não há confirmação oficial sobre a natu",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-08-24T14:53:45Z",
+    "detected_at": "2026-08-24T16:41:33Z"
   }
 ]
