@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2071647330705592502#m",
-    "title": "If you risk your life for this country, your child should get the care they need. It is completely and totally unacceptable that military families are being denied essential care for their autistic ch",
-    "description": "If you risk your life for this country, your child should get the care they need. It is completely and totally unacceptable that military families are being denied essential care for their autistic children. Period. I'm demanding that the military's ",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-29T17:29:47Z",
-    "detected_at": "2026-06-29T18:10:49Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2071677647663300732#m",
     "title": "Trump and congressional Republicans let healthcare premiums explode and now millions of Americans can't afford coverage. We warned them. They CHOSE to let sick Americans struggle instead of extending ",
     "description": "Trump and congressional Republicans let healthcare premiums explode and now millions of Americans can't afford coverage. We warned them. They CHOSE to let sick Americans struggle instead of extending the enhanced ACA tax credits.",
@@ -15998,5 +15982,21 @@
     "location": "Brazil",
     "published_at": "2026-08-24T14:53:45Z",
     "detected_at": "2026-08-24T16:41:33Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-have-uncovered-large-quantities-of-hidden-hydrogen-beneath-australia-and-it-could-lead-to-a-clean-energy-breakthrough/",
+    "title": "Scientists Have Uncovered Large Quantities of Hidden Hydrogen Beneath Australia—and It Could Lead to a Clean Energy Breakthrough",
+    "description": "Researchers say an untapped source of clean energy has been hiding beneath Western Australian soil, where some of the world’s largest iron deposits could harbor an unexpected secret.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-24T18:18:40Z",
+    "detected_at": "2026-08-24T18:45:36Z"
   }
 ]
