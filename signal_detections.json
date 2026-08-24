@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2071677647663300732#m",
-    "title": "Trump and congressional Republicans let healthcare premiums explode and now millions of Americans can't afford coverage. We warned them. They CHOSE to let sick Americans struggle instead of extending ",
-    "description": "Trump and congressional Republicans let healthcare premiums explode and now millions of Americans can't afford coverage. We warned them. They CHOSE to let sick Americans struggle instead of extending the enhanced ACA tax credits.",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-29T19:30:15Z",
-    "detected_at": "2026-06-29T21:38:09Z"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=YjaRBeXnwJA",
     "title": "Step Inside the Room Where the U.S. Declared Independence & the Constitution Was Created",
     "description": "",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-08-24T18:18:40Z",
     "detected_at": "2026-08-24T18:45:36Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=2y-iFGvuTD8",
+    "title": "Step Inside the Room Where George Washington Died",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-24T22:00:15Z",
+    "detected_at": "2026-08-24T22:29:53Z"
   }
 ]
