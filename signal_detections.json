@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/we-dont-have-any-records-so-far-archaeologists-discover-ancient-monolith-in-mexico-unlike-anything-previously-seen/",
-    "title": "“We Don’t Have Any Records So Far”: Archaeologists Discover Ancient ‘Monolith’ in Mexico Unlike Anything Previously Seen",
-    "description": "Archaeologists in Mexico report the “unprecedented” discovery of an unusual monolith and pre-Hispanic ruins unlike others in the region.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-30T14:01:33Z",
-    "detected_at": "2026-06-30T16:24:05Z"
-  },
-  {
-    "url": "https://thedebrief.org/scientists-used-water-to-uncover-a-strange-invisible-quantum-phenomenon-that-remained-elusive-for-decades/",
-    "title": "Scientists Used Water to Uncover a Strange, ‘Invisible’ Quantum Phenomenon That Remained Elusive for Decades",
-    "description": "A team of physicists set out to recreate a 60-year-old quantum mystery using a large water tank.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-06-30T12:17:49Z",
-    "detected_at": "2026-06-30T16:24:05Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2071972584841744714#m",
     "title": "I am a hard yes on Amendment 4 this August. Out of state billionaires have turned our Missouri Constitution into a novel hundreds of pages long. Amendment 4 says a change must win in all 8 congression",
     "description": "I am a hard yes on Amendment 4 this August. Out of state billionaires have turned our Missouri Constitution into a novel hundreds of pages long. Amendment 4 says a change must win in all 8 congressional districts. Vote yes.",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-08-25T11:56:51Z",
     "detected_at": "2026-08-25T12:53:19Z"
+  },
+  {
+    "url": "https://thedebrief.org/look-satellites-capture-dramatic-moment-a-manhattan-sized-iceberg-broke-away-from-a-greenland-glacier/",
+    "title": "Look: Satellites Capture Dramatic Moment a Manhattan-Sized Iceberg Broke Away from a Greenland Glacier",
+    "description": "A massive chunk of Greenland’s Petermann Glacier has broken away, forming an iceberg the size of Manhattan in what scientists say is the most significant Arctic calving event recorded in years. As the dramatic event unfolded, the European Space Agenc",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-25T14:04:37Z",
+    "detected_at": "2026-08-25T14:49:56Z"
+  },
+  {
+    "url": "https://ufo.com.br/jornal-de-1970-ja-registrava-um-possivel-disco-voador-em-varginha-26-anos-antes-do-caso/",
+    "title": "Jornal de 1970 já registrava um possível disco voador em Varginha, 26 anos antes do caso mundialmente famoso",
+    "description": "Um levantamento recente trouxe à tona um capítulo pouco conhecido da história ufológica de Varginha, cidade do sul de Minas Gerais que ficou mundialmente famosa em 1996 pelo chamado &#8220;ET de Varginha&#8221;. Segundo a reportagem, a região já regi",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-08-25T14:36:45Z",
+    "detected_at": "2026-08-25T14:49:56Z"
   }
 ]
