@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2071972584841744714#m",
-    "title": "I am a hard yes on Amendment 4 this August. Out of state billionaires have turned our Missouri Constitution into a novel hundreds of pages long. Amendment 4 says a change must win in all 8 congression",
-    "description": "I am a hard yes on Amendment 4 this August. Out of state billionaires have turned our Missouri Constitution into a novel hundreds of pages long. Amendment 4 says a change must win in all 8 congressional districts. Vote yes.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-06-30T15:02:14Z",
-    "detected_at": "2026-06-30T16:24:05Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2071969256527315136#m",
     "title": "Right now a few rich donors from outside Missouri can buy their way into our Constitution. Amendment 4 protects southwest Missouri by requiring real majority support in every congressional district. V",
     "description": "Right now a few rich donors from outside Missouri can buy their way into our Constitution. Amendment 4 protects southwest Missouri by requiring real majority support in every congressional district. Vote yes in August.",
@@ -15998,5 +15982,21 @@
     "location": "Brazil",
     "published_at": "2026-08-25T14:36:45Z",
     "detected_at": "2026-08-25T14:49:56Z"
+  },
+  {
+    "url": "https://thedebrief.org/mobile-hypersonic-spaceports-a-manhattan-sized-ice-island-and-a-lost-city-surfaces-in-egypt/",
+    "title": "Mobile Hypersonic Spaceports, a Manhattan-sized “Ice Island,” and a Lost City Surfaces in Egypt",
+    "description": "This week, a commercial space company reveals a game-changing new launch capability, satellites capture the formation of a Manhattan-sized \"ice island,\" and much more.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-08-25T14:58:50Z",
+    "detected_at": "2026-08-25T16:40:53Z"
   }
 ]
