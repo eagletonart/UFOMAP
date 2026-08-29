@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepTimBurchett/status/2057190611405455656#m",
-    "title": ".@RepJamesComer put me in charge of the DOGE subcommittee to root out waste, and that is exactly what the Duplication Scoring Act does. Today, that bill passed out of @GOPoversight. I urge my colleagu",
-    "description": ". @RepJamesComer put me in charge of the DOGE subcommittee to root out waste, and that is exactly what the Duplication Scoring Act does. Today, that bill passed out of @GOPoversight . I urge my colleagues to put an end to duplicative federal programs",
-    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-05-20T20:03:57Z",
-    "detected_at": "2026-07-01T20:01:47Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2072378321120227439#m",
     "title": "They said it couldn't be done. But now, Democrats are in position to flip the Senate. The momentum is real, but there is more work to do. Let's flip the Senate!",
     "description": "They said it couldn't be done. But now, Democrats are in position to flip the Senate. The momentum is real, but there is more work to do. Let's flip the Senate!",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-08-28T12:09:57Z",
     "detected_at": "2026-08-28T20:05:15Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/07/the-ufo-enigma-in-portugal.html",
+    "title": "The UFO Enigma in Portugal",
+    "description": "&nbsp; The UFO Enigma in Portugal by Vicente-Juan Ballester Olmos and&nbsp; Juan Fernández Peris &nbsp; The contribution made to this catalogue by the foremost Portuguese scholars has been of the first rank, not only in quantity but also in quality o",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-07-01T12:11:36Z",
+    "detected_at": "2026-08-29T03:34:50Z"
   }
 ]
