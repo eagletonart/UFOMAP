@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2072378321120227439#m",
-    "title": "They said it couldn't be done. But now, Democrats are in position to flip the Senate. The momentum is real, but there is more work to do. Let's flip the Senate!",
-    "description": "They said it couldn't be done. But now, Democrats are in position to flip the Senate. The momentum is real, but there is more work to do. Let's flip the Senate!",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-01T17:54:29Z",
-    "detected_at": "2026-07-01T20:01:47Z"
-  },
-  {
     "url": "https://thedebrief.org/its-like-using-a-time-machine-unexpected-cosmic-life-after-death-discovered-on-planets-around-a-burned-out-star/",
     "title": "“It’s Like Using a Time Machine” Unexpected Cosmic ‘Life After Death’ Discovered on Planets Around a Burned-Out Star",
     "description": "New James Webb Space Telescope observations reveal that the fate of planets after the death of their host star may be surprisingly warm.",
@@ -15998,5 +15982,21 @@
     "location": "Latin America",
     "published_at": "2026-07-01T12:11:36Z",
     "detected_at": "2026-08-29T03:34:50Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=ASt_L9arcWc",
+    "title": "Go Inside the Marine Barracks in Washington, DC",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-08-28T22:00:14Z",
+    "detected_at": "2026-08-29T10:55:29Z"
   }
 ]
