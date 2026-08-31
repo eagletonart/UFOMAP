@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepMoskowitz/status/2072675431052959880#m",
-    "title": "When Lyndon Johnson signed the Civil Rights Act of 1964, few could have imagined only years earlier that such a bill was possible. With the stroke of a pen, the end of legal segregation was written in",
-    "description": "When Lyndon Johnson signed the Civil Rights Act of 1964, few could have imagined only years earlier that such a bill was possible. With the stroke of a pen, the end of legal segregation was written into law, moving us closer to the founding promise o",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-02T13:35:05Z",
-    "detected_at": "2026-07-02T14:15:05Z"
-  },
-  {
     "url": "https://thedebrief.org/america-at-250-from-the-battle-for-independence-to-the-fight-over-artificial-intelligence/",
     "title": "America at 250: From the Battle for Independence, to the Fight Over Artificial Intelligence",
     "description": "As America celebrates its 250th birthday, we look at technological revolutions that have shaped the country—and the AI revolution now poised to redefine its future.",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-08-31T13:11:38Z",
     "detected_at": "2026-08-31T17:27:41Z"
+  },
+  {
+    "url": "https://ufo.com.br/mais-de-400-000-civilizacoes-humanoides-o-que-os-avistamentos-de-ovnis-realmente-nos-dizem/",
+    "title": "Mais de 400.000 civilizações humanoides: o que os avistamentos de OVNIs realmente nos dizem",
+    "description": "De acordo com um crescente corpo de pesquisas especulativas e depoimentos de contatados, nossa galáxia sozinha pode abrigar mais de 400.000 civilizações humanoides . Muitos desses seres parecem notavelmente humanos, embora cada raça carregue caracter",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-08-31T13:10:16Z",
+    "detected_at": "2026-08-31T22:39:52Z"
   }
 ]
