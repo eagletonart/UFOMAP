@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2072694447918186622#m",
-    "title": "Trump started a reckless war, drove up prices, and left working families to suffer the consequences.",
-    "description": "Trump started a reckless war, drove up prices, and left working families to suffer the consequences.",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-02T14:50:39Z",
-    "detected_at": "2026-07-02T17:53:20Z"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=cdwuo9ox7N4",
     "title": "Take a Walk on Boston's Freedom Trail",
     "description": "",
@@ -15998,5 +15982,21 @@
     "location": "Brazil",
     "published_at": "2026-09-01T13:50:02Z",
     "detected_at": "2026-09-01T16:19:49Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/1VBOGNAKEoY",
+    "title": "The Difference Between Formula 1 & IndyCar Explained",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-09-01T19:41:30Z",
+    "detected_at": "2026-09-01T20:48:12Z"
   }
 ]
