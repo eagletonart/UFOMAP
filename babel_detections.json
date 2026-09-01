@@ -646,5 +646,14 @@
     "priority": "high",
     "detected_at": "2026-07-08T01:48:44Z",
     "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/news/page/52/",
+    "text": "Last \u00bb",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-09-01T20:18:34Z",
+    "analyzed": false
   }
 ]
