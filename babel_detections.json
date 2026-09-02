@@ -655,5 +655,32 @@
     "priority": "high",
     "detected_at": "2026-09-01T20:18:34Z",
     "analyzed": false
+  },
+  {
+    "url": "https://www.cia.gov/readingroom/foia_request",
+    "text": "Submit Request",
+    "source_name": "CIA FOIA \u2014 Reading Room UAP",
+    "source_url": "https://www.cia.gov/readingroom/search/site/UAP",
+    "priority": "high",
+    "detected_at": "2026-09-02T20:17:41Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.cia.gov/readingroom/fees-and-waivers-foia",
+    "text": "Fee Schedule",
+    "source_name": "CIA FOIA \u2014 Reading Room UAP",
+    "source_url": "https://www.cia.gov/readingroom/search/site/UAP",
+    "priority": "high",
+    "detected_at": "2026-09-02T20:17:41Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.cia.gov/readingroom/search/site/UAP/what-electronic-reading-room",
+    "text": "What is the Electronic Reading Room?",
+    "source_name": "CIA FOIA \u2014 Reading Room UAP",
+    "source_url": "https://www.cia.gov/readingroom/search/site/UAP",
+    "priority": "high",
+    "detected_at": "2026-09-02T20:17:41Z",
+    "analyzed": false
   }
 ]
