@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/weve-replicated-in-chemistry-what-only-used-to-be-possible-in-biology-scientists-have-created-the-first-fully-synthetic-cell/",
-    "title": "“We’ve Replicated in Chemistry What Only Used to be Possible in Biology”: Scientists Have Created the First Fully Synthetic Cell",
-    "description": "Researchers have developed the first entirely artificial cell, made completely from non-living chemical components.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-03T13:41:06Z",
-    "detected_at": "2026-07-03T14:18:26Z"
-  },
-  {
     "url": "https://thedebrief.org/hawking-radiation-breakthrough-these-black-hole-emissions-could-reveal-quantum-gravity/",
     "title": "Hawking Radiation Breakthrough: These Black Hole Emissions Could Reveal Quantum Gravity",
     "description": "New experiments are bringing into focus the mechanism behind Hawking radiation, demonstrating black holes are not strictly a one-way street.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-09-02T12:00:05Z",
     "detected_at": "2026-09-02T14:11:55Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/GX76OPALdrA",
+    "title": "What Happened to Lee's Army After Appomattox (PART 1)",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-09-02T22:00:30Z",
+    "detected_at": "2026-09-02T22:27:45Z"
   }
 ]
