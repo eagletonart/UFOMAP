@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2073054659808231621#m",
-    "title": "Asked about Flock license plate cameras watching every car. My answer was short. I hate them. They are an encroachment on your privacy, and I do not want a government that spies on its own people. The",
-    "description": "Asked about Flock license plate cameras watching every car. My answer was short. I hate them. They are an encroachment on your privacy, and I do not want a government that spies on its own people. The Fourth Amendment is not optional.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-03T14:42:01Z",
-    "detected_at": "2026-07-03T17:36:58Z"
-  },
-  {
-    "url": "https://ufo.com.br/pentagono-divulga-novo-lote-de-arquivos-sobre-ovnis/",
-    "title": "Pentágono divulga novo lote de arquivos sobre OVNIs",
-    "description": "O Pentágono liberou 72 novos documentos sobre fenômenos aéreos não identificados (UAPs), parte da campanha de transparência determinada pelo presidente Donald Trump. Apesar das descrições curiosas — como um “disco giratório com feixes de luz”, um “or",
-    "source_name": "Revista UFO Brasil",
-    "source_type": "rss",
-    "author": "Revista UFO",
-    "priority": "high",
-    "lang": "pt-BR",
-    "flag": "🇧🇷",
-    "lat": -15.7801,
-    "lon": -47.9292,
-    "location": "Brazil",
-    "published_at": "2026-07-03T23:28:46Z",
-    "detected_at": "2026-07-04T06:50:00Z"
-  },
-  {
     "url": "https://ufo.com.br/astronomo-de-harvard-liderara-conselho-da-casa-branca-sobre-ovnis/",
     "title": "Astrônomo de Harvard liderará conselho da Casa Branca sobre OVNIs",
     "description": "Avi Loeb, cosmólogo e ex-chefe do departamento de astronomia de Harvard, foi escolhido pela Casa Branca para liderar um novo conselho consultivo científico dedicado a investigar os riscos à segurança nacional representados por fenômenos aéreos não id",
@@ -15998,5 +15966,37 @@
     "location": "Latin America",
     "published_at": "2026-09-03T11:24:41Z",
     "detected_at": "2026-09-03T19:11:42Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/09/colombia-ufo-or-hot-air-balloon-video.html",
+    "title": "Colombia: UFO or Hot Air Balloon? Video Divides Public Opinion (2026)",
+    "description": "&nbsp; Source: INFOBAE (Argentina) Date: May 24, 2026 Article by Jenny Alejandra Bustos Colombia: UFO or Hot Air Balloon? Video Divides Public Opinion Footage of a luminous object sighted by a family sparked various interpretations among social media",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-09-03T14:18:42Z",
+    "detected_at": "2026-09-03T22:24:56Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/CqJqEhJRIig",
+    "title": "What Happened to Lee's Army After Appomattox (PART 2)",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-09-03T22:00:18Z",
+    "detected_at": "2026-09-03T22:24:56Z"
   }
 ]
