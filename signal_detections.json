@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepMoskowitz/status/2073394909957034138#m",
-    "title": "Independence Day is a day we honor the patriots who made this country what it is. It's also a reminder that from the very beginning, freedom has never been free. The American experiment is a promise, ",
-    "description": "Independence Day is a day we honor the patriots who made this country what it is. It's also a reminder that from the very beginning, freedom has never been free. The American experiment is a promise, one every American has to help keep. To the famili",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-04T13:14:03Z",
-    "detected_at": "2026-07-04T13:42:21Z"
-  },
-  {
-    "url": "https://thedebrief.org/nasa-celebrates-america-250-this-independence-day-with-a-patriotic-view-of-the-cosmos/",
-    "title": "Look: NASA Celebrates “America 250” This Independence Day With a Patriotic View of the Cosmos",
-    "description": "With the arrival of America’s 250th birthday this Independence Day weekend, NASA is marking the occasion with a patriotic-themed perspective on the cosmos.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-04T14:18:52Z",
-    "detected_at": "2026-07-04T15:09:03Z"
-  },
-  {
     "url": "https://nitter.net/SpeakerTimJones/status/2073410211356840267#m",
     "title": "RT by @EricBurlison: AMEN! =>",
     "description": "AMEN! =&gt; Eric Burlison (@EricBurlison) 250 years ago, ordinary Americans stood against the most powerful empire on earth and won one thing: freedom. They didn't defeat one tyranny to build another. Our job is to keep the government limited and the",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-09-04T13:03:22Z",
     "detected_at": "2026-09-04T14:05:30Z"
+  },
+  {
+    "url": "https://thedebrief.org/what-caused-antarctica-to-freeze-millions-of-years-ago-new-clues-could-finally-solve-this-longstanding-climate-mystery/",
+    "title": "What Caused Antarctica to Freeze Millions of Years Ago? New Clues Could Finally Solve This Longstanding Climate Mystery",
+    "description": "New clues to the formation of our planet’s oldest and largest ice sheet could help resolve a longstanding enigma about the southernmost continent.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-04T16:32:24Z",
+    "detected_at": "2026-09-04T18:53:57Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/U4muN1VML_w",
+    "title": "See How Sails Get Set on a German Ship",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-09-04T14:00:00Z",
+    "detected_at": "2026-09-04T18:53:57Z"
   }
 ]
