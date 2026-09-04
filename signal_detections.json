@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://ufo.com.br/astronomo-de-harvard-liderara-conselho-da-casa-branca-sobre-ovnis/",
-    "title": "Astrônomo de Harvard liderará conselho da Casa Branca sobre OVNIs",
-    "description": "Avi Loeb, cosmólogo e ex-chefe do departamento de astronomia de Harvard, foi escolhido pela Casa Branca para liderar um novo conselho consultivo científico dedicado a investigar os riscos à segurança nacional representados por fenômenos aéreos não id",
-    "source_name": "Revista UFO Brasil",
-    "source_type": "rss",
-    "author": "Revista UFO",
-    "priority": "high",
-    "lang": "pt-BR",
-    "flag": "🇧🇷",
-    "lat": -15.7801,
-    "lon": -47.9292,
-    "location": "Brazil",
-    "published_at": "2026-07-03T23:10:25Z",
-    "detected_at": "2026-07-04T06:50:00Z"
-  },
-  {
     "url": "https://nitter.net/RepublicanStudy/status/2057894350567170277#m",
     "title": "RT by @RepTimBurchett: 🔥 @RepTimBurchett is leading the DOGE Subcommittee and going after EVERY fraudster stealing from the American people. Democrats will claim Republicans are “cutting programs\" whe",
     "description": "🔥 @RepTimBurchett is leading the DOGE Subcommittee and going after EVERY fraudster stealing from the American people. Democrats will claim Republicans are “cutting programs\" when really we’re cutting the gravy train of waste, fraud, and abuse that ba",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-09-03T22:00:18Z",
     "detected_at": "2026-09-03T22:24:56Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=umMX-8SIOSY",
+    "title": "CIA STOPPED Lockheed From Transferring UFO Crash Material",
+    "description": "",
+    "source_name": "WEAPONIZED Podcast (Corbell & Knapp)",
+    "source_type": "youtube",
+    "author": "Jeremy Corbell & George Knapp",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-09-04T05:36:19Z",
+    "detected_at": "2026-09-04T08:40:38Z"
   }
 ]
