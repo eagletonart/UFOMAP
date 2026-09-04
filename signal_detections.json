@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SpeakerTimJones/status/2073410211356840267#m",
-    "title": "RT by @EricBurlison: AMEN! =>",
-    "description": "AMEN! =&gt; Eric Burlison (@EricBurlison) 250 years ago, ordinary Americans stood against the most powerful empire on earth and won one thing: freedom. They didn't defeat one tyranny to build another. Our job is to keep the government limited and the",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-04T14:14:51Z",
-    "detected_at": "2026-07-04T15:09:03Z"
-  },
-  {
     "url": "https://nitter.net/RepTimBurchett/status/2073430564699312420#m",
     "title": "Every day I wake up, I’m proud to be living in the greatest country in the dadgum world… but today feels a little different. I’m thinking of the brave men like my Daddy who fought to protect the ideal",
     "description": "Every day I wake up, I’m proud to be living in the greatest country in the dadgum world… but today feels a little different. I’m thinking of the brave men like my Daddy who fought to protect the ideals that our founders envisioned for the United Stat",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-09-04T14:00:00Z",
     "detected_at": "2026-09-04T18:53:57Z"
+  },
+  {
+    "url": "https://ufo.com.br/alguns-impressionantes-casos-ufologicos-paraguaios/",
+    "title": "Alguns impressionantes casos ufológicos paraguaios",
+    "description": "Assim como outras nações sul-americanas, o Paraguai tem uma rica casuística ufológica sobre a qual pouco conhecíamos, mas que começa a ser divulgada pelo público. Que segredos iremos descobrir? Há também muitos casos de avistamentos civis e militares",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-09-04T16:25:45Z",
+    "detected_at": "2026-09-04T22:14:09Z"
   }
 ]
