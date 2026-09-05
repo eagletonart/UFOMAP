@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepTimBurchett/status/2073430564699312420#m",
-    "title": "Every day I wake up, I’m proud to be living in the greatest country in the dadgum world… but today feels a little different. I’m thinking of the brave men like my Daddy who fought to protect the ideal",
-    "description": "Every day I wake up, I’m proud to be living in the greatest country in the dadgum world… but today feels a little different. I’m thinking of the brave men like my Daddy who fought to protect the ideals that our founders envisioned for the United Stat",
-    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-04T15:35:43Z",
-    "detected_at": "2026-07-04T17:10:40Z"
-  },
-  {
     "url": "https://nitter.net/LueElizondo/status/2073481578869878805#m",
     "title": "Today marks the 250th anniversary of the independence of our great nation! It was hard fought and hard won by the sacrifice of many. And to our British friends across the pond, who I had the personal ",
     "description": "Today marks the 250th anniversary of the independence of our great nation! It was hard fought and hard won by the sacrifice of many. And to our British friends across the pond, who I had the personal honor and privilege to serve with during times of ",
@@ -15998,5 +15982,21 @@
     "location": "Brazil",
     "published_at": "2026-09-04T16:25:45Z",
     "detected_at": "2026-09-04T22:14:09Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/dDcFp9j5924",
+    "title": "The First Car to Have a Rearview Mirror",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-09-05T12:00:22Z",
+    "detected_at": "2026-09-05T13:18:53Z"
   }
 ]
