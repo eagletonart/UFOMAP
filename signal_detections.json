@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2073763583050080481#m",
-    "title": "My healthcare plan is simple. Health savings accounts for everyone. Your employer funds your account, and you buy the insurance you actually want. You finally get treated like a customer. That is what",
-    "description": "My healthcare plan is simple. Health savings accounts for everyone. Your employer funds your account, and you buy the insurance you actually want. You finally get treated like a customer. That is what leadership keeps stalling.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-05T13:39:01Z",
-    "detected_at": "2026-07-05T13:49:11Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2073745382345961735#m",
     "title": "Not yet.",
     "description": "Not yet. The Hill (@thehill) Trump says ‘nothing illegal’ about massive crypto profits thehill.com/homenews/adminis… Link Trump says ‘nothing illegal’ about massive crypto profits President Trump denied on Thursday there was anything illegal in the m",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-09-05T13:26:03Z",
     "detected_at": "2026-09-05T16:39:40Z"
+  },
+  {
+    "url": "https://thedebrief.org/15000-year-old-cave-discovery-in-ireland-could-push-back-earliest-evidence-of-humans-on-the-island-by-5000-years/",
+    "title": "15,000-Year-Old Cave Discovery in Ireland Could Push Back Earliest Evidence of Humans on the Island by 5,000 Years",
+    "description": "New archaeological discoveries in Ireland could push back the earliest human presence on the island by as much as 5,000 years.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-06T14:28:54Z",
+    "detected_at": "2026-09-06T16:46:43Z"
   }
 ]
