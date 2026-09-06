@@ -1,26 +1,26 @@
 {
   "https://www.armed-services.senate.gov/hearings": {
-    "last_checked": "2026-09-06T01:59:10Z",
+    "last_checked": "2026-09-06T09:54:57Z",
     "hash": "dab67c02187b3553",
     "last_changed": "2026-09-06T01:59:10Z"
   },
   "https://intelligence.house.gov/news/": {
-    "last_checked": "2026-09-06T01:59:10Z",
-    "hash": "938719ad0d517caf",
-    "last_changed": "2026-09-06T01:59:10Z"
+    "last_checked": "2026-09-06T09:54:57Z",
+    "hash": "c231f4f38605420f",
+    "last_changed": "2026-09-06T09:54:57Z"
   },
   "https://catalog.archives.gov/search-within/39?q=UAP+unidentified+aerial": {
-    "last_checked": "2026-09-06T01:59:10Z",
+    "last_checked": "2026-09-06T09:54:57Z",
     "hash": "a454d667eca880b8",
     "last_changed": "2026-08-13T01:08:16Z"
   },
   "https://archive.org/search?query=UAP+declassified+government&mediatype=texts&sort=-publicdate": {
-    "last_checked": "2026-09-06T01:59:10Z",
+    "last_checked": "2026-09-06T09:54:57Z",
     "hash": "d75e83cb3d291dc5",
     "last_changed": "2026-09-04T20:02:12Z"
   },
   "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/1/query?where=STATE%3D%27nm%27&outFields=FEATURENAME%2CFUDSUNIQUEPROPERTYNUMBER%2CLATITUDE%2CLONGITUDE&f=json&resultRecordCount=100": {
-    "last_checked": "2026-09-06T01:59:10Z",
+    "last_checked": "2026-09-06T09:54:57Z",
     "hash": "e3b27b314cecf83e",
     "last_changed": "2026-05-17T19:58:19Z"
   },
@@ -40,8 +40,8 @@
     "last_changed": "2026-08-28T01:54:55Z"
   },
   "https://www.cia.gov/readingroom/search/site/UAP": {
-    "last_checked": "2026-09-06T01:59:10Z",
-    "hash": "d5ab4c69f696f201",
-    "last_changed": "2026-09-06T01:59:10Z"
+    "last_checked": "2026-09-06T09:54:57Z",
+    "hash": "f1546a7b4977130c",
+    "last_changed": "2026-09-06T09:54:57Z"
   }
 }
