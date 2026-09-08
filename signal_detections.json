@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://inexplicata.blogspot.com/2026/07/antonio-ribera-cuba-classic-ufo.html",
-    "title": "Antonio Ribera: Cuba - Classic UFO Sightings",
-    "description": "&nbsp; CUBA:Classic UFO Sightings By Antonio Ribera In Cuba—the \"Pearl of the Antilles\"—there have been recorded sightings of unidentified objects. In an article published in *UFOs Around the World* titled \"Flying Saucers over Cuba,\" Henry R. Gallart",
-    "source_name": "Inexplicata — Hispanic Ufology",
-    "source_type": "rss",
-    "author": "Scott Corrales",
-    "priority": "medium",
-    "lang": "en/es",
-    "flag": "🌎",
-    "lat": 4.5709,
-    "lon": -74.2973,
-    "location": "Latin America",
-    "published_at": "2026-07-06T04:05:26Z",
-    "detected_at": "2026-07-06T13:50:15Z"
-  },
-  {
-    "url": "https://nitter.net/RepMoskowitz/status/2074116781434634631#m",
-    "title": "A railroad crossing is not just a piece of infrastructure. It connects neighborhoods, and for too long, Boca Raton has been disconnected because of the downed Jeffery Street crossing. I was proud to f",
-    "description": "A railroad crossing is not just a piece of infrastructure. It connects neighborhoods, and for too long, Boca Raton has been disconnected because of the downed Jeffery Street crossing. I was proud to fix this by delivering $2M to Boca Raton to rebuild",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-06T13:02:30Z",
-    "detected_at": "2026-07-06T13:50:15Z"
-  },
-  {
     "url": "https://thedebrief.org/surprising-evidence-of-a-lost-ancient-city-is-emerging-from-beneath-the-sands-of-egypts-western-desert/",
     "title": "Surprising Evidence of a ‘Lost’ Ancient City is Emerging from Beneath the Sands of Egypt’s Western Desert",
     "description": "Archaeologists have found the remains of an ancient 'lost' city in Egypt’s western desert, Ministry of Antiquity officials have revealed.",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-09-08T12:33:02Z",
     "detected_at": "2026-09-08T14:15:32Z"
+  },
+  {
+    "url": "https://thedebrief.org/a-new-organisms-alien-reproduction-levitation-and-dark-matter-and-genetic-evidence-of-an-ancient-killer/",
+    "title": "A New Organism’s “Alien” Reproduction, Levitation and Dark Matter, and Genetic Evidence of an Ancient Killer",
+    "description": "This week, scientists report the discovery of a microorganism resembling something from sci-fi, levitation tech in the search for dark matter, genetic clues to a medieval mystery, and more.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-08T15:12:40Z",
+    "detected_at": "2026-09-08T19:19:42Z"
+  },
+  {
+    "url": "https://ufo.com.br/edicao-305-revista-ufo/",
+    "title": "O que você vai encontrar na nova edição 305 da Revista UFO",
+    "description": "Confira alguns dos destaques da nova Revista UFO: NÃO TENHA MEDO — ELES JÁ ESTAVAM AQUI Por Letícia Eduarda e Urandir Fernandes de Oliveira Relatos antigos e documentos preservados ao longo do tempo levantam uma hipótese provocadora: e se a presença ",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-09-08T15:51:30Z",
+    "detected_at": "2026-09-08T19:19:42Z"
   }
 ]
