@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/surprising-evidence-of-a-lost-ancient-city-is-emerging-from-beneath-the-sands-of-egypts-western-desert/",
-    "title": "Surprising Evidence of a ‘Lost’ Ancient City is Emerging from Beneath the Sands of Egypt’s Western Desert",
-    "description": "Archaeologists have found the remains of an ancient 'lost' city in Egypt’s western desert, Ministry of Antiquity officials have revealed.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-06T15:55:23Z",
-    "detected_at": "2026-07-06T16:53:24Z"
-  },
-  {
-    "url": "https://thedebrief.org/look-japans-hayabusa2-spacecraft-just-had-a-close-encounter-with-the-mysterious-asteroid-torifune/",
-    "title": "Look: Japan’s Hayabusa2 Spacecraft Just Had a Close Encounter with the Mysterious Asteroid ‘Torifune’",
-    "description": "The Hayabusa2 spacecraft completed its flyby of the asteroid Torifune over the weekend, according to Japan’s space agency.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-06T14:50:03Z",
-    "detected_at": "2026-07-06T16:53:24Z"
-  },
-  {
     "url": "https://ufo.com.br/avi-loeb-propoe-nova-teoria-orbs-de-uap-seriam-nuvens-de-poeira-meteoritica/",
     "title": "Avi Loeb propõe nova teoria: orbs de UAP seriam nuvens de poeira meteorítica",
     "description": "O físico de Harvard, que hoje preside o UAP Science Advisory Council (o conselho científico criado pela Casa Branca), publicou uma análise sobre um preprint enviado pelo professor John Birks (Universidade do Colorado, coautor da teoria do \"inverno nu",
@@ -15998,5 +15966,37 @@
     "location": "Brazil",
     "published_at": "2026-09-08T15:51:30Z",
     "detected_at": "2026-09-08T19:19:42Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/07/antonio-ribera-cuba-classic-ufo.html",
+    "title": "Antonio Ribera: Cuba - Classic UFO Sightings",
+    "description": "&nbsp; CUBA:Classic UFO Sightings By Antonio Ribera In Cuba—the \"Pearl of the Antilles\"—there have been recorded sightings of unidentified objects. In an article published in *UFOs Around the World* titled \"Flying Saucers over Cuba,\" Henry R. Gallart",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-07-06T04:05:26Z",
+    "detected_at": "2026-09-08T22:28:03Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=QRR2v2GvM-I",
+    "title": "AARO Threatened to FORCE a Navy UFO Whistleblower Into a SCIF",
+    "description": "",
+    "source_name": "WEAPONIZED Podcast (Corbell & Knapp)",
+    "source_type": "youtube",
+    "author": "Jeremy Corbell & George Knapp",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-09-08T22:09:43Z",
+    "detected_at": "2026-09-08T22:28:03Z"
   }
 ]
