@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/deep-inside-the-earths-molten-core-a-sudden-reversal-now-has-scientists-searching-for-answers/",
-    "title": "Deep Inside the Earth’s Molten Core, a Sudden ‘Reversal’ Now Has Scientists Searching for Answers",
-    "description": "The molten iron core deep within our planet could be much more dynamic and complicated than previously known, new research suggests.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-06T12:56:37Z",
-    "detected_at": "2026-07-06T13:50:15Z"
-  },
-  {
-    "url": "https://thedebrief.org/a-i-just-mapped-a-hidden-structure-inside-one-of-the-most-complex-problems-in-physics/",
-    "title": "A.I. Just Mapped a ‘Hidden’ Structure Inside One of the Most Complex Problems in Physics",
-    "description": "A single machine learning model just turned one of condensed matter physics' most persistent problems into a navigable map.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-06T12:12:18Z",
-    "detected_at": "2026-07-06T13:50:15Z"
-  },
-  {
     "url": "https://inexplicata.blogspot.com/2026/07/antonio-ribera-cuba-classic-ufo.html",
     "title": "Antonio Ribera: Cuba - Classic UFO Sightings",
     "description": "&nbsp; CUBA:Classic UFO Sightings By Antonio Ribera In Cuba—the \"Pearl of the Antilles\"—there have been recorded sightings of unidentified objects. In an article published in *UFOs Around the World* titled \"Flying Saucers over Cuba,\" Henry R. Gallart",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-09-07T16:38:29Z",
     "detected_at": "2026-09-07T19:42:41Z"
+  },
+  {
+    "url": "https://thedebrief.org/biologists-were-wrong-about-the-american-cheetah-according-to-new-genetic-findings/",
+    "title": "Biologists Were Wrong About the “American Cheetah” According to New Genetic Findings",
+    "description": "The extinct American cheetah wasn’t a true cheetah at all, say biologists in new research overturning scientific understanding of the big cat.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-08T12:56:46Z",
+    "detected_at": "2026-09-08T14:15:32Z"
+  },
+  {
+    "url": "https://thedebrief.org/we-couldnt-believe-what-we-were-seeing-scientists-have-discovered-a-bizarre-new-microbe-with-an-alien-reproductive-strategy/",
+    "title": "“We Couldn’t Believe What We Were Seeing”: Scientists Have Discovered a Bizarre New Microbe with an “Alien” Reproductive Strategy",
+    "description": "A newly discovered marine microorganism reproduces in a bizarre way reminiscent of the reproductive horror depicted in the \"Alien\" films.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-08T12:33:02Z",
+    "detected_at": "2026-09-08T14:15:32Z"
   }
 ]
