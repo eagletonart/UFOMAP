@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/LueElizondo/status/2074242606872105333#m",
-    "title": "Hi Folks, I have the pleasure to do a live interview tomorrow for Nicovideo in Japan beginning at 7 am ET. I hope you can join in. Japan has been an incredible partner over the years in many things ot",
-    "description": "Hi Folks, I have the pleasure to do a live interview tomorrow for Nicovideo in Japan beginning at 7 am ET. I hope you can join in. Japan has been an incredible partner over the years in many things other than UAP. Let’s show them some love. piped.vid",
-    "source_name": "Lue Elizondo (@LueElizondo)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8719,
-    "lon": -77.0563,
-    "location": "Arlington, VA",
-    "published_at": "2026-07-06T21:22:29Z",
-    "detected_at": "2026-07-06T23:12:00Z"
-  },
-  {
     "url": "https://nitter.net/RepTimBurchett/status/2074232619391156236#m",
     "title": "Need a passport? Registration is now open for our Knoxville Congressional Passport Fair on July 23 & 24. Appointments are required. If you have any questions, please contact my Knoxville office.",
     "description": "Need a passport? Registration is now open for our Knoxville Congressional Passport Fair on July 23 &amp; 24. Appointments are required. If you have any questions, please contact my Knoxville office.",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-09-09T15:30:27Z",
     "detected_at": "2026-09-09T19:09:22Z"
+  },
+  {
+    "url": "https://ufo.com.br/caso-roswell-o-misterio-dos-ufos-que-ate-hoje-intriga-os-eua/",
+    "title": "Caso Roswell: O mistério dos UFOs que até hoje intriga os EUA",
+    "description": "Caso Roswell quais são os fatos por trás do incidente?",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-09-09T13:56:18Z",
+    "detected_at": "2026-09-09T22:22:03Z"
   }
 ]
