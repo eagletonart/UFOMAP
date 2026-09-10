@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://ufo.com.br/pesquisadores-ligados-a-casa-branca-lancam-pesquisa-global-sobre-reacao-a-possivel-confirmacao-de-inteligencia-alienigena/",
-    "title": "Pesquisadores ligados à Casa Branca lançam pesquisa global sobre reação à possível confirmação de inteligência alienígena",
-    "description": "“Resultados contribuirão para recomendações de políticas públicas e transparência governamental futura\", revelam os cientistas",
-    "source_name": "Revista UFO Brasil",
-    "source_type": "rss",
-    "author": "Revista UFO",
-    "priority": "high",
-    "lang": "pt-BR",
-    "flag": "🇧🇷",
-    "lat": -15.7801,
-    "lon": -47.9292,
-    "location": "Brazil",
-    "published_at": "2026-07-07T11:00:37Z",
-    "detected_at": "2026-07-07T14:46:08Z"
-  },
-  {
     "url": "https://nitter.net/RepMoskowitz/status/2074480622492327994#m",
     "title": "Our community deserves peace of mind that when they call 911, someone on the other end will always answer. That's why I secured $1,031,000 for Coconut Creek to build a reliable network so police and f",
     "description": "Our community deserves peace of mind that when they call 911, someone on the other end will always answer. That's why I secured $1,031,000 for Coconut Creek to build a reliable network so police and fire dispatch stay online even during outages and e",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-09-10T14:38:44Z",
     "detected_at": "2026-09-10T19:00:57Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=SfgihisY_jw",
+    "title": "F-16 Pilot Who Flew During 9/11",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-09-10T20:53:48Z",
+    "detected_at": "2026-09-10T22:21:06Z"
   }
 ]
