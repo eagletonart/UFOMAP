@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2074532761323343925#m",
-    "title": "No.",
-    "description": "No. Jake Sherman (@JakeSherman) Trump wants $350 billion for the Pentagon in reconciliation 3.0. Not $67 billion. Plus SAVE America Act. SAVE cannot go in reconciliation. House Republican leaders have been focused on a $4B fund to incentivize states ",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-07T16:35:27Z",
-    "detected_at": "2026-07-07T18:03:25Z"
-  },
-  {
     "url": "https://nitter.net/RepTimBurchett/status/2074564040588685392#m",
     "title": "Today, I sent a letter to FBI Director Kash Patel asking for the release of all records related to the death of Seth Rich. The American people deserve answers.",
     "description": "Today, I sent a letter to FBI Director Kash Patel asking for the release of all records related to the death of Seth Rich. The American people deserve answers.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-09-11T13:48:43Z",
     "detected_at": "2026-09-11T14:08:26Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=kf3GM6dZlVA",
+    "title": "Lieutenant Colonel Takes You Inside the President's Bunker on 9/11",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-09-11T16:00:10Z",
+    "detected_at": "2026-09-11T19:02:55Z"
   }
 ]
