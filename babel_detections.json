@@ -682,5 +682,23 @@
     "priority": "high",
     "detected_at": "2026-09-02T20:17:41Z",
     "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-an-update-on-golden-dome",
+    "text": "To receive an update on Golden Dome",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-09-14T21:11:09Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-a-briefing-on-cyber-operations-and-readiness-for-the-second-and-third-quarters-of-fiscal-year-2026-as-well-as-an-update-on-election-security",
+    "text": "Closed: To receive a briefing on cyber operations and readiness for the second and third quarters of Fiscal Year 2026 as well as an update on election security",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-09-14T21:11:09Z",
+    "analyzed": false
   }
 ]
