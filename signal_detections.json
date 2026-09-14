@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepThomasMassie/status/2078983082749591961#m",
-    "title": "RT by @EricBurlison: The U.S. sends $2 billion to the Kingdom of Jordan each year. Their King spent $100 million on luxury properties in Malibu, DC, & London. I offered an amendment to end the welfare",
-    "description": "The U.S. sends $2 billion to the Kingdom of Jordan each year. Their King spent $100 million on luxury properties in Malibu, DC, &amp; London. I offered an amendment to end the welfare. Thank the 5 who voted w/me. @RepChipRoy @RepNancyMace @RepBrechee",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-19T23:19:27Z",
-    "detected_at": "2026-07-20T14:14:50Z"
-  },
-  {
     "url": "https://nitter.net/RepMoskowitz/status/2079208107130134688#m",
     "title": "🚨ATTENTION PARENTS🚨 Florida's Back to School Sales Tax Holiday starts TODAY and runs through Aug. 20. For the next month, these items are tax-free: 👕 Clothes, shoes & backpacks: $100 or less ✏️ School",
     "description": "🚨ATTENTION PARENTS🚨 Florida's Back to School Sales Tax Holiday starts TODAY and runs through Aug. 20. For the next month, these items are tax-free: 👕 Clothes, shoes & backpacks: $100 or less ✏️ School supplies: $50 or less 🧩 Learning aids & puzzles: ",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-09-13T23:23:18Z",
     "detected_at": "2026-09-14T04:11:13Z"
+  },
+  {
+    "url": "https://thedebrief.org/a-problem-in-the-pits-of-eternal-darkness-scientists-pour-cold-water-on-future-moon-colony-plans/",
+    "title": "A Problem in the ‘Pits of Eternal Darkness’? Scientists Pour Cold Water on Future Moon Colony Plans",
+    "description": "A new study of water ice stored within the Moon's so-called 'pits of eternal darkness' has cast doubt on large, sci-fi sounding lunar cities.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-14T12:05:17Z",
+    "detected_at": "2026-09-14T12:16:32Z"
   }
 ]
