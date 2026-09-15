@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2079319606066323692#m",
-    "title": "Last week, I told Jay Clayton that the subpoena of journalists was not thoughtful, deliberate, or normal oversight. He had no response. As more details emerge, we know why.",
-    "description": "Last week, I told Jay Clayton that the subpoena of journalists was not thoughtful, deliberate, or normal oversight. He had no response. As more details emerge, we know why. Michael M. Grynbaum (@grynbaum) NEW: The Trump administration's effort to unm",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-20T21:36:40Z",
-    "detected_at": "2026-07-20T23:03:37Z"
-  },
-  {
-    "url": "https://inexplicata.blogspot.com/2026/06/fabio-zerpa-balvidares-case-1973.html",
-    "title": "Fabio Zerpa: The Balvidares Case (1973)",
-    "description": "&nbsp; &nbsp;The Balvidares Case Location:&nbsp; &nbsp; Rural area, Leandro N. Alem District (Buenos Aires Province, bordering the General Pinto District) Date:&nbsp; &nbsp; October 29, 1973 Time:&nbsp; &nbsp; Between 5:00 PM and 6:55 PM Investigatio",
-    "source_name": "Inexplicata — Hispanic Ufology",
-    "source_type": "rss",
-    "author": "Scott Corrales",
-    "priority": "medium",
-    "lang": "en/es",
-    "flag": "🌎",
-    "lat": 4.5709,
-    "lon": -74.2973,
-    "location": "Latin America",
-    "published_at": "2026-06-05T09:12:37Z",
-    "detected_at": "2026-07-21T03:13:43Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2079369900343111746#m",
     "title": "Gas is back above $4/gallon. The American people are paying for Trump's war every time they fill up their car.",
     "description": "Gas is back above $4/gallon. The American people are paying for Trump's war every time they fill up their car.",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-09-14T16:16:47Z",
     "detected_at": "2026-09-14T23:00:33Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/robjonesreports/status/2099660965193068909#m",
+    "title": "RT by @rosscoulthart: In the interest of transparency, Reality Check has reached out formally to both The DoW and ODNI for comment. This morning we requested a copy of the legal waiver itself. When th",
+    "description": "In the interest of transparency, Reality Check has reached out formally to both The DoW and ODNI for comment. This morning we requested a copy of the legal waiver itself. When that went unanswered, we followed up in writing, stating that barring bein",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-09-15T00:45:58Z",
+    "detected_at": "2026-09-15T11:24:40Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/UAPWatchers/status/2099619081691213847#m",
+    "title": "RT by @rosscoulthart: 🚨LUNA SAYS DAVID GRUSCH IS NOW SPEAKING DIRECTLY WITH THE WHITE HOUSE Rep. Anna Paulina Luna says David Grusch is speaking directly with the White House while it considers giving",
+    "description": "🚨LUNA SAYS DAVID GRUSCH IS NOW SPEAKING DIRECTLY WITH THE WHITE HOUSE Rep. Anna Paulina Luna says David Grusch is speaking directly with the White House while it considers giving him an individual waiver from his NDA restrictions. Luna told Ask A Pol",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-09-14T21:59:32Z",
+    "detected_at": "2026-09-15T11:24:40Z"
   }
 ]
