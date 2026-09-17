@@ -1,26 +1,26 @@
 {
   "https://www.armed-services.senate.gov/hearings": {
-    "last_checked": "2026-09-16T20:38:53Z",
-    "hash": "6dccfbe82639e506",
-    "last_changed": "2026-09-16T20:38:53Z"
+    "last_checked": "2026-09-17T02:29:34Z",
+    "hash": "b645d1593616310b",
+    "last_changed": "2026-09-17T02:29:34Z"
   },
   "https://intelligence.house.gov/news/": {
-    "last_checked": "2026-09-16T20:38:53Z",
-    "hash": "f368b0253874d023",
-    "last_changed": "2026-09-16T15:47:15Z"
+    "last_checked": "2026-09-17T02:29:34Z",
+    "hash": "c9029147a725925b",
+    "last_changed": "2026-09-17T02:29:34Z"
   },
   "https://catalog.archives.gov/search-within/39?q=UAP+unidentified+aerial": {
-    "last_checked": "2026-09-16T20:38:53Z",
-    "hash": "a454d667eca880b8",
-    "last_changed": "2026-08-13T01:08:16Z"
+    "last_checked": "2026-09-17T02:29:34Z",
+    "hash": "96159fadb259ddce",
+    "last_changed": "2026-09-17T02:29:34Z"
   },
   "https://archive.org/search?query=UAP+declassified+government&mediatype=texts&sort=-publicdate": {
-    "last_checked": "2026-09-16T20:38:53Z",
-    "hash": "50092ceae7512e38",
-    "last_changed": "2026-09-16T20:38:53Z"
+    "last_checked": "2026-09-17T02:29:34Z",
+    "hash": "aa9324bf04d5458a",
+    "last_changed": "2026-09-17T02:29:34Z"
   },
   "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/1/query?where=STATE%3D%27nm%27&outFields=FEATURENAME%2CFUDSUNIQUEPROPERTYNUMBER%2CLATITUDE%2CLONGITUDE&f=json&resultRecordCount=100": {
-    "last_checked": "2026-09-16T20:38:53Z",
+    "last_checked": "2026-09-17T02:29:34Z",
     "hash": "e3b27b314cecf83e",
     "last_changed": "2026-05-17T19:58:19Z"
   },
@@ -40,8 +40,8 @@
     "last_changed": "2026-08-28T01:54:55Z"
   },
   "https://www.cia.gov/readingroom/search/site/UAP": {
-    "last_checked": "2026-09-16T20:38:53Z",
-    "hash": "642dc82591deac4c",
-    "last_changed": "2026-09-16T20:38:53Z"
+    "last_checked": "2026-09-17T02:29:34Z",
+    "hash": "d438f86cd6c1e066",
+    "last_changed": "2026-09-17T02:29:34Z"
   }
 }
