@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/archaeologists-unearth-exceptionally-well-preserved-2600-year-old-wooden-beams-burned-in-the-first-temple-fire/",
-    "title": "Archaeologists Unearth “Exceptionally Well-Preserved” 2,600-Year-Old Wooden Beams Burned in the First Temple Fire",
-    "description": "Excavations in the City of David have unearthed 2,600-year-old, exceptionally well-preserved wooden beams from the 586 BCE First Temple fire.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-22T12:29:47Z",
-    "detected_at": "2026-07-22T14:05:00Z"
-  },
-  {
     "url": "https://thedebrief.org/a-new-theory-may-explain-one-of-the-dead-sea-scrolls-biggest-mysteries/",
     "title": "A New Theory May Explain One of the Dead Sea Scrolls’ Biggest Mysteries",
     "description": "One of the longest-debated mysteries involving the Dead Sea Scrolls ma finally be solved, according to Tel Aviv University researchers.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-09-17T17:06:57Z",
     "detected_at": "2026-09-17T21:07:02Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=dZ9hpKeiBgY",
+    "title": "The Constitution Explained: Originalism vs. A Living Constitution",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-09-17T22:00:08Z",
+    "detected_at": "2026-09-18T00:00:07Z"
   }
 ]
