@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://www.youtube.com/shorts/5oAHOW0sOcU",
-    "title": "Ulysses S. Grant's Tomb",
-    "description": "",
-    "source_name": "C-SPAN",
-    "source_type": "youtube",
-    "author": "C-SPAN",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-22T22:00:23Z",
-    "detected_at": "2026-07-22T23:08:35Z"
-  },
-  {
     "url": "https://nitter.net/LueElizondo/status/2063739991461708253#m",
     "title": "Brief health and tour update.",
     "description": "Brief health and tour update. Video",
@@ -15998,5 +15982,21 @@
     "location": "Los Angeles, CA",
     "published_at": "2026-09-20T03:06:19Z",
     "detected_at": "2026-09-20T10:57:52Z"
+  },
+  {
+    "url": "https://thedebrief.org/striking-new-evidence-of-hidden-chambers-near-tutankhamuns-tomb-could-help-solve-a-longstanding-archaeological-mystery/",
+    "title": "Striking New Evidence of Hidden Chambers Near Tutankhamun’s Tomb Could Help Solve a Longstanding Archaeological Mystery",
+    "description": "Mounting evidence points to the existence of hidden rooms and passageways near the burial chamber of Tutankhamun, new research reveals.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-20T15:34:53Z",
+    "detected_at": "2026-09-20T15:44:32Z"
   }
 ]
