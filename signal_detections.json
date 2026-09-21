@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/LueElizondo/status/2063739991461708253#m",
-    "title": "Brief health and tour update.",
-    "description": "Brief health and tour update. Video",
-    "source_name": "Lue Elizondo (@LueElizondo)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8719,
-    "lon": -77.0563,
-    "location": "Arlington, VA",
-    "published_at": "2026-06-07T21:48:51Z",
-    "detected_at": "2026-07-22T23:08:35Z"
-  },
-  {
-    "url": "https://nitter.net/RepMoskowitz/status/2080044400433152311#m",
-    "title": "It was great to welcome Greece’s new Ambassador to the U.S., Antonis Alexandridis, to my office today. From the family businesses to the parishes that anchor whole neighborhoods, Greek Americans are a",
-    "description": "It was great to welcome Greece’s new Ambassador to the U.S., Antonis Alexandridis, to my office today. From the family businesses to the parishes that anchor whole neighborhoods, Greek Americans are a huge part of what makes South Florida special. Ho",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-22T21:36:45Z",
-    "detected_at": "2026-07-22T23:08:35Z"
-  },
-  {
     "url": "https://thedebrief.org/everywhere-we-looked-we-found-the-temperature-rising-nasa-identifies-a-surprise-heat-signature-below-the-surface-of-jupiters-moon-io/",
     "title": "“Everywhere We Looked, We Found the Temperature Rising”: NASA Identifies a “Surprise” Heat Signature Below the Surface of Jupiter’s Moon Io",
     "description": "NASA and Southwest Research Institute scientists report the \"surprising\" detection of a heat signature below Jupiter's moon Io's surface.",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-09-20T15:34:53Z",
     "detected_at": "2026-09-20T15:44:32Z"
+  },
+  {
+    "url": "https://thedebrief.org/astronomers-find-the-youngest-planet-ever-seen-and-scientists-arent-sure-how-it-formed-so-fast/",
+    "title": "Astronomers Find the Youngest Planet Ever Seen and Scientists Aren’t Sure How It Formed So Fast",
+    "description": "Astronomers confirm Elias 2-24 b as the youngest known planet, forming less than 1 million years after its young star was born.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-21T12:14:19Z",
+    "detected_at": "2026-09-21T12:24:16Z"
+  },
+  {
+    "url": "https://thedebrief.org/underground-nuclear-explosions-in-north-korea-caused-a-serious-problem-and-new-research-suggests-its-getting-worse/",
+    "title": "Underground Nuclear Explosions in North Korea Caused a Serious Problem, and New Research Suggests It’s Getting Worse",
+    "description": "Analysis of seismic activity following North Korea's underground nuclear test explosions revealed a disturbing effect that's getting worse.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-21T12:11:56Z",
+    "detected_at": "2026-09-21T12:24:16Z"
   }
 ]
