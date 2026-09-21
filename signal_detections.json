@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/new-gravity-theory-suggests-how-cosmic-order-emerges-despite-rising-entropy/",
-    "title": "New Gravity Theory Suggests How Cosmic Order Emerges Despite Rising Entropy",
-    "description": "A recent study offers a mathematical explanation for how cosmic structures form while still obeying the second law of thermodynamics.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-23T12:41:59Z",
-    "detected_at": "2026-07-23T14:10:11Z"
-  },
-  {
     "url": "https://ufo.com.br/nova-hipotese-vida-em-marte-construida-sobre-silica/",
     "title": "Nova hipótese: Vida em Marte construída sobre sílica",
     "description": "Vale reforçar que se trata de uma interpretação especulativa, sem validação da comunidade científica ou da própria NASA, e que a leitura de padrões em rochas, um fenômeno conhecido como pareidolia, costuma explicar boa parte desse tipo de achado. Ain",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-09-21T14:08:03Z",
     "detected_at": "2026-09-21T19:09:28Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/09/argentina-ufo-caused-massive-greater.html",
+    "title": "Argentina: UFO Caused Massive Greater Buenos Aires Blackout?",
+    "description": "&nbsp; Source: CRONICA (Buenos Aires, Argentina) &nbsp;Date: September 20, 2026&nbsp; An Article by L.Barrios&nbsp; &nbsp; Argentina: Did a UFO fly over Buenos Aires during the massive blackout in the Greater Buenos Aires area? &nbsp; &nbsp; The reco",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-09-21T14:49:49Z",
+    "detected_at": "2026-09-21T23:04:19Z"
   }
 ]
