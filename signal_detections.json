@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/everywhere-we-looked-we-found-the-temperature-rising-nasa-identifies-a-surprise-heat-signature-below-the-surface-of-jupiters-moon-io/",
-    "title": "“Everywhere We Looked, We Found the Temperature Rising”: NASA Identifies a “Surprise” Heat Signature Below the Surface of Jupiter’s Moon Io",
-    "description": "NASA and Southwest Research Institute scientists report the \"surprising\" detection of a heat signature below Jupiter's moon Io's surface.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-23T12:51:41Z",
-    "detected_at": "2026-07-23T14:10:11Z"
-  },
-  {
-    "url": "https://thedebrief.org/researchers-say-two-ancient-ramps-beside-egypts-red-pyramid-may-actually-be-something-far-more-significant/",
-    "title": "Researchers Say Two ‘Ancient Ramps’ Beside Egypt’s Red Pyramid May Actually Be Something Far More Significant",
-    "description": "Study suggests mysterious structures beside Egypt's Red Pyramid may actually be ancient dams, reshaping history.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-23T12:49:01Z",
-    "detected_at": "2026-07-23T14:10:11Z"
-  },
-  {
     "url": "https://thedebrief.org/new-gravity-theory-suggests-how-cosmic-order-emerges-despite-rising-entropy/",
     "title": "New Gravity Theory Suggests How Cosmic Order Emerges Despite Rising Entropy",
     "description": "A recent study offers a mathematical explanation for how cosmic structures form while still obeying the second law of thermodynamics.",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-09-21T12:11:56Z",
     "detected_at": "2026-09-21T12:24:16Z"
+  },
+  {
+    "url": "https://thedebrief.org/1000-year-old-artifact-bearing-unusual-11th-century-medusa-unearthed-by-russian-archaeologists/",
+    "title": "1,000-Year-Old Artifact Bearing Unusual 11th Century “Medusa” Unearthed by Russian Archaeologists",
+    "description": "An uncommon discovery by Russian archaeologists has revealed an artifact with a snake-haired figure resembling the Medusa of Greek mythology.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-21T16:11:45Z",
+    "detected_at": "2026-09-21T19:09:28Z"
+  },
+  {
+    "url": "https://thedebrief.org/james-webb-space-telescope-reveals-an-unexpected-discovery-about-the-rings-of-a-strange-celestial-centaur/",
+    "title": "James Webb Space Telescope Reveals an Unexpected Discovery About the Rings of a Strange Celestial Centaur",
+    "description": "Astronomers observing the rings of a strange celestial \"centaur\" using NASA's James Webb Space Telescope have made an unexpected discovery.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-21T14:08:03Z",
+    "detected_at": "2026-09-21T19:09:28Z"
   }
 ]
