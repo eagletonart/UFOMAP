@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://ufo.com.br/nova-hipotese-vida-em-marte-construida-sobre-silica/",
-    "title": "Nova hipótese: Vida em Marte construída sobre sílica",
-    "description": "Vale reforçar que se trata de uma interpretação especulativa, sem validação da comunidade científica ou da própria NASA, e que a leitura de padrões em rochas, um fenômeno conhecido como pareidolia, costuma explicar boa parte desse tipo de achado. Ain",
-    "source_name": "Revista UFO Brasil",
-    "source_type": "rss",
-    "author": "Revista UFO",
-    "priority": "high",
-    "lang": "pt-BR",
-    "flag": "🇧🇷",
-    "lat": -15.7801,
-    "lon": -47.9292,
-    "location": "Brazil",
-    "published_at": "2026-07-23T14:00:14Z",
-    "detected_at": "2026-07-23T14:10:11Z"
-  },
-  {
-    "url": "https://nitter.net/EricBurlison/status/2080293219716174305#m",
-    "title": "Finally!!! https://abcnews.com/Politics/house-judiciary-committee-chairman-jim-jordan-issues-criminal/story?id=135006808",
-    "description": "Finally!!! abcnews.com/Politics/house-j… Link House Judiciary Committee Chairman Jim Jordan issues criminal referral against former special... House Judiciary Committee Chairman Jim Jordan issued a criminal referral against former special counsel Jac",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-23T14:05:28Z",
-    "detected_at": "2026-07-23T14:10:11Z"
-  },
-  {
     "url": "https://nitter.net/Cobra_Cmnd/status/2079963521324859615#m",
     "title": "RT by @EricBurlison: Image",
     "description": "",
@@ -15998,5 +15966,37 @@
     "location": "Latin America",
     "published_at": "2026-09-21T14:49:49Z",
     "detected_at": "2026-09-21T23:04:19Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-just-solved-a-178-year-old-space-weather-mystery/",
+    "title": "Scientists Just Solved a 178-Year-Old Space Weather Mystery",
+    "description": "One of the earliest known instances of space weather interfering with human technology has finally been solved after 178 years.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-22T12:49:14Z",
+    "detected_at": "2026-09-22T16:36:45Z"
+  },
+  {
+    "url": "https://thedebrief.org/a-lost-medieval-castle-was-just-discovered-hidden-in-an-unexpected-place/",
+    "title": "A ‘Lost’ Medieval Castle Was Just Discovered Hidden in an Unexpected Place",
+    "description": "University College of Dublin officials have announced the discovery of a 'lost' medieval castle hidden inside a more modern structure.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-22T12:35:31Z",
+    "detected_at": "2026-09-22T16:36:45Z"
   }
 ]
