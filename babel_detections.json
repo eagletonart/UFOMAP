@@ -718,5 +718,14 @@
     "priority": "high",
     "detected_at": "2026-09-17T20:45:37Z",
     "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-receive-an-update-on-the-united-states-central-command-area-of-operations",
+    "text": "Closed: To receive an update on the United States Central Command area of operations",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-09-22T15:57:48Z",
+    "analyzed": false
   }
 ]
