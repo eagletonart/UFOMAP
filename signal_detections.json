@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/AlexEpstein/status/2080313023273795679#m",
-    "title": "RT by @EricBurlison: The fear that AI poses an \"existential threat\" rests on the idea that it will become conscious and develop goals of its own. But AI is not conscious. It has no desires or goals. I",
-    "description": "The fear that AI poses an \"existential threat\" rests on the idea that it will become conscious and develop goals of its own. But AI is not conscious. It has no desires or goals. It is no more—and no less—than a powerful tool we can direct toward incr",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-23T15:24:09Z",
-    "detected_at": "2026-07-23T17:26:25Z"
-  },
-  {
-    "url": "https://nitter.net/SenGillibrand/status/2080319022541721653#m",
-    "title": "I asked Secretary Rollins why she kicked over 160,000 hungry New Yorkers off food assistance. Her response? She brought up diesel prices, which are HIGHER now than when Trump took office.",
-    "description": "I asked Secretary Rollins why she kicked over 160,000 hungry New Yorkers off food assistance. Her response? She brought up diesel prices, which are HIGHER now than when Trump took office.",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-23T15:48:00Z",
-    "detected_at": "2026-07-23T17:26:25Z"
-  },
-  {
     "url": "https://inexplicata.blogspot.com/2026/07/salvador-freixedo-child-healed-by-god.html",
     "title": "Salvador Freixedo: A Child Healed By God",
     "description": "&nbsp; &nbsp; Salvador Freixedo: A Child Healed By God&nbsp; The following case may provide the key to a fundamental explanation of the religious phenomenon. Naturally, there are many other aspects of the religious phenomenon to consider, but we beli",
@@ -15998,5 +15966,37 @@
     "location": "Brazil",
     "published_at": "2026-09-22T07:55:22Z",
     "detected_at": "2026-09-22T21:03:15Z"
+  },
+  {
+    "url": "https://thedebrief.org/quantum-leap-stanford-team-reports-breakthrough-first-observation-of-quantum-jumps-in-sound/",
+    "title": "Quantum Leap: Stanford Team Reports Breakthrough First Observation of Quantum Jumps in Sound",
+    "description": "Researchers at Stanford University report the first direct observation of quantum jumps in sound, achieving a milestone in the century-long study of quantum phenomena.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-23T12:24:13Z",
+    "detected_at": "2026-09-23T13:28:37Z"
+  },
+  {
+    "url": "https://thedebrief.org/incredibly-exciting-this-shape-changing-fire-amoeba-defies-extreme-temperatures-by-surviving-in-158f-water/",
+    "title": "“Incredibly Exciting”: This Shape-Changing ‘Fire Amoeba’ Defies Extreme Temperatures by Surviving in 158°F Water",
+    "description": "New record-breaking experiments prove that California's 'fire amoeba' can survive in hotter water than any previously known complex organism.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-23T12:22:10Z",
+    "detected_at": "2026-09-23T13:28:37Z"
   }
 ]
