@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/MaryPeltola/status/2079304964753723815#m",
-    "title": "RT by @SenGillibrand: 🙂‍↕️",
-    "description": "🙂‍↕️ Bonchie (@bonchieredstate) I was saying months ago this race was going to be a problem. Peltola is a very strong candidate. — https://nitter.net/bonchieredstate/status/2077847282670543333#m",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-20T20:38:29Z",
-    "detected_at": "2026-07-24T17:40:33Z"
-  },
-  {
-    "url": "https://nitter.net/TeamTalaricoHQ/status/2080058053588840508#m",
-    "title": "RT by @SenGillibrand: NEW AD: Ken Paxton is dodging questions about owning 15 homes on a government salary. He’s dodging questions about his alleged voter fraud. Texans deserve to know: What is he hid",
-    "description": "NEW AD: Ken Paxton is dodging questions about owning 15 homes on a government salary. He’s dodging questions about his alleged voter fraud. Texans deserve to know: What is he hiding? Video Team Talarico (@TeamTalaricoHQ) Ken Paxton panics and refuses",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-22T22:31:00Z",
-    "detected_at": "2026-07-24T17:40:33Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2080694193865826400#m",
     "title": "Scrubbing fallen service members from official records to hide the true cost of the war in Iran is a disgraceful betrayal of our troops. This administration’s attempt to erase their sacrifice for poli",
     "description": "Scrubbing fallen service members from official records to hide the true cost of the war in Iran is a disgraceful betrayal of our troops. This administration’s attempt to erase their sacrifice for political cover will not stand.",
@@ -15998,5 +15966,37 @@
     "location": "Adelaide, Australia",
     "published_at": "2026-06-09T15:48:47Z",
     "detected_at": "2026-09-24T19:53:16Z"
+  },
+  {
+    "url": "https://ufo.com.br/revendo-a-abducao-de-antonio-villas-boas/",
+    "title": "Revendo a Abdução de Antonio Villas Boas",
+    "description": "Existem regiões que parecem atrair ou produzir fenômenos anômalos e inexplicados. E, não raro, tais locais também são cenários de casos ufológicos famosos. Ninguém até hoje conseguiu explicar por que isso acontece, embora sobrem teorias. De qualquer ",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-09-24T17:02:00Z",
+    "detected_at": "2026-09-24T23:06:13Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=HCKb84ocPso",
+    "title": "The Campaign That Was Deadlier Than Gettysburg",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-09-24T22:00:11Z",
+    "detected_at": "2026-09-24T23:06:13Z"
   }
 ]
