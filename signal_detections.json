@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RepMoskowitz/status/2080733842676064492#m",
-    "title": "I want to give a special shoutout to our Boca Raton Little League Senior Division All-Stars! This team of state champions is representing Florida at the Southeast Regional Tournament this week, and we",
-    "description": "I want to give a special shoutout to our Boca Raton Little League Senior Division All-Stars! This team of state champions is representing Florida at the Southeast Regional Tournament this week, and we know they’ll make us proud! Can’t wait for you to",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-07-24T19:16:20Z",
-    "detected_at": "2026-07-24T21:07:46Z"
-  },
-  {
-    "url": "https://thedebrief.org/the-wackers-decades-long-harassment-was-one-of-unsolved-mysteries-strangest-cases-new-information-has-finally-come-to-light/",
-    "title": "The Wackers’ Decades-Long Harassment Was One of Unsolved Mysteries’ Strangest Cases—New Information Has Finally Come to Light",
-    "description": "For the last 22 years, one of the most bizarre true crime stories ever to grace Unsolved Mysteries has confounded amateur investigators.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-25T12:01:26Z",
-    "detected_at": "2026-07-25T13:43:20Z"
-  },
-  {
     "url": "https://thedebrief.org/in-one-of-africas-deepest-lakes-scientists-have-found-a-species-no-one-expected-swimming-at-incredible-depths/",
     "title": "In One of Africa’s Deepest Lakes, Scientists Have Found a Species No One Expected Swimming at Incredible Depths",
     "description": "A remarkable discovery has been made in East Africa’s Lake Malawi, one of the deepest bodies of water on the African continent.",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-09-25T12:05:16Z",
     "detected_at": "2026-09-25T16:53:36Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-turn-pompeiis-destruction-into-the-most-precise-clock-yet-for-dating-ancient-volcanic-eruptions/",
+    "title": "Scientists Turn Pompeii’s Destruction Into the Most Precise Clock Yet for Dating Ancient Volcanic Eruptions",
+    "description": "Thanks to the volcanic eruption of Mount Vesuvius, archaeologists now have access to the most exact volcanic eruption dating technique ever.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-25T18:05:19Z",
+    "detected_at": "2026-09-25T21:18:03Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/09/colombia-paranormal-stories-of-armero.html",
+    "title": "Colombia: The Paranormal Stories of Armero",
+    "description": "&nbsp;Source: INFOBAE Date: November 23, 2025 An article by Johan Manuel Largo Paranormal stories of Armero: tales that cross the boundary between tragedy and the inexplicable Years after the avalanche, stories of goblins, witches, and benevolent pre",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-09-25T12:41:30Z",
+    "detected_at": "2026-09-25T21:18:03Z"
   }
 ]
