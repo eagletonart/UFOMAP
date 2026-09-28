@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/JeremyCorbell/status/2081166665522598124#m",
-    "title": "Sensationalized social media clickbait void of context - is all the rage. Shared and amplified as fact, till someone actually watches in long-form for context and clarity. Glad you are fastidious @The",
-    "description": "Sensationalized social media clickbait void of context - is all the rage. Shared and amplified as fact, till someone actually watches in long-form for context and clarity. Glad you are fastidious @TheUfoJoe 🫡 We don’t need to agree on all things, but",
-    "source_name": "Jeremy Corbell (@JeremyCorbell)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "location": "Los Angeles, CA",
-    "published_at": "2026-07-25T23:56:13Z",
-    "detected_at": "2026-07-26T03:23:32Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2081159098465140896#m",
     "title": "🚨 The Trump administration is using AI to deny healthcare to seniors on Medicare. And Senate Republicans BLOCKED my legislation that would've ended this destructive program. They're enabling Trump's A",
     "description": "🚨 The Trump administration is using AI to deny healthcare to seniors on Medicare. And Senate Republicans BLOCKED my legislation that would've ended this destructive program. They're enabling Trump's AI denials and won't do a thing to protect your Med",
@@ -15998,5 +15982,21 @@
     "location": "Latin America",
     "published_at": "2026-09-27T08:16:11Z",
     "detected_at": "2026-09-27T18:09:12Z"
+  },
+  {
+    "url": "https://thedebrief.org/nasas-ascent-propulsion-dual-mode-system-for-advanced-spaceflight-aces-critical-tests/",
+    "title": "NASA’s ASCENT Propulsion Dual Mode System for Advanced Spaceflight Aces Critical Tests",
+    "description": "NASA engineers say its ASCENT Propulsion Dual Mode system passed its vacuum chamber tests and is preparing for a planned October launch.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-09-28T13:09:51Z",
+    "detected_at": "2026-09-28T13:21:33Z"
   }
 ]
