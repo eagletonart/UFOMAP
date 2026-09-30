@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/2000-acre-wildfire-near-famous-area-51-rages-on-as-officials-work-to-stall-its-spread/",
-    "title": "2000-Acre Wildfire Near Famous ‘Area 51’ Rages on as Officials Work to Stall its Spread",
-    "description": "A massive wildfire that scorched the Nevada desert near the U.S. Air Force’s classified Area 51 facility over the weekend has now exceeded 2,000 acres.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-07-27T14:47:02Z",
-    "detected_at": "2026-07-27T17:45:31Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2081764808425111683#m",
     "title": "Raising the micro-purchase threshold alone saves over $40 million a year and lets contracting officers focus where oversight actually matters. That's the FIT Procurement Act, passed the House. Thank y",
     "description": "Raising the micro-purchase threshold alone saves over $40 million a year and lets contracting officers focus where oversight actually matters. That's the FIT Procurement Act, passed the House. Thank you, Chairman Comer.",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-09-30T12:17:42Z",
     "detected_at": "2026-09-30T18:56:54Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=JeuXfPpMmOU",
+    "title": "Tour the House Where Abraham Lincoln Died",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-09-30T22:00:26Z",
+    "detected_at": "2026-09-30T23:34:34Z"
   }
 ]
