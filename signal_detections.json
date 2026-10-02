@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2084612921745605068#m",
-    "title": "Today's the day, MO-07! Polls are open until 7 PM. Grab a neighbor, grab a friend! Every single vote counts. 🇺🇸",
-    "description": "Today's the day, MO-07! Polls are open until 7 PM. Grab a neighbor, grab a friend! Every single vote counts. 🇺🇸",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-04T12:10:25Z",
-    "detected_at": "2026-08-04T14:24:57Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2084632672572199373#m",
     "title": "The president is moving markets to enrich himself. Now he wants to further profit off his corruption by offering a subscription fee to it. I wrote the STOCK Act to stop BS like this -- people in power",
     "description": "The president is moving markets to enrich himself. Now he wants to further profit off his corruption by offering a subscription fee to it. I wrote the STOCK Act to stop BS like this -- people in power cashing in on information the public doesn't have",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-01T20:52:32Z",
     "detected_at": "2026-10-02T04:53:06Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/jordanflowers/status/2105924427867418948#m",
+    "title": "RT by @rosscoulthart: Yep",
+    "description": "Yep",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-10-02T07:34:44Z",
+    "detected_at": "2026-10-02T12:10:09Z"
   }
 ]
