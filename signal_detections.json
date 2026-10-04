@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2085004658548809996#m",
-    "title": "Michiganders want leaders who focus on lowering costs and standing up for working families. Congratulations to @AbdulElSayed. Let’s elect him this November to be the next senator from Michigan.",
-    "description": "Michiganders want leaders who focus on lowering costs and standing up for working families. Congratulations to @AbdulElSayed . Let’s elect him this November to be the next senator from Michigan. Dr. Abdul El-Sayed (@AbdulElSayed) Money out of politic",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-05T14:07:02Z",
-    "detected_at": "2026-08-05T14:18:48Z"
-  },
-  {
     "url": "https://thedebrief.org/archaeologists-uncover-12000-year-old-evidence-that-could-rewrite-the-origins-of-ceramic-technology-in-southwest-asia/",
     "title": "Archaeologists Uncover 11,500-Year-Old Evidence That Could Rewrite the Origins of Ceramic Technology in Southwest Asia",
     "description": "A discovery by archaeologists at the Pre-Pottery Neolithic site of Çemka Höyük in southeastern Turkey is extending the accepted timelines on the origins of ancient ceramic technology.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-03T14:39:14Z",
     "detected_at": "2026-10-03T15:58:24Z"
+  },
+  {
+    "url": "https://thedebrief.org/strange-signals-were-just-detected-coming-from-an-alien-world-and-they-reveal-something-astronomers-have-never-seen-before/",
+    "title": "Strange Signals Were Just Detected Coming from an Alien World—and They Reveal Something Astronomers Have Never Seen Before",
+    "description": "Scientists have traced a series of mysterious radio signals to a gigantic alien world 63 light-years from Earth.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-04T15:05:00Z",
+    "detected_at": "2026-10-04T18:02:49Z"
   }
 ]
