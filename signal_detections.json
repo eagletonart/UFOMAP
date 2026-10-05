@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/archaeologists-uncover-12000-year-old-evidence-that-could-rewrite-the-origins-of-ceramic-technology-in-southwest-asia/",
-    "title": "Archaeologists Uncover 11,500-Year-Old Evidence That Could Rewrite the Origins of Ceramic Technology in Southwest Asia",
-    "description": "A discovery by archaeologists at the Pre-Pottery Neolithic site of Çemka Höyük in southeastern Turkey is extending the accepted timelines on the origins of ancient ceramic technology.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-05T17:50:25Z",
-    "detected_at": "2026-08-05T19:40:37Z"
-  },
-  {
-    "url": "https://nitter.net/RepTimBurchett/status/2085097166234624009#m",
-    "title": "It was a pleasure visiting PS Engineering and seeing the innovation taking place right here in East Tennessee. Thank you to the team for the tour and for sharing more about the important work you do.",
-    "description": "It was a pleasure visiting PS Engineering and seeing the innovation taking place right here in East Tennessee. Thank you to the team for the tour and for sharing more about the important work you do.",
-    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-05T20:14:38Z",
-    "detected_at": "2026-08-05T21:15:31Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2085106863419359472#m",
     "title": "Unpopular war. Sky-high prices. Historic corruption. Trump is a total disaster and the American people are feeling the consequences.",
     "description": "Unpopular war. Sky-high prices. Historic corruption. Trump is a total disaster and the American people are feeling the consequences.",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-10-04T15:05:00Z",
     "detected_at": "2026-10-04T18:02:49Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/SenGillibrand/status/2106842093754957983#m",
+    "title": "R to @SenGillibrand: secure.actblue.com/donate/ni…",
+    "description": "secure.actblue.com/donate/ni… Link Support the movement. Donate today! Support the movement. Donate today! secure.actblue.com",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-04T20:21:13Z",
+    "detected_at": "2026-10-05T04:52:33Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/SenGillibrand/status/2106841888406081541#m",
+    "title": "Watch this:",
+    "description": "Watch this: State Rep. Angie Nixon (@AngieNixon) I grew up in a home with domestic violence. I was ashamed. I carried so much anger because of it. I didn’t recognize how much it impacted me until this campaign. It drives me. It’s why I fight so hard ",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-04T20:20:24Z",
+    "detected_at": "2026-10-05T04:52:33Z"
   }
 ]
