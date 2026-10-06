@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/TheAKGuy/status/2085070906200576164#m",
-    "title": "RT by @EricBurlison: Major win in dismantling the NFA! Let’s keep up the pressure, this is a powerful next step 🔥🔥🔥",
-    "description": "Major win in dismantling the NFA! Let’s keep up the pressure, this is a powerful next step 🔥🔥🔥 Gun Owners of America (@GunOwners) 🚨BREAKING🚨 In GOA's case, a federal court just stuck down NFA registration for: ❌Suppressors ❌Short-Barreled Rifles ❌Sho",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-05T18:30:17Z",
-    "detected_at": "2026-08-07T00:05:25Z"
-  },
-  {
     "url": "https://nitter.net/realannapaulina/status/2085408112714948979#m",
     "title": "RT by @EricBurlison: Image",
     "description": "",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-05T14:08:34Z",
     "detected_at": "2026-10-05T22:23:37Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/SPACEdotcom/status/2107054558275133766#m",
+    "title": "RT by @rosscoulthart: NASA Administrator Jared Isaacman suggested sightings of unidentified anomalous phenomena might signal another 'Sputnik Moment' looming on the horizon for the United States. http",
+    "description": "NASA Administrator Jared Isaacman suggested sightings of unidentified anomalous phenomena might signal another 'Sputnik Moment' looming on the horizon for the United States. space.com/space-exploration/… Link NASA chief Jared Isaacman wants to stay &",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-10-05T10:25:28Z",
+    "detected_at": "2026-10-06T05:39:48Z"
   }
 ]
