@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/realannapaulina/status/2085408112714948979#m",
-    "title": "RT by @EricBurlison: Image",
-    "description": "",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-06T16:50:13Z",
-    "detected_at": "2026-08-07T00:05:25Z"
-  },
-  {
     "url": "https://nitter.net/RepMoskowitz/status/2085396264661713368#m",
     "title": "When President Lyndon Johnson signed the Voting Rights Act into law on this day in 1965, he enshrined a truth that countless generations before had fought for: no American should be denied a voice in ",
     "description": "When President Lyndon Johnson signed the Voting Rights Act into law on this day in 1965, he enshrined a truth that countless generations before had fought for: no American should be denied a voice in our democracy because of the color of their skin. ",
@@ -15998,5 +15982,21 @@
     "location": "New York, NY",
     "published_at": "2026-10-05T10:25:28Z",
     "detected_at": "2026-10-06T05:39:48Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-studied-decades-of-magic-tricks-and-revealed-something-strange-about-how-the-brain-sees-reality/",
+    "title": "Scientists Studied Decades of Magic Tricks—and Revealed Something Strange About How the Brain Sees Reality",
+    "description": "Magic tricks reveal how the brain forms reality, as a review of 55 studies explores gaps in attention, perception and awareness.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-06T12:13:38Z",
+    "detected_at": "2026-10-06T13:03:05Z"
   }
 ]
