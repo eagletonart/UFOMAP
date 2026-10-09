@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/look-nasas-james-webb-space-telescope-captures-striking-new-images-that-bring-the-lion-nebula-roaring-to-life/",
-    "title": "Look: NASA’s James Webb Space Telescope Captures Striking New Images That Bring the ‘Lion Nebula’ Roaring to Life",
-    "description": "Stunning new imagery of the distant celestial object NGC 2392, better known as the “Lion Nebula,” has been obtained by NASA’s James Webb Space Telescope.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-10T15:44:23Z",
-    "detected_at": "2026-08-10T16:56:46Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2086835060955635901#m",
     "title": "🚨 Trump is raising prices for up to 25 MILLION Americans on Medicare:",
     "description": "🚨 Trump is raising prices for up to 25 MILLION Americans on Medicare: Video",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-10-09T11:45:09Z",
     "detected_at": "2026-10-09T12:52:13Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=NYDExnNRYuE",
+    "title": "Walk the Shiloh Battlefield of the Civil War",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-09T20:00:04Z",
+    "detected_at": "2026-10-09T23:53:22Z"
   }
 ]
