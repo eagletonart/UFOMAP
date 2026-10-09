@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/a-bizarre-dead-stars-magnetic-field-has-revealed-a-strange-surprise-potentially-confirming-a-90-year-old-theory/",
-    "title": "A Bizarre Dead Star’s Magnetic Field Has Revealed a Strange Surprise, Potentially Confirming a 90-Year-Old Theory",
-    "description": "New research reveals a magnetar that appears to display a phenomenon first predicted almost a century ago, but never directly observed.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-10T14:19:13Z",
-    "detected_at": "2026-08-10T15:02:12Z"
-  },
-  {
-    "url": "https://nitter.net/RepMoskowitz/status/2086823364098765222#m",
-    "title": "I was happy to spend this morning at Hammock Pointe Elementary and Omni Middle in Boca Raton to wish students a great first day back and drop off some breakfast for the teachers. It’s hard to overstat",
-    "description": "I was happy to spend this morning at Hammock Pointe Elementary and Omni Middle in Boca Raton to wish students a great first day back and drop off some breakfast for the teachers. It’s hard to overstate what our teachers do. Most of us can name one wh",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-10T14:33:55Z",
-    "detected_at": "2026-08-10T15:02:12Z"
-  },
-  {
     "url": "https://thedebrief.org/look-nasas-james-webb-space-telescope-captures-striking-new-images-that-bring-the-lion-nebula-roaring-to-life/",
     "title": "Look: NASA’s James Webb Space Telescope Captures Striking New Images That Bring the ‘Lion Nebula’ Roaring to Life",
     "description": "Stunning new imagery of the distant celestial object NGC 2392, better known as the “Lion Nebula,” has been obtained by NASA’s James Webb Space Telescope.",
@@ -15998,5 +15966,37 @@
     "location": "New York, NY",
     "published_at": "2026-10-08T22:25:21Z",
     "detected_at": "2026-10-09T05:24:18Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-create-a-real-life-lightsaber-that-can-transmit-radio-waves/",
+    "title": "Scientists Create a Real-Life “Lightsaber” That Can Transmit Radio Waves",
+    "description": "Researchers have created a laser that uses concentrated beams of plasma to generate a glowing “lightsaber” that can transmit radio signals.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-09T12:17:43Z",
+    "detected_at": "2026-10-09T12:52:13Z"
+  },
+  {
+    "url": "https://thedebrief.org/strange-electronic-patterns-caused-by-these-unusual-superconductors-could-lead-to-better-quantum-computers/",
+    "title": "Strange Electronic Patterns Caused by These Unusual Superconductors Could Lead to Better Quantum Computers",
+    "description": "An unusual class of superconducting materials is helping shed light on the links between magnetic vortices and \"exotic\" electronic states.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-09T11:45:09Z",
+    "detected_at": "2026-10-09T12:52:13Z"
   }
 ]
