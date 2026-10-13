@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/GrantLavac/status/2086712016635674890#m",
-    "title": "RT by @rosscoulthart: 🚨Australia recognises drones (UAS) as a national security threat but completely ignores Unidentified Anomalous Phenomena (UAP) As highlighted in this Sunrise (@sunriseon7) report",
-    "description": "🚨Australia recognises drones (UAS) as a national security threat but completely ignores Unidentified Anomalous Phenomena (UAP) As highlighted in this Sunrise ( @sunriseon7 ) report covering the recent airspace breach at RAAF Base Williamtown, base pe",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-08-10T07:11:28Z",
-    "detected_at": "2026-08-11T02:00:36Z"
-  },
-  {
     "url": "https://nitter.net/ProfAviLoeb/status/2086918260797124979#m",
     "title": "RT by @rosscoulthart: If, as @rosscoulthart claims, the Department of War was authorized by President Trump to engage with unidentified orbs over White Sands Missile Range, then the scientific analysi",
     "description": "If, as @rosscoulthart claims, the Department of War was authorized by President Trump to engage with unidentified orbs over White Sands Missile Range, then the scientific analysis of their materials or digital data is key for progress. If scientists ",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-10-13T12:03:43Z",
     "detected_at": "2026-10-13T15:43:45Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/10/mexico-ufos-over-chihuahua-1973.html",
+    "title": "Mexico: UFOs Over Chihuahua (1973)",
+    "description": "&nbsp; The 1973 UFO Wave in Mexico &nbsp; 1973: UFOs Over Chihuahua (From the book *UFOs Over Mexico* by Santiago García) &nbsp; &nbsp;Heraldo de la Tarde. Chihuahua, August 15, 1973. Believe it or not, flying saucers visited us last night—or at leas",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-10-13T12:40:06Z",
+    "detected_at": "2026-10-13T21:04:23Z"
   }
 ]
