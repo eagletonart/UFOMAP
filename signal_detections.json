@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://www.cnes-geipan.fr/fr/actualites/phenomene-etrange",
-    "title": "Lundi 11/11/2019 : un phénomène étrange observé dans le ciel",
-    "description": "De nombreux témoins ont observé sur le territoire français métropolitain une boule lumineuse dans le ciel, lundi 11/11/2019, en fin de journée. Ils ont alerté notre centre d’expertise des phénomènes aérospatiaux non identifiés, le GEIPAN. Explication",
-    "source_name": "GEIPAN — French Space Agency UAP Office",
-    "source_type": "rss",
-    "author": "CNES / GEIPAN",
-    "priority": "high",
-    "lang": "fr",
-    "flag": "🇫🇷",
-    "lat": 48.8566,
-    "lon": 2.3522,
-    "location": "Paris, France",
-    "published_at": "2019-11-14T00:00:00Z",
-    "detected_at": "2026-08-13T11:02:29Z"
-  },
-  {
     "url": "https://thedebrief.org/as-this-ancient-star-cluster-unravels-a-never-before-seen-star-ribbon-is-forming-under-the-influence-of-dark-matter/",
     "title": "As This Ancient Star Cluster Unravels, a Never-Before-Seen Star Ribbon is Forming Under the Influence of Dark Matter",
     "description": "Dark matter remains elusive to scientists, despite making up the majority of our universe’s mass, and now there's a new way to observe it.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-15T12:59:55Z",
     "detected_at": "2026-10-15T22:57:18Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/RepMoskowitz/status/2110878803081802171#m",
+    "title": "I am horrified at the news coming out of Oregon. There are no words to say when children are murdered at their school. It is every parents nightmare and no family should have to experience that pain. ",
+    "description": "I am horrified at the news coming out of Oregon. There are no words to say when children are murdered at their school. It is every parents nightmare and no family should have to experience that pain. These tragedies deserve our prayers and action. We",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-15T23:41:39Z",
+    "detected_at": "2026-10-16T03:52:45Z"
   }
 ]
