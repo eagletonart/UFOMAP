@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/new-gamma-wave-entrainment-glasses-supercharge-your-brains-performance/",
-    "title": "New “Gamma Wave Entrainment” Glasses Supercharge Your Brain’s Performance",
-    "description": "Korean scientists have invented a pair of transparent OLED glasses that create gamma wave entrainment to supercharge brain connectivity.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-17T12:29:43Z",
-    "detected_at": "2026-08-17T12:50:59Z"
-  },
-  {
-    "url": "https://thedebrief.org/space-is-getting-crowded-now-surging-satellite-demand-prompts-seops-waymaker-program-to-add-second-2028-mission/",
-    "title": "Space Is Getting Crowded—Now Surging Satellite Demand Prompts SEOPS ‘Waymaker’ Program to Add Second 2028 Mission",
-    "description": "Commercial space launch company SEOPS Space has announced an unprecedented second Waymaker LEO rideshare mission in 2028 due to high demand.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-17T12:18:35Z",
-    "detected_at": "2026-08-17T12:50:59Z"
-  },
-  {
     "url": "https://nitter.net/rosscoulthart/status/2089318506479374448#m",
     "title": "An important admission by the @EU_Commission on UAPs: it’s acknowledging it sees them! We know that guys - so what are your conclusions about it?",
     "description": "An important admission by the @EU_Commission on UAPs: it’s acknowledging it sees them! We know that guys - so what are your conclusions about it? Baptiste Friscourt (@Baptiste_Fri) 💥Breaking News💥 European Commission's Defense Department declares tha",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-16T23:30:08Z",
     "detected_at": "2026-10-17T08:23:20Z"
+  },
+  {
+    "url": "https://thedebrief.org/13800-year-old-alaskan-base-camp-yields-new-clues-to-ancient-beringia-land-bridge-mystery/",
+    "title": "13,800-Year-Old Alaskan ‘Base Camp’ Yields New Clues to Ancient Beringia Land Bridge Mystery",
+    "description": "New analysis of a 13,800-year-old Alaskan Beringia site revealed clues connecting its mysterious inhabitants with Asia and the Americas.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-17T12:42:07Z",
+    "detected_at": "2026-10-17T13:31:25Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-create-a-light-powered-brain-that-could-transform-future-communications/",
+    "title": "Scientists Create a ‘Light-Powered Brain’ That Could Transform Future Communications",
+    "description": "Scientists are exploring light in entirely new ways with the creation of a “light-powered brain,” capable of recognizing hidden information within patterns of light.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-17T12:37:30Z",
+    "detected_at": "2026-10-17T13:31:25Z"
   }
 ]
