@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenMarcoRubio/status/1866453206701850733#m",
-    "title": "My bill to designate the Pensacola and Perdido Bays as an \"Estuary of National of Significance,\" first introduced in 2021, just passed the House and is set to become law. My full statement below:",
-    "description": "My bill to designate the Pensacola and Perdido Bays as an \"Estuary of National of Significance,\" first introduced in 2021, just passed the House and is set to become law. My full statement below:",
-    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2024-12-10T12:01:36Z",
-    "detected_at": "2026-08-16T20:27:03Z"
-  },
-  {
-    "url": "https://nitter.net/SenGillibrand/status/2089148245750493392#m",
-    "title": "Elections should be decided by voters, not megadonors. I'm fighting to establish a national \"Democracy Dollars\" voucher program that would empower everyday American voters to participate in the campai",
-    "description": "Elections should be decided by voters, not megadonors. I'm fighting to establish a national \"Democracy Dollars\" voucher program that would empower everyday American voters to participate in the campaign finance system. Here's why we need it: Video",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-17T00:32:10Z",
-    "detected_at": "2026-08-17T01:35:03Z"
-  },
-  {
     "url": "https://thedebrief.org/scientists-propose-a-new-test-for-detecting-alien-life-unlike-anything-on-earth/",
     "title": "Scientists Propose a New Test for Detecting Alien Life Unlike Anything on Earth",
     "description": "Scientists propose a universal test that could detect alien life without assuming it resembles any biology found here on Earth.",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-16T20:28:13Z",
     "detected_at": "2026-10-16T22:40:58Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/rosscoulthart/status/2111188910642733317#m",
+    "title": "This is a very disturbing development. Explains why the U.S. issued the recent warning it did that it now has on orbit space weapons deployed.",
+    "description": "This is a very disturbing development. Explains why the U.S. issued the recent warning it did that it now has on orbit space weapons deployed. CSIS (@CSIS) As of October 15, 2026, a Russian satellite called Cosmos 2612 is moving into position for clo",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-10-16T20:13:54Z",
+    "detected_at": "2026-10-17T03:42:54Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/ChrisUKSharp/status/2111071277029228917#m",
+    "title": "RT by @rosscoulthart: This is very interesting. He is not ruling it out.",
+    "description": "This is very interesting. He is not ruling it out. UAP James (@UAPJames) NEW: President Trump is asked if he will disclose the truth about aliens and UFO reverse-engineered technology — “We are releasing everything” Video — https://nitter.kareem.one/",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-10-16T12:26:28Z",
+    "detected_at": "2026-10-17T03:42:54Z"
   }
 ]
