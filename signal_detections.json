@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/scientists-propose-a-new-test-for-detecting-alien-life-unlike-anything-on-earth/",
-    "title": "Scientists Propose a New Test for Detecting Alien Life Unlike Anything on Earth",
-    "description": "Scientists propose a universal test that could detect alien life without assuming it resembles any biology found here on Earth.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-17T12:38:31Z",
-    "detected_at": "2026-08-17T12:50:59Z"
-  },
-  {
     "url": "https://thedebrief.org/new-gamma-wave-entrainment-glasses-supercharge-your-brains-performance/",
     "title": "New “Gamma Wave Entrainment” Glasses Supercharge Your Brain’s Performance",
     "description": "Korean scientists have invented a pair of transparent OLED glasses that create gamma wave entrainment to supercharge brain connectivity.",
@@ -15998,5 +15982,21 @@
     "location": "New York, NY",
     "published_at": "2026-10-16T12:26:28Z",
     "detected_at": "2026-10-17T03:42:54Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/EricBurlison/status/2111238291215229358#m",
+    "title": "Amendment 7 builds a locked, raid-proof fund invested in American companies. Once it earns enough, Missouri can eliminate state taxes. It's a long game, and it's the right direction. No new taxes. No ",
+    "description": "Amendment 7 builds a locked, raid-proof fund invested in American companies. Once it earns enough, Missouri can eliminate state taxes. It's a long game, and it's the right direction. No new taxes. No new spending. Vote YES on 7.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-16T23:30:08Z",
+    "detected_at": "2026-10-17T08:23:20Z"
   }
 ]
