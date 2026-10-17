@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenMarcoRubio/status/1862142887670014420#m",
-    "title": "Happy Thanksgiving!",
-    "description": "Happy Thanksgiving!",
-    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2024-11-28T14:33:56Z",
-    "detected_at": "2026-08-17T20:30:48Z"
-  },
-  {
     "url": "https://nitter.net/SenMarcoRubio/status/1862142812554137904#m",
     "title": "Feliz Día de Acción de Gracias!",
     "description": "Feliz Día de Acción de Gracias!",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-17T17:46:20Z",
     "detected_at": "2026-10-17T20:20:23Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/EricBurlison/status/2111600711980986385#m",
+    "title": "If you support the Missouri First congressional map, you vote YES on Proposition A. A NO vote throws it out. YES keeps more counties whole and gives rural Missouri a stronger voice. Vote YES on A.",
+    "description": "If you support the Missouri First congressional map, you vote YES on Proposition A. A NO vote throws it out. YES keeps more counties whole and gives rural Missouri a stronger voice. Vote YES on A.",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-17T23:30:16Z",
+    "detected_at": "2026-10-17T23:52:05Z"
   }
 ]
