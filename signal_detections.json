@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/RealLindellTV/status/2089489442906177717#m",
-    "title": "RT by @EricBurlison: SPIES. SEX. SECRETS ON CAPITOL HILL. Newly declassified FBI files just confirmed it: Rep. Eric Swalwell admitted under questioning that he had sex with Christine “Fang Fang” Fang ",
-    "description": "SPIES. SEX. SECRETS ON CAPITOL HILL. Newly declassified FBI files just confirmed it: Rep. Eric Swalwell admitted under questioning that he had sex with Christine “Fang Fang” Fang - a woman the Bureau believed was tied to China’s Ministry of State Sec",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-17T23:07:58Z",
-    "detected_at": "2026-08-18T04:39:02Z"
-  },
-  {
     "url": "https://nitter.net/EricBurlison/status/2089658822386225544#m",
     "title": "Create a random image inspired by my X account.",
     "description": "Create a random image inspired by my X account.",
@@ -15998,5 +15982,21 @@
     "location": "Los Angeles, CA",
     "published_at": "2026-06-25T16:28:19Z",
     "detected_at": "2026-10-18T08:42:38Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/EricBurlison/status/2111814319738392857#m",
+    "title": "If every Republican in the Springfield area shows up, we win every seat. Don't sit this one out.",
+    "description": "If every Republican in the Springfield area shows up, we win every seat. Don't sit this one out. Video",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-18T13:39:04Z",
+    "detected_at": "2026-10-18T13:50:29Z"
   }
 ]
