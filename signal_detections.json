@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenMarcoRubio/status/1855747271264174121#m",
-    "title": "Make sure to follow my other accounts to stay up to date👇",
-    "description": "Make sure to follow my other accounts to stay up to date👇",
-    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2024-11-10T23:00:02Z",
-    "detected_at": "2026-08-18T14:36:30Z"
-  },
-  {
     "url": "https://nitter.net/SenMarcoRubio/status/1855628983939035370#m",
     "title": "Since 1775, the few and the proud have joined to serve our nation's common cause. We are free because of the bravery, service, and sacrifice from our incredible Marines. Semper Fi! 🇺🇸",
     "description": "Since 1775, the few and the proud have joined to serve our nation's common cause. We are free because of the bravery, service, and sacrifice from our incredible Marines. Semper Fi! 🇺🇸",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-10-19T11:45:09Z",
     "detected_at": "2026-10-19T12:38:01Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-are-preparing-for-a-tunguska-sized-asteroid-threat-in-a-new-planetary-defense-exercise/",
+    "title": "Scientists Are Preparing for a Tunguska-Sized Asteroid Threat in a New Planetary Defense Exercise",
+    "description": "What would happen if an asteroid struck the Earth? We spoke with a NASA planetary scientist who is working to find out.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-19T15:44:33Z",
+    "detected_at": "2026-10-19T19:42:57Z"
   }
 ]
