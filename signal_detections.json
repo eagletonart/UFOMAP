@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/EricBurlison/status/2089699853102154043#m",
-    "title": "Got to see the new facility at Missouri Southern at the Roy Blunt ribbon cutting. Beautiful building, and a real investment in Joplin's next generation of workers. Then straight to the manufacturers d",
-    "description": "Got to see the new facility at Missouri Southern at the Roy Blunt ribbon cutting. Beautiful building, and a real investment in Joplin's next generation of workers. Then straight to the manufacturers doing the hiring.",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-18T13:04:04Z",
-    "detected_at": "2026-08-18T14:36:30Z"
-  },
-  {
     "url": "https://nitter.net/SenMarcoRubio/status/1855977531171656023#m",
     "title": "This Veteran's Day, we honor the devotion to duty of all who have served in the U.S. armed forces. From the \"shot heard around the world\" to the present day, Americans filled with strength and courage",
     "description": "This Veteran's Day, we honor the devotion to duty of all who have served in the U.S. armed forces. From the \"shot heard around the world\" to the present day, Americans filled with strength and courage have made countless sacrifices -- even the ultima",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-16T04:03:03Z",
     "detected_at": "2026-10-18T17:09:44Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/rosscoulthart/status/2111918768163266879#m",
+    "title": "Our latest REALITY CHECK Q&A w. Ross Coulthart: The White House is going around the legacy program: https://youtu.be/9HCEhT4Fl0k?si=ZYWHSmWMskGvwgsF",
+    "description": "Our latest REALITY CHECK Q&amp;A w. Ross Coulthart: The White House is going around the legacy program: inv.kareem.one/9HCEhT4Fl0k?si=ZYWH… Link Ross Coulthart: The White House is going around the legacy program |... 🚗 See if you&apos;re overpaying f",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-10-18T20:34:06Z",
+    "detected_at": "2026-10-18T23:59:52Z"
   }
 ]
