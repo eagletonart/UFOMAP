@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/nickpopemod/status/2038102732721262741#m",
-    "title": "This is only the second Gila Monster that Elizabeth and I have seen in around 14 years of living here at our desert home in Tucson.",
-    "description": "This is only the second Gila Monster that Elizabeth and I have seen in around 14 years of living here at our desert home in Tucson. Elizabeth Weiss (@eweissunburied) This morning Nick and I had the pleasure of seeing a Gila monster in our backyard --",
-    "source_name": "Nick Pope (@nickpopemod)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇬🇧",
-    "lat": 51.5074,
-    "lon": -0.1278,
-    "location": "London, UK",
-    "published_at": "2026-03-29T03:55:32Z",
-    "detected_at": "2026-08-18T18:42:19Z"
-  },
-  {
-    "url": "https://nitter.net/GunOwners/status/2089741139972689941#m",
-    "title": "RT by @EricBurlison: 🚨BREAKING🚨 Judge Reed O'Connor strikes down Biden's \"Ghost Gun\" ban after SCOTUS upheld it on statutory grounds in Vanderstok v. Garland. \"[T]he Final Rule is unconstitutional und",
-    "description": "🚨BREAKING🚨 Judge Reed O'Connor strikes down Biden's \"Ghost Gun\" ban after SCOTUS upheld it on statutory grounds in Vanderstok v. Garland. \"[T]he Final Rule is unconstitutional under the 2nd Amendment &amp; void for vagueness under the Due Process Cla",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-18T15:48:07Z",
-    "detected_at": "2026-08-18T20:28:05Z"
-  },
-  {
     "url": "https://nitter.net/SenGillibrand/status/2089789312023896066#m",
     "title": "Trump launched this unpopular war with no strategy and no mission. Six months in, and there’s no end in sight. Costs are up at home. Our service members' lives are at risk. Trump failed us.",
     "description": "Trump launched this unpopular war with no strategy and no mission. Six months in, and there’s no end in sight. Costs are up at home. Our service members' lives are at risk. Trump failed us.",
@@ -15998,5 +15966,37 @@
     "location": "Brazil",
     "published_at": "2026-10-20T12:20:03Z",
     "detected_at": "2026-10-20T16:35:23Z"
+  },
+  {
+    "url": "https://ufo.com.br/globoplay-lanca-serie-sobre-os-principais-casos-ufologicos-do-brasil/",
+    "title": "Globoplay lança série sobre os principais casos ufológicos do Brasil",
+    "description": "A plataforma Globoplay anunciou para 29 de outubro a estreia da série documental Arquivos do Céu, produção em cinco episódios dedicada à investigação de alguns dos mais emblemáticos casos ufológicos registrados no Brasil. A atração promete apresentar",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-10-20T19:16:08Z",
+    "detected_at": "2026-10-20T21:24:22Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=rctsmgMNfaI",
+    "title": "Was Zachary Taylor poisoned?",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-20T20:15:37Z",
+    "detected_at": "2026-10-20T21:24:22Z"
   }
 ]
