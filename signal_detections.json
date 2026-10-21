@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.net/nickpopemod/status/2037191300139901299#m",
-    "title": "My final overseas trip was to take part in a fascinating @DohaDebates discussion on the societal implications of encountering beings more intelligent than ourselves. What do you think would happen? Se",
-    "description": "My final overseas trip was to take part in a fascinating @DohaDebates discussion on the societal implications of encountering beings more intelligent than ourselves. What do you think would happen? See if our ideas align with yours! piped.video/dohad",
-    "source_name": "Nick Pope (@nickpopemod)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇬🇧",
-    "lat": 51.5074,
-    "lon": -0.1278,
-    "location": "London, UK",
-    "published_at": "2026-03-26T15:33:49Z",
-    "detected_at": "2026-08-18T22:27:09Z"
-  },
-  {
-    "url": "https://nitter.net/nickpopemod/status/2035391554274361593#m",
-    "title": "The White House registered 2 new web domains this week: http://alien.gov and http://aliens.gov - inevitably leading to various conspiracy theories. Personally, I think it would've been much more fun i",
-    "description": "The White House registered 2 new web domains this week: alien.gov and aliens.gov - inevitably leading to various conspiracy theories. Personally, I think it would've been much more fun if they'd gone for alieninvasionwarplan.gov thehill.com/video/whi",
-    "source_name": "Nick Pope (@nickpopemod)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇬🇧",
-    "lat": 51.5074,
-    "lon": -0.1278,
-    "location": "London, UK",
-    "published_at": "2026-03-21T16:22:16Z",
-    "detected_at": "2026-08-18T22:27:09Z"
-  },
-  {
     "url": "https://nitter.net/nickpopemod/status/2034683587010994503#m",
     "title": "Hot weather ahead in Tucson!",
     "description": "Hot weather ahead in Tucson!",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-20T19:55:42Z",
     "detected_at": "2026-10-21T00:27:05Z"
+  },
+  {
+    "url": "https://thedebrief.org/on-hostile-alien-worlds-water-unexpectedly-behaves-like-a-bizarre-chemical-shapeshifter/",
+    "title": "On Hostile Alien Worlds, Water Unexpectedly Behaves Like a Bizarre Chemical Shapeshifter",
+    "description": "Water behaves very strangely under extreme conditions beyond Earth, according to researchers at the University of Nevada.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-21T12:24:21Z",
+    "detected_at": "2026-10-21T13:35:21Z"
+  },
+  {
+    "url": "https://thedebrief.org/a-mysterious-skeleton-found-in-an-ancient-sarcophagus-may-have-finally-been-identified/",
+    "title": "A Mysterious Skeleton Found in an Ancient Sarcophagus May Have Finally Been Identified",
+    "description": "A new analysis of a mysterious skeleton discovered in a Westminster Abbey sarcophagus in the 1800s has identified two likely candidates.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-21T12:15:46Z",
+    "detected_at": "2026-10-21T13:35:21Z"
   }
 ]
