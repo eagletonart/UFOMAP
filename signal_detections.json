@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.net/SenGillibrand/status/2089789312023896066#m",
-    "title": "Trump launched this unpopular war with no strategy and no mission. Six months in, and there’s no end in sight. Costs are up at home. Our service members' lives are at risk. Trump failed us.",
-    "description": "Trump launched this unpopular war with no strategy and no mission. Six months in, and there’s no end in sight. Costs are up at home. Our service members' lives are at risk. Trump failed us.",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-18T18:59:33Z",
-    "detected_at": "2026-08-18T20:28:05Z"
-  },
-  {
     "url": "https://nitter.net/nickpopemod/status/2037191300139901299#m",
     "title": "My final overseas trip was to take part in a fascinating @DohaDebates discussion on the societal implications of encountering beings more intelligent than ourselves. What do you think would happen? Se",
     "description": "My final overseas trip was to take part in a fascinating @DohaDebates discussion on the societal implications of encountering beings more intelligent than ourselves. What do you think would happen? See if our ideas align with yours! piped.video/dohad",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-20T20:15:37Z",
     "detected_at": "2026-10-20T21:24:22Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/RepTimBurchett/status/2112633880519835872#m",
+    "title": "Thank you to Danika Bagley from Americans for Prosperity for recognizing me with the Pioneers for Prosperity Award. I’ll continue to fight against wasteful spending and cut red tape.",
+    "description": "Thank you to Danika Bagley from Americans for Prosperity for recognizing me with the Pioneers for Prosperity Award. I’ll continue to fight against wasteful spending and cut red tape.",
+    "source_name": "Rep. Tim Burchett (@RepTimBurchett)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-20T19:55:42Z",
+    "detected_at": "2026-10-21T00:27:05Z"
   }
 ]
