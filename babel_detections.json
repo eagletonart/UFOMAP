@@ -727,5 +727,50 @@
     "priority": "high",
     "detected_at": "2026-09-22T15:57:48Z",
     "analyzed": false
+  },
+  {
+    "url": "https://www.cia.gov/report-information",
+    "text": "Report Information",
+    "source_name": "CIA FOIA \u2014 Reading Room UAP",
+    "source_url": "https://www.cia.gov/readingroom/search/site/UAP",
+    "priority": "high",
+    "detected_at": "2026-10-23T20:48:29Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.cia.gov/stories/press-releases-and-statements/",
+    "text": "Press Releases and Statements",
+    "source_name": "CIA FOIA \u2014 Reading Room UAP",
+    "source_url": "https://www.cia.gov/readingroom/search/site/UAP",
+    "priority": "high",
+    "detected_at": "2026-10-23T20:48:29Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.cia.gov/resources/reports/",
+    "text": "CIA Reports",
+    "source_name": "CIA FOIA \u2014 Reading Room UAP",
+    "source_url": "https://www.cia.gov/readingroom/search/site/UAP",
+    "priority": "high",
+    "detected_at": "2026-10-23T20:48:29Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.cia.gov/readingroom/",
+    "text": "FOIA Reading Room",
+    "source_name": "CIA FOIA \u2014 Reading Room UAP",
+    "source_url": "https://www.cia.gov/readingroom/search/site/UAP",
+    "priority": "high",
+    "detected_at": "2026-10-23T20:48:29Z",
+    "analyzed": false
+  },
+  {
+    "url": "https://www.foia.gov",
+    "text": "www.foia.gov",
+    "source_name": "CIA FOIA \u2014 Reading Room UAP",
+    "source_url": "https://www.cia.gov/readingroom/search/site/UAP",
+    "priority": "high",
+    "detected_at": "2026-10-23T20:48:29Z",
+    "analyzed": false
   }
 ]
