@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://ufo.com.br/jornal-de-1970-ja-registrava-um-possivel-disco-voador-em-varginha-26-anos-antes-do-caso/",
-    "title": "Jornal de 1970 já registrava um possível disco voador em Varginha, 26 anos antes do caso mundialmente famoso",
-    "description": "Um levantamento recente trouxe à tona um capítulo pouco conhecido da história ufológica de Varginha, cidade do sul de Minas Gerais que ficou mundialmente famosa em 1996 pelo chamado &#8220;ET de Varginha&#8221;. Segundo a reportagem, a região já regi",
-    "source_name": "Revista UFO Brasil",
-    "source_type": "rss",
-    "author": "Revista UFO",
-    "priority": "high",
-    "lang": "pt-BR",
-    "flag": "🇧🇷",
-    "lat": -15.7801,
-    "lon": -47.9292,
-    "location": "Brazil",
-    "published_at": "2026-08-25T14:36:45Z",
-    "detected_at": "2026-08-25T14:49:56Z"
-  },
-  {
     "url": "https://thedebrief.org/mobile-hypersonic-spaceports-a-manhattan-sized-ice-island-and-a-lost-city-surfaces-in-egypt/",
     "title": "Mobile Hypersonic Spaceports, a Manhattan-sized “Ice Island,” and a Lost City Surfaces in Egypt",
     "description": "This week, a commercial space company reveals a game-changing new launch capability, satellites capture the formation of a Manhattan-sized \"ice island,\" and much more.",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-23T17:55:44Z",
     "detected_at": "2026-10-24T00:23:07Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/StephenM/status/2113605673187467675#m",
+    "title": "RT by @EricBurlison: Tranche 7 released",
+    "description": "Tranche 7 released",
+    "source_name": "Rep. Eric Burlison (@EricBurlison)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-23T12:17:16Z",
+    "detected_at": "2026-10-24T07:01:26Z"
   }
 ]
