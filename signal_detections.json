@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://inexplicata.blogspot.com/2026/08/ufos-in-ancient-china.html",
-    "title": "UFOs in Ancient China",
-    "description": "&nbsp; UFOs in Ancient China By Andreas Faber Kaiser &nbsp; Chinese tests such as the Feng Shen Yen I, the Liu Shi Ch'un Ch'iu and the Shan Hai Jing regale readers with tales of aerial combat or UFO sightings. The Feng Shen Yen I, for example, says h",
-    "source_name": "Inexplicata — Hispanic Ufology",
-    "source_type": "rss",
-    "author": "Scott Corrales",
-    "priority": "medium",
-    "lang": "en/es",
-    "flag": "🌎",
-    "lat": 4.5709,
-    "lon": -74.2973,
-    "location": "Latin America",
-    "published_at": "2026-08-27T10:37:21Z",
-    "detected_at": "2026-08-27T20:13:03Z"
-  },
-  {
     "url": "https://www.youtube.com/shorts/Rr3xeLVRnGs",
     "title": "The Conspiracy Theories of John Wilkes Booth's Death",
     "description": "",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-10-27T21:00:00Z",
     "detected_at": "2026-10-27T21:57:54Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/Yj17j7vsrhw",
+    "title": "What It's Like Being a White House Chef",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-27T20:41:58Z",
+    "detected_at": "2026-10-28T08:04:23Z"
   }
 ]
