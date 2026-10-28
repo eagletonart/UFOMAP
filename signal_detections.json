@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/the-classified-roots-of-nasas-nancy-grace-roman-space-telescope-how-a-spy-agencys-secret-satellite-became-a-space-observatory/",
-    "title": "The Classified Roots of NASA’s Nancy Grace Roman Space Telescope: How a Spy Agency’s Secret Satellite Became a Space Observatory",
-    "description": "NASA’s new premier space observatory, the Nancy Grace Roman Space Telescope, has roots in one of America’s spy agencies.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-28T13:18:17Z",
-    "detected_at": "2026-08-28T20:05:15Z"
-  },
-  {
     "url": "https://thedebrief.org/air-force-research-labs-innovation-unit-spacewerx-funds-controversial-vacuum-energy-company-casimir/",
     "title": "Air Force Research Lab’s Innovation Unit SpaceWERX Funds Controversial Vacuum Energy Company Casimir",
     "description": "Controversial vacuum energy startup Casimir has received an Air Force Research Lab SpaceWERX award to prove its MicroSparc chip's viability.",
@@ -15998,5 +15982,21 @@
     "location": "Latin America",
     "published_at": "2026-10-28T04:36:01Z",
     "detected_at": "2026-10-28T16:29:26Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/10/chile-unusual-luminous-phenomenon-2026.html",
+    "title": "Chile: An Unusual Luminous Phenomenon (2026)",
+    "description": "&nbsp;Chile: An Unusual Luminous Phenomenon Source: Central Noticia Date: October 26, 2026 An Article by Alejandra Castellano An unusual luminous phenomenon associated with a supposed UFO in Chile surprised hundreds of witnesses during the night of O",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-10-28T12:11:18Z",
+    "detected_at": "2026-10-28T22:22:10Z"
   }
 ]
