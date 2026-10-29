@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/air-force-research-labs-innovation-unit-spacewerx-funds-controversial-vacuum-energy-company-casimir/",
-    "title": "Air Force Research Lab’s Innovation Unit SpaceWERX Funds Controversial Vacuum Energy Company Casimir",
-    "description": "Controversial vacuum energy startup Casimir has received an Air Force Research Lab SpaceWERX award to prove its MicroSparc chip's viability.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-28T12:38:30Z",
-    "detected_at": "2026-08-28T20:05:15Z"
-  },
-  {
     "url": "https://thedebrief.org/what-happens-after-the-nancy-grace-roman-space-telescopes-historic-launch/",
     "title": "What Happens After the Nancy Grace Roman Space Telescope’s Historic Launch?",
     "description": "NASA has released a detailed outline of the next steps its Nancy Grace Roman Space Telescope will complete after its long-awaited launch.",
@@ -15998,5 +15982,21 @@
     "location": "Latin America",
     "published_at": "2026-10-28T12:11:18Z",
     "detected_at": "2026-10-28T22:22:10Z"
+  },
+  {
+    "url": "https://thedebrief.org/a-helicopter-flying-100-feet-above-the-ground-can-now-pinpoint-radioactive-materials-in-just-6-seconds/",
+    "title": "A Helicopter Flying 100 Feet Above the Ground Can Now Pinpoint Radioactive Materials in Just 6 Seconds",
+    "description": "Scientists develop a method to pinpoint Radioactive Materials within six feet using just six seconds of data from a helicopter.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-29T12:14:18Z",
+    "detected_at": "2026-10-29T12:34:44Z"
   }
 ]
