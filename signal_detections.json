@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/a-b-52-carrying-two-hydrogen-bombs-broke-apart-over-north-carolina-in-1961-and-nearly-caused-a-nuclear-disaster/",
-    "title": "A B-52 Carrying Two Hydrogen Bombs Broke Apart Over North Carolina in 1961—and Nearly Caused a Nuclear Disaster",
-    "description": "The dropping of a nuclear bomb on the United States isn’t just relegated to Cold War fiction; it actually occurred in 1961.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-29T15:06:00Z",
-    "detected_at": "2026-08-29T16:28:33Z"
-  },
-  {
     "url": "https://thedebrief.org/opinion-the-real-reason-putin-could-be-preparing-to-test-nato/",
     "title": "Opinion: The Real Reason Putin Could Be Preparing to Test NATO",
     "description": "Russia may not want war with NATO, but a calculated provocation could test the alliance and deepen divisions with the United States.",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-10-29T12:50:48Z",
     "detected_at": "2026-10-29T19:27:23Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=J5yw1LCJqjs",
+    "title": "Nancy Reagan Conducts a Tour of the Reagan Library",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-10-29T21:30:14Z",
+    "detected_at": "2026-10-30T12:26:07Z"
   }
 ]
