@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/a-lost-english-ghost-village-long-hidden-beneath-one-of-englands-largest-reservoirs-has-mysteriously-resurfaced/",
-    "title": "A Lost English “Ghost Village,” Long Hidden Beneath One of England’s Largest Reservoirs, Has Mysteriously Resurfaced",
-    "description": "The remains of a “lost” English village hidden beneath the waters of an English reservoir for more than half a century have resurfaced.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-30T16:14:01Z",
-    "detected_at": "2026-08-30T16:21:51Z"
-  },
-  {
-    "url": "https://thedebrief.org/crisis-in-cosmology-intensifies-as-debate-over-whether-the-universe-is-really-accelerating-is-reignited/",
-    "title": "Crisis in Cosmology Intensifies as Debate Over Whether the Universe Is Really Accelerating is Reignited",
-    "description": "A cosmological controversy has been reignited over whether observations of supernovae support long-held ideas about the universe's expansion.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-30T14:40:43Z",
-    "detected_at": "2026-08-30T16:21:51Z"
-  },
-  {
     "url": "https://thedebrief.org/breakthrough-computers-made-from-slime-use-amoeba-like-organisms-to-solve-intricate-and-costly-problems/",
     "title": "Breakthrough Computers Made From Slime Use Amoeba-like Organisms to Solve Intricate and Costly Problems",
     "description": "Computers based on slime molds may be the next step for solving some of the most advanced and resource-heavy problems.",
@@ -15998,5 +15966,37 @@
     "location": "Brazil",
     "published_at": "2026-10-30T13:06:05Z",
     "detected_at": "2026-10-30T19:03:25Z"
+  },
+  {
+    "url": "https://thedebrief.org/a-strange-new-phenomenon-hidden-in-einsteins-equations-could-change-how-we-understand-gravity/",
+    "title": "A Strange New Phenomenon Hidden in Einstein’s Equations Could Change How We Understand Gravity",
+    "description": "A never-before-recognized theoretical phenomenon hidden in Einstein's gravity work may help researchers predict the behavior of space-time.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-31T14:57:13Z",
+    "detected_at": "2026-10-31T17:04:57Z"
+  },
+  {
+    "url": "https://thedebrief.org/the-first-laserseti-stations-in-asia-are-now-active-in-saudi-arabia/",
+    "title": "The First LaserSETI Stations in Asia Are Now Active in Saudi Arabia",
+    "description": "The SETI Institute and Saudi Arabia’s Royal Commission for AlUla have activated the first two LaserSETI stations in Asia.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-10-31T14:56:26Z",
+    "detected_at": "2026-10-31T17:04:57Z"
   }
 ]
