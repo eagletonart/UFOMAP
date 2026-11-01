@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/breakthrough-computers-made-from-slime-use-amoeba-like-organisms-to-solve-intricate-and-costly-problems/",
-    "title": "Breakthrough Computers Made From Slime Use Amoeba-like Organisms to Solve Intricate and Costly Problems",
-    "description": "Computers based on slime molds may be the next step for solving some of the most advanced and resource-heavy problems.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-08-30T14:40:30Z",
-    "detected_at": "2026-08-30T16:21:51Z"
-  },
-  {
     "url": "https://thedebrief.org/one-confirmed-dead-at-least-15-remain-missing-after-major-flash-flood-strikes-grand-canyon-national-park/",
     "title": "One Confirmed Dead, At Least 15 Remain Missing After Major Flash Flood Strikes Grand Canyon National Park",
     "description": "Officials at Grand Canyon National Park say one visitor died and at least 15 are missing after a major flash flood over the weekend.",
@@ -15998,5 +15982,21 @@
     "location": "Charlotte, NC",
     "published_at": "2026-10-31T14:56:26Z",
     "detected_at": "2026-10-31T17:04:57Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-finally-solve-a-150-year-old-mystery-involving-20000-year-old-remains/",
+    "title": "Scientists Finally Solve a 150-Year-Old Mystery Involving 20,000-Year-Old Remains",
+    "description": "New DNA analysis of 20000-year-old crane bones has concluded that it is not an extinct species after all, solving a 150-year-old mystery.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-11-01T13:22:54Z",
+    "detected_at": "2026-11-01T16:39:44Z"
   }
 ]
