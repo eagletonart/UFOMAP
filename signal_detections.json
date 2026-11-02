@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/25000-years-ago-the-earliest-human-drug-use-may-have-occurred-on-this-small-island/",
-    "title": "25,000 Years Ago, the Earliest Human Drug Use May Have Occurred on This Small Island",
-    "description": "What may be the earliest known evidence of human drug use suggests that it occurred 25,000 years ago, according to new research.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-09-11T13:49:49Z",
-    "detected_at": "2026-09-11T14:08:26Z"
-  },
-  {
-    "url": "https://thedebrief.org/defense-aviation-company-hermeus-unveils-new-high-mach-speed-prototype/",
-    "title": "Defense Aviation Company Hermeus Unveils New “High Mach Speed” Prototype",
-    "description": "Defense aviation company Hermeus has unveiled its high-Mach flight Ramjet-X designed to reduce costs and increase high-speed testing access.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-09-11T13:32:36Z",
-    "detected_at": "2026-09-11T14:08:26Z"
-  },
-  {
     "url": "https://thedebrief.org/a-560-million-year-old-animal-survived-in-3d-hinting-at-an-entire-lost-ancient-ecosystem/",
     "title": "A 560-Million-Year-Old Animal Survived in 3D, Hinting at an Entire Lost Ancient Ecosystem",
     "description": "Archaeologists have unearthed a 560-million-year-old animal life form preserved in 3D, hinting at an entire lost ecosystem.",
@@ -15998,5 +15966,37 @@
     "location": "Los Angeles, CA",
     "published_at": "2026-10-24T19:03:50Z",
     "detected_at": "2026-11-02T01:21:57Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=QRR2v2GvM-I",
+    "title": "AARO Threatened to FORCE a Navy UFO Whistleblower Into a SCIF",
+    "description": "",
+    "source_name": "WEAPONIZED Podcast (Corbell & Knapp)",
+    "source_type": "youtube",
+    "author": "Jeremy Corbell & George Knapp",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-09-08T22:09:43Z",
+    "detected_at": "2026-11-02T09:05:16Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=umMX-8SIOSY",
+    "title": "CIA STOPPED Lockheed From Transferring UFO Crash Material",
+    "description": "",
+    "source_name": "WEAPONIZED Podcast (Corbell & Knapp)",
+    "source_type": "youtube",
+    "author": "Jeremy Corbell & George Knapp",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-09-04T05:36:19Z",
+    "detected_at": "2026-11-02T09:05:16Z"
   }
 ]
