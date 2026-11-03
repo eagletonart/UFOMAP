@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/66-million-year-old-mystery-solved-fossilized-bird-feather-reveals-how-modern-birds-likely-survived-the-dinosaur-killing-asteroid/",
-    "title": "66-Million-Year-Old Mystery Solved? Fossilized Bird Feather Reveals How ‘Modern’ Birds Likely Survived the Dinosaur-Killing Asteroid",
-    "description": "Analysis of an ancient bird feather encased in dinosaur feces may have solved the 66-million-year-old mystery of why modern birds exist.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-09-12T14:49:32Z",
-    "detected_at": "2026-09-12T16:51:33Z"
-  },
-  {
     "url": "https://nitter.kareem.one/JeremyCorbell/status/2098817704169705485#m",
     "title": "Thirty-five pilot reports used an unfamiliar official term. The discussion examines Brazilian records of military and commercial pilots reporting UAP and asks what the Air Force designation 'traffic h",
     "description": "Thirty-five pilot reports used an unfamiliar official term. The discussion examines Brazilian records of military and commercial pilots reporting UAP and asks what the Air Force designation 'traffic hotel' means. Watch the exchange from WEAPONIZED, E",
@@ -15998,5 +15982,21 @@
     "location": "Los Angeles, CA",
     "published_at": "2026-11-02T01:28:53Z",
     "detected_at": "2026-11-02T20:05:39Z"
+  },
+  {
+    "url": "https://ufo.com.br/museu-militar-alemao-investiga-origem-dos-mitos-sobre-discos-voadores-nazistas-e-bases-secretas-na-antartida/",
+    "title": "Museu militar alemão investiga origem dos mitos sobre discos voadores nazistas e bases secretas na Antártida",
+    "description": "Discos voadores desenvolvidos pela Alemanha nazista, bases secretas na Antártida e supostos contatos de Adolf Hitler com civilizações extraterrestres. Essas histórias circulam há décadas no universo da ufologia e das teorias conspiratórias, mas qual ",
+    "source_name": "Revista UFO Brasil",
+    "source_type": "rss",
+    "author": "Revista UFO",
+    "priority": "high",
+    "lang": "pt-BR",
+    "flag": "🇧🇷",
+    "lat": -15.7801,
+    "lon": -47.9292,
+    "location": "Brazil",
+    "published_at": "2026-11-03T00:23:21Z",
+    "detected_at": "2026-11-03T03:21:55Z"
   }
 ]
