@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.kareem.one/RepMoskowitz/status/2087194895236686111#m",
-    "title": "I want to thank the incredible teachers across South Florida heading into a new school year. Raising the next generation is the most important job on the planet, and you deserve far more than we give ",
-    "description": "I want to thank the incredible teachers across South Florida heading into a new school year. Raising the next generation is the most important job on the planet, and you deserve far more than we give you to do it. Thank you for showing up and here’s ",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-11T15:10:15Z",
-    "detected_at": "2026-09-13T11:23:59Z"
-  },
-  {
-    "url": "https://nitter.kareem.one/RepMoskowitz/status/2086860059108106690#m",
-    "title": "Are you a rising senior interested in a Service Academy nomination, or do you know someone who is? Each year I have the honor of nominating young people from South Florida to four of our nation’s serv",
-    "description": "Are you a rising senior interested in a Service Academy nomination, or do you know someone who is? Each year I have the honor of nominating young people from South Florida to four of our nation’s service academies. This year it could be you. Rising s",
-    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-08-10T16:59:44Z",
-    "detected_at": "2026-09-13T11:23:59Z"
-  },
-  {
     "url": "https://nitter.kareem.one/SenGillibrand/status/2098890575457993109#m",
     "title": "Trump is spewing his same old empty promises. He promised $2/gallon gas back in 2024. Instead, he delivered $4/gallon gas, record-high diesel prices, and another endless war. The American people can s",
     "description": "Trump is spewing his same old empty promises. He promised $2/gallon gas back in 2024. Instead, he delivered $4/gallon gas, record-high diesel prices, and another endless war. The American people can see through his desperate lies.",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-11-04T12:59:47Z",
     "detected_at": "2026-11-05T05:53:59Z"
+  },
+  {
+    "url": "https://thedebrief.org/280-prehistoric-cave-drawings-were-hiding-in-plain-sight-for-60-years-and-some-tourists-even-carved-their-names-over-them/",
+    "title": "280 Prehistoric Cave Drawings Were Hiding in Plain Sight for 60 Years—and Some Tourists Even Carved Their Names Over Them",
+    "description": "For 60 years, tourists walked past 280 prehistoric cave engravings in Spain, unaware of ancient artwork hidden in plain sight.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-11-05T13:21:53Z",
+    "detected_at": "2026-11-05T14:21:23Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-turn-plastic-waste-and-industrial-sludge-into-stronger-concrete-cutting-production-emissions-by-66/",
+    "title": "Scientists Turn Plastic Waste and Industrial Sludge Into Stronger Concrete, Cutting Production Emissions by 66%",
+    "description": "Plastic waste and industrial sludge become stronger concrete alternatives, boosting bending strength 54% and cutting emissions.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-11-05T13:16:00Z",
+    "detected_at": "2026-11-05T14:21:23Z"
   }
 ]
