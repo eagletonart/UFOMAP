@@ -5,22 +5,22 @@
     "last_changed": "2026-10-22T20:58:35Z"
   },
   "https://intelligence.house.gov/news/": {
-    "last_checked": "2026-11-07T12:06:41Z",
-    "hash": "83614a8b4d1c242f",
-    "last_changed": "2026-11-07T03:46:39Z"
+    "last_checked": "2026-11-07T21:13:49Z",
+    "hash": "0b7f10de2a353c3b",
+    "last_changed": "2026-11-07T21:13:49Z"
   },
   "https://catalog.archives.gov/search-within/39?q=UAP+unidentified+aerial": {
-    "last_checked": "2026-11-07T12:06:41Z",
+    "last_checked": "2026-11-07T21:13:49Z",
     "hash": "bc6f3e7726391f5a",
     "last_changed": "2026-10-22T02:30:55Z"
   },
   "https://archive.org/search?query=UAP+declassified+government&mediatype=texts&sort=-publicdate": {
-    "last_checked": "2026-11-07T12:06:41Z",
+    "last_checked": "2026-11-07T21:13:49Z",
     "hash": "276e05a09b5618e1",
     "last_changed": "2026-11-05T04:18:09Z"
   },
   "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/1/query?where=STATE%3D%27nm%27&outFields=FEATURENAME%2CFUDSUNIQUEPROPERTYNUMBER%2CLATITUDE%2CLONGITUDE&f=json&resultRecordCount=100": {
-    "last_checked": "2026-11-07T12:06:41Z",
+    "last_checked": "2026-11-07T21:13:49Z",
     "hash": "e3b27b314cecf83e",
     "last_changed": "2026-10-23T02:35:32Z"
   },
@@ -40,8 +40,8 @@
     "last_changed": "2026-08-28T01:54:55Z"
   },
   "https://www.cia.gov/readingroom/search/site/UAP": {
-    "last_checked": "2026-11-07T12:06:41Z",
-    "hash": "78be25094fee4d1a",
-    "last_changed": "2026-11-07T03:46:39Z"
+    "last_checked": "2026-11-07T21:13:49Z",
+    "hash": "380748f599101825",
+    "last_changed": "2026-11-07T21:13:49Z"
   }
 }
