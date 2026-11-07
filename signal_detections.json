@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.kareem.one/SenMarcoRubio/status/1871903974581805069#m",
-    "title": "Feliz Navidad!",
-    "description": "Feliz Navidad!",
-    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2024-12-25T13:01:00Z",
-    "detected_at": "2026-09-13T11:23:59Z"
-  },
-  {
-    "url": "https://nitter.kareem.one/SenMarcoRubio/status/1871903731920605321#m",
-    "title": "Merry Christmas!",
-    "description": "Merry Christmas!",
-    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2024-12-25T13:00:02Z",
-    "detected_at": "2026-09-13T11:23:59Z"
-  },
-  {
     "url": "https://nitter.kareem.one/SenMarcoRubio/status/1866453206701850733#m",
     "title": "My bill to designate the Pensacola and Perdido Bays as an \"Estuary of National of Significance,\" first introduced in 2021, just passed the House and is set to become law. My full statement below:",
     "description": "My bill to designate the Pensacola and Perdido Bays as an \"Estuary of National of Significance,\" first introduced in 2021, just passed the House and is set to become law. My full statement below:",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-11-06T13:49:51Z",
     "detected_at": "2026-11-07T12:42:21Z"
+  },
+  {
+    "url": "https://thedebrief.org/scientists-have-achieved-the-coldest-temperature-ever-recorded-in-space-aboard-chinas-tiangong-station/",
+    "title": "Scientists Have Achieved the Coldest Temperature Ever Recorded in Space Aboard China’s Tiangong Station",
+    "description": "Scientists have achieved the lowest equivalent temperature ever recorded in space aboard China’s Tiangong space station.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-11-07T14:48:21Z",
+    "detected_at": "2026-11-07T18:31:45Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=g0bqU0w0wRU",
+    "title": "Route 66 Turns 100: See Where It Was Established",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-11-07T16:00:32Z",
+    "detected_at": "2026-11-07T18:31:45Z"
   }
 ]
