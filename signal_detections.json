@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.kareem.one/SenGillibrand/status/2096307386491249048#m",
-    "title": "Trump makes history, the American people pay the price.",
-    "description": "Trump makes history, the American people pay the price. Patrick De Haan (@GasBuddyGuy) BREAKING: according to GasBuddy data, the live U.S. national average price of diesel has set a new record: $5.820/gal, surpassing the previous daily $5.819/gal all",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-09-05T18:40:03Z",
-    "detected_at": "2026-09-13T11:23:59Z"
-  },
-  {
-    "url": "https://nitter.kareem.one/SenGillibrand/status/2096278327745003976#m",
-    "title": "PFAS can cause cancer, birth defects, and damage to our immune systems. Every clean up delay is another day our communities could be exposed to these toxins. No more delays. The Trump administration h",
-    "description": "PFAS can cause cancer, birth defects, and damage to our immune systems. Every clean up delay is another day our communities could be exposed to these toxins. No more delays. The Trump administration has a responsibility to get these forever chemicals",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-09-05T16:44:34Z",
-    "detected_at": "2026-09-13T11:23:59Z"
-  },
-  {
     "url": "https://nitter.kareem.one/SenGillibrand/status/2095913209026822197#m",
     "title": "Remember this promise? Two years later, gas is over $4/gallon and Trump is breaking all the wrong records.",
     "description": "Remember this promise? Two years later, gas is over $4/gallon and Trump is breaking all the wrong records. Video",
@@ -15998,5 +15966,37 @@
     "location": "Charlotte, NC",
     "published_at": "2026-11-06T13:26:21Z",
     "detected_at": "2026-11-06T19:09:27Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/TheDylanBorland/status/2118735227870658802#m",
+    "title": "RT by @rosscoulthart: I say this with all due respect. A lot of people in the IC saw the email thread with you (and other DOD contractors) being shown things that you and the rest acknowledged weren't",
+    "description": "I say this with all due respect. A lot of people in the IC saw the email thread with you (and other DOD contractors) being shown things that you and the rest acknowledged weren't us and don't know what or where they are from. I'll let the people that",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-11-06T16:00:17Z",
+    "detected_at": "2026-11-07T05:48:19Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/DrBeaVillarroel/status/2118756092410728839#m",
+    "title": "RT by @rosscoulthart: A big congratulations to Jake Barber on his very well-deserved new role in the US Congress! Jake is not only a very brave and inspiring man who is carrying out the most amazing U",
+    "description": "A big congratulations to Jake Barber on his very well-deserved new role in the US Congress! Jake is not only a very brave and inspiring man who is carrying out the most amazing UFO research projects, but also a wonderful human being and a great frien",
+    "source_name": "Ross Coulthart (@RossCoulthart)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "location": "New York, NY",
+    "published_at": "2026-11-06T17:23:11Z",
+    "detected_at": "2026-11-07T05:48:19Z"
   }
 ]
