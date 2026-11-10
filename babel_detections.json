@@ -781,5 +781,14 @@
     "priority": "high",
     "detected_at": "2026-11-10T00:58:45Z",
     "analyzed": false
+  },
+  {
+    "url": "https://www.armed-services.senate.gov/hearings/to-consider-the-nominations-of-mr-william-j-toti-to-be-under-secretary-of-the-navy-and-mr-richard-p-breckenridge-to-be-assistant-secretary-of-the-navy_for-research-development-and-acquisition",
+    "text": "To consider the nominations of: Mr. William J. Toti to be Under Secretary of the Navy; and Mr. Richard P. Breckenridge to be Assistant Secretary of the Navy for Research, Development, and Acquisition",
+    "source_name": "Senate Armed Services Committee \u2014 Hearings",
+    "source_url": "https://www.armed-services.senate.gov/hearings",
+    "priority": "high",
+    "detected_at": "2026-11-10T13:57:51Z",
+    "analyzed": false
   }
 ]
