@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.kareem.one/SenMarcoRubio/status/1855973763898360135#m",
-    "title": "Nuestros veteranos son las personas más valientes en la historia de EE.UU. Su servicio y sacrificio garantizaron no solo nuestra libertad, sino también la libertad de otras personas en todo el mundo. ",
-    "description": "Nuestros veteranos son las personas más valientes en la historia de EE.UU. Su servicio y sacrificio garantizaron no solo nuestra libertad, sino también la libertad de otras personas en todo el mundo. Tenemos que acordarnos a diario que la libertad no",
-    "source_name": "Sen. Marco Rubio (@SenMarcoRubio)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2024-11-11T14:00:02Z",
-    "detected_at": "2026-09-13T11:23:59Z"
-  },
-  {
     "url": "https://nitter.kareem.one/SenMarcoRubio/status/1855747271264174121#m",
     "title": "Make sure to follow my other accounts to stay up to date👇",
     "description": "Make sure to follow my other accounts to stay up to date👇",
@@ -15998,5 +15982,21 @@
     "location": "New York, NY",
     "published_at": "2026-11-09T00:17:03Z",
     "detected_at": "2026-11-10T00:01:14Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=bAZ8BJuxqzA",
+    "title": "Congress Was DENIED 4 UFO Intelligence Reports About Russia",
+    "description": "",
+    "source_name": "WEAPONIZED Podcast (Corbell & Knapp)",
+    "source_type": "youtube",
+    "author": "Jeremy Corbell & George Knapp",
+    "priority": "critical",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "location": "Los Angeles, CA",
+    "published_at": "2026-11-10T00:22:39Z",
+    "detected_at": "2026-11-10T09:28:53Z"
   }
 ]
