@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.kareem.one/GeorgeKnapp/status/12867964043#m",
-    "title": "The George Knapp tribute twitter",
-    "description": "The George Knapp tribute twitter",
-    "source_name": "George Knapp (@GeorgeKnapp)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 36.1699,
-    "lon": -115.1398,
-    "location": "Las Vegas, NV",
-    "published_at": "2010-04-26T06:15:33Z",
-    "detected_at": "2026-09-13T11:23:59Z"
-  },
-  {
-    "url": "https://nitter.kareem.one/GeorgeKnapp/status/4880392604#m",
-    "title": "Let's stop this before Dec 31 2009!!!!!!! http://bit.ly/vZb7x",
-    "description": "Let's stop this before Dec 31 2009!!!!!!! http://bit.ly/vZb7x",
-    "source_name": "George Knapp (@GeorgeKnapp)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 36.1699,
-    "lon": -115.1398,
-    "location": "Las Vegas, NV",
-    "published_at": "2009-10-15T03:41:17Z",
-    "detected_at": "2026-09-13T11:23:59Z"
-  },
-  {
     "url": "https://nitter.kareem.one/GeorgeKnapp/status/3084225726#m",
     "title": "www.twitter.com/Coast2CoastAm",
     "description": "www.twitter.com/Coast2CoastAm",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2024-11-08T21:42:00Z",
     "detected_at": "2026-11-10T22:59:42Z"
+  },
+  {
+    "url": "https://thedebrief.org/bci-implant-recipients-release-ethical-recommendations-calling-for-greater-control-over-neural-data-and-device-ownership/",
+    "title": "BCI Implant Recipients Release Ethical Recommendations, Calling for Greater Control Over Neural Data and Device Ownership",
+    "description": "People living with brain-computer interfaces are calling for greater oversight over their personal neural data, consent, and long-term care.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-11-11T13:25:48Z",
+    "detected_at": "2026-11-11T13:50:35Z"
+  },
+  {
+    "url": "https://thedebrief.org/mystery-of-thousands-of-ancient-buried-frog-bones-finally-solved/",
+    "title": "Mystery of Thousands of Ancient Buried Frog Bones Finally Solved",
+    "description": "Analysis of thousands of ancient frog bones found buried at a Roman era site have solved the mystery of their origin once and for all.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-11-11T13:20:16Z",
+    "detected_at": "2026-11-11T13:50:35Z"
   }
 ]
