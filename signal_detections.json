@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/mysterious-subsurface-feature-displaying-unusually-strong-magnetism-on-the-far-side-of-the-moon-may-solve-4-2-billion-year-old-mystery/",
-    "title": "Mysterious Subsurface Feature Displaying Unusually Strong Magnetism on the Far Side of the Moon May Solve 4.2-Billion-Year-Old Mystery",
-    "description": "Analysis of unusually strong magnetism on the Moon's far side has revealed a mysterious subsurface feature and an ancient magnetic field.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-09-24T12:26:31Z",
-    "detected_at": "2026-09-24T14:44:29Z"
-  },
-  {
-    "url": "https://thedebrief.org/plasma-experiments-reveal-what-controls-magnetic-reconnection/",
-    "title": "Plasma Experiments Reveal What Controls Magnetic Reconnection",
-    "description": "For decades, scientists have puzzled over why magnetic reconnection seems to occur at nearly the same speed in vastly different regions of space.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-09-24T12:18:08Z",
-    "detected_at": "2026-09-24T14:44:29Z"
-  },
-  {
     "url": "https://thedebrief.org/scientists-shielded-flies-from-earths-magnetic-field-and-their-lifespans-mysteriously-increased/",
     "title": "Scientists Shielded Flies From Earth’s Magnetic Field—and Their Lifespans Mysteriously Increased",
     "description": "Earth’s magnetic field has a stronger impact on cellular health than realized, scientists say, after magnetic shielding experiments.",
@@ -15998,5 +15966,37 @@
     "location": "New York, NY",
     "published_at": "2026-11-13T14:01:55Z",
     "detected_at": "2026-11-14T08:46:04Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/11/puerto-rico-disks-of-november-1973.html",
+    "title": "Puerto Rico: The Disks of November (1973)",
+    "description": "&nbsp; Puerto Rico: The Disks of November UFO activity in Puerto Rico followed a similar pattern to what had been seen in the U.S. and Canada – considerable activity in the month of October, extending into the month of November and even December of 1",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-11-14T04:53:54Z",
+    "detected_at": "2026-11-14T16:27:06Z"
+  },
+  {
+    "url": "https://inexplicata.blogspot.com/2026/09/chile-infestation-of-imps-in-macul.html",
+    "title": "Chile: An Infestation of Imps in Macul",
+    "description": "&nbsp; Source: Agencia UNO and Radio Imagina Date: September 11, 2026 An article by Javiera Aguilar &nbsp; Chile: An Infestation of Imps in Macul The imps of Macul are once more a subject for discussion. We remember the strange story that scarred an ",
+    "source_name": "Inexplicata — Hispanic Ufology",
+    "source_type": "rss",
+    "author": "Scott Corrales",
+    "priority": "medium",
+    "lang": "en/es",
+    "flag": "🌎",
+    "lat": 4.5709,
+    "lon": -74.2973,
+    "location": "Latin America",
+    "published_at": "2026-09-23T13:30:04Z",
+    "detected_at": "2026-11-14T16:27:06Z"
   }
 ]
