@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/earths-inner-core-may-be-secretly-changing-the-length-of-our-days/",
-    "title": "Earth’s Inner Core May Be Secretly Changing the Length of Our Days",
-    "description": "Earth’s Inner Core may drive a 70-year gravitational pull on the mantle, changing the length of each day by a few milliseconds.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-09-25T12:35:17Z",
-    "detected_at": "2026-09-25T16:53:36Z"
-  },
-  {
     "url": "https://thedebrief.org/army-bets-7-6-million-on-chariot-defenses-amphora-to-solve-a-growing-battlefield-energy-crisis/",
     "title": "Army Bets $7.6 Million on Chariot Defense’s ‘Amphora’ to Solve a Growing Battlefield Energy Crisis",
     "description": "Chariot Defense's CEO explains how its Army's Defense Innovation Unit (DIU) award winning Amphora system changes the combat energy equation",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-11-13T17:11:39Z",
     "detected_at": "2026-11-15T13:41:53Z"
+  },
+  {
+    "url": "https://ufos-scientificresearch.blogspot.com/2026/06/a-blog-update.html",
+    "title": "A blog update",
+    "description": "Thank you to all those blog readers who have contacted me privately, to enquire as to why there has been no blog posts for several months. The short answer is \"ageing.\" Age has caught up with me.&nbsp; The longer answer is that while the mind is stil",
+    "source_name": "UAP Scientific Research (Basterfield)",
+    "source_type": "rss",
+    "author": "Keith Basterfield",
+    "priority": "medium",
+    "lang": "en",
+    "flag": "🇦🇺",
+    "lat": -34.9285,
+    "lon": 138.6007,
+    "location": "Adelaide, Australia",
+    "published_at": "2026-06-09T15:48:47Z",
+    "detected_at": "2026-11-15T19:38:00Z"
   }
 ]
