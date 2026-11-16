@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/army-bets-7-6-million-on-chariot-defenses-amphora-to-solve-a-growing-battlefield-energy-crisis/",
-    "title": "Army Bets $7.6 Million on Chariot Defense’s ‘Amphora’ to Solve a Growing Battlefield Energy Crisis",
-    "description": "Chariot Defense's CEO explains how its Army's Defense Innovation Unit (DIU) award winning Amphora system changes the combat energy equation",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-09-25T12:05:16Z",
-    "detected_at": "2026-09-25T16:53:36Z"
-  },
-  {
     "url": "https://thedebrief.org/scientists-turn-pompeiis-destruction-into-the-most-precise-clock-yet-for-dating-ancient-volcanic-eruptions/",
     "title": "Scientists Turn Pompeii’s Destruction Into the Most Precise Clock Yet for Dating Ancient Volcanic Eruptions",
     "description": "Thanks to the volcanic eruption of Mount Vesuvius, archaeologists now have access to the most exact volcanic eruption dating technique ever.",
@@ -15998,5 +15982,21 @@
     "location": "Adelaide, Australia",
     "published_at": "2026-06-09T15:48:47Z",
     "detected_at": "2026-11-15T19:38:00Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/RepMoskowitz/status/2120931384466305349#m",
+    "title": "I couldn’t have been prouder to vote for the Major Richard Star Act and see it pass the House 392-18 today. I’ve supported this bill since my first term, but veterans in my district were championing i",
+    "description": "I couldn’t have been prouder to vote for the Major Richard Star Act and see it pass the House 392-18 today. I’ve supported this bill since my first term, but veterans in my district were championing it long before I got here. They were right to keep ",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-11-12T17:27:01Z",
+    "detected_at": "2026-11-16T05:39:37Z"
   }
 ]
