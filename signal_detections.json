@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://thedebrief.org/scientists-turn-pompeiis-destruction-into-the-most-precise-clock-yet-for-dating-ancient-volcanic-eruptions/",
-    "title": "Scientists Turn Pompeii’s Destruction Into the Most Precise Clock Yet for Dating Ancient Volcanic Eruptions",
-    "description": "Thanks to the volcanic eruption of Mount Vesuvius, archaeologists now have access to the most exact volcanic eruption dating technique ever.",
-    "source_name": "The Debrief",
-    "source_type": "rss",
-    "author": "Tim McMillan / Micah Hanks",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 35.2271,
-    "lon": -80.8431,
-    "location": "Charlotte, NC",
-    "published_at": "2026-09-25T18:05:19Z",
-    "detected_at": "2026-09-25T21:18:03Z"
-  },
-  {
     "url": "https://inexplicata.blogspot.com/2026/09/colombia-paranormal-stories-of-armero.html",
     "title": "Colombia: The Paranormal Stories of Armero",
     "description": "&nbsp;Source: INFOBAE Date: November 23, 2025 An article by Johan Manuel Largo Paranormal stories of Armero: tales that cross the boundary between tragedy and the inexplicable Years after the avalanche, stories of goblins, witches, and benevolent pre",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-11-12T17:27:01Z",
     "detected_at": "2026-11-16T05:39:37Z"
+  },
+  {
+    "url": "https://thedebrief.org/mysterious-asteroids-acceleration-is-defying-expectations-as-scientists-anticipate-new-clues-from-a-2031-spacecraft-encounter/",
+    "title": "Mysterious Asteroid’s Acceleration is Defying Expectations as Scientists Anticipate New Clues from a 2031 Spacecraft Encounter",
+    "description": "New research is challenging presumptions about a suspected \"dark comet\" exhibiting unusual acceleration in its orbit around the Sun.",
+    "source_name": "The Debrief",
+    "source_type": "rss",
+    "author": "Tim McMillan / Micah Hanks",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 35.2271,
+    "lon": -80.8431,
+    "location": "Charlotte, NC",
+    "published_at": "2026-11-16T15:10:50Z",
+    "detected_at": "2026-11-16T15:16:29Z"
   }
 ]
