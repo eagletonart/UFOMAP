@@ -790,5 +790,14 @@
     "priority": "high",
     "detected_at": "2026-11-10T13:57:51Z",
     "analyzed": false
+  },
+  {
+    "url": "https://intelligence.house.gov/2026/11/18/house-intelligence-committee-approves-release-of-committees-unclassified-investigative-report-into-anomalous-health-incidents/",
+    "text": "November 18 2026 House Intelligence Committee Approves Release of Committee\u2019s Unclassified Investigative Report into Anomalous Health Incidents WASHINGTON, D.C. \u2014 Today, the House Permanent Select Committee on Intelligence held a business meeting to vote out the unclassified\u2026 Read More",
+    "source_name": "House Intelligence Committee \u2014 News",
+    "source_url": "https://intelligence.house.gov/news/",
+    "priority": "high",
+    "detected_at": "2026-11-18T14:48:37Z",
+    "analyzed": false
   }
 ]
