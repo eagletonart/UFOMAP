@@ -1,26 +1,26 @@
 {
   "https://www.armed-services.senate.gov/hearings": {
-    "last_checked": "2026-11-20T00:01:16Z",
-    "hash": "1455e5b1aaba19a1",
-    "last_changed": "2026-11-20T00:01:16Z"
+    "last_checked": "2026-11-20T14:36:45Z",
+    "hash": "ef83a20631b10d10",
+    "last_changed": "2026-11-20T14:36:45Z"
   },
   "https://intelligence.house.gov/news/": {
-    "last_checked": "2026-11-20T00:01:16Z",
-    "hash": "d203ed4652e46bf2",
-    "last_changed": "2026-11-20T00:01:16Z"
+    "last_checked": "2026-11-20T14:36:45Z",
+    "hash": "45f260867ddaaffe",
+    "last_changed": "2026-11-20T14:36:45Z"
   },
   "https://catalog.archives.gov/search-within/39?q=UAP+unidentified+aerial": {
-    "last_checked": "2026-11-20T00:01:16Z",
+    "last_checked": "2026-11-20T14:36:45Z",
     "hash": "8cfef975e7710eee",
     "last_changed": "2026-11-19T05:05:10Z"
   },
   "https://archive.org/search?query=UAP+declassified+government&mediatype=texts&sort=-publicdate": {
-    "last_checked": "2026-11-20T00:01:16Z",
+    "last_checked": "2026-11-20T14:36:45Z",
     "hash": "c932450585fb1714",
     "last_changed": "2026-11-20T00:01:16Z"
   },
   "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/1/query?where=STATE%3D%27nm%27&outFields=FEATURENAME%2CFUDSUNIQUEPROPERTYNUMBER%2CLATITUDE%2CLONGITUDE&f=json&resultRecordCount=100": {
-    "last_checked": "2026-11-20T00:01:16Z",
+    "last_checked": "2026-11-20T14:36:45Z",
     "hash": "e3b27b314cecf83e",
     "last_changed": "2026-10-23T02:35:32Z"
   },
@@ -40,7 +40,7 @@
     "last_changed": "2026-08-28T01:54:55Z"
   },
   "https://www.cia.gov/readingroom/search/site/UAP": {
-    "last_checked": "2026-11-20T00:01:16Z",
+    "last_checked": "2026-11-20T14:36:45Z",
     "hash": "60e485f5b77e11fa",
     "last_changed": "2026-11-20T00:01:16Z"
   }
