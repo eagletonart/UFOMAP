@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.kareem.one/jaystratton/status/2103534466878878073#m",
-    "title": "RT by @EricBurlison: @travisstaylor1 and I brought our friend @RepEricBurlison to Skinwalker Ranch this week!",
-    "description": "@travisstaylor1 and I brought our friend @RepEricBurlison to Skinwalker Ranch this week!",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-09-25T17:17:53Z",
-    "detected_at": "2026-10-01T05:04:03Z"
-  },
-  {
-    "url": "https://nitter.kareem.one/KentHecken/status/2103501334658084873#m",
-    "title": "RT by @EricBurlison: BOOK OF SECRETS is now available on Amazon! Read the thrilling story of the greatest Congressional investigation into political corruption since the Church Committee hearings of t",
-    "description": "BOOK OF SECRETS is now available on Amazon! Read the thrilling story of the greatest Congressional investigation into political corruption since the Church Committee hearings of the 1970s! amazon.com/Book-Secrets-Cong… Link Book of Secrets: Congress ",
-    "source_name": "Rep. Eric Burlison (@EricBurlison)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-09-25T15:06:14Z",
-    "detected_at": "2026-10-01T05:04:03Z"
-  },
-  {
     "url": "https://nitter.kareem.one/RepMoskowitz/status/2105341575798604143#m",
     "title": "I’m relieved that every passenger made it home safe tonight. This was a clear act of terrorism by a madman who tried to hijack a plane to kill innocent people and attack the state of Israel. The passe",
     "description": "I’m relieved that every passenger made it home safe tonight. This was a clear act of terrorism by a madman who tried to hijack a plane to kill innocent people and attack the state of Israel. The passengers who stepped in to save the lives of everyone",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-11-20T12:51:26Z",
     "detected_at": "2026-11-20T23:48:57Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/RepMoskowitz/status/2123893660110467277#m",
+    "title": "Hurricane season was relatively quiet for South Florida, but what we saw in Hollywood today is what an El Niño event looks like. This storm never got a name, and it still did serious damage. In the mi",
+    "description": "Hurricane season was relatively quiet for South Florida, but what we saw in Hollywood today is what an El Niño event looks like. This storm never got a name, and it still did serious damage. In the middle of the night, under the weight of all that ra",
+    "source_name": "Rep. Jared Moskowitz (@RepMoskowitz)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-11-20T21:38:03Z",
+    "detected_at": "2026-11-21T06:21:40Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/SenGillibrand/status/2123876310149742593#m",
+    "title": "I’m fighting to lower costs and stop funding for Trump’s costly, reckless Iran war TODAY. My bill would stop every new dollar for offensive operations in Iran.",
+    "description": "I’m fighting to lower costs and stop funding for Trump’s costly, reckless Iran war TODAY. My bill would stop every new dollar for offensive operations in Iran. Video",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-11-20T20:29:06Z",
+    "detected_at": "2026-11-21T06:21:40Z"
   }
 ]
