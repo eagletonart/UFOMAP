@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://nitter.kareem.one/nycemergencymgt/status/2103892384769544230#m",
-    "title": "RT by @SenGillibrand: NYC Emergency Management just wrapped a coordination call with the National Weather Service and City agencies. Here's where things stand and what's ahead. What's happened so far ",
-    "description": "NYC Emergency Management just wrapped a coordination call with the National Weather Service and City agencies. Here's where things stand and what's ahead. What's happened so far 🌧️ About half an inch to an inch of rain has fallen across the city. 🌬️ ",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-09-26T17:00:07Z",
-    "detected_at": "2026-10-01T05:04:03Z"
-  },
-  {
-    "url": "https://nitter.kareem.one/SenGillibrand/status/2103836527587742094#m",
-    "title": "Half our country will experience menopause, but it’s one of the most under-researched, undertreated, and underdiagnosed fields of healthcare. It's time to change that.",
-    "description": "Half our country will experience menopause, but it’s one of the most under-researched, undertreated, and underdiagnosed fields of healthcare. It's time to change that. Video",
-    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "high",
-    "lang": "en",
-    "flag": "🇺🇸",
-    "lat": 38.8925,
-    "lon": -77.0065,
-    "location": "Capitol Hill, Washington DC",
-    "published_at": "2026-09-26T13:18:10Z",
-    "detected_at": "2026-10-01T05:04:03Z"
-  },
-  {
     "url": "https://nitter.kareem.one/SenGillibrand/status/2103562839482847645#m",
     "title": "Trump dismissed concerns about our service members’ well-being on the USS Lincoln, calling it “fake news.” 8 attempted suicide. Our service members and their families deserve accountability from this ",
     "description": "Trump dismissed concerns about our service members’ well-being on the USS Lincoln, calling it “fake news.” 8 attempted suicide. Our service members and their families deserve accountability from this administration. Video",
@@ -15998,5 +15966,37 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-11-23T20:31:57Z",
     "detected_at": "2026-11-24T04:41:31Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/SenGillibrand/status/2125258208310632671#m",
+    "title": "Let’s call it what it is: corruption. President Trump is intervening in a private company where he has millions personally invested, putting his own profits ahead of Americans' interests and our natio",
+    "description": "Let’s call it what it is: corruption. President Trump is intervening in a private company where he has millions personally invested, putting his own profits ahead of Americans' interests and our national security. We must ban the president and member",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-11-24T16:00:16Z",
+    "detected_at": "2026-11-24T17:15:29Z"
+  },
+  {
+    "url": "https://nitter.kareem.one/SenGillibrand/status/2125236413834617239#m",
+    "title": "New York Post: Price of Thanksgiving feast in NYC has soared 15% to $184.43 You're paying more for your Thanksgiving dinner because of Trump's reckless war and his costly tariffs.",
+    "description": "New York Post: Price of Thanksgiving feast in NYC has soared 15% to $184.43 You're paying more for your Thanksgiving dinner because of Trump's reckless war and his costly tariffs.",
+    "source_name": "Sen. Kirsten Gillibrand (@SenGillibrand)",
+    "source_type": "twitter",
+    "author": "",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-11-24T14:33:40Z",
+    "detected_at": "2026-11-24T17:15:29Z"
   }
 ]
