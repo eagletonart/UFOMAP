@@ -1,26 +1,26 @@
 {
   "https://www.armed-services.senate.gov/hearings": {
-    "last_checked": "2026-11-24T16:43:08Z",
-    "hash": "e76361d963580776",
-    "last_changed": "2026-11-24T16:43:08Z"
+    "last_checked": "2026-11-25T01:44:52Z",
+    "hash": "4b90887e91838546",
+    "last_changed": "2026-11-25T01:44:52Z"
   },
   "https://intelligence.house.gov/news/": {
-    "last_checked": "2026-11-24T16:43:08Z",
-    "hash": "00851b1a6b0ff70b",
-    "last_changed": "2026-11-24T16:43:08Z"
+    "last_checked": "2026-11-25T01:44:52Z",
+    "hash": "76e042e5f0987728",
+    "last_changed": "2026-11-25T01:44:52Z"
   },
   "https://catalog.archives.gov/search-within/39?q=UAP+unidentified+aerial": {
-    "last_checked": "2026-11-24T16:43:08Z",
+    "last_checked": "2026-11-25T01:44:52Z",
     "hash": "8cfef975e7710eee",
     "last_changed": "2026-11-19T05:05:10Z"
   },
   "https://archive.org/search?query=UAP+declassified+government&mediatype=texts&sort=-publicdate": {
-    "last_checked": "2026-11-24T16:43:08Z",
-    "hash": "24d21aaede22f816",
-    "last_changed": "2026-11-24T03:37:19Z"
+    "last_checked": "2026-11-25T01:44:52Z",
+    "hash": "1230f18d0111937a",
+    "last_changed": "2026-11-25T01:44:52Z"
   },
   "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/1/query?where=STATE%3D%27nm%27&outFields=FEATURENAME%2CFUDSUNIQUEPROPERTYNUMBER%2CLATITUDE%2CLONGITUDE&f=json&resultRecordCount=100": {
-    "last_checked": "2026-11-24T16:43:08Z",
+    "last_checked": "2026-11-25T01:44:52Z",
     "hash": "e3b27b314cecf83e",
     "last_changed": "2026-10-23T02:35:32Z"
   },
@@ -40,8 +40,8 @@
     "last_changed": "2026-08-28T01:54:55Z"
   },
   "https://www.cia.gov/readingroom/search/site/UAP": {
-    "last_checked": "2026-11-24T16:43:08Z",
-    "hash": "60e485f5b77e11fa",
-    "last_changed": "2026-11-24T16:43:08Z"
+    "last_checked": "2026-11-25T01:44:52Z",
+    "hash": "6e88bb29630eab5e",
+    "last_changed": "2026-11-25T01:44:52Z"
   }
 }
