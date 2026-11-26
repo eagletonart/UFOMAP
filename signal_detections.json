@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://nitter.kareem.one/rosscoulthart/status/2105476722535895105#m",
-    "title": "Our latest REALITY CHECK, Darcy Weir’s investigations into the so-called 'real' secret space program. https://youtu.be/3xMhnt3CTwE?si=g6o5YuBzuuU-gaCe",
-    "description": "Our latest REALITY CHECK, Darcy Weir’s investigations into the so-called 'real' secret space program. inv.kareem.one/3xMhnt3CTwE?si=g6o5… Link The &apos;real&apos; secret space program | Reality Check If you’re ever injured in an accident, you can ch",
-    "source_name": "Ross Coulthart (@RossCoulthart)",
-    "source_type": "twitter",
-    "author": "",
-    "priority": "critical",
-    "lang": "en",
-    "flag": "🇦🇺",
-    "lat": 40.7128,
-    "lon": -74.006,
-    "location": "New York, NY",
-    "published_at": "2026-10-01T01:55:43Z",
-    "detected_at": "2026-10-01T12:46:16Z"
-  },
-  {
     "url": "https://nitter.kareem.one/ChrisUKSharp/status/2104092877257146438#m",
     "title": "RT by @rosscoulthart: 🧵 TIMELINE: White Sands, El Paso, UFOs & counter-drone activity since late 2025: Late 2025 — At an unidentified U.S. testing facility, officials reportedly encounter glowing orbs",
     "description": "🧵 TIMELINE: White Sands, El Paso, UFOs & counter-drone activity since late 2025: Late 2025 — At an unidentified U.S. testing facility, officials reportedly encounter glowing orbs near a helicopter and fighter jets. Claims the objects were deliberatel",
@@ -15998,5 +15982,21 @@
     "location": "Capitol Hill, Washington DC",
     "published_at": "2026-11-24T14:06:32Z",
     "detected_at": "2026-11-25T02:03:02Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=dwYVaW9y8UY",
+    "title": "History of White House Thanksgiving Turkey Pardons",
+    "description": "",
+    "source_name": "C-SPAN",
+    "source_type": "youtube",
+    "author": "C-SPAN",
+    "priority": "high",
+    "lang": "en",
+    "flag": "🇺🇸",
+    "lat": 38.8925,
+    "lon": -77.0065,
+    "location": "Capitol Hill, Washington DC",
+    "published_at": "2026-11-25T18:00:29Z",
+    "detected_at": "2026-11-26T00:03:35Z"
   }
 ]
